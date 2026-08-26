@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hideh1231/research-collection-radar/schema/collection.schema.json",
+  "title": "Research collection opportunity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "journal",
+    "publisher",
+    "venue_type",
+    "collection_type",
+    "url",
+    "source_url",
+    "status",
+    "domains",
+    "classification_method",
+    "first_seen",
+    "last_changed",
+    "content_hash",
+    "extraction_method",
+    "discovered_via",
+    "submission_mode"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 8 },
+    "title": { "type": "string", "minLength": 1 },
+    "journal": { "type": "string", "minLength": 1 },
+    "publisher": { "type": "string", "minLength": 1 },
+    "venue_type": {
+      "type": "string",
+      "enum": ["journal", "journal_track"]
+    },
+    "collection_type": {
+      "type": "string",
+      "enum": [
+        "collection",
+        "special_issue",
+        "research_topic",
+        "special_section",
+        "special_collection",
+        "theme_issue",
+        "article_collection",
+        "pacmhci_track"
+      ]
+    },
+    "url": { "type": "string", "format": "uri" },
+    "source_url": { "type": "string", "format": "uri" },
+    "source_section": { "type": ["string", "null"] },
+    "deadline": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "closed", "unknown"]
+    },
+    "summary": { "type": ["string", "null"] },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["psychology", "hci", "neuroscience", "robotics", "hri"]
+      },
+      "uniqueItems": true
+    },
+    "domain_scores": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "classification_method": { "type": "string" },
+    "first_seen": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "last_changed": { "type": "string" },
+    "content_hash": { "type": "string" },
+    "extraction_method": { "type": "string" },
+    "discovered_via": { "type": "string" },
+    "submission_mode": {
+      "type": "string",
+      "enum": ["open_call", "invited_or_proposal", "unknown"]
+    }
+  }
+}

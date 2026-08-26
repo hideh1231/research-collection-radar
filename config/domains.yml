@@ -1,0 +1,74 @@
+threshold:
+  include: 0.65
+  review: 0.40
+
+domains:
+  psychology:
+    label: Psychology
+    keywords:
+      - psychology
+      - psychological
+      - cognition
+      - cognitive
+      - emotion
+      - wellbeing
+      - well-being
+      - mental health
+      - behaviour
+      - behavior
+      - developmental
+      - clinical
+  hci:
+    label: Human-Computer Interaction
+    keywords:
+      - human-computer
+      - human–computer
+      - interaction design
+      - user experience
+      - usability
+      - cscw
+      - ubiquitous computing
+      - mixed reality
+      - extended reality
+  neuroscience:
+    label: Neuroscience
+    keywords:
+      - neuroscience
+      - neural
+      - brain
+      - neurocognitive
+      - neuroimaging
+      - cortical
+  robotics:
+    label: Robotics
+    keywords:
+      - robot
+      - robotics
+      - autonomous
+      - manipulation
+  hri:
+    label: Human-Robot Interaction
+    keywords:
+      - human-robot
+      - human–robot
+      - social robot
+      - social robotics
+      - assistive robot
+      - human-machine
+
+journal_rules:
+  - match: Scientific Reports
+    domains: [psychology]
+    when_source: nature-psychology
+  - match: Communications Psychology
+    domains: [psychology]
+  - match: Frontiers in Psychology
+    domains: [psychology]
+  - match: Frontiers in Human Neuroscience
+    domains: [neuroscience, psychology]
+  - match: Frontiers in Robotics and AI
+    domains: [robotics]
+  - match: Human–Computer Interaction
+    domains: [hci]
+  - match: International Journal of Social Robotics
+    domains: [robotics, hri]

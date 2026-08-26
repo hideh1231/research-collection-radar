@@ -1,0 +1,34 @@
+[project]
+name = "research-collection-radar"
+version = "0.1.0"
+description = "Public index of journal special issues, collections, and related calls for papers."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Hidekazu Nagamura" }]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "httpx>=0.27",
+  "jsonschema>=4.23",
+  "lxml>=5.3",
+  "python-dateutil>=2.9",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+radar = "radar.pipeline:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]

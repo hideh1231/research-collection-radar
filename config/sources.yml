@@ -1,0 +1,78 @@
+user_agent: "research-collection-radar/0.1 (+https://github.com/hideh1231/research-collection-radar; academic metadata index)"
+timeout_seconds: 40
+max_pages: 40
+
+sources:
+  - key: nature-psychology
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Scientific Reports
+    collection_type: collection
+    url: "https://www.nature.com/srep/calls-for-papers?subject=Psychology"
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
+  - key: frontiers-psychology
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Psychology
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/psychology/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    fetch_deadlines_for_new: true
+    max_pages: 80
+  - key: sciencedirect-cfp
+    enabled: false
+    collector: sciencedirect
+    publisher: Elsevier
+    journal: ScienceDirect
+    collection_type: special_issue
+    url: "https://www.sciencedirect.com/browse/calls-for-papers"
+    allowed_hosts:
+      - www.sciencedirect.com
+      - sciencedirect.com
+  - key: springer-bmc-psychology
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Psychology
+    collection_type: collection
+    url: "https://bmcpsychology.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcpsychology.biomedcentral.com
+      - www.biomedcentral.com
+  - key: apa-cfp
+    enabled: false
+    collector: apa
+    publisher: APA
+    journal: APA Journals
+    collection_type: special_issue
+    url: "https://www.apa.org/pubs/journals/resources/calls-for-papers"
+    allowed_hosts:
+      - www.apa.org
+      - apa.org
+  - key: royal-society-rsos
+    enabled: false
+    collector: royal_society
+    publisher: The Royal Society
+    journal: Royal Society Open Science
+    collection_type: special_collection
+    url: "https://royalsocietypublishing.org/rsos/collection"
+    allowed_hosts:
+      - royalsocietypublishing.org
+      - royalsociety.org
+  - key: plos-collections
+    enabled: false
+    collector: plos
+    publisher: PLOS
+    journal: PLOS
+    collection_type: collection
+    url: "https://collections.plos.org/"
+    allowed_hosts:
+      - collections.plos.org
+      - plos.org
+      - www.plos.org

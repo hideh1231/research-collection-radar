@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-08-26T09:08:32Z",
+  "sources": {
+    "nature-psychology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 55,
+      "pages": 6,
+      "error": null
+    },
+    "frontiers-psychology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 500,
+      "parsed": 1560,
+      "pages": 65,
+      "error": null
+    },
+    "sciencedirect-cfp": {
+      "enabled": false
+    },
+    "springer-bmc-psychology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 33,
+      "pages": 1,
+      "error": null
+    },
+    "apa-cfp": {
+      "enabled": false
+    },
+    "royal-society-rsos": {
+      "enabled": false
+    },
+    "plos-collections": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 7,
+      "pages": 1,
+      "error": null
+    }
+  }
+}

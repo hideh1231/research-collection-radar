@@ -1,0 +1,4 @@
+new_alert: true
+digest: true
+skip_slack_when_ledger_empty: true
+max_items_in_digest: 30
