@@ -218,6 +218,10 @@ html, body {
 }
 
 .check-all {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface);
   border-bottom: 1px solid var(--line);
   font-weight: 700;
 }
