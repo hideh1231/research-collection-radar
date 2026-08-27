@@ -152,11 +152,13 @@ function tableRowMarkup(row) {
 function renderFacets(filtered) {
   fillSelect($("#domain-filter"), records.flatMap((row) => row.domains || []), state.domains, DOMAIN_LABELS);
   fillSelect($("#topic-filter"), records.flatMap((row) => row.topics || []), state.topics);
-  fillSelect($("#journal-filter"), records.map((row) => row.journal), state.journals);
+  fillSelect($("#journal-filter"), records.flatMap((row) => [row.journal, ...(row.journals || [])]), state.journals);
   fillSelect($("#type-filter"), records.map((row) => row.collection_type), state.types, TYPE_LABELS);
   fillSelect($("#deadline-filter"), ["listed", "not_listed", "not_checked"], state.deadlines, DEADLINE_LABELS);
   $("#search").value = state.q;
   $("#sort").value = state.sort;
+  $("#deadline-from").value = state.from || "";
+  $("#deadline-to").value = state.to || "";
   void filtered;
 }
 
@@ -205,6 +207,8 @@ function readControls() {
     journals: selectedValues($("#journal-filter")),
     types: selectedValues($("#type-filter")),
     deadlines: selectedValues($("#deadline-filter")),
+    from: $("#deadline-from").value,
+    to: $("#deadline-to").value,
     sort: $("#sort").value,
   };
   visibleCount = PAGE_SIZE;
@@ -214,7 +218,7 @@ function readControls() {
 
 function bind() {
   $("#search").addEventListener("input", readControls);
-  for (const id of ["domain-filter", "topic-filter", "journal-filter", "type-filter", "deadline-filter", "sort"]) {
+  for (const id of ["domain-filter", "topic-filter", "journal-filter", "type-filter", "deadline-filter", "deadline-from", "deadline-to", "sort"]) {
     $(`#${id}`).addEventListener("change", readControls);
   }
   $("#clear").addEventListener("click", () => {

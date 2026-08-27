@@ -114,11 +114,15 @@ html, body {
   margin-bottom: 20px;
 }
 
-.search-row, .filter-row, .toolbar {
+.search-row, .filter-row, .date-row, .toolbar {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   align-items: end;
+}
+
+input[type="date"] {
+  min-width: 11rem;
 }
 
 label {

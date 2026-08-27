@@ -78,6 +78,8 @@ test("url state round-trips search and filters", () => {
     journals: ["Frontiers in Psychology"],
     types: ["research_topic"],
     deadlines: ["listed"],
+    from: "2027-01-01",
+    to: "2027-12-31",
     sort: "title",
   };
   const encoded = serializeState(original);
@@ -88,8 +90,22 @@ test("url state round-trips search and filters", () => {
   assert.deepEqual(restored.journals, ["Frontiers in Psychology"]);
   assert.deepEqual(restored.types, ["research_topic"]);
   assert.deepEqual(restored.deadlines, ["listed"]);
+  assert.equal(restored.from, "2027-01-01");
+  assert.equal(restored.to, "2027-12-31");
   assert.equal(restored.sort, "title");
   assert.equal(hasActiveFilters(restored), true);
+});
+
+test("deadline date range keeps dated rows and optional undated statuses", () => {
+  const ranged = filterRecords(catalog, { ...emptyState(), from: "2027-01-01", to: "2027-12-31" });
+  assert.deepEqual(ranged.map((item) => item.id), ["a"]);
+  const withUndated = filterRecords(catalog, {
+    ...emptyState(),
+    from: "2026-01-01",
+    to: "2026-12-31",
+    deadlines: ["not_listed"],
+  });
+  assert.deepEqual(withUndated.map((item) => item.id).sort(), ["b", "c"]);
 });
 
 test("loads 48 more records at a time", () => {

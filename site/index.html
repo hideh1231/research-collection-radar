@@ -12,7 +12,7 @@
     <main class="page">
       <header class="masthead">
         <h1>Find the next collection to submit to</h1>
-        <p class="lede">Open calls from public publisher listings. Search by title, summary, journal, field, and topic. <code>OPEN.md</code> remains the dated-deadline list.</p>
+        <p class="lede">Open calls from public publisher listings. Search by title, summary, journal, field, and topic, or set a deadline range. <code>OPEN.md</code> remains the dated-deadline list.</p>
       </header>
       <form class="controls" role="search" onsubmit="return false">
         <div class="search-row">
@@ -42,6 +42,14 @@
           </label>
           <label for="deadline-filter">Deadline
             <select id="deadline-filter" name="deadline" multiple></select>
+          </label>
+        </div>
+        <div class="date-row">
+          <label for="deadline-from">Deadline from
+            <input id="deadline-from" name="from" type="date">
+          </label>
+          <label for="deadline-to">Deadline to
+            <input id="deadline-to" name="to" type="date">
           </label>
         </div>
         <div class="toolbar">
