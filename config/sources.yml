@@ -9,7 +9,8 @@ sources:
     publisher: Nature Portfolio
     journal: Scientific Reports
     collection_type: collection
-    url: "https://www.nature.com/srep/calls-for-papers?subject=Psychology"
+    url: "https://www.nature.com/srep/calls-for-papers"
+    max_pages: 40
     allowed_hosts:
       - www.nature.com
       - nature.com
@@ -20,6 +21,28 @@ sources:
     journal: Communications Psychology
     collection_type: collection
     url: "https://www.nature.com/commspsychol/calls-for-papers"
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
+  - key: nature-ncomms
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Nature Communications
+    collection_type: collection
+    url: "https://www.nature.com/ncomms/calls-for-papers"
+    max_pages: 50
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
+  - key: nature-commsbio
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Communications Biology
+    collection_type: collection
+    url: "https://www.nature.com/commsbio/calls-for-papers"
+    max_pages: 20
     allowed_hosts:
       - www.nature.com
       - nature.com
@@ -208,6 +231,54 @@ sources:
       - frontiersin.org
     max_pages: 200
     deadline_enrichment: *frontiers_detail
+  - key: frontiers-neuroergonomics
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neuroergonomics
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neuroergonomics/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-ethology
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Ethology
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/ethology/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-ecology-evolution
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Ecology and Evolution
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/ecology-and-evolution/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-veterinary-science
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Veterinary Science
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/veterinary-science/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
   - key: sciencedirect-cfp
     enabled: false
     collector: sciencedirect
@@ -215,12 +286,11 @@ sources:
     journal: ScienceDirect
     collection_type: special_issue
     url: "https://www.sciencedirect.com/browse/calls-for-papers"
-    require_domains: true
-    scope_pattern: "psycholog|psychiatr|neuroscien|neuropsych|neuroimaging|\\bbrain\\b|robot|human-computer|human–computer|human-robot|\\bcognition\\b|\\bhci\\b|\\bhri\\b"
+    require_watched_journal: true
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
-    disabled_reason: "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages."
+    disabled_reason: "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     gha_fetch: false
   - key: springer-bmc-psychology
     enabled: true
@@ -252,6 +322,196 @@ sources:
     allowed_hosts:
       - jneuroengrehab.biomedcentral.com
       - www.biomedcentral.com
+  - key: springer-bmc-neuroscience
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Neuroscience
+    collection_type: collection
+    url: "https://bmcneurosci.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcneurosci.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-neurology
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Neurology
+    collection_type: collection
+    url: "https://bmcneurol.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcneurol.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-zoology
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Zoology
+    collection_type: collection
+    url: "https://bmczool.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmczool.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-ecology-evolution
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Ecology and Evolution
+    collection_type: collection
+    url: "https://bmcecolevol.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcecolevol.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-digital-health
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Digital Health
+    collection_type: collection
+    url: "https://bmcdigitalhealth.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcdigitalhealth.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-medinform
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Medical Informatics and Decision Making
+    collection_type: collection
+    url: "https://bmcmedinformdecismak.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcmedinformdecismak.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-psychological-research
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Psychological Research
+    collection_type: collection
+    url: "https://link.springer.com/journal/426/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-app
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Attention, Perception, & Psychophysics
+    collection_type: collection
+    url: "https://link.springer.com/journal/13414/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-memory-cognition
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Memory & Cognition
+    collection_type: collection
+    url: "https://link.springer.com/journal/13421/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-learning-behavior
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Learning & Behavior
+    collection_type: collection
+    url: "https://link.springer.com/journal/13420/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-crpi
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: "Cognitive Research: Principles and Implications"
+    collection_type: collection
+    url: "https://link.springer.com/journal/41235/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-animal-cognition
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Animal Cognition
+    collection_type: collection
+    url: "https://link.springer.com/journal/10071/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-virtual-reality
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Virtual Reality
+    collection_type: collection
+    url: "https://link.springer.com/journal/10055/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-autonomous-robots
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Autonomous Robots
+    collection_type: collection
+    url: "https://link.springer.com/journal/10514/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-ijsr
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: International Journal of Social Robotics
+    collection_type: collection
+    url: "https://link.springer.com/journal/12369/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-bes
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Behavioral Ecology and Sociobiology
+    collection_type: collection
+    url: "https://link.springer.com/journal/265/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-uais
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Universal Access in the Information Society
+    collection_type: collection
+    url: "https://link.springer.com/journal/10209/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-ebr
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Experimental Brain Research
+    collection_type: collection
+    url: "https://link.springer.com/journal/221/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
+  - key: springer-brm
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Behavior Research Methods
+    collection_type: collection
+    url: "https://link.springer.com/journal/13428/collections"
+    allowed_hosts:
+      - link.springer.com
+      - springer.com
   - key: apa-cfp
     enabled: false
     collector: apa
@@ -302,3 +562,232 @@ sources:
       - plos.org
       - www.plos.org
     max_pages: 20
+  - key: fujipress-jrm
+    enabled: true
+    collector: html_listing
+    listing_kind: fujipress
+    publisher: Fuji Technology Press
+    journal: Journal of Robotics and Mechatronics
+    collection_type: special_issue
+    url: "https://www.fujipress.jp/jrm/rb-cfp/"
+    allowed_hosts:
+      - www.fujipress.jp
+      - fujipress.jp
+  - key: vrsj-special
+    enabled: true
+    collector: html_listing
+    listing_kind: vrsj
+    publisher: VRSJ
+    journal: 日本バーチャルリアリティ学会論文誌
+    collection_type: special_issue
+    url: "https://vrsj.org/transaction/special_issue/"
+    allowed_hosts:
+      - vrsj.org
+      - www.vrsj.org
+  - key: ipsj-cfp
+    enabled: true
+    collector: html_listing
+    listing_kind: ipsj
+    publisher: IPSJ
+    journal: 情報処理学会論文誌
+    collection_type: special_issue
+    url: "https://www.ipsj.or.jp/journal/cfp/cfp_list.html"
+    allowed_hosts:
+      - www.ipsj.or.jp
+      - ipsj.or.jp
+  - key: jske-cfp
+    enabled: true
+    collector: html_listing
+    listing_kind: jske
+    publisher: JSKE
+    journal: International Journal of Affective Engineering
+    collection_type: special_issue
+    url: "https://www.jske.org/"
+    allowed_hosts:
+      - www.jske.org
+      - jske.org
+  - key: aps-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: aps
+    publisher: American Physiological Society
+    journal: Journal of Neurophysiology
+    collection_type: special_issue
+    url: "https://journals.physiology.org/calls"
+    require_watched_journal: true
+    allowed_hosts:
+      - journals.physiology.org
+      - physiology.org
+    disabled_reason: "APS listing may be a bot wall from Actions GET. The listing-ingest workflow tries the calls page in headed Chrome."
+    gha_fetch: true
+  - key: science-robotics-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: science_robotics
+    publisher: AAAS
+    journal: Science Robotics
+    collection_type: special_issue
+    url: "https://www.science.org/content/page/calls-papers"
+    allowed_hosts:
+      - www.science.org
+      - science.org
+    disabled_reason: "science.org is behind Cloudflare. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: tandf-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: tandf
+    publisher: Taylor & Francis
+    journal: Taylor & Francis
+    collection_type: special_issue
+    url: "https://authorservices.taylorandfrancis.com/call-for-papers/"
+    require_watched_journal: true
+    allowed_hosts:
+      - authorservices.taylorandfrancis.com
+      - www.tandfonline.com
+      - tandfonline.com
+      - think.taylorandfrancis.com
+    disabled_reason: "Author Services CFP search is JS-rendered. listing-ingest tries headed Chrome. Keep watched journals only."
+    gha_fetch: true
+  - key: sage-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: sage
+    publisher: SAGE
+    journal: SAGE
+    collection_type: special_issue
+    url: "https://journals.sagepub.com/special-issue-calls-for-papers"
+    require_watched_journal: true
+    allowed_hosts:
+      - journals.sagepub.com
+      - sagepub.com
+    disabled_reason: "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
+    gha_fetch: true
+  - key: pnas-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: pnas
+    publisher: NAS
+    journal: PNAS
+    collection_type: collection
+    url: "https://www.pnas.org/author-center/call-for-papers"
+    allowed_hosts:
+      - www.pnas.org
+      - pnas.org
+    disabled_reason: "pnas.org is behind Cloudflare. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: pnas-nexus-cfp
+    enabled: false
+    collector: html_listing
+    listing_kind: pnas_nexus
+    publisher: OUP
+    journal: PNAS Nexus
+    collection_type: special_issue
+    url: "https://academic.oup.com/pnasnexus"
+    urls:
+      - "https://academic.oup.com/pnasnexus"
+      - "https://academic.oup.com/pnasnexus/pages/call-for-papers-in-machine-learning-and-geosciences"
+    allowed_hosts:
+      - academic.oup.com
+      - oup.com
+    disabled_reason: "academic.oup.com is behind Cloudflare. listing-ingest tries headed Chrome on the journal home and known CFP pages."
+    gha_fetch: true
+  - key: josa-a-features
+    enabled: false
+    collector: html_listing
+    listing_kind: josa
+    publisher: Optica
+    journal: Journal of the Optical Society of America A
+    collection_type: special_issue
+    url: "https://opg.optica.org/josaa/journal/josaa/feature.cfm"
+    allowed_hosts:
+      - opg.optica.org
+      - optica.org
+    disabled_reason: "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-bjp
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: British Journal of Psychology
+    collection_type: special_issue
+    url: "https://bpspsychub.onlinelibrary.wiley.com/hub/journal/20448295/homepage/call-for-papers"
+    allowed_hosts:
+      - bpspsychub.onlinelibrary.wiley.com
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-ethology
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: Ethology
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/14390310/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-developmental-science
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: Developmental Science
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/14677687/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-ejn
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: European Journal of Neuroscience
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/14609568/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-jpr
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: Japanese Psychological Research
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/14685884/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-hippocampus
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: Hippocampus
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/10981063/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+  - key: wiley-hbm
+    enabled: false
+    collector: html_listing
+    listing_kind: wiley
+    publisher: Wiley
+    journal: Human Brain Mapping
+    collection_type: special_issue
+    url: "https://onlinelibrary.wiley.com/page/journal/10970193/homepage/call-for-papers"
+    allowed_hosts:
+      - onlinelibrary.wiley.com
+    disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    gha_fetch: true
+

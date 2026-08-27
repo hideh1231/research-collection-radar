@@ -67,9 +67,6 @@ domains:
       - human-machine
 
 journal_rules:
-  - match: Scientific Reports
-    domains: [psychology]
-    when_source: nature-psychology
   - match: Communications Psychology
     domains: [psychology]
   - match: Frontiers in Psychology
@@ -102,12 +99,28 @@ journal_rules:
     domains: [hci]
   - match: Frontiers in Digital Health
     domains: [hci, psychology]
+  - match: Frontiers in Neuroergonomics
+    domains: [neuroscience, hci]
+  - match: Frontiers in Ethology
+    domains: [psychology]
+  - match: Frontiers in Ecology and Evolution
+    domains: [psychology]
+  - match: Frontiers in Veterinary Science
+    domains: [psychology]
   - match: BMC Psychology
     domains: [psychology]
   - match: BMC Psychiatry
     domains: [psychology]
   - match: Journal of NeuroEngineering and Rehabilitation
     domains: [neuroscience, robotics]
+  - match: Science Robotics
+    domains: [robotics, hri]
+  - match: Journal of Neurophysiology
+    domains: [neuroscience]
+  - match: PNAS Nexus
+    domains: [psychology, neuroscience]
+  - match: Journal of Robotics and Mechatronics
+    domains: [robotics]
   - match: Human–Computer Interaction
     domains: [hci]
   - match: International Journal of Social Robotics

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from radar.collectors.apa import ApaCollector, parse_listing as parse_apa
 from radar.collectors.frontiers import FrontiersCollector
+from radar.collectors.html_listing import HtmlListingCollector, parse_listing as parse_html_listing
 from radar.collectors.nature import NatureCollector
 from radar.collectors.plos import PlosCollector
 from radar.collectors.royal_society import RoyalSocietyCollector, parse_listing as parse_royal_society
@@ -18,12 +19,14 @@ REGISTRY = {
     "apa": ApaCollector(),
     "royal_society": RoyalSocietyCollector(),
     "plos": PlosCollector(),
+    "html_listing": HtmlListingCollector(),
 }
 
 LISTING_PARSERS = {
     "apa": parse_apa,
     "sciencedirect": parse_sciencedirect,
     "royal_society": parse_royal_society,
+    "html_listing": parse_html_listing,
 }
 
 

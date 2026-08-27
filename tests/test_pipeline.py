@@ -24,7 +24,7 @@ def test_offline_run_writes_migrated_contract_to_temp_root() -> None:
         (root / "data").mkdir()
         (root / "schema").mkdir()
         (root / "state").mkdir()
-        for relative in ("config/sources.yml", "config/domains.yml", "config/alerts.yml", "schema/collection.schema.json"):
+        for relative in ("config/sources.yml", "config/domains.yml", "config/alerts.yml", "config/journals.yml", "schema/collection.schema.json"):
             target = root / relative
             target.write_bytes((source_root / relative).read_bytes())
         (root / "data/collections.jsonl").write_text("", encoding="utf-8")
@@ -54,6 +54,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
             "config/sources.yml",
             "config/domains.yml",
             "config/alerts.yml",
+            "config/journals.yml",
             "schema/collection.schema.json",
         ):
             (root / relative).write_bytes((source_root / relative).read_bytes())
@@ -207,6 +208,7 @@ def test_only_preserves_other_source_status(monkeypatch) -> None:
             "config/sources.yml",
             "config/domains.yml",
             "config/alerts.yml",
+            "config/journals.yml",
             "schema/collection.schema.json",
         ):
             (root / relative).write_bytes((source_root / relative).read_bytes())
@@ -283,6 +285,7 @@ def _pipeline_root(source_root):
                 "config/sources.yml",
                 "config/domains.yml",
                 "config/alerts.yml",
+                "config/journals.yml",
                 "schema/collection.schema.json",
             ):
                 (root / relative).write_bytes((source_root / relative).read_bytes())

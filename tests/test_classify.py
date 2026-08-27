@@ -21,6 +21,22 @@ def test_source_rule_and_hri_keyword() -> None:
     assert "source_rule" in method
 
 
+def test_scientific_reports_is_not_forced_into_psychology() -> None:
+    cfg = load_domains(repo_root())
+    raw = RawRecord(
+        title="Catalytic oxidation of methane",
+        url="https://example.org/chem",
+        source_url="https://www.nature.com/srep/calls-for-papers",
+        publisher="Nature Portfolio",
+        journal="Scientific Reports",
+        collection_type="collection",
+        discovered_via="nature-psychology",
+    )
+    domains, _scores, _topics, method = classify(raw, cfg, "nature-psychology")
+    assert "psychology" not in domains
+    assert "source_rule" not in method
+
+
 def test_comms_psychology_and_neurorobotics_rules() -> None:
     cfg = load_domains(repo_root())
     comms = RawRecord(
