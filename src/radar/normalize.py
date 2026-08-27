@@ -12,6 +12,22 @@ from radar.models import DEADLINE_STATUSES, TOPICS_METHODS, RawRecord
 FRONTIERS_TOPIC_RE = re.compile(r"/research-topics/(\d+)(?:/|$)", re.I)
 NATURE_COLLECTION_RE = re.compile(r"/collections/([a-z0-9]+)", re.I)
 PLOS_CFP_RE = re.compile(r"/call-for-papers/([^/?#]+)", re.I)
+PLOS_JOURNALS = (
+    "PLOS Sustainability and Transformation",
+    "PLOS Neglected Tropical Diseases",
+    "PLOS Global Public Health",
+    "PLOS Computational Biology",
+    "PLOS Complex Systems",
+    "PLOS Digital Health",
+    "PLOS Mental Health",
+    "PLOS Genetics",
+    "PLOS Pathogens",
+    "PLOS Medicine",
+    "PLOS Biology",
+    "PLOS Climate",
+    "PLOS Water",
+    "PLOS ONE",
+)
 
 
 def unique_keep_order(values: list[str] | None) -> list[str]:
@@ -24,6 +40,19 @@ def unique_keep_order(values: list[str] | None) -> list[str]:
         seen.add(text)
         ordered.append(text)
     return ordered
+
+
+def canonical_plos_journals(values: list[str] | None, fallback: str = "PLOS") -> tuple[str, list[str]]:
+    blob = " ".join(unique_keep_order(list(values or []))).lower()
+    found: list[str] = []
+    for name in PLOS_JOURNALS:
+        needle = "plos one" if name == "PLOS ONE" else name.lower()
+        if needle in blob:
+            found.append(name)
+    journals = unique_keep_order(found)
+    if not journals:
+        return fallback, [fallback]
+    return journals[0], journals
 
 
 def publisher_id_from_url(url: str, publisher: str | None = None) -> str | None:
@@ -74,6 +103,13 @@ def migrate_record(row: dict[str, Any]) -> dict[str, Any]:
     migrated["metadata_checked_at"] = _as_utc_timestamp(migrated.get("metadata_checked_at"))
     journal = str(migrated.get("journal") or "").strip()
     migrated["journals"] = unique_keep_order(migrated.get("journals") or ([journal] if journal else []))
+    if migrated.get("publisher") == "PLOS" or migrated.get("discovered_via") == "plos-collections":
+        journal, journals = canonical_plos_journals(
+            [journal, *list(migrated.get("journals") or [])],
+            "PLOS",
+        )
+        migrated["journal"] = journal
+        migrated["journals"] = journals
     discovered = str(migrated.get("discovered_via") or "").strip()
     migrated["source_keys"] = unique_keep_order(migrated.get("source_keys") or ([discovered] if discovered else []))
     migrated["publisher_id"] = migrated.get("publisher_id") or publisher_id_from_url(
@@ -277,6 +313,13 @@ def merge_collection_rows(current: dict[str, Any], incoming: dict[str, Any]) -> 
         merged["deadline"] = current["deadline"]
         merged["deadline_status"] = current.get("deadline_status", "listed")
         merged["deadline_checked_at"] = current.get("deadline_checked_at")
+    if merged.get("publisher") == "PLOS" or merged.get("discovered_via") == "plos-collections":
+        journal, journals = canonical_plos_journals(
+            [merged.get("journal") or "", *list(merged.get("journals") or [])],
+            merged.get("journal") or "PLOS",
+        )
+        merged["journal"] = journal
+        merged["journals"] = journals
     merged["content_hash"] = content_hash(merged)
     if merged["content_hash"] == current.get("content_hash"):
         merged["last_changed"] = current.get("last_changed")

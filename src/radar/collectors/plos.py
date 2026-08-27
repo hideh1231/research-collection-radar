@@ -8,7 +8,7 @@ from typing import Any
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url, stable_id
 from radar.models import RawRecord, SourceResult
-from radar.normalize import parse_date, unique_keep_order
+from radar.normalize import parse_date, canonical_plos_journals
 
 API_DEFAULT = "https://collections.plos.org/wp-json/wp/v2/call_for_papers"
 DEADLINE_RE = re.compile(
@@ -19,22 +19,6 @@ DEADLINE_RE = re.compile(
 TAG_RE = re.compile(r"<[^>]+>")
 TRUNCATED_RE = re.compile(r"(?:\.\.\.|…)\s*$")
 NAV_RE = re.compile(r"more about collections|collections home|browse collections", re.I)
-PLOS_JOURNALS = (
-    "PLOS Sustainability and Transformation",
-    "PLOS Neglected Tropical Diseases",
-    "PLOS Global Public Health",
-    "PLOS Computational Biology",
-    "PLOS Complex Systems",
-    "PLOS Digital Health",
-    "PLOS Mental Health",
-    "PLOS Genetics",
-    "PLOS Pathogens",
-    "PLOS Medicine",
-    "PLOS Biology",
-    "PLOS Climate",
-    "PLOS Water",
-    "PLOS ONE",
-)
 
 
 def _plain(value: Any) -> str:
@@ -77,16 +61,7 @@ def parse_image(item: dict[str, Any], title: str) -> tuple[str | None, str | Non
 
 
 def parse_journals(text: str, fallback: str) -> tuple[str, list[str]]:
-    lowered = text.lower()
-    found: list[str] = []
-    for name in PLOS_JOURNALS:
-        needle = "plos one" if name == "PLOS ONE" else name.lower()
-        if needle in lowered:
-            found.append(name)
-    journals = unique_keep_order(found)
-    if not journals:
-        return fallback, [fallback]
-    return journals[0], journals
+    return canonical_plos_journals([text], fallback)
 
 
 def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRecord | None:
