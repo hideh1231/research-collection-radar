@@ -196,3 +196,94 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
 
         assert run(root, dry_run=True) == 0
         assert enrichment_calls == [set()]
+
+
+def test_only_preserves_other_source_status(monkeypatch) -> None:
+    source_root = repo_root()
+    with workspace_tempdir("pipeline-only-status") as root:
+        for directory in ("config", "data", "schema", "state"):
+            (root / directory).mkdir()
+        for relative in (
+            "config/sources.yml",
+            "config/domains.yml",
+            "config/alerts.yml",
+            "schema/collection.schema.json",
+        ):
+            (root / relative).write_bytes((source_root / relative).read_bytes())
+        (root / "data/collections.jsonl").write_text("", encoding="utf-8")
+        (root / "state/notification_ledger.jsonl").write_text("", encoding="utf-8")
+        (root / "data/source_status.json").write_text(
+            json.dumps(
+                {
+                    "checked_at": "2026-08-01T00:00:00Z",
+                    "sources": {
+                        "nature-psychology": {
+                            "enabled": True,
+                            "ok": True,
+                            "http_status": 200,
+                            "parsed": 55,
+                            "pages": 6,
+                            "error": None,
+                        }
+                    },
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+
+        called: list[str] = []
+
+        def fake_run_source(_fetcher, source):
+            called.append(source["key"])
+            return SourceResult(key=source["key"], ok=True, records=[], parsed_count=0, page_count=1)
+
+        class _ClosedFetcher:
+            def __init__(self, *_args, **_kwargs):
+                self.min_interval_seconds = 0
+
+            def close(self):
+                pass
+
+        monkeypatch.setattr("radar.pipeline.run_source", fake_run_source)
+        monkeypatch.setattr("radar.pipeline.Fetcher", _ClosedFetcher)
+        monkeypatch.setattr(
+            "radar.pipeline.enrich_deadlines",
+            lambda *_args, **_kwargs: {
+                "target_count": 0,
+                "checked": 0,
+                "listed": 0,
+                "with_deadline": 0,
+                "not_listed": 0,
+                "failed": 0,
+                "rate_limited": 0,
+                "parse_errors": 0,
+                "forbidden": 0,
+                "remaining": 0,
+            },
+        )
+
+        assert run(root, dry_run=True, only={"frontiers-psychology"}) == 0
+        assert called == ["frontiers-psychology"]
+        status = json.loads((root / "data/source_status.json").read_text(encoding="utf-8"))
+        assert status["sources"]["nature-psychology"]["parsed"] == 55
+        assert status["sources"]["frontiers-psychology"]["ok"] is True
+
+
+def test_cli_keeps_limit_and_only(monkeypatch) -> None:
+    from radar.pipeline import main
+
+    captured: dict[str, object] = {}
+
+    monkeypatch.setattr("radar.pipeline.run", lambda _root, **kwargs: captured.update(kwargs) or 0)
+    monkeypatch.setattr(
+        "radar.pipeline.run_topic_enrichment",
+        lambda _root, **kwargs: captured.update({"enrich_limit": kwargs.get("limit")}) or 0,
+    )
+
+    assert main(["--only", "frontiers-psychology", "--only", "frontiers-neurology"]) == 0
+    assert captured["only"] == {"frontiers-psychology", "frontiers-neurology"}
+
+    captured.clear()
+    assert main(["--enrich-topics", "--limit", "50"]) == 0
+    assert captured["enrich_limit"] == 50

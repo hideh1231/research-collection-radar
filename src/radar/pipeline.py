@@ -221,6 +221,7 @@ def run(
     dry_run: bool = False,
     offline: bool = False,
     backfill_deadlines: bool = False,
+    only: set[str] | None = None,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -241,6 +242,13 @@ def run(
         "checked_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": {},
     }
+    status_path = root / "data" / "source_status.json"
+    prior_source_status: dict[str, Any] = {}
+    if status_path.exists():
+        try:
+            prior_source_status = json.loads(status_path.read_text(encoding="utf-8")).get("sources") or {}
+        except (OSError, json.JSONDecodeError):
+            prior_source_status = {}
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
     failures = 0
@@ -266,6 +274,11 @@ def run(
                 source_status["sources"][source["key"]] = {"enabled": bool(source.get("enabled")), "skipped": "offline"}
         else:
             for source in sources_cfg.get("sources", []):
+                if only is not None and source["key"] not in only:
+                    source_status["sources"][source["key"]] = prior_source_status.get(
+                        source["key"], {"enabled": bool(source.get("enabled")), "skipped": "not-selected"}
+                    )
+                    continue
                 if not source.get("enabled"):
                     entry = {"enabled": False}
                     if source.get("disabled_reason"):
@@ -526,6 +539,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--enrich-topics", action="store_true")
     parser.add_argument("--build-site", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--only", action="append", default=None)
     args = parser.parse_args(argv)
     root = args.root or repo_root()
     if args.build_site:
@@ -537,6 +551,7 @@ def main(argv: list[str] | None = None) -> int:
         dry_run=args.dry_run,
         offline=args.offline,
         backfill_deadlines=args.backfill_deadlines,
+        only=set(args.only) if args.only else None,
     )
 
 

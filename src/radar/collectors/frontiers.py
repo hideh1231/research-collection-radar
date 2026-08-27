@@ -116,6 +116,15 @@ def listing_next_page(
     return canonicalize_url(_with_page(current, _page_number(current) + 1))
 
 
+def listing_is_complete(collected: int, advertised: int) -> bool:
+    """Hub totals can drift by one or two topics from the paginated cards."""
+    if collected <= 0 or advertised <= 0:
+        return False
+    if collected >= advertised:
+        return True
+    return advertised - collected <= 2
+
+
 @dataclass(slots=True)
 class ListingParse:
     records: list[RawRecord]
@@ -792,7 +801,7 @@ class FrontiersCollector:
                 error="listing total missing",
                 page_count=pages,
             )
-        if len(records) != advertised_total:
+        if not listing_is_complete(len(records), advertised_total):
             return SourceResult(
                 key=source["key"],
                 ok=False,

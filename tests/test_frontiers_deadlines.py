@@ -8,6 +8,7 @@ pytest.importorskip("bs4")
 from radar.collectors.frontiers import (
     FrontiersCollector,
     enrich_deadlines,
+    listing_is_complete,
     next_page_url,
     page_matches_record,
     parse_detail,
@@ -58,6 +59,14 @@ def test_next_page_requires_immediate_next_number() -> None:
     current = SOURCE["url"]
     assert next_page_url('<a href="?page=2">2</a>', current, ["frontiersin.org"]).endswith("page=2")
     assert next_page_url('<a href="?page=3">3</a>', current, ["frontiersin.org"]) is None
+
+
+def test_listing_complete_allows_two_topic_hub_drift() -> None:
+    assert listing_is_complete(3311, 3312) is True
+    assert listing_is_complete(2159, 2161) is True
+    assert listing_is_complete(2158, 2161) is False
+    assert listing_is_complete(50, 50) is True
+    assert listing_is_complete(0, 10) is False
 
 
 def test_page_identity_accepts_canonical_and_open_graph_metadata() -> None:
