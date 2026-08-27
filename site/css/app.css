@@ -185,7 +185,8 @@ html, body {
 
 .check-list {
   max-height: 12rem;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 4px 0;
@@ -200,12 +201,14 @@ html, body {
   align-items: center;
   padding: 5px 8px;
   font-size: 0.85rem;
+  min-width: 0;
 }
 
 .check-label {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
 }
 
 .check-count {
