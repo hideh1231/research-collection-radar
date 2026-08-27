@@ -66,3 +66,19 @@ def test_viewer_json_rejects_wide_topic_labels() -> None:
     for row in payload:
         assert len(row["topics"]) <= 8
         assert all(len(topic) <= 40 and ";" not in topic for topic in row["topics"])
+
+
+def test_viewer_html_has_favicon_and_share_card() -> None:
+    from radar.config import repo_root
+
+    root = repo_root()
+    html = (root / "site/index.html").read_text(encoding="utf-8")
+    site = "https://hideh1231.github.io/research-collection-radar/"
+    assert 'rel="icon" href="favicon.svg"' in html
+    assert 'rel="apple-touch-icon"' in html
+    assert f'property="og:url" content="{site}"' in html
+    assert f'property="og:image" content="{site}og.png"' in html
+    assert 'name="twitter:card" content="summary_large_image"' in html
+    for name in ("favicon.ico", "favicon.svg", "favicon-32.png", "apple-touch-icon.png", "og.png"):
+        path = root / "site" / name
+        assert path.exists() and path.stat().st_size > 0
