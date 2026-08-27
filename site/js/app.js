@@ -5,11 +5,13 @@ import {
   countedValues,
   daysUntil,
   emptyState,
+  facetCounts,
   filterRecords,
   foldTopicCasing,
   hasActiveFilters,
   paginate,
   parseState,
+  recordsWithoutFacet,
   sanitizeRecord,
   serializeState,
   sortRecords,
@@ -149,7 +151,11 @@ function isAllSelected(selected) {
 }
 
 function facetWithout(name) {
-  return filterRecords(records, { ...state, [name]: [] }).length;
+  return recordsWithoutFacet(records, state, name).length;
+}
+
+function journalValues(row) {
+  return [...new Set([row.journal, ...(row.journals || [])].filter(Boolean))];
 }
 
 function toggleValue(list, value) {
@@ -211,7 +217,7 @@ function visibleList(all, selected, query, limit) {
     }
   }
   for (const item of matching) {
-    if (picked.length >= limit) break;
+    if (limit != null && picked.length >= limit) break;
     if (seen.has(item.value)) continue;
     picked.push(item);
     seen.add(item.value);
@@ -235,13 +241,13 @@ function activeFilterChips() {
   return chips.join("");
 }
 
-function renderFacets(filtered) {
-  const domainCounts = countedValues(filtered, (row) => row.domains || []);
-  const typeCounts = countedValues(records, (row) => [row.collection_type]);
-  const deadlineCounts = countedValues(filtered, (row) => [row.deadline_status]);
-  const journalCounts = countedValues(filtered, (row) => [row.journal, ...(row.journals || [])]);
-  const topicCounts = countedValues(filtered, (row) => row.topics || []);
-  const allJournals = countedValues(records, (row) => [row.journal, ...(row.journals || [])]);
+function renderFacets() {
+  const domainCounts = facetCounts(records, state, "domains", (row) => row.domains || []);
+  const typeCounts = facetCounts(records, state, "types", (row) => [row.collection_type]);
+  const deadlineCounts = facetCounts(records, state, "deadlines", (row) => [row.deadline_status]);
+  const journalCounts = facetCounts(records, state, "journals", journalValues);
+  const topicCounts = facetCounts(records, state, "topics", (row) => row.topics || []);
+  const allJournals = countedValues(records, journalValues);
   const allTopics = countedValues(records, (row) => row.topics || []);
   const journalByValue = new Map(journalCounts.map((item) => [item.value, item.count]));
   const topicByValue = new Map(topicCounts.map((item) => [item.value, item.count]));
@@ -269,7 +275,6 @@ function renderFacets(filtered) {
     allJournals.map((item) => ({ value: item.value, count: journalByValue.get(item.value) || 0 })),
     state.journals,
     $("#journal-query").value,
-    67,
   );
   const topics = visibleList(
     allTopics.map((item) => ({ value: item.value, count: topicByValue.get(item.value) || 0 })),
@@ -302,7 +307,7 @@ function render() {
   $("#layout-table").setAttribute("aria-pressed", layout === "table" ? "true" : "false");
   active.hidden = !hasActiveFilters(state);
   active.innerHTML = activeFilterChips();
-  renderFacets(filtered);
+  renderFacets();
   if (page.items.length === 0) {
     results.innerHTML = "";
     empty.hidden = false;
@@ -371,8 +376,8 @@ function bind() {
     state = { ...state, to: $("#deadline-to").value };
     applyState();
   });
-  $("#journal-query").addEventListener("input", () => renderFacets(filterRecords(records, state)));
-  $("#topic-query").addEventListener("input", () => renderFacets(filterRecords(records, state)));
+  $("#journal-query").addEventListener("input", () => renderFacets());
+  $("#topic-query").addEventListener("input", () => renderFacets());
   $("#domain-filter").addEventListener("click", (event) => {
     const button = event.target.closest("button[data-value]");
     if (!button) return;

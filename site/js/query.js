@@ -110,6 +110,14 @@ export function filterRecords(records, state) {
   });
 }
 
+export function recordsWithoutFacet(records, state, facetName) {
+  return filterRecords(records, { ...state, [facetName]: [] });
+}
+
+export function facetCounts(records, state, facetName, valuesForRow) {
+  return countedValues(recordsWithoutFacet(records, state, facetName), valuesForRow);
+}
+
 export function sortRecords(records, sort, today) {
   const copy = records.slice();
   if (sort === "title") {
