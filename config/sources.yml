@@ -216,6 +216,7 @@ sources:
     collection_type: special_issue
     url: "https://www.sciencedirect.com/browse/calls-for-papers"
     require_domains: true
+    scope_pattern: "psycholog|psychiatr|neuroscien|neuropsych|neuroimaging|\\bbrain\\b|robot|human-computer|human–computer|human-robot|cognition|\\bhci\\b|\\bhri\\b"
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com

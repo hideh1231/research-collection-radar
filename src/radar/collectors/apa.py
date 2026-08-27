@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup, Tag
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import parse_date
+from radar.normalize import listing_status, parse_date
 
 GENERAL_RE = re.compile(
     r"general call for papers|call-for-papers-general|special issue proposals|"
@@ -75,6 +75,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             collection_type = (
                 "special_section" if "special section" in title.lower() else "special_issue"
             )
+            deadline = _deadline(blob)
             found[url] = RawRecord(
                 title=title,
                 url=url,
@@ -83,7 +84,8 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
                 journal=journal,
                 collection_type=collection_type,
                 discovered_via=source["key"],
-                deadline=_deadline(blob),
+                deadline=deadline,
+                status=listing_status(deadline),
                 submission_mode="open_call",
                 extraction_method="listing",
             )

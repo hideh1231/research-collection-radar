@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup, Tag
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import parse_date
+from radar.normalize import listing_status, parse_date
 
 SPECIAL_HREF = re.compile(r"/special-issue/(\d+)", re.I)
 DEADLINE_RE = re.compile(
@@ -31,7 +31,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
     hosts = source.get("allowed_hosts", [])
     fallback = source.get("journal") or "ScienceDirect"
     found: dict[str, RawRecord] = {}
-    cards = soup.select("li.publication, li.js-publication")
+    cards = soup.select("li.publication") or soup.select("li.js-publication")
     nodes = cards or soup.find_all("a", href=True)
     for node in nodes:
         if node.name == "a":
@@ -69,6 +69,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             submission_mode="open_call",
             publisher_id=match.group(1),
             extraction_method="listing",
+            status=listing_status(deadline),
         )
     return list(found.values())
 

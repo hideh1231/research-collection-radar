@@ -16,7 +16,7 @@ Chosen option: 公式一覧のレンダリング済み HTML を parse し、`pyt
 Coverage probe（2026-08-27）:
 
 * APA `calls-for-papers` は Incapsula。Wayback の 2025-10-18 スナップショットでは、雑誌モジュールごとにユニークな CFP URL と manuscript deadline がある。**pass**
-* ScienceDirect browse は 403。Wayback の 2025-09-12 スナップショットでは `li.publication` と埋め込み JSON に title / journal / `/special-issue/{id}` / ISO deadline が約 2,470 件ある。**fields pass**。対象分野以外は `require_domains` で落とす。
+* ScienceDirect browse は GitHub Actions / この VM の GET では 403。2026-08-27 の通常ブラウザセッションでは一覧が開き、レンダリング済み DOM に 2,884 件の `/special-issue/` カード（title / journal / deadline）があった。**fields pass**。対象分野以外は `scope_pattern` と `require_domains` で落とす。Wayback の古いキャプチャは正本にしない。
 * `royalsociety.org` のテーマページはこの環境から 200 で本文が返った。Call for papers 見出し配下に title とリンクがある。締切は無い。Find out more が複数 CFP で同一 URL のことがある。**pass with not_checked deadline and title-based publisher_id**
 * `royalsocietypublishing.org` は Cloudflare。使わない。
 

@@ -150,6 +150,12 @@ def migrate_records(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [migrate_record(row) for row in rows]
 
 
+def listing_status(deadline: date | None, today: date | None = None) -> str:
+    if deadline is None:
+        return "open"
+    return "closed" if deadline < (today or date.today()) else "open"
+
+
 def parse_date(value: str | None) -> date | None:
     if not value:
         return None

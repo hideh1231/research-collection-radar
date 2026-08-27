@@ -53,6 +53,8 @@ def test_apa_listing_uses_journal_modules_and_manuscript_deadline() -> None:
     assert trauma.url.endswith("/amp/intergenerational-trauma-community-strengths")
     novel = next(row for row in records if row.title.startswith("Call for papers: Novel technologies"))
     assert novel.deadline == date(2025, 8, 15)
+    assert novel.status == "closed"
+    assert trauma.status == "closed"
     assert novel.journal.startswith("Experimental and Clinical Psychopharmacology")
     assert len(records) == 6
 
@@ -68,6 +70,9 @@ def test_sciencedirect_listing_uses_publication_cards() -> None:
     robots = next(row for row in records if "Soft Robotics" in row.title)
     assert robots.journal == "Biomimetic Intelligence and Robotics"
     assert robots.deadline == date(2026, 12, 31)
+    assert robots.status == "open"
+    chemistry = next(row for row in records if row.title == "Atmospheric Chemistry in China")
+    assert chemistry.status == "closed"
     assert robots.publisher_id == "325000"
     assert robots.url.endswith("/special-issue/325000/learning-based-control-for-soft-robotics")
     assert all("My account" not in row.title for row in records)
@@ -144,3 +149,61 @@ def test_ingest_html_merges_listing_without_fetch() -> None:
         assert status["sources"]["apa-cfp"]["ok"] is True
         assert status["sources"]["sciencedirect-cfp"]["dropped_unclassified"] == 1
         assert status["sources"]["royal-society-themes"]["parsed"] == 2
+
+
+def test_ingest_html_open_only_skips_closed_and_keeps_other_source_status() -> None:
+    source_root = repo_root()
+    with workspace_tempdir("ingest-html-open-only") as root:
+        for directory in ("config", "data", "schema", "state"):
+            (root / directory).mkdir()
+        for relative in (
+            "config/sources.yml",
+            "config/domains.yml",
+            "config/alerts.yml",
+            "schema/collection.schema.json",
+        ):
+            (root / relative).write_bytes((source_root / relative).read_bytes())
+        (root / "data/collections.jsonl").write_text("", encoding="utf-8")
+        (root / "state/notification_ledger.jsonl").write_text("", encoding="utf-8")
+        prior_status = {
+            "checked_at": "2026-08-01T00:00:00Z",
+            "frontiers_detail": {"publisher": "Frontiers", "deadline_enrichment": {"checked": 7}},
+            "sources": {
+                "nature-psychology": {
+                    "enabled": True,
+                    "ok": True,
+                    "http_status": 200,
+                    "parsed": 55,
+                    "pages": 6,
+                    "error": None,
+                }
+            },
+        }
+        (root / "data/source_status.json").write_text(json.dumps(prior_status), encoding="utf-8")
+        assert (
+            run(
+                root,
+                dry_run=True,
+                open_only=True,
+                ingest_html={
+                    "sciencedirect-cfp": source_root / "tests/fixtures/sciencedirect_cfp.html",
+                },
+            )
+            == 0
+        )
+        rows = [
+            json.loads(line)
+            for line in (root / "data/collections.jsonl").read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        titles = {row["title"] for row in rows}
+        assert any("Soft Robotics" in title for title in titles)
+        assert not any("neuroscientists" in title for title in titles)
+        assert "Atmospheric Chemistry in China" not in titles
+        assert all(row["status"] == "open" for row in rows)
+        status = json.loads((root / "data/source_status.json").read_text(encoding="utf-8"))
+        assert status["sources"]["nature-psychology"]["parsed"] == 55
+        assert status["frontiers_detail"]["deadline_enrichment"]["checked"] == 7
+        assert status["sources"]["sciencedirect-cfp"]["ok"] is True
+        assert status["sources"]["sciencedirect-cfp"]["dropped_unclassified"] == 1
+        assert status["sources"]["sciencedirect-cfp"]["skipped_closed"] == 1

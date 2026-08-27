@@ -6,6 +6,7 @@ from datetime import UTC, date, datetime
 import json
 import os
 from pathlib import Path
+import re
 import signal
 import subprocess
 import sys
@@ -224,6 +225,7 @@ def run(
     backfill_deadlines: bool = False,
     only: set[str] | None = None,
     ingest_html: dict[str, Path] | None = None,
+    open_only: bool = False,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -245,11 +247,14 @@ def run(
         "sources": {},
     }
     status_path = root / "data" / "source_status.json"
+    prior_status_doc: dict[str, Any] = {}
     prior_source_status: dict[str, Any] = {}
     if status_path.exists():
         try:
-            prior_source_status = json.loads(status_path.read_text(encoding="utf-8")).get("sources") or {}
+            prior_status_doc = json.loads(status_path.read_text(encoding="utf-8"))
+            prior_source_status = prior_status_doc.get("sources") or {}
         except (OSError, json.JSONDecodeError):
+            prior_status_doc = {}
             prior_source_status = {}
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
@@ -261,7 +266,13 @@ def run(
 
     def absorb(source: dict[str, Any], result: Any, entry: dict[str, Any]) -> None:
         dropped = 0
+        skipped_closed = 0
+        scope = source.get("scope_pattern")
         for raw in result.records:
+            blob = f"{raw.title} {raw.journal}"
+            if scope and not re.search(str(scope), blob, re.I):
+                dropped += 1
+                continue
             _assign_raw_id(raw, publisher_ids)
             domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
             if source.get("require_domains") and not domains:
@@ -281,12 +292,18 @@ def run(
                 entry.setdefault("invalid_records", []).append({"id": row.get("id"), "error": errors[0]})
                 log(f"skip invalid {row.get('id')}: {errors[0]}")
                 continue
+            if open_only and row.get("status") != "open":
+                skipped_closed += 1
+                continue
             incoming.append(row)
             if source.get("collector") == "frontiers" and row["id"] not in prior_ids:
                 incoming_frontiers_ids.add(row["id"])
         if dropped:
             entry["dropped_unclassified"] = dropped
             log(f"{source['key']}: dropped {dropped} records with no in-scope domain")
+        if skipped_closed:
+            entry["skipped_closed"] = skipped_closed
+            log(f"{source['key']}: skipped {skipped_closed} closed records")
 
     # The regular run discovers list pages. Backfill only visits detail pages.
     fetcher = Fetcher(
@@ -302,13 +319,19 @@ def run(
                 }
         elif ingest_html:
             log("ingest listing HTML; skip network collectors")
+            for extra_key in ("frontiers_detail", "topic_enrichment"):
+                if extra_key in prior_status_doc:
+                    source_status[extra_key] = prior_status_doc[extra_key]
             for source in sources_cfg.get("sources", []):
                 path = ingest_html.get(source["key"])
                 if path is None:
-                    source_status["sources"][source["key"]] = {
-                        "enabled": bool(source.get("enabled")),
-                        "skipped": "not-ingested",
-                    }
+                    source_status["sources"][source["key"]] = prior_source_status.get(
+                        source["key"],
+                        {
+                            "enabled": bool(source.get("enabled")),
+                            "skipped": "not-ingested",
+                        },
+                    )
                     continue
                 html = path.read_text(encoding="utf-8")
                 try:
@@ -399,7 +422,9 @@ def run(
         source_status["sources"].get(source["key"], {}).get("ok")
         for source in _frontiers_sources(sources_cfg)
     )
-    if frontiers and not offline and (backfill_deadlines or frontiers_ok):
+    if ingest_html:
+        enrichment = None
+    elif frontiers and not offline and (backfill_deadlines or frontiers_ok):
         source_entry = source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})
         enrichment_cfg = frontiers.get("deadline_enrichment") or {}
         detail_fetcher = Fetcher(
@@ -597,6 +622,11 @@ def main(argv: list[str] | None = None) -> int:
         metavar="KEY=PATH",
         help="Parse a saved listing HTML file for a source key instead of fetching",
     )
+    parser.add_argument(
+        "--open-only",
+        action="store_true",
+        help="Keep only records whose status is open (useful with --ingest-html)",
+    )
     args = parser.parse_args(argv)
     root = args.root or repo_root()
     if args.build_site:
@@ -618,6 +648,7 @@ def main(argv: list[str] | None = None) -> int:
         backfill_deadlines=args.backfill_deadlines,
         only=set(args.only) if args.only else None,
         ingest_html=ingest,
+        open_only=args.open_only,
     )
 
 
