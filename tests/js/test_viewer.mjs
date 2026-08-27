@@ -1,0 +1,103 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+
+import {
+  PAGE_SIZE,
+  emptyState,
+  filterRecords,
+  hasActiveFilters,
+  paginate,
+  parseState,
+  serializeState,
+  sortRecords,
+} from "../../site/js/query.js";
+
+function row(id, updates = {}) {
+  return {
+    id,
+    title: updates.title || `Title ${id}`,
+    summary: updates.summary || `Summary about ${id}`,
+    journal: updates.journal || "Frontiers in Psychology",
+    journals: updates.journals || [updates.journal || "Frontiers in Psychology"],
+    domains: updates.domains || ["psychology"],
+    topics: updates.topics || ["aging"],
+    collection_type: updates.collection_type || "research_topic",
+    deadline: updates.deadline === undefined ? "2027-01-02" : updates.deadline,
+    deadline_status: updates.deadline_status || (updates.deadline === null ? "not_listed" : "listed"),
+    first_seen: updates.first_seen || "2026-08-01",
+    status: "open",
+  };
+}
+
+const catalog = [
+  row("a", { title: "Aging and AI", summary: "Wearables and well-being", topics: ["AI", "aging"], deadline: "2027-02-01" }),
+  row("b", { title: "Robot tutoring", journal: "Frontiers in Robotics and AI", domains: ["robotics", "hri"], topics: ["HRI"], deadline: "2026-09-01", collection_type: "collection" }),
+  row("c", { title: "Sleep studies", summary: "Circadian work", domains: ["neuroscience"], topics: ["sleep"], deadline: null, deadline_status: "not_listed", first_seen: "2026-08-26" }),
+  row("d", { title: "Later collection", deadline: "2028-01-01", first_seen: "2026-07-01", topics: ["AI"] }),
+];
+
+test("full-text search covers title summary journal domains and topics", () => {
+  const byTitle = filterRecords(catalog, { ...emptyState(), q: "robot tutoring" });
+  const bySummary = filterRecords(catalog, { ...emptyState(), q: "wearables" });
+  const byJournal = filterRecords(catalog, { ...emptyState(), q: "robotics and ai" });
+  const byDomain = filterRecords(catalog, { ...emptyState(), q: "hri" });
+  const byTopic = filterRecords(catalog, { ...emptyState(), q: "sleep" });
+  assert.deepEqual(byTitle.map((item) => item.id), ["b"]);
+  assert.deepEqual(bySummary.map((item) => item.id), ["a"]);
+  assert.deepEqual(byJournal.map((item) => item.id), ["b"]);
+  assert.deepEqual(byDomain.map((item) => item.id), ["b"]);
+  assert.deepEqual(byTopic.map((item) => item.id), ["c"]);
+});
+
+test("multiple filters combine across facets", () => {
+  const filtered = filterRecords(catalog, {
+    ...emptyState(),
+    domains: ["psychology"],
+    topics: ["AI"],
+    journals: ["Frontiers in Psychology"],
+    types: ["research_topic"],
+    deadlines: ["listed"],
+  });
+  assert.deepEqual(filtered.map((item) => item.id).sort(), ["a", "d"]);
+});
+
+test("sorts by deadline, newest, and title", () => {
+  const byDeadline = sortRecords(catalog, "deadline").map((item) => item.id);
+  const byNewest = sortRecords(catalog, "newest").map((item) => item.id);
+  const byTitle = sortRecords(catalog, "title").map((item) => item.id);
+  assert.deepEqual(byDeadline, ["b", "a", "d", "c"]);
+  assert.equal(byNewest[0], "c");
+  assert.deepEqual(byTitle, ["Aging and AI", "Later collection", "Robot tutoring", "Sleep studies"].map((title) => catalog.find((item) => item.title === title).id));
+});
+
+test("url state round-trips search and filters", () => {
+  const original = {
+    q: "aging",
+    domains: ["hci", "psychology"],
+    topics: ["AI"],
+    journals: ["Frontiers in Psychology"],
+    types: ["research_topic"],
+    deadlines: ["listed"],
+    sort: "title",
+  };
+  const encoded = serializeState(original);
+  const restored = parseState(encoded);
+  assert.equal(restored.q, "aging");
+  assert.deepEqual(restored.domains, ["hci", "psychology"]);
+  assert.deepEqual(restored.topics, ["AI"]);
+  assert.deepEqual(restored.journals, ["Frontiers in Psychology"]);
+  assert.deepEqual(restored.types, ["research_topic"]);
+  assert.deepEqual(restored.deadlines, ["listed"]);
+  assert.equal(restored.sort, "title");
+  assert.equal(hasActiveFilters(restored), true);
+});
+
+test("loads 48 more records at a time", () => {
+  const many = Array.from({ length: 100 }, (_, index) => row(String(index)));
+  const first = paginate(many, PAGE_SIZE);
+  assert.equal(first.items.length, 48);
+  assert.equal(first.remaining, 52);
+  const second = paginate(many, PAGE_SIZE * 2);
+  assert.equal(second.items.length, 96);
+  assert.equal(second.remaining, 4);
+});

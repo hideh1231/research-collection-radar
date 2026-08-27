@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research collection index</title>
+    <meta name="description" content="Search open journal collections, research topics, and special issues by field, keyword, and deadline.">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <a class="skip" href="#results">Skip to results</a>
+    <main class="page">
+      <header class="masthead">
+        <h1>Find the next collection to submit to</h1>
+        <p class="lede">Open calls from public publisher listings. Search by title, summary, journal, field, and topic. <code>OPEN.md</code> remains the dated-deadline list.</p>
+      </header>
+      <form class="controls" role="search" onsubmit="return false">
+        <div class="search-row">
+          <label for="search">Search
+            <input id="search" name="q" type="search" placeholder="Title, summary, journal, field, topic" autocomplete="off">
+          </label>
+          <label for="sort">Sort
+            <select id="sort" name="sort">
+              <option value="deadline">Deadline</option>
+              <option value="newest">Newest</option>
+              <option value="title">Title</option>
+            </select>
+          </label>
+        </div>
+        <div class="filter-row">
+          <label for="domain-filter">Fields
+            <select id="domain-filter" name="domain" multiple></select>
+          </label>
+          <label for="topic-filter">Topics
+            <select id="topic-filter" name="topic" multiple></select>
+          </label>
+          <label for="journal-filter">Journal
+            <select id="journal-filter" name="journal" multiple></select>
+          </label>
+          <label for="type-filter">Type
+            <select id="type-filter" name="type" multiple></select>
+          </label>
+          <label for="deadline-filter">Deadline
+            <select id="deadline-filter" name="deadline" multiple></select>
+          </label>
+        </div>
+        <div class="toolbar">
+          <p id="count" class="count">0 open calls</p>
+          <div>
+            <button id="layout-cards" type="button" class="secondary" aria-pressed="true">Cards</button>
+            <button id="layout-table" type="button" class="secondary" aria-pressed="false">Table</button>
+            <button id="clear" type="button" class="secondary" hidden>Clear filters</button>
+          </div>
+        </div>
+      </form>
+      <p id="empty" class="empty" hidden>No open calls match these filters. Clear the search or remove a facet to see more.</p>
+      <section id="results" aria-live="polite"></section>
+      <div class="more">
+        <button id="more" type="button" hidden>Show 48 more</button>
+      </div>
+    </main>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
