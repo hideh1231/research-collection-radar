@@ -523,8 +523,7 @@ def _deadline_queue(
         selected = [
             row
             for row in candidates
-            if row.get("deadline_status") in {"not_checked", "not_listed"}
-            or not row.get("metadata_checked_at")
+            if row.get("deadline_status") == "not_checked" or not row.get("metadata_checked_at")
         ]
         selected.sort(key=lambda row: (row.get("first_seen", ""), row.get("id", "")))
         return selected
@@ -535,6 +534,13 @@ def _deadline_queue(
         row
         for row in candidates
         if not row.get("metadata_checked_at") and row not in new and row not in unconfirmed
+    ]
+    parser_stale = [
+        row
+        for row in candidates
+        if row.get("deadline_status") == "not_listed"
+        and row not in new
+        and (_checked_at(row) is None or _checked_at(row) < NOT_LISTED_PARSER_CUTOFF)
     ]
     listed = [
         row
@@ -548,7 +554,7 @@ def _deadline_queue(
     ]
     ordered: list[dict[str, Any]] = []
     seen: set[str] = set()
-    for group in (new, unconfirmed, missing_metadata, listed, not_listed):
+    for group in (new, parser_stale, unconfirmed, missing_metadata, listed, not_listed):
         for row in sorted(group, key=lambda item: (item.get("first_seen", ""), item.get("id", ""))):
             if row.get("id") not in seen:
                 ordered.append(row)
@@ -564,7 +570,7 @@ def select_deadline_targets(
     now: datetime | None = None,
     backfill: bool = False,
 ) -> list[dict[str, Any]]:
-    """Select merged rows in new, unconfirmed, metadata, and stale-state order."""
+    """Select merged rows in new, stale not_listed, unconfirmed, metadata, and due-state order."""
     ordered = _deadline_queue(rows, source, incoming_ids=incoming_ids, now=now, backfill=backfill)
     if backfill:
         return ordered

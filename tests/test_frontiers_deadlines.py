@@ -87,10 +87,12 @@ def test_page_identity_rejects_anchor_only_related_page() -> None:
 def test_selection_prioritizes_new_then_state_and_budget() -> None:
     old = (datetime.now(UTC) - timedelta(days=8)).strftime("%Y-%m-%dT%H:%M:%SZ")
     rows = [_row(1, "listed", old), _row(2, "not_listed", old), _row(3), _row(4, "listed", old)]
+    for row in rows:
+        row["metadata_checked_at"] = old
     selected = select_deadline_targets(rows, SOURCE, incoming_ids={"frontiers-psychology-4"})
     assert [row["id"] for row in selected] == [
         "frontiers-psychology-4",
-        "frontiers-psychology-3",
+        "frontiers-psychology-2",
     ]
 
 
@@ -357,9 +359,11 @@ def test_detail_prefers_extension_alert_over_original_deadline() -> None:
 def test_not_listed_before_extension_parser_cutoff_is_due() -> None:
     recent = "2026-08-27T06:13:53Z"
     later = "2026-08-29T00:00:00Z"
-    now = datetime(2026, 8, 27, 12, 0, tzinfo=UTC)
+    now = datetime(2026, 8, 29, 12, 0, tzinfo=UTC)
     due = _row(77470, "not_listed", recent)
     skipped = _row(2, "not_listed", later)
+    due["metadata_checked_at"] = recent
+    skipped["metadata_checked_at"] = later
     selected = select_deadline_targets(
         [due, skipped],
         _enrichment_source(2),
