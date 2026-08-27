@@ -215,10 +215,11 @@ sources:
     journal: ScienceDirect
     collection_type: special_issue
     url: "https://www.sciencedirect.com/browse/calls-for-papers"
+    require_domains: true
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
-    disabled_reason: "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
+    disabled_reason: "GitHub Actions GET returns 403; ingest a rendered browse listing with python -m radar --ingest-html sciencedirect-cfp=listing.html. Do not crawl special-issue detail pages."
   - key: springer-bmc-psychology
     enabled: true
     collector: springer
@@ -259,7 +260,7 @@ sources:
     allowed_hosts:
       - www.apa.org
       - apa.org
-    disabled_reason: "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
+    disabled_reason: "GitHub Actions GET returns Incapsula; ingest the official listing HTML with python -m radar --ingest-html apa-cfp=listing.html. Detail pages are not required."
   - key: royal-society-rsos
     enabled: false
     collector: royal_society
@@ -270,7 +271,21 @@ sources:
     allowed_hosts:
       - royalsocietypublishing.org
       - royalsociety.org
-    disabled_reason: "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
+    disabled_reason: "Publishing platform returns Cloudflare 403. Use royal-society-themes on royalsociety.org instead."
+  - key: royal-society-themes
+    enabled: false
+    collector: royal_society
+    publisher: The Royal Society
+    journal: Royal Society
+    collection_type: special_collection
+    url: "https://royalsociety.org/journals/publishing-activities/journal-article-collections/ai/"
+    urls:
+      - "https://royalsociety.org/journals/publishing-activities/journal-article-collections/ai/"
+      - "https://royalsociety.org/journals/publishing-activities/journal-article-collections/cell-mol-bio/"
+    allowed_hosts:
+      - royalsociety.org
+      - royalsocietypublishing.org
+    disabled_reason: "Listing is parseable from royalsociety.org theme pages. Keep disabled in GitHub Actions until a scheduled run returns 200 without a WAF page; ingest saved HTML with --ingest-html royal-society-themes=page.html."
   - key: plos-collections
     enabled: true
     collector: plos

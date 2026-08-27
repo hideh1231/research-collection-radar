@@ -16,7 +16,7 @@ from typing import Any, Iterator
 from radar.alerts import digest_text, ledger_entries, ledger_keys, new_alert_key, new_records
 from radar.classify import classify
 from radar.collectors.frontiers import enrich_deadlines
-from radar.collectors.registry import run_source
+from radar.collectors.registry import parse_listing_html, run_source
 from radar.config import (
     collection_type_labels,
     domain_labels,
@@ -27,6 +27,7 @@ from radar.config import (
 )
 from radar.http import Fetcher
 from radar.ids import stable_id
+from radar.models import SourceResult
 from radar.normalize import merge_collection_rows, to_record
 from radar.slack import credentials, post_message
 from radar.store import (
@@ -222,6 +223,7 @@ def run(
     offline: bool = False,
     backfill_deadlines: bool = False,
     only: set[str] | None = None,
+    ingest_html: dict[str, Path] | None = None,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -255,6 +257,36 @@ def run(
     stop_event = Event()
     frontiers = _frontiers_enrichment_source(sources_cfg)
     publisher_ids = _publisher_id_index(prior_rows)
+    ingest_html = ingest_html or {}
+
+    def absorb(source: dict[str, Any], result: Any, entry: dict[str, Any]) -> None:
+        dropped = 0
+        for raw in result.records:
+            _assign_raw_id(raw, publisher_ids)
+            domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
+            if source.get("require_domains") and not domains:
+                dropped += 1
+                continue
+            row = to_record(
+                raw,
+                today=today,
+                domains=domains,
+                domain_scores=scores,
+                topics=topics,
+                classification_method=method,
+                prior=prior,
+            )
+            errors = validate_record(row, schema)
+            if errors:
+                entry.setdefault("invalid_records", []).append({"id": row.get("id"), "error": errors[0]})
+                log(f"skip invalid {row.get('id')}: {errors[0]}")
+                continue
+            incoming.append(row)
+            if source.get("collector") == "frontiers" and row["id"] not in prior_ids:
+                incoming_frontiers_ids.add(row["id"])
+        if dropped:
+            entry["dropped_unclassified"] = dropped
+            log(f"{source['key']}: dropped {dropped} records with no in-scope domain")
 
     # The regular run discovers list pages. Backfill only visits detail pages.
     fetcher = Fetcher(
@@ -268,6 +300,43 @@ def run(
                     "enabled": bool(source.get("enabled")),
                     "skipped": "backfill-deadlines",
                 }
+        elif ingest_html:
+            log("ingest listing HTML; skip network collectors")
+            for source in sources_cfg.get("sources", []):
+                path = ingest_html.get(source["key"])
+                if path is None:
+                    source_status["sources"][source["key"]] = {
+                        "enabled": bool(source.get("enabled")),
+                        "skipped": "not-ingested",
+                    }
+                    continue
+                html = path.read_text(encoding="utf-8")
+                try:
+                    records = parse_listing_html(source, html)
+                except KeyError:
+                    source_status["sources"][source["key"]] = {
+                        "enabled": bool(source.get("enabled")),
+                        "ok": False,
+                        "error": f"no listing parser for {source.get('collector')}",
+                    }
+                    failures += 1
+                    continue
+                result = SourceResult(
+                    key=source["key"],
+                    ok=bool(records),
+                    records=records,
+                    parsed_count=len(records),
+                    page_count=1,
+                    error=None if records else "zero records",
+                )
+                entry = _source_status_entry(result)
+                entry["ingest"] = str(path)
+                source_status["sources"][source["key"]] = entry
+                log(f"{source['key']}: ingest ok={result.ok} parsed={result.parsed_count} file={path}")
+                if not result.ok:
+                    failures += 1
+                    continue
+                absorb(source, result, entry)
         elif offline:
             log("offline: skip network collectors")
             for source in sources_cfg.get("sources", []):
@@ -295,26 +364,7 @@ def run(
                 if not result.ok:
                     failures += 1
                     continue
-                for raw in result.records:
-                    _assign_raw_id(raw, publisher_ids)
-                    domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
-                    row = to_record(
-                        raw,
-                        today=today,
-                        domains=domains,
-                        domain_scores=scores,
-                        topics=topics,
-                        classification_method=method,
-                        prior=prior,
-                    )
-                    errors = validate_record(row, schema)
-                    if errors:
-                        entry.setdefault("invalid_records", []).append({"id": row.get("id"), "error": errors[0]})
-                        log(f"skip invalid {row.get('id')}: {errors[0]}")
-                        continue
-                    incoming.append(row)
-                    if source.get("collector") == "frontiers" and row["id"] not in prior_ids:
-                        incoming_frontiers_ids.add(row["id"])
+                absorb(source, result, entry)
     finally:
         fetcher.close()
 
@@ -540,18 +590,34 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--build-site", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only", action="append", default=None)
+    parser.add_argument(
+        "--ingest-html",
+        action="append",
+        default=None,
+        metavar="KEY=PATH",
+        help="Parse a saved listing HTML file for a source key instead of fetching",
+    )
     args = parser.parse_args(argv)
     root = args.root or repo_root()
     if args.build_site:
         return build_site(root)
     if args.enrich_topics:
         return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
+    ingest: dict[str, Path] | None = None
+    if args.ingest_html:
+        ingest = {}
+        for item in args.ingest_html:
+            if "=" not in item:
+                parser.error("--ingest-html expects KEY=PATH")
+            key, raw_path = item.split("=", 1)
+            ingest[key] = Path(raw_path)
     return run(
         root,
         dry_run=args.dry_run,
         offline=args.offline,
         backfill_deadlines=args.backfill_deadlines,
         only=set(args.only) if args.only else None,
+        ingest_html=ingest,
     )
 
 

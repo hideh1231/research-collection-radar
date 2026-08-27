@@ -29,7 +29,15 @@ The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sourc
 - Springer Nature: BMC Psychology, BMC Psychiatry, and Journal of NeuroEngineering and Rehabilitation collections
 - PLOS calls for papers, via the official WordPress REST API
 
-ScienceDirect, APA, and Royal Society stay disabled. Their public HTML returns a bot wall, and there is no official API, feed, or sitemap that completes a listing. The configuration in `config/sources.yml` keeps those reasons. Browser automation is out of scope.
+ScienceDirect, APA, and Royal Society stay disabled in the scheduled crawl. GitHub Actions gets a bot wall, and there is no CFP API. Their official listing pages do contain title, journal, URL, and (for APA and Elsevier) deadlines. Ingest a saved rendered listing instead of crawling detail pages:
+
+```text
+python -m radar --ingest-html apa-cfp=apa.html
+python -m radar --ingest-html sciencedirect-cfp=elsevier.html
+python -m radar --ingest-html royal-society-themes=rs-ai.html
+```
+
+ScienceDirect ingest keeps only records that match psychology, HCI, neuroscience, robotics, or HRI. Browser automation is out of scope. Decision record: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md).
 
 The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-collection-radar/`.
 

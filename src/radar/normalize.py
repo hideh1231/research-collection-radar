@@ -12,6 +12,8 @@ from radar.models import DEADLINE_STATUSES, TOPICS_METHODS, RawRecord
 FRONTIERS_TOPIC_RE = re.compile(r"/research-topics/(\d+)(?:/|$)", re.I)
 NATURE_COLLECTION_RE = re.compile(r"/collections/([a-z0-9]+)", re.I)
 PLOS_CFP_RE = re.compile(r"/call-for-papers/([^/?#]+)", re.I)
+ELSEVIER_SI_RE = re.compile(r"/special-issue/(\d+)(?:/|$)", re.I)
+APA_CFP_RE = re.compile(r"/pubs/journals/([a-z0-9]+)/([a-z0-9-]+)/?$", re.I)
 PLOS_JOURNALS = (
     "PLOS Sustainability and Transformation",
     "PLOS Neglected Tropical Diseases",
@@ -67,6 +69,12 @@ def publisher_id_from_url(url: str, publisher: str | None = None) -> str | None:
     match = PLOS_CFP_RE.search(text)
     if match:
         return match.group(1)
+    match = ELSEVIER_SI_RE.search(text)
+    if match:
+        return match.group(1)
+    match = APA_CFP_RE.search(text)
+    if match and match.group(2) not in {"call-for-papers-general", "resources"}:
+        return match.group(2)
     return None
 
 
