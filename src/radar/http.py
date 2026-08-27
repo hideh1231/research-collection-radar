@@ -74,13 +74,14 @@ class Fetcher:
         url: str,
         *,
         validator: Callable[[str], bool] | None = None,
+        headers: dict[str, str] | None = None,
     ) -> httpx.Response:
         last_error: Exception | None = None
         for attempt in range(self.retries):
             try:
                 self._wait_for_interval()
                 self._last_request_started = time.monotonic()
-                response = self._client.get(url)
+                response = self._client.get(url, headers=headers)
                 if response.status_code == 403:
                     return response
                 if response.status_code == 429 and attempt + 1 < self.retries:
@@ -112,3 +113,13 @@ class Fetcher:
     ) -> tuple[int, str]:
         response = self.get(url, validator=validator)
         return response.status_code, response.text
+
+    def get_json(self, url: str) -> tuple[int, Any, dict[str, str]]:
+        response = self.get(url, headers={"Accept": "application/json"})
+        headers = {key.lower(): value for key, value in response.headers.items()}
+        if response.status_code >= 400:
+            return response.status_code, None, headers
+        try:
+            return response.status_code, response.json(), headers
+        except ValueError:
+            return response.status_code, None, headers

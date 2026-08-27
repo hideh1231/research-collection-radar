@@ -2,6 +2,7 @@ from pathlib import Path
 
 from radar.collectors.frontiers import parse_listing
 from radar.collectors.nature import parse_listing as parse_nature
+from radar.collectors.springer import parse_listing as parse_springer
 from radar.config import repo_root
 from radar.store import write_jsonl, load_jsonl
 from radar.views import render_open_md
@@ -29,15 +30,28 @@ def test_nature_fixture() -> None:
     open_rows = [row for row in records if row.status == "open"]
     assert any(row.deadline and row.deadline.year == 2027 for row in open_rows)
     assert any(row.deadline and row.deadline.year == 2026 for row in open_rows)
+    human = next(row for row in records if "Human-machine" in row.title)
+    assert human.summary and "streets" in human.summary
+    assert human.image_url and human.image_url.endswith("human-machine.jpg")
 
 
 def test_frontiers_fixture() -> None:
     html = (repo_root() / "tests/fixtures/frontiers_psychology.html").read_text(encoding="utf-8")
-    records, _next = parse_listing(html, _source("frontiers-psychology", publisher="Frontiers", journal="Frontiers in Psychology"))
+    parsed = parse_listing(html, _source("frontiers-psychology", publisher="Frontiers", journal="Frontiers in Psychology"))
+    records = parsed.records
+    assert parsed.advertised_total == 2
     assert len(records) == 2
     statuses = {row.title: row.status for row in records}
-    assert any(status == "open" for status in statuses.values())
-    assert any(status == "closed" for status in statuses.values())
+    assert statuses["Adaptive Human-Robot Collaboration in Smart Manufacturing"] == "open"
+    assert statuses["An old closed topic"] == "closed"
+    for row in records:
+        assert "Submission" not in row.title
+        assert "views" not in row.title
+        assert "Editor" not in row.title
+        assert "articles" not in row.title
+    images = {row.title: row.image_url for row in records}
+    assert images["Adaptive Human-Robot Collaboration in Smart Manufacturing"] == "https://www.frontiersin.org/image/researchtopic/11111"
+    assert images["An old closed topic"] is None
 
 
 def test_jsonl_stable_sort() -> None:
@@ -64,3 +78,24 @@ def test_open_md_orders_deadline() -> None:
     assert "| Deadline | Title | Journal | Fields | Type | URL |" in text
     assert "Psychology" in text
     assert "Special Issue" in text
+
+
+def test_springer_fixture_uses_collection_cards() -> None:
+    html = (repo_root() / "tests/fixtures/springer_bmc.html").read_text(encoding="utf-8")
+    records = parse_springer(
+        html,
+        _source(
+            "springer-bmc-psychology",
+            publisher="Springer Nature",
+            journal="BMC Psychology",
+            url="https://bmcpsychology.biomedcentral.com/articles/collections",
+            allowed_hosts=["bmcpsychology.biomedcentral.com", "www.biomedcentral.com"],
+        ),
+    )
+    titles = {row.title for row in records}
+    assert "Beyond WEIRD: positive psychology in underrepresented contexts" in titles
+    assert "An already closed methods collection" in titles
+    assert all("Sign in" not in row.title for row in records)
+    open_row = next(row for row in records if row.status == "open")
+    assert open_row.deadline and open_row.deadline.isoformat() == "2027-05-25"
+    assert open_row.summary and "positive psychology" in open_row.summary

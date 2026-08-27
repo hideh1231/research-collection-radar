@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T00:47:15Z",
+  "checked_at": "2026-08-27T08:24:13Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -9,45 +9,206 @@
       "pages": 6,
       "error": null
     },
-    "frontiers-psychology": {
+    "nature-comms-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 24,
-      "pages": 1,
+      "parsed": 23,
+      "pages": 3,
+      "error": null
+    },
+    "frontiers-psychology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 404,
+      "parsed": 3311,
+      "pages": 139,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 60,
-        "checked": 60,
-        "listed": 60,
-        "with_deadline": 60,
-        "not_listed": 0,
+        "target_count": 200,
+        "checked": 200,
+        "listed": 131,
+        "with_deadline": 131,
+        "not_listed": 69,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 0
+        "remaining": 200,
+        "metadata_updated": 140
       }
     },
+    "frontiers-robotics-ai": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 375,
+      "pages": 16,
+      "error": null
+    },
+    "frontiers-human-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1044,
+      "pages": 44,
+      "error": null
+    },
+    "frontiers-psychiatry": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1896,
+      "pages": 79,
+      "error": null
+    },
+    "frontiers-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 2159,
+      "pages": 91,
+      "error": null
+    },
+    "frontiers-neurology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1598,
+      "pages": 67,
+      "error": null
+    },
+    "frontiers-behavioral-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 474,
+      "pages": 20,
+      "error": null
+    },
+    "frontiers-aging-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 530,
+      "pages": 23,
+      "error": null
+    },
+    "frontiers-cognition": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 50,
+      "pages": 3,
+      "error": null
+    },
+    "frontiers-computational-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 323,
+      "pages": 14,
+      "error": null
+    },
+    "frontiers-neuroinformatics": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 123,
+      "pages": 6,
+      "error": null
+    },
+    "frontiers-neurorobotics": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 223,
+      "pages": 10,
+      "error": null
+    },
+    "frontiers-virtual-reality": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 145,
+      "pages": 7,
+      "error": null
+    },
+    "frontiers-computer-science": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 339,
+      "pages": 15,
+      "error": null
+    },
+    "frontiers-digital-health": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 312,
+      "pages": 13,
+      "error": null
+    },
     "sciencedirect-cfp": {
-      "enabled": false
+      "enabled": false,
+      "reason": "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
     },
     "springer-bmc-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 33,
+      "parsed": 31,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-psychiatry": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 49,
+      "pages": 1,
+      "error": null
+    },
+    "springer-jner": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 31,
       "pages": 1,
       "error": null
     },
     "apa-cfp": {
-      "enabled": false
+      "enabled": false,
+      "reason": "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
     },
     "royal-society-rsos": {
-      "enabled": false
+      "enabled": false,
+      "reason": "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
     },
     "plos-collections": {
-      "enabled": false
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 41,
+      "pages": 3,
+      "error": null
+    }
+  },
+  "frontiers_detail": {
+    "publisher": "Frontiers",
+    "deadline_enrichment": {
+      "target_count": 200,
+      "checked": 200,
+      "listed": 131,
+      "with_deadline": 131,
+      "not_listed": 69,
+      "failed": 0,
+      "rate_limited": 0,
+      "parse_errors": 0,
+      "forbidden": 0,
+      "remaining": 200,
+      "metadata_updated": 140
     }
   }
 }

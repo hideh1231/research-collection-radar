@@ -13,6 +13,16 @@ sources:
     allowed_hosts:
       - www.nature.com
       - nature.com
+  - key: nature-comms-psychology
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Communications Psychology
+    collection_type: collection
+    url: "https://www.nature.com/commspsychol/calls-for-papers"
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
   - key: frontiers-psychology
     enabled: true
     collector: frontiers
@@ -23,13 +33,181 @@ sources:
     allowed_hosts:
       - www.frontiersin.org
       - frontiersin.org
-    max_pages: 80
-    deadline_enrichment:
-      daily_limit: 100
+    max_pages: 200
+    deadline_enrichment: &frontiers_detail
+      daily_limit: 200
       min_interval_seconds: 1
       listed_recheck_days: 7
       not_listed_recheck_days: 30
       checkpoint_size: 25
+  - key: frontiers-robotics-ai
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Robotics and AI
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/robotics-and-ai/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-human-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Human Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/human-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-psychiatry
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Psychiatry
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/psychiatry/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neurology
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neurology
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neurology/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-behavioral-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Behavioral Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/behavioral-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-aging-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Aging Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/aging-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-cognition
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Cognition
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/cognition/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-computational-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Computational Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/computational-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neuroinformatics
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neuroinformatics
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neuroinformatics/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neurorobotics
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neurorobotics
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neurorobotics/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-virtual-reality
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Virtual Reality
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/virtual-reality/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-computer-science
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Computer Science
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/computer-science/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-digital-health
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Digital Health
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/digital-health/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
   - key: sciencedirect-cfp
     enabled: false
     collector: sciencedirect
@@ -40,6 +218,7 @@ sources:
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
+    disabled_reason: "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
   - key: springer-bmc-psychology
     enabled: true
     collector: springer
@@ -49,6 +228,26 @@ sources:
     url: "https://bmcpsychology.biomedcentral.com/articles/collections"
     allowed_hosts:
       - bmcpsychology.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-psychiatry
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Psychiatry
+    collection_type: collection
+    url: "https://bmcpsychiatry.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcpsychiatry.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-jner
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Journal of NeuroEngineering and Rehabilitation
+    collection_type: collection
+    url: "https://jneuroengrehab.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - jneuroengrehab.biomedcentral.com
       - www.biomedcentral.com
   - key: apa-cfp
     enabled: false
@@ -60,6 +259,7 @@ sources:
     allowed_hosts:
       - www.apa.org
       - apa.org
+    disabled_reason: "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
   - key: royal-society-rsos
     enabled: false
     collector: royal_society
@@ -70,14 +270,17 @@ sources:
     allowed_hosts:
       - royalsocietypublishing.org
       - royalsociety.org
+    disabled_reason: "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
   - key: plos-collections
-    enabled: false
+    enabled: true
     collector: plos
     publisher: PLOS
     journal: PLOS
     collection_type: collection
-    url: "https://collections.plos.org/"
+    url: "https://collections.plos.org/calls-for-papers/"
+    api_url: "https://collections.plos.org/wp-json/wp/v2/call_for_papers"
     allowed_hosts:
       - collections.plos.org
       - plos.org
       - www.plos.org
+    max_pages: 20

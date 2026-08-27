@@ -8,8 +8,11 @@ pytest.importorskip("bs4")
 from radar.collectors.frontiers import (
     FrontiersCollector,
     enrich_deadlines,
+    listing_is_complete,
     next_page_url,
     page_matches_record,
+    parse_detail,
+    parse_listing,
     select_deadline_targets,
 )
 from radar.ids import content_hash
@@ -56,6 +59,14 @@ def test_next_page_requires_immediate_next_number() -> None:
     current = SOURCE["url"]
     assert next_page_url('<a href="?page=2">2</a>', current, ["frontiersin.org"]).endswith("page=2")
     assert next_page_url('<a href="?page=3">3</a>', current, ["frontiersin.org"]) is None
+
+
+def test_listing_complete_allows_two_topic_hub_drift() -> None:
+    assert listing_is_complete(3311, 3312) is True
+    assert listing_is_complete(2159, 2161) is True
+    assert listing_is_complete(2158, 2161) is False
+    assert listing_is_complete(50, 50) is True
+    assert listing_is_complete(0, 10) is False
 
 
 def test_page_identity_accepts_canonical_and_open_graph_metadata() -> None:
@@ -123,9 +134,18 @@ class _ListingFetcher:
         return next(self.responses)
 
 
-def _listing(topic: int, next_page: bool = False) -> str:
+def _listing(topic: int, next_page: bool = False, total: int = 1, title: str | None = None) -> str:
     suffix = '<a rel="next" href="?page=2">next</a>' if next_page else ""
-    return f'<a href="/research-topics/{topic}/topic-{topic}">Topic {topic} title</a>{suffix}'
+    heading = f'<h1 class="Hub__total--heading">{total} Research Topics</h1>'
+    label = title or f"Topic {topic} title"
+    return (
+        heading
+        + f'<article class="CardResearchTopic">'
+        + f'<a class="CardResearchTopic__wrapper" href="/research-topics/{topic}/topic-{topic}">'
+        + f'<p class="CardResearchTopic__state">Submission open</p>'
+        + f'<h2 class="CardResearchTopic__title">{label}</h2>'
+        + f"</a></article>{suffix}"
+    )
 
 
 def test_frontiers_http_failure_is_not_partial_success() -> None:
@@ -142,14 +162,14 @@ def test_frontiers_zero_records_is_failure() -> None:
 
 def test_frontiers_max_pages_is_failure() -> None:
     source = {**SOURCE, "max_pages": 1}
-    result = FrontiersCollector().collect(_ListingFetcher([(200, _listing(1, next_page=True))]), source)
+    result = FrontiersCollector().collect(_ListingFetcher([(200, _listing(1, next_page=True, total=2))]), source)
     assert result.ok is False
     assert result.error == "pagination truncated"
 
 
 def test_frontiers_duplicate_next_page_is_failure() -> None:
-    page_one = _listing(1, next_page=True)
-    page_two = '<a href="/research-topics/1/topic-1">Topic 1 title</a><a rel="next" href="?page=3">next</a>'
+    page_one = _listing(1, next_page=True, total=2)
+    page_two = _listing(1, total=2) + '<a rel="next" href="?page=3">next</a>'
     result = FrontiersCollector().collect(_ListingFetcher([(200, page_one), (200, page_two)]), SOURCE)
     assert result.ok is False
     assert result.records == []
@@ -245,6 +265,116 @@ def test_checkpoint_persists_signal_stop_before_request() -> None:
     assert stats["stop_reason"] == "signal"
     assert len(checkpoints) == 1
     assert checkpoints[-1]["remaining"] == 1
+
+
+def test_listing_title_ignores_status_editors_and_metrics() -> None:
+    html = _listing(9, total=1, title="Clean research title")
+    parsed = parse_listing(html, SOURCE)
+    assert parsed.records[0].title == "Clean research title"
+    assert parsed.records[0].publisher_id == "9"
+
+
+def test_listing_without_title_is_incomplete() -> None:
+    html = (
+        '<h1 class="Hub__total--heading">1 Research Topics</h1>'
+        '<article class="CardResearchTopic">'
+        '<a class="CardResearchTopic__wrapper" href="/research-topics/1/slug">'
+        '<p class="CardResearchTopic__state">Submission open</p>'
+        "</a></article>"
+    )
+    parsed = parse_listing(html, SOURCE)
+    assert parsed.incomplete is True
+    result = FrontiersCollector().collect(_ListingFetcher([(200, html)]), SOURCE)
+    assert result.ok is False
+    assert "title" in (result.error or "")
+
+
+def test_complete_listing_matches_advertised_total() -> None:
+    page_one = _listing(1, next_page=True, total=2)
+    page_two = _listing(2, total=2).replace("?page=2", "?page=1")
+    # Keep the second page identifiable as page 2 content without a further next link.
+    page_two = (
+        '<h1 class="Hub__total--heading">2 Research Topics</h1>'
+        '<article class="CardResearchTopic">'
+        '<a class="CardResearchTopic__wrapper" href="/research-topics/2/topic-2">'
+        '<p class="CardResearchTopic__state">Submission open</p>'
+        '<h2 class="CardResearchTopic__title">Topic 2 title</h2>'
+        "</a></article>"
+    )
+    result = FrontiersCollector().collect(_ListingFetcher([(200, page_one), (200, page_two)]), SOURCE)
+    assert result.ok is True
+    assert result.parsed_count == 2
+
+
+def test_detail_extracts_summary_keywords_image_and_journals() -> None:
+    from radar.config import repo_root
+
+    html = (repo_root() / "tests/fixtures/frontiers_detail.html").read_text(encoding="utf-8")
+    detail = parse_detail(html)
+    assert "Submission" not in (detail.title or "")
+    assert detail.summary and detail.summary.startswith("The rapid growth of digital technologies")
+    assert "Article processing charge" not in (detail.summary or "")
+    assert "transformin..." not in (detail.summary or "")
+    assert detail.image_url.endswith("thumb_400.jpg")
+    assert detail.journal == "Frontiers in Psychology"
+    assert "Frontiers in Digital Health" in detail.journals
+    assert "artificial intelligence" in detail.publisher_keywords
+
+
+def test_same_topic_id_from_two_sources_keeps_existing_id() -> None:
+    from datetime import date
+
+    from radar.ids import stable_id
+    from radar.models import RawRecord
+    from radar.normalize import to_record
+    from radar.pipeline import _assign_raw_id, _publisher_id_index
+
+    existing_id = stable_id("frontiers-psychology", "11111")
+    prior = {
+        existing_id: {
+            "id": existing_id,
+            "publisher": "Frontiers",
+            "publisher_id": "11111",
+            "title": "Adaptive Human-Robot Collaboration in Smart Manufacturing",
+            "journal": "Frontiers in Psychology",
+            "journals": ["Frontiers in Psychology"],
+            "source_keys": ["frontiers-psychology"],
+            "discovered_via": "frontiers-psychology",
+            "first_seen": "2026-08-01",
+            "deadline": None,
+            "deadline_status": "not_checked",
+            "topics": [],
+            "topics_method": "none",
+            "content_hash": "old",
+        }
+    }
+    publisher_ids = _publisher_id_index(list(prior.values()))
+    raw = RawRecord(
+        title="Adaptive Human-Robot Collaboration in Smart Manufacturing",
+        url="https://frontiersin.org/research-topics/11111/adaptive-human-robot-collaboration",
+        source_url="https://frontiersin.org/journals/robotics-and-ai/research-topics",
+        publisher="Frontiers",
+        journal="Frontiers in Robotics and AI",
+        collection_type="research_topic",
+        discovered_via="frontiers-robotics-ai",
+        publisher_id="11111",
+        journals=["Frontiers in Robotics and AI"],
+        source_keys=["frontiers-robotics-ai"],
+    )
+    _assign_raw_id(raw, publisher_ids)
+    row = to_record(
+        raw,
+        today=date(2026, 8, 27),
+        domains=["robotics"],
+        domain_scores={"robotics": 0.95},
+        topics=[],
+        classification_method="source_rule",
+        prior=prior,
+    )
+    assert row["id"] == existing_id
+    assert "frontiers-psychology" in row["source_keys"]
+    assert "frontiers-robotics-ai" in row["source_keys"]
+    assert "Frontiers in Robotics and AI" in row["journals"]
 
 
 def test_checkpoint_occurs_once_at_exact_25_boundary() -> None:

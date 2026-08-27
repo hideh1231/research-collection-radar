@@ -26,7 +26,8 @@ from radar.config import (
     repo_root,
 )
 from radar.http import Fetcher
-from radar.normalize import to_record
+from radar.ids import stable_id
+from radar.normalize import merge_collection_rows, to_record
 from radar.slack import credentials, post_message
 from radar.store import (
     index_by_id,
@@ -37,7 +38,12 @@ from radar.store import (
     stage_jsonl,
     validate_record,
 )
-from radar.views import render_open_md
+from radar.topics import (
+    HttpCompletionsClient,
+    enrich_topics,
+    llm_settings,
+)
+from radar.views import render_open_md, render_site_collections
 
 
 def log(message: str) -> None:
@@ -47,7 +53,7 @@ def log(message: str) -> None:
 def commit_if_actions(root: Path, summary: str) -> None:
     if os.environ.get("GITHUB_ACTIONS") != "true":
         return
-    subprocess.run(["git", "add", "data", "state", "OPEN.md"], cwd=root, check=False)
+    subprocess.run(["git", "add", "data", "state", "OPEN.md", "site"], cwd=root, check=False)
     status = subprocess.run(["git", "status", "--porcelain"], cwd=root, check=True, capture_output=True, text=True)
     if not status.stdout.strip():
         return
@@ -92,6 +98,7 @@ def _write_artifacts_atomic(
     data_path = root / "data" / "collections.jsonl"
     open_path = root / "OPEN.md"
     status_path = root / "data" / "source_status.json"
+    site_path = root / "site" / "data" / "collections.json"
     staged: list[Path] = []
     try:
         staged.append(stage_jsonl(data_path, rows))
@@ -106,11 +113,18 @@ def _write_artifacts_atomic(
                 ),
             )
         )
+        staged.append(
+            _stage_text(
+                site_path,
+                json.dumps(render_site_collections(rows), ensure_ascii=False, indent=2) + "\n",
+            )
+        )
         staged.append(_stage_text(status_path, json.dumps(source_status, ensure_ascii=False, indent=2) + "\n"))
-        # Replace the source of truth first, then its two derived artifacts.
+        # Replace the source of truth first, then its derived artifacts.
         replace_staged(staged[0], data_path)
         replace_staged(staged[1], open_path)
-        replace_staged(staged[2], status_path)
+        replace_staged(staged[2], site_path)
+        replace_staged(staged[3], status_path)
         staged.clear()
     finally:
         for path in staged:
@@ -137,11 +151,57 @@ def _stop_events(event: Event) -> Iterator[None]:
                 pass
 
 
-def _frontiers_source(sources_cfg: dict[str, Any]) -> dict[str, Any] | None:
-    for source in sources_cfg.get("sources", []):
-        if source.get("collector") == "frontiers":
+def _frontiers_sources(sources_cfg: dict[str, Any]) -> list[dict[str, Any]]:
+    return [source for source in sources_cfg.get("sources", []) if source.get("collector") == "frontiers"]
+
+
+def _frontiers_enrichment_source(sources_cfg: dict[str, Any]) -> dict[str, Any] | None:
+    sources = _frontiers_sources(sources_cfg)
+    for source in sources:
+        if source.get("deadline_enrichment"):
             return source
-    return None
+    return sources[0] if sources else None
+
+
+def _publisher_id_index(rows: list[dict[str, Any]]) -> dict[tuple[str, str], str]:
+    mapping: dict[tuple[str, str], str] = {}
+    for row in rows:
+        publisher = str(row.get("publisher") or "")
+        publisher_id = row.get("publisher_id")
+        if publisher and publisher_id:
+            mapping.setdefault((publisher, str(publisher_id)), row["id"])
+    return mapping
+
+
+def _assign_raw_id(raw: Any, publisher_ids: dict[tuple[str, str], str]) -> None:
+    if raw.publisher_id:
+        key = (raw.publisher, str(raw.publisher_id))
+        if key in publisher_ids:
+            raw.extra["id"] = publisher_ids[key]
+            return
+        prefix = "frontiers" if raw.publisher == "Frontiers" else raw.discovered_via
+        assigned = stable_id(prefix, str(raw.publisher_id))
+        raw.extra["id"] = assigned
+        publisher_ids[key] = assigned
+        return
+    if not raw.extra.get("id"):
+        raw.extra["id"] = stable_id(raw.discovered_via, raw.url)
+
+
+def _empty_enrichment() -> dict[str, Any]:
+    return {
+        "target_count": 0,
+        "checked": 0,
+        "listed": 0,
+        "with_deadline": 0,
+        "not_listed": 0,
+        "failed": 0,
+        "rate_limited": 0,
+        "parse_errors": 0,
+        "forbidden": 0,
+        "remaining": 0,
+        "metadata_updated": 0,
+    }
 
 
 def _source_status_entry(result: Any) -> dict[str, Any]:
@@ -161,6 +221,7 @@ def run(
     dry_run: bool = False,
     offline: bool = False,
     backfill_deadlines: bool = False,
+    only: set[str] | None = None,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -181,11 +242,19 @@ def run(
         "checked_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": {},
     }
+    status_path = root / "data" / "source_status.json"
+    prior_source_status: dict[str, Any] = {}
+    if status_path.exists():
+        try:
+            prior_source_status = json.loads(status_path.read_text(encoding="utf-8")).get("sources") or {}
+        except (OSError, json.JSONDecodeError):
+            prior_source_status = {}
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
     failures = 0
     stop_event = Event()
-    frontiers = _frontiers_source(sources_cfg)
+    frontiers = _frontiers_enrichment_source(sources_cfg)
+    publisher_ids = _publisher_id_index(prior_rows)
 
     # The regular run discovers list pages. Backfill only visits detail pages.
     fetcher = Fetcher(
@@ -205,8 +274,16 @@ def run(
                 source_status["sources"][source["key"]] = {"enabled": bool(source.get("enabled")), "skipped": "offline"}
         else:
             for source in sources_cfg.get("sources", []):
+                if only is not None and source["key"] not in only:
+                    source_status["sources"][source["key"]] = prior_source_status.get(
+                        source["key"], {"enabled": bool(source.get("enabled")), "skipped": "not-selected"}
+                    )
+                    continue
                 if not source.get("enabled"):
-                    source_status["sources"][source["key"]] = {"enabled": False}
+                    entry = {"enabled": False}
+                    if source.get("disabled_reason"):
+                        entry["reason"] = source["disabled_reason"]
+                    source_status["sources"][source["key"]] = entry
                     continue
                 result = run_source(fetcher, source)
                 entry = _source_status_entry(result)
@@ -219,6 +296,7 @@ def run(
                     failures += 1
                     continue
                 for raw in result.records:
+                    _assign_raw_id(raw, publisher_ids)
                     domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
                     row = to_record(
                         raw,
@@ -242,14 +320,11 @@ def run(
 
     merged = {row["id"]: dict(row) for row in prior_rows}
     for row in incoming:
-        # to_record already applies this policy. Keep the merge guard here so
-        # callers constructing incoming rows cannot erase a confirmed deadline.
         previous = merged.get(row["id"])
-        if previous and previous.get("deadline") and not row.get("deadline"):
-            row["deadline"] = previous["deadline"]
-            row["deadline_status"] = previous.get("deadline_status", "listed")
-            row["deadline_checked_at"] = previous.get("deadline_checked_at")
-        merged[row["id"]] = row
+        if previous:
+            merged[row["id"]] = merge_collection_rows(previous, row)
+        else:
+            merged[row["id"]] = row
     current_rows = list(merged.values())
 
     if backfill_deadlines:
@@ -270,8 +345,12 @@ def run(
             return 1
 
     enrichment: dict[str, Any] | None = None
-    if frontiers and not offline and (backfill_deadlines or source_status["sources"].get(frontiers["key"], {}).get("ok")):
-        source_entry = source_status["sources"].setdefault(frontiers["key"], {"enabled": bool(frontiers.get("enabled"))})
+    frontiers_ok = any(
+        source_status["sources"].get(source["key"], {}).get("ok")
+        for source in _frontiers_sources(sources_cfg)
+    )
+    if frontiers and not offline and (backfill_deadlines or frontiers_ok):
+        source_entry = source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})
         enrichment_cfg = frontiers.get("deadline_enrichment") or {}
         detail_fetcher = Fetcher(
             sources_cfg.get("user_agent", "research-collection-radar/0.1"),
@@ -281,6 +360,8 @@ def run(
 
         def checkpoint(stats: dict[str, Any]) -> None:
             source_entry["deadline_enrichment"] = stats
+            source_status["sources"].setdefault(frontiers["key"], {"enabled": bool(frontiers.get("enabled"))})
+            source_status["sources"][frontiers["key"]]["deadline_enrichment"] = stats
             _write_artifacts_atomic(
                 root,
                 current_rows,
@@ -305,19 +386,12 @@ def run(
         finally:
             detail_fetcher.close()
         source_entry["deadline_enrichment"] = enrichment
+        source_status["sources"].setdefault(frontiers["key"], {"enabled": bool(frontiers.get("enabled"))})
+        source_status["sources"][frontiers["key"]]["deadline_enrichment"] = enrichment
     elif frontiers:
-        source_status["sources"].setdefault(frontiers["key"], {})["deadline_enrichment"] = {
-            "target_count": 0,
-            "checked": 0,
-            "listed": 0,
-            "with_deadline": 0,
-            "not_listed": 0,
-            "failed": 0,
-            "rate_limited": 0,
-            "parse_errors": 0,
-            "forbidden": 0,
-            "remaining": 0,
-        }
+        empty = _empty_enrichment()
+        source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})["deadline_enrichment"] = empty
+        source_status["sources"].setdefault(frontiers["key"], {})["deadline_enrichment"] = empty
 
     try:
         _write_artifacts_atomic(
@@ -377,19 +451,107 @@ def run(
     return 0
 
 
+def build_site(root: Path) -> int:
+    today = date.today()
+    domains_cfg = load_domains(root)
+    schema = load_schema(root / "schema" / "collection.schema.json")
+    rows, _migrated = migrate_rows(load_jsonl(root / "data" / "collections.jsonl"))
+    status_path = root / "data" / "source_status.json"
+    if status_path.exists():
+        source_status = json.loads(status_path.read_text(encoding="utf-8"))
+    else:
+        source_status = {"checked_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": {}}
+    try:
+        _write_artifacts_atomic(
+            root,
+            rows,
+            today,
+            source_status,
+            schema,
+            domain_labels(domains_cfg),
+            collection_type_labels(domains_cfg),
+        )
+    except ValueError as exc:
+        log(str(exc))
+        return 1
+    return 0
+
+
+def run_topic_enrichment(root: Path, *, dry_run: bool = False, limit: int | None = None) -> int:
+    settings = llm_settings()
+    if settings is None:
+        log("llm skipped: RADAR_LLM_BASE_URL, RADAR_LLM_API_KEY, and RADAR_LLM_MODEL are not all set")
+        return 0
+    today = date.today()
+    domains_cfg = load_domains(root)
+    schema = load_schema(root / "schema" / "collection.schema.json")
+    rows, _migrated = migrate_rows(load_jsonl(root / "data" / "collections.jsonl"))
+    status_path = root / "data" / "source_status.json"
+    if status_path.exists():
+        source_status = json.loads(status_path.read_text(encoding="utf-8"))
+    else:
+        source_status = {"checked_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": {}}
+    event = os.environ.get("GITHUB_EVENT_NAME", "")
+    default_limit = 500 if event == "workflow_dispatch" else 100
+    raw_limit = os.environ.get("RADAR_LLM_LIMIT") or str(default_limit)
+    cap = limit if limit is not None else int(raw_limit)
+    client = HttpCompletionsClient(settings["base_url"], settings["api_key"])
+
+    def checkpoint(stats: dict[str, Any]) -> None:
+        source_status["topic_enrichment"] = stats
+        _write_artifacts_atomic(
+            root,
+            rows,
+            today,
+            source_status,
+            schema,
+            domain_labels(domains_cfg),
+            collection_type_labels(domains_cfg),
+        )
+
+    stats = enrich_topics(rows, client=client, model=settings["model"], limit=cap, checkpoint=checkpoint)
+    source_status["topic_enrichment"] = stats
+    try:
+        _write_artifacts_atomic(
+            root,
+            rows,
+            today,
+            source_status,
+            schema,
+            domain_labels(domains_cfg),
+            collection_type_labels(domains_cfg),
+        )
+    except ValueError as exc:
+        log(str(exc))
+        return 1
+    log(f"llm topics: checked={stats.get('checked')} updated={stats.get('updated')} failed={stats.get('failed')}")
+    if not dry_run:
+        commit_if_actions(root, f"data: enrich topics ({stats.get('updated', 0)} updated)")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="radar")
     parser.add_argument("--root", type=Path, default=None)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--backfill-deadlines", action="store_true")
+    parser.add_argument("--enrich-topics", action="store_true")
+    parser.add_argument("--build-site", action="store_true")
+    parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--only", action="append", default=None)
     args = parser.parse_args(argv)
     root = args.root or repo_root()
+    if args.build_site:
+        return build_site(root)
+    if args.enrich_topics:
+        return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
     return run(
         root,
         dry_run=args.dry_run,
         offline=args.offline,
         backfill_deadlines=args.backfill_deadlines,
+        only=set(args.only) if args.only else None,
     )
 
 

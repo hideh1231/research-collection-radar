@@ -19,3 +19,31 @@ def test_source_rule_and_hri_keyword() -> None:
     assert "hri" in domains
     assert scores["robotics"] >= 0.65
     assert "source_rule" in method
+
+
+def test_comms_psychology_and_neurorobotics_rules() -> None:
+    cfg = load_domains(repo_root())
+    comms = RawRecord(
+        title="A methods collection",
+        url="https://example.org/x",
+        source_url="https://example.org/",
+        publisher="Nature Portfolio",
+        journal="Communications Psychology",
+        collection_type="collection",
+        discovered_via="nature-comms-psychology",
+    )
+    domains, _scores, _topics, method = classify(comms, cfg, "nature-comms-psychology")
+    assert "psychology" in domains
+    assert "source_rule" in method
+    neuro = RawRecord(
+        title="Adaptive locomotion",
+        url="https://example.org/y",
+        source_url="https://example.org/",
+        publisher="Frontiers",
+        journal="Frontiers in Neurorobotics",
+        collection_type="research_topic",
+        discovered_via="frontiers-neurorobotics",
+    )
+    domains, _scores, _topics, method = classify(neuro, cfg, "frontiers-neurorobotics")
+    assert "robotics" in domains
+    assert "hri" in domains

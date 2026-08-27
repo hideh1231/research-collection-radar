@@ -10,6 +10,7 @@ from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
 from radar.normalize import normalize_status, parse_date
+from urllib.parse import urljoin
 
 COLLECTION_HREF = re.compile(r"/collections/[a-z0-9]+", re.I)
 STATUS_RE = re.compile(r"Submission status:\s*(Open|Closed)", re.I)
@@ -50,6 +51,12 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
         date_el = article.find(attrs={"data-test": "end-date"})
         status = normalize_status(status_el.get_text(" ", strip=True) if status_el else block)
         deadline_text = date_el.get_text(" ", strip=True) if date_el else None
+        summary_el = article.find(attrs={"data-test": "description"}) or article.select_one(".c-card__summary")
+        summary = summary_el.get_text(" ", strip=True)[:1000] if summary_el else None
+        img = article.select_one(".c-card__image img, img")
+        src = str(img.get("src") or img.get("data-src") or "").strip() if img is not None else ""
+        image_url = urljoin("https://www.nature.com", src) if src and not src.startswith("data:") else None
+        image_alt = (str(img.get("alt") or "").strip() or title) if img is not None and image_url else None
         url = canonicalize_url(href)
         found[url] = RawRecord(
             title=title,
@@ -63,6 +70,9 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             deadline=parse_date(deadline_text) or parse_date(
                 DEADLINE_RE.search(block).group(1) if DEADLINE_RE.search(block) else None
             ),
+            summary=summary or None,
+            image_url=image_url,
+            image_alt=image_alt,
             submission_mode="open_call",
         )
     return list(found.values())
