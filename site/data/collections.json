@@ -4971,22 +4971,32 @@
   },
   {
     "id": "frontiers-psychology-005be4a4ce",
-    "title": "Submission open Technology, Artificial Intelligence, and Aging: Psychological Dimensions of Well-Being, Autonomy, and Social Connectedness Jeong Eun Lee Kyungmin Kim 961 views",
-    "summary": null,
+    "title": "Technology, Artificial Intelligence, and Aging: Psychological Dimensions of Well-Being, Autonomy, and Social Connectedness",
+    "summary": "The rapid growth of digital technologies is transforming how older adults manage health.",
     "journal": "Frontiers in Psychology",
     "journals": [
-      "Frontiers in Psychology"
+      "Frontiers in Psychology",
+      "Frontiers in Digital Health",
+      "Frontiers in Psychiatry"
     ],
     "domains": [
       "psychology"
     ],
-    "topics": [],
+    "topics": [
+      "Technology",
+      "aging",
+      "social connectedness",
+      "AI",
+      "well-being",
+      "ageism",
+      "digital health literacy"
+    ],
     "collection_type": "research_topic",
     "deadline": "2026-12-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/81042/technology-artificial-intelligence-and-aging-psychological-dimensions-of-well-being-autonomy-and-social-connectedness",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/files/special%20topics/81042/thumb_400.jpg",
+    "image_alt": "Technology, Artificial Intelligence, and Aging: Psychological Dimensions of Well-Being, Autonomy, and Social Connectedness",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
     "status": "open"

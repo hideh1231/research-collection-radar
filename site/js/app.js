@@ -256,7 +256,11 @@ function bind() {
     image.replaceWith(placeholder);
   }, true);
   window.addEventListener("keydown", (event) => {
-    if (event.key === "/" && event.target === document.body) {
+    const typing = event.target instanceof HTMLInputElement
+      || event.target instanceof HTMLTextAreaElement
+      || event.target instanceof HTMLSelectElement
+      || (event.target instanceof HTMLElement && event.target.isContentEditable);
+    if (event.key === "/" && !typing) {
       event.preventDefault();
       $("#search").focus();
     }
