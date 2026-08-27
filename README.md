@@ -24,12 +24,13 @@ The index tracks public calls for special issues, research collections, theme is
 
 The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sources are public listings that GitHub Actions can finish without a bot wall:
 
-- Nature Portfolio: Scientific Reports Psychology calls, and Communications Psychology calls
-- Frontiers research topics: Psychology, Psychiatry, Human Neuroscience, Neuroscience, Neurology, Behavioral Neuroscience, Aging Neuroscience, Cognition, Computational Neuroscience, Neuroinformatics, Robotics and AI, Neurorobotics, Virtual Reality, Computer Science, and Digital Health
-- Springer Nature: BMC Psychology, BMC Psychiatry, and Journal of NeuroEngineering and Rehabilitation collections
+- Nature Portfolio: Scientific Reports, Communications Psychology, Nature Communications, and Communications Biology calls
+- Frontiers research topics, including Neuroergonomics, Ethology, Ecology and Evolution, and Veterinary Science
+- Springer Nature BMC collections and Springer Link `/journal/{id}/collections` for watched journals
 - PLOS calls for papers, via the official WordPress REST API
+- Domestic listings: Journal of Robotics and Mechatronics, VRSJ special issues, IPSJ CFP list, JSKE
 
-ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の Chromium で APA と ScienceDirect の一覧 1 ページを開き、レンダリング済み HTML を ingest する。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
+ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の headed Chrome で APA、ScienceDirect、APS、Science Robotics、T&F Author Services、SAGE、PNAS、PNAS Nexus、JOSA A、監視 Wiley 誌の一覧 1 ページを開き、レンダリング済み HTML を ingest する。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
 
 ```text
 python -m pip install -e ".[listing]"
@@ -38,7 +39,7 @@ python -m radar --render-listings --out-dir listing-html --only apa-cfp --only s
 python -m radar --open-only --ingest-rendered listing-html
 ```
 
-`--open-only` は締切切れを落とす。ScienceDirect は `scope_pattern` と `require_domains` で対象分野以外を落とす。Decision records: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md), [`docs/decisions/0005-listing-ingest-github-actions.md`](docs/decisions/0005-listing-ingest-github-actions.md).
+`--open-only` は締切切れを落とす。ScienceDirect / T&F / SAGE / APS のハブは `config/journals.yml` の監視誌名に一致したカードだけ残す。Decision records: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md), [`docs/decisions/0005-listing-ingest-github-actions.md`](docs/decisions/0005-listing-ingest-github-actions.md), [`docs/decisions/0006-watched-journals-and-listing-hosts.md`](docs/decisions/0006-watched-journals-and-listing-hosts.md).
 
 The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-collection-radar/`.
 

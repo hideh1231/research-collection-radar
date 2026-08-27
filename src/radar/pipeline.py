@@ -26,6 +26,7 @@ from radar.config import (
     load_sources,
     repo_root,
 )
+from radar.journals import journal_is_watched
 from radar.http import Fetcher
 from radar.ids import stable_id
 from radar.listing_snapshots import SnapshotError, download_snapshot
@@ -288,9 +289,13 @@ def run(
         dropped = 0
         skipped_closed = 0
         scope = source.get("scope_pattern")
+        require_journal = bool(source.get("require_watched_journal"))
         for raw in result.records:
             blob = f"{raw.title} {raw.journal}"
             if scope and not re.search(str(scope), blob, re.I):
+                dropped += 1
+                continue
+            if require_journal and not journal_is_watched(raw.journal, root, publisher=raw.publisher):
                 dropped += 1
                 continue
             _assign_raw_id(raw, publisher_ids)
@@ -320,7 +325,7 @@ def run(
                 incoming_frontiers_ids.add(row["id"])
         if dropped:
             entry["dropped_unclassified"] = dropped
-            log(f"{source['key']}: dropped {dropped} records with no in-scope domain")
+            log(f"{source['key']}: dropped {dropped} records outside watched journals or domains")
         if skipped_closed:
             entry["skipped_closed"] = skipped_closed
             log(f"{source['key']}: skipped {skipped_closed} closed records")

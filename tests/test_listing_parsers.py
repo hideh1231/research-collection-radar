@@ -5,9 +5,10 @@ from radar.collectors.apa import parse_listing as parse_apa
 from radar.collectors.royal_society import parse_listing as parse_royal_society
 from radar.collectors.sciencedirect import parse_listing as parse_sciencedirect
 from radar.config import repo_root
+from radar.journals import journal_is_watched
 from radar.normalize import publisher_id_from_url
 from radar.pipeline import run
-from support import workspace_tempdir
+from support import copy_radar_config, workspace_tempdir
 
 
 def _apa_source() -> dict:
@@ -124,6 +125,7 @@ def test_ingest_html_merges_listing_without_fetch() -> None:
             "config/sources.yml",
             "config/domains.yml",
             "config/alerts.yml",
+            "config/journals.yml",
             "schema/collection.schema.json",
         ):
             (root / relative).write_bytes((source_root / relative).read_bytes())
@@ -166,6 +168,7 @@ def test_ingest_html_open_only_skips_closed_and_keeps_other_source_status() -> N
             "config/sources.yml",
             "config/domains.yml",
             "config/alerts.yml",
+            "config/journals.yml",
             "schema/collection.schema.json",
         ):
             (root / relative).write_bytes((source_root / relative).read_bytes())
@@ -216,17 +219,8 @@ def test_ingest_html_open_only_skips_closed_and_keeps_other_source_status() -> N
         assert status["sources"]["sciencedirect-cfp"]["skipped_closed"] == 1
 
 
-def test_elsevier_scope_pattern_requires_cognition_as_a_word() -> None:
-    import re
-
-    from radar.config import load_sources
-
-    pattern = next(
-        source["scope_pattern"]
-        for source in load_sources(repo_root())["sources"]
-        if source["key"] == "sciencedirect-cfp"
-    )
-    assert re.search(pattern, "Cognition, Learning, and Agency BioSystems", re.I)
-    assert re.search(pattern, "Brain and Cognition Neurocognitive Adaptations", re.I)
-    assert not re.search(pattern, "Pattern Recognition Letters Generative Models", re.I)
-    assert not re.search(pattern, "Journal of Business Venturing Recognition of Hidden Potential", re.I)
+def test_elsevier_watched_journals_keep_robotics_and_drop_chemistry() -> None:
+    assert journal_is_watched("Biomimetic Intelligence and Robotics", publisher="Elsevier")
+    assert journal_is_watched("Molecular and Cellular Neuroscience", publisher="Elsevier")
+    assert journal_is_watched("Vision Research")
+    assert not journal_is_watched("Atmospheric Environment", publisher="Elsevier")

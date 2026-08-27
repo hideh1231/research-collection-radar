@@ -1,0 +1,344 @@
+# Watched journals. Hub listings (Elsevier, T&F, SAGE, APS) keep a record when
+# the extracted journal name matches `name` or an alias. Dedicated sources do not
+# need this filter; they are already one journal.
+
+journals:
+  # Elsevier
+  - name: Vision Research
+    publisher: Elsevier
+  - name: Hearing Research
+    publisher: Elsevier
+  - name: Cognition
+    publisher: Elsevier
+  - name: Cortex
+    publisher: Elsevier
+  - name: Computers in Human Behavior
+    publisher: Elsevier
+    aliases: [CHB]
+  - name: International Journal of Human-Computer Studies
+    publisher: Elsevier
+    aliases: [IJHCS]
+  - name: Robotics and Autonomous Systems
+    publisher: Elsevier
+    aliases: [RAS]
+  - name: Behavioural Brain Research
+    publisher: Elsevier
+    aliases: [Behavioral Brain Research, BBR]
+  - name: Neurobiology of Learning and Memory
+    publisher: Elsevier
+    aliases: [NLM]
+  - name: Animal Behaviour
+    publisher: Elsevier
+    aliases: [Animal Behavior]
+  - name: Acta Psychologica
+    publisher: Elsevier
+  - name: Consciousness and Cognition
+    publisher: Elsevier
+  - name: New Ideas in Psychology
+    publisher: Elsevier
+  - name: Brain and Cognition
+    publisher: Elsevier
+  - name: Neuropsychologia
+    publisher: Elsevier
+  - name: Cognitive Systems Research
+    publisher: Elsevier
+  - name: NeuroImage
+    publisher: Elsevier
+  - name: NeuroImage Clinical
+    publisher: Elsevier
+    aliases: ["NeuroImage: Clinical"]
+  - name: Experimental Neurology
+    publisher: Elsevier
+  - name: Neuroscience Letters
+    publisher: Elsevier
+  - name: Molecular and Cellular Neuroscience
+    publisher: Elsevier
+  - name: Behavioural Processes
+    publisher: Elsevier
+    aliases: [Behavioral Processes]
+  - name: Applied Animal Behaviour Science
+    publisher: Elsevier
+  - name: Hormones and Behavior
+    publisher: Elsevier
+  - name: Biomimetic Intelligence and Robotics
+    publisher: Elsevier
+  - name: Neuroscience
+    publisher: Elsevier
+  - name: Experimental Eye Research
+    publisher: Elsevier
+  - name: Journal of Neuroscience Methods
+    publisher: Elsevier
+  - name: Current Opinion in Behavioral Sciences
+    publisher: Elsevier
+  - name: Current Opinion in Neurobiology
+    publisher: Elsevier
+  - name: Trends in Cognitive Sciences
+    publisher: Elsevier
+  - name: Trends in Neurosciences
+    publisher: Elsevier
+  - name: Cognitive Psychology
+    publisher: Elsevier
+  - name: Journal of Memory and Language
+    publisher: Elsevier
+  - name: Cognition and Instruction
+    publisher: Elsevier
+  - name: Neural Networks
+    publisher: Elsevier
+  - name: Neurocomputing
+    publisher: Elsevier
+  - name: Biological Psychology
+    publisher: Elsevier
+  - name: International Journal of Psychophysiology
+    publisher: Elsevier
+  - name: Journal of Experimental Social Psychology
+    publisher: Elsevier
+  - name: Organizational Behavior and Human Decision Processes
+    publisher: Elsevier
+
+  # Nature
+  - name: Scientific Reports
+    publisher: Nature Portfolio
+  - name: Communications Psychology
+    publisher: Nature Portfolio
+  - name: Nature Communications
+    publisher: Nature Portfolio
+  - name: Communications Biology
+    publisher: Nature Portfolio
+
+  # Frontiers
+  - name: Frontiers in Psychology
+    publisher: Frontiers
+  - name: Frontiers in Psychiatry
+    publisher: Frontiers
+  - name: Frontiers in Human Neuroscience
+    publisher: Frontiers
+  - name: Frontiers in Neuroscience
+    publisher: Frontiers
+  - name: Frontiers in Neurology
+    publisher: Frontiers
+  - name: Frontiers in Behavioral Neuroscience
+    publisher: Frontiers
+  - name: Frontiers in Aging Neuroscience
+    publisher: Frontiers
+  - name: Frontiers in Cognition
+    publisher: Frontiers
+  - name: Frontiers in Computational Neuroscience
+    publisher: Frontiers
+  - name: Frontiers in Neuroinformatics
+    publisher: Frontiers
+  - name: Frontiers in Robotics and AI
+    publisher: Frontiers
+  - name: Frontiers in Neurorobotics
+    publisher: Frontiers
+  - name: Frontiers in Virtual Reality
+    publisher: Frontiers
+  - name: Frontiers in Computer Science
+    publisher: Frontiers
+  - name: Frontiers in Digital Health
+    publisher: Frontiers
+  - name: Frontiers in Neuroergonomics
+    publisher: Frontiers
+  - name: Frontiers in Ethology
+    publisher: Frontiers
+  - name: Frontiers in Ecology and Evolution
+    publisher: Frontiers
+  - name: Frontiers in Veterinary Science
+    publisher: Frontiers
+
+  # Springer / BMC
+  - name: BMC Psychology
+    publisher: Springer Nature
+  - name: BMC Psychiatry
+    publisher: Springer Nature
+  - name: Journal of NeuroEngineering and Rehabilitation
+    publisher: Springer Nature
+    aliases: [JNER]
+  - name: BMC Neuroscience
+    publisher: Springer Nature
+  - name: BMC Neurology
+    publisher: Springer Nature
+  - name: BMC Zoology
+    publisher: Springer Nature
+  - name: BMC Ecology and Evolution
+    publisher: Springer Nature
+  - name: BMC Digital Health
+    publisher: Springer Nature
+  - name: BMC Medical Informatics and Decision Making
+    publisher: Springer Nature
+  - name: Psychological Research
+    publisher: Springer Nature
+  - name: Attention Perception and Psychophysics
+    publisher: Springer Nature
+    aliases: ["Attention, Perception, & Psychophysics", APP]
+  - name: Memory and Cognition
+    publisher: Springer Nature
+    aliases: ["Memory & Cognition"]
+  - name: Learning and Behavior
+    publisher: Springer Nature
+    aliases: ["Learning & Behavior"]
+  - name: Cognitive Research Principles and Implications
+    publisher: Springer Nature
+    aliases: ["Cognitive Research: Principles and Implications", CRPI]
+  - name: Animal Cognition
+    publisher: Springer Nature
+  - name: Virtual Reality
+    publisher: Springer Nature
+  - name: Autonomous Robots
+    publisher: Springer Nature
+  - name: International Journal of Social Robotics
+    publisher: Springer Nature
+    aliases: [IJSR]
+  - name: Behavioral Ecology and Sociobiology
+    publisher: Springer Nature
+  - name: Universal Access in the Information Society
+    publisher: Springer Nature
+    aliases: [UAIS]
+  - name: Experimental Brain Research
+    publisher: Springer Nature
+  - name: Behavior Research Methods
+    publisher: Springer Nature
+    aliases: [Behaviour Research Methods]
+
+  # APA (hub already takes listed special issues)
+  - name: American Psychologist
+    publisher: APA
+  - name: Psychological Methods
+    publisher: APA
+  - name: Journal of Experimental Psychology Human Perception and Performance
+    publisher: APA
+    aliases: ["Journal of Experimental Psychology: Human Perception and Performance", "JEP:HPP"]
+  - name: Journal of Experimental Psychology Learning Memory and Cognition
+    publisher: APA
+    aliases: ["Journal of Experimental Psychology: Learning, Memory, and Cognition", "JEP:LMC"]
+  - name: Journal of Experimental Psychology Animal Learning and Cognition
+    publisher: APA
+    aliases: ["Journal of Experimental Psychology: Animal Learning and Cognition"]
+  - name: Psychological Bulletin
+    publisher: APA
+
+  # Taylor & Francis
+  - name: Cognition and Emotion
+    publisher: Taylor & Francis
+  - name: Visual Cognition
+    publisher: Taylor & Francis
+  - name: Journal of Cognitive Psychology
+    publisher: Taylor & Francis
+  - name: Cognitive Neuropsychology
+    publisher: Taylor & Francis
+  - name: Cognitive Neuroscience
+    publisher: Taylor & Francis
+  - name: Social Neuroscience
+    publisher: Taylor & Francis
+  - name: Memory
+    publisher: Taylor & Francis
+  - name: Laterality
+    publisher: Taylor & Francis
+  - name: Aging Neuropsychology and Cognition
+    publisher: Taylor & Francis
+    aliases: ["Aging, Neuropsychology, and Cognition"]
+  - name: Advanced Robotics
+    publisher: Taylor & Francis
+  - name: International Journal of Human-Computer Interaction
+    publisher: Taylor & Francis
+    aliases: [IJHCI]
+  - name: Behaviour and Information Technology
+    publisher: Taylor & Francis
+    aliases: ["Behaviour & Information Technology"]
+  - name: Ergonomics
+    publisher: Taylor & Francis
+  - name: Human-Computer Interaction
+    publisher: Taylor & Francis
+    aliases: ["Human–Computer Interaction"]
+  - name: Spatial Cognition and Computation
+    publisher: Taylor & Francis
+  - name: Journal of Clinical and Experimental Neuropsychology
+    publisher: Taylor & Francis
+  - name: The Journal of Psychology
+    publisher: Taylor & Francis
+  - name: Military Psychology
+    publisher: Taylor & Francis
+  - name: Psychology and Sexuality
+    publisher: Taylor & Francis
+    aliases: ["Psychology & Sexuality"]
+
+  # Wiley
+  - name: British Journal of Psychology
+    publisher: Wiley
+    aliases: [BJP]
+  - name: British Journal of Developmental Psychology
+    publisher: Wiley
+  - name: Ethology
+    publisher: Wiley
+  - name: Developmental Science
+    publisher: Wiley
+  - name: European Journal of Neuroscience
+    publisher: Wiley
+    aliases: [EJN]
+  - name: Hippocampus
+    publisher: Wiley
+  - name: Human Brain Mapping
+    publisher: Wiley
+  - name: Japanese Psychological Research
+    publisher: Wiley
+    aliases: [JPR]
+  - name: Cognitive Science
+    publisher: Wiley
+
+  # SAGE
+  - name: Quarterly Journal of Experimental Psychology
+    publisher: SAGE
+    aliases: [QJEP]
+  - name: Perception
+    publisher: SAGE
+  - name: i-Perception
+    publisher: SAGE
+    aliases: [iPerception]
+  - name: Psychological Science
+    publisher: SAGE
+  - name: Personality and Social Psychology Bulletin
+    publisher: SAGE
+  - name: Adaptive Behavior
+    publisher: SAGE
+
+  # General / society
+  - name: Science Robotics
+    publisher: AAAS
+  - name: Proceedings of the National Academy of Sciences
+    publisher: NAS
+    aliases: [PNAS]
+  - name: PNAS Nexus
+    publisher: OUP
+  - name: Journal of Neurophysiology
+    publisher: American Physiological Society
+    aliases: [J Neurophysiol, JNP]
+  - name: Journal of Neuroscience
+    publisher: Society for Neuroscience
+    aliases: [J Neurosci, JNeurosci]
+  - name: Journal of the Optical Society of America A
+    publisher: Optica
+    aliases: [JOSA A, JOSA A]
+
+  # Domestic
+  - name: Journal of Robotics and Mechatronics
+    publisher: Fuji Technology Press
+    aliases: [JRM]
+  - name: 日本バーチャルリアリティ学会論文誌
+    publisher: VRSJ
+    aliases: ["Transactions of the Virtual Reality Society of Japan", VRSJ]
+  - name: 情報処理学会論文誌
+    publisher: IPSJ
+    aliases: ["IPSJ Journal", 情報処理学会]
+  - name: ヒューマンインタフェース学会論文誌
+    publisher: HIS
+    aliases: [ヒューマンインタフェース学会, HIS]
+  - name: 人工知能学会誌
+    publisher: JSAI
+    aliases: [JSAI]
+  - name: International Journal of Affective Engineering
+    publisher: JSKE
+    aliases: [IJAE]
+  - name: 認知科学
+    publisher: JCSS
+    aliases: ["Japanese Cognitive Science"]
+  - name: Neuroscience of Consciousness
+    publisher: OUP

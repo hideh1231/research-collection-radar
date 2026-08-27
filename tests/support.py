@@ -3,6 +3,21 @@ from pathlib import Path
 from typing import Iterator
 from uuid import uuid4
 
+CONFIG_FILES = (
+    "config/sources.yml",
+    "config/domains.yml",
+    "config/alerts.yml",
+    "config/journals.yml",
+    "schema/collection.schema.json",
+)
+
+
+def copy_radar_config(source_root: Path, dest_root: Path) -> None:
+    for relative in CONFIG_FILES:
+        target = dest_root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes((source_root / relative).read_bytes())
+
 
 @contextmanager
 def workspace_tempdir(prefix: str) -> Iterator[Path]:
