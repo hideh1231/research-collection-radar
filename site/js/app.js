@@ -1,15 +1,18 @@
 import {
   PAGE_SIZE,
+  TOPIC_CHIP_LIMIT,
   VIEW_STORAGE_KEY,
+  countedValues,
   daysUntil,
   emptyState,
   filterRecords,
+  foldTopicCasing,
   hasActiveFilters,
   paginate,
   parseState,
+  sanitizeRecord,
   serializeState,
   sortRecords,
-  uniqueSorted,
 } from "./query.js";
 
 const TYPE_LABELS = {
@@ -37,58 +40,17 @@ const DEADLINE_LABELS = {
   not_checked: "Not checked",
 };
 
-const root = document.documentElement;
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const TOPIC_LIST_LIMIT = 80;
 const today = new Date().toISOString().slice(0, 10);
 let records = [];
 let state = parseState(window.location.search);
 let visibleCount = PAGE_SIZE;
 let layout = window.localStorage.getItem(VIEW_STORAGE_KEY) === "table" ? "table" : "cards";
+let searchTimer = 0;
 
 function $(selector) {
   return document.querySelector(selector);
-}
-
-function optionList(values, labels) {
-  return uniqueSorted(values).map((value) => {
-    const option = document.createElement("option");
-    option.value = value;
-    option.textContent = (labels && labels[value]) || value;
-    return option;
-  });
-}
-
-function fillSelect(select, values, selected, labels) {
-  const current = new Set(selected);
-  select.innerHTML = "";
-  for (const option of optionList(values, labels)) {
-    option.selected = current.has(option.value);
-    select.append(option);
-  }
-}
-
-function selectedValues(select) {
-  return [...select.selectedOptions].map((option) => option.value);
-}
-
-function deadlineCopy(row) {
-  if (row.deadline) {
-    const days = daysUntil(row.deadline, today);
-    if (days === null) return { label: row.deadline, modifier: "listed" };
-    if (days < 0) return { label: `${Math.abs(days)}d ago`, modifier: "past" };
-    if (days === 0) return { label: "Today", modifier: "soon" };
-    if (days <= 21) return { label: `${days}d`, modifier: "soon" };
-    return { label: `${days}d`, modifier: "listed" };
-  }
-  if (row.deadline_status === "not_checked") return { label: "Not checked", modifier: "unchecked" };
-  return { label: "Not listed", modifier: "missing" };
-}
-
-function imageMarkup(row) {
-  if (!row.image_url) {
-    return `<div class="thumb thumb-empty" aria-hidden="true"></div>`;
-  }
-  const alt = row.image_alt || row.title || "Collection image";
-  return `<img class="thumb" src="${escapeAttr(row.image_url)}" alt="${escapeAttr(alt)}" loading="lazy" referrerpolicy="no-referrer" data-fallback>`;
 }
 
 function escapeAttr(value) {
@@ -106,10 +68,42 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;");
 }
 
+function formatDate(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+  if (!match) return iso || "";
+  return `${Number(match[3])} ${MONTHS[Number(match[2]) - 1]} ${match[1]}`;
+}
+
+function deadlineCopy(row) {
+  if (row.deadline) {
+    const days = daysUntil(row.deadline, today);
+    const date = formatDate(row.deadline);
+    if (days === null) return { modifier: "listed", label: date };
+    if (days < 0) return { modifier: "past", label: `${date} · ${Math.abs(days)}d ago` };
+    if (days === 0) return { modifier: "soon", label: `${date} · Today` };
+    const relative = `${days}d left`;
+    return { modifier: days <= 21 ? "soon" : "listed", label: `${date} · ${relative}` };
+  }
+  if (row.deadline_status === "not_checked") return { modifier: "unchecked", label: "Deadline not checked" };
+  return { modifier: "missing", label: "Deadline not listed" };
+}
+
+function imageMarkup(row) {
+  if (!row.image_url) return "";
+  const alt = row.image_alt || row.title || "Collection image";
+  return `<img class="cover" src="${escapeAttr(row.image_url)}" alt="${escapeAttr(alt)}" width="640" height="360" loading="lazy" referrerpolicy="no-referrer" data-fallback>`;
+}
+
 function topicChips(row) {
   const topics = row.topics || [];
   if (!topics.length) return "";
-  return `<ul class="chips">${topics.map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}</ul>`;
+  const visible = topics.slice(0, TOPIC_CHIP_LIMIT);
+  const extra = topics.slice(TOPIC_CHIP_LIMIT);
+  const items = visible.map((topic) => `<li title="${escapeAttr(topic)}">${escapeHtml(topic)}</li>`);
+  if (extra.length) {
+    items.push(`<li class="chip-more" title="${escapeAttr(extra.join(", "))}">+${extra.length}</li>`);
+  }
+  return `<ul class="chips">${items.join("")}</ul>`;
 }
 
 function domainChips(row) {
@@ -117,49 +111,155 @@ function domainChips(row) {
 }
 
 function cardMarkup(row) {
-  const rail = deadlineCopy(row);
-  const summary = row.summary ? escapeHtml(row.summary) : "No summary listed.";
-  return `<article class="card" data-id="${escapeAttr(row.id)}">
-    <div class="rail rail-${rail.modifier}" aria-label="Deadline ${escapeAttr(rail.label)}">
-      <span>${escapeHtml(rail.label)}</span>
-    </div>
+  const deadline = deadlineCopy(row);
+  const type = TYPE_LABELS[row.collection_type] || row.collection_type;
+  const summary = row.summary
+    ? `<details class="summary-details"><summary>Description</summary><p>${escapeHtml(row.summary)}</p></details>`
+    : "";
+  return `<article class="card card-${deadline.modifier}" data-id="${escapeAttr(row.id)}">
+    ${imageMarkup(row)}
     <div class="card-body">
-      ${imageMarkup(row)}
-      <div class="card-copy">
-        <p class="meta">${escapeHtml(domainChips(row))} · ${escapeHtml(TYPE_LABELS[row.collection_type] || row.collection_type)}</p>
-        <h2><a href="${escapeAttr(row.url)}" rel="noopener noreferrer">${escapeHtml(row.title)}</a></h2>
-        <p class="journal">${escapeHtml(row.journal)}</p>
-        <p class="summary" data-expanded="false">${summary}</p>
-        ${row.summary && row.summary.length > 180 ? `<button type="button" class="text-toggle">Expand summary</button>` : ""}
-        ${topicChips(row)}
+      <div class="card-kicker">
+        <span class="deadline-badge deadline-${deadline.modifier}">${escapeHtml(deadline.label)}</span>
+        <span class="type-pill">${escapeHtml(type)}</span>
       </div>
+      <h2><a href="${escapeAttr(row.url)}" rel="noopener noreferrer">${escapeHtml(row.title)}</a></h2>
+      <p class="journal">${escapeHtml(row.journal)}</p>
+      <p class="fields">${escapeHtml(domainChips(row))}</p>
+      ${summary}
+      ${topicChips(row)}
     </div>
   </article>`;
 }
 
 function tableRowMarkup(row) {
-  const rail = deadlineCopy(row);
+  const deadline = deadlineCopy(row);
   return `<tr>
-    <td><span class="rail-inline rail-${rail.modifier}">${escapeHtml(rail.label)}</span></td>
-    <td><a href="${escapeAttr(row.url)}" rel="noopener noreferrer">${escapeHtml(row.title)}</a></td>
-    <td>${escapeHtml(row.journal)}</td>
+    <td><span class="deadline-badge deadline-${deadline.modifier}">${escapeHtml(deadline.label)}</span></td>
+    <td class="title-cell"><a href="${escapeAttr(row.url)}" rel="noopener noreferrer">${escapeHtml(row.title)}</a></td>
+    <td class="journal-cell">${escapeHtml(row.journal)}</td>
     <td>${escapeHtml(domainChips(row))}</td>
-    <td>${escapeHtml((row.topics || []).join(", "))}</td>
+    <td>${topicChips(row)}</td>
     <td>${escapeHtml(TYPE_LABELS[row.collection_type] || row.collection_type)}</td>
   </tr>`;
 }
 
+function toggleValue(list, value) {
+  const next = new Set(list || []);
+  if (next.has(value)) next.delete(value);
+  else next.add(value);
+  return [...next];
+}
+
+function chipButtons(items, selected, labels) {
+  const on = new Set(selected || []);
+  return items.map((item) => {
+    const value = item.value || item;
+    const label = (labels && labels[value]) || value;
+    const count = item.count != null ? ` (${item.count})` : "";
+    return `<button type="button" class="chip-toggle" data-value="${escapeAttr(value)}" aria-pressed="${on.has(value) ? "true" : "false"}">${escapeHtml(label)}${count}</button>`;
+  }).join("");
+}
+
+function checkItems(items, selected) {
+  const on = new Set(selected || []);
+  if (!items.length) return `<p class="fields">No matching topics</p>`;
+  return items.map((item) => {
+    const checked = on.has(item.value);
+    const disabled = !checked && item.count === 0;
+    return `<label class="check${disabled ? " is-disabled" : ""}">
+      <input type="checkbox" value="${escapeAttr(item.value)}" ${checked ? "checked" : ""} ${disabled ? "disabled" : ""}>
+      <span class="check-label" title="${escapeAttr(item.value)}">${escapeHtml(item.value)}</span>
+      <span class="check-count">${item.count}</span>
+    </label>`;
+  }).join("");
+}
+
+function visibleList(all, selected, query, limit) {
+  const selectedSet = new Set(selected || []);
+  const needle = (query || "").trim().toLowerCase();
+  const matching = needle
+    ? all.filter((item) => item.value.toLowerCase().includes(needle) || selectedSet.has(item.value))
+    : all;
+  const picked = [];
+  const seen = new Set();
+  for (const item of matching) {
+    if (selectedSet.has(item.value) && !seen.has(item.value)) {
+      picked.push(item);
+      seen.add(item.value);
+    }
+  }
+  for (const item of matching) {
+    if (picked.length >= limit) break;
+    if (seen.has(item.value)) continue;
+    picked.push(item);
+    seen.add(item.value);
+  }
+  return picked;
+}
+
+function activeFilterChips() {
+  const chips = [];
+  const push = (facet, value, label) => {
+    chips.push(`<span class="active-chip">${escapeHtml(label)} <button type="button" data-facet="${escapeAttr(facet)}" data-value="${escapeAttr(value)}" aria-label="Remove ${escapeAttr(label)}">×</button></span>`);
+  };
+  if (state.q) push("q", state.q, `Search: ${state.q}`);
+  for (const value of state.domains) push("domains", value, DOMAIN_LABELS[value] || value);
+  for (const value of state.types) push("types", value, TYPE_LABELS[value] || value);
+  for (const value of state.deadlines) push("deadlines", value, DEADLINE_LABELS[value] || value);
+  if (state.from) push("from", state.from, `From ${state.from}`);
+  if (state.to) push("to", state.to, `To ${state.to}`);
+  for (const value of state.journals) push("journals", value, value);
+  for (const value of state.topics) push("topics", value, value);
+  return chips.join("");
+}
+
 function renderFacets(filtered) {
-  fillSelect($("#domain-filter"), records.flatMap((row) => row.domains || []), state.domains, DOMAIN_LABELS);
-  fillSelect($("#topic-filter"), records.flatMap((row) => row.topics || []), state.topics);
-  fillSelect($("#journal-filter"), records.flatMap((row) => [row.journal, ...(row.journals || [])]), state.journals);
-  fillSelect($("#type-filter"), records.map((row) => row.collection_type), state.types, TYPE_LABELS);
-  fillSelect($("#deadline-filter"), ["listed", "not_listed", "not_checked"], state.deadlines, DEADLINE_LABELS);
+  const domainCounts = countedValues(filtered, (row) => row.domains || []);
+  const typeCounts = countedValues(records, (row) => [row.collection_type]);
+  const deadlineCounts = countedValues(filtered, (row) => [row.deadline_status]);
+  const journalCounts = countedValues(filtered, (row) => [row.journal, ...(row.journals || [])]);
+  const topicCounts = countedValues(filtered, (row) => row.topics || []);
+  const allJournals = countedValues(records, (row) => [row.journal, ...(row.journals || [])]);
+  const allTopics = countedValues(records, (row) => row.topics || []);
+  const journalByValue = new Map(journalCounts.map((item) => [item.value, item.count]));
+  const topicByValue = new Map(topicCounts.map((item) => [item.value, item.count]));
+
+  $("#domain-filter").innerHTML = chipButtons(
+    ["psychology", "hci", "neuroscience", "robotics", "hri"].map((value) => ({
+      value,
+      count: domainCounts.find((item) => item.value === value)?.count || 0,
+    })),
+    state.domains,
+    DOMAIN_LABELS,
+  );
+  $("#type-filter").innerHTML = chipButtons(typeCounts, state.types, TYPE_LABELS);
+  $("#deadline-filter").innerHTML = chipButtons(
+    ["listed", "not_listed", "not_checked"].map((value) => ({
+      value,
+      count: deadlineCounts.find((item) => item.value === value)?.count || 0,
+    })),
+    state.deadlines,
+    DEADLINE_LABELS,
+  );
+  const journals = visibleList(
+    allJournals.map((item) => ({ value: item.value, count: journalByValue.get(item.value) || 0 })),
+    state.journals,
+    $("#journal-query").value,
+    67,
+  );
+  const topics = visibleList(
+    allTopics.map((item) => ({ value: item.value, count: topicByValue.get(item.value) || 0 })),
+    state.topics,
+    $("#topic-query").value,
+    TOPIC_LIST_LIMIT,
+  );
+  $("#journal-filter").innerHTML = checkItems(journals, state.journals);
+  $("#topic-filter").innerHTML = checkItems(topics, state.topics);
   $("#search").value = state.q;
   $("#sort").value = state.sort;
   $("#deadline-from").value = state.from || "";
   $("#deadline-to").value = state.to || "";
-  void filtered;
 }
 
 function render() {
@@ -170,13 +270,16 @@ function render() {
   const count = $("#count");
   const more = $("#more");
   const clear = $("#clear");
+  const active = $("#active-filters");
   count.textContent = `${filtered.length} open call${filtered.length === 1 ? "" : "s"}`;
   clear.hidden = !hasActiveFilters(state);
   more.hidden = page.remaining === 0;
   more.textContent = page.remaining ? `Show ${Math.min(PAGE_SIZE, page.remaining)} more` : "";
   $("#layout-cards").setAttribute("aria-pressed", layout === "cards" ? "true" : "false");
   $("#layout-table").setAttribute("aria-pressed", layout === "table" ? "true" : "false");
-  document.body.dataset.layout = layout;
+  active.hidden = !hasActiveFilters(state);
+  active.innerHTML = activeFilterChips();
+  renderFacets(filtered);
   if (page.items.length === 0) {
     results.innerHTML = "";
     empty.hidden = false;
@@ -184,10 +287,20 @@ function render() {
   }
   empty.hidden = true;
   if (layout === "table") {
-    results.innerHTML = `<div class="table-wrap" tabindex="0"><table>
-      <thead><tr><th>Deadline</th><th>Title</th><th>Journal</th><th>Fields</th><th>Topics</th><th>Type</th></tr></thead>
-      <tbody>${page.items.map(tableRowMarkup).join("")}</tbody>
-    </table></div>`;
+    results.innerHTML = `<div class="table-wrap" tabindex="0" aria-label="Open calls">
+      <table>
+        <colgroup>
+          <col class="deadline">
+          <col class="title">
+          <col class="journal">
+          <col class="fields">
+          <col class="topics">
+          <col class="type">
+        </colgroup>
+        <thead><tr><th>Deadline</th><th>Title</th><th>Journal</th><th>Fields</th><th>Topics</th><th>Type</th></tr></thead>
+        <tbody>${page.items.map(tableRowMarkup).join("")}</tbody>
+      </table>
+    </div>`;
   } else {
     results.innerHTML = `<div class="card-grid">${page.items.map(cardMarkup).join("")}</div>`;
   }
@@ -199,34 +312,80 @@ function syncUrl() {
   window.history.replaceState(state, "", url);
 }
 
-function readControls() {
-  state = {
-    q: $("#search").value.trim(),
-    domains: selectedValues($("#domain-filter")),
-    topics: selectedValues($("#topic-filter")),
-    journals: selectedValues($("#journal-filter")),
-    types: selectedValues($("#type-filter")),
-    deadlines: selectedValues($("#deadline-filter")),
-    from: $("#deadline-from").value,
-    to: $("#deadline-to").value,
-    sort: $("#sort").value,
-  };
+function applyState() {
   visibleCount = PAGE_SIZE;
   syncUrl();
   render();
 }
 
 function bind() {
-  $("#search").addEventListener("input", readControls);
-  for (const id of ["domain-filter", "topic-filter", "journal-filter", "type-filter", "deadline-filter", "deadline-from", "deadline-to", "sort"]) {
-    $(`#${id}`).addEventListener("change", readControls);
-  }
+  $("#search").addEventListener("input", () => {
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(() => {
+      state = { ...state, q: $("#search").value.trim() };
+      applyState();
+    }, 150);
+  });
+  $("#sort").addEventListener("change", () => {
+    state = { ...state, sort: $("#sort").value };
+    applyState();
+  });
+  $("#deadline-from").addEventListener("change", () => {
+    state = { ...state, from: $("#deadline-from").value };
+    applyState();
+  });
+  $("#deadline-to").addEventListener("change", () => {
+    state = { ...state, to: $("#deadline-to").value };
+    applyState();
+  });
+  $("#journal-query").addEventListener("input", () => renderFacets(filterRecords(records, state)));
+  $("#topic-query").addEventListener("input", () => renderFacets(filterRecords(records, state)));
+  $("#domain-filter").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-value]");
+    if (!button) return;
+    state = { ...state, domains: toggleValue(state.domains, button.dataset.value) };
+    applyState();
+  });
+  $("#type-filter").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-value]");
+    if (!button) return;
+    state = { ...state, types: toggleValue(state.types, button.dataset.value) };
+    applyState();
+  });
+  $("#deadline-filter").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-value]");
+    if (!button) return;
+    state = { ...state, deadlines: toggleValue(state.deadlines, button.dataset.value) };
+    applyState();
+  });
+  $("#journal-filter").addEventListener("change", (event) => {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement)) return;
+    state = { ...state, journals: toggleValue(state.journals, input.value) };
+    applyState();
+  });
+  $("#topic-filter").addEventListener("change", (event) => {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement)) return;
+    state = { ...state, topics: toggleValue(state.topics, input.value) };
+    applyState();
+  });
+  $("#active-filters").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-facet]");
+    if (!button) return;
+    const facet = button.dataset.facet;
+    const value = button.dataset.value;
+    if (facet === "q") state = { ...state, q: "" };
+    else if (facet === "from") state = { ...state, from: "" };
+    else if (facet === "to") state = { ...state, to: "" };
+    else state = { ...state, [facet]: (state[facet] || []).filter((item) => item !== value) };
+    applyState();
+  });
   $("#clear").addEventListener("click", () => {
     state = emptyState();
-    visibleCount = PAGE_SIZE;
-    renderFacets(records);
-    syncUrl();
-    render();
+    $("#journal-query").value = "";
+    $("#topic-query").value = "";
+    applyState();
     $("#search").focus();
   });
   $("#more").addEventListener("click", () => {
@@ -243,21 +402,10 @@ function bind() {
     window.localStorage.setItem(VIEW_STORAGE_KEY, "table");
     render();
   });
-  $("#results").addEventListener("click", (event) => {
-    const button = event.target.closest(".text-toggle");
-    if (!button) return;
-    const summary = button.parentElement.querySelector(".summary");
-    const expanded = summary.getAttribute("data-expanded") === "true";
-    summary.setAttribute("data-expanded", expanded ? "false" : "true");
-    button.textContent = expanded ? "Expand summary" : "Collapse summary";
-  });
   $("#results").addEventListener("error", (event) => {
     const image = event.target;
     if (!(image instanceof HTMLImageElement) || !image.hasAttribute("data-fallback")) return;
-    const placeholder = document.createElement("div");
-    placeholder.className = "thumb thumb-empty";
-    placeholder.setAttribute("aria-hidden", "true");
-    image.replaceWith(placeholder);
+    image.remove();
   }, true);
   window.addEventListener("keydown", (event) => {
     const typing = event.target instanceof HTMLInputElement
@@ -276,19 +424,15 @@ async function start() {
   try {
     const response = await fetch("data/collections.json");
     if (!response.ok) throw new Error("Could not load collections");
-    records = await response.json();
-    if (!Array.isArray(records) || records.some((row) => row.status && row.status !== "open")) {
-      records = Array.isArray(records) ? records.filter((row) => row.status === "open") : [];
-    }
+    const payload = await response.json();
+    records = Array.isArray(payload) ? foldTopicCasing(payload.map(sanitizeRecord).filter((row) => !row.status || row.status === "open")) : [];
   } catch (error) {
     $("#empty").hidden = false;
     $("#empty").textContent = "The collection index could not be loaded.";
     console.error(error);
     return;
   }
-  renderFacets(records);
   render();
 }
 
 start();
-void root;
