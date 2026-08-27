@@ -217,7 +217,18 @@ html, body {
   font-size: 0.75rem;
 }
 
-.check.is-disabled { opacity: 0.45; }
+.check-all {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.check-all .check-label {
+  font-weight: 700;
+}
 
 input, select, button {
   font: inherit;

@@ -43,6 +43,7 @@ from radar.store import (
 )
 from radar.topics import (
     HttpCompletionsClient,
+    apply_catalog_topics,
     enrich_topics,
     llm_settings,
 )
@@ -491,6 +492,10 @@ def run(
         source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})["deadline_enrichment"] = empty
         source_status["sources"].setdefault(frontiers["key"], {})["deadline_enrichment"] = empty
 
+    overlay_updated = apply_catalog_topics(current_rows, root=root)
+    if overlay_updated:
+        log(f"catalog topics: updated={overlay_updated}")
+
     try:
         _write_artifacts_atomic(
             root,
@@ -576,10 +581,6 @@ def build_site(root: Path) -> int:
 
 
 def run_topic_enrichment(root: Path, *, dry_run: bool = False, limit: int | None = None) -> int:
-    settings = llm_settings()
-    if settings is None:
-        log("llm skipped: RADAR_LLM_BASE_URL, RADAR_LLM_API_KEY, and RADAR_LLM_MODEL are not all set")
-        return 0
     today = date.today()
     domains_cfg = load_domains(root)
     schema = load_schema(root / "schema" / "collection.schema.json")
@@ -589,6 +590,29 @@ def run_topic_enrichment(root: Path, *, dry_run: bool = False, limit: int | None
         source_status = json.loads(status_path.read_text(encoding="utf-8"))
     else:
         source_status = {"checked_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"), "sources": {}}
+    overlay_updated = apply_catalog_topics(rows, root=root)
+    if overlay_updated:
+        log(f"catalog topics: updated={overlay_updated}")
+    settings = llm_settings()
+    if settings is None:
+        log("llm skipped: RADAR_LLM_BASE_URL, RADAR_LLM_API_KEY, and RADAR_LLM_MODEL are not all set")
+        if overlay_updated:
+            try:
+                _write_artifacts_atomic(
+                    root,
+                    rows,
+                    today,
+                    source_status,
+                    schema,
+                    domain_labels(domains_cfg),
+                    collection_type_labels(domains_cfg),
+                )
+            except ValueError as exc:
+                log(str(exc))
+                return 1
+            if not dry_run:
+                commit_if_actions(root, f"data: overlay catalog topics ({overlay_updated} updated)")
+        return 0
     event = os.environ.get("GITHUB_EVENT_NAME", "")
     default_limit = 500 if event == "workflow_dispatch" else 100
     raw_limit = os.environ.get("RADAR_LLM_LIMIT") or str(default_limit)

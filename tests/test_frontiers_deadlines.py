@@ -117,6 +117,20 @@ def test_enrichment_updates_state_and_keeps_known_deadline(monkeypatch) -> None:
     assert stats["remaining"] == 0
 
 
+def test_remaining_counts_past_daily_limit(monkeypatch) -> None:
+    monkeypatch.setattr("radar.collectors.frontiers.utc_now", lambda: "2026-08-26T00:00:00Z")
+    rows = [_row(1), _row(2), _row(3)]
+    html = '<link rel="canonical" href="https://frontiersin.org/research-topics/1/topic-1"><p>Manuscript Submission Deadline 21 April 2027</p>'
+    stats = enrich_deadlines(
+        _FakeFetcher([(200, html)]),
+        rows,
+        _enrichment_source(1),
+        backfill=False,
+    )
+    assert stats["checked"] == 1
+    assert stats["remaining"] == 2
+
+
 def test_forbidden_stops_without_changing_row() -> None:
     row = _row(1)
     before = dict(row)
