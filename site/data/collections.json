@@ -1496,6 +1496,38 @@
     "status": "open"
   },
   {
+    "id": "frontiers-1ad5f1fd14",
+    "title": "Predictive Coding: From typical cognition to clinical conditions",
+    "summary": "Predictive Coding (PC) is a prominent theoretical framework that posits that a core function of the brain is a hierarchical inference process. It actively generates predictions about the causes of sensory input and continuously updates these based on \"prediction errors\" (the mismatch between expectation and reality). This parsimonious model offers a mechanistic account for a wide range of typical cognitive functions, from basic sensory inference and perceptual stability to motor control and decision-making.",
+    "journal": "Frontiers in Human Neuroscience",
+    "journals": [
+      "Frontiers in Human Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "Sensory neuroscience",
+      "Predictive coding",
+      "brain",
+      "mechanisms",
+      "sensory input",
+      "motor control",
+      "cognitive function",
+      "cognition"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2026-09-07",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/77470/predictive-coding-from-typical-cognition-to-clinical-conditions",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "frontiers-3467d9fe4a",
     "title": "Programmed Cell Death and Targeted Therapy in Tumors of the Nervous System",
     "summary": "Programmed cell death (PCD) is a natural process of cell self-destruction that occurs as a normal part of an organism's growth and development or in response to stress, damage or infection. There are different forms of PCD, including apoptosis, necrosis, autophagy, pyroptosis, and ferroptosis, each with unique cellular mechanisms and outcomes. Over the years, it has been discovered that dysregulation of PCD can lead to the development and progression of various types of tumors, including those affecting the nervous system. The failure of PCD in damaged or mutated cells can allow their proliferation, which can eventually lead to tumor formation. However, the use of targeted therapies that exploit the regulation of PCD in cancer cells has shown promising results in the management of tumors of the nervous system. It has been demonstrated that the use of cell death-inducing agents can selectively promote the death of tumor cells while minimizing harm to the surrounding normal cells. As suc",
@@ -42009,38 +42041,6 @@
     "image_url": "https://www.frontiersin.org/image/researchtopic/67454",
     "image_alt": "Prediction of trauma-related disorders: Identifying pre-exposure factors, neurobiological mechanisms, and their impact on future adaptation in a comprehensive analysis of risk and resilience",
     "first_seen": "2026-08-26",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-1ad5f1fd14",
-    "title": "Predictive Coding: From typical cognition to clinical conditions",
-    "summary": "Predictive Coding (PC) is a prominent theoretical framework that posits that a core function of the brain is a hierarchical inference process. It actively generates predictions about the causes of sensory input and continuously updates these based on \"prediction errors\" (the mismatch between expectation and reality). This parsimonious model offers a mechanistic account for a wide range of typical cognitive functions, from basic sensory inference and perceptual stability to motor control and decision-making.",
-    "journal": "Frontiers in Human Neuroscience",
-    "journals": [
-      "Frontiers in Human Neuroscience"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Sensory neuroscience",
-      "Predictive coding",
-      "brain",
-      "mechanisms",
-      "sensory input",
-      "motor control",
-      "cognitive function",
-      "cognition"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/77470/predictive-coding-from-typical-cognition-to-clinical-conditions",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
   },
