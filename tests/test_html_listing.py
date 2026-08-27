@@ -103,6 +103,7 @@ def test_domestic_and_society_parsers() -> None:
     )
     assert any("VR心理学" in row.title for row in vrsj)
     assert any(row.deadline == date(2026, 9, 14) for row in vrsj)
+    assert len({row.publisher_id for row in vrsj}) == len(vrsj) >= 2
 
     ipsj = parse_listing(
         (repo_root() / "tests/fixtures/ipsj_cfp.html").read_text(encoding="utf-8"),

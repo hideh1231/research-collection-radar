@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import date
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup, Tag
 
@@ -96,9 +96,20 @@ def _make(
         return None
     closed = status == "closed" or bool(CLOSED_RE.search(title))
     record_status = "closed" if closed else (status or listing_status(deadline))
+    canon = canonicalize_url(url)
+    listing = canonicalize_url(str(source.get("url") or ""))
+    fragment = urlparse(url).fragment.strip()
+    if not publisher_id:
+        if fragment:
+            publisher_id = fragment[:80]
+        elif listing and canon == listing:
+            title_slug = re.sub(r"[^a-z0-9一-龯ぁ-んァ-ン]+", "-", title.lower()).strip("-")[:50]
+            publisher_id = title_slug or canon.rsplit("/", 1)[-1][:80]
+        else:
+            publisher_id = canon.rsplit("/", 1)[-1][:80]
     return RawRecord(
         title=title,
-        url=canonicalize_url(url),
+        url=canon,
         source_url=source["url"],
         publisher=source["publisher"],
         journal=journal or source.get("journal") or source["publisher"],
@@ -108,7 +119,7 @@ def _make(
         summary=(summary or None) and summary[:1000],
         submission_mode="open_call",
         extraction_method="listing",
-        publisher_id=publisher_id or canonicalize_url(url).rsplit("/", 1)[-1][:80],
+        publisher_id=publisher_id,
         status=record_status,
     )
 
