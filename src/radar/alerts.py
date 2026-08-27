@@ -16,16 +16,24 @@ def new_records(current: list[dict[str, Any]], prior_ids: set[str]) -> list[dict
     return [row for row in current if row["id"] not in prior_ids]
 
 
+def deadline_text(row: dict[str, Any]) -> str:
+    if row.get("deadline"):
+        return str(row["deadline"])
+    if row.get("deadline_status") == "not_listed":
+        return "Deadline not listed"
+    return "Deadline not checked"
+
+
 def digest_text(records: list[dict[str, Any]], limit: int = 30) -> str:
     shown = records[:limit]
     lines = [f"{len(records)} new collection(s)."]
     for row in shown:
         domains = " · ".join(d.upper() for d in row.get("domains") or [])
         prefix = f"[{domains}] " if domains else ""
-        deadline = row.get("deadline") or "no deadline"
+        deadline = deadline_text(row)
         lines.append(f"• {prefix}{row['title']}\n  {row['journal']} · {deadline}\n  {row['url']}")
     if len(records) > limit:
-        lines.append(f"… {len(records) - limit} more in OPEN.md")
+        lines.append(f"… {len(records) - limit} more")
     return "\n".join(lines)
 
 

@@ -32,3 +32,15 @@ def load_domains(root: Path | None = None) -> dict[str, Any]:
 def load_alerts(root: Path | None = None) -> dict[str, Any]:
     root = root or repo_root()
     return load_yaml(root / "config" / "alerts.yml")
+
+
+def domain_labels(config: dict[str, Any]) -> dict[str, str]:
+    return {
+        key: str(spec.get("label") or key)
+        for key, spec in (config.get("domains") or {}).items()
+    }
+
+
+def collection_type_labels(config: dict[str, Any]) -> dict[str, str]:
+    labels = config.get("collection_types") or config.get("type_labels") or {}
+    return {str(key): str(value) for key, value in labels.items()}

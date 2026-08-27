@@ -26,6 +26,8 @@ Chosen option: "公開 GitHub リポジトリの JSONL を正本にし、OPEN.md
 
 最初に有効化する取得元は Nature の Psychology 公募である。一覧に募集状態と締切が出る。Frontiers は 2 本目とし、締切は新規だけ個別ページから取る。ScienceDirect・APA・Royal Society などボット対策がある相手は、GitHub Actions で取れてから毎日の実行に載せる。
 
+この決定のうち、Frontiers の締切を新規だけ確認する方針と、締切のない募集中案件を `OPEN.md` に載せる方針は、`0002-deadline-state-and-open-list.md` で部分的に置き換えた（partially superseded）。JSONLを正本にし、Slackを新着通知に使う方針は維持する。
+
 閉じた案件は正本から消さず `status=closed` で残す。OPEN.md は募集中だけ出す。毎日全件の `last_seen` は更新しない。初回実行は送信記録だけ書き Slack は送らない。2 回目以降の新規は 1 通にまとめる。ページングを最後まで辿れない取得は失敗とする。取得が無い日も `data/source_status.json` を更新する。
 
 ### Consequences

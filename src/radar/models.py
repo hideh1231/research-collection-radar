@@ -10,9 +10,12 @@ CONTENT_HASH_FIELDS = (
     "journal",
     "collection_type",
     "deadline",
+    "deadline_status",
     "status",
     "summary",
 )
+
+DEADLINE_STATUSES = ("listed", "not_listed", "not_checked")
 
 
 @dataclass(slots=True)

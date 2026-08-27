@@ -1,35 +1,44 @@
 # Research Collection Radar
 
-A public, automated index of special issues, research collections, theme issues, research topics, and related calls for papers across psychology, HCI, robotics, HRI, and adjacent fields.
+## Open calls
 
-学術雑誌が公開している特集・Collection・Research Topic などの公募を集め、公開 GitHub リポジトリを正本にする。人間向けの一覧は締切順の `OPEN.md`。Slack は 2 日目以降の新規だけを 1 通にまとめる。
+[`OPEN.md`](OPEN.md) lists open calls with a confirmed deadline. It sorts entries by deadline and shows the title, journal, research fields, collection type, and source URL. Closed calls, calls without a listed deadline, and calls whose deadline has not been checked stay in [`data/collections.jsonl`](data/collections.jsonl) but do not appear in `OPEN.md`.
 
-## 正本
+## Scope
 
-- `data/collections.jsonl` — 1 行 1 件。閉じた案件も `status=closed` で残す
-- `OPEN.md` — 募集中だけ。締切順。締切が無い行は末尾
-- `data/source_status.json` — 取得の成否。変更が無くても更新する
+The index tracks public calls for special issues, research collections, theme issues, research topics, and related journal opportunities. It focuses on psychology, HCI, neuroscience, robotics, and HRI. A record can have more than one field.
 
-各 Collection の権利は元の出版社にある。このリポジトリが持つのは題名・雑誌・締切・URL などの公開事実である。本文は転載しない。
+## Data files
 
-## いま有効な取得元
+- `data/collections.jsonl` is the source of truth. Each line stores one opportunity, including its deadline state and change history.
+- `data/source_status.json` records each crawl and deadline-enrichment result.
+- `schema/collection.schema.json` defines the record format.
+- `state/notification_ledger.jsonl` records new-call notifications and is not part of the public collection index.
 
-- Nature / Scientific Reports の Psychology 公募
-- Frontiers in Psychology の Research Topics
-- BMC Psychology の Collection 一覧
+## Sources
 
-ScienceDirect・APA・Royal Society はボット対策でローカルから読めなかったので毎日の実行には載せていない。PLOS は案内リンクしか取れなかったので外している。
+The enabled sources cover:
 
-GitHub Actions が UTC 21:17（JST 6:17）に回す。秘密情報は次の 2 つだけをリポジトリの Secrets に置く。
+- Nature Psychology calls in Scientific Reports
+- Frontiers in Psychology Research Topics
+- BMC Psychology collections
+
+The configuration in `config/sources.yml` controls source URLs, allowed hosts, pagination, and deadline checks. Disabled sources remain in the configuration for later use.
+
+## Slack
+
+Slack reports new open records once, after the first run. It includes records with a date, `Deadline not listed`, or `Deadline not checked`. A later deadline update does not send a second notification. `OPEN.md` has a narrower purpose: it shows only open records with a confirmed date.
+
+Set these GitHub Actions secrets to enable Slack delivery:
 
 - `SLACK_BOT_TOKEN`
 - `SLACK_CHANNEL_ID`
 
-bot の権限は `chat:write` だけでよい。通知先の private チャンネルに bot を入れる。Secret が無い日はデータだけ更新し、通知は飛ばす。初回は送信記録だけ書き、Slack は送らない。
+The bot needs the `chat:write` permission and membership in the target channel. The crawl still updates the public data when either secret is missing.
 
-## 手元で回す
+## Run locally
 
-Python 3.11 以降。
+Use Python 3.11 or newer.
 
 ```text
 python -m pip install -e ".[dev]"
@@ -37,12 +46,14 @@ python -m pytest
 python -m radar
 ```
 
-`--dry-run` は通知しない。`--offline` は取得を飛ばす。
+Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked`; this command does not discover new records or send Slack notifications.
 
-## 分野
+## Classification
 
-心理・HCI・神経科学・ロボティクス・HRI。1 件に複数付く。分類は雑誌名簿と題名の語だけで、言語モデルは使わない。
+The classifier uses journal rules and title text from `config/domains.yml`. It does not call a language model. The same file maps internal field and collection-type names to the labels shown in `OPEN.md`.
 
-## ライセンス
+## License
 
-MIT。判断の記録は `docs/decisions/0001-github-jsonl-open-md-slack.md`。
+MIT. Publisher rights remain with the original sources. This repository stores public metadata such as titles, journals, deadlines, and URLs; it does not republish article text.
+
+Decision records live in [`docs/decisions/`](docs/decisions/).

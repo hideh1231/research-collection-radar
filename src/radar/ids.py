@@ -46,6 +46,7 @@ def content_hash(payload: dict[str, object]) -> str:
         "journal",
         "collection_type",
         "deadline",
+        "deadline_status",
         "status",
         "summary",
     ))

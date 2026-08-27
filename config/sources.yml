@@ -23,8 +23,13 @@ sources:
     allowed_hosts:
       - www.frontiersin.org
       - frontiersin.org
-    fetch_deadlines_for_new: true
     max_pages: 80
+    deadline_enrichment:
+      daily_limit: 100
+      min_interval_seconds: 1
+      listed_recheck_days: 7
+      not_listed_recheck_days: 30
+      checkpoint_size: 25
   - key: sciencedirect-cfp
     enabled: false
     collector: sciencedirect

@@ -2,6 +2,16 @@ threshold:
   include: 0.65
   review: 0.40
 
+collection_types:
+  collection: Collection
+  special_issue: Special Issue
+  research_topic: Research Topic
+  special_section: Special Section
+  special_collection: Special Collection
+  theme_issue: Theme Issue
+  article_collection: Article Collection
+  pacmhci_track: PACMHCI Track
+
 domains:
   psychology:
     label: Psychology
