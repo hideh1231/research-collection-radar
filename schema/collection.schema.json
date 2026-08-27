@@ -8,16 +8,21 @@
     "id",
     "title",
     "journal",
+    "journals",
     "publisher",
+    "publisher_id",
     "venue_type",
     "collection_type",
     "url",
     "source_url",
+    "source_keys",
     "status",
     "deadline_status",
     "deadline_checked_at",
+    "metadata_checked_at",
     "domains",
     "classification_method",
+    "topics_method",
     "first_seen",
     "last_changed",
     "content_hash",
@@ -29,7 +34,13 @@
     "id": { "type": "string", "minLength": 8 },
     "title": { "type": "string", "minLength": 1 },
     "journal": { "type": "string", "minLength": 1 },
+    "journals": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "publisher": { "type": "string", "minLength": 1 },
+    "publisher_id": { "type": ["string", "null"], "minLength": 1 },
     "venue_type": {
       "type": "string",
       "enum": ["journal", "journal_track"]
@@ -50,6 +61,11 @@
     "url": { "type": "string", "format": "uri" },
     "source_url": { "type": "string", "format": "uri" },
     "source_section": { "type": ["string", "null"] },
+    "source_keys": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "deadline": {
       "type": ["string", "null"],
       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
@@ -63,11 +79,23 @@
       "format": "date-time",
       "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
     },
+    "metadata_checked_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
     "status": {
       "type": "string",
       "enum": ["open", "closed", "unknown"]
     },
     "summary": { "type": ["string", "null"] },
+    "image_url": { "type": ["string", "null"], "format": "uri" },
+    "image_alt": { "type": ["string", "null"] },
+    "publisher_keywords": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "domains": {
       "type": "array",
       "items": {
@@ -82,7 +110,19 @@
     },
     "topics": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "topics_method": {
+      "type": "string",
+      "enum": ["none", "publisher", "llm"]
+    },
+    "topics_model": { "type": ["string", "null"] },
+    "topics_input_hash": { "type": ["string", "null"] },
+    "topics_updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
     },
     "classification_method": { "type": "string" },
     "first_seen": {

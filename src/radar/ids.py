@@ -40,14 +40,17 @@ def stable_id(prefix: str, key: str) -> str:
     return f"{slug}-{digest}"
 
 
+def _hash_field(payload: dict[str, object], key: str) -> str:
+    value = payload.get(key, "")
+    if isinstance(value, list):
+        return ",".join(str(item) for item in value)
+    if value is None:
+        return ""
+    return str(value)
+
+
 def content_hash(payload: dict[str, object]) -> str:
-    blob = "\n".join(f"{k}={payload.get(k, '')}" for k in (
-        "title",
-        "journal",
-        "collection_type",
-        "deadline",
-        "deadline_status",
-        "status",
-        "summary",
-    ))
+    from radar.models import CONTENT_HASH_FIELDS
+
+    blob = "\n".join(f"{key}={_hash_field(payload, key)}" for key in CONTENT_HASH_FIELDS)
     return "sha256:" + hashlib.sha256(blob.encode("utf-8")).hexdigest()

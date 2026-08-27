@@ -29,7 +29,7 @@ domains:
       - developmental
       - clinical
   hci:
-    label: Human-Computer Interaction
+    label: HCI
     keywords:
       - human-computer
       - human–computer
@@ -57,7 +57,7 @@ domains:
       - autonomous
       - manipulation
   hri:
-    label: Human-Robot Interaction
+    label: HRI
     keywords:
       - human-robot
       - human–robot

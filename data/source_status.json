@@ -29,8 +29,15 @@
         "remaining": 0
       }
     },
+    "frontiers-robotics-ai": {
+      "enabled": true
+    },
+    "frontiers-human-neuroscience": {
+      "enabled": true
+    },
     "sciencedirect-cfp": {
-      "enabled": false
+      "enabled": false,
+      "reason": "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -41,13 +48,15 @@
       "error": null
     },
     "apa-cfp": {
-      "enabled": false
+      "enabled": false,
+      "reason": "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
     },
     "royal-society-rsos": {
-      "enabled": false
+      "enabled": false,
+      "reason": "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
     },
     "plos-collections": {
-      "enabled": false
+      "enabled": true
     }
   }
 }
