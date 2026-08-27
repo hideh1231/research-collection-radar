@@ -6,6 +6,7 @@ from radar.normalize import normalize_status, parse_date
 def test_parse_deadline() -> None:
     assert parse_date("21 April 2027") == date(2027, 4, 21)
     assert parse_date("Deadline: 26 May 2027") == date(2027, 5, 26)
+    assert parse_date("Manuscript Extension Submission Deadline 7 September 2026") == date(2026, 9, 7)
 
 
 def test_normalize_status() -> None:

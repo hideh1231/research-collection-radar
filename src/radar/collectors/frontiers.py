@@ -16,20 +16,25 @@ from radar.models import RawRecord, SourceResult
 from radar.normalize import normalize_status, parse_date, unique_keep_order, utc_now
 
 TOPIC_HREF = re.compile(r"/research-topics/(\d+)(?:/[^/?#]*)?", re.I)
+DEADLINE_DATE = (
+    r"(?P<date>\d{1,2}\s+[A-Za-z]+\s+\d{4}|[A-Za-z]+\s+\d{1,2},?\s+\d{4}|\d{4}-\d{2}-\d{2})"
+)
 DEADLINE_RE = re.compile(
-    r"Manuscript\s+Submission\s+Deadline\s*:?[\s\u00a0]*"
-    r"(?P<date>\d{1,2}\s+[A-Za-z]+\s+\d{4}|[A-Za-z]+\s+\d{1,2},?\s+\d{4}|\d{4}-\d{2}-\d{2})",
+    r"Manuscript(?:\s+(?P<kind>Extension))?\s+Submission\s+Deadline\s*:?[\s\u00a0]*"
+    + DEADLINE_DATE,
     re.I,
 )
-DEADLINE_MARKER_RE = re.compile(r"Manuscript\s+Submission\s+Deadline", re.I)
+DEADLINE_MARKER_RE = re.compile(r"Manuscript(?:\s+Extension)?\s+Submission\s+Deadline", re.I)
 OPEN_RE = re.compile(r"Submission\s+(open|closed)", re.I)
 PAGE_RE = re.compile(r"(?:^|[?&])page=(\d+)(?:&|$)", re.I)
 TOTAL_RE = re.compile(r"([\d,]+)\s+Research Topics", re.I)
 SKIP_SUMMARY_RE = re.compile(
     r"article processing charge|\bAPC\b|submission fee|topic editors?|"
-    r"manuscript submission deadline|important note:",
+    r"manuscript(?:\s+extension)?\s+submission deadline|important note:",
     re.I,
 )
+# not_listed rows checked before this used a parser that skipped extension labels.
+NOT_LISTED_PARSER_CUTOFF = datetime(2026, 8, 28, tzinfo=UTC)
 KEYWORD_LABEL_RE = re.compile(r"^keywords:\s*", re.I)
 TRUNCATED_RE = re.compile(r"(?:\.\.\.|…)\s*$")
 
@@ -343,7 +348,7 @@ def parse_detail(html: str) -> DetailParse:
     image_url = _meta_content(soup, "og:image")
     image_alt = title
     journal, journals = parse_journals(soup)
-    deadline, marker = _deadline_details_from_text(soup.get_text(" ", strip=True))
+    deadline, marker = _deadline_details_from_soup(soup)
     return DetailParse(
         title=title or None,
         summary=summary,
@@ -357,16 +362,42 @@ def parse_detail(html: str) -> DetailParse:
     )
 
 
+def _alert_deadline_text(soup: BeautifulSoup) -> str:
+    chunks = []
+    for node in soup.select(".Alert__infoItem__text"):
+        text = _clean_paragraph(node.get_text(" ", strip=True))
+        if text:
+            chunks.append(text)
+    return " ".join(chunks)
+
+
 def _deadline_details_from_text(text: str) -> tuple[date | None, bool]:
-    match = DEADLINE_RE.search(text)
-    if not match:
-        return None, bool(DEADLINE_MARKER_RE.search(text))
-    return parse_date(match.group("date")), True
+    matches = list(DEADLINE_RE.finditer(text or ""))
+    marker = bool(matches or DEADLINE_MARKER_RE.search(text or ""))
+    parsed: list[tuple[bool, date]] = []
+    for match in matches:
+        value = parse_date(match.group("date"))
+        if value is None:
+            continue
+        parsed.append((bool(match.group("kind")), value))
+    if not parsed:
+        return None, marker
+    extended = [value for is_extension, value in parsed if is_extension]
+    if extended:
+        return max(extended), True
+    return max(value for _, value in parsed), True
+
+
+def _deadline_details_from_soup(soup: BeautifulSoup) -> tuple[date | None, bool]:
+    alert_deadline, alert_marker = _deadline_details_from_text(_alert_deadline_text(soup))
+    if alert_deadline is not None:
+        return alert_deadline, True
+    page_deadline, page_marker = _deadline_details_from_text(soup.get_text(" ", strip=True))
+    return page_deadline, alert_marker or page_marker
 
 
 def _deadline_details(html: str) -> tuple[date | None, bool]:
-    soup = BeautifulSoup(html, "lxml")
-    return _deadline_details_from_text(soup.get_text(" ", strip=True))
+    return _deadline_details_from_soup(BeautifulSoup(html, "lxml"))
 
 
 def parse_deadline(html: str) -> date | None:
@@ -460,7 +491,9 @@ def _due(row: dict[str, Any], now: datetime, settings: dict[str, int | float]) -
     if status == "listed":
         return checked is None or now - checked >= timedelta(days=int(settings["listed_recheck_days"]))
     if status == "not_listed":
-        return checked is None or now - checked >= timedelta(days=int(settings["not_listed_recheck_days"]))
+        if checked is None or checked < NOT_LISTED_PARSER_CUTOFF:
+            return True
+        return now - checked >= timedelta(days=int(settings["not_listed_recheck_days"]))
     return row.get("deadline") is None
 
 
@@ -490,7 +523,8 @@ def _deadline_queue(
         selected = [
             row
             for row in candidates
-            if row.get("deadline_status") == "not_checked" or not row.get("metadata_checked_at")
+            if row.get("deadline_status") in {"not_checked", "not_listed"}
+            or not row.get("metadata_checked_at")
         ]
         selected.sort(key=lambda row: (row.get("first_seen", ""), row.get("id", "")))
         return selected

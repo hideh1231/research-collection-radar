@@ -76,7 +76,7 @@ python -m radar
 python -m radar --build-site
 ```
 
-Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked`; this command does not discover new records or send Slack notifications. Run `python -m radar --enrich-topics` after crawl if LLM settings are present.
+Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked` or `not_listed`; this command does not discover new records or send Slack notifications. Run `python -m radar --enrich-topics` after crawl if LLM settings are present.
 
 Serve the viewer with `python -m http.server -d site 8000`.
 

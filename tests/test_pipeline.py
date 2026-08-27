@@ -1,5 +1,5 @@
 import json
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, datetime
 from pathlib import Path
 from uuid import uuid4
 
@@ -59,7 +59,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
         ):
             (root / relative).write_bytes((source_root / relative).read_bytes())
 
-        checked_at = (datetime.now(UTC) - timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        checked_at = "2026-08-29T00:00:00Z"
         rows = [
             {
                 "id": "frontiers-psychology-existing-listed",
@@ -176,7 +176,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
                 current_rows,
                 source,
                 incoming_ids=incoming_ids,
-                now=datetime.now(UTC),
+                now=datetime(2026, 8, 29, 1, 0, tzinfo=UTC),
             ) == []
             return {
                 "target_count": 0,
