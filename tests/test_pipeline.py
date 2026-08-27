@@ -270,6 +270,85 @@ def test_only_preserves_other_source_status(monkeypatch) -> None:
         assert status["sources"]["frontiers-psychology"]["ok"] is True
 
 
+def _pipeline_root(source_root):
+    from support import workspace_tempdir
+
+    class _Ctx:
+        def __enter__(self):
+            self.cm = workspace_tempdir("pipeline-listing-job")
+            root = self.cm.__enter__()
+            for directory in ("config", "data", "schema", "state"):
+                (root / directory).mkdir()
+            for relative in (
+                "config/sources.yml",
+                "config/domains.yml",
+                "config/alerts.yml",
+                "schema/collection.schema.json",
+            ):
+                (root / relative).write_bytes((source_root / relative).read_bytes())
+            (root / "data/collections.jsonl").write_text("", encoding="utf-8")
+            (root / "state/notification_ledger.jsonl").write_text("", encoding="utf-8")
+            (root / "data/source_status.json").write_text(
+                json.dumps(
+                    {
+                        "checked_at": "2026-08-01T00:00:00Z",
+                        "frontiers_detail": {"publisher": "Frontiers", "deadline_enrichment": {"checked": 9}},
+                        "sources": {
+                            "nature-psychology": {
+                                "enabled": True,
+                                "ok": True,
+                                "http_status": 200,
+                                "parsed": 55,
+                                "pages": 6,
+                                "error": None,
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.root = root
+            return root
+
+        def __exit__(self, *args):
+            return self.cm.__exit__(*args)
+
+    return _Ctx()
+
+
+def test_include_disabled_fetches_apa_and_skips_sciencedirect(monkeypatch) -> None:
+    called: list[str] = []
+
+    def fake_run_source(_fetcher, source):
+        called.append(source["key"])
+        return SourceResult(key=source["key"], ok=False, records=[], error="bot wall", http_status=200)
+
+    class _ClosedFetcher:
+        def __init__(self, *_args, **_kwargs):
+            self.min_interval_seconds = 0
+
+        def close(self):
+            pass
+
+    enrich_calls: list[int] = []
+    monkeypatch.setattr("radar.pipeline.run_source", fake_run_source)
+    monkeypatch.setattr("radar.pipeline.Fetcher", _ClosedFetcher)
+    monkeypatch.setattr(
+        "radar.pipeline.enrich_deadlines",
+        lambda *_args, **_kwargs: enrich_calls.append(1) or {},
+    )
+
+    with _pipeline_root(repo_root()) as root:
+        assert run(root, dry_run=True, include_disabled=True, open_only=True, only={"apa-cfp", "sciencedirect-cfp"}) == 0
+        assert called == ["apa-cfp"]
+        assert enrich_calls == []
+        status = json.loads((root / "data/source_status.json").read_text(encoding="utf-8"))
+        assert status["sources"]["apa-cfp"]["error"] == "bot wall"
+        assert status["sources"]["sciencedirect-cfp"]["skipped"] == "gha-fetch-disabled"
+        assert status["sources"]["nature-psychology"]["parsed"] == 55
+        assert status["frontiers_detail"]["deadline_enrichment"]["checked"] == 9
+
+
 def test_cli_keeps_limit_and_only(monkeypatch) -> None:
     from radar.pipeline import main
 
@@ -283,6 +362,12 @@ def test_cli_keeps_limit_and_only(monkeypatch) -> None:
 
     assert main(["--only", "frontiers-psychology", "--only", "frontiers-neurology"]) == 0
     assert captured["only"] == {"frontiers-psychology", "frontiers-neurology"}
+
+    captured.clear()
+    assert main(["--include-disabled", "--open-only", "--only", "apa-cfp"]) == 0
+    assert captured["include_disabled"] is True
+    assert captured["open_only"] is True
+    assert captured["only"] == {"apa-cfp"}
 
     captured.clear()
     assert main(["--enrich-topics", "--limit", "50"]) == 0

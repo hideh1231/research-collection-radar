@@ -28,6 +28,7 @@ from radar.config import (
 )
 from radar.http import Fetcher
 from radar.ids import stable_id
+from radar.listing_snapshots import SnapshotError, download_snapshot
 from radar.models import SourceResult
 from radar.normalize import merge_collection_rows, to_record
 from radar.slack import credentials, post_message
@@ -206,6 +207,22 @@ def _empty_enrichment() -> dict[str, Any]:
     }
 
 
+def _copy_prior_extras(source_status: dict[str, Any], prior_status_doc: dict[str, Any]) -> None:
+    for extra_key in ("frontiers_detail", "topic_enrichment"):
+        if extra_key in prior_status_doc and extra_key not in source_status:
+            source_status[extra_key] = prior_status_doc[extra_key]
+
+
+def _skip_fetch_reason(source: dict[str, Any], *, include_disabled: bool) -> str | None:
+    if source.get("enabled"):
+        return None
+    if not include_disabled:
+        return "disabled"
+    if source.get("gha_fetch") is False:
+        return "gha-fetch-disabled"
+    return None
+
+
 def _source_status_entry(result: Any, source: dict[str, Any] | None = None) -> dict[str, Any]:
     return {
         "enabled": bool(source.get("enabled")) if source is not None else True,
@@ -226,6 +243,7 @@ def run(
     only: set[str] | None = None,
     ingest_html: dict[str, Path] | None = None,
     open_only: bool = False,
+    include_disabled: bool = False,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -259,6 +277,7 @@ def run(
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
     failures = 0
+    fetched_keys: set[str] = set()
     stop_event = Event()
     frontiers = _frontiers_enrichment_source(sources_cfg)
     publisher_ids = _publisher_id_index(prior_rows)
@@ -319,9 +338,7 @@ def run(
                 }
         elif ingest_html:
             log("ingest listing HTML; skip network collectors")
-            for extra_key in ("frontiers_detail", "topic_enrichment"):
-                if extra_key in prior_status_doc:
-                    source_status[extra_key] = prior_status_doc[extra_key]
+            _copy_prior_extras(source_status, prior_status_doc)
             for source in sources_cfg.get("sources", []):
                 path = ingest_html.get(source["key"])
                 if path is None:
@@ -371,13 +388,15 @@ def run(
                         source["key"], {"enabled": bool(source.get("enabled")), "skipped": "not-selected"}
                     )
                     continue
-                if not source.get("enabled"):
-                    entry = {"enabled": False}
+                skip_reason = _skip_fetch_reason(source, include_disabled=include_disabled)
+                if skip_reason:
+                    entry = {"enabled": bool(source.get("enabled")), "skipped": skip_reason}
                     if source.get("disabled_reason"):
                         entry["reason"] = source["disabled_reason"]
                     source_status["sources"][source["key"]] = entry
                     continue
                 result = run_source(fetcher, source)
+                fetched_keys.add(source["key"])
                 entry = _source_status_entry(result, source)
                 source_status["sources"][source["key"]] = entry
                 log(
@@ -418,12 +437,16 @@ def run(
             return 1
 
     enrichment: dict[str, Any] | None = None
+    frontiers_keys = {source["key"] for source in _frontiers_sources(sources_cfg)}
+    frontiers_fetched = bool(fetched_keys & frontiers_keys)
     frontiers_ok = any(
         source_status["sources"].get(source["key"], {}).get("ok")
         for source in _frontiers_sources(sources_cfg)
+        if source["key"] in fetched_keys
     )
-    if ingest_html:
+    if ingest_html or (only is not None and not frontiers_fetched):
         enrichment = None
+        _copy_prior_extras(source_status, prior_status_doc)
     elif frontiers and not offline and (backfill_deadlines or frontiers_ok):
         source_entry = source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})
         enrichment_cfg = frontiers.get("deadline_enrichment") or {}
@@ -627,6 +650,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Keep only records whose status is open (useful with --ingest-html)",
     )
+    parser.add_argument(
+        "--include-disabled",
+        action="store_true",
+        help="Fetch disabled sources selected with --only, unless gha_fetch is false",
+    )
     args = parser.parse_args(argv)
     root = args.root or repo_root()
     if args.build_site:
@@ -640,7 +668,16 @@ def main(argv: list[str] | None = None) -> int:
             if "=" not in item:
                 parser.error("--ingest-html expects KEY=PATH")
             key, raw_path = item.split("=", 1)
-            ingest[key] = Path(raw_path)
+            raw_path = raw_path.strip()
+            if raw_path.startswith("https://"):
+                dest = Path(tempfile.mkdtemp(prefix="radar-listing-")) / f"{key}.html"
+                try:
+                    download_snapshot(raw_path, dest)
+                except SnapshotError as exc:
+                    parser.error(str(exc))
+                ingest[key] = dest
+            else:
+                ingest[key] = Path(raw_path)
     return run(
         root,
         dry_run=args.dry_run,
@@ -649,6 +686,7 @@ def main(argv: list[str] | None = None) -> int:
         only=set(args.only) if args.only else None,
         ingest_html=ingest,
         open_only=args.open_only,
+        include_disabled=args.include_disabled,
     )
 
 

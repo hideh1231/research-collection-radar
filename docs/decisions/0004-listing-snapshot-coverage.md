@@ -26,4 +26,4 @@ Coverage probe（2026-08-27）:
 * Good, because 人が保存した一覧 HTML を正本に載せられる
 * Bad, because 定期 crawl だけでは APA / Elsevier は更新されない
 * Bad, because Royal Society の締切は一覧に無く、OPEN.md には出ない
-* 2026-08-27 のライブ一覧 ingest: Elsevier は対象分野かつ募集中 82 件。Royal Society テーマページは 3 件（締切なし、viewer のみ）。APA は通常ブラウザで開いた公式一覧から募集中を入れる。GitHub Actions の GET は引き続き無効。
+* 2026-08-27 のライブ一覧 ingest: Elsevier は対象分野かつ募集中 82 件。Royal Society テーマページは 3 件（締切なし、viewer のみ）。APA は通常ブラウザで開いた公式一覧から募集中を入れる。GitHub Actions からの取得経路は [`0005-listing-ingest-github-actions.md`](0005-listing-ingest-github-actions.md)。

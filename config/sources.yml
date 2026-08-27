@@ -220,7 +220,8 @@ sources:
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
-    disabled_reason: "GitHub Actions GET returns 403; ingest a rendered browse listing with python -m radar --ingest-html sciencedirect-cfp=listing.html. Do not crawl special-issue detail pages."
+    disabled_reason: "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages."
+    gha_fetch: false
   - key: springer-bmc-psychology
     enabled: true
     collector: springer
@@ -261,7 +262,8 @@ sources:
     allowed_hosts:
       - www.apa.org
       - apa.org
-    disabled_reason: "GitHub Actions GET returns Incapsula; ingest the official listing HTML with python -m radar --ingest-html apa-cfp=listing.html. Detail pages are not required."
+    disabled_reason: "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
+    gha_fetch: true
   - key: royal-society-rsos
     enabled: false
     collector: royal_society
@@ -273,8 +275,9 @@ sources:
       - royalsocietypublishing.org
       - royalsociety.org
     disabled_reason: "Publishing platform returns Cloudflare 403. Use royal-society-themes on royalsociety.org instead."
+    gha_fetch: false
   - key: royal-society-themes
-    enabled: false
+    enabled: true
     collector: royal_society
     publisher: The Royal Society
     journal: Royal Society
@@ -286,7 +289,6 @@ sources:
     allowed_hosts:
       - royalsociety.org
       - royalsocietypublishing.org
-    disabled_reason: "Listing is parseable from royalsociety.org theme pages. Keep disabled in GitHub Actions until a scheduled run returns 200 without a WAF page; ingest saved HTML with --ingest-html royal-society-themes=page.html."
   - key: plos-collections
     enabled: true
     collector: plos
