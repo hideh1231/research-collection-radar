@@ -22,14 +22,16 @@ The index tracks public calls for special issues, research collections, theme is
 
 ## Sources
 
-The enabled sources cover:
+The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sources are public listings that GitHub Actions can finish without a bot wall:
 
-- Nature Psychology calls in Scientific Reports
-- Frontiers in Psychology, Frontiers in Robotics and AI, and Frontiers in Human Neuroscience research topics
-- BMC Psychology collections
+- Nature Portfolio: Scientific Reports Psychology calls, and Communications Psychology calls
+- Frontiers research topics: Psychology, Psychiatry, Human Neuroscience, Neuroscience, Neurology, Behavioral Neuroscience, Aging Neuroscience, Cognition, Computational Neuroscience, Neuroinformatics, Robotics and AI, Neurorobotics, Virtual Reality, Computer Science, and Digital Health
+- Springer Nature: BMC Psychology, BMC Psychiatry, and Journal of NeuroEngineering and Rehabilitation collections
 - PLOS calls for papers, via the official WordPress REST API
 
-The configuration in `config/sources.yml` controls source URLs, allowed hosts, pagination, and deadline checks. Disabled sources remain in the configuration with a reason when GitHub Actions cannot fetch a complete public listing.
+ScienceDirect, APA, and Royal Society stay disabled. Their public HTML returns a bot wall, and there is no official API, feed, or sitemap that completes a listing. The configuration in `config/sources.yml` keeps those reasons. Browser automation is out of scope.
+
+The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-collection-radar/`.
 
 ## Slack
 

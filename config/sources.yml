@@ -13,6 +13,16 @@ sources:
     allowed_hosts:
       - www.nature.com
       - nature.com
+  - key: nature-comms-psychology
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Communications Psychology
+    collection_type: collection
+    url: "https://www.nature.com/commspsychol/calls-for-papers"
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
   - key: frontiers-psychology
     enabled: true
     collector: frontiers
@@ -54,6 +64,150 @@ sources:
       - frontiersin.org
     max_pages: 200
     deadline_enrichment: *frontiers_detail
+  - key: frontiers-psychiatry
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Psychiatry
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/psychiatry/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neurology
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neurology
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neurology/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-behavioral-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Behavioral Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/behavioral-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-aging-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Aging Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/aging-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-cognition
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Cognition
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/cognition/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-computational-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Computational Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/computational-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neuroinformatics
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neuroinformatics
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neuroinformatics/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-neurorobotics
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Neurorobotics
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/neurorobotics/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-virtual-reality
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Virtual Reality
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/virtual-reality/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-computer-science
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Computer Science
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/computer-science/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-digital-health
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Digital Health
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/digital-health/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
   - key: sciencedirect-cfp
     enabled: false
     collector: sciencedirect
@@ -74,6 +228,26 @@ sources:
     url: "https://bmcpsychology.biomedcentral.com/articles/collections"
     allowed_hosts:
       - bmcpsychology.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-bmc-psychiatry
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: BMC Psychiatry
+    collection_type: collection
+    url: "https://bmcpsychiatry.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - bmcpsychiatry.biomedcentral.com
+      - www.biomedcentral.com
+  - key: springer-jner
+    enabled: true
+    collector: springer
+    publisher: Springer Nature
+    journal: Journal of NeuroEngineering and Rehabilitation
+    collection_type: collection
+    url: "https://jneuroengrehab.biomedcentral.com/articles/collections"
+    allowed_hosts:
+      - jneuroengrehab.biomedcentral.com
       - www.biomedcentral.com
   - key: apa-cfp
     enabled: false

@@ -78,8 +78,36 @@ journal_rules:
     domains: [neuroscience, psychology]
   - match: Frontiers in Robotics and AI
     domains: [robotics]
+  - match: Frontiers in Psychiatry
+    domains: [psychology]
+  - match: Frontiers in Neuroscience
+    domains: [neuroscience]
+  - match: Frontiers in Neurology
+    domains: [neuroscience]
+  - match: Frontiers in Behavioral Neuroscience
+    domains: [neuroscience, psychology]
+  - match: Frontiers in Aging Neuroscience
+    domains: [neuroscience]
+  - match: Frontiers in Cognition
+    domains: [psychology, neuroscience]
+  - match: Frontiers in Computational Neuroscience
+    domains: [neuroscience]
+  - match: Frontiers in Neuroinformatics
+    domains: [neuroscience]
+  - match: Frontiers in Neurorobotics
+    domains: [robotics, hri]
+  - match: Frontiers in Virtual Reality
+    domains: [hci]
+  - match: Frontiers in Computer Science
+    domains: [hci]
+  - match: Frontiers in Digital Health
+    domains: [hci, psychology]
   - match: BMC Psychology
     domains: [psychology]
+  - match: BMC Psychiatry
+    domains: [psychology]
+  - match: Journal of NeuroEngineering and Rehabilitation
+    domains: [neuroscience, robotics]
   - match: Human–Computer Interaction
     domains: [hci]
   - match: International Journal of Social Robotics
