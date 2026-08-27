@@ -99,11 +99,13 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             if GENERAL_RE.search(title) or (link is not None and GENERAL_RE.search(href)):
                 continue
             blob = item.get_text(" ", strip=True)
+            deadline = _deadline(blob)
+            if re.search(r"guidelines for submitting", blob, re.I) and deadline is None:
+                continue
             url = canonicalize_url(href)
             collection_type = (
                 "special_section" if "special section" in title.lower() else "special_issue"
             )
-            deadline = _deadline(blob)
             key = f"{url}#{publisher_id}" if publisher_id else url
             found[key] = RawRecord(
                 title=title,

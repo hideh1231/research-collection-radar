@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T12:13:00Z",
+  "checked_at": "2026-08-27T12:58:07Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -187,7 +187,13 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "reason": "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
+      "ok": true,
+      "http_status": null,
+      "parsed": 49,
+      "pages": 1,
+      "error": null,
+      "ingest": "/tmp/cfp-seed/apa-calls-rendered.html",
+      "skipped_closed": 8
     },
     "royal-society-rsos": {
       "enabled": false,
