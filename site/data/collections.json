@@ -140,6 +140,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-9269e152cc",
+    "title": "The Impact of Mental Health Policy on the Mental Health Workforce",
+    "summary": null,
+    "journal": "Archives of Psychiatric Nursing",
+    "journals": [
+      "Archives of Psychiatric Nursing"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-08-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/322613/the-impact-of-mental-health-policy-on-the-mental-health-workforce",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-633eee784c",
     "title": "Academic Stress and Mental Health in Higher Education: Integrative Approaches from Neurobiology to Institutional Contexts",
     "summary": "Academic stress is one of the most prevalent and impactful forms of stress experienced in higher education, with growing evidence linking it to adverse outcomes in mental health, cognitive functioning, emotional regulation, and academic performance. Traditionally addressed from a psychological lens, recent studies have demonstrated that academic stress also has biological, behavioral, and contextual dimensions, reflecting its complexity as a multifactorial phenomenon.",
@@ -708,6 +730,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-88058bb081",
+    "title": "Mitochondria, Aging, and the Brain",
+    "summary": null,
+    "journal": "Experimental Gerontology",
+    "journals": [
+      "Experimental Gerontology"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-08-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/321670/mitochondria-aging-and-the-brain",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-5bce3d808b",
     "title": "Molecular underpinnings of relapse-like behavior: Drug context and development Volume II",
     "summary": "This Research Topic is the second volume of Research Topic \"Molecular Underpinnings of Relapse-like Behavior: Drug Context and Development\". Please see the first volume here",
@@ -763,6 +807,74 @@
     "image_alt": "Neural interfaces for motor control",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-f2be9c9e58",
+    "title": "Neurocognitive and Sensorimotor Adaptations in Extreme Environments: Optimizing Performance, Readiness, and Resilience",
+    "summary": null,
+    "journal": "Brain and Cognition",
+    "journals": [
+      "Brain and Cognition"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-08-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327665/neurocognitive-and-sensorimotor-adaptations-in-extreme-environments-optimizing-performance-readiness-and-resilience",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-335382461b",
+    "title": "Osteoporotic Fractures of the Spine and the Sacrum",
+    "summary": null,
+    "journal": "Brain and Spine",
+    "journals": [
+      "Brain and Spine"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-08-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331541/osteoporotic-fractures-of-the-spine-and-the-sacrum",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-7a54930b8e",
+    "title": "Pattern separation and pattern completion: development of novel behavioral paradigms to assess neural contributions",
+    "summary": null,
+    "journal": "Neuropsychologia",
+    "journals": [
+      "Neuropsychologia"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-08-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331474/pattern-separation-and-pattern-completion-development-of-novel-behavioral-paradigms-to-assess-neural-contributions",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -970,6 +1082,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-992b4d0b17",
+    "title": "Dissecting the ingredients of psychotherapy for depression",
+    "summary": null,
+    "journal": "Journal of Behavior Therapy and Experimental Psychiatry",
+    "journals": [
+      "Journal of Behavior Therapy and Experimental Psychiatry"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/325045/dissecting-the-ingredients-of-psychotherapy-for-depression",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-83e00079b7",
     "title": "Lexical Processing and Vocabulary Learning: Bridging Psycholinguistic and Computational Mechanisms across Contexts",
     "summary": null,
@@ -989,6 +1123,28 @@
     "image_alt": "Lexical Processing and Vocabulary Learning: Bridging Psycholinguistic and Computational Mechanisms across Contexts",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-ee01768a8c",
+    "title": "Neurotoxicity of Micro- and Nanoplastics: Emerging Threats to Brain Health",
+    "summary": null,
+    "journal": "NeuroToxicology",
+    "journals": [
+      "NeuroToxicology"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327688/neurotoxicity-of-micro-and-nanoplastics-emerging-threats-to-brain-health",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -1624,6 +1780,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-dbf5c9091c",
+    "title": "Lactate as a Fuel and Beyond: Revisiting Cerebral Energy Metabolism from Physiology to Therapeutic Innovation",
+    "summary": null,
+    "journal": "Neuroscience",
+    "journals": [
+      "Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-14",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333655/lactate-as-a-fuel-and-beyond-revisiting-cerebral-energy-metabolism-from-physiology-to-therapeutic-innovation",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -2832,6 +3010,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-d7b7f00200",
+    "title": "Advanced Uncrewed Vehicles solutions: at the crossroad of Remote Sensing, Computer Vision and Robotics",
+    "summary": null,
+    "journal": "ISPRS Open Journal of Photogrammetry and Remote Sensing",
+    "journals": [
+      "ISPRS Open Journal of Photogrammetry and Remote Sensing"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/324110/advanced-uncrewed-vehicles-solutions-at-the-crossroad-of-remote-sensing-computer-vision-and-robotics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-16eb902953",
     "title": "Advances in Psychological and Neuropsychological Testing: From Psychometric Refinement to Clinical Application - Volume II",
     "summary": "Neuropsychological assessment remains a fundamental component in both clinical contexts and research within psychology and neuroscience. Traditional testing procedures, while foundational, should be psychometrically investigated to assess their metrical properties and relevance in contemporary practice. As a result of redesigned procedures, established tests can be improved in terms of their psychometric characteristics.",
@@ -2916,6 +3116,73 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-0f100d52bf",
+    "title": "Artificial Intelligence for Brain Health Promotion",
+    "summary": null,
+    "journal": "International Journal of Clinical and Health Psychology",
+    "journals": [
+      "International Journal of Clinical and Health Psychology"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/318696/artificial-intelligence-for-brain-health-promotion",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-96c127e954",
+    "title": "Artificial Intelligence in Sport and Exercise Psychology",
+    "summary": null,
+    "journal": "Psychology of Sport and Exercise",
+    "journals": [
+      "Psychology of Sport and Exercise"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332848/artificial-intelligence-in-sport-and-exercise-psychology",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-4adf1eb4b7",
+    "title": "Biological proteins at the intersection of oral health and neuroscience: Innovations in diagnosis and treatment",
+    "summary": null,
+    "journal": "International Journal of Biological Macromolecules",
+    "journals": [
+      "International Journal of Biological Macromolecules"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/326403/biological-proteins-at-the-intersection-of-oral-health-and-neuroscience-innovations-in-diagnosis-and-treatment",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-bac7357569",
     "title": "Bridging Physics and Data Intelligence: Modeling, Control, and Motion Planning of Soft and Continuum Robots",
     "summary": "Soft and continuum robots have emerged as transformative systems capable of achieving complex, adaptive, and dexterous behaviors inspired by biological organisms. Their potential for safe human interaction, adaptability to unstructured environments, and multifunctional actuation has fueled rapid developments across diverse fields including medicine, underwater exploration, and autonomous manipulation. However, despite considerable progress in materials and actuation mechanisms, fundamental challenges remain in the modeling, control, and motion planning of these systems.",
@@ -2992,6 +3259,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-5ff5ef6ad1",
+    "title": "Challenges in Multi-Scale and Multi-Physics Mechanics of Brain Tissue",
+    "summary": null,
+    "journal": "Brain Research Bulletin",
+    "journals": [
+      "Brain Research Bulletin"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/328744/challenges-in-multi-scale-and-multi-physics-mechanics-of-brain-tissue",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-d636c3a9ab",
     "title": "Climate adaptation and resilience in urban and rural communities",
     "summary": "In this cross-journal collection, we showcase studies that focus on adaptation in urban and rural areas.",
@@ -3011,6 +3300,50 @@
     "image_alt": "Climate adaptation and resilience in urban and rural communities",
     "first_seen": "2026-08-26",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-1f69d9aca9",
+    "title": "Cognition, Learning, Teleonomy, Agency, Intelligence, and Consciousness Across and Beyond Life",
+    "summary": null,
+    "journal": "BioSystems",
+    "journals": [
+      "BioSystems"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334866/cognition-learning-teleonomy-agency-intelligence-and-consciousness-across-and-beyond-life",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-5fea0e1499",
+    "title": "Cognitive offloading in children: Development, mechanisms and implications",
+    "summary": null,
+    "journal": "Journal of Experimental Child Psychology",
+    "journals": [
+      "Journal of Experimental Child Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/323403/cognitive-offloading-in-children-development-mechanisms-and-implications",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -3119,6 +3452,28 @@
     "image_alt": "Ecological Grief and Climate Anxiety: Advancing Conservation Science at the Interface of Collective Human Trauma and Environmental Change",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-a8fc20bec9",
+    "title": "Effects of stress on brain activation changes: Recent developments",
+    "summary": null,
+    "journal": "Psychoneuroendocrinology",
+    "journals": [
+      "Psychoneuroendocrinology"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330235/effects-of-stress-on-brain-activation-changes-recent-developments",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -3637,6 +3992,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-f283270a14",
+    "title": "Optoacoustic Brain Imaging",
+    "summary": null,
+    "journal": "Photoacoustics",
+    "journals": [
+      "Photoacoustics"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327646/optoacoustic-brain-imaging",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-1223a3d237",
     "title": "Personalized Intervention: N-of-1 Trials Using Wearable Devices",
     "summary": "Personalized clinical research is gaining momentum as the limitations of population-based studies in guiding individual patient care become more apparent. Traditional clinical trials primarily aim to determine treatment effects at the cohort level, often producing results that best fit the \"average\" participant. However, this population-optimized approach can fall short when applied to single patients whose responses to treatments might differ significantly from group averages. As healthcare moves toward individualized medicine, the need for methodologies that generate actionable knowledge at the level of the single person is increasingly recognized.",
@@ -3666,6 +4043,28 @@
     "image_alt": "Personalized Intervention: N-of-1 Trials Using Wearable Devices",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-31e1c59700",
+    "title": "Photoacoustic Imaging and Sensing for Surgical, Interventional Guidance and Robotics (Surgical, Interventional Guidance and Robotics)",
+    "summary": null,
+    "journal": "Photoacoustics",
+    "journals": [
+      "Photoacoustics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/325209/photoacoustic-imaging-and-sensing-for-surgical-interventional-guidance-and-robotics-surgical-interventional-guidance-and-robotics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -3721,6 +4120,72 @@
     "image_alt": "Robotics in Human Centric Digital Twins and Industry 5.0",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-5990cbb415",
+    "title": "Special Issue on wearable sensors and actuators for robotics",
+    "summary": null,
+    "journal": "Wearable Electronics",
+    "journals": [
+      "Wearable Electronics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333959/special-issue-on-wearable-sensors-and-actuators-for-robotics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-91eb494c4e",
+    "title": "Studying Language Processing in the Era of LLMs",
+    "summary": null,
+    "journal": "Brain and Language",
+    "journals": [
+      "Brain and Language"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330399/studying-language-processing-in-the-era-of-llms",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-1e2f80048a",
+    "title": "Successful brain aging: the environment as a therapy",
+    "summary": null,
+    "journal": "Brain and Environment",
+    "journals": [
+      "Brain and Environment"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/321986/successful-brain-aging-the-environment-as-a-therapy",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -3887,6 +4352,28 @@
     "image_alt": "AI-Mediated Leadership in Teams and Organizations: Psychological Processes, Authority, and Accountability",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-d24b6d2451",
+    "title": "Backfiring Effects of Social Psychological Interventions",
+    "summary": null,
+    "journal": "Journal of Experimental Social Psychology",
+    "journals": [
+      "Journal of Experimental Social Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330866/backfiring-effects-of-social-psychological-interventions",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -5079,6 +5566,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-c515dbd8d7",
+    "title": "Automated Interventions by Next Generation Closed-Loop Robotics",
+    "summary": null,
+    "journal": "Zeitschrift für Medizinische Physik",
+    "journals": [
+      "Zeitschrift für Medizinische Physik"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/328949/automated-interventions-by-next-generation-closed-loop-robotics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-04626b8c1c",
     "title": "Chronopharmacology of Psychiatric Disorders and Neurodegenerative Diseases: From Mechanisms to Therapeutic Applications",
     "summary": "Is time the ultimate variable in Neuropharmacology?",
@@ -5203,6 +5712,72 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-b38ea7e7fe",
+    "title": "Metaphor and Epistemic Injustice in Mental Illness: how metaphorical language shapes epistemic practices in mental health contexts",
+    "summary": null,
+    "journal": "New Ideas in Psychology",
+    "journals": [
+      "New Ideas in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331038/metaphor-and-epistemic-injustice-in-mental-illness-how-metaphorical-language-shapes-epistemic-practices-in-mental-health-contexts",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-a97ea28852",
+    "title": "Modeling Mental Illness: Emerging Animal Models for Psychiatric Research",
+    "summary": null,
+    "journal": "Journal of Neuroscience Methods",
+    "journals": [
+      "Journal of Neuroscience Methods"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/324813/modeling-mental-illness-emerging-animal-models-for-psychiatric-research",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-7301422d56",
+    "title": "Neuroinfections, Neuroimmunity and Neuroinflammation",
+    "summary": null,
+    "journal": "Neuroscience",
+    "journals": [
+      "Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/323103/neuroinfections-neuroimmunity-and-neuroinflammation",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-e0d6d213a0",
     "title": "The Creative Employee and Future-Ready Teams: Developing Resilience and Adaptability through Innovation Practices",
     "summary": null,
@@ -5222,6 +5797,28 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-90166a6f86",
+    "title": "The future of dog-human and cat-human companionship – from the perspective of behavior, comparative cognition, and genetics",
+    "summary": null,
+    "journal": "Applied Animal Behaviour Science",
+    "journals": [
+      "Applied Animal Behaviour Science"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/326716/the-future-of-dog-human-and-cat-human-companionship-from-the-perspective-of-behavior-comparative-cognition-and-genetics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -5266,6 +5863,28 @@
     "image_alt": "Putting People in Their Place: Restoring the Human Animal in Ecological Systems",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-eeb2307a13",
+    "title": "Temporal Dynamics Linking Adversity, Adaptation, and Neurodevelopment",
+    "summary": null,
+    "journal": "Brain and Environment",
+    "journals": [
+      "Brain and Environment"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-16",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330876/temporal-dynamics-linking-adversity-adaptation-and-neurodevelopment",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -5947,6 +6566,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-79a8cda71d",
+    "title": "Quantum Cognition: A Promising Approach to Understanding Learning and Motivation in Educational Setting",
+    "summary": null,
+    "journal": "Learning and Motivation",
+    "journals": [
+      "Learning and Motivation"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-25",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/323219/quantum-cognition-a-promising-approach-to-understanding-learning-and-motivation-in-educational-setting",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-052f7b5496",
     "title": "AI innovations in neurological disorder and psychiatric management: diagnosis to treatment, Volume II",
     "summary": "In the swiftly evolving field of artificial intelligence (AI), the technology's capability to revolutionize care processes in neurological disorders is notably significant. Neurological diseases, including Alzheimer's, Parkinson's, and multiple sclerosis, among others, account for substantial global morbidity, presenting intricate challenges in early diagnosis and effective treatment due to their complex pathophysiological nature. AI offers transformative solutions by utilizing extensive clinical, imaging, and genetic data to enhance diagnostic accuracy, forecast disease trajectory, and tailor treatment approaches, setting a new standard in patient care.",
@@ -6436,6 +7077,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-732a373396",
+    "title": "Neurotensin in Reward and Addiction",
+    "summary": null,
+    "journal": "Addiction Neuroscience",
+    "journals": [
+      "Addiction Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/323991/neurotensin-in-reward-and-addiction",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-9e921c6f28",
     "title": "Novel Intervention Models Transcending Borders for Stress Management - Volume IV",
     "summary": null,
@@ -6629,6 +7292,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-362b0cc065",
+    "title": "Brain Energy Metabolism in Neurodegenerative Diseases",
+    "summary": null,
+    "journal": "Brain Network Disorders",
+    "journals": [
+      "Brain Network Disorders"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/320308/brain-energy-metabolism-in-neurodegenerative-diseases",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "nature-comms-psychology-749a49502d",
     "title": "Comparative Psychology of Cognition, Affect, and Behaviour",
     "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications and Scientific Reports invite manuscripts that highlight recent progress in Comparative Psychology.",
@@ -6734,6 +7419,28 @@
     "image_alt": "Discourse, Conversation, and Argumentation: Theoretical Perspectives and Innovative Empirical Studies (Volume V)",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-1de45147a2",
+    "title": "Dynamics of Change in Clinical and Health Psychology: Lifespan Approaches to Cognition, Emotion, and Behavior",
+    "summary": null,
+    "journal": "International Journal of Clinical and Health Psychology",
+    "journals": [
+      "International Journal of Clinical and Health Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327667/dynamics-of-change-in-clinical-and-health-psychology-lifespan-approaches-to-cognition-emotion-and-behavior",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -7003,6 +7710,50 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-829f90b35b",
+    "title": "Resilience in the Biological–Psychological–Social Cascade: Mechanisms, Biological Indicators, and Modifiable Processes",
+    "summary": null,
+    "journal": "Biological Psychology",
+    "journals": [
+      "Biological Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/329875/resilience-in-the-biological-psychological-social-cascade-mechanisms-biological-indicators-and-modifiable-processes",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-e957846e91",
+    "title": "Special Issue on Design, Motion Planning, and Control of Morphology-Rich Bio-Inspired Systems",
+    "summary": null,
+    "journal": "Biomimetic Intelligence and Robotics",
+    "journals": [
+      "Biomimetic Intelligence and Robotics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331531/special-issue-on-design-motion-planning-and-control-of-morphology-rich-bio-inspired-systems",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-68e379b2c4",
     "title": "The Role and Impact of Executive Functions in Human Health and Wellbeing",
     "summary": null,
@@ -7080,6 +7831,29 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-be74efc59f",
+    "title": "Automated behavioral monitoring and testing systems in animal research: Potentials and Pitfalls",
+    "summary": null,
+    "journal": "Behavioural Brain Research",
+    "journals": [
+      "Behavioural Brain Research"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335570/automated-behavioral-monitoring-and-testing-systems-in-animal-research-potentials-and-pitfalls",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-7f168aaf8c",
     "title": "Cerebellar Contributions to Cognitive and Motor Function: Neuropsychological Mechanisms and Implications for Longevity",
     "summary": null,
@@ -7130,6 +7904,28 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-11697289da",
+    "title": "No More Waiting: Toward Equitable Neuroscience in Latin America and the Caribbean",
+    "summary": null,
+    "journal": "Equity Neuroscience",
+    "journals": [
+      "Equity Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332499/no-more-waiting-toward-equitable-neuroscience-in-latin-america-and-the-caribbean",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -7823,6 +8619,29 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-575a473dc9",
+    "title": "Stress as a Key Vulnerability Element Across the Lifespan: Translational Insights from the Italian Stress Network",
+    "summary": null,
+    "journal": "Neuroscience & Biobehavioral Reviews",
+    "journals": [
+      "Neuroscience & Biobehavioral Reviews"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-10",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333695/stress-as-a-key-vulnerability-element-across-the-lifespan-translational-insights-from-the-italian-stress-network",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "springer-bmc-psychiatry-33d9c5f556",
     "title": "First episode psychosis: diagnosis, treatment, and outcomes",
     "summary": "BMC Psychiatry welcomes submissions to our First episode psychosis: diagnosis, treatment, and outcomes Collection. This Collection aims to bring together research that advances understanding of first episode...",
@@ -8044,6 +8863,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-b60ec674ea",
+    "title": "Innovative mobility solutions for diverse and vulnerable user groups",
+    "summary": null,
+    "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+    "journals": [
+      "Transportation Research Part F: Traffic Psychology and Behaviour"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-14",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332549/innovative-mobility-solutions-for-diverse-and-vulnerable-user-groups",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -8333,6 +9174,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-db56091f85",
+    "title": "The Influence of Sex Hormones on the Clinical Course and Prognosis of Severe Mental Illnesses in Women",
+    "summary": null,
+    "journal": "Spanish Journal of Psychiatry and Mental Health",
+    "journals": [
+      "Spanish Journal of Psychiatry and Mental Health"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/329737/the-influence-of-sex-hormones-on-the-clinical-course-and-prognosis-of-severe-mental-illnesses-in-women",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -9786,6 +10649,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-59e56bda40",
+    "title": "Accessibility and Inclusivity in Transport",
+    "summary": null,
+    "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+    "journals": [
+      "Transportation Research Part F: Traffic Psychology and Behaviour"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331933/accessibility-and-inclusivity-in-transport",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-785ed01491",
     "title": "Advances in modern neuropsychology: precision assessment, intervention, and research in classic and technology-enhanced settings",
     "summary": null,
@@ -9988,6 +10873,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-247238c4ed",
+    "title": "Humanoid Robots and Embodied Artificial Intelligence",
+    "summary": null,
+    "journal": "Chinese Journal of Mechanical Engineering",
+    "journals": [
+      "Chinese Journal of Mechanical Engineering"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333846/humanoid-robots-and-embodied-artificial-intelligence",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-801e81ee77",
     "title": "Individual variability in postural control and sensorimotor integration: mechanisms, adaptation, and applications",
     "summary": "Postural control and motor learning are fundamental to human movement, enabling individuals to maintain balance and adapt to dynamic environmental and task demands. While these processes have been extensively studied, a critical yet underexplored issue is the substantial inter-individual variability in how postural behavior is organized and how motor skills are acquired. Rather than being treated as noise, such variability may reflect meaningful differences in underlying control strategies and adaptive processes.",
@@ -10034,6 +10941,28 @@
     "image_alt": "Intelligent Sensing for Mental Health: AI and Unobtrusive Wearables in Diagnosing and Intervening in Depression and Cognitive Disorders",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-9ab3443f42",
+    "title": "Mental Health and Well-being in an Era of Geopolitical Instability: Protective Factors and Determinants of Psychological Resilience",
+    "summary": null,
+    "journal": "Acta Psychologica",
+    "journals": [
+      "Acta Psychologica"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331717/mental-health-and-well-being-in-an-era-of-geopolitical-instability-protective-factors-and-determinants-of-psychological-resilience",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -10119,6 +11048,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-6e2a96d445",
+    "title": "Neurotrauma and Brain Network Reorganization: A New Frontier in Recovery Science",
+    "summary": null,
+    "journal": "Brain Network Disorders",
+    "journals": [
+      "Brain Network Disorders"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/325338/neurotrauma-and-brain-network-reorganization-a-new-frontier-in-recovery-science",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-5f8f998a26",
     "title": "Psychological Determinants and Integrated Performance Factors in Elite Soccer",
     "summary": "Elite soccer performance has traditionally been examined through physical, technical, and tactical metrics. However, growing evidence highlights that performance in high-level competition emerges from complex interactions between cognitive processes, emotional regulation, motivational dynamics, and match context. Decision-making under pressure, attentional control, resilience, team cohesion, and psychophysiological regulation are not peripheral factors but central determinants of competitive success. At the same time, advances in soccer analytics and artificial intelligence have expanded the capacity to quantify match behavior and physiological responses. Despite these developments, psychological determinants are often examined in isolation, while data-driven performance models rarely integrate psychological constructs in a systematic and ecologically valid manner.",
@@ -10180,6 +11131,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-6bf224ebd8",
+    "title": "Responsible AI in Neuroimaging",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/324789/responsible-ai-in-neuroimaging",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-71f9abd9c4",
     "title": "Reviews in Psychology of Language (Volume III)",
     "summary": null,
@@ -10221,6 +11194,29 @@
     "image_alt": "Siblinghood Through Any Disability: The State of the Art and Future Directions - Volume II",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-3abfb1ba3c",
+    "title": "Special Issue on Embodied Medical Robotics: From Mechanical Intelligence to Multimodal Cognitive Autonomy",
+    "summary": null,
+    "journal": "Biomimetic Intelligence and Robotics",
+    "journals": [
+      "Biomimetic Intelligence and Robotics"
+    ],
+    "domains": [
+      "psychology",
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333300/special-issue-on-embodied-medical-robotics-from-mechanical-intelligence-to-multimodal-cognitive-autonomy",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -10380,6 +11376,28 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-d190c00a94",
+    "title": "Coupling biomechanics with biology in traumatic brain injury",
+    "summary": null,
+    "journal": "Brain Research Bulletin",
+    "journals": [
+      "Brain Research Bulletin"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332226/coupling-biomechanics-with-biology-in-traumatic-brain-injury",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -10586,6 +11604,28 @@
     "image_alt": "The lymphatic system in neurodegeneration, cancer, immunity, and metabolic disease: A unifying framework for disease pathogenesis and therapy",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-d05954df3f",
+    "title": "Translating the Neurobiology of Early Adversity Across Species",
+    "summary": null,
+    "journal": "Brain and Environment",
+    "journals": [
+      "Brain and Environment"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331489/translating-the-neurobiology-of-early-adversity-across-species",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -11732,6 +12772,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-f10b46953e",
+    "title": "Functional Neurosurgery and Epilepsy Surgery: Current and Emerging Therapies for Movement Disorders, Psychiatric Disorders, Epilepsy, and Pain",
+    "summary": null,
+    "journal": "Brain and Spine",
+    "journals": [
+      "Brain and Spine"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332602/functional-neurosurgery-and-epilepsy-surgery-current-and-emerging-therapies-for-movement-disorders-psychiatric-disorders-epilepsy-and-pain",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -12997,6 +14059,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-cf2fa70807",
+    "title": "The Molecular Basis of Addiction",
+    "summary": null,
+    "journal": "Addiction Neuroscience",
+    "journals": [
+      "Addiction Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-26",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334102/the-molecular-basis-of-addiction",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-2fc290cafd",
     "title": "From infection to chronic fatigue: systems biology of ME/CFS, long COVID, and post-viral syndromes",
     "summary": "This Research Topic is part of a series with Fatigue: Physiology and Pathology and Exploring Chronic Fatigue: Neural Correlates, Mechanisms, and Therapeutic Strategies .",
@@ -13358,6 +14442,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-bd3c097c53",
+    "title": "A deeper look at neurochemical data",
+    "summary": null,
+    "journal": "Journal of Neuroscience Methods",
+    "journals": [
+      "Journal of Neuroscience Methods"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/319552/a-deeper-look-at-neurochemical-data",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-2edb5d4c2a",
     "title": "AI-Driven Approaches in Mental Health Diagnosis and Treatment",
     "summary": "The intersection of informatics and mental health represents a burgeoning field poised to significantly transform the landscape of psychological disorder diagnosis and treatment. Advanced machine learning (ML) and deep learning (DL) techniques enable researchers to decipher intricate patterns and derive profound insights from vast, complex datasets. Such pioneering approaches promise to enhance the precision of diagnoses, facilitate personalized treatment plans, and markedly improve patient outcomes. This convergence is dismantling traditional barriers between data science, clinical psychology, and neuroscience, fostering the emergence of novel strategies that hold the potential to revolutionize mental health care. Despite these advances, gaps persist in fully integrating these technologies in routine clinical settings, and questions around ethical implications and data privacy demand attention.",
@@ -13417,6 +14523,50 @@
     "image_alt": "Addressing the Transposition Challenge in Virtual Reality: Adaptive Scaffolding for Self-Regulation, Cognitive Load, and Emotions in Education",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-8f7c437d39",
+    "title": "Advances in Robotic Forming",
+    "summary": null,
+    "journal": "Advances in Industrial and Manufacturing Engineering",
+    "journals": [
+      "Advances in Industrial and Manufacturing Engineering"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333224/advances-in-robotic-forming",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-f39bced9e0",
+    "title": "Advances in Statistical Model Evaluation",
+    "summary": null,
+    "journal": "Journal of Mathematical Psychology",
+    "journals": [
+      "Journal of Mathematical Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327840/advances-in-statistical-model-evaluation",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -13481,6 +14631,50 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-72c0e68a89",
+    "title": "Between Brains, Across Agents: Toward Multi-Agent Neuroscience",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/329890/between-brains-across-agents-toward-multi-agent-neuroscience",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-b3d1466689",
+    "title": "Brain Health, Frailty and Resilience After Stroke",
+    "summary": null,
+    "journal": "NeuroImage Stroke",
+    "journals": [
+      "NeuroImage Stroke"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333194/brain-health-frailty-and-resilience-after-stroke",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-7a9f2cedfc",
     "title": "Bridging Gaps in Understanding Consciousness Vol. II: Advancing Empirical and Methodological Frontiers",
     "summary": null,
@@ -13502,6 +14696,28 @@
     "image_alt": "Bridging Gaps in Understanding Consciousness Vol. II: Advancing Empirical and Methodological Frontiers",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-267bde6697",
+    "title": "ChemRobot for Energy Chemistry",
+    "summary": null,
+    "journal": "Journal of Energy Chemistry",
+    "journals": [
+      "Journal of Energy Chemistry"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330419/chemrobot-for-energy-chemistry",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -13592,6 +14808,28 @@
     "image_alt": "Decoding Pathological Neuro-Trajectories - Artificial Intelligence Frameworks for Neurodegenerative Disorders",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-8e4dc9f834",
+    "title": "Diagnosis and management of vascular cognitive impairment: national perspectives from across the globe",
+    "summary": null,
+    "journal": "Cerebral Circulation - Cognition and Behavior",
+    "journals": [
+      "Cerebral Circulation - Cognition and Behavior"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335468/diagnosis-and-management-of-vascular-cognitive-impairment-national-perspectives-from-across-the-globe",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -13864,6 +15102,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-91931d8954",
+    "title": "Learning-Based Control for Soft Robotics: Theory, Algorithms, and Applications",
+    "summary": null,
+    "journal": "Results in Control and Optimization",
+    "journals": [
+      "Results in Control and Optimization"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331524/learning-based-control-for-soft-robotics-theory-algorithms-and-applications",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-5fec2cf312",
     "title": "Medical Informatics to Strengthen the Fight Against Bacterial Resistance",
     "summary": "Antibiotic resistance has become one of the most pressing global health challenges of our time. When bacteria develop mechanisms to survive antibiotic exposure, diseases once considered easily treatable - such as pneumonia, urinary tract infections, and tuberculosis - become increasingly difficult to manage, leading to prolonged illness, higher costs, and greater mortality. The overuse and misuse of antibiotics in medicine and agriculture, combined with inadequate infection control and limited public awareness, have accelerated the emergence and spread of resistant strains.",
@@ -13890,6 +15150,28 @@
     "image_alt": "Medical Informatics to Strengthen the Fight Against Bacterial Resistance",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-263a064fe3",
+    "title": "Metacognition and Confidence Across Domains of Cognition",
+    "summary": null,
+    "journal": "NeuroImage: Reports",
+    "journals": [
+      "NeuroImage: Reports"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/329608/metacognition-and-confidence-across-domains-of-cognition",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -13976,6 +15258,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-496a48d0e0",
+    "title": "Neuroimaging in Africa: Progress, Priorities, and Possibilities",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333040/neuroimaging-in-africa-progress-priorities-and-possibilities",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-a2399d7f90",
     "title": "Neurophysiological Biomarkers and Targeted Neuromodulation in Major Depressive Disorder and Bipolar Disorder",
     "summary": null,
@@ -13996,6 +15300,50 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-a0efd3b732",
+    "title": "New Avenues in Neuroimaging: Advancements in MR Hardware for Spatial and Dynamic Imaging Techniques",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/324876/new-avenues-in-neuroimaging-advancements-in-mr-hardware-for-spatial-and-dynamic-imaging-techniques",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-89d088530c",
+    "title": "Probabilistic processes and their applications : from linguistics to neuroscience, passing through Non-Markovianness and Context Tree Models. A tribute to Antonio Galves",
+    "summary": null,
+    "journal": "Stochastic Processes and their Applications",
+    "journals": [
+      "Stochastic Processes and their Applications"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/313492/probabilistic-processes-and-their-applications-from-linguistics-to-neuroscience-passing-through-non-markovianness-and-context-tree-models-a-tribute-to-antonio-galves",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -14068,6 +15416,73 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-0e68a496f4",
+    "title": "Robot-Enabled Precision Agriculture",
+    "summary": null,
+    "journal": "Computers and Electronics in Agriculture",
+    "journals": [
+      "Computers and Electronics in Agriculture"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335908/robot-enabled-precision-agriculture",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-6d15063963",
+    "title": "Special Issue on Brain Development and Neurodevelopmental Disorders",
+    "summary": null,
+    "journal": "Journal of Brain and Spine",
+    "journals": [
+      "Journal of Brain and Spine"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333813/special-issue-on-brain-development-and-neurodevelopmental-disorders",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-687acc3bc4",
+    "title": "Special Issue on soft electronics for brain interfaces",
+    "summary": null,
+    "journal": "Wearable Electronics",
+    "journals": [
+      "Wearable Electronics"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333964/special-issue-on-soft-electronics-for-brain-interfaces",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-bfd7247453",
     "title": "The Cognitive Mechanisms and Contextual Factors Underlying Social Cognition and Behavior",
     "summary": null,
@@ -14087,6 +15502,28 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-57dc6afa35",
+    "title": "The Right Hemisphere in Language",
+    "summary": null,
+    "journal": "Brain and Language",
+    "journals": [
+      "Brain and Language"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332557/the-right-hemisphere-in-language",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -14155,6 +15592,29 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-ae185cb1a6",
+    "title": "Traditional non-pharmacological interventions (NPI) for brain disorders: evidence and mechanism",
+    "summary": null,
+    "journal": "Brain Behavior and Immunity Integrative",
+    "journals": [
+      "Brain Behavior and Immunity Integrative"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335330/traditional-non-pharmacological-interventions-npi-for-brain-disorders-evidence-and-mechanism",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-595de3d463",
     "title": "Transforming Genitourinary Surgery Through Advanced Robotic Systems",
     "summary": "The field of genitourinary (GU) surgery has undergone a transformative shift with the integration of robotic technology, which now serves as a cornerstone for minimally invasive procedures. Over recent decades, advancements have evolved from pioneering platforms like PUMA 560 and Probot to current industry standards, exemplified by the da Vinci system. Robotic approaches have been lauded for improved dexterity, enhanced visualization, and better ergonomics for surgeons, leading to increasing adoption. Despite their technical promise, clinical debates remain around appropriate patient selection, comparative benefits over other minimally invasive modalities, and the economic implications of broader deployment. Although early evidence points to advantages such as reduced blood loss and faster recovery, critical gaps persist, including inconsistent outcome definitions, limited long-term data, and a lack of standardized benchmarks for both clinical and technical success.",
@@ -14179,6 +15639,29 @@
     "image_alt": "Transforming Genitourinary Surgery Through Advanced Robotic Systems",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-bc17d6da85",
+    "title": "Contributions of eyetracking to cognitive neuroscience",
+    "summary": null,
+    "journal": "Neuropsychologia",
+    "journals": [
+      "Neuropsychologia"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331040/contributions-of-eyetracking-to-cognitive-neuroscience",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -15084,6 +16567,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-bc59f60f4c",
+    "title": "Culturally Diverse Approaches to Mental Health in Sport and Physical Activity: Contextualized Perspectives and Approaches",
+    "summary": null,
+    "journal": "International Journal of Clinical and Health Psychology",
+    "journals": [
+      "International Journal of Clinical and Health Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-11",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331263/culturally-diverse-approaches-to-mental-health-in-sport-and-physical-activity-contextualized-perspectives-and-approaches",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-1f8073c6f5",
     "title": "Long-Term Outcomes of Critically Ill Patients with Acute Brain Injury",
     "summary": "Neurocritical care has evolved into a discipline with clear benefits, with organised services linked to lower mortality and better functional outcomes. Yet, many survivors of acute brain injury (ABI) admitted to intensive care units continue to experience significant physical, cognitive, and emotional impairments long after discharge. Despite advances in acute management, long-term recovery trajectories remain poorly characterised, often measured by crude or inconsistent metrics that overlook patients’ quality of life and day-to-day functioning. Current evidence highlights a pressing need for better tools, standardised follow-up, and more nuanced understanding of how these patients recover over time and across different healthcare contexts.",
@@ -15312,6 +16817,28 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-217b60d548",
+    "title": "Challenging assumptions in neuropsychology",
+    "summary": null,
+    "journal": "Cortex",
+    "journals": [
+      "Cortex"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333106/challenging-assumptions-in-neuropsychology",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -17269,6 +18796,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-e2ccc62910",
+    "title": "Hierarchical Embodied Intelligence for Learning Generalizable Robotic Skills",
+    "summary": null,
+    "journal": "Robotics and Autonomous Systems",
+    "journals": [
+      "Robotics and Autonomous Systems"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335297/hierarchical-embodied-intelligence-for-learning-generalizable-robotic-skills",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-8a095efb5b",
     "title": "Improving Vision-Guided Robotic Systems Through Next-Generation Hand-Eye Calibration Techniques",
     "summary": "Robotic vision systems form the foundation of modern industrial automation, enabling high-precision tasks such as assembly, inspection, and object manipulation. Central to their performance is hand-eye calibration, which defines the spatial relationship between the robotic manipulator and the visual sensor. Traditional calibration methods typically rely on multiple feature points, complex mathematical transformations, and iterative optimizations, increasing the risk of cumulative errors and computational inefficiencies. Recent approaches leveraging simplified configurations—such as single fixed feature point methods and algorithms like Singular Value Decomposition (SVD) and Levenberg-Marquardt (LM)—have shown promise in reducing setup complexity. However, persistent issues with accuracy, robustness to sensor noise, and adaptability to dynamic environments highlight the need for innovative solutions that balance precision with operational efficiency.",
@@ -17293,6 +18842,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-2d31ae9904",
+    "title": "Intelligent Systems and Control for Applied Robotic Cases",
+    "summary": null,
+    "journal": "Engineering Applications of Artificial Intelligence",
+    "journals": [
+      "Engineering Applications of Artificial Intelligence"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/336385/intelligent-systems-and-control-for-applied-robotic-cases",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -17573,6 +19144,28 @@
     "image_alt": "Social Robotics and Artificial Intelligence for Inclusion: Assistive and Interactive Technologies",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-fc51603ca6",
+    "title": "Special Issue on Foundation for Initial Exploration of Chinese Brain&Mind Trajectories",
+    "summary": null,
+    "journal": "Brain Science and Child Development",
+    "journals": [
+      "Brain Science and Child Development"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334493/special-issue-on-foundation-for-initial-exploration-of-chinese-brainmind-trajectories",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -20034,6 +21627,29 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-044fce6e06",
+    "title": "Moving Minds: Physical Activity, Fitness, and Neurocognitive Development from Childhood to Adolescence",
+    "summary": null,
+    "journal": "Developmental Cognitive Neuroscience",
+    "journals": [
+      "Developmental Cognitive Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335079/moving-minds-physical-activity-fitness-and-neurocognitive-development-from-childhood-to-adolescence",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "nature-comms-psychology-05597924f2",
     "title": "Neural Models of Consciousness",
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite manuscripts that highlight neural models of consciousness. Topics include, but are not limited to, neural correlates of consciousness, theories of consciousness, meditation, and conscious awareness.",
@@ -20077,6 +21693,29 @@
     "image_alt": "Neural Models of Consciousness",
     "first_seen": "2026-08-26",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-dab2689cf4",
+    "title": "Neural Substrates Underlying Behavioral Deficits in Neuropsychiatric Disorders",
+    "summary": null,
+    "journal": "Molecular and Cellular Neuroscience",
+    "journals": [
+      "Molecular and Cellular Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334421/neural-substrates-underlying-behavioral-deficits-in-neuropsychiatric-disorders",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -20137,6 +21776,28 @@
     "image_alt": "Psychobiotics and Food-Derived Neuroactives: Pharmacological Pathways to Mental Well-being",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-9c5f911818",
+    "title": "Resilience in Schools from Multisystem Perspectives",
+    "summary": null,
+    "journal": "Journal of School Psychology",
+    "journals": [
+      "Journal of School Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335663/resilience-in-schools-from-multisystem-perspectives",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -20325,6 +21986,28 @@
     "image_alt": "Mechanisms of motor recovery after stroke: biomarkers, plasticity, and functional outcomes",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-eb41d23100",
+    "title": "Psychedelic Renaissance: methodological challenges in psychedelic research",
+    "summary": null,
+    "journal": "Journal of Neuroscience Methods",
+    "journals": [
+      "Journal of Neuroscience Methods"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-03-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335544/psychedelic-renaissance-methodological-challenges-in-psychedelic-research",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -22863,6 +24546,51 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-97e03fc8a4",
+    "title": "Social Psychoneuroimmunology (Social PNI)",
+    "summary": null,
+    "journal": "Brain, Behavior, and Immunity",
+    "journals": [
+      "Brain, Behavior, and Immunity"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330429/social-psychoneuroimmunology-social-pni",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-b477be8025",
+    "title": "Soft and Continuum Robotics: from Design to Control",
+    "summary": null,
+    "journal": "Mechatronics",
+    "journals": [
+      "Mechatronics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/336031/soft-and-continuum-robotics-from-design-to-control",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-0691aad274",
     "title": "Targeting Neuroinflammation in Spinal Cord Injury: From Inflammatory Mechanisms to Pharmacological Interventions",
     "summary": "Spinal cord injury (SCI) triggers a devastating secondary neuroinflammatory cascade—driven by microglial activation, immune infiltration, and sustained pro-inflammatory mediator release—that exacerbates tissue damage and impedes neurological recovery. The dynamic balance between pro-inflammatory (M1) and reparative (M2) phenotypes of microglia/macrophages has emerged as a critical determinant of injury outcome. Key signaling pathways, including NF-κB, NLRP3 inflammasome, TLR4, and the CCL2/CCR2 axis, represent promising pharmacological targets. Despite encouraging preclinical advances, effective clinical translation remains limited. This Research Topic aims to bridge mechanistic insights into SCI neuroinflammation with innovative pharmacological interventions, fostering the development of targeted therapies that can ultimately improve functional recovery after SCI.",
@@ -23249,6 +24977,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-e0273db93c",
+    "title": "AI-Driven Control and Planning for Advanced Robotics",
+    "summary": null,
+    "journal": "Control Engineering Practice",
+    "journals": [
+      "Control Engineering Practice"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335109/ai-driven-control-and-planning-for-advanced-robotics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-1edb2de428",
     "title": "Adaptive Bioinspired Soft Robotics: Bridging Natural Behavior and Robotic Intelligence",
     "summary": "Soft robotics is redefining how machines interact with complex environments by merging compliant mechanics, intelligent materials, and nature‑inspired morphologies. This Research Topic seeks to advance the integration of smart functional materials and bio‑inspired actuation architectures to build robotic systems that are inherently adaptive, resilient, and multifunctional.",
@@ -23491,6 +25241,52 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-b802e1aceb",
+    "title": "The neural underpinnings of religion and spirituality",
+    "summary": null,
+    "journal": "Brain and Cognition",
+    "journals": [
+      "Brain and Cognition"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-06-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330904/the-neural-underpinnings-of-religion-and-spirituality",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-955895a191",
+    "title": "Nonlinear Dynamics and Complex Network Theory in Brain Research: From Fundamental Nonlinear Mechanisms to Clinical Applications",
+    "summary": null,
+    "journal": "Chaos, Solitons & Fractals",
+    "journals": [
+      "Chaos, Solitons & Fractals"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-08-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333808/nonlinear-dynamics-and-complex-network-theory-in-brain-research-from-fundamental-nonlinear-mechanisms-to-clinical-applications",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-68cc36c23d",
     "title": "Neuromuscular diseases from genomics to clinics and functions: the role of European Reference Networks in research and diagnosis",
     "summary": "Advances in understanding the genomics of neuromuscular diseases have been outstanding in recent years and have promoted the design and availability of new therapies and drugs. This issue of Frontiers in Neurogenomics aims to describe the European Reference Network Euro-NMD’s recent activities and the main achievements gained through its outstanding work, which has provided a better understanding of genome function and its regulation in neuromuscular diseases and how this knowledge has prompted the discovery of new diagnostics, functional circuits, and treatments.",
@@ -23520,6 +25316,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-685d06e065",
+    "title": "Brain and Language – Expression of Interest for “Special Issue” proposals",
+    "summary": null,
+    "journal": "Brain and Language",
+    "journals": [
+      "Brain and Language"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/328261/brain-and-language-expression-of-interest-for-special-issue-proposals",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -23797,6 +25615,26 @@
     "image_alt": "AI and Social Well-Being: Opportunities and Risks for Connection, Support, and Inclusion",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "royal-society-themes-5fd81fc0fa",
+    "title": "AI and its relationship to public policy",
+    "summary": "This themed collection aims to highlight the emerging approaches to achieving integrated information in large systems and the organisations that depend upon achieving integrated information management. Find out more .",
+    "journal": "Royal Society Open Science",
+    "journals": [
+      "Royal Society Open Science"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_collection",
+    "deadline": null,
+    "deadline_status": "not_checked",
+    "url": "https://royalsocietypublishing.org/rsos/pages/special-collections",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "The Royal Society",
     "status": "open"
   },
   {
@@ -26517,6 +28355,26 @@
     "image_alt": "Beyond adolescence: cannabinoid exposure during extended human brain development",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "royal-society-themes-fb2041eba2",
+    "title": "Beyond boundaries: Celebrating Global South and Indigenous contributions to molecular and cellular biology",
+    "summary": "Open Biology invites cell and molecular biology researchers based in the Global South and from Indigenous communities to submit a proposal for a paper to be published in a new Special Feature. We aim to spotlight molecular and cellular biology research from communities and regions that remain underrepresented in mainstream scientific publishing.",
+    "journal": "Open Biology",
+    "journals": [
+      "Open Biology"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_collection",
+    "deadline": null,
+    "deadline_status": "not_checked",
+    "url": "https://royalsocietypublishing.org/rsob/pages/special-features",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "The Royal Society",
     "status": "open"
   },
   {
@@ -43314,6 +45172,26 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "royal-society-themes-36f43f66b8",
+    "title": "The quest for integrated information",
+    "summary": "Royal Society Open Science has issued open calls for papers to contribute to two special collections:",
+    "journal": "Royal Society Open Science",
+    "journals": [
+      "Royal Society Open Science"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_collection",
+    "deadline": null,
+    "deadline_status": "not_checked",
+    "url": "https://royalsocietypublishing.org/rsos/pages/special-collections",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "The Royal Society",
     "status": "open"
   },
   {

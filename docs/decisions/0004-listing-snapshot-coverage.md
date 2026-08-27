@@ -26,3 +26,4 @@ Coverage probe（2026-08-27）:
 * Good, because 人が保存した一覧 HTML を正本に載せられる
 * Bad, because 定期 crawl だけでは APA / Elsevier は更新されない
 * Bad, because Royal Society の締切は一覧に無く、OPEN.md には出ない
+* 2026-08-27 のライブ一覧 ingest: Elsevier は 2,799 件中、対象分野かつ募集中 82 件を JSONL / OPEN.md に入れた。Royal Society テーマページは 3 件（締切なし、viewer のみ）。APA は現行一覧が取れず未投入。
