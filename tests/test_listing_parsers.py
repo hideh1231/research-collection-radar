@@ -205,5 +205,22 @@ def test_ingest_html_open_only_skips_closed_and_keeps_other_source_status() -> N
         assert status["sources"]["nature-psychology"]["parsed"] == 55
         assert status["frontiers_detail"]["deadline_enrichment"]["checked"] == 7
         assert status["sources"]["sciencedirect-cfp"]["ok"] is True
+        assert status["sources"]["sciencedirect-cfp"]["enabled"] is False
         assert status["sources"]["sciencedirect-cfp"]["dropped_unclassified"] == 1
         assert status["sources"]["sciencedirect-cfp"]["skipped_closed"] == 1
+
+
+def test_elsevier_scope_pattern_requires_cognition_as_a_word() -> None:
+    import re
+
+    from radar.config import load_sources
+
+    pattern = next(
+        source["scope_pattern"]
+        for source in load_sources(repo_root())["sources"]
+        if source["key"] == "sciencedirect-cfp"
+    )
+    assert re.search(pattern, "Cognition, Learning, and Agency BioSystems", re.I)
+    assert re.search(pattern, "Brain and Cognition Neurocognitive Adaptations", re.I)
+    assert not re.search(pattern, "Pattern Recognition Letters Generative Models", re.I)
+    assert not re.search(pattern, "Journal of Business Venturing Recognition of Hidden Potential", re.I)

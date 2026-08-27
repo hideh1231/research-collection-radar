@@ -206,9 +206,9 @@ def _empty_enrichment() -> dict[str, Any]:
     }
 
 
-def _source_status_entry(result: Any) -> dict[str, Any]:
+def _source_status_entry(result: Any, source: dict[str, Any] | None = None) -> dict[str, Any]:
     return {
-        "enabled": True,
+        "enabled": bool(source.get("enabled")) if source is not None else True,
         "ok": result.ok,
         "http_status": result.http_status,
         "parsed": result.parsed_count,
@@ -352,7 +352,7 @@ def run(
                     page_count=1,
                     error=None if records else "zero records",
                 )
-                entry = _source_status_entry(result)
+                entry = _source_status_entry(result, source)
                 entry["ingest"] = str(path)
                 source_status["sources"][source["key"]] = entry
                 log(f"{source['key']}: ingest ok={result.ok} parsed={result.parsed_count} file={path}")
@@ -378,7 +378,7 @@ def run(
                     source_status["sources"][source["key"]] = entry
                     continue
                 result = run_source(fetcher, source)
-                entry = _source_status_entry(result)
+                entry = _source_status_entry(result, source)
                 source_status["sources"][source["key"]] = entry
                 log(
                     f"{source['key']}: ok={result.ok} status={result.http_status} "
