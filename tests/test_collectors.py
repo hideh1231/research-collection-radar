@@ -33,11 +33,18 @@ def test_nature_fixture() -> None:
 
 def test_frontiers_fixture() -> None:
     html = (repo_root() / "tests/fixtures/frontiers_psychology.html").read_text(encoding="utf-8")
-    records, _next = parse_listing(html, _source("frontiers-psychology", publisher="Frontiers", journal="Frontiers in Psychology"))
+    parsed = parse_listing(html, _source("frontiers-psychology", publisher="Frontiers", journal="Frontiers in Psychology"))
+    records = parsed.records
+    assert parsed.advertised_total == 2
     assert len(records) == 2
     statuses = {row.title: row.status for row in records}
-    assert any(status == "open" for status in statuses.values())
-    assert any(status == "closed" for status in statuses.values())
+    assert statuses["Adaptive Human-Robot Collaboration in Smart Manufacturing"] == "open"
+    assert statuses["An old closed topic"] == "closed"
+    for row in records:
+        assert "Submission" not in row.title
+        assert "views" not in row.title
+        assert "Editor" not in row.title
+        assert "articles" not in row.title
 
 
 def test_jsonl_stable_sort() -> None:

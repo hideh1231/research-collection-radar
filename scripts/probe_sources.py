@@ -28,8 +28,8 @@ def main() -> None:
                 wall = " bot-wall"
             count = 0
             if source["collector"] == "frontiers":
-                rows, _ = parse_frontiers(html, source)
-                count = len(rows)
+                parsed = parse_frontiers(html, source)
+                count = len(parsed.records)
             else:
                 collector = {
                     "sciencedirect": ScienceDirectCollector(),

@@ -73,6 +73,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
                 "deadline": "2027-04-21",
                 "deadline_status": "listed",
                 "deadline_checked_at": checked_at,
+                "metadata_checked_at": checked_at,
                 "status": "open",
                 "summary": None,
                 "domains": ["psychology"],
@@ -99,6 +100,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
                 "deadline": None,
                 "deadline_status": "not_listed",
                 "deadline_checked_at": checked_at,
+                "metadata_checked_at": checked_at,
                 "status": "open",
                 "summary": None,
                 "domains": ["psychology"],
@@ -122,7 +124,7 @@ def test_pipeline_passes_only_new_frontiers_ids_to_deadline_queue(monkeypatch) -
         (root / "state/notification_ledger.jsonl").write_text("", encoding="utf-8")
 
         def fake_run_source(_fetcher, source):
-            if source["collector"] != "frontiers":
+            if source["key"] != "frontiers-psychology":
                 return SourceResult(key=source["key"], ok=True, records=[])
             return SourceResult(
                 key=source["key"],

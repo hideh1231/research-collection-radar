@@ -13,12 +13,15 @@ def _tokens(text: str) -> str:
 def classify(raw: RawRecord, domains_cfg: dict[str, Any], source_key: str) -> tuple[list[str], dict[str, float], list[str], str]:
     scores: dict[str, float] = {key: 0.0 for key in domains_cfg.get("domains", {})}
     methods = ["keyword"]
-    haystack = _tokens(" ".join(filter(None, [raw.title, raw.summary or "", raw.journal, raw.source_section or ""])))
+    journal_blob = " ".join(filter(None, [raw.journal, *(raw.journals or [])]))
+    haystack = _tokens(
+        " ".join(filter(None, [raw.title, raw.summary or "", journal_blob, raw.source_section or ""]))
+    )
 
     for rule in domains_cfg.get("journal_rules", []):
         match = str(rule.get("match", "")).lower()
         when = rule.get("when_source")
-        if match and match in raw.journal.lower():
+        if match and match in journal_blob.lower():
             if when and when != source_key:
                 continue
             for domain in rule.get("domains", []):

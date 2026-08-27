@@ -23,13 +23,37 @@ sources:
     allowed_hosts:
       - www.frontiersin.org
       - frontiersin.org
-    max_pages: 80
-    deadline_enrichment:
+    max_pages: 200
+    deadline_enrichment: &frontiers_detail
       daily_limit: 100
       min_interval_seconds: 1
       listed_recheck_days: 7
       not_listed_recheck_days: 30
       checkpoint_size: 25
+  - key: frontiers-robotics-ai
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Robotics and AI
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/robotics-and-ai/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
+  - key: frontiers-human-neuroscience
+    enabled: true
+    collector: frontiers
+    publisher: Frontiers
+    journal: Frontiers in Human Neuroscience
+    collection_type: research_topic
+    url: "https://www.frontiersin.org/journals/human-neuroscience/research-topics"
+    allowed_hosts:
+      - www.frontiersin.org
+      - frontiersin.org
+    max_pages: 200
+    deadline_enrichment: *frontiers_detail
   - key: sciencedirect-cfp
     enabled: false
     collector: sciencedirect
@@ -40,6 +64,7 @@ sources:
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
+    disabled_reason: "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
   - key: springer-bmc-psychology
     enabled: true
     collector: springer
@@ -60,6 +85,7 @@ sources:
     allowed_hosts:
       - www.apa.org
       - apa.org
+    disabled_reason: "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
   - key: royal-society-rsos
     enabled: false
     collector: royal_society
@@ -70,14 +96,17 @@ sources:
     allowed_hosts:
       - royalsocietypublishing.org
       - royalsociety.org
+    disabled_reason: "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
   - key: plos-collections
-    enabled: false
+    enabled: true
     collector: plos
     publisher: PLOS
     journal: PLOS
     collection_type: collection
-    url: "https://collections.plos.org/"
+    url: "https://collections.plos.org/calls-for-papers/"
+    api_url: "https://collections.plos.org/wp-json/wp/v2/call_for_papers"
     allowed_hosts:
       - collections.plos.org
       - plos.org
       - www.plos.org
+    max_pages: 20

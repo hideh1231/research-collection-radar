@@ -8,7 +8,7 @@ class _Client:
         self.responses = iter(responses)
         self.calls = []
 
-    def get(self, url):
+    def get(self, url, headers=None):
         self.calls.append(url)
         return next(self.responses)
 
