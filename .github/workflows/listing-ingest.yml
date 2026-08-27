@@ -13,6 +13,12 @@ on:
         description: Optional HTTPS URL of a rendered ScienceDirect listing HTML snapshot
         required: false
         type: string
+  push:
+    branches: [main]
+    paths:
+      - config/sources.yml
+      - config/journals.yml
+      - .github/workflows/listing-ingest.yml
 
 permissions:
   contents: write

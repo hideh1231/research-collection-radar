@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   PAGE_SIZE,
   emptyState,
+  facetCounts,
   filterRecords,
   hasActiveFilters,
   paginate,
@@ -61,6 +62,49 @@ test("multiple filters combine across facets", () => {
     deadlines: ["listed"],
   });
   assert.deepEqual(filtered.map((item) => item.id).sort(), ["a", "d"]);
+});
+
+test("multiple values in one facet match as OR", () => {
+  const journals = filterRecords(catalog, {
+    ...emptyState(),
+    journals: ["Frontiers in Psychology", "Frontiers in Robotics and AI"],
+  });
+  assert.deepEqual(journals.map((item) => item.id).sort(), ["a", "b", "c", "d"]);
+  const onlyRobotics = filterRecords(catalog, {
+    ...emptyState(),
+    journals: ["Frontiers in Robotics and AI"],
+  });
+  assert.deepEqual(onlyRobotics.map((item) => item.id), ["b"]);
+  const topics = filterRecords(catalog, {
+    ...emptyState(),
+    topics: ["HRI", "sleep"],
+  });
+  assert.deepEqual(topics.map((item) => item.id).sort(), ["b", "c"]);
+});
+
+test("facetCounts ignore the selected values of that facet", () => {
+  const journalValues = (row) => [...new Set([row.journal, ...(row.journals || [])])];
+  const counts = facetCounts(
+    catalog,
+    { ...emptyState(), journals: ["Frontiers in Psychology"] },
+    "journals",
+    journalValues,
+  );
+  const byValue = Object.fromEntries(counts.map((item) => [item.value, item.count]));
+  assert.equal(byValue["Frontiers in Psychology"], 3);
+  assert.equal(byValue["Frontiers in Robotics and AI"], 1);
+});
+
+test("facetCounts still respect other facets", () => {
+  const counts = facetCounts(
+    catalog,
+    { ...emptyState(), domains: ["robotics"], journals: ["Frontiers in Robotics and AI"] },
+    "journals",
+    (row) => [...new Set([row.journal, ...(row.journals || [])])],
+  );
+  const byValue = Object.fromEntries(counts.map((item) => [item.value, item.count]));
+  assert.equal(byValue["Frontiers in Robotics and AI"], 1);
+  assert.equal(byValue["Frontiers in Psychology"], undefined);
 });
 
 test("sorts by deadline, newest, and title", () => {

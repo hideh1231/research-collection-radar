@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "17 21 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - config/sources.yml
+      - config/journals.yml
+      - .github/workflows/crawl.yml
 
 permissions:
   contents: write
