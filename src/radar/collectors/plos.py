@@ -8,10 +8,9 @@ from typing import Any
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url, stable_id
 from radar.models import RawRecord, SourceResult
-from radar.normalize import parse_date
+from radar.normalize import parse_date, unique_keep_order
 
 API_DEFAULT = "https://collections.plos.org/wp-json/wp/v2/call_for_papers"
-JOURNAL_RE = re.compile(r"PLOS[\s\u00a0]+[A-Za-z][A-Za-z0-9&/\-]*(?:\s+[A-Za-z][A-Za-z0-9&/\-]*){0,4}", re.I)
 DEADLINE_RE = re.compile(
     r"submission deadline[,:]?\s*"
     r"([A-Za-z]+\s+\d{1,2},?\s+\d{4}|\d{1,2}\s+[A-Za-z]+\s+\d{4}|\d{4}-\d{2}-\d{2})",
@@ -19,6 +18,23 @@ DEADLINE_RE = re.compile(
 )
 TAG_RE = re.compile(r"<[^>]+>")
 TRUNCATED_RE = re.compile(r"(?:\.\.\.|…)\s*$")
+NAV_RE = re.compile(r"more about collections|collections home|browse collections", re.I)
+PLOS_JOURNALS = (
+    "PLOS Sustainability and Transformation",
+    "PLOS Neglected Tropical Diseases",
+    "PLOS Global Public Health",
+    "PLOS Computational Biology",
+    "PLOS Complex Systems",
+    "PLOS Digital Health",
+    "PLOS Mental Health",
+    "PLOS Genetics",
+    "PLOS Pathogens",
+    "PLOS Medicine",
+    "PLOS Biology",
+    "PLOS Climate",
+    "PLOS Water",
+    "PLOS ONE",
+)
 
 
 def _plain(value: Any) -> str:
@@ -31,6 +47,8 @@ def _plain(value: Any) -> str:
 def parse_summary(item: dict[str, Any]) -> str | None:
     excerpt = _plain(item.get("excerpt"))
     content = _plain(item.get("content"))
+    if content and NAV_RE.search(content):
+        content = ""
     if excerpt and not TRUNCATED_RE.search(excerpt):
         return excerpt[:1000]
     if content:
@@ -58,14 +76,17 @@ def parse_image(item: dict[str, Any], title: str) -> tuple[str | None, str | Non
     return None, None
 
 
-def parse_journal(text: str, fallback: str) -> str:
-    match = JOURNAL_RE.search(text)
-    if not match:
-        return fallback
-    name = re.sub(r"\s+", " ", match.group(0)).strip(" .,:;")
-    if name.lower() in {"plos collections", "plos collection"}:
-        return fallback
-    return name.title().replace("Plos", "PLOS")
+def parse_journals(text: str, fallback: str) -> tuple[str, list[str]]:
+    lowered = text.lower()
+    found: list[str] = []
+    for name in PLOS_JOURNALS:
+        needle = "plos one" if name == "PLOS ONE" else name.lower()
+        if needle in lowered:
+            found.append(name)
+    journals = unique_keep_order(found)
+    if not journals:
+        return fallback, [fallback]
+    return journals[0], journals
 
 
 def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRecord | None:
@@ -81,9 +102,9 @@ def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRec
     if deadline:
         status = "closed" if deadline < today else "open"
     else:
-        status = "unknown"
+        status = "open"
     publisher_id = str(item.get("id") or item.get("slug") or "")
-    journal = parse_journal(blob, source.get("journal") or "PLOS")
+    journal, journals = parse_journals(blob, source.get("journal") or "PLOS")
     url = canonicalize_url(link)
     image_url, image_alt = parse_image(item, title)
     return RawRecord(
@@ -101,7 +122,7 @@ def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRec
         image_alt=image_alt,
         submission_mode="open_call",
         publisher_id=publisher_id or None,
-        journals=[journal],
+        journals=journals,
         source_keys=[source["key"]],
         extra={"id": stable_id(source["key"], publisher_id or url)},
     )

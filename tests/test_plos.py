@@ -47,6 +47,7 @@ def test_parse_cfp_item_uses_api_fields() -> None:
     assert record.deadline is not None
     assert record.status == "open"
     assert record.summary and "PLOS Mental Health collection" in record.summary
+    assert record.journal == "PLOS Mental Health"
     assert record.image_url is None
 
 
@@ -61,9 +62,29 @@ def test_parse_cfp_item_uses_content_when_excerpt_is_truncated() -> None:
     }
     record = parse_cfp_item(item, SOURCE, today=date(2026, 8, 27))
     assert record is not None
+    assert record.status == "open"
+    assert record.deadline is None
+    assert record.journal == "PLOS Climate"
     assert record.summary == "PLOS Climate full call text for researchers in the Global South."
     assert record.image_url == "https://collections.plos.org/wp-content/uploads/cover.jpg"
     assert record.image_alt == record.title
+
+
+def test_parse_cfp_item_keeps_excerpt_when_content_is_navigation() -> None:
+    from datetime import date
+
+    item = _item(43, deadline=None)
+    item["excerpt"] = {
+        "rendered": "<p>PLOS Medicine is calling submissions of research on health systems&hellip;</p>"
+    }
+    item["content"] = {
+        "rendered": "<p>More About Collections</p><ul><li>Collections Home</li><li>Browse Collections</li></ul>"
+    }
+    record = parse_cfp_item(item, SOURCE, today=date(2026, 8, 27))
+    assert record is not None
+    assert record.journal == "PLOS Medicine"
+    assert "calling submissions" not in record.journal.lower()
+    assert record.summary and record.summary.startswith("PLOS Medicine is calling submissions")
 
 
 def test_plos_completes_when_total_matches() -> None:
