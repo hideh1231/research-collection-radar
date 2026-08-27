@@ -29,15 +29,16 @@ The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sourc
 - Springer Nature: BMC Psychology, BMC Psychiatry, and Journal of NeuroEngineering and Rehabilitation collections
 - PLOS calls for papers, via the official WordPress REST API
 
-ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が APA の一覧 1 ページを GET する。壁なら status だけ残して終了する。ScienceDirect は GitHub Actions から GET しない。レンダリング済み HTML のスナップショット URL を `workflow_dispatch` に渡す:
+ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の Chromium で APA と ScienceDirect の一覧 1 ページを開き、レンダリング済み HTML を ingest する。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
 
 ```text
-python -m radar --open-only --ingest-html apa-cfp=https://raw.githubusercontent.com/org/repo/main/apa.html
-python -m radar --open-only --ingest-html sciencedirect-cfp=https://raw.githubusercontent.com/org/repo/main/elsevier.html
-python -m radar --include-disabled --open-only --only apa-cfp
+python -m pip install -e ".[listing]"
+python -m playwright install chromium
+python -m radar --render-listings --out-dir listing-html --only apa-cfp --only sciencedirect-cfp
+python -m radar --open-only --ingest-rendered listing-html
 ```
 
-`--open-only` は締切切れを落とす。ScienceDirect は `scope_pattern` と `require_domains` で対象分野以外を落とす。スナップショット URL は GitHub raw / gist / release asset に限る。Browser automation は out of scope。Decision records: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md), [`docs/decisions/0005-listing-ingest-github-actions.md`](docs/decisions/0005-listing-ingest-github-actions.md).
+`--open-only` は締切切れを落とす。ScienceDirect は `scope_pattern` と `require_domains` で対象分野以外を落とす。Decision records: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md), [`docs/decisions/0005-listing-ingest-github-actions.md`](docs/decisions/0005-listing-ingest-github-actions.md).
 
 The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-collection-radar/`.
 

@@ -17,6 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+listing = ["playwright>=1.49"]
 
 [project.scripts]
 radar = "radar.pipeline:main"

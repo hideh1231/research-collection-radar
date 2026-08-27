@@ -636,6 +636,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--backfill-deadlines", action="store_true")
     parser.add_argument("--enrich-topics", action="store_true")
     parser.add_argument("--build-site", action="store_true")
+    parser.add_argument("--render-listings", action="store_true")
+    parser.add_argument("--ingest-rendered", type=Path, default=None)
+    parser.add_argument("--out-dir", type=Path, default=None)
+    parser.add_argument("--headless", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only", action="append", default=None)
     parser.add_argument(
@@ -661,9 +665,37 @@ def main(argv: list[str] | None = None) -> int:
         return build_site(root)
     if args.enrich_topics:
         return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
+    if args.render_listings:
+        from radar.listing_html import render_listing_pages
+
+        out_dir = args.out_dir or Path("listing-html")
+        try:
+            status = render_listing_pages(
+                out_dir,
+                list(args.only) if args.only else None,
+                headless=args.headless,
+            )
+        except RuntimeError as exc:
+            log(str(exc))
+            return 1
+        for key, entry in status.get("pages", {}).items():
+            log(f"{key}: render ok={entry.get('ok')} reason={entry.get('reason')} bytes={entry.get('bytes')}")
+        return 0
     ingest: dict[str, Path] | None = None
-    if args.ingest_html:
+    if args.ingest_rendered:
+        status_path = args.ingest_rendered / "status.json"
+        if not status_path.exists():
+            parser.error(f"missing {status_path}")
+        rendered = json.loads(status_path.read_text(encoding="utf-8"))
         ingest = {}
+        for key, entry in rendered.get("pages", {}).items():
+            if entry.get("ok") and entry.get("path"):
+                ingest[key] = Path(entry["path"])
+        if not ingest:
+            log("no rendered listings to ingest")
+            return 0
+    if args.ingest_html:
+        ingest = ingest or {}
         for item in args.ingest_html:
             if "=" not in item:
                 parser.error("--ingest-html expects KEY=PATH")

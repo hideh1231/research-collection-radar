@@ -7,24 +7,24 @@ date: 2026-08-27
 
 ## Context and Problem Statement
 
-APA と ScienceDirect の公式一覧は通常ブラウザでは開くが、GitHub Actions の GET は bot wall になる。Royal Society の `royalsociety.org` テーマページはこの環境から 200 で取れる。取得しない選択肢はなく、WAF 回避と Playwright は使わない。
+APA と ScienceDirect の公式一覧は通常ブラウザでは開くが、GitHub Actions の生 GET は bot wall になる。取得しない選択肢はなく、WAF 回避・UA 偽装・CAPTCHA 突破・proxy は使わない。詳細ページは巡回しない。
 
 ## Decision Outcome
 
-Chosen option: 取得経路を source ごとに分ける。
+Chosen option: ubuntu-latest 上で **Chromium を起動し、一覧 1 ページだけをレンダリングして HTML を ingest する**。これはコンピュータ上の通常ブラウザで一覧を保存したのと同じ経路。stealth プラグインは使わない。CAPTCHA が残ったらそこで止める。
 
-* 日次 crawl は `royal-society-themes` を有効化する。テーマページ 2 件だけを GET する。`royalsocietypublishing.org` は無効のまま。
-* 週次 workflow `listing-ingest.yml` は APA の一覧 1 ページだけを GET する。Incapsula なら `source_status` に残して成功終了する。詳細ページは取らない。
-* ScienceDirect は GitHub Actions から GET しない。`gha_fetch: false`。レンダリング済み HTML の HTTPS スナップショットを `workflow_dispatch` で ingest する。許可ホストは `raw.githubusercontent.com`、`gist.githubusercontent.com`、`objects.githubusercontent.com` に限る。
-* browser 自動操作、UA 偽装、proxy、CAPTCHA 突破はしない。
-* リポジトリ変数 `LISTING_RUNNER` があれば、その runner で listing-ingest を回す。未設定なら `ubuntu-latest`。
+* 週次 workflow `listing-ingest.yml` が **Google Chrome（headed、xvfb）** で APA の calls-for-papers と ScienceDirect の browse を各 1 ページ開く。cookie バナーは Accept する。一覧マーカーが出たら HTML を保存して `--open-only --ingest-rendered` する。
+* Playwright 付属の headless Chromium は同じ IP でも壁になる。通常の Chrome バイナリを `channel="chrome"` で起動する。stealth プラグインは使わない。
+* 壁や CAPTCHA ならその source は ingest せず、ジョブは成功のまま終わる。保存できた HTML は artifact に残す。
+* 日次 crawl の生 GET では APA / ScienceDirect を有効化しない。Royal Society テーマページは日次 GET のまま。
+* `workflow_dispatch` で GitHub raw / gist のスナップショット URL を渡す経路は残す。
+* Playwright stealth、Googlebot 偽装、proxy、CAPTCHA 突破はしない。
 
-0003 の「bot wall の回避と browser 自動操作はしない」と、0004 の「詳細ページを巡回しない」は維持する。0004 の「GitHub Actions の定期 GET ではこの3社を有効化しない」は、Royal Society テーマページと APA の週次 1 GET についてこの決定で置き換える。
+0003 の「browser 自動操作はしない」は、**一覧 1 ページを通常 Chromium で保存する操作**についてこの決定で置き換える。詳細ページ巡回と bot wall 回避はしない。
 
 ### Consequences
 
-* Good, because Royal Society は日次で更新される
-* Good, because APA は壁が外れた週から自動で正本に入る
-* Good, because Elsevier を GHA から叩かずに済む
-* Bad, because ubuntu-latest のままだと APA は当分 bot wall のまま
-* Bad, because Elsevier の更新はスナップショット ingest が必要
+* Good, because Actions でも人がブラウザで保存したのと同じ HTML を正本に入れられる
+* Good, because 詳細 2,000 件超を GET しなくてよい
+* Bad, because GitHub の IP では Chromium でも壁が残ることがある
+* Bad, because Playwright と Chromium のインストールで週次ジョブが重くなる
