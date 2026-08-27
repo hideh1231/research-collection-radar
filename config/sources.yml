@@ -215,10 +215,13 @@ sources:
     journal: ScienceDirect
     collection_type: special_issue
     url: "https://www.sciencedirect.com/browse/calls-for-papers"
+    require_domains: true
+    scope_pattern: "psycholog|psychiatr|neuroscien|neuropsych|neuroimaging|\\bbrain\\b|robot|human-computer|human–computer|human-robot|\\bcognition\\b|\\bhci\\b|\\bhri\\b"
     allowed_hosts:
       - www.sciencedirect.com
       - sciencedirect.com
-    disabled_reason: "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
+    disabled_reason: "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages."
+    gha_fetch: false
   - key: springer-bmc-psychology
     enabled: true
     collector: springer
@@ -259,7 +262,8 @@ sources:
     allowed_hosts:
       - www.apa.org
       - apa.org
-    disabled_reason: "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
+    disabled_reason: "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
+    gha_fetch: true
   - key: royal-society-rsos
     enabled: false
     collector: royal_society
@@ -270,7 +274,21 @@ sources:
     allowed_hosts:
       - royalsocietypublishing.org
       - royalsociety.org
-    disabled_reason: "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
+    disabled_reason: "Publishing platform returns Cloudflare 403. Use royal-society-themes on royalsociety.org instead."
+    gha_fetch: false
+  - key: royal-society-themes
+    enabled: true
+    collector: royal_society
+    publisher: The Royal Society
+    journal: Royal Society
+    collection_type: special_collection
+    url: "https://royalsociety.org/journals/publishing-activities/journal-article-collections/ai/"
+    urls:
+      - "https://royalsociety.org/journals/publishing-activities/journal-article-collections/ai/"
+      - "https://royalsociety.org/journals/publishing-activities/journal-article-collections/cell-mol-bio/"
+    allowed_hosts:
+      - royalsociety.org
+      - royalsocietypublishing.org
   - key: plos-collections
     enabled: true
     collector: plos

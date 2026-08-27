@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T08:24:13Z",
+  "checked_at": "2026-08-27T12:58:07Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -152,7 +152,14 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "reason": "GitHub Actions and public HTML/API/feed/sitemap return 403 or a bot wall; no stable listing without browser automation"
+      "ok": true,
+      "http_status": null,
+      "parsed": 2799,
+      "pages": 1,
+      "error": null,
+      "ingest": "/tmp/cfp-seed/sciencedirect-browse-rendered.html",
+      "dropped_unclassified": 2707,
+      "skipped_closed": 10
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -180,11 +187,26 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "reason": "Public HTML and robots.txt return an Incapsula/bot-wall page; no official API, feed, or sitemap listing was usable"
+      "ok": true,
+      "http_status": null,
+      "parsed": 49,
+      "pages": 1,
+      "error": null,
+      "ingest": "/tmp/cfp-seed/apa-calls-rendered.html",
+      "skipped_closed": 8
     },
     "royal-society-rsos": {
       "enabled": false,
       "reason": "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
+    },
+    "royal-society-themes": {
+      "enabled": false,
+      "ok": true,
+      "http_status": null,
+      "parsed": 3,
+      "pages": 1,
+      "error": null,
+      "ingest": "/tmp/cfp-seed/rs-themes.html"
     },
     "plos-collections": {
       "enabled": true,

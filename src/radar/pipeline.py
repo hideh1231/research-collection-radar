@@ -6,6 +6,7 @@ from datetime import UTC, date, datetime
 import json
 import os
 from pathlib import Path
+import re
 import signal
 import subprocess
 import sys
@@ -16,7 +17,7 @@ from typing import Any, Iterator
 from radar.alerts import digest_text, ledger_entries, ledger_keys, new_alert_key, new_records
 from radar.classify import classify
 from radar.collectors.frontiers import enrich_deadlines
-from radar.collectors.registry import run_source
+from radar.collectors.registry import parse_listing_html, run_source
 from radar.config import (
     collection_type_labels,
     domain_labels,
@@ -27,6 +28,8 @@ from radar.config import (
 )
 from radar.http import Fetcher
 from radar.ids import stable_id
+from radar.listing_snapshots import SnapshotError, download_snapshot
+from radar.models import SourceResult
 from radar.normalize import merge_collection_rows, to_record
 from radar.slack import credentials, post_message
 from radar.store import (
@@ -204,9 +207,25 @@ def _empty_enrichment() -> dict[str, Any]:
     }
 
 
-def _source_status_entry(result: Any) -> dict[str, Any]:
+def _copy_prior_extras(source_status: dict[str, Any], prior_status_doc: dict[str, Any]) -> None:
+    for extra_key in ("frontiers_detail", "topic_enrichment"):
+        if extra_key in prior_status_doc and extra_key not in source_status:
+            source_status[extra_key] = prior_status_doc[extra_key]
+
+
+def _skip_fetch_reason(source: dict[str, Any], *, include_disabled: bool) -> str | None:
+    if source.get("enabled"):
+        return None
+    if not include_disabled:
+        return "disabled"
+    if source.get("gha_fetch") is False:
+        return "gha-fetch-disabled"
+    return None
+
+
+def _source_status_entry(result: Any, source: dict[str, Any] | None = None) -> dict[str, Any]:
     return {
-        "enabled": True,
+        "enabled": bool(source.get("enabled")) if source is not None else True,
         "ok": result.ok,
         "http_status": result.http_status,
         "parsed": result.parsed_count,
@@ -222,6 +241,9 @@ def run(
     offline: bool = False,
     backfill_deadlines: bool = False,
     only: set[str] | None = None,
+    ingest_html: dict[str, Path] | None = None,
+    open_only: bool = False,
+    include_disabled: bool = False,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -243,18 +265,64 @@ def run(
         "sources": {},
     }
     status_path = root / "data" / "source_status.json"
+    prior_status_doc: dict[str, Any] = {}
     prior_source_status: dict[str, Any] = {}
     if status_path.exists():
         try:
-            prior_source_status = json.loads(status_path.read_text(encoding="utf-8")).get("sources") or {}
+            prior_status_doc = json.loads(status_path.read_text(encoding="utf-8"))
+            prior_source_status = prior_status_doc.get("sources") or {}
         except (OSError, json.JSONDecodeError):
+            prior_status_doc = {}
             prior_source_status = {}
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
     failures = 0
+    fetched_keys: set[str] = set()
     stop_event = Event()
     frontiers = _frontiers_enrichment_source(sources_cfg)
     publisher_ids = _publisher_id_index(prior_rows)
+    ingest_html = ingest_html or {}
+
+    def absorb(source: dict[str, Any], result: Any, entry: dict[str, Any]) -> None:
+        dropped = 0
+        skipped_closed = 0
+        scope = source.get("scope_pattern")
+        for raw in result.records:
+            blob = f"{raw.title} {raw.journal}"
+            if scope and not re.search(str(scope), blob, re.I):
+                dropped += 1
+                continue
+            _assign_raw_id(raw, publisher_ids)
+            domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
+            if source.get("require_domains") and not domains:
+                dropped += 1
+                continue
+            row = to_record(
+                raw,
+                today=today,
+                domains=domains,
+                domain_scores=scores,
+                topics=topics,
+                classification_method=method,
+                prior=prior,
+            )
+            errors = validate_record(row, schema)
+            if errors:
+                entry.setdefault("invalid_records", []).append({"id": row.get("id"), "error": errors[0]})
+                log(f"skip invalid {row.get('id')}: {errors[0]}")
+                continue
+            if open_only and row.get("status") != "open":
+                skipped_closed += 1
+                continue
+            incoming.append(row)
+            if source.get("collector") == "frontiers" and row["id"] not in prior_ids:
+                incoming_frontiers_ids.add(row["id"])
+        if dropped:
+            entry["dropped_unclassified"] = dropped
+            log(f"{source['key']}: dropped {dropped} records with no in-scope domain")
+        if skipped_closed:
+            entry["skipped_closed"] = skipped_closed
+            log(f"{source['key']}: skipped {skipped_closed} closed records")
 
     # The regular run discovers list pages. Backfill only visits detail pages.
     fetcher = Fetcher(
@@ -268,6 +336,47 @@ def run(
                     "enabled": bool(source.get("enabled")),
                     "skipped": "backfill-deadlines",
                 }
+        elif ingest_html:
+            log("ingest listing HTML; skip network collectors")
+            _copy_prior_extras(source_status, prior_status_doc)
+            for source in sources_cfg.get("sources", []):
+                path = ingest_html.get(source["key"])
+                if path is None:
+                    source_status["sources"][source["key"]] = prior_source_status.get(
+                        source["key"],
+                        {
+                            "enabled": bool(source.get("enabled")),
+                            "skipped": "not-ingested",
+                        },
+                    )
+                    continue
+                html = path.read_text(encoding="utf-8")
+                try:
+                    records = parse_listing_html(source, html)
+                except KeyError:
+                    source_status["sources"][source["key"]] = {
+                        "enabled": bool(source.get("enabled")),
+                        "ok": False,
+                        "error": f"no listing parser for {source.get('collector')}",
+                    }
+                    failures += 1
+                    continue
+                result = SourceResult(
+                    key=source["key"],
+                    ok=bool(records),
+                    records=records,
+                    parsed_count=len(records),
+                    page_count=1,
+                    error=None if records else "zero records",
+                )
+                entry = _source_status_entry(result, source)
+                entry["ingest"] = str(path)
+                source_status["sources"][source["key"]] = entry
+                log(f"{source['key']}: ingest ok={result.ok} parsed={result.parsed_count} file={path}")
+                if not result.ok:
+                    failures += 1
+                    continue
+                absorb(source, result, entry)
         elif offline:
             log("offline: skip network collectors")
             for source in sources_cfg.get("sources", []):
@@ -279,14 +388,16 @@ def run(
                         source["key"], {"enabled": bool(source.get("enabled")), "skipped": "not-selected"}
                     )
                     continue
-                if not source.get("enabled"):
-                    entry = {"enabled": False}
+                skip_reason = _skip_fetch_reason(source, include_disabled=include_disabled)
+                if skip_reason:
+                    entry = {"enabled": bool(source.get("enabled")), "skipped": skip_reason}
                     if source.get("disabled_reason"):
                         entry["reason"] = source["disabled_reason"]
                     source_status["sources"][source["key"]] = entry
                     continue
                 result = run_source(fetcher, source)
-                entry = _source_status_entry(result)
+                fetched_keys.add(source["key"])
+                entry = _source_status_entry(result, source)
                 source_status["sources"][source["key"]] = entry
                 log(
                     f"{source['key']}: ok={result.ok} status={result.http_status} "
@@ -295,26 +406,7 @@ def run(
                 if not result.ok:
                     failures += 1
                     continue
-                for raw in result.records:
-                    _assign_raw_id(raw, publisher_ids)
-                    domains, scores, topics, method = classify(raw, domains_cfg, source["key"])
-                    row = to_record(
-                        raw,
-                        today=today,
-                        domains=domains,
-                        domain_scores=scores,
-                        topics=topics,
-                        classification_method=method,
-                        prior=prior,
-                    )
-                    errors = validate_record(row, schema)
-                    if errors:
-                        entry.setdefault("invalid_records", []).append({"id": row.get("id"), "error": errors[0]})
-                        log(f"skip invalid {row.get('id')}: {errors[0]}")
-                        continue
-                    incoming.append(row)
-                    if source.get("collector") == "frontiers" and row["id"] not in prior_ids:
-                        incoming_frontiers_ids.add(row["id"])
+                absorb(source, result, entry)
     finally:
         fetcher.close()
 
@@ -345,11 +437,17 @@ def run(
             return 1
 
     enrichment: dict[str, Any] | None = None
+    frontiers_keys = {source["key"] for source in _frontiers_sources(sources_cfg)}
+    frontiers_fetched = bool(fetched_keys & frontiers_keys)
     frontiers_ok = any(
         source_status["sources"].get(source["key"], {}).get("ok")
         for source in _frontiers_sources(sources_cfg)
+        if source["key"] in fetched_keys
     )
-    if frontiers and not offline and (backfill_deadlines or frontiers_ok):
+    if ingest_html or (only is not None and not frontiers_fetched):
+        enrichment = None
+        _copy_prior_extras(source_status, prior_status_doc)
+    elif frontiers and not offline and (backfill_deadlines or frontiers_ok):
         source_entry = source_status.setdefault("frontiers_detail", {"publisher": "Frontiers"})
         enrichment_cfg = frontiers.get("deadline_enrichment") or {}
         detail_fetcher = Fetcher(
@@ -538,20 +636,89 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--backfill-deadlines", action="store_true")
     parser.add_argument("--enrich-topics", action="store_true")
     parser.add_argument("--build-site", action="store_true")
+    parser.add_argument("--render-listings", action="store_true")
+    parser.add_argument("--ingest-rendered", type=Path, default=None)
+    parser.add_argument("--out-dir", type=Path, default=None)
+    parser.add_argument("--headless", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only", action="append", default=None)
+    parser.add_argument(
+        "--ingest-html",
+        action="append",
+        default=None,
+        metavar="KEY=PATH",
+        help="Parse a saved listing HTML file for a source key instead of fetching",
+    )
+    parser.add_argument(
+        "--open-only",
+        action="store_true",
+        help="Keep only records whose status is open (useful with --ingest-html)",
+    )
+    parser.add_argument(
+        "--include-disabled",
+        action="store_true",
+        help="Fetch disabled sources selected with --only, unless gha_fetch is false",
+    )
     args = parser.parse_args(argv)
     root = args.root or repo_root()
     if args.build_site:
         return build_site(root)
     if args.enrich_topics:
         return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
+    if args.render_listings:
+        from radar.listing_html import render_listing_pages
+
+        out_dir = args.out_dir or Path("listing-html")
+        try:
+            status = render_listing_pages(
+                out_dir,
+                list(args.only) if args.only else None,
+                headless=args.headless,
+            )
+        except RuntimeError as exc:
+            log(str(exc))
+            return 1
+        for key, entry in status.get("pages", {}).items():
+            log(f"{key}: render ok={entry.get('ok')} reason={entry.get('reason')} bytes={entry.get('bytes')}")
+        return 0
+    ingest: dict[str, Path] | None = None
+    if args.ingest_rendered:
+        status_path = args.ingest_rendered / "status.json"
+        if not status_path.exists():
+            parser.error(f"missing {status_path}")
+        rendered = json.loads(status_path.read_text(encoding="utf-8"))
+        ingest = {}
+        for key, entry in rendered.get("pages", {}).items():
+            if entry.get("ok") and entry.get("path"):
+                ingest[key] = Path(entry["path"])
+        if not ingest:
+            log("no rendered listings to ingest")
+            return 0
+    if args.ingest_html:
+        ingest = ingest or {}
+        for item in args.ingest_html:
+            if "=" not in item:
+                parser.error("--ingest-html expects KEY=PATH")
+            key, raw_path = item.split("=", 1)
+            raw_path = raw_path.strip()
+            if raw_path.startswith("https://"):
+                dest = Path(tempfile.mkdtemp(prefix="radar-listing-")) / f"{key}.html"
+                try:
+                    download_snapshot(raw_path, dest)
+                except SnapshotError as exc:
+                    parser.error(str(exc))
+                ingest[key] = dest
+            else:
+                ingest[key] = Path(raw_path)
     return run(
         root,
         dry_run=args.dry_run,
         offline=args.offline,
         backfill_deadlines=args.backfill_deadlines,
         only=set(args.only) if args.only else None,
+        ingest_html=ingest,
+        open_only=args.open_only,
+        include_disabled=args.include_disabled,
     )
 
 

@@ -29,7 +29,16 @@ The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sourc
 - Springer Nature: BMC Psychology, BMC Psychiatry, and Journal of NeuroEngineering and Rehabilitation collections
 - PLOS calls for papers, via the official WordPress REST API
 
-ScienceDirect, APA, and Royal Society stay disabled. Their public HTML returns a bot wall, and there is no official API, feed, or sitemap that completes a listing. The configuration in `config/sources.yml` keeps those reasons. Browser automation is out of scope.
+ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の Chromium で APA と ScienceDirect の一覧 1 ページを開き、レンダリング済み HTML を ingest する。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
+
+```text
+python -m pip install -e ".[listing]"
+python -m playwright install chromium
+python -m radar --render-listings --out-dir listing-html --only apa-cfp --only sciencedirect-cfp
+python -m radar --open-only --ingest-rendered listing-html
+```
+
+`--open-only` は締切切れを落とす。ScienceDirect は `scope_pattern` と `require_domains` で対象分野以外を落とす。Decision records: [`docs/decisions/0004-listing-snapshot-coverage.md`](docs/decisions/0004-listing-snapshot-coverage.md), [`docs/decisions/0005-listing-ingest-github-actions.md`](docs/decisions/0005-listing-ingest-github-actions.md).
 
 The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-collection-radar/`.
 
