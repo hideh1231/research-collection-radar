@@ -120,6 +120,11 @@ test("loads 48 more records at a time", () => {
   assert.equal(second.remaining, 4);
 });
 
+test("empty facet selection means all records", () => {
+  const filtered = filterRecords(catalog, emptyState());
+  assert.equal(filtered.length, catalog.length);
+});
+
 test("sanitizeTopics splits blobs and drops sentence-length labels", () => {
   const labels = sanitizeTopics([
     "untethered soft robots; soft actuators; soft sensors",

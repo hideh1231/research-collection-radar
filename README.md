@@ -55,13 +55,13 @@ The bot needs the `chat:write` permission and membership in the target channel. 
 
 ## Research keywords
 
-Publisher keywords are copied into `topics` when a detail page lists any. Open records with no publisher keywords can be completed by an OpenAI-compatible Chat Completions API. Set all three variables or the job exits without changing records:
+Publisher keywords are copied into `topics` when a detail page lists any. Open records also receive existing catalog labels when the title or summary contains them (aliases such as AI, plus topics that already appear on at least two open records). Open records with no publisher keywords can be completed by an OpenAI-compatible Chat Completions API. Set all three variables or the LLM pass exits; catalog overlay still runs:
 
 - `RADAR_LLM_BASE_URL` — for example `https://api.openai.com/v1`, `https://openrouter.ai/api/v1`, or `https://opencode.ai/zen/go/v1`
 - `RADAR_LLM_API_KEY`
 - `RADAR_LLM_MODEL` — for example `deepseek-v4-flash` on OpenCode Go, or `deepseek/deepseek-v4-flash` on OpenRouter
 
-Only one provider is active. There is no automatic fallback. Scheduled runs enrich at most 100 records; a manual run can enrich 500.
+Only one provider is active. There is no automatic fallback. Scheduled runs enrich at most 100 records; a manual run can enrich 500. The prompt prefers existing labels. Descriptions (`summary`) come from publisher pages, not the LLM.
 
 ## Run locally
 
@@ -81,7 +81,7 @@ Serve the viewer with `python -m http.server -d site 8000`.
 
 ## Classification
 
-The classifier uses journal rules and title text from `config/domains.yml`. Publisher keywords and the optional LLM pass fill `topics`. Alias unification lives in `config/topic_aliases.yml` and does not merge unknown terms.
+The classifier uses journal rules and title text from `config/domains.yml`. Publisher keywords, catalog overlay, and the optional LLM pass fill `topics`. Alias unification lives in `config/topic_aliases.yml` and does not merge unknown terms.
 
 ## License
 

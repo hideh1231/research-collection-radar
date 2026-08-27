@@ -50,7 +50,13 @@ Chosen option: "JSONL を正本のまま、GitHub Pages の静的 viewer を足�
 
 publisher keyword が 1 個以上あれば正規化して `topics` に使い、LLM は呼ばない。0 個の募集中だけを LLM queue に入れる。入力は record ID、title、主 journal と参加 journal、summary、domains に限る。出力は英語の通称 3〜6 個とし、確認済み alias だけを設定ファイルで統一する。未知の語は自動統合しない。
 
-接続は `RADAR_LLM_BASE_URL`、`RADAR_LLM_API_KEY`、`RADAR_LLM_MODEL` に統一する。単一 provider だけを有効にし、自動 fallback はしない。OpenAI、OpenRouter、OpenCode Go は `/chat/completions` の共通部分だけを使う。LLM 補完は crawl と別 workflow にし、同じ `concurrency.group` で直列化する。設定が無い場合は変更せず正常に skip する。
+open 件では、既存の topic 語彙（open で2回以上）と alias（HCI / HRI / VR / XR / AI / LLM など）が title または summary に単語境界で出たとき、それを `topics` の末尾に足す。上限は 8。`research` / `study` / `health` / `care` / `review` と一度きりの publisher 句は付けない。`topics_method` は変えない。LLM プロンプトにはこの語彙の頻度上位を最大 80 個渡し、ある通称はそれを使う。
+
+接続は `RADAR_LLM_BASE_URL`、`RADAR_LLM_API_KEY`、`RADAR_LLM_MODEL` に統一する。単一 provider だけを有効にし、自動 fallback はしない。OpenAI、OpenRouter、OpenCode Go は `/chat/completions` の共通部分だけを使う。LLM 補完は crawl と別 workflow にし、同じ `concurrency.group` で直列化する。設定が無い場合は LLM を skip する。catalog overlay は crawl と `--enrich-topics` の両方で API なしでも動く。
+
+Frontiers の詳細取得は 1 日 400 件まで。`remaining` は daily_limit で切らず、未取得の実件数を出す。summary は出版社ページから取り、LLM では書かない。
+
+Viewer の Fields / Type / Deadline / Journal / Topics は複数選択で、空選択は All。All を明示する。募集タイトルの URL は新しいタブで開く。
 
 ### Consequences
 
