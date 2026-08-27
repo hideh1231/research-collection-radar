@@ -152,3 +152,88 @@ def test_unchanged_input_hash_is_not_requeued() -> None:
     row = _row(1, topics=["aging", "AI", "well-being"], topics_method="llm")
     row["topics_input_hash"] = topics_input_hash(row)
     assert select_llm_targets([row], limit=10) == []
+
+
+def test_catalog_overlay_adds_aliases_and_skips_noise() -> None:
+    from radar.topics import apply_catalog_topics, build_prompt, build_topic_catalog, catalog_prompt_labels
+
+    aliases = {
+        "artificial intelligence": "AI",
+        "human-robot interaction": "HRI",
+        "ai": "AI",
+    }
+    rows = [
+        _row(1, title="Aging brains", summary="A study of health and care", topics=["aging"], publisher_keywords=["aging"]),
+        _row(2, title="Aging cohorts", summary="Later life", topics=["aging"], publisher_keywords=["aging"]),
+        _row(
+            3,
+            title="Robots and artificial intelligence",
+            summary="Human-robot interaction in the clinic",
+            topics=["navigation"],
+            publisher_keywords=["navigation"],
+        ),
+        _row(
+            4,
+            title="One-off fleet phrase",
+            summary="Energy-aware multi-robot planning only appears here",
+            topics=["Energy-aware multi-robot planning"],
+            publisher_keywords=["Energy-aware multi-robot planning"],
+        ),
+        _row(
+            5,
+            title="Closed aging",
+            summary="Aging and AI",
+            status="closed",
+            topics=["aging"],
+            publisher_keywords=["aging"],
+        ),
+        _row(
+            6,
+            title="Full publisher set",
+            summary="Artificial intelligence and aging",
+            topics=["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+            publisher_keywords=["t1"],
+            topics_method="publisher",
+        ),
+    ]
+    apply_publisher_topics(rows[0], aliases=aliases)
+    apply_publisher_topics(rows[1], aliases=aliases)
+    apply_publisher_topics(rows[2], aliases=aliases)
+    apply_publisher_topics(rows[3], aliases=aliases)
+    updated = apply_catalog_topics(rows, aliases=aliases)
+    assert updated >= 1
+    assert "AI" in rows[2]["topics"]
+    assert "HRI" in rows[2]["topics"]
+    assert rows[2]["topics_method"] == "publisher"
+    assert "health" not in rows[2]["topics"]
+    assert "care" not in rows[0]["topics"]
+    assert "Energy-aware multi-robot planning" not in rows[2]["topics"]
+    assert rows[4]["topics"] == ["aging"]
+    assert rows[5]["topics"] == ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+
+    catalog = build_topic_catalog(rows, aliases)
+    labels = catalog_prompt_labels(catalog, aliases)
+    assert "AI" in labels
+    prompt = build_prompt([rows[2]], labels)
+    assert "Prefer these existing labels" in prompt[0]["content"]
+    assert "AI" in prompt[0]["content"]
+
+
+def test_llm_result_merges_catalog_matches() -> None:
+    aliases = {"artificial intelligence": "AI", "ai": "AI"}
+    rows = [
+        _row(1, title="Sleep clinic", summary="Circadian work", topics=["sleep"], publisher_keywords=["sleep"]),
+        _row(2, title="Sleep lab", summary="Night work", topics=["sleep"], publisher_keywords=["sleep"]),
+        _row(3, title="Robots and artificial intelligence", summary="A summary"),
+    ]
+
+    class Client:
+        def complete(self, messages, model):
+            payload = json.loads(messages[1]["content"])
+            return json.dumps({"topics": {payload[0]["id"]: ["robotics", "HRI", "caregiving"]}})
+
+    stats = enrich_topics(rows, client=Client(), model="x", limit=10, aliases=aliases)
+    assert stats["updated"] == 1
+    assert rows[2]["topics_method"] == "llm"
+    assert "AI" in rows[2]["topics"]
+    assert "robotics" in rows[2]["topics"]

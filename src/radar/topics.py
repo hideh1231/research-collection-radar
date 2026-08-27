@@ -21,6 +21,10 @@ TOPIC_CHARS_MAX = 40
 TOPIC_WORDS_MAX = 6
 PUBLISHER_TOPIC_MAX = 8
 BATCH_SIZE = 10
+CATALOG_MIN_COUNT = 2
+CATALOG_MIN_CHARS = 3
+CATALOG_PROMPT_LIMIT = 80
+CATALOG_STOPWORDS = frozenset({"research", "study", "health", "care", "review"})
 ENV_BASE_URL = "RADAR_LLM_BASE_URL"
 ENV_API_KEY = "RADAR_LLM_API_KEY"
 ENV_MODEL = "RADAR_LLM_MODEL"
@@ -134,6 +138,167 @@ def apply_publisher_topics(
     return (row.get("topics"), row.get("topics_method")) != before
 
 
+@dataclass(slots=True)
+class CatalogTerm:
+    label: str
+    count: int
+    patterns: tuple[re.Pattern[str], ...]
+
+
+def _boundary_pattern(term: str) -> re.Pattern[str]:
+    return re.compile(rf"(?<![a-z0-9]){re.escape(term.lower())}(?![a-z0-9])")
+
+
+def _alias_targets(aliases: dict[str, str]) -> dict[str, list[str]]:
+    grouped: dict[str, list[str]] = {}
+    for source, target in aliases.items():
+        label = str(target).strip()
+        if not label:
+            continue
+        grouped.setdefault(label, [])
+        key = str(source).strip()
+        if key and key.lower() != label.lower():
+            grouped[label].append(key)
+    return grouped
+
+
+def _allowed_short_labels(aliases: dict[str, str]) -> set[str]:
+    return {str(value).strip() for value in aliases.values() if str(value).strip()}
+
+
+def catalog_label_allowed(label: str, aliases: dict[str, str] | None = None) -> bool:
+    text = str(label or "").strip()
+    if not text:
+        return False
+    if text.lower() in CATALOG_STOPWORDS:
+        return False
+    if len(text) < CATALOG_MIN_CHARS and text not in _allowed_short_labels(aliases or {}):
+        return False
+    return True
+
+
+def build_topic_catalog(
+    rows: list[dict[str, Any]],
+    aliases: dict[str, str] | None = None,
+    *,
+    open_only: bool = True,
+) -> list[CatalogTerm]:
+    aliases = aliases or {}
+    counts: dict[str, int] = {}
+    casing: dict[str, str] = {}
+    for row in rows:
+        if open_only and row.get("status") != "open":
+            continue
+        for topic in row.get("topics") or []:
+            label = str(topic).strip()
+            if not label:
+                continue
+            key = label.lower()
+            counts[key] = counts.get(key, 0) + 1
+            casing.setdefault(key, label)
+
+    alias_groups = _alias_targets(aliases)
+    terms: dict[str, CatalogTerm] = {}
+
+    def add_term(label: str, count: int) -> None:
+        if not catalog_label_allowed(label, aliases):
+            return
+        key = label.lower()
+        needles = [casing.get(key, label), *alias_groups.get(casing.get(key, label), []), *alias_groups.get(label, [])]
+        for source, target in aliases.items():
+            if str(target).strip().lower() == key:
+                needles.append(source)
+                needles.append(target)
+        seen: set[str] = set()
+        patterns: list[re.Pattern[str]] = []
+        for needle in needles:
+            folded = str(needle).strip().lower()
+            if not folded or folded in seen:
+                continue
+            seen.add(folded)
+            patterns.append(_boundary_pattern(folded))
+        if not patterns:
+            return
+        display = casing.get(key, label)
+        current = terms.get(key)
+        if current is None or count > current.count:
+            terms[key] = CatalogTerm(label=display, count=count, patterns=tuple(patterns))
+
+    for key, count in counts.items():
+        if count >= CATALOG_MIN_COUNT:
+            add_term(casing[key], count)
+
+    for label in alias_groups:
+        add_term(label, counts.get(label.lower(), 0))
+
+    return sorted(terms.values(), key=lambda item: (-item.count, item.label.lower()))
+
+
+def catalog_prompt_labels(catalog: list[CatalogTerm], aliases: dict[str, str] | None = None) -> list[str]:
+    aliases = aliases or {}
+    preferred = unique_keep_order([str(value).strip() for value in aliases.values() if str(value).strip()])
+    rest = [term.label for term in catalog if term.label not in preferred]
+    return unique_keep_order([*preferred, *rest])[:CATALOG_PROMPT_LIMIT]
+
+
+def match_catalog_labels(text: str, catalog: list[CatalogTerm]) -> list[str]:
+    haystack = str(text or "").lower()
+    if not haystack:
+        return []
+    found: list[str] = []
+    seen: set[str] = set()
+    for term in catalog:
+        if not any(pattern.search(haystack) for pattern in term.patterns):
+            continue
+        key = term.label.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        found.append(term.label)
+    return found
+
+
+def overlay_catalog_topics(
+    row: dict[str, Any],
+    catalog: list[CatalogTerm],
+    *,
+    checked_at: str | None = None,
+) -> bool:
+    if row.get("status") != "open":
+        return False
+    current = [str(item) for item in (row.get("topics") or []) if str(item).strip()]
+    if len(current) >= PUBLISHER_TOPIC_MAX:
+        return False
+    haystack = " ".join(part for part in (row.get("title"), row.get("summary")) if part)
+    matches = match_catalog_labels(haystack, catalog)
+    if not matches:
+        return False
+    merged = unique_keep_order([*current, *matches])[:PUBLISHER_TOPIC_MAX]
+    if merged == current:
+        return False
+    row["topics"] = merged
+    row["topics_updated_at"] = checked_at or utc_now()
+    row["content_hash"] = content_hash(row)
+    return True
+
+
+def apply_catalog_topics(
+    rows: list[dict[str, Any]],
+    *,
+    aliases: dict[str, str] | None = None,
+    root: Path | None = None,
+    open_only: bool = True,
+    checked_at: str | None = None,
+) -> int:
+    alias_map = aliases if aliases is not None else load_aliases(root)
+    catalog = build_topic_catalog(rows, alias_map, open_only=open_only)
+    updated = 0
+    for row in rows:
+        if overlay_catalog_topics(row, catalog, checked_at=checked_at):
+            updated += 1
+    return updated
+
+
 def llm_configured(env: dict[str, str] | None = None) -> bool:
     values = env or os.environ
     return bool(values.get(ENV_BASE_URL) and values.get(ENV_API_KEY) and values.get(ENV_MODEL))
@@ -243,14 +408,22 @@ def parse_batch_response(text: str, expected_ids: list[str]) -> dict[str, list[s
     return parsed
 
 
-def build_prompt(batch: list[dict[str, Any]]) -> list[dict[str, str]]:
+def build_prompt(batch: list[dict[str, Any]], catalog_labels: list[str] | None = None) -> list[dict[str, str]]:
     payload = [topics_input_payload(row) for row in batch]
+    catalog_note = ""
+    if catalog_labels:
+        catalog_note = (
+            " Prefer these existing labels when they apply: "
+            + json.dumps(catalog_labels, ensure_ascii=False)
+            + "."
+        )
     return [
         {
             "role": "system",
             "content": (
                 "Assign 3 to 6 short English research topic labels to each collection. "
-                "Use common names such as HCI, HRI, VR, XR, AI, or LLM when they apply. "
+                "Use common names such as HCI, HRI, VR, XR, AI, or LLM when they apply."
+                f"{catalog_note} "
                 "Do not invent publisher keywords. Reply with JSON: "
                 '{"topics": {"<id>": ["label", ...]}}.'
             ),
@@ -338,8 +511,9 @@ def _complete_batch(
     client: CompletionsClient,
     batch: list[dict[str, Any]],
     model: str,
+    catalog_labels: list[str] | None = None,
 ) -> dict[str, list[str]]:
-    content = client.complete(build_prompt(batch), model)
+    content = client.complete(build_prompt(batch, catalog_labels), model)
     return parse_batch_response(content, [str(row["id"]) for row in batch])
 
 
@@ -350,7 +524,13 @@ def enrich_topics(
     model: str,
     limit: int,
     checkpoint: Callable[[dict[str, Any]], None] | None = None,
+    aliases: dict[str, str] | None = None,
+    root: Path | None = None,
 ) -> dict[str, Any]:
+    alias_map = aliases if aliases is not None else load_aliases(root)
+    apply_catalog_topics(rows, aliases=alias_map)
+    catalog = build_topic_catalog(rows, alias_map)
+    catalog_labels = catalog_prompt_labels(catalog, alias_map)
     targets = select_llm_targets(rows, limit=limit)
     stats = TopicEnrichment(target_count=len(targets), skipped=max(0, 0))
     by_id = {row["id"]: row for row in rows}
@@ -362,18 +542,19 @@ def enrich_topics(
     for batch in batched(targets, BATCH_SIZE):
         parsed: dict[str, list[str]] | None = None
         try:
-            parsed = _complete_batch(client, batch, model)
+            parsed = _complete_batch(client, batch, model, catalog_labels)
         except (TopicError, httpx.HTTPError, OSError):
             stats.retried += 1
             try:
-                parsed = _complete_batch(client, batch, model)
+                parsed = _complete_batch(client, batch, model, catalog_labels)
             except (TopicError, httpx.HTTPError, OSError):
                 parsed = None
         if parsed is None:
             for row in batch:
                 try:
-                    one = _complete_batch(client, [row], model)
+                    one = _complete_batch(client, [row], model, catalog_labels)
                     apply_llm_topics(by_id[row["id"]], one[row["id"]], model=model)
+                    overlay_catalog_topics(by_id[row["id"]], catalog)
                     stats.checked += 1
                     stats.updated += 1
                     persist()
@@ -383,7 +564,9 @@ def enrich_topics(
             continue
         for row in batch:
             apply_llm_topics(by_id[row["id"]], parsed[row["id"]], model=model)
+            overlay_catalog_topics(by_id[row["id"]], catalog)
             stats.checked += 1
             stats.updated += 1
         persist()
+    apply_catalog_topics(rows, aliases=alias_map)
     return stats.as_dict()
