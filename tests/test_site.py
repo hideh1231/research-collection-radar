@@ -46,3 +46,23 @@ def test_migrated_rows_include_viewer_fields() -> None:
     assert row["topics_method"] == "none"
     assert row["image_url"] is None
     assert json.dumps(row)
+
+
+def test_viewer_json_rejects_wide_topic_labels() -> None:
+    rows = [
+        {
+            "id": "open",
+            "title": "Open",
+            "status": "open",
+            "journal": "J",
+            "deadline": "2027-01-01",
+            "domains": ["psychology"],
+            "topics": ["aging", "AI"],
+            "collection_type": "collection",
+        }
+    ]
+    payload = render_site_collections(rows)
+    assert payload[0]["topics"] == ["aging", "AI"]
+    for row in payload:
+        assert len(row["topics"]) <= 8
+        assert all(len(topic) <= 40 and ";" not in topic for topic in row["topics"])

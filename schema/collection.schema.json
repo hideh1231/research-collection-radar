@@ -110,8 +110,9 @@
     },
     "topics": {
       "type": "array",
-      "items": { "type": "string", "minLength": 1 },
-      "uniqueItems": true
+      "items": { "type": "string", "minLength": 1, "maxLength": 40 },
+      "uniqueItems": true,
+      "maxItems": 8
     },
     "topics_method": {
       "type": "string",

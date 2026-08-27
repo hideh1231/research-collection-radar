@@ -117,17 +117,19 @@ def migrate_record(row: dict[str, Any]) -> dict[str, Any]:
     )
     migrated["image_url"] = migrated.get("image_url") or None
     migrated["image_alt"] = migrated.get("image_alt") or None
-    migrated["publisher_keywords"] = unique_keep_order(migrated.get("publisher_keywords") or [])
-    topics = unique_keep_order(migrated.get("topics") or [])
-    migrated["topics"] = topics
+    from radar.topics import load_aliases, normalize_topic_list, split_publisher_keywords
+
+    aliases = load_aliases()
+    keywords = split_publisher_keywords(migrated.get("publisher_keywords") or [])
+    migrated["publisher_keywords"] = keywords
     method = migrated.get("topics_method")
-    if method not in TOPICS_METHODS:
-        if migrated.get("publisher_keywords"):
-            method = "publisher"
-        elif topics:
-            method = "llm"
-        else:
-            method = "none"
+    if keywords:
+        migrated["topics"] = normalize_topic_list(keywords, aliases)
+        method = "publisher"
+    else:
+        migrated["topics"] = normalize_topic_list(migrated.get("topics") or [], aliases)
+        if method not in TOPICS_METHODS:
+            method = "llm" if migrated["topics"] else "none"
     migrated["topics_method"] = method
     migrated["topics_model"] = migrated.get("topics_model") or None
     migrated["topics_input_hash"] = migrated.get("topics_input_hash") or None
