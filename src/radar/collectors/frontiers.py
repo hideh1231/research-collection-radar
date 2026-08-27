@@ -134,6 +134,19 @@ def _card_title(card: Tag) -> str | None:
     return title or None
 
 
+def _card_image(card: Tag, title: str, base: str) -> tuple[str | None, str | None]:
+    if card.select_one(".CardResearchTopic__magazine--noImage"):
+        return None, None
+    img = card.select_one("figure.CardResearchTopic__mask img, img.is-inside-mask, img")
+    if img is None:
+        return None, None
+    src = str(img.get("src") or img.get("data-src") or "").strip()
+    if not src or src.startswith("data:"):
+        return None, None
+    alt = str(img.get("alt") or "").strip() or title
+    return urljoin(base, src), alt
+
+
 def parse_listing(html: str, source: dict) -> ListingParse:
     soup = BeautifulSoup(html, "lxml")
     hosts = source.get("allowed_hosts", ["www.frontiersin.org"])
@@ -177,6 +190,7 @@ def parse_listing(html: str, source: dict) -> ListingParse:
             )
         state_el = card.select_one(".CardResearchTopic__state")
         status = normalize_status(state_el.get_text(" ", strip=True) if state_el else "")
+        image_url, image_alt = _card_image(card, title, base)
         found[topic] = RawRecord(
             title=title,
             url=url,
@@ -190,6 +204,8 @@ def parse_listing(html: str, source: dict) -> ListingParse:
             publisher_id=topic,
             journals=[source.get("journal") or "Frontiers"],
             source_keys=[source["key"]],
+            image_url=image_url,
+            image_alt=image_alt,
             extra={"id": None, "topic_id": topic},
         )
     records = list(found.values())

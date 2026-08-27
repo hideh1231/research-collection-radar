@@ -78,6 +78,8 @@ journal_rules:
     domains: [neuroscience, psychology]
   - match: Frontiers in Robotics and AI
     domains: [robotics]
+  - match: BMC Psychology
+    domains: [psychology]
   - match: Human–Computer Interaction
     domains: [hci]
   - match: International Journal of Social Robotics

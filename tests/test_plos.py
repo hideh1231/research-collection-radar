@@ -46,6 +46,24 @@ def test_parse_cfp_item_uses_api_fields() -> None:
     assert record.publisher_id == "41"
     assert record.deadline is not None
     assert record.status == "open"
+    assert record.summary and "PLOS Mental Health collection" in record.summary
+    assert record.image_url is None
+
+
+def test_parse_cfp_item_uses_content_when_excerpt_is_truncated() -> None:
+    from datetime import date
+
+    item = _item(42, deadline=None)
+    item["excerpt"] = {"rendered": "<p>A truncated teaser about climate&hellip;</p>"}
+    item["content"] = {"rendered": "<p>PLOS Climate full call text for researchers in the Global South.</p>"}
+    item["yoast_head_json"] = {
+        "og_image": [{"url": "https://collections.plos.org/wp-content/uploads/cover.jpg"}]
+    }
+    record = parse_cfp_item(item, SOURCE, today=date(2026, 8, 27))
+    assert record is not None
+    assert record.summary == "PLOS Climate full call text for researchers in the Global South."
+    assert record.image_url == "https://collections.plos.org/wp-content/uploads/cover.jpg"
+    assert record.image_alt == record.title
 
 
 def test_plos_completes_when_total_matches() -> None:

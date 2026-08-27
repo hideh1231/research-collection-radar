@@ -8,7 +8,7 @@ from typing import Any
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url, stable_id
 from radar.models import RawRecord, SourceResult
-from radar.normalize import normalize_status, parse_date, unique_keep_order
+from radar.normalize import parse_date
 
 API_DEFAULT = "https://collections.plos.org/wp-json/wp/v2/call_for_papers"
 JOURNAL_RE = re.compile(r"PLOS[\s\u00a0]+[A-Za-z][A-Za-z0-9&/\-]*(?:\s+[A-Za-z][A-Za-z0-9&/\-]*){0,4}", re.I)
@@ -18,6 +18,7 @@ DEADLINE_RE = re.compile(
     re.I,
 )
 TAG_RE = re.compile(r"<[^>]+>")
+TRUNCATED_RE = re.compile(r"(?:\.\.\.|…)\s*$")
 
 
 def _plain(value: Any) -> str:
@@ -25,6 +26,36 @@ def _plain(value: Any) -> str:
         value = value.get("rendered") or ""
     text = TAG_RE.sub(" ", unescape(str(value or "")))
     return re.sub(r"\s+", " ", text).strip()
+
+
+def parse_summary(item: dict[str, Any]) -> str | None:
+    excerpt = _plain(item.get("excerpt"))
+    content = _plain(item.get("content"))
+    if excerpt and not TRUNCATED_RE.search(excerpt):
+        return excerpt[:1000]
+    if content:
+        return content[:1000]
+    return excerpt[:1000] or None
+
+
+def parse_image(item: dict[str, Any], title: str) -> tuple[str | None, str | None]:
+    yoast = item.get("yoast_head_json")
+    if isinstance(yoast, dict):
+        og_image = yoast.get("og_image")
+        if isinstance(og_image, list) and og_image:
+            first = og_image[0]
+            url = first.get("url") if isinstance(first, dict) else None
+            if url:
+                return str(url), title
+    embedded = item.get("_embedded")
+    if isinstance(embedded, dict):
+        media = embedded.get("wp:featuredmedia")
+        if isinstance(media, list) and media and isinstance(media[0], dict):
+            url = media[0].get("source_url")
+            alt = str(media[0].get("alt_text") or "").strip() or title
+            if url:
+                return str(url), alt
+    return None, None
 
 
 def parse_journal(text: str, fallback: str) -> str:
@@ -54,6 +85,7 @@ def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRec
     publisher_id = str(item.get("id") or item.get("slug") or "")
     journal = parse_journal(blob, source.get("journal") or "PLOS")
     url = canonicalize_url(link)
+    image_url, image_alt = parse_image(item, title)
     return RawRecord(
         title=title,
         url=url,
@@ -64,7 +96,9 @@ def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRec
         discovered_via=source["key"],
         status=status,
         deadline=deadline,
-        summary=_plain(item.get("excerpt"))[:1000] or None,
+        summary=parse_summary(item),
+        image_url=image_url,
+        image_alt=image_alt,
         submission_mode="open_call",
         publisher_id=publisher_id or None,
         journals=[journal],
