@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T00:47:15Z",
+  "checked_at": "2026-08-27T06:19:17Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -13,27 +13,38 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 24,
-      "pages": 1,
+      "parsed": 3312,
+      "pages": 138,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 60,
-        "checked": 60,
-        "listed": 60,
-        "with_deadline": 60,
-        "not_listed": 0,
+        "target_count": 200,
+        "checked": 200,
+        "listed": 148,
+        "with_deadline": 148,
+        "not_listed": 52,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 0
+        "remaining": 200,
+        "metadata_updated": 137
       }
     },
     "frontiers-robotics-ai": {
-      "enabled": true
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 375,
+      "pages": 16,
+      "error": null
     },
     "frontiers-human-neuroscience": {
-      "enabled": true
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1044,
+      "pages": 44,
+      "error": null
     },
     "sciencedirect-cfp": {
       "enabled": false,
@@ -43,7 +54,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 33,
+      "parsed": 31,
       "pages": 1,
       "error": null
     },
@@ -56,7 +67,28 @@
       "reason": "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
     },
     "plos-collections": {
-      "enabled": true
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 41,
+      "pages": 3,
+      "error": null
+    }
+  },
+  "frontiers_detail": {
+    "publisher": "Frontiers",
+    "deadline_enrichment": {
+      "target_count": 200,
+      "checked": 200,
+      "listed": 148,
+      "with_deadline": 148,
+      "not_listed": 52,
+      "failed": 0,
+      "rate_limited": 0,
+      "parse_errors": 0,
+      "forbidden": 0,
+      "remaining": 200,
+      "metadata_updated": 137
     }
   }
 }
