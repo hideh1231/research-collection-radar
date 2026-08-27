@@ -56,7 +56,13 @@ def test_apa_listing_uses_journal_modules_and_manuscript_deadline() -> None:
     assert novel.status == "closed"
     assert trauma.status == "closed"
     assert novel.journal.startswith("Experimental and Clinical Psychopharmacology")
-    assert len(records) == 6
+    avian = by_title["Special issue on avian cognition"]
+    assert avian.journal.startswith("Journal of Experimental Psychology: Animal")
+    assert avian.deadline == date(2026, 10, 15)
+    assert avian.status == "open"
+    assert avian.url.endswith("/pubs/journals/resources/calls-for-papers")
+    assert avian.publisher_id == "special-issue-on-avian-cognition"
+    assert len(records) == 7
 
 
 def test_sciencedirect_listing_uses_publication_cards() -> None:

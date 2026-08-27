@@ -15,7 +15,7 @@ Chosen option: 公式一覧のレンダリング済み HTML を parse し、`pyt
 
 Coverage probe（2026-08-27）:
 
-* APA `calls-for-papers` は Incapsula。Wayback の 2025-10-18 スナップショットでは、雑誌モジュールごとにユニークな CFP URL と manuscript deadline がある。**pass**
+* APA `calls-for-papers` は、この VM や GitHub Actions の GET では Incapsula の 212 バイト stub が返る。2026-08-27 の通常ブラウザセッションでは一覧が開き、`Last updated: August 2026`（updated_date 2026-08-18）だった。リンク付き CFP と、詳細ページ URL の無い `<li>` の両方を一覧から取る。**fields pass**
 * ScienceDirect browse は GitHub Actions / この VM の GET では 403。2026-08-27 の通常ブラウザセッションでは一覧が開き、レンダリング済み DOM に 2,884 件の `/special-issue/` カード（title / journal / deadline）があった。**fields pass**。対象分野以外は `scope_pattern` と `require_domains` で落とす。Wayback の古いキャプチャは正本にしない。
 * `royalsociety.org` のテーマページはこの環境から 200 で本文が返った。Call for papers 見出し配下に title とリンクがある。締切は無い。Find out more が複数 CFP で同一 URL のことがある。**pass with not_checked deadline and title-based publisher_id**
 * `royalsocietypublishing.org` は Cloudflare。使わない。
@@ -26,4 +26,4 @@ Coverage probe（2026-08-27）:
 * Good, because 人が保存した一覧 HTML を正本に載せられる
 * Bad, because 定期 crawl だけでは APA / Elsevier は更新されない
 * Bad, because Royal Society の締切は一覧に無く、OPEN.md には出ない
-* 2026-08-27 のライブ一覧 ingest: Elsevier は 2,799 件中、対象分野かつ募集中 82 件を JSONL / OPEN.md に入れた。Royal Society テーマページは 3 件（締切なし、viewer のみ）。APA は現行一覧が取れず未投入。
+* 2026-08-27 のライブ一覧 ingest: Elsevier は対象分野かつ募集中 82 件。Royal Society テーマページは 3 件（締切なし、viewer のみ）。APA は通常ブラウザで開いた公式一覧から募集中を入れる。GitHub Actions の GET は引き続き無効。
