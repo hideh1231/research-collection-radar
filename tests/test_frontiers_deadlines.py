@@ -1,4 +1,4 @@
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
 from threading import Event
 
 import pytest
@@ -11,6 +11,7 @@ from radar.collectors.frontiers import (
     listing_is_complete,
     next_page_url,
     page_matches_record,
+    parse_deadline,
     parse_detail,
     parse_listing,
     select_deadline_targets,
@@ -333,6 +334,51 @@ def test_detail_extracts_summary_keywords_image_and_journals() -> None:
     assert detail.journal == "Frontiers in Psychology"
     assert "Frontiers in Digital Health" in detail.journals
     assert "artificial intelligence" in detail.publisher_keywords
+    assert detail.deadline == date(2026, 12, 29)
+
+
+def test_parse_deadline_reads_manuscript_extension_label() -> None:
+    html = (
+        "<p>Manuscript Extension Submission Deadline 7 September 2026</p>"
+        "<p>Manuscript Submission Deadline 20 April 2026</p>"
+    )
+    assert parse_deadline(html) == date(2026, 9, 7)
+
+
+def test_detail_prefers_extension_alert_over_original_deadline() -> None:
+    from radar.config import repo_root
+
+    html = (repo_root() / "tests/fixtures/frontiers_detail_extension.html").read_text(encoding="utf-8")
+    detail = parse_detail(html)
+    assert detail.deadline == date(2026, 9, 7)
+    assert detail.deadline_marker is True
+
+
+def test_not_listed_before_extension_parser_cutoff_is_due() -> None:
+    recent = "2026-08-27T06:13:53Z"
+    later = "2026-08-29T00:00:00Z"
+    now = datetime(2026, 8, 27, 12, 0, tzinfo=UTC)
+    due = _row(77470, "not_listed", recent)
+    skipped = _row(2, "not_listed", later)
+    selected = select_deadline_targets(
+        [due, skipped],
+        _enrichment_source(2),
+        now=now,
+    )
+    assert [row["id"] for row in selected] == ["frontiers-psychology-77470"]
+
+
+def test_enrichment_lists_extension_deadline(monkeypatch) -> None:
+    monkeypatch.setattr("radar.collectors.frontiers.utc_now", lambda: "2026-08-27T12:00:00Z")
+    row = _row(77470)
+    html = (
+        '<link rel="canonical" href="https://frontiersin.org/research-topics/77470/topic-77470">'
+        '<p class="Alert__infoItem__text">Manuscript Extension Submission Deadline 7 September 2026</p>'
+    )
+    stats = enrich_deadlines(_FakeFetcher([(200, html)]), [row], SOURCE, backfill=True)
+    assert stats["listed"] == 1
+    assert row["deadline"] == "2026-09-07"
+    assert row["deadline_status"] == "listed"
 
 
 def test_same_topic_id_from_two_sources_keeps_existing_id() -> None:

@@ -160,7 +160,12 @@ def parse_date(value: str | None) -> date | None:
     if not value:
         return None
     text = re.sub(r"\s+", " ", value).strip()
-    text = re.sub(r"^(deadline|submission deadline|manuscript submission deadline)\s*:?\s*", "", text, flags=re.I)
+    text = re.sub(
+        r"^(deadline|submission deadline|manuscript(?: extension)? submission deadline)\s*:?\s*",
+        "",
+        text,
+        flags=re.I,
+    )
     if not text:
         return None
     try:
