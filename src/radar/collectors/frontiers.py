@@ -293,13 +293,15 @@ def parse_summary(soup: BeautifulSoup) -> str | None:
 
 
 def parse_publisher_keywords(soup: BeautifulSoup) -> list[str]:
+    from radar.topics import split_keyword_text
+
     found: list[str] = []
     for node in soup.select(".RTOverviewBackground__keywords p"):
         text = _clean_paragraph(node.get_text(" ", strip=True))
         if not KEYWORD_LABEL_RE.match(text):
             continue
         text = KEYWORD_LABEL_RE.sub("", text)
-        found.extend(part.strip() for part in text.split(","))
+        found.extend(split_keyword_text(text))
     return unique_keep_order(found)
 
 

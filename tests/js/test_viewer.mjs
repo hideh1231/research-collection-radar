@@ -8,8 +8,10 @@ import {
   hasActiveFilters,
   paginate,
   parseState,
+  sanitizeTopics,
   serializeState,
   sortRecords,
+  splitKeywordText,
 } from "../../site/js/query.js";
 
 function row(id, updates = {}) {
@@ -116,4 +118,17 @@ test("loads 48 more records at a time", () => {
   const second = paginate(many, PAGE_SIZE * 2);
   assert.equal(second.items.length, 96);
   assert.equal(second.remaining, 4);
+});
+
+test("sanitizeTopics splits blobs and drops sentence-length labels", () => {
+  const labels = sanitizeTopics([
+    "untethered soft robots; soft actuators; soft sensors",
+    ". Digital Health Technologies",
+    "Gait variability Dynamic stability Locomotor adaptability Neural control of locomotion",
+  ]);
+  assert.ok(labels.includes("untethered soft robots"));
+  assert.ok(labels.includes("Digital Health Technologies"));
+  assert.equal(labels.some((label) => label.includes(";")), false);
+  assert.equal(labels.every((label) => label.length <= 40), true);
+  assert.deepEqual(splitKeywordText("Orexin/hypocretin"), ["Orexin/hypocretin"]);
 });

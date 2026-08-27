@@ -36,6 +36,28 @@ def _row(number: int, **updates) -> dict:
     return row
 
 
+def test_publisher_keyword_blobs_split_and_reject_sentences() -> None:
+    from radar.topics import normalize_topic_list, split_keyword_text
+
+    blob = (
+        "Energy-aware multi-robot planning; Fleet-level scheduling and orchestration; "
+        "Recharging and battery management; Long-horizon persistent autonomy"
+    )
+    parts = split_keyword_text(blob)
+    assert "Energy-aware multi-robot planning" in parts
+    assert "Fleet-level scheduling and orchestration" in parts
+    labels = normalize_topic_list([blob, ". Digital Health Technologies", "and neural recovery."])
+    assert "Digital Health Technologies" in labels
+    assert "neural recovery" in labels
+    assert all(";" not in label for label in labels)
+    assert all(len(label) <= 40 for label in labels)
+    assert split_keyword_text("Orexin/hypocretin") == ["Orexin/hypocretin"]
+    assert split_keyword_text("ME/CFS") == ["ME/CFS"]
+    assert normalize_topic_list(
+        ["Gait variability Dynamic stability Locomotor adaptability Neural control of locomotion"]
+    ) == []
+
+
 def test_publisher_keywords_skip_llm_queue() -> None:
     rows = [
         _row(1, publisher_keywords=["aging", "artificial intelligence"]),

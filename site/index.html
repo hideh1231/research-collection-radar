@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Research collection index</title>
     <meta name="description" content="Search open journal collections, research topics, and special issues by field, keyword, and deadline.">
+    <link rel="canonical" href="https://hideh1231.github.io/research-collection-radar/">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <meta name="theme-color" content="#2154b8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Research collection radar">
+    <meta property="og:title" content="Find the next collection to submit to">
+    <meta property="og:description" content="Search open journal collections, research topics, and special issues by field, keyword, and deadline.">
+    <meta property="og:url" content="https://hideh1231.github.io/research-collection-radar/">
+    <meta property="og:image" content="https://hideh1231.github.io/research-collection-radar/og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Find the next collection to submit to. Open calls in psychology, HCI, neuroscience, robotics, and HRI.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find the next collection to submit to">
+    <meta name="twitter:description" content="Search open journal collections, research topics, and special issues by field, keyword, and deadline.">
+    <meta name="twitter:image" content="https://hideh1231.github.io/research-collection-radar/og.png">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -12,59 +32,75 @@
     <main class="page">
       <header class="masthead">
         <h1>Find the next collection to submit to</h1>
-        <p class="lede">Open calls from public publisher listings. Search by title, summary, journal, field, and topic, or set a deadline range. <code>OPEN.md</code> remains the dated-deadline list.</p>
+        <p class="lede">Open calls from public publisher listings. Search by title, journal, field, or topic. Filter by deadline when you need a date.</p>
       </header>
-      <form class="controls" role="search" onsubmit="return false">
-        <div class="search-row">
-          <label for="search">Search
-            <input id="search" name="q" type="search" placeholder="Title, summary, journal, field, topic" autocomplete="off">
-          </label>
-          <label for="sort">Sort
-            <select id="sort" name="sort">
-              <option value="deadline">Deadline</option>
-              <option value="newest">Newest</option>
-              <option value="title">Title</option>
-            </select>
-          </label>
-        </div>
-        <div class="filter-row">
-          <label for="domain-filter">Fields
-            <select id="domain-filter" name="domain" multiple></select>
-          </label>
-          <label for="topic-filter">Topics
-            <select id="topic-filter" name="topic" multiple></select>
-          </label>
-          <label for="journal-filter">Journal
-            <select id="journal-filter" name="journal" multiple></select>
-          </label>
-          <label for="type-filter">Type
-            <select id="type-filter" name="type" multiple></select>
-          </label>
-          <label for="deadline-filter">Deadline
-            <select id="deadline-filter" name="deadline" multiple></select>
-          </label>
-        </div>
-        <div class="date-row">
-          <label for="deadline-from">Deadline from
-            <input id="deadline-from" name="from" type="date">
-          </label>
-          <label for="deadline-to">Deadline to
-            <input id="deadline-to" name="to" type="date">
-          </label>
-        </div>
-        <div class="toolbar">
-          <p id="count" class="count">0 open calls</p>
-          <div>
-            <button id="layout-cards" type="button" class="secondary" aria-pressed="true">Cards</button>
-            <button id="layout-table" type="button" class="secondary" aria-pressed="false">Table</button>
+      <div class="shell">
+        <aside class="filters" aria-label="Filters">
+          <details class="filter-panel" open>
+            <summary>Filters</summary>
+            <form id="filters" class="filter-body" onsubmit="return false">
+              <fieldset class="facet">
+                <legend>Fields</legend>
+                <div id="domain-filter" class="chip-row"></div>
+              </fieldset>
+              <fieldset class="facet">
+                <legend>Type</legend>
+                <div id="type-filter" class="chip-row"></div>
+              </fieldset>
+              <fieldset class="facet">
+                <legend>Deadline status</legend>
+                <div id="deadline-filter" class="chip-row"></div>
+              </fieldset>
+              <fieldset class="facet">
+                <legend>Deadline range</legend>
+                <label for="deadline-from">From
+                  <input id="deadline-from" name="from" type="date">
+                </label>
+                <label for="deadline-to">To
+                  <input id="deadline-to" name="to" type="date">
+                </label>
+              </fieldset>
+              <fieldset class="facet">
+                <legend>Journal</legend>
+                <label class="sr-only" for="journal-query">Filter journals</label>
+                <input id="journal-query" type="search" placeholder="Find a journal" autocomplete="off">
+                <div id="journal-filter" class="check-list" role="group" aria-label="Journals"></div>
+              </fieldset>
+              <fieldset class="facet">
+                <legend>Topics</legend>
+                <label class="sr-only" for="topic-query">Filter topics</label>
+                <input id="topic-query" type="search" placeholder="Find a topic" autocomplete="off">
+                <div id="topic-filter" class="check-list" role="group" aria-label="Topics"></div>
+              </fieldset>
+            </form>
+          </details>
+        </aside>
+        <section class="results-pane">
+          <div class="toolbar">
+            <label class="search-label" for="search">Search
+              <input id="search" name="q" type="search" placeholder="Title, journal, field, topic" autocomplete="off">
+            </label>
+            <label for="sort">Sort
+              <select id="sort" name="sort">
+                <option value="deadline">Deadline</option>
+                <option value="newest">Newest</option>
+                <option value="title">Title</option>
+              </select>
+            </label>
+            <div class="layout-toggle" role="group" aria-label="Result layout">
+              <button id="layout-cards" type="button" class="secondary" aria-pressed="true">Cards</button>
+              <button id="layout-table" type="button" class="secondary" aria-pressed="false">Table</button>
+            </div>
+            <p id="count" class="count" aria-live="polite">0 open calls</p>
             <button id="clear" type="button" class="secondary" hidden>Clear filters</button>
           </div>
-        </div>
-      </form>
-      <p id="empty" class="empty" hidden>No open calls match these filters. Clear the search or remove a facet to see more.</p>
-      <section id="results" aria-live="polite"></section>
-      <div class="more">
-        <button id="more" type="button" hidden>Show 48 more</button>
+          <div id="active-filters" class="active-filters" hidden></div>
+          <p id="empty" class="empty" hidden>No open calls match these filters. Clear the search or remove a facet to see more.</p>
+          <section id="results"></section>
+          <div class="more">
+            <button id="more" type="button" hidden>Show 48 more</button>
+          </div>
+        </section>
       </div>
     </main>
     <script type="module" src="js/app.js"></script>

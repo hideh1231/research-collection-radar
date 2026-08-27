@@ -93,7 +93,7 @@ export function matchesDeadline(row, state) {
   }
 
   if (hasRange) {
-    return selected.includes(row.deadline_status) && (selected.includes("not_listed") || selected.includes("not_checked"));
+    return selected.includes(row.deadline_status);
   }
   return matchesFacet(selected, [row.deadline_status]);
 }
@@ -161,4 +161,97 @@ export function hasActiveFilters(state) {
 
 export function emptyState() {
   return { q: "", domains: [], topics: [], journals: [], types: [], deadlines: [], from: "", to: "", sort: "deadline" };
+}
+
+export const TOPIC_CHARS_MAX = 40;
+export const TOPIC_WORDS_MAX = 6;
+export const PUBLISHER_TOPIC_MAX = 8;
+export const TOPIC_CHIP_LIMIT = 4;
+
+export function splitKeywordText(value) {
+  const text = String(value || "").replace(/\u2019/g, "'").replace(/\s+/g, " ").trim();
+  if (!text) return [];
+  const colonCount = (text.match(/:/g) || []).length;
+  const parts = colonCount >= 2 ? text.split(/\s*:\s*/) : [text];
+  const found = [];
+  for (const part of parts) {
+    for (const piece of part.split(/[,;|·•\n]+/)) {
+      const trimmed = piece.trim();
+      if (trimmed) found.push(trimmed);
+    }
+  }
+  return found.length ? found : [text];
+}
+
+export function normalizeTopicLabel(value) {
+  let text = String(value || "").replace(/\u2019/g, "'").replace(/\s+/g, " ").trim();
+  text = text.replace(/^(?:[^\p{L}\p{N}]+|\d+[.)]\s+)+/u, "");
+  text = text.replace(/[\s.;,:\-–—/&|]+$/g, "");
+  text = text.replace(/^(?:and|or|the|a|an)\s+/i, "").trim();
+  if (!text) return "";
+  if (text.length > TOPIC_CHARS_MAX) return "";
+  if (text.split(/\s+/).filter(Boolean).length > TOPIC_WORDS_MAX) return "";
+  return text;
+}
+
+export function sanitizeTopics(values) {
+  const found = [];
+  const seen = new Set();
+  for (const value of values || []) {
+    for (const part of splitKeywordText(value)) {
+      const label = normalizeTopicLabel(part);
+      if (!label) continue;
+      const key = label.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      found.push(label);
+      if (found.length >= PUBLISHER_TOPIC_MAX) return found;
+    }
+  }
+  return found;
+}
+
+export function sanitizeRecord(row) {
+  return { ...row, topics: sanitizeTopics(row.topics || []) };
+}
+
+export function foldTopicCasing(records) {
+  const counts = new Map();
+  for (const row of records) {
+    for (const topic of row.topics || []) {
+      const key = topic.toLowerCase();
+      const bucket = counts.get(key) || new Map();
+      bucket.set(topic, (bucket.get(topic) || 0) + 1);
+      counts.set(key, bucket);
+    }
+  }
+  const canonical = new Map();
+  for (const [key, bucket] of counts) {
+    let best = key;
+    let n = -1;
+    for (const [form, count] of bucket) {
+      if (count > n) {
+        best = form;
+        n = count;
+      }
+    }
+    canonical.set(key, best);
+  }
+  return records.map((row) => ({
+    ...row,
+    topics: (row.topics || []).map((topic) => canonical.get(topic.toLowerCase()) || topic),
+  }));
+}
+
+export function countedValues(records, valuesForRow) {
+  const counts = new Map();
+  for (const row of records) {
+    for (const value of valuesForRow(row) || []) {
+      if (!value) continue;
+      counts.set(value, (counts.get(value) || 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .map(([value, count]) => ({ value, count }))
+    .sort((a, b) => b.count - a.count || String(a.value).localeCompare(String(b.value)));
 }

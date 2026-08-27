@@ -17,11 +17,19 @@ from radar.normalize import unique_keep_order, utc_now
 
 TOPIC_COUNT_MIN = 3
 TOPIC_COUNT_MAX = 6
-TOPIC_CHARS_MAX = 60
+TOPIC_CHARS_MAX = 40
+TOPIC_WORDS_MAX = 6
+PUBLISHER_TOPIC_MAX = 8
 BATCH_SIZE = 10
 ENV_BASE_URL = "RADAR_LLM_BASE_URL"
 ENV_API_KEY = "RADAR_LLM_API_KEY"
 ENV_MODEL = "RADAR_LLM_MODEL"
+SPLIT_RE = re.compile(r"[,;|·•\n]+")
+COLON_SPLIT_RE = re.compile(r"\s*:\s*")
+LEADING_NOISE_RE = re.compile(r"^(?:[^\w]+|\d+[.)]\s+)+", re.UNICODE)
+TRAILING_NOISE_RE = re.compile(r"[\s.;,:\-–—/&|]+$")
+PREFIX_RE = re.compile(r"^(?:and|or|the|a|an)\s+", re.I)
+WORD_RE = re.compile(r"\S+")
 
 
 class TopicError(ValueError):
@@ -44,18 +52,65 @@ def load_aliases(root: Path | None = None) -> dict[str, str]:
     return {str(key).strip().lower(): str(value).strip() for key, value in aliases.items() if key and value}
 
 
+def split_keyword_text(value: str) -> list[str]:
+    """Split a publisher keyword line without breaking compound terms such as ME/CFS."""
+    text = str(value or "").replace("\u2019", "'")
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return []
+    parts = COLON_SPLIT_RE.split(text) if text.count(":") >= 2 else [text]
+    found: list[str] = []
+    for part in parts:
+        found.extend(piece.strip() for piece in SPLIT_RE.split(part) if piece.strip())
+    return found or [text]
+
+
 def normalize_topic_label(value: str, aliases: dict[str, str] | None = None) -> str | None:
-    text = re.sub(r"\s+", " ", value).strip()
+    text = str(value or "").replace("\u2019", "'")
+    text = re.sub(r"\s+", " ", text).strip()
+    text = LEADING_NOISE_RE.sub("", text)
+    text = TRAILING_NOISE_RE.sub("", text)
+    text = PREFIX_RE.sub("", text).strip()
     if not text:
         return None
     mapped = (aliases or {}).get(text.lower())
-    return mapped or text
+    label = mapped or text
+    if len(label) > TOPIC_CHARS_MAX:
+        return None
+    if len(WORD_RE.findall(label)) > TOPIC_WORDS_MAX:
+        return None
+    return label
+
+
+def normalize_topic_list(
+    values: list[str] | None,
+    aliases: dict[str, str] | None = None,
+    *,
+    max_items: int = PUBLISHER_TOPIC_MAX,
+) -> list[str]:
+    found: list[str] = []
+    seen: set[str] = set()
+    for value in values or []:
+        for part in split_keyword_text(str(value)):
+            label = normalize_topic_label(part, aliases)
+            if not label:
+                continue
+            key = label.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            found.append(label)
+            if len(found) >= max_items:
+                return found
+    return found
 
 
 def normalize_publisher_keywords(values: list[str], aliases: dict[str, str] | None = None) -> list[str]:
-    return unique_keep_order(
-        [label for value in values if (label := normalize_topic_label(value, aliases))]
-    )
+    return normalize_topic_list(values, aliases, max_items=PUBLISHER_TOPIC_MAX)
+
+
+def split_publisher_keywords(values: list[str] | None) -> list[str]:
+    return unique_keep_order([part for value in values or [] for part in split_keyword_text(str(value))])
 
 
 def apply_publisher_topics(
@@ -64,7 +119,7 @@ def apply_publisher_topics(
     aliases: dict[str, str] | None = None,
     checked_at: str | None = None,
 ) -> bool:
-    keywords = unique_keep_order(row.get("publisher_keywords") or [])
+    keywords = split_publisher_keywords(row.get("publisher_keywords") or [])
     if not keywords:
         return False
     topics = normalize_publisher_keywords(keywords, aliases or load_aliases())

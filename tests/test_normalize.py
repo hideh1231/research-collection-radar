@@ -33,3 +33,28 @@ def test_migrate_record_canonicalizes_plos_journal_names() -> None:
     )
     assert row["journal"] == "PLOS Medicine"
     assert row["journals"] == ["PLOS Medicine", "PLOS ONE"]
+
+
+def test_migrate_record_splits_publisher_keyword_blobs() -> None:
+    from radar.normalize import migrate_record
+
+    row = migrate_record(
+        {
+            "id": "frontiers-1",
+            "publisher": "Frontiers",
+            "journal": "Frontiers in Robotics and AI",
+            "url": "https://frontiersin.org/research-topics/1/robots",
+            "status": "open",
+            "deadline": None,
+            "publisher_keywords": [
+                "untethered soft robots; soft actuators; soft sensors; embedded intelligence"
+            ],
+            "topics": ["untethered soft robots; soft actuators; soft sensors; embedded intelligence"],
+            "content_hash": "old",
+        }
+    )
+    assert "untethered soft robots" in row["publisher_keywords"]
+    assert "soft actuators" in row["topics"]
+    assert all(";" not in topic for topic in row["topics"])
+    assert all(len(topic) <= 40 for topic in row["topics"])
+    assert row["topics_method"] == "publisher"
