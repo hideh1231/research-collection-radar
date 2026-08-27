@@ -35,7 +35,7 @@ sources:
       - frontiersin.org
     max_pages: 200
     deadline_enrichment: &frontiers_detail
-      daily_limit: 200
+      daily_limit: 400
       min_interval_seconds: 1
       listed_recheck_days: 7
       not_listed_recheck_days: 30

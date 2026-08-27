@@ -474,7 +474,7 @@ def _is_frontiers_open(row: dict[str, Any], source: dict[str, Any] | None = None
     return False
 
 
-def select_deadline_targets(
+def _deadline_queue(
     rows: list[dict[str, Any]],
     source: dict[str, Any],
     *,
@@ -482,7 +482,6 @@ def select_deadline_targets(
     now: datetime | None = None,
     backfill: bool = False,
 ) -> list[dict[str, Any]]:
-    """Select merged rows in new, unconfirmed, metadata, and stale-state order."""
     now = now or datetime.now(UTC)
     incoming_ids = incoming_ids or set()
     settings = _settings(source)
@@ -520,7 +519,22 @@ def select_deadline_targets(
             if row.get("id") not in seen:
                 ordered.append(row)
                 seen.add(str(row.get("id")))
-    return ordered[: int(settings["daily_limit"])]
+    return ordered
+
+
+def select_deadline_targets(
+    rows: list[dict[str, Any]],
+    source: dict[str, Any],
+    *,
+    incoming_ids: set[str] | None = None,
+    now: datetime | None = None,
+    backfill: bool = False,
+) -> list[dict[str, Any]]:
+    """Select merged rows in new, unconfirmed, metadata, and stale-state order."""
+    ordered = _deadline_queue(rows, source, incoming_ids=incoming_ids, now=now, backfill=backfill)
+    if backfill:
+        return ordered
+    return ordered[: int(_settings(source)["daily_limit"])]
 
 
 def _touch_hash(row: dict[str, Any], checked_at: str) -> bool:
@@ -574,14 +588,7 @@ def _get_html_with_identity(fetcher: Fetcher, row: dict[str, Any]) -> tuple[int,
 def _eligible_for_remaining(
     rows: list[dict[str, Any]], source: dict[str, Any], *, backfill: bool
 ) -> list[dict[str, Any]]:
-    if backfill:
-        return [
-            row
-            for row in rows
-            if _is_frontiers_open(row, source)
-            and (row.get("deadline_status") == "not_checked" or not row.get("metadata_checked_at"))
-        ]
-    return select_deadline_targets(rows, source, incoming_ids=set(), backfill=False)
+    return _deadline_queue(rows, source, incoming_ids=set(), backfill=backfill)
 
 
 def enrich_deadlines(
