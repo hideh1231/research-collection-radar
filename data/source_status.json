@@ -1,19 +1,27 @@
 {
-  "checked_at": "2026-08-26T14:53:32Z",
+  "checked_at": "2026-08-27T00:47:15Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
-      "skipped": "backfill-deadlines"
+      "ok": true,
+      "http_status": 200,
+      "parsed": 55,
+      "pages": 6,
+      "error": null
     },
     "frontiers-psychology": {
       "enabled": true,
-      "skipped": "backfill-deadlines",
+      "ok": true,
+      "http_status": 200,
+      "parsed": 24,
+      "pages": 1,
+      "error": null,
       "deadline_enrichment": {
-        "target_count": 354,
-        "checked": 354,
-        "listed": 252,
-        "with_deadline": 252,
-        "not_listed": 102,
+        "target_count": 60,
+        "checked": 60,
+        "listed": 60,
+        "with_deadline": 60,
+        "not_listed": 0,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
@@ -22,24 +30,24 @@
       }
     },
     "sciencedirect-cfp": {
-      "enabled": false,
-      "skipped": "backfill-deadlines"
+      "enabled": false
     },
     "springer-bmc-psychology": {
       "enabled": true,
-      "skipped": "backfill-deadlines"
+      "ok": true,
+      "http_status": 200,
+      "parsed": 33,
+      "pages": 1,
+      "error": null
     },
     "apa-cfp": {
-      "enabled": false,
-      "skipped": "backfill-deadlines"
+      "enabled": false
     },
     "royal-society-rsos": {
-      "enabled": false,
-      "skipped": "backfill-deadlines"
+      "enabled": false
     },
     "plos-collections": {
-      "enabled": false,
-      "skipped": "backfill-deadlines"
+      "enabled": false
     }
   }
 }
