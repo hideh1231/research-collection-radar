@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-08-27T12:58:07Z",
+  "checked_at": "2026-08-27T23:40:53Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
-      "ok": true,
+      "ok": false,
       "http_status": 200,
-      "parsed": 55,
-      "pages": 6,
-      "error": null
+      "parsed": 0,
+      "pages": 40,
+      "error": "pagination truncated"
     },
     "nature-comms-psychology": {
       "enabled": true,
@@ -17,32 +17,48 @@
       "pages": 3,
       "error": null
     },
+    "nature-ncomms": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 206,
+      "pages": 21,
+      "error": null
+    },
+    "nature-commsbio": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 83,
+      "pages": 9,
+      "error": null
+    },
     "frontiers-psychology": {
       "enabled": true,
       "ok": true,
-      "http_status": 404,
-      "parsed": 3311,
+      "http_status": 200,
+      "parsed": 3313,
       "pages": 139,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 200,
-        "checked": 200,
-        "listed": 131,
-        "with_deadline": 131,
-        "not_listed": 69,
+        "target_count": 400,
+        "checked": 400,
+        "listed": 305,
+        "with_deadline": 305,
+        "not_listed": 95,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 200,
-        "metadata_updated": 140
+        "remaining": 744,
+        "metadata_updated": 321
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 375,
+      "parsed": 374,
       "pages": 16,
       "error": null
     },
@@ -66,7 +82,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2159,
+      "parsed": 2161,
       "pages": 91,
       "error": null
     },
@@ -74,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1598,
+      "parsed": 1600,
       "pages": 67,
       "error": null
     },
@@ -90,7 +106,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 530,
+      "parsed": 533,
       "pages": 23,
       "error": null
     },
@@ -98,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 50,
+      "parsed": 51,
       "pages": 3,
       "error": null
     },
@@ -146,20 +162,46 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 312,
-      "pages": 13,
+      "parsed": 313,
+      "pages": 14,
+      "error": null
+    },
+    "frontiers-neuroergonomics": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 60,
+      "pages": 3,
+      "error": null
+    },
+    "frontiers-ethology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 30,
+      "pages": 2,
+      "error": null
+    },
+    "frontiers-ecology-evolution": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 833,
+      "pages": 35,
+      "error": null
+    },
+    "frontiers-veterinary-science": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 907,
+      "pages": 38,
       "error": null
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2799,
-      "pages": 1,
-      "error": null,
-      "ingest": "/tmp/cfp-seed/sciencedirect-browse-rendered.html",
-      "dropped_unclassified": 2707,
-      "skipped_closed": 10
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -185,28 +227,175 @@
       "pages": 1,
       "error": null
     },
+    "springer-bmc-neuroscience": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 26,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-neurology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 27,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-zoology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 22,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-ecology-evolution": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 34,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-digital-health": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 34,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bmc-medinform": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 33,
+      "pages": 1,
+      "error": null
+    },
+    "springer-psychological-research": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "springer-app": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "springer-memory-cognition": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 2,
+      "pages": 1,
+      "error": null
+    },
+    "springer-learning-behavior": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "springer-crpi": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 15,
+      "pages": 1,
+      "error": null
+    },
+    "springer-animal-cognition": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 14,
+      "pages": 1,
+      "error": null
+    },
+    "springer-virtual-reality": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "springer-autonomous-robots": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 10,
+      "pages": 1,
+      "error": null
+    },
+    "springer-ijsr": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 25,
+      "pages": 1,
+      "error": null
+    },
+    "springer-bes": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 10,
+      "pages": 1,
+      "error": null
+    },
+    "springer-uais": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 9,
+      "pages": 1,
+      "error": null
+    },
+    "springer-ebr": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 8,
+      "pages": 1,
+      "error": null
+    },
+    "springer-brm": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 4,
+      "pages": 1,
+      "error": null
+    },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 49,
-      "pages": 1,
-      "error": null,
-      "ingest": "/tmp/cfp-seed/apa-calls-rendered.html",
-      "skipped_closed": 8
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
-      "reason": "Public HTML returns 403 with a Cloudflare bot wall; no official API, feed, or sitemap listing was usable"
+      "skipped": "disabled",
+      "reason": "Publishing platform returns Cloudflare 403. Use royal-society-themes on royalsociety.org instead."
     },
     "royal-society-themes": {
-      "enabled": false,
+      "enabled": true,
       "ok": true,
-      "http_status": null,
+      "http_status": 200,
       "parsed": 3,
-      "pages": 1,
-      "error": null,
-      "ingest": "/tmp/cfp-seed/rs-themes.html"
+      "pages": 2,
+      "error": null
     },
     "plos-collections": {
       "enabled": true,
@@ -215,22 +404,124 @@
       "parsed": 41,
       "pages": 3,
       "error": null
+    },
+    "fujipress-jrm": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 6,
+      "pages": 1,
+      "error": null
+    },
+    "vrsj-special": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "ipsj-cfp": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 19,
+      "pages": 1,
+      "error": null
+    },
+    "jske-cfp": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "aps-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "APS listing may be a bot wall from Actions GET. The listing-ingest workflow tries the calls page in headed Chrome."
+    },
+    "science-robotics-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "science.org is behind Cloudflare. listing-ingest tries headed Chrome."
+    },
+    "tandf-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Author Services CFP search is JS-rendered. listing-ingest tries headed Chrome. Keep watched journals only."
+    },
+    "sage-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
+    },
+    "pnas-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "pnas.org is behind Cloudflare. listing-ingest tries headed Chrome."
+    },
+    "pnas-nexus-cfp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "academic.oup.com is behind Cloudflare. listing-ingest tries headed Chrome on the journal home and known CFP pages."
+    },
+    "josa-a-features": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
+    },
+    "wiley-bjp": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-ethology": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-developmental-science": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-ejn": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-jpr": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-hippocampus": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "wiley-hbm": {
+      "enabled": false,
+      "skipped": "disabled",
+      "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
     }
   },
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 200,
-      "checked": 200,
-      "listed": 131,
-      "with_deadline": 131,
-      "not_listed": 69,
+      "target_count": 400,
+      "checked": 400,
+      "listed": 305,
+      "with_deadline": 305,
+      "not_listed": 95,
       "failed": 0,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
-      "remaining": 200,
-      "metadata_updated": 140
+      "remaining": 744,
+      "metadata_updated": 321
     }
   }
 }
