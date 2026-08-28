@@ -5,6 +5,8 @@ from html import unescape
 import re
 from typing import Any
 
+from bs4 import BeautifulSoup
+
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url, stable_id
 from radar.models import RawRecord, SourceResult
@@ -21,11 +23,47 @@ TRUNCATED_RE = re.compile(r"(?:\.\.\.|…)\s*$")
 NAV_RE = re.compile(r"more about collections|collections home|browse collections", re.I)
 
 
-def _plain(value: Any) -> str:
+def _html(value: Any) -> str:
     if isinstance(value, dict):
-        value = value.get("rendered") or ""
-    text = TAG_RE.sub(" ", unescape(str(value or "")))
+        return str(value.get("rendered") or "")
+    return str(value or "")
+
+
+def _plain(value: Any) -> str:
+    text = TAG_RE.sub(" ", unescape(_html(value)))
     return re.sub(r"\s+", " ", text).strip()
+
+
+def parse_calendar_deadline(html: str) -> date | None:
+    """Read the structured call deadline widget on PLOS collection pages."""
+    if not html:
+        return None
+    found: list[date] = []
+    soup = BeautifulSoup(html, "lxml")
+    for cal in soup.select(".calendar-date"):
+        month = cal.select_one(".calendar-date__month")
+        day = cal.select_one(".calendar-date__day")
+        year = cal.select_one(".calendar-date__year")
+        if month is None or day is None or year is None:
+            continue
+        value = parse_date(
+            f"{day.get_text(' ', strip=True)} {month.get_text(' ', strip=True)} "
+            f"{year.get_text(' ', strip=True)}"
+        )
+        if value:
+            found.append(value)
+    return max(found) if found else None
+
+
+def parse_item_deadline(item: dict[str, Any]) -> date | None:
+    calendar = parse_calendar_deadline(_html(item.get("content"))) or parse_calendar_deadline(
+        _html(item.get("excerpt"))
+    )
+    if calendar:
+        return calendar
+    blob = " ".join(filter(None, [_plain(item.get("excerpt")), _plain(item.get("content"))]))
+    match = DEADLINE_RE.search(blob)
+    return parse_date(match.group(1) if match else None)
 
 
 def parse_summary(item: dict[str, Any]) -> str | None:
@@ -73,7 +111,7 @@ def parse_cfp_item(item: dict[str, Any], source: dict, *, today: date) -> RawRec
     if hosts and not allowed_url(link, hosts):
         return None
     blob = " ".join(filter(None, [_plain(item.get("excerpt")), _plain(item.get("content"))]))
-    deadline = parse_date(DEADLINE_RE.search(blob).group(1) if DEADLINE_RE.search(blob) else None)
+    deadline = parse_item_deadline(item)
     if deadline:
         status = "closed" if deadline < today else "open"
     else:
