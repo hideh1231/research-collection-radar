@@ -619,7 +619,7 @@
       "AI",
       "neuropsychology",
       "health equity",
-      "challenges"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1243,8 +1243,8 @@
       "Identity negotiation",
       "Global cultural flows",
       "psychology",
-      "social",
-      "language"
+      "digital",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1680,8 +1680,8 @@
       "giftedness",
       "talent",
       "development",
-      "Learning",
-      "education"
+      "digital",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1910,7 +1910,7 @@
       "Digital Twins",
       "Fashion Technology Innovation",
       "Human",
-      "management"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2248,9 +2248,9 @@
       "Teacher leadership",
       "School digital transformation",
       "AI",
+      "digital",
       "Learning",
-      "Robotics",
-      "management"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -4383,8 +4383,8 @@
       "Ancestry",
       "Health Disparities",
       "treatment",
-      "epidemiology",
-      "Population"
+      "cancer",
+      "epidemiology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-09",
@@ -4414,8 +4414,8 @@
       "Pedagogical Frameworks",
       "Virtual Ecosystems and Communities",
       "development",
-      "Learning",
-      "education"
+      "digital",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-09",
@@ -4980,9 +4980,9 @@
       "metabolism",
       "Innovation",
       "physiology",
+      "lactate",
       "innovation",
-      "Physiology",
-      "lactate"
+      "Physiology"
     ],
     "collection_type": "special_issue",
     "deadline": "2026-09-14",
@@ -5580,7 +5580,7 @@
       "Interpersonal Interactions",
       "Human",
       "behavior",
-      "personality"
+      "workplace"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -5849,7 +5849,7 @@
       "Organizational Design and Culture",
       "Human",
       "cognitive",
-      "challenges"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-16",
@@ -6309,8 +6309,8 @@
       "development",
       "language",
       "Technology",
-      "gender",
-      "women in"
+      "Women",
+      "gender"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -6907,7 +6907,7 @@
       "health",
       "Mental Health",
       "Aging",
-      "social"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-23",
@@ -6990,12 +6990,12 @@
     "topics": [
       "Youth mental health",
       "Mental Health",
+      "digital",
       "social",
       "Interventions",
       "healthcare",
       "Technology",
-      "physical activity",
-      "Sleep"
+      "physical activity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-23",
@@ -7894,7 +7894,7 @@
       "vulnerability",
       "AI",
       "Human",
-      "challenges"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -9393,9 +9393,9 @@
       "society",
       "culture",
       "evolution",
+      "digital",
       "social",
-      "communication",
-      "environment"
+      "communication"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -9509,9 +9509,9 @@
       "health informatics",
       "personalized medicine",
       "digital technologies",
+      "digital",
       "data",
-      "digital health",
-      "healthcare"
+      "digital health"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -10618,7 +10618,7 @@
       "Treatment",
       "Neuroscience",
       "Neuroimaging",
-      "challenges"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-01",
@@ -13419,9 +13419,9 @@
       "Digital Learning Design",
       "Educational Access",
       "Student Success Frameworks",
+      "digital",
       "Learning",
-      "education",
-      "Technology"
+      "education"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -13787,8 +13787,8 @@
     "topics": [
       "Sustainability",
       "digital transformation",
-      "sustainability",
-      "digital"
+      "digital",
+      "sustainability"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-26",
@@ -14851,7 +14851,7 @@
       "community",
       "mechanisms",
       "Mental Health",
-      "social"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -17043,8 +17043,8 @@
     "topics": [
       "management",
       "Infectious diseases",
-      "infectious diseases",
-      "digital"
+      "digital",
+      "infectious diseases"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-09",
@@ -19300,8 +19300,8 @@
       "High-Density Environments",
       "Thermal Resilience",
       "Human",
-      "resilience",
-      "challenges"
+      "digital",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-19",
@@ -21044,8 +21044,8 @@
       "evidence",
       "development",
       "appraisal",
-      "Methods",
-      "digital"
+      "digital",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -22901,8 +22901,8 @@
       "Metabolic Disease",
       "Lymphatic Dysfunction",
       "therapy",
-      "inflammation",
-      "immunity"
+      "cancer",
+      "inflammation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -23836,10 +23836,10 @@
       "Genotype–environment association",
       "Local adaptation",
       "Spatial scale / grain size",
+      "digital",
       "management",
       "evolution",
-      "environment",
-      "Conservation"
+      "environment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-08",
@@ -25333,8 +25333,8 @@
       "User Experience Quantification",
       "cognitive",
       "development",
-      "treatment",
-      "data"
+      "digital",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -25543,8 +25543,8 @@
       "Industry 5.0",
       "AI",
       "Human",
-      "challenges",
-      "data"
+      "digital",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-17",
@@ -26244,9 +26244,9 @@
       "Mental and physical comorbidity",
       "Integrated care",
       "Mental Health",
+      "digital",
       "challenges",
-      "Interventions",
-      "healthcare"
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -26330,8 +26330,8 @@
       "Cybercrime",
       "Technology-Facilitated Violence",
       "Mental Health",
-      "resilience",
-      "well-being"
+      "digital",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -28746,7 +28746,7 @@
       "Immersive Technologies",
       "AI",
       "Human",
-      "Robotics"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -30363,8 +30363,8 @@
     "topics": [
       "evolution",
       "Ecology",
-      "women in",
-      "Women"
+      "Women",
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -30394,8 +30394,8 @@
       "evolution",
       "Ecology",
       "community",
-      "women in",
-      "Ecosystem Dynamics"
+      "Women",
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -30728,10 +30728,10 @@
     ],
     "topics": [
       "Digital Health Technologies",
+      "digital",
       "treatment",
       "data",
-      "diagnosis",
-      "digital"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-03",
@@ -32341,7 +32341,7 @@
       "Surgical oncology",
       "challenges",
       "treatment",
-      "Risk"
+      "cancer"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-15",
@@ -33495,8 +33495,8 @@
     "topics": [
       "Mental Health",
       "gender",
-      "mental illness",
-      "Women"
+      "Women",
+      "mental illness"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-18",
@@ -33706,8 +33706,8 @@
     "topics": [
       "evolution",
       "Ecology",
-      "women in",
-      "Women"
+      "Women",
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-19",
@@ -33795,8 +33795,8 @@
       "Extended reality (XR)",
       "Human-AI collaboration",
       "Human",
-      "challenges",
-      "data"
+      "digital",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-20",
@@ -34894,9 +34894,9 @@
       "Work-Related Rumination",
       "right-to-disconnect",
       "mechanisms",
+      "digital",
       "well-being",
-      "evolution",
-      "communication"
+      "evolution"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-26",
@@ -37969,7 +37969,7 @@
       "mechanisms",
       "Neuroscience",
       "Neuroimaging",
-      "challenges"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-09",
@@ -38031,7 +38031,7 @@
       "precision livestock farming",
       "animal health",
       "animal welfare",
-      "Veterinary medicine"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-09",
@@ -40645,8 +40645,8 @@
       "Theoretical Frameworks",
       "methodologies",
       "environment",
-      "Theoretical frameworks",
-      "digital"
+      "digital",
+      "Theoretical frameworks"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-26",
@@ -41422,8 +41422,8 @@
       "Intelligent Control",
       "Dexterous Operations",
       "AI",
-      "Learning",
-      "challenges"
+      "digital",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -42329,8 +42329,8 @@
       "Computational",
       "Decision-Making",
       "Risk",
-      "decision-making",
-      "impulsivity"
+      "impulsivity",
+      "decision-making"
     ],
     "collection_type": "collection",
     "deadline": "2027-03-01",
@@ -47737,8 +47737,8 @@
     "topics": [
       "balance",
       "immunometabolism",
-      "Immunometabolism",
-      "cancer"
+      "cancer",
+      "Immunometabolism"
     ],
     "collection_type": "collection",
     "deadline": "2027-05-14",
@@ -50053,8 +50053,8 @@
       "Multi-omics",
       "mechanisms",
       "Neuroscience",
-      "machine learning",
-      "Learning"
+      "digital",
+      "machine learning"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -50391,8 +50391,8 @@
       "Technology",
       "Equity",
       "Public health",
-      "innovation",
-      "digital"
+      "digital",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -53358,8 +53358,8 @@
     ],
     "topics": [
       "Decision-Making",
-      "decision-making",
-      "Circadian rhythms"
+      "Circadian rhythms",
+      "decision-making"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -54787,8 +54787,8 @@
     "topics": [
       "Sustainability",
       "education",
-      "sustainability",
-      "digital"
+      "digital",
+      "sustainability"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -54872,8 +54872,8 @@
       "clinical practice",
       "mental illness",
       "psychiatric",
-      "innovation",
-      "digital"
+      "digital",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -54983,10 +54983,10 @@
       "digital transformation",
       "digital health",
       "WHO classifications",
+      "digital",
       "challenges",
       "data",
-      "language",
-      "digital"
+      "language"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -56382,7 +56382,7 @@
       "mechanisms",
       "treatment",
       "healthcare",
-      "Risk"
+      "cancer"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -57848,9 +57848,9 @@
       "Digital Earth for sustainability",
       "AI",
       "development",
+      "digital",
       "data",
-      "Climate Change",
-      "Biodiversity"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -58191,8 +58191,8 @@
       "digital health",
       "Human",
       "Innovation",
-      "innovation",
-      "digital"
+      "digital",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -58471,8 +58471,8 @@
     ],
     "topics": [
       "Decision-Making",
-      "decision-making",
-      "reward"
+      "reward",
+      "decision-making"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -58775,8 +58775,8 @@
       "Security by Design",
       "Trust",
       "Human",
-      "Technology",
-      "Risk"
+      "digital",
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -59525,8 +59525,8 @@
       "Distributed Intelligence",
       "Explainable AI (XAI)",
       "AI",
-      "communication",
-      "Artificial Intelligence (AI)"
+      "digital",
+      "communication"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -59558,8 +59558,8 @@
       "digital phenotyping",
       "behavioral science",
       "time-series analysis",
-      "challenges",
-      "data"
+      "digital",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -68572,7 +68572,7 @@
       "public mental health",
       "Mental Health",
       "Human",
-      "social"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -69618,7 +69618,7 @@
       "Digital Media",
       "mechanisms",
       "psychology",
-      "social"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70517,8 +70517,8 @@
       "Neuroscience",
       "development",
       "challenges",
-      "women in",
-      "BCI"
+      "Women",
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70549,7 +70549,7 @@
       "Behavioral Development and Play",
       "Foraging and Antipredator Behavior",
       "Social Behavior and Communication",
-      "women in"
+      "Women"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70699,7 +70699,7 @@
       "challenges",
       "Computational",
       "Modeling",
-      "systems biology"
+      "Women"
     ],
     "collection_type": "research_topic",
     "deadline": null,
