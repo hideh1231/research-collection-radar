@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-28T01:14:32Z",
+  "checked_at": "2026-08-28T05:24:11Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -13,7 +13,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 23,
+      "parsed": 22,
       "pages": 3,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 206,
+      "parsed": 205,
       "pages": 21,
       "error": null
     },
@@ -51,15 +51,15 @@
       "deadline_enrichment": {
         "target_count": 400,
         "checked": 400,
-        "listed": 305,
-        "with_deadline": 305,
-        "not_listed": 95,
+        "listed": 140,
+        "with_deadline": 140,
+        "not_listed": 260,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 744,
-        "metadata_updated": 321
+        "remaining": 606,
+        "metadata_updated": 238
       }
     },
     "frontiers-robotics-ai": {
@@ -208,14 +208,8 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2808,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/sciencedirect-cfp.html",
-      "dropped_unclassified": 2752,
-      "skipped_closed": 11
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -395,13 +389,8 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 48,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 8
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -468,12 +457,8 @@
     },
     "tandf-cfp": {
       "enabled": false,
-      "ok": false,
-      "http_status": null,
-      "parsed": 0,
-      "pages": 1,
-      "error": "zero records",
-      "ingest": "listing-html/tandf-cfp.html"
+      "skipped": "disabled",
+      "reason": "Author Services CFP search is JS-rendered. listing-ingest tries headed Chrome. Keep watched journals only."
     },
     "sage-cfp": {
       "enabled": false,
@@ -492,13 +477,8 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/josa-a-features.html",
-      "skipped_closed": 1
+      "skipped": "disabled",
+      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
     },
     "wiley-bjp": {
       "enabled": false,
@@ -541,15 +521,15 @@
     "deadline_enrichment": {
       "target_count": 400,
       "checked": 400,
-      "listed": 305,
-      "with_deadline": 305,
-      "not_listed": 95,
+      "listed": 140,
+      "with_deadline": 140,
+      "not_listed": 260,
       "failed": 0,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
-      "remaining": 744,
-      "metadata_updated": 321
+      "remaining": 606,
+      "metadata_updated": 238
     }
   }
 }
