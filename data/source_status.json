@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-27T23:40:53Z",
+  "checked_at": "2026-08-28T00:37:49Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -506,6 +506,14 @@
       "enabled": false,
       "skipped": "disabled",
       "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "nature-neuro": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 12,
+      "pages": 7,
+      "error": null
     }
   },
   "frontiers_detail": {

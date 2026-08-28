@@ -31,32 +31,7 @@
     "summary": "The Editors at Communications Psychology and Nature Communications invite research on autism in adolescence or adulthood.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "autism",
-      "psychology",
-      "adolescence"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-08-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ahgbffbegd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_375873253_Edit1__2_-64534f39a26bbf504c57c72621be7142.jpg",
-    "image_alt": "Adolescent and adult autism",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-edfe14973d",
-    "title": "Adolescent and adult autism",
-    "summary": "The Editors at Communications Psychology and Nature Communications invite research on autism in adolescence or adulthood.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -1529,26 +1504,7 @@
     "summary": "The editors invite articles in all areas of research investigating the roles of RNA in plant biotic interactions.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2026-08-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jfejjgacbg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1450368712_scaled-3d2f70f6c46f5ab7435553aba377a80e.jpg",
-    "image_alt": "RNA biology in plant biotic interactions",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-7fb45c1558",
-    "title": "RNA biology in plant biotic interactions",
-    "summary": "The editors invite articles in all areas of research investigating the roles of RNA in plant biotic interactions.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -1569,34 +1525,13 @@
     "summary": "This cross-journal Collection welcomes submissions on novel reward and anti-reward mechanisms regulating motivated behaviors in health and disease.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-08-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jibjaahicb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/scaled-88aa60de17d96eca7230e9de2dca9717.jpg",
-    "image_alt": "Reward and anti-reward circuits in health and disease",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-4dce2e6fab",
-    "title": "Reward and anti-reward circuits in health and disease",
-    "summary": "This cross-journal Collection welcomes submissions on novel reward and anti-reward mechanisms regulating motivated behaviors in health and disease.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
-      "psychology"
+      "psychology",
+      "neuroscience"
     ],
     "topics": [
       "mechanisms"
@@ -3452,55 +3387,9 @@
     "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications, and Scientific Reports invite innovative research on incivility.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-15",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bfcbcefhhg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/incivility_hero-4be1f2bce694cc01e78934324eef9cae.jpg",
-    "image_alt": "(In)civility",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c35de69b33",
-    "title": "(In)civility",
-    "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications, and Scientific Reports invite innovative research on incivility.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-15",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bfcbcefhhg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/incivility_hero-4be1f2bce694cc01e78934324eef9cae.jpg",
-    "image_alt": "(In)civility",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-c35de69b33",
-    "title": "(In)civility",
-    "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications, and Scientific Reports invite innovative research on incivility.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -5461,31 +5350,7 @@
     "summary": "With this cross-journal Collection, the editors of Communications Biology, Nature Biomedical Engineering, Nature Sensors, Nature Communications, and Scientific Reports welcome the submission of primary research Articles focusing on the development of engineered biosensing devices with the potential to be applied in biomedical research and in the management of disease conditions.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "development",
-      "management",
-      "Biomedical engineering",
-      "sensors"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/beicdigcge",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1488020280_scaled-9440946bc69ec901e4b5d44d449ef2dd.jpg",
-    "image_alt": "Biosensing",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-b9685ad581",
-    "title": "Biosensing",
-    "summary": "With this cross-journal Collection, the editors of Communications Biology, Nature Biomedical Engineering, Nature Sensors, Nature Communications, and Scientific Reports welcome the submission of primary research Articles focusing on the development of engineered biosensing devices with the potential to be applied in biomedical research and in the management of disease conditions.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -5636,30 +5501,7 @@
     "summary": "In this cross-journal collection, we showcase studies that focus on adaptation in urban and rural areas.",
     "journal": "Nature Communications",
     "journals": [
-      "Nature Communications"
-    ],
-    "domains": [],
-    "topics": [
-      "resilience",
-      "adaptation",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/adbhbjdbdj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Climate_adaptation_hero-c935ca03739d7a507c17b77a0df773a7.jpg",
-    "image_alt": "Climate adaptation and resilience in urban and rural communities",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-d636c3a9ab",
-    "title": "Climate adaptation and resilience in urban and rural communities",
-    "summary": "In this cross-journal collection, we showcase studies that focus on adaptation in urban and rural areas.",
-    "journal": "Scientific Reports",
-    "journals": [
+      "Nature Communications",
       "Scientific Reports"
     ],
     "domains": [
@@ -6261,81 +6103,10 @@
     "summary": "This cross-journal collection welcomes submissions investigating any health outcome resulting from adversity experienced in early life, including studies focused on prevention, epidemiological factors, pathophysiological mechanisms, the impact of socioeconomic factors, or advances in treatment options.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "treatment",
-      "Prevention",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/agihhdhddh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_219290941-web-e920e7738825387040449cf676c0baa5.jpg",
-    "image_alt": "Health outcomes of adversity in early life",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-commsbio-c76b719ce3",
-    "title": "Health outcomes of adversity in early life",
-    "summary": "This cross-journal collection welcomes submissions investigating any health outcome resulting from adversity experienced in early life, including studies focused on prevention, epidemiological factors, pathophysiological mechanisms, the impact of socioeconomic factors, or advances in treatment options.",
-    "journal": "Communications Biology",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
+      "Nature Communications",
       "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "treatment",
-      "Prevention",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/agihhdhddh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_219290941-web-e920e7738825387040449cf676c0baa5.jpg",
-    "image_alt": "Health outcomes of adversity in early life",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c76b719ce3",
-    "title": "Health outcomes of adversity in early life",
-    "summary": "This cross-journal collection welcomes submissions investigating any health outcome resulting from adversity experienced in early life, including studies focused on prevention, epidemiological factors, pathophysiological mechanisms, the impact of socioeconomic factors, or advances in treatment options.",
-    "journal": "Nature Communications",
-    "journals": [
-      "Nature Communications"
-    ],
-    "domains": [],
-    "topics": [
-      "treatment",
-      "Prevention",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/agihhdhddh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_219290941-web-e920e7738825387040449cf676c0baa5.jpg",
-    "image_alt": "Health outcomes of adversity in early life",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-c76b719ce3",
-    "title": "Health outcomes of adversity in early life",
-    "summary": "This cross-journal collection welcomes submissions investigating any health outcome resulting from adversity experienced in early life, including studies focused on prevention, epidemiological factors, pathophysiological mechanisms, the impact of socioeconomic factors, or advances in treatment options.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -6697,28 +6468,7 @@
     "summary": "This cross-journal collection highlights a wide range of research spanning geopolitical and territorial claims, cultural heritage and Indigenous communities, and food and water security, among others.",
     "journal": "Nature Communications",
     "journals": [
-      "Nature Communications"
-    ],
-    "domains": [],
-    "topics": [
-      "Security"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dbdjajigce",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hero_image-5b14c4a157a8c4b752cf3a5a580fb09b.jpg",
-    "image_alt": "Managing Cryospheric Landscapes",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-1b40c31a89",
-    "title": "Managing Cryospheric Landscapes",
-    "summary": "This cross-journal collection highlights a wide range of research spanning geopolitical and territorial claims, cultural heritage and Indigenous communities, and food and water security, among others.",
-    "journal": "Scientific Reports",
-    "journals": [
+      "Nature Communications",
       "Scientific Reports"
     ],
     "domains": [
@@ -8275,63 +8025,9 @@
     "summary": "This Collection highlights research on the role of AI in education. This is a multidisciplinary collaboration bringing together psychological, educational, and computational perspectives.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "AI",
-      "education",
-      "Computational",
-      "AI in education",
-      "collaboration"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-09",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jcejfhfjic",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2240992461_scaled-ecf8e37ad35e06faff882e912a61760f.jpg",
-    "image_alt": "AI in Education",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-e10b372c75",
-    "title": "AI in Education",
-    "summary": "This Collection highlights research on the role of AI in education. This is a multidisciplinary collaboration bringing together psychological, educational, and computational perspectives.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "AI",
-      "education",
-      "Computational",
-      "AI in education",
-      "collaboration"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-09",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jcejfhfjic",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2240992461_scaled-ecf8e37ad35e06faff882e912a61760f.jpg",
-    "image_alt": "AI in Education",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-e10b372c75",
-    "title": "AI in Education",
-    "summary": "This Collection highlights research on the role of AI in education. This is a multidisciplinary collaboration bringing together psychological, educational, and computational perspectives.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -10210,61 +9906,9 @@
     "summary": "The Editors at Communications Psychology, Nature Communications, and Scientific Reports invite submissions providing neurocognitive perspectives on language comprehension.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "language",
-      "psychology",
-      "language comprehension"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-20",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fdgceidggh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/fdgceidggh_hero-9752e42e71ef653a0d609c7d01c4eea5.jpg",
-    "image_alt": "Neurocognitive perspectives on language comprehension",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-01223ea2e9",
-    "title": "Neurocognitive perspectives on language comprehension",
-    "summary": "The Editors at Communications Psychology, Nature Communications, and Scientific Reports invite submissions providing neurocognitive perspectives on language comprehension.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "language",
-      "psychology",
-      "language comprehension"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-20",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fdgceidggh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/fdgceidggh_hero-9752e42e71ef653a0d609c7d01c4eea5.jpg",
-    "image_alt": "Neurocognitive perspectives on language comprehension",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-01223ea2e9",
-    "title": "Neurocognitive perspectives on language comprehension",
-    "summary": "The Editors at Communications Psychology, Nature Communications, and Scientific Reports invite submissions providing neurocognitive perspectives on language comprehension.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "neuroscience",
@@ -10403,26 +10047,7 @@
     "summary": "This is a joint Collection across Communications Medicine, Nature Communications, Communications Biology, and Scientific Reports. We welcome the submission of all papers that advance our understanding of Kidney Disease and Health.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2026-10-22",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fbjedbfihc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2219630383-web-3e110bce2ce0cb85f8f95310e2c49b87.jpg",
-    "image_alt": "Kidney Disease and Health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-4a8dca2e66",
-    "title": "Kidney Disease and Health",
-    "summary": "This is a joint Collection across Communications Medicine, Nature Communications, Communications Biology, and Scientific Reports. We welcome the submission of all papers that advance our understanding of Kidney Disease and Health.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -10988,32 +10613,7 @@
     "summary": "This collection will highlight studies that uncover the mechanisms of light signal transduction and harness these discoveries to address challenges in food security and climate change.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Climate Change",
-      "plants",
-      "challenges",
-      "mechanisms",
-      "Security"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fehfccaigh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-812622284_scaled-818212429e65b9bd54a5197698157d24.jpg",
-    "image_alt": "Light Signaling in Plants",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-248ab308be",
-    "title": "Light Signaling in Plants",
-    "summary": "This collection will highlight studies that uncover the mechanisms of light signal transduction and harness these discoveries to address challenges in food security and climate change.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -11064,26 +10664,7 @@
     "summary": "Editors highlight plant membranes—their remarkable ability to remodel, package proteins and mediate trafficking; their chemical composition; and their protein constituents that include transporters and channels that facilitate molecular exchange, receptors and ligands that initiate signalling, and enzymes whose reactions power the cell, sort proteins, regulate pH and scavenge.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2026-10-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bibhdejihi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-116864378_scaled-16dcb07a36d1f2f95551d10c86b371d4.jpg",
-    "image_alt": "Plant Membrane Biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-0d781e45d8",
-    "title": "Plant Membrane Biology",
-    "summary": "Editors highlight plant membranes—their remarkable ability to remodel, package proteins and mediate trafficking; their chemical composition; and their protein constituents that include transporters and channels that facilitate molecular exchange, receptors and ligands that initiate signalling, and enzymes whose reactions power the cell, sort proteins, regulate pH and scavenge.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -11222,30 +10803,7 @@
     "summary": "The editor invite submissions of original biological and clinical research focusing on the finely-tuned control of non-immune and immune cell death, the coordinated regulation of programmed cell death and the resulted immune response in health and disease, and the selective targeting of cell death regulatory molecules as a therapeutic solution for chronic inflammatory disorders.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "control"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jaehbihgeg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-713780523_scaled-0f41f36485a78b68e3fb494e786ea5c7.jpg",
-    "image_alt": "Cell death and inflammatory signalling",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-7819fb3900",
-    "title": "Cell death and inflammatory signalling",
-    "summary": "The editor invite submissions of original biological and clinical research focusing on the finely-tuned control of non-immune and immune cell death, the coordinated regulation of programmed cell death and the resulted immune response in health and disease, and the selective targeting of cell death regulatory molecules as a therapeutic solution for chronic inflammatory disorders.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -11348,32 +10906,7 @@
     "summary": "This Collection features research on the intersection of physical activity and mental health, exploring whether and how activity can influence mental well-being positively or otherwise.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "physical activity",
-      "well-being"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-29",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jajcbghbfg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/jajcbghbfg_hero-ba6baccb67e3f0f83d179341388ee1c6.jpg",
-    "image_alt": "Physical Activity and Mental Health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-1c6ac6eb14",
-    "title": "Physical Activity and Mental Health",
-    "summary": "This Collection features research on the intersection of physical activity and mental health, exploring whether and how activity can influence mental well-being positively or otherwise.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -11491,30 +11024,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications and Communications Biology invite manuscripts that showcase the development and application of AI-driven approaches leveraging big data to advance our understanding of RNA biology.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "AI",
-      "development",
-      "data"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fbghgaehac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/scaled-69ea5ac985dbc21d3044370fe840bd19.jpg",
-    "image_alt": "Artificial intelligence in RNA biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-0d0155042d",
-    "title": "Artificial intelligence in RNA biology",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications and Communications Biology invite manuscripts that showcase the development and application of AI-driven approaches leveraging big data to advance our understanding of RNA biology.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -11627,33 +11137,7 @@
     "summary": "The Editors at Nature Communications, Nature Human Behaviour, Nature Medicine and Communications Psychology welcome submissions examining the role of digital media in mental health.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "Human",
-      "psychology",
-      "behaviour"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ifgdcchaff",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1464181089-web-b3ac4af6e35670454868d5c6204f0698.jpg",
-    "image_alt": "Digital Media and Mental Health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-5375c052e4",
-    "title": "Digital Media and Mental Health",
-    "summary": "The Editors at Nature Communications, Nature Human Behaviour, Nature Medicine and Communications Psychology welcome submissions examining the role of digital media in mental health.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -11800,31 +11284,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Immunology, Nature Communications, Communications Biology and Scientific Reports invite original research Articles investigating all aspects of the complex molecular interplay between pathogens and their human and/or animal hosts.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Human",
-      "Host-pathogen interactions",
-      "Immunity",
-      "Pathogens"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jgggbjghji",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1134489788_scaled-08060be11a01dc61192daef88f3b323e.jpg",
-    "image_alt": "Host-Pathogen Interactions – Infection, Immunity and Beyond",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-1371e0b1c3",
-    "title": "Host-Pathogen Interactions – Infection, Immunity and Beyond",
-    "summary": "With this cross-journal Collection, the editors at Nature Immunology, Nature Communications, Communications Biology and Scientific Reports invite original research Articles investigating all aspects of the complex molecular interplay between pathogens and their human and/or animal hosts.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -11875,30 +11335,7 @@
     "summary": "The editors invite manuscripts that highlight methodological developments in instrument design, sample preparation, data acquisition, data analysis, interpretation and integration from different techniques.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "development",
-      "data",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/adcjaiahfg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Hero_image-6aaefb7b7935aab86c8f71353b96db11.jpg",
-    "image_alt": "Methods development in Cryo-ET and in situ structural determination",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-7a79bef6cb",
-    "title": "Methods development in Cryo-ET and in situ structural determination",
-    "summary": "The editors invite manuscripts that highlight methodological developments in instrument design, sample preparation, data acquisition, data analysis, interpretation and integration from different techniques.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -11948,28 +11385,7 @@
     "summary": "In this collection, the editors of Nature Metabolism, Communications Biology, Nature Communications, and Scientific Reports aim to highlight cutting-edge research in muscle biology.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "metabolism"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/heedhicafd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1301754131_scaled-6438db1645fe658c88beea4b5e41e2e8.jpg",
-    "image_alt": "Muscle biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c8e588773a",
-    "title": "Muscle biology",
-    "summary": "In this collection, the editors of Nature Metabolism, Communications Biology, Nature Communications, and Scientific Reports aim to highlight cutting-edge research in muscle biology.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -12074,35 +11490,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that highlight how epigenetics shapes plant development, stress responses and adaptation. We also welcome studies developing and utilizing advanced technologies such as epigenomic mapping, single cell epigenomics, and multi-omics approaches to provide insights into plant epigenetic mechanisms.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "stress",
-      "multi-omics",
-      "epigenetics",
-      "development",
-      "adaptation",
-      "epigenomics",
-      "mechanisms",
-      "Omics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/biaaegeafh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-989576890_scaled-beaf504c4821c05690dee6d18d0b93e9.jpg",
-    "image_alt": "Plant Epigenetics and Epigenomics",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-ca57c891a4",
-    "title": "Plant Epigenetics and Epigenomics",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that highlight how epigenetics shapes plant development, stress responses and adaptation. We also welcome studies developing and utilizing advanced technologies such as epigenomic mapping, single cell epigenomics, and multi-omics approaches to provide insights into plant epigenetic mechanisms.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -12358,61 +11746,9 @@
     "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications and Scientific Reports invite manuscripts that highlight recent progress in Comparative Psychology.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "cognition",
-      "psychology",
-      "behaviour",
-      "Comparative Psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gbbefibjai",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Comparative_psych_hero-73e799370912e17b7343961f6df5a3e5.jpg",
-    "image_alt": "Comparative Psychology of Cognition, Affect, and Behaviour",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-749a49502d",
-    "title": "Comparative Psychology of Cognition, Affect, and Behaviour",
-    "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications and Scientific Reports invite manuscripts that highlight recent progress in Comparative Psychology.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "cognition",
-      "psychology",
-      "behaviour",
-      "Comparative Psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gbbefibjai",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Comparative_psych_hero-73e799370912e17b7343961f6df5a3e5.jpg",
-    "image_alt": "Comparative Psychology of Cognition, Affect, and Behaviour",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-749a49502d",
-    "title": "Comparative Psychology of Cognition, Affect, and Behaviour",
-    "summary": "With this cross-journal Collection, the editors at Communications Psychology, Nature Communications and Scientific Reports invite manuscripts that highlight recent progress in Comparative Psychology.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -12470,32 +11806,7 @@
     "summary": "This cross-journal Collection between Nature Communications, Communications Biology and Scientific Reports welcomes submissions on the mechanisms of DNA repair using multiple modelling systems and the applications of DNA repair mechanisms in human disease diagnosis and treatment.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "diagnosis",
-      "Human",
-      "Modelling",
-      "treatment",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ehffcdddfb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_305377700.tif.iCfKns_wMWATAA.6zfAOcGWCF-16b3cdc7ded23dafb3be91be2dcd5780.jpg",
-    "image_alt": "DNA repair and human disease",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-31ffa342e7",
-    "title": "DNA repair and human disease",
-    "summary": "This cross-journal Collection between Nature Communications, Communications Biology and Scientific Reports welcomes submissions on the mechanisms of DNA repair using multiple modelling systems and the applications of DNA repair mechanisms in human disease diagnosis and treatment.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -12958,33 +12269,8 @@
     "summary": "With this cross-journal Collection, the editors at Nature Biomedical Engineering, Nature Medicine, Nature Neuroscience, Nature Biotechnology, Nature Communications, Communications Medicine, Communications Biology, and Scientific Reports invite manuscripts that highlight the development, use and insight obtained from applying neuroengineering approaches.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Neuroscience",
-      "development",
-      "neuroengineering",
-      "Biomedical engineering"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ijbgfjadje",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1436010616-web-f1ccca79cd859bbf21bb7cc6f0cb88a6.jpg",
-    "image_alt": "Neuroengineering",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-5046a5cbc4",
-    "title": "Neuroengineering",
-    "summary": "With this cross-journal Collection, the editors at Nature Biomedical Engineering, Nature Medicine, Nature Neuroscience, Nature Biotechnology, Nature Communications, Communications Medicine, Communications Biology, and Scientific Reports invite manuscripts that highlight the development, use and insight obtained from applying neuroengineering approaches.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -13615,28 +12901,7 @@
     "summary": "The editors of Nature Communications, Nature Immunology, Communications Biology, and Scientific Reports invite submissions of primary research articles dissecting crosstalk between innate memory cells and tissue resident adaptive immune cells in the molecular, cellular and function levels.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Memory"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-02",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ccbcciachj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hero_image_Crosstalk_between_tissue-resident_adaptive_and_innate_memory_cells-f48f513f005ecb4b8f28d8629a837d2a.jpg",
-    "image_alt": "Crosstalk Between Tissue-Resident Adaptive and Innate Memory Cells",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-1e13df6fca",
-    "title": "Crosstalk Between Tissue-Resident Adaptive and Innate Memory Cells",
-    "summary": "The editors of Nature Communications, Nature Immunology, Communications Biology, and Scientific Reports invite submissions of primary research articles dissecting crosstalk between innate memory cells and tissue resident adaptive immune cells in the molecular, cellular and function levels.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -13827,28 +13092,7 @@
     "summary": "Transposable elements underlie the dynamic nature of bacterial and eukaryotic genomes, affecting their structure and regulation. With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that highlight advances in our understanding of the mechanisms underlying transposition and its regulation, as well as manuscripts that shed light into how transposons affect genome structure and their roles in health and disease. Only original research Articles will be considered for this collection.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-03",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hacaaggafh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-185759442_pubserv-1facfa686b7e7bc537b03f7108e207db.png",
-    "image_alt": "The Mobile Genome",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-6042b82ec7",
-    "title": "The Mobile Genome",
-    "summary": "Transposable elements underlie the dynamic nature of bacterial and eukaryotic genomes, affecting their structure and regulation. With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that highlight advances in our understanding of the mechanisms underlying transposition and its regulation, as well as manuscripts that shed light into how transposons affect genome structure and their roles in health and disease. Only original research Articles will be considered for this collection.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -14402,30 +13646,7 @@
     "summary": "This cross-journal collection welcomes original research articles spanning basic, translational, and clinical studies that explore the immune mechanisms influencing arthritis pathogenesis.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-09",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dfefdfbgeh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1179585241_scaled-022845c77a182c238ce65b4c7560cf17.jpg",
-    "image_alt": "Immune mechanisms in arthritis",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-11bf2d91c7",
-    "title": "Immune mechanisms in arthritis",
-    "summary": "This cross-journal collection welcomes original research articles spanning basic, translational, and clinical studies that explore the immune mechanisms influencing arthritis pathogenesis.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -14801,32 +14022,8 @@
     "summary": "This cross-journal Collection welcomes submissions that highlight mechanisms underlying neural and physiological responses to contemporary environmental changes.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Brain",
-      "mechanisms",
-      "physiology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-11",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/difaigaifh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-877065242_scaled-2a12d426a6e4a17b6572b8389fb0638f.jpg",
-    "image_alt": "Brain and body physiology in changing ecosystems",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c7bdb7df52",
-    "title": "Brain and body physiology in changing ecosystems",
-    "summary": "This cross-journal Collection welcomes submissions that highlight mechanisms underlying neural and physiological responses to contemporary environmental changes.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -14917,30 +14114,7 @@
     "summary": "With this cross-journal Collection, the editors at Communications Biology, Nature Communications, Nature Plants, and Scientific Reports invite manuscripts from diverse perspectives that investigate plastid biology or explore the fundamental principles governing plastid origin, integration, and diversification across the eukaryotic tree of life.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "plants",
-      "physiology",
-      "tree of life"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-12",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bddfdffhib",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1359392532_scaled-7b25f073b41f29343cca235f4815f19f.jpg",
-    "image_alt": "Plastids: from Phylogeny to Physiology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-b4100df08c",
-    "title": "Plastids: from Phylogeny to Physiology",
-    "summary": "With this cross-journal Collection, the editors at Communications Biology, Nature Communications, Nature Plants, and Scientific Reports invite manuscripts from diverse perspectives that investigate plastid biology or explore the fundamental principles governing plastid origin, integration, and diversification across the eukaryotic tree of life.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -17595,32 +16769,7 @@
     "summary": "This cross-journal collection invites manuscripts that investigate the distribution and determinants of adolescent mental health across diverse settings as well as innovative prevention, detection and intervention approaches.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "Intervention",
-      "Prevention"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/igabdcacch",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2211085748-web-f3f3b9a49093c170d44382526a317ce5.jpg",
-    "image_alt": "Adolescent mental health: advancing understanding to improve outcomes",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-0de78987bc",
-    "title": "Adolescent mental health: advancing understanding to improve outcomes",
-    "summary": "This cross-journal collection invites manuscripts that investigate the distribution and determinants of adolescent mental health across diverse settings as well as innovative prevention, detection and intervention approaches.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -17700,63 +16849,9 @@
     "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address the importance of psychological needs for well-being and mental health.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "Human",
-      "psychology",
-      "well-being",
-      "behaviour"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/diihddgjcg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1291405714_scaled-8c2f84699701c31d6ec2e4055b32d4d0.jpg",
-    "image_alt": "Basic Psychological Needs and Well-Being",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-73d163a0ea",
-    "title": "Basic Psychological Needs and Well-Being",
-    "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address the importance of psychological needs for well-being and mental health.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "Human",
-      "psychology",
-      "well-being",
-      "behaviour"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/diihddgjcg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1291405714_scaled-8c2f84699701c31d6ec2e4055b32d4d0.jpg",
-    "image_alt": "Basic Psychological Needs and Well-Being",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-73d163a0ea",
-    "title": "Basic Psychological Needs and Well-Being",
-    "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address the importance of psychological needs for well-being and mental health.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -18466,30 +17561,7 @@
     "summary": "In this joint collection between Communications Biology, Nature Communications, Nature Structural & Molecular Biology, and Scientific Reports, we invite submissions containing new methods for the prediction of structure of macromolecules such as proteins, peptides and RNA.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "AI",
-      "Methods",
-      "prediction"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jbdjhghacg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2172899400_scaled-88ac2e909ffb80cb2289048999def4f5.jpg",
-    "image_alt": "Artificial Intelligence Methodology in Structural Biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-bafd8bea93",
-    "title": "Artificial Intelligence Methodology in Structural Biology",
-    "summary": "In this joint collection between Communications Biology, Nature Communications, Nature Structural & Molecular Biology, and Scientific Reports, we invite submissions containing new methods for the prediction of structure of macromolecules such as proteins, peptides and RNA.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -19061,29 +18133,7 @@
     "summary": "This collection welcomes submissions investigating mechanisms of TAD formation and maintenance, chromatin looping and gene regulation, impact of 3D genome on transcriptional landscapes and high-throughput methods for studying genome organisation.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Methods",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bacjiafbeh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1322287687_scaled-ba5fb945409d14cd369d15595614c935.jpg",
-    "image_alt": "Mechanisms and impact of 3D genome organisation",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-770efbc000",
-    "title": "Mechanisms and impact of 3D genome organisation",
-    "summary": "This collection welcomes submissions investigating mechanisms of TAD formation and maintenance, chromatin looping and gene regulation, impact of 3D genome on transcriptional landscapes and high-throughput methods for studying genome organisation.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -19479,30 +18529,7 @@
     "summary": "In this cross-journal Collection, we invite research into the complex signalling pathways of innate immunity, emphasising the activation and regulation of pattern recognition receptors in response to microbial and endogenous triggers.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Immunity"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ihibjjdcee",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/932734664_scaled-cf80a95900e30a0232cb793552decca8.jpg",
-    "image_alt": "Signalling Pathways of Innate Immunity",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c56fbd35ff",
-    "title": "Signalling Pathways of Innate Immunity",
-    "summary": "In this cross-journal Collection, we invite research into the complex signalling pathways of innate immunity, emphasising the activation and regulation of pattern recognition receptors in response to microbial and endogenous triggers.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -19612,31 +18639,7 @@
     "summary": "With this cross-journal Collection, the editors at Communications Psychology and Nature Communications invite manuscripts that highlight recent developments in stress and health research.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "stress",
-      "psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cbbebdaajc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Stress_and_health_hero-dce63c6296bee8f86e66b603b897f053.jpg",
-    "image_alt": "Stress and Health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-66b7aa40ab",
-    "title": "Stress and Health",
-    "summary": "With this cross-journal Collection, the editors at Communications Psychology and Nature Communications invite manuscripts that highlight recent developments in stress and health research.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -20294,30 +19297,7 @@
     "summary": "This cross-journal collection will consider submissions of research articles that highlight advances in nanomedicine aimed at overcoming cancer treatment failure, as well as nanotechnology used to uncover the underlying biological mechanisms of such failure.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "treatment",
-      "nanotechnology",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-03",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ihiiecbhji",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2235763698_sacled-4176a128ec0b5c767d0d6fcb711d4fd9.jpg",
-    "image_alt": "Nanomedicine Applied in Cancer Treatment Failure",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-b8278754f0",
-    "title": "Nanomedicine Applied in Cancer Treatment Failure",
-    "summary": "This cross-journal collection will consider submissions of research articles that highlight advances in nanomedicine aimed at overcoming cancer treatment failure, as well as nanotechnology used to uncover the underlying biological mechanisms of such failure.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -20713,7 +19693,8 @@
     "summary": "This Collection seeks to unite research on the interplay between metabolic and neurological functions, focusing on topics such as the role of the gut microbiome in modulating mental health and metabolic disorders, the influence of nutritional status and diet on the gut-brain axis, the impact of therapeutic interventions such as GLP-1 agonists, mechanisms linking gut health and mental well-being, the role of gut hormones in metabolic regulation, and inter-organ communication in health and disease.",
     "journal": "Nature Communications",
     "journals": [
-      "Nature Communications"
+      "Nature Communications",
+      "Nature Neuroscience"
     ],
     "domains": [
       "neuroscience",
@@ -22188,33 +21169,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Communications AI and Computing invite work on the intersection of psychology and LLMs.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "AI",
-      "language",
-      "LLM",
-      "psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-15",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/badbafeeca",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1351302805_scaled-590fadc65b868e693710eda03956ed9f.jpg",
-    "image_alt": "Large language models in psychology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-285903855e",
-    "title": "Large language models in psychology",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Communications AI and Computing invite work on the intersection of psychology and LLMs.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -22605,34 +21560,7 @@
     "summary": "With this cross-journal Collection, the editors at Communications Health, Nature Food, Nature Communications, Communications Medicine and Scientific Reports invite manuscripts that explore the epidemiology, biological and behavioral mechanisms, community- and population-level patterns, and interventional and policy-related approaches pertaining to ultra-processed foods.",
     "journal": "Nature Communications",
     "journals": [
-      "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "epidemiology",
-      "community",
-      "mechanisms",
-      "Policy",
-      "Population"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-16",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bjffcddiij",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1296744707-web-ef27446ce8f9314163164d9e690f2e21.jpg",
-    "image_alt": "Ultra processed food and health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-3dd3090ab7",
-    "title": "Ultra processed food and health",
-    "summary": "With this cross-journal Collection, the editors at Communications Health, Nature Food, Nature Communications, Communications Medicine and Scientific Reports invite manuscripts that explore the epidemiology, biological and behavioral mechanisms, community- and population-level patterns, and interventional and policy-related approaches pertaining to ultra-processed foods.",
-    "journal": "Scientific Reports",
-    "journals": [
+      "Nature Communications",
       "Scientific Reports"
     ],
     "domains": [
@@ -22759,35 +21687,7 @@
     "summary": "In this cross-journal collection, we invite submissions medicinal plant genomics with the focus on genome assembly, population genetics, comparative genomics, and evolutionary genomics, as well as their combination with multi-omics data and bioinformatic approaches to facilitate rapid discovery of unknown metabolic pathways/enzymes for the production of new bioactive compounds.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "genomics",
-      "multi-omics",
-      "genetics",
-      "comparative genomics",
-      "data",
-      "Evolutionary Genomics",
-      "production",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-17",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/geddhijbdd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hero_image_MPG-5b8dd2dd6520e85672b30a2786a643a4.jpg",
-    "image_alt": "Medicinal Plant Genomics 2026",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-975d47a7d2",
-    "title": "Medicinal Plant Genomics 2026",
-    "summary": "In this cross-journal collection, we invite submissions medicinal plant genomics with the focus on genome assembly, population genetics, comparative genomics, and evolutionary genomics, as well as their combination with multi-omics data and bioinformatic approaches to facilitate rapid discovery of unknown metabolic pathways/enzymes for the production of new bioactive compounds.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -23872,29 +22772,7 @@
     "summary": "Editors welcome original Articles exploring the cellular and molecular mechanisms of fibrosis, such as fibroblast activation, fibrogenic signalling pathways, immune–stromal interactions, and extracellular matrix remodelling.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "molecular mechanisms",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-21",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dicfahjegb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2230130644_scaled-d2cad8f7bd962fe1325734c043525027.jpg",
-    "image_alt": "Mechanisms of Tissue Fibrosis",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-7a6b28a237",
-    "title": "Mechanisms of Tissue Fibrosis",
-    "summary": "Editors welcome original Articles exploring the cellular and molecular mechanisms of fibrosis, such as fibroblast activation, fibrogenic signalling pathways, immune–stromal interactions, and extracellular matrix remodelling.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -23950,30 +22828,7 @@
     "summary": "Editors welcome the submission of primary research Articles focusing on recent advances of stem cell-based organoid models for studying infectious diseases, and novel insights in the disease mechanisms of human infections with the support of stem cell-based organoid systems.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Human",
-      "Infectious diseases",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-21",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hdbicfdbeg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1220617983_scaled-45985f569be5b7a890059f4b688152fb.jpg",
-    "image_alt": "Organoid models for infectious diseases",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c4986b382c",
-    "title": "Organoid models for infectious diseases",
-    "summary": "Editors welcome the submission of primary research Articles focusing on recent advances of stem cell-based organoid models for studying infectious diseases, and novel insights in the disease mechanisms of human infections with the support of stem cell-based organoid systems.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -24056,28 +22911,7 @@
     "summary": "In this collection, we welcome submissions that further our understanding of species’ evolutionary responses to contemporary global change.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Global change"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-22",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dhhejgghij",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-143918209_scaled-15468b91b816f05716b4fc6b4d4872c2.jpg",
-    "image_alt": "Evolutionary responses to contemporary global change",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-9b22255440",
-    "title": "Evolutionary responses to contemporary global change",
-    "summary": "In this collection, we welcome submissions that further our understanding of species’ evolutionary responses to contemporary global change.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -24124,71 +22958,9 @@
     "summary": "With this collection, the editors at Nature Communications, Communications Biology and Scientific Reports welcome the submission of primary research articles that focus on neuronal circuits and behaviour involved in both male and female parenting behaviors. We particularly encourage studies in rodent models exploring the intersection of parenting behavior, motivation and epigenetics with an emphasis on neurobiology probed using methods such as transcriptomics, optogenetics, chemogenetics and in vivo recording.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "behavior",
-      "Neural circuits",
-      "behaviour",
-      "epigenetics",
-      "Motivation",
-      "neurobiology",
-      "transcriptomics",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-23",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ejgidhfcbj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-582759294-web-453ee65023cdbdd658f57ae7237b5528.jpg",
-    "image_alt": "Neurobiology and neural circuits of parenting behaviours",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-a0bf3b91e0",
-    "title": "Neurobiology and neural circuits of parenting behaviours",
-    "summary": "With this collection, the editors at Nature Communications, Communications Biology and Scientific Reports welcome the submission of primary research articles that focus on neuronal circuits and behaviour involved in both male and female parenting behaviors. We particularly encourage studies in rodent models exploring the intersection of parenting behavior, motivation and epigenetics with an emphasis on neurobiology probed using methods such as transcriptomics, optogenetics, chemogenetics and in vivo recording.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "behavior",
-      "Neural circuits",
-      "behaviour",
-      "epigenetics",
-      "Motivation",
-      "neurobiology",
-      "transcriptomics",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-23",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ejgidhfcbj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-582759294-web-453ee65023cdbdd658f57ae7237b5528.jpg",
-    "image_alt": "Neurobiology and neural circuits of parenting behaviours",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-a0bf3b91e0",
-    "title": "Neurobiology and neural circuits of parenting behaviours",
-    "summary": "With this collection, the editors at Nature Communications, Communications Biology and Scientific Reports welcome the submission of primary research articles that focus on neuronal circuits and behaviour involved in both male and female parenting behaviors. We particularly encourage studies in rodent models exploring the intersection of parenting behavior, motivation and epigenetics with an emphasis on neurobiology probed using methods such as transcriptomics, optogenetics, chemogenetics and in vivo recording.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "neuroscience",
@@ -24220,32 +22992,7 @@
     "summary": "This collection aims to highlight recent advances in the molecular and cellular mechanisms underlying the complexity of metastatic organotropism, and how these actionable insights could be leveraged to facilitate early detection and diagnosis of metastasis, as well as the development of targeted therapeutic approaches.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "diagnosis",
-      "development",
-      "Early Detection",
-      "mechanisms",
-      "metastasis"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-23",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/iicgiachhj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-565782639-web-4a1177cf7837f31e1ca2717d746c6f06.jpg",
-    "image_alt": "Organotropism in cancer metastasis",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-56ca1fa8f1",
-    "title": "Organotropism in cancer metastasis",
-    "summary": "This collection aims to highlight recent advances in the molecular and cellular mechanisms underlying the complexity of metastatic organotropism, and how these actionable insights could be leveraged to facilitate early detection and diagnosis of metastasis, as well as the development of targeted therapeutic approaches.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -24390,30 +23137,7 @@
     "summary": "With this collection, the editors invite manuscripts presenting interpretable models for analysis of spatial transcriptomic data.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "spatial transcriptomics",
-      "transcriptomics",
-      "data"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-25",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/iicebchbih",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/iicebchbih_hero-007807d519546e31c27cc2e01141ede4.jpg",
-    "image_alt": "Interpretable models for spatial transcriptomics",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-cf25677bdc",
-    "title": "Interpretable models for spatial transcriptomics",
-    "summary": "With this collection, the editors invite manuscripts presenting interpretable models for analysis of spatial transcriptomic data.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -24613,29 +23337,7 @@
     "summary": "This Collection aims to unite diverse research spanning mitochondrial dynamics, cristae morphology, membrane regulation, lipid and protein–lipid composition, surveillance pathways, and the cellular responses that restore or eliminate damaged mitochondria.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "control",
-      "surveillance"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/edejehaceh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1918983972_scaled-78770841df34aa13fcebfbe2b20f308e.jpg",
-    "image_alt": "Mitochondrial Quality Control",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-9cec26b5fb",
-    "title": "Mitochondrial Quality Control",
-    "summary": "This Collection aims to unite diverse research spanning mitochondrial dynamics, cristae morphology, membrane regulation, lipid and protein–lipid composition, surveillance pathways, and the cellular responses that restore or eliminate damaged mitochondria.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -24754,69 +23456,13 @@
     "summary": "Editors invite manuscripts that highlight recent developments in the mechanisms, functions and experience of visual mental imagery. Topics include, but are not limited to, neural mechanisms of visual imagery, aphantasia, hyperphantasia, methods of assessing visual imagery, and cognitive processes related to visual imagery.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "neural mechanisms",
-      "cognitive",
-      "Methods",
-      "cognitive processes",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/abfbcbddfi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1056507982_scaled-8d555fb243fb1b6ae01f9f26f71dc9cb.jpg",
-    "image_alt": "Visual Imagery",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-2ecad74601",
-    "title": "Visual Imagery",
-    "summary": "Editors invite manuscripts that highlight recent developments in the mechanisms, functions and experience of visual mental imagery. Topics include, but are not limited to, neural mechanisms of visual imagery, aphantasia, hyperphantasia, methods of assessing visual imagery, and cognitive processes related to visual imagery.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
     ],
     "domains": [
       "neuroscience",
       "psychology"
-    ],
-    "topics": [
-      "neural mechanisms",
-      "cognitive",
-      "Methods",
-      "cognitive processes",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/abfbcbddfi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1056507982_scaled-8d555fb243fb1b6ae01f9f26f71dc9cb.jpg",
-    "image_alt": "Visual Imagery",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-2ecad74601",
-    "title": "Visual Imagery",
-    "summary": "Editors invite manuscripts that highlight recent developments in the mechanisms, functions and experience of visual mental imagery. Topics include, but are not limited to, neural mechanisms of visual imagery, aphantasia, hyperphantasia, methods of assessing visual imagery, and cognitive processes related to visual imagery.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [
-      "psychology",
-      "neuroscience"
     ],
     "topics": [
       "neural mechanisms",
@@ -25018,31 +23664,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that move beyond locus discovery to provide functional and mechanistic insights into genetic associations, including through fine-mapping, multi-omics integration, single-cell or spatial approaches, and in vitro/in vivo studies.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "multi-omics integration",
-      "multi-omics",
-      "genetics",
-      "Omics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/abfififiec",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2221126594_scaled-114899a616e6a02dcb66c56e6cf48d25.jpg",
-    "image_alt": "Complex Trait Genetics: From Association to Function",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-286a4224d5",
-    "title": "Complex Trait Genetics: From Association to Function",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Biology and Scientific Reports invite manuscripts that move beyond locus discovery to provide functional and mechanistic insights into genetic associations, including through fine-mapping, multi-omics integration, single-cell or spatial approaches, and in vitro/in vivo studies.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -25161,32 +23783,7 @@
     "summary": "This cross-journal Collection highlights engineering advances, promote high-throughput evaluation for translational applications, or enhance biological and clinical relevance of next-generation Microphysiological Systems, such as 3D culture systems, organs-on-chips, and microfluidic platforms.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "clinical translation",
-      "Modeling",
-      "culture"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fgjeddegjc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/MSAM_hero_image-5a907e5382c5d3928c12870f611a74cb.jpg",
-    "image_alt": "Microphysiological systems for advanced modeling, high-throughput evaluation, and clinical translation",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-8d6a57a338",
-    "title": "Microphysiological systems for advanced modeling, high-throughput evaluation, and clinical translation",
-    "summary": "This cross-journal Collection highlights engineering advances, promote high-throughput evaluation for translational applications, or enhance biological and clinical relevance of next-generation Microphysiological Systems, such as 3D culture systems, organs-on-chips, and microfluidic platforms.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -25213,28 +23810,7 @@
     "summary": "With this cross-journal Collection, the editors at Nature Cancer, Nature Communications, Communications Biology and Scientific Reports invite original research Articles that focus on the use of existing or the establishment of novel experimental cancer models to shed light on all aspects of tumour biology.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/edhbcbcigi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2147603496_scaled-f2d238503bba199cf3a0a9741c97edfc.jpg",
-    "image_alt": "Models in Cancer Research",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-e995b5c3bf",
-    "title": "Models in Cancer Research",
-    "summary": "With this cross-journal Collection, the editors at Nature Cancer, Nature Communications, Communications Biology and Scientific Reports invite original research Articles that focus on the use of existing or the establishment of novel experimental cancer models to shed light on all aspects of tumour biology.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -26076,59 +24652,9 @@
     "summary": "This Collection invites research examining the intersection of gender identity and the academic research environment.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "gender",
-      "environment",
-      "Equity",
-      "Identity"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hgecjdejdd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hgecjdejdd-565f8e58a2e4e12b86707b50a5bb9195.jpg",
-    "image_alt": "Gender equity in academia and research",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-e9b7831398",
-    "title": "Gender equity in academia and research",
-    "summary": "This Collection invites research examining the intersection of gender identity and the academic research environment.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [],
-    "topics": [
-      "gender",
-      "environment",
-      "Equity",
-      "Identity"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hgecjdejdd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hgecjdejdd-565f8e58a2e4e12b86707b50a5bb9195.jpg",
-    "image_alt": "Gender equity in academia and research",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-e9b7831398",
-    "title": "Gender equity in academia and research",
-    "summary": "This Collection invites research examining the intersection of gender identity and the academic research environment.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -26242,65 +24768,9 @@
     "summary": "This collection welcomes submissions based on studying preclinical models, as well as population-wide and clinical studies.  Studies that advance our understanding of mechanisms behind healthy aging are also welcomed.  Clinical research of interest will include epidemiological studies, observational studies, longitudinal cohort studies, systematic reviews and clinical trials.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Aging",
-      "reviews",
-      "healthy aging",
-      "Clinical Trials",
-      "mechanisms",
-      "Population"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hijffbgchi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-680668229-web-beb65207f22105d143d4f0a893bceb11.jpg",
-    "image_alt": "Healthy Aging",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-3a425ff2aa",
-    "title": "Healthy Aging",
-    "summary": "This collection welcomes submissions based on studying preclinical models, as well as population-wide and clinical studies.  Studies that advance our understanding of mechanisms behind healthy aging are also welcomed.  Clinical research of interest will include epidemiological studies, observational studies, longitudinal cohort studies, systematic reviews and clinical trials.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Aging",
-      "reviews",
-      "healthy aging",
-      "Clinical Trials",
-      "mechanisms",
-      "Population"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hijffbgchi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-680668229-web-beb65207f22105d143d4f0a893bceb11.jpg",
-    "image_alt": "Healthy Aging",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-3a425ff2aa",
-    "title": "Healthy Aging",
-    "summary": "This collection welcomes submissions based on studying preclinical models, as well as population-wide and clinical studies.  Studies that advance our understanding of mechanisms behind healthy aging are also welcomed.  Clinical research of interest will include epidemiological studies, observational studies, longitudinal cohort studies, systematic reviews and clinical trials.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -26388,31 +24858,7 @@
     "summary": "With this Collection, a partnership between Nature Communications, Communications Medicine, Communications Biology, and Scientific Reports, we welcome submissions of primary research papers that focus on immune cell engineering for cancer therapy. The journals are particularly interested in preclinical studies proposing new engineering strategies and therapeutic developments.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "therapy",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bejcacaeab",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2172898737-web-0e95bf09206c809ce1338e70b62e92db.jpg",
-    "image_alt": "Immune cell engineering for cancer therapy 2026",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-6bdb583456",
-    "title": "Immune cell engineering for cancer therapy 2026",
-    "summary": "With this Collection, a partnership between Nature Communications, Communications Medicine, Communications Biology, and Scientific Reports, we welcome submissions of primary research papers that focus on immune cell engineering for cancer therapy. The journals are particularly interested in preclinical studies proposing new engineering strategies and therapeutic developments.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -26784,76 +25230,14 @@
     "summary": "This cross-journal Collection brings together research at the intersection of neuroscience, artificial intelligence, neuromorphic hardware, and robotics with a focus on how insights from brain function can inspire the design of more adaptive, efficient, and intelligent systems. We welcome submissions that explore neurobiologically-inspired models, architectures, and learning algorithms that have the potential to enhance embodied AI and robotic systems.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "robotics"
-    ],
-    "topics": [
-      "AI",
-      "Neuroscience",
-      "Robotics",
-      "Brain",
-      "Learning",
-      "Embodied Intelligence",
-      "brain function",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gififfbfjc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-944090292-web-d1de3c3d4be44af63b9d368abd9f1f7c.jpg",
-    "image_alt": "NeuroAI and Embodied Intelligence",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-979d590ca1",
-    "title": "NeuroAI and Embodied Intelligence",
-    "summary": "This cross-journal Collection brings together research at the intersection of neuroscience, artificial intelligence, neuromorphic hardware, and robotics with a focus on how insights from brain function can inspire the design of more adaptive, efficient, and intelligent systems. We welcome submissions that explore neurobiologically-inspired models, architectures, and learning algorithms that have the potential to enhance embodied AI and robotic systems.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Scientific Reports",
       "Nature Communications"
     ],
     "domains": [
       "neuroscience",
-      "robotics"
-    ],
-    "topics": [
-      "AI",
-      "Neuroscience",
-      "Robotics",
-      "Brain",
-      "Learning",
-      "Embodied Intelligence",
-      "brain function",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gififfbfjc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-944090292-web-d1de3c3d4be44af63b9d368abd9f1f7c.jpg",
-    "image_alt": "NeuroAI and Embodied Intelligence",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-979d590ca1",
-    "title": "NeuroAI and Embodied Intelligence",
-    "summary": "This cross-journal Collection brings together research at the intersection of neuroscience, artificial intelligence, neuromorphic hardware, and robotics with a focus on how insights from brain function can inspire the design of more adaptive, efficient, and intelligent systems. We welcome submissions that explore neurobiologically-inspired models, architectures, and learning algorithms that have the potential to enhance embodied AI and robotic systems.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [
-      "psychology",
-      "neuroscience",
-      "robotics"
+      "robotics",
+      "psychology"
     ],
     "topics": [
       "AI",
@@ -27211,30 +25595,7 @@
     "summary": "This Collection invites submissions of direct replication and generalization studies of primary research papers in psychology.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ebeibhiihc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/A120830_Comms_Psych_magnifying_glass_1331046491_1200x675px-fe1a31710e2a0235b5c2479d38dfb1b5.jpg",
-    "image_alt": "Replication and generalization",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-47a6fdabd9",
-    "title": "Replication and generalization",
-    "summary": "This Collection invites submissions of direct replication and generalization studies of primary research papers in psychology.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
       "Nature Communications"
     ],
     "domains": [
@@ -27683,28 +26044,7 @@
     "summary": "With this cross-journal Collection, we invite submissions of articles that use modern approaches to advance the understanding in species redistributions under global climate change.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Climate Change"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cafjaahgaf",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1503370940_scaled-0849a1510a74ff14880cd98ebeb339fb.jpg",
-    "image_alt": "Understanding species redistributions under global climate change",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c4289bce75",
-    "title": "Understanding species redistributions under global climate change",
-    "summary": "With this cross-journal Collection, we invite submissions of articles that use modern approaches to advance the understanding in species redistributions under global climate change.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -29463,28 +27803,7 @@
     "summary": "This cross-journal Collection aims to bring together the latest and most compelling demonstration of generative models used for engineering biology, covering a range of fields where the resulting achievement is an engineered biological system.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Generative models"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-01-13",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fbfgdafgji",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/hero_image_GMEB-8a95bae44a6c83dbecc93606ea988b46.jpg",
-    "image_alt": "Generative Models in Engineering Biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-711093845e",
-    "title": "Generative Models in Engineering Biology",
-    "summary": "This cross-journal Collection aims to bring together the latest and most compelling demonstration of generative models used for engineering biology, covering a range of fields where the resulting achievement is an engineered biological system.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -31311,7 +29630,8 @@
     "summary": "In this cross-journal Collection, the editors at Nature Neuroscience, Nature Immunology, Nature Communications and Communications Medicine aim to bring together cutting-edge research exploring the mechanistic and diagnostic intersections between immune dysregulation and neuronal decline.",
     "journal": "Nature Communications",
     "journals": [
-      "Nature Communications"
+      "Nature Communications",
+      "Nature Neuroscience"
     ],
     "domains": [
       "neuroscience"
@@ -32195,30 +30515,7 @@
     "summary": "Editors invite manuscripts that advance the scientific understanding of coral stress responses and climate resilience across molecular, physiological, ecological, and restoration focused dimensions.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "resilience",
-      "stress",
-      "Restoration"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-01-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bjjgjegbhg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1316591654_scaled-4dd8a0299e1d602647ed184fa6f53b02.jpg",
-    "image_alt": "Coral Biology Under Climate Stress",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-6a952dc2f7",
-    "title": "Coral Biology Under Climate Stress",
-    "summary": "Editors invite manuscripts that advance the scientific understanding of coral stress responses and climate resilience across molecular, physiological, ecological, and restoration focused dimensions.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -32289,32 +30586,7 @@
     "summary": "We welcome contributions across a broad range of topics, including microbial and faunal functional traits, biogeochemical processes, soil–plant interactions, ecosystem services, methodological developments, and applications that support sustainable land management.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Ecosystem Services",
-      "Ecology",
-      "management",
-      "functional traits",
-      "Soil"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-01-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hbhaegbjgi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2235272349_scaled-b367692c3ad9c54f124c40e6555837b2.jpg",
-    "image_alt": "Functional Soil Ecology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-1c3972fb51",
-    "title": "Functional Soil Ecology",
-    "summary": "We welcome contributions across a broad range of topics, including microbial and faunal functional traits, biogeochemical processes, soil–plant interactions, ecosystem services, methodological developments, and applications that support sustainable land management.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -32341,29 +30613,7 @@
     "summary": "We are interested in methodological studies, including both computational and experimental approaches for designing new peptide therapeutics. We also welcome research presenting experimentally validated design of novel peptides.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Computational",
-      "therapeutics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-01-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/iaafbfhcch",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2172899437_scaled-371657004ee02fb70ddd56a612974d71.jpg",
-    "image_alt": "Peptide drug design",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-512bf69e44",
-    "title": "Peptide drug design",
-    "summary": "We are interested in methodological studies, including both computational and experimental approaches for designing new peptide therapeutics. We also welcome research presenting experimentally validated design of novel peptides.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -32828,38 +31078,8 @@
     "summary": "With this collection, Nature Communications, Nature, Nature Cancer, Nature Neuroscience, Nature Progress Oncology, Nature Progress Brain Health, and Communications Biology invite submissions that aim to elucidate the molecular mechanisms underlying bidirectional cancer–nervous system interactions and their influence on the tumour microenvironment, as well as pre-clinical and clinical studies exploring potential therapeutic strategies to target neural–cancer interactions.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Neuroscience",
-      "Brain",
-      "Brain Health",
-      "molecular mechanisms",
-      "therapy",
-      "Therapeutic strategies",
-      "oncology",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-01-30",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jhhachcead",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2194021539-web-d8d2b62640934bbdbba5e953a79d26c9.jpg",
-    "image_alt": "Cancer Neuroscience: from mechanisms to therapy",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-aefbff7a8d",
-    "title": "Cancer Neuroscience: from mechanisms to therapy",
-    "summary": "With this collection, Nature Communications, Nature, Nature Cancer, Nature Neuroscience, Nature Progress Oncology, Nature Progress Brain Health, and Communications Biology invite submissions that aim to elucidate the molecular mechanisms underlying bidirectional cancer–nervous system interactions and their influence on the tumour microenvironment, as well as pre-clinical and clinical studies exploring potential therapeutic strategies to target neural–cancer interactions.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -34022,32 +32242,8 @@
     "summary": "This cross-journal collection invites submissions that investigate human brain changes across all or multiple stages of life, from in-utero to older age.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Brain",
-      "Human",
-      "lifespan"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/efhdahehdi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Scaled-df82ebb2204cf5f2d227554d5415ab5f.jpg",
-    "image_alt": "Lifespan changes in the human brain",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-a66321e3ea",
-    "title": "Lifespan changes in the human brain",
-    "summary": "This cross-journal collection invites submissions that investigate human brain changes across all or multiple stages of life, from in-utero to older age.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -35752,34 +33948,7 @@
     "summary": "This collection welcomes original pre-clinical and clinical studies on CNS injuries, focusing on diverse aspects in pathophysiology, diagnosis, treatment and rehabilitation strategies.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "diagnosis",
-      "Rehabilitation",
-      "treatment",
-      "Central nervous system",
-      "CNS"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-14",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/eiiheafiib",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-122374835-web-1058779c101d061853fcc5ab0b6bfcb9.jpg",
-    "image_alt": "Advances in Central Nervous System Injuries",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-22b9ae19d2",
-    "title": "Advances in Central Nervous System Injuries",
-    "summary": "This collection welcomes original pre-clinical and clinical studies on CNS injuries, focusing on diverse aspects in pathophysiology, diagnosis, treatment and rehabilitation strategies.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -36599,61 +34768,9 @@
     "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address psychological aspects of social group dynamics.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "psychology",
-      "behaviour",
-      "social"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-18",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hcgafgbeej",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1225740096_scaled-ed4f47ad9357cdfece359e04b908aa2d.jpg",
-    "image_alt": "Social Group Dynamics",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c55abdb7df",
-    "title": "Social Group Dynamics",
-    "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address psychological aspects of social group dynamics.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "psychology",
-      "behaviour",
-      "social"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-18",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hcgafgbeej",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1225740096_scaled-ed4f47ad9357cdfece359e04b908aa2d.jpg",
-    "image_alt": "Social Group Dynamics",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-c55abdb7df",
-    "title": "Social Group Dynamics",
-    "summary": "The Editors at Communications Psychology, Nature Human Behaviour, Nature Communications and Scientific Reports invite submissions that address psychological aspects of social group dynamics.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -36762,29 +34879,7 @@
     "summary": "Cutting-edge experimental models and computational approaches revolutionizing our understanding of metabolic disease mechanisms, from molecular to whole-organism scales.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Computational",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-19",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/eegdjhahei",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/HeroImage_NMMRSCCS_1200x675-1e35c0a7b8f7d58597075232e946c41a.jpg",
-    "image_alt": "Next-generation models for metabolic research: from single cell to complex systems",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-d98fa4a39f",
-    "title": "Next-generation models for metabolic research: from single cell to complex systems",
-    "summary": "Cutting-edge experimental models and computational approaches revolutionizing our understanding of metabolic disease mechanisms, from molecular to whole-organism scales.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -37229,31 +35324,7 @@
     "summary": "We are interested in studies exploring core cellular and developmental aspects such as oocyte biology and ovarian ageing, embryo implantation, and embryo-maternal communication, as well as uterine and placental biology in full-term and complicated pregnancies, including preeclampsia and preterm birth risk.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "communication",
-      "Risk"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-22",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hdjhcddajb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1750621879_scaled-ac14f0822f505dcea41e816caa8bdfa2.jpg",
-    "image_alt": "Advances in Women’s Reproductive Biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-426ab74a53",
-    "title": "Advances in Women’s Reproductive Biology",
-    "summary": "We are interested in studies exploring core cellular and developmental aspects such as oocyte biology and ovarian ageing, embryo implantation, and embryo-maternal communication, as well as uterine and placental biology in full-term and complicated pregnancies, including preeclampsia and preterm birth risk.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -37376,29 +35447,7 @@
     "summary": "Advances in lipid detection methods and techniques to probe lipid functions continues to uncover roles beyond containment, from organelle morphology, metabolic signaling, cell death, and energy metabolism. This collection invites submissions from all disciplines with insights into lipid function, regulation or detection.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "metabolism",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-22",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jigabagdjg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1498379299_scaled-c47bb26eb1ff6a0e2c46260e52010dc8.jpg",
-    "image_alt": "Lipids in Cell Biology 2026",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-bdb76b9d2d",
-    "title": "Lipids in Cell Biology 2026",
-    "summary": "Advances in lipid detection methods and techniques to probe lipid functions continues to uncover roles beyond containment, from organelle morphology, metabolic signaling, cell death, and energy metabolism. This collection invites submissions from all disciplines with insights into lipid function, regulation or detection.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -37639,34 +35688,7 @@
     "summary": "This Collection welcomes submissions aimed at advancing our understanding of the mechanisms underlying cerebrovascular dysfunction and its contribution to neurodegeneration. We welcome preclinical studies, as well as clinical studies investigating the pathophysiology, diagnosis and treatment of cerebrovascular dysfunction in neurodegenerative disease.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Neurodegeneration",
-      "diagnosis",
-      "treatment",
-      "mechanisms",
-      "Neurodegenerative"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-25",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fbjdcbfaga",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2240399057-web-22ce134d95e259e648abb87964e83659.jpg",
-    "image_alt": "Cerebrovascular contributions to neurodegeneration",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-17682d37a3",
-    "title": "Cerebrovascular contributions to neurodegeneration",
-    "summary": "This Collection welcomes submissions aimed at advancing our understanding of the mechanisms underlying cerebrovascular dysfunction and its contribution to neurodegeneration. We welcome preclinical studies, as well as clinical studies investigating the pathophysiology, diagnosis and treatment of cerebrovascular dysfunction in neurodegenerative disease.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -37695,28 +35717,7 @@
     "summary": "This joint Collection between Nature Communications Communications Biology, and Communications Chemistry welcomes submissions of primary research in structural biology that link protein dynamics to function, structure and evolution.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "evolution"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-25",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bhjjedadcb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/scale-f89c36c712eaa24c7c257fb2a7e78b49.jpg",
-    "image_alt": "Protein Dynamics Informing Structure, Function, and Evolution",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-4338e82d4b",
-    "title": "Protein Dynamics Informing Structure, Function, and Evolution",
-    "summary": "This joint Collection between Nature Communications Communications Biology, and Communications Chemistry welcomes submissions of primary research in structural biology that link protein dynamics to function, structure and evolution.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -37825,26 +35826,7 @@
     "summary": "This cross-journal Collection with Communications Biology, Communications Medicine, Nature Communications and Scientific Reports invites submissions focusing on structural variants (SVs) in organismal biology and disease.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2027-02-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/djjhfigfge",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/New_hero_image_scaled-14889a2af295f60a173a0ea3ec1c37dc.jpg",
-    "image_alt": "Structural genetic variants, from detection to phenotype",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-0d2e391aef",
-    "title": "Structural genetic variants, from detection to phenotype",
-    "summary": "This cross-journal Collection with Communications Biology, Communications Medicine, Nature Communications and Scientific Reports invites submissions focusing on structural variants (SVs) in organismal biology and disease.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -38490,30 +36472,7 @@
     "summary": "This collection invites submissions that leverage ancient or modern genetic data to understand human population shifts or health. Topics of interest include, but are not limited to, genetic or genomic approaches to the study of:",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Human",
-      "data",
-      "Population"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bidgeabjaa",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1060592194_scaled-b03511f3983aeed94fb92aad5bc79ecc.jpg",
-    "image_alt": "Human Admixture and Migration",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c162956e70",
-    "title": "Human Admixture and Migration",
-    "summary": "This collection invites submissions that leverage ancient or modern genetic data to understand human population shifts or health. Topics of interest include, but are not limited to, genetic or genomic approaches to the study of:",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -38855,63 +36814,9 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite manuscripts that highlight neural models of consciousness. Topics include, but are not limited to, neural correlates of consciousness, theories of consciousness, meditation, and conscious awareness.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "consciousness",
-      "psychology",
-      "awareness",
-      "neural correlates"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jhdgeeddbh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1344584722_scaled-ef31c30edc623d6c6e0367bf1df3afc1.jpg",
-    "image_alt": "Neural Models of Consciousness",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-05597924f2",
-    "title": "Neural Models of Consciousness",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite manuscripts that highlight neural models of consciousness. Topics include, but are not limited to, neural correlates of consciousness, theories of consciousness, meditation, and conscious awareness.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "consciousness",
-      "psychology",
-      "awareness",
-      "neural correlates"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-02-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jhdgeeddbh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1344584722_scaled-ef31c30edc623d6c6e0367bf1df3afc1.jpg",
-    "image_alt": "Neural Models of Consciousness",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-05597924f2",
-    "title": "Neural Models of Consciousness",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite manuscripts that highlight neural models of consciousness. Topics include, but are not limited to, neural correlates of consciousness, theories of consciousness, meditation, and conscious awareness.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "neuroscience",
@@ -39278,36 +37183,8 @@
     "summary": "This cross-journal Collection welcomes submissions on novel cortical-subcortical circuit mechanisms regulating sensory processing, perception and cognition.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "cognition",
-      "Perception",
-      "Brain",
-      "Sensory",
-      "mechanisms",
-      "Sensory processing"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gjcdjfeafb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1197834332_scaled-860ee8d789875112f5d5c00dee1e410a.jpg",
-    "image_alt": "Cortical-subcortical brain loops",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-7da0bfaa1f",
-    "title": "Cortical-subcortical brain loops",
-    "summary": "This cross-journal Collection welcomes submissions on novel cortical-subcortical circuit mechanisms regulating sensory processing, perception and cognition.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -39528,31 +37405,7 @@
     "summary": "The objective of this collection is to provide a comprehensive overview of the latest research on the molecular mechanisms, regulatory networks and roles of proteolysis in plants under both physiological and stress conditions.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "stress",
-      "molecular mechanisms",
-      "plants",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fdjfdcebad",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1067761172_scaled-90eb4a5d72edac504e3c6e5699e23ab4.jpg",
-    "image_alt": "Proteolysis in Plants",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-58d24fa9b3",
-    "title": "Proteolysis in Plants",
-    "summary": "The objective of this collection is to provide a comprehensive overview of the latest research on the molecular mechanisms, regulatory networks and roles of proteolysis in plants under both physiological and stress conditions.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -40737,29 +38590,7 @@
     "summary": "Editors invite submissions of primary research Articles aiming to understand the mechanisms how macrophages respond to injury signals, signal to progenitors, and promote a pro-regenerative microenvironment in model organisms that exhibit remarkable regenerative capacity and scar-free wound healing.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "mechanisms",
-      "regeneration"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-10",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fhajgaihbd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2261199233_scaled-6f7338cb74fdff8e70775cada081d38a.jpg",
-    "image_alt": "Macrophages in scar-free repair and regeneration",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-b7ce4f611a",
-    "title": "Macrophages in scar-free repair and regeneration",
-    "summary": "Editors invite submissions of primary research Articles aiming to understand the mechanisms how macrophages respond to injury signals, signal to progenitors, and promote a pro-regenerative microenvironment in model organisms that exhibit remarkable regenerative capacity and scar-free wound healing.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -42185,37 +40016,13 @@
     "summary": "Editors welcome original research Articles, Reviews, and Perspectives that advance our understanding of the mechanisms underlying the onset and progression of neurodevelopmental disorders, in humans and animal models, bridging genetic, molecular, cellular, circuit, and systems-level investigations.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Neurodevelopmental Disorders",
-      "reviews",
-      "animal models",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-22",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fficgidaja",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2198171081_scaled-3243ea8a30234264eef167b4560022a7.jpg",
-    "image_alt": "Advances in neurodevelopmental disorders",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-16bf5ee8c9",
-    "title": "Advances in neurodevelopmental disorders",
-    "summary": "Editors welcome original research Articles, Reviews, and Perspectives that advance our understanding of the mechanisms underlying the onset and progression of neurodevelopmental disorders, in humans and animal models, bridging genetic, molecular, cellular, circuit, and systems-level investigations.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
-      "psychology"
+      "psychology",
+      "neuroscience"
     ],
     "topics": [
       "Neurodevelopmental Disorders",
@@ -42306,61 +40113,14 @@
     "summary": "In this Collection, we welcome papers investigating how psychedelic compounds affect the brain across multiple levels of organization: from molecular and cellular processes to systems level dynamics, whole brain network reconfigurations and anatomical changes.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
+      "Communications Psychology",
+      "Nature Neuroscience",
+      "Nature Communications",
+      "Communications Biology"
     ],
     "domains": [
       "neuroscience",
       "psychology"
-    ],
-    "topics": [
-      "Brain",
-      "psychedelics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-23",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jbfbajaebc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1088117652_scaled-492d7ad66764468b9fe48c8db5f67cdd.jpg",
-    "image_alt": "Effects of Psychedelics on the Brain",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-commsbio-34fefb82b0",
-    "title": "Effects of Psychedelics on the Brain",
-    "summary": "In this Collection, we welcome papers investigating how psychedelic compounds affect the brain across multiple levels of organization: from molecular and cellular processes to systems level dynamics, whole brain network reconfigurations and anatomical changes.",
-    "journal": "Communications Biology",
-    "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Brain",
-      "psychedelics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-23",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jbfbajaebc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1088117652_scaled-492d7ad66764468b9fe48c8db5f67cdd.jpg",
-    "image_alt": "Effects of Psychedelics on the Brain",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-34fefb82b0",
-    "title": "Effects of Psychedelics on the Brain",
-    "summary": "In this Collection, we welcome papers investigating how psychedelic compounds affect the brain across multiple levels of organization: from molecular and cellular processes to systems level dynamics, whole brain network reconfigurations and anatomical changes.",
-    "journal": "Nature Communications",
-    "journals": [
-      "Nature Communications"
-    ],
-    "domains": [
-      "neuroscience"
     ],
     "topics": [
       "Brain",
@@ -42428,28 +40188,7 @@
     "summary": "We invite submissions which provide novel insights into the biochemistry, ecology and organismic potential underlying microbial degradation of plastic.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "Ecology"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-24",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jdjddecagj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1480950413_scaled-ebea770a88593b00f8a2b6ca6ba288e1.jpg",
-    "image_alt": "Microbial Plastic Degradation",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c25767b891",
-    "title": "Microbial Plastic Degradation",
-    "summary": "We invite submissions which provide novel insights into the biochemistry, ecology and organismic potential underlying microbial degradation of plastic.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -42590,59 +40329,9 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite submissions from across disciplines, particularly studies that move beyond self-report questionnaires and cross-sectional surveys by using longitudinal, experimental, behavioural, clinical, ecological, computational, digital-trace and mixed-methods approaches.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology",
-      "Computational",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cabcfibehd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-670884671_scaled-1af8fd6e253c1a73a58b1c36b2d33850.jpg",
-    "image_alt": "Problematic Internet Use",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-58e7f976ed",
-    "title": "Problematic Internet Use",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite submissions from across disciplines, particularly studies that move beyond self-report questionnaires and cross-sectional surveys by using longitudinal, experimental, behavioural, clinical, ecological, computational, digital-trace and mixed-methods approaches.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology",
-      "Computational",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-03-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cabcfibehd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-670884671_scaled-1af8fd6e253c1a73a58b1c36b2d33850.jpg",
-    "image_alt": "Problematic Internet Use",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-58e7f976ed",
-    "title": "Problematic Internet Use",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology and Scientific Reports invite submissions from across disciplines, particularly studies that move beyond self-report questionnaires and cross-sectional surveys by using longitudinal, experimental, behavioural, clinical, ecological, computational, digital-trace and mixed-methods approaches.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -43569,59 +41258,9 @@
     "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology, and Scientific Reports invite manuscripts that highlight human behaviour across different nations and cultures. We are especially interested in work including underrepresented samples.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "psychology",
-      "behaviour"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hijbjcajec",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-482789089-web-035d83624c191af577e2709ce2473c80.jpg",
-    "image_alt": "Human Behaviour Across the Globe",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-6459372647",
-    "title": "Human Behaviour Across the Globe",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology, and Scientific Reports invite manuscripts that highlight human behaviour across different nations and cultures. We are especially interested in work including underrepresented samples.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "psychology",
-      "behaviour"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hijbjcajec",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-482789089-web-035d83624c191af577e2709ce2473c80.jpg",
-    "image_alt": "Human Behaviour Across the Globe",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-6459372647",
-    "title": "Human Behaviour Across the Globe",
-    "summary": "With this cross-journal Collection, the editors at Nature Communications, Communications Psychology, and Scientific Reports invite manuscripts that highlight human behaviour across different nations and cultures. We are especially interested in work including underrepresented samples.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -43700,30 +41339,7 @@
     "summary": "Editors invite submissions that elucidate the mechanisms and general patterns of ecological resistance and resilience across scales and disturbance regimes.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "resilience",
-      "Global change",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-07",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/affhjabfgd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-975897968_scaled-a49e906790b85611651a5454c6a6d8aa.jpg",
-    "image_alt": "Ecological resistance and resilience under global change",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-9c6b177129",
-    "title": "Ecological resistance and resilience under global change",
-    "summary": "Editors invite submissions that elucidate the mechanisms and general patterns of ecological resistance and resilience across scales and disturbance regimes.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -43946,32 +41562,8 @@
     "summary": "With this Collection, editors invite primary, translational, and clinical research submissions focusing on women’s brain health.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Brain",
-      "Brain Health"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-15",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/aedhdjiefh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Untitled_design_scaled-3f057fe3fbfcf3f0c35b8febae4b06e3.jpg",
-    "image_alt": "Women’s brain health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-d26c9df3bc",
-    "title": "Women’s brain health",
-    "summary": "With this Collection, editors invite primary, translational, and clinical research submissions focusing on women’s brain health.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -44022,26 +41614,7 @@
     "summary": "Editors invite submissions of primary research papers that brings novel insight into the role of macrophages in cancer.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2027-04-17",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/icgejifgbh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2179695226_scaled-1735d511b8260309175077e78d13adbf.jpg",
-    "image_alt": "Macrophages in Cancer",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-555b2dbe5c",
-    "title": "Macrophages in Cancer",
-    "summary": "Editors invite submissions of primary research papers that brings novel insight into the role of macrophages in cancer.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -44102,28 +41675,7 @@
     "summary": "The collection covers, but is not limited to, how microorganisms, by colonizing plastics, may influence ecosystems, nutrient cycling and biodegradation processes.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "environment"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-20",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cdhifcdchd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1365814979_scaled-40d6784786136414d667c7fa603ee4ef.jpg",
-    "image_alt": "Plastisphere: plastic-microbial interactions in the environment",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-bc80e614d9",
-    "title": "Plastisphere: plastic-microbial interactions in the environment",
-    "summary": "The collection covers, but is not limited to, how microorganisms, by colonizing plastics, may influence ecosystems, nutrient cycling and biodegradation processes.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -44474,29 +42026,7 @@
     "summary": "Editors invite submissions of original primary research articles that focus on identifying cellular communication networks, pathways and molecular mediators that contribute to stromal-immune cell interactions and regulation.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "communication",
-      "focus"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-04-29",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bhigiddabg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2152062720_scaled-19d5c0863ef08c092f8f8b5500855d82.jpg",
-    "image_alt": "Stromal Immunology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-e5cb992a9a",
-    "title": "Stromal Immunology",
-    "summary": "Editors invite submissions of original primary research articles that focus on identifying cellular communication networks, pathways and molecular mediators that contribute to stromal-immune cell interactions and regulation.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -45224,29 +42754,7 @@
     "summary": "In this collection, we highlight latest advances in understanding how key metabolic pathways regulate cancer–immune interactions and shape the balance between immunosuppression and immune activation.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "balance",
-      "immunometabolism"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-14",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fijcjdbhea",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1124674518_scaled-38f55745ccd5e730d7078d31e86beef4.jpg",
-    "image_alt": "Cancer Immunometabolism",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-86678a8805",
-    "title": "Cancer Immunometabolism",
-    "summary": "In this collection, we highlight latest advances in understanding how key metabolic pathways regulate cancer–immune interactions and shape the balance between immunosuppression and immune activation.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -45376,36 +42884,8 @@
     "summary": "In this collection we invite original research, reviews and perspectives that advance our understanding of the mechanisms and determinants of cognitive resilience in the aging brain.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Aging",
-      "resilience",
-      "Brain",
-      "reviews",
-      "cognitive",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-18",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/aabfdcdgce",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2225154152_scaled-f9bb51bd32fa899fdc45b26762867077.jpg",
-    "image_alt": "Cognitive Resilience in Aging",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-eddf1ae227",
-    "title": "Cognitive Resilience in Aging",
-    "summary": "In this collection we invite original research, reviews and perspectives that advance our understanding of the mechanisms and determinants of cognitive resilience in the aging brain.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
+      "Nature Neuroscience",
       "Nature Communications"
     ],
     "domains": [
@@ -45436,32 +42916,7 @@
     "summary": "This collection will explore how structural organization and biophysical mechanisms govern cancer cell growth, survival, adaptation, and progression.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "behaviour",
-      "adaptation",
-      "mechanisms"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-19",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/cjgeaefdib",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2260569347_scaled-2a08eac3b8991c7dc2e4d7c914566346.jpg",
-    "image_alt": "Biophysical and Structural Principles of Cancer Cell Behaviour",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-0486e4cde8",
-    "title": "Biophysical and Structural Principles of Cancer Cell Behaviour",
-    "summary": "This collection will explore how structural organization and biophysical mechanisms govern cancer cell growth, survival, adaptation, and progression.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
@@ -45544,59 +42999,9 @@
     "summary": "With this cross-journal Collection, the editors invite manuscripts that utilize mixed methods (i.e., the use of both qualitative and quantitative methods) to address questions of psychological interest as well as methods papers on the development and use of mixed methods.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology",
-      "development",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-20",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/agfehgddca",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1458838562-2e6fb40e6530274010fea947b1282d3f.jpg",
-    "image_alt": "Mixed Methods in Psychology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-c1909abfa7",
-    "title": "Mixed Methods in Psychology",
-    "summary": "With this cross-journal Collection, the editors invite manuscripts that utilize mixed methods (i.e., the use of both qualitative and quantitative methods) to address questions of psychological interest as well as methods papers on the development and use of mixed methods.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "psychology",
-      "development",
-      "Methods"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-20",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/agfehgddca",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1458838562-2e6fb40e6530274010fea947b1282d3f.jpg",
-    "image_alt": "Mixed Methods in Psychology",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-c1909abfa7",
-    "title": "Mixed Methods in Psychology",
-    "summary": "With this cross-journal Collection, the editors invite manuscripts that utilize mixed methods (i.e., the use of both qualitative and quantitative methods) to address questions of psychological interest as well as methods papers on the development and use of mixed methods.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -45771,29 +43176,7 @@
     "summary": "This joint Collection between Nature Communications and Communications Biology welcomes submissions of primary research, reviews/ perspectives that use/discuss structural, biochemical, and biophysical approaches to uncover the molecular basis of fertility and reproduction.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [],
-    "topics": [
-      "reviews",
-      "Reproduction"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-25",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dbhejcchgb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-74074596_scaled-afbc3cfdb16821130bc2439c94d63fd4.jpg",
-    "image_alt": "Form, force, and fertility",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-22d101be3c",
-    "title": "Form, force, and fertility",
-    "summary": "This joint Collection between Nature Communications and Communications Biology welcomes submissions of primary research, reviews/ perspectives that use/discuss structural, biochemical, and biophysical approaches to uncover the molecular basis of fertility and reproduction.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [],
@@ -45845,69 +43228,9 @@
     "summary": "With this cross-journal Collection, the Editors at Nature Communications, Nature Human Behavior, Nature Mental Health, Communications Psychology, and Scientific Reports invite submissions on the topic of Computational Psychiatry. This Collection aims to bring together research that leverages computational methods to advance our understanding of psychiatric symptoms in humans.",
     "journal": "Communications Psychology",
     "journals": [
-      "Communications Psychology"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "behavior",
-      "Human",
-      "psychology",
-      "Computational",
-      "Psychiatric disorders",
-      "Methods",
-      "Psychiatry"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bihaajhbdc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2268973063-web-9e50db18da6148e3f9c8cc77148e5dce.jpg",
-    "image_alt": "Computational approaches to Psychiatric Disorders",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-406ea6612e",
-    "title": "Computational approaches to Psychiatric Disorders",
-    "summary": "With this cross-journal Collection, the Editors at Nature Communications, Nature Human Behavior, Nature Mental Health, Communications Psychology, and Scientific Reports invite submissions on the topic of Computational Psychiatry. This Collection aims to bring together research that leverages computational methods to advance our understanding of psychiatric symptoms in humans.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Psychology",
+      "Scientific Reports",
       "Nature Communications"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "behavior",
-      "Human",
-      "psychology",
-      "Computational",
-      "Psychiatric disorders",
-      "Methods",
-      "Psychiatry"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bihaajhbdc",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2268973063-web-9e50db18da6148e3f9c8cc77148e5dce.jpg",
-    "image_alt": "Computational approaches to Psychiatric Disorders",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-406ea6612e",
-    "title": "Computational approaches to Psychiatric Disorders",
-    "summary": "With this cross-journal Collection, the Editors at Nature Communications, Nature Human Behavior, Nature Mental Health, Communications Psychology, and Scientific Reports invite submissions on the topic of Computational Psychiatry. This Collection aims to bring together research that leverages computational methods to advance our understanding of psychiatric symptoms in humans.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
     ],
     "domains": [
       "psychology"
@@ -45981,31 +43304,7 @@
     "summary": "This cross-journal collection invites submissions addressing cerebrovascular biology and disorders. We particularly encourage multidisciplinary research on the blood–brain barrier, cerebral perfusion, meningeal lymphatics and perivascular clearance, vascular ageing and inflammation, as well as bidirectional interactions between the cerebral vasculature and cardiac, immune and metabolic systems.",
     "journal": "Communications Biology",
     "journals": [
-      "Communications Biology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Brain",
-      "inflammation"
-    ],
-    "collection_type": "collection",
-    "deadline": "2027-05-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ffjigbffbb",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2216289884-web-9aa63d532641c52aa649d225fbf9112a.jpg",
-    "image_alt": "Cerebrovascular health",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-ncomms-62e0e01538",
-    "title": "Cerebrovascular health",
-    "summary": "This cross-journal collection invites submissions addressing cerebrovascular biology and disorders. We particularly encourage multidisciplinary research on the blood–brain barrier, cerebral perfusion, meningeal lymphatics and perivascular clearance, vascular ageing and inflammation, as well as bidirectional interactions between the cerebral vasculature and cardiac, immune and metabolic systems.",
-    "journal": "Nature Communications",
-    "journals": [
+      "Communications Biology",
       "Nature Communications"
     ],
     "domains": [
