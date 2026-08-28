@@ -43,6 +43,34 @@ def test_nature_fixture() -> None:
     assert all(row.status == "open" for row in kept)
 
 
+def test_nature_pagination_truncated_keeps_records(monkeypatch) -> None:
+    from radar.collectors.nature import NatureCollector
+
+    monkeypatch.setattr("radar.collectors.nature.time.sleep", lambda _seconds: None)
+    html = (repo_root() / "tests/fixtures/nature_psychology.html").read_text(encoding="utf-8")
+    html = html.replace(
+        '<span class="c-pagination__link c-pagination__link--disabled">Next</span>',
+        '<a class="c-pagination__link" href="/srep/calls-for-papers?page=2">Next</a>',
+    )
+    source = _source("nature-psychology", publisher="Nature Portfolio", journal="Scientific Reports")
+    source["url"] = "https://www.nature.com/srep/calls-for-papers"
+    source["max_pages"] = 1
+
+    class _Fetcher:
+        def get_html(self, url):
+            assert url == source["url"]
+            return 200, html
+
+    result = NatureCollector().collect(_Fetcher(), source)
+    assert result.ok is False
+    assert result.error == "pagination truncated"
+    assert result.page_count == 1
+    assert result.parsed_count == 3
+    titles = {row.title for row in result.records}
+    assert any("Human-machine" in title for title in titles)
+    assert len(result.records) == 3
+
+
 def test_frontiers_fixture() -> None:
     html = (repo_root() / "tests/fixtures/frontiers_psychology.html").read_text(encoding="utf-8")
     parsed = parse_listing(html, _source("frontiers-psychology", publisher="Frontiers", journal="Frontiers in Psychology"))

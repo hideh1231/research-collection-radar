@@ -10,7 +10,7 @@ sources:
     journal: Scientific Reports
     collection_type: collection
     url: "https://www.nature.com/srep/calls-for-papers"
-    max_pages: 40
+    max_pages: 80
     allowed_hosts:
       - www.nature.com
       - nature.com

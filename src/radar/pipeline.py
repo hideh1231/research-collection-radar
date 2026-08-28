@@ -558,6 +558,10 @@ def run(
         commit_if_actions(root, summary)
     nature = source_status["sources"].get("nature-psychology", {})
     if nature.get("enabled") and not nature.get("ok", True) and not offline:
+        log(
+            f"nature-psychology failed: error={nature.get('error')} "
+            f"pages={nature.get('pages')} parsed={nature.get('parsed')}"
+        )
         return 1
     return 0
 
