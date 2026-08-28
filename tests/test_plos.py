@@ -1,6 +1,8 @@
 import json
+from datetime import date
 
-from radar.collectors.plos import PlosCollector, parse_cfp_item
+from radar.collectors.plos import PlosCollector, parse_calendar_deadline, parse_cfp_item
+from radar.config import repo_root
 from radar.models import SourceResult
 
 
@@ -38,8 +40,6 @@ class _JsonFetcher:
 
 
 def test_parse_cfp_item_uses_api_fields() -> None:
-    from datetime import date
-
     record = parse_cfp_item(_item(41), SOURCE, today=date(2026, 8, 27))
     assert record is not None
     assert record.title == "Global Mental Health Topic 41"
@@ -52,8 +52,6 @@ def test_parse_cfp_item_uses_api_fields() -> None:
 
 
 def test_parse_cfp_item_uses_content_when_excerpt_is_truncated() -> None:
-    from datetime import date
-
     item = _item(42, deadline=None)
     item["excerpt"] = {"rendered": "<p>A truncated teaser about climate&hellip;</p>"}
     item["content"] = {"rendered": "<p>PLOS Climate full call text for researchers in the Global South.</p>"}
@@ -71,8 +69,6 @@ def test_parse_cfp_item_uses_content_when_excerpt_is_truncated() -> None:
 
 
 def test_parse_cfp_item_keeps_excerpt_when_content_is_navigation() -> None:
-    from datetime import date
-
     item = _item(43, deadline=None)
     item["excerpt"] = {
         "rendered": "<p>PLOS Medicine is calling submissions of research on health systems&hellip;</p>"
@@ -85,6 +81,45 @@ def test_parse_cfp_item_keeps_excerpt_when_content_is_navigation() -> None:
     assert record.journal == "PLOS Medicine"
     assert "calling submissions" not in record.journal.lower()
     assert record.summary and record.summary.startswith("PLOS Medicine is calling submissions")
+
+
+def test_parse_calendar_deadline_reads_month_day_year_widget() -> None:
+    html = (repo_root() / "tests/fixtures/plos_calendar_cfp.html").read_text(encoding="utf-8")
+    assert parse_calendar_deadline(html) == date(2020, 12, 21)
+
+
+def test_parse_cfp_item_uses_calendar_widget_and_closes_past_calls() -> None:
+    html = (repo_root() / "tests/fixtures/plos_calendar_cfp.html").read_text(encoding="utf-8")
+    item = _item(151, deadline=None)
+    item["slug"] = "cognitive-psychology"
+    item["link"] = "https://collections.plos.org/call-for-papers/cognitive-psychology/"
+    item["title"] = {"rendered": "Cognitive Psychology Call for Papers"}
+    item["excerpt"] = {
+        "rendered": "<p>Transparency in reporting and methodological rigor have received increased interest&hellip;</p>"
+    }
+    item["content"] = {"rendered": html + "<p>PLOS ONE</p>"}
+    record = parse_cfp_item(item, SOURCE, today=date(2026, 8, 27))
+    assert record is not None
+    assert record.deadline == date(2020, 12, 21)
+    assert record.status == "closed"
+    assert record.journal == "PLOS ONE"
+
+
+def test_parse_cfp_item_prefers_calendar_widget_over_body_text() -> None:
+    html = (
+        '<div class="calendar-date calendar-date--right">'
+        '<span class="calendar-date__month">Jan</span>'
+        '<span class="calendar-date__day">31</span>'
+        '<span class="calendar-date__year">2023</span>'
+        "</div>"
+        "<p>PLOS Sustainability and Transformation. Submission deadline, January 30, 2023.</p>"
+    )
+    item = _item(99, deadline=None)
+    item["content"] = {"rendered": html}
+    record = parse_cfp_item(item, SOURCE, today=date(2026, 8, 27))
+    assert record is not None
+    assert record.deadline == date(2023, 1, 31)
+    assert record.status == "closed"
 
 
 def test_plos_completes_when_total_matches() -> None:
