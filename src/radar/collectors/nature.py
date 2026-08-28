@@ -144,9 +144,10 @@ class NatureCollector:
             return SourceResult(
                 key=source["key"],
                 ok=False,
-                records=[],
+                records=unique,
                 http_status=last_status,
                 error="pagination truncated",
+                parsed_count=len(unique),
                 page_count=pages,
             )
         if not unique:
