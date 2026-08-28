@@ -33,6 +33,14 @@ def test_nature_fixture() -> None:
     human = next(row for row in records if "Human-machine" in row.title)
     assert human.summary and "streets" in human.summary
     assert human.image_url and human.image_url.endswith("human-machine.jpg")
+    assert human.publisher_id == "cbjceedfba"
+    assert human.journals == ["Scientific Reports"]
+    closed = next(row for row in records if "already closed" in row.title)
+    from radar.collectors.nature import finalize_records
+
+    kept = finalize_records(records, {**_source("nature-neuro"), "require_open_status": True, "journal": "Nature Neuroscience"})
+    assert closed not in kept
+    assert all(row.status == "open" for row in kept)
 
 
 def test_frontiers_fixture() -> None:

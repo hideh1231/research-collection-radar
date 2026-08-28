@@ -15,7 +15,7 @@ Chosen option: `config/journals.yml` の誌名（と alias）に一致したら�
 
 週次 listing-ingest は APA / ScienceDirect に加え、APS calls、Science Robotics、T&F Author Services、SAGE SI ハブ、PNAS、PNAS Nexus、JOSA A、監視 Wiley 誌の誌別 CFP を headed Chrome で 1 ページずつ試す。壁ならそのソースは ingest せず status だけ残す。
 
-Nature の Scientific Reports は Psychology subject ではなく誌の CFP 全件。Communications Psychology / Nature Communications / Communications Biology も誌単位。Frontiers 未収録誌と Springer `/collections`、国内の JRM / VRSJ / IPSJ / JSKE は日次 GET。
+Nature の Scientific Reports は Psychology subject ではなく誌の CFP 全件。Communications Psychology / Nature Communications / Communications Biology も誌単位。Nature Neuroscience は `/neuro/calls-for-papers` が無く、`/neuro/collections` のうち Submission status が Open のものだけ取る。締切はそのページに無いので、同一 collection id を Communications Biology / Nature Communications / Scientific Reports の CFP とマージして誌名だけ足す。Frontiers 未収録誌と Springer `/collections`、国内の JRM / VRSJ / IPSJ / JSKE は日次 GET。Open Mind と Cognitive Science は公開の募集一覧が無く、クローラから見ると壁になるので専用ソースにはしない。
 
 ### Consequences
 

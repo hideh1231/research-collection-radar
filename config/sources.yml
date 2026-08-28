@@ -46,6 +46,18 @@ sources:
     allowed_hosts:
       - www.nature.com
       - nature.com
+  - key: nature-neuro
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Nature Neuroscience
+    collection_type: collection
+    url: "https://www.nature.com/neuro/collections"
+    require_open_status: true
+    max_pages: 10
+    allowed_hosts:
+      - www.nature.com
+      - nature.com
   - key: frontiers-psychology
     enabled: true
     collector: frontiers

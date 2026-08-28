@@ -69,6 +69,8 @@ domains:
 journal_rules:
   - match: Communications Psychology
     domains: [psychology]
+  - match: Nature Neuroscience
+    domains: [neuroscience]
   - match: Frontiers in Psychology
     domains: [psychology]
   - match: Frontiers in Human Neuroscience

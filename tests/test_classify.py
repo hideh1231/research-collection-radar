@@ -51,6 +51,18 @@ def test_comms_psychology_and_neurorobotics_rules() -> None:
     domains, _scores, _topics, method = classify(comms, cfg, "nature-comms-psychology")
     assert "psychology" in domains
     assert "source_rule" in method
+    nature_neuro = RawRecord(
+        title="A methods collection",
+        url="https://nature.com/collections/abc",
+        source_url="https://www.nature.com/neuro/collections",
+        publisher="Nature Portfolio",
+        journal="Nature Neuroscience",
+        collection_type="collection",
+        discovered_via="nature-neuro",
+    )
+    domains, _scores, _topics, method = classify(nature_neuro, cfg, "nature-neuro")
+    assert "neuroscience" in domains
+    assert "source_rule" in method
     neuro = RawRecord(
         title="Adaptive locomotion",
         url="https://example.org/y",

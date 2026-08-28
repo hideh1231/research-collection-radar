@@ -104,6 +104,8 @@ journals:
     publisher: Nature Portfolio
   - name: Communications Biology
     publisher: Nature Portfolio
+  - name: Nature Neuroscience
+    publisher: Nature Portfolio
 
   # Frontiers
   - name: Frontiers in Psychology

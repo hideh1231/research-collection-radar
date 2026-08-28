@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup, Tag
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import normalize_status, parse_date
+from radar.normalize import normalize_status, parse_date, publisher_id_from_url
 from urllib.parse import urljoin
 
 COLLECTION_HREF = re.compile(r"/collections/[a-z0-9]+", re.I)
@@ -58,12 +58,14 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
         image_url = urljoin("https://www.nature.com", src) if src and not src.startswith("data:") else None
         image_alt = (str(img.get("alt") or "").strip() or title) if img is not None and image_url else None
         url = canonicalize_url(href)
+        journal = source.get("journal") or "Scientific Reports"
         found[url] = RawRecord(
             title=title,
             url=url,
             source_url=source["url"],
             publisher=source["publisher"],
-            journal=source.get("journal") or "Scientific Reports",
+            journal=journal,
+            journals=[journal],
             collection_type=source.get("collection_type") or "collection",
             discovered_via=source["key"],
             status=status,
@@ -73,9 +75,17 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             summary=summary or None,
             image_url=image_url,
             image_alt=image_alt,
+            publisher_id=publisher_id_from_url(url, source.get("publisher")),
             submission_mode="open_call",
         )
     return list(found.values())
+
+
+def finalize_records(records: list[RawRecord], source: dict) -> list[RawRecord]:
+    unique: dict[str, RawRecord] = {row.url: row for row in records}
+    if source.get("require_open_status"):
+        unique = {url: row for url, row in unique.items() if row.status == "open"}
+    return list(unique.values())
 
 
 def next_page_url(html: str, current: str) -> str | None:
@@ -129,7 +139,7 @@ class NatureCollector:
             url = nxt
             if url:
                 time.sleep(0.4)
-        unique: dict[str, RawRecord] = {row.url: row for row in records}
+        unique = finalize_records(records, source)
         if pages >= max_pages and url:
             return SourceResult(
                 key=source["key"],
@@ -151,7 +161,7 @@ class NatureCollector:
         return SourceResult(
             key=source["key"],
             ok=True,
-            records=list(unique.values()),
+            records=unique,
             http_status=last_status,
             parsed_count=len(unique),
             page_count=pages,

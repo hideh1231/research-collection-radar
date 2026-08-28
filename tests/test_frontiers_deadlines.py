@@ -391,6 +391,60 @@ def test_same_topic_id_from_two_sources_keeps_existing_id() -> None:
     assert "Frontiers in Robotics and AI" in row["journals"]
 
 
+def test_nature_collection_url_reuses_existing_id() -> None:
+    from datetime import date
+
+    from radar.models import RawRecord
+    from radar.normalize import to_record
+    from radar.pipeline import _assign_raw_id, _publisher_id_index
+
+    existing_id = "nature-commsbio-abc123"
+    prior = {
+        existing_id: {
+            "id": existing_id,
+            "publisher": "Nature Portfolio",
+            "publisher_id": "cbjceedfba",
+            "title": "Human-machine interaction in urban settings",
+            "journal": "Communications Biology",
+            "journals": ["Communications Biology"],
+            "source_keys": ["nature-commsbio"],
+            "discovered_via": "nature-commsbio",
+            "first_seen": "2026-08-01",
+            "deadline": "2027-04-21",
+            "deadline_status": "listed",
+            "topics": [],
+            "topics_method": "none",
+            "content_hash": "old",
+        }
+    }
+    publisher_ids = _publisher_id_index(list(prior.values()))
+    raw = RawRecord(
+        title="Human-machine interaction in urban settings",
+        url="https://www.nature.com/collections/cbjceedfba",
+        source_url="https://www.nature.com/neuro/collections",
+        publisher="Nature Portfolio",
+        journal="Nature Neuroscience",
+        collection_type="collection",
+        discovered_via="nature-neuro",
+        journals=["Nature Neuroscience"],
+        source_keys=["nature-neuro"],
+    )
+    _assign_raw_id(raw, publisher_ids)
+    row = to_record(
+        raw,
+        today=date(2026, 8, 28),
+        domains=["neuroscience"],
+        domain_scores={"neuroscience": 0.95},
+        topics=[],
+        classification_method="source_rule",
+        prior=prior,
+    )
+    assert raw.publisher_id == "cbjceedfba"
+    assert row["id"] == existing_id
+    assert "Nature Neuroscience" in row["journals"]
+    assert row["deadline"] == "2027-04-21"
+
+
 def test_checkpoint_occurs_once_at_exact_25_boundary() -> None:
     rows = [_row(i) for i in range(1, 26)]
     target_order = sorted(range(1, 26), key=str)

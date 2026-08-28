@@ -24,7 +24,7 @@ The index tracks public calls for special issues, research collections, theme is
 
 The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sources are public listings that GitHub Actions can finish without a bot wall:
 
-- Nature Portfolio: Scientific Reports, Communications Psychology, Nature Communications, and Communications Biology calls
+- Nature Portfolio: Scientific Reports, Communications Psychology, Nature Communications, and Communications Biology calls. Nature Neuroscience collections that are open for submissions are merged onto the same collection id.
 - Frontiers research topics, including Neuroergonomics, Ethology, Ecology and Evolution, and Veterinary Science
 - Springer Nature BMC collections and Springer Link `/journal/{id}/collections` for watched journals
 - PLOS calls for papers, via the official WordPress REST API

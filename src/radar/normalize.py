@@ -298,13 +298,21 @@ def to_record(
 def merge_collection_rows(current: dict[str, Any], incoming: dict[str, Any]) -> dict[str, Any]:
     """Combine two listings of the same opportunity without dropping source keys."""
     merged = dict(incoming)
+    merged["id"] = current.get("id") or incoming.get("id")
+    merged["url"] = current.get("url") or incoming.get("url")
+    merged["source_url"] = current.get("source_url") or incoming.get("source_url")
     merged["source_keys"] = unique_keep_order(
         list(current.get("source_keys") or []) + list(incoming.get("source_keys") or [])
     )
+    merged["journal"] = current.get("journal") or incoming.get("journal")
     merged["journals"] = unique_keep_order(
-        [current.get("journal") or "", incoming.get("journal") or ""]
+        [merged["journal"] or "", current.get("journal") or "", incoming.get("journal") or ""]
         + list(current.get("journals") or [])
         + list(incoming.get("journals") or [])
+    )
+    merged["topics"] = unique_keep_order(list(current.get("topics") or []) + list(incoming.get("topics") or []))
+    merged["publisher_keywords"] = unique_keep_order(
+        list(current.get("publisher_keywords") or []) + list(incoming.get("publisher_keywords") or [])
     )
     if current.get("metadata_checked_at") and not incoming.get("metadata_checked_at"):
         merged["journal"] = current.get("journal") or incoming.get("journal")
@@ -340,3 +348,23 @@ def merge_collection_rows(current: dict[str, Any], incoming: dict[str, Any]) -> 
     if merged["content_hash"] == current.get("content_hash"):
         merged["last_changed"] = current.get("last_changed")
     return merged
+
+
+def collapse_duplicate_publisher_ids(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep one row per (publisher, publisher_id) and union listing metadata."""
+    ordered: list[dict[str, Any]] = []
+    index: dict[tuple[str, str], int] = {}
+    for row in sorted(rows, key=lambda item: str(item.get("id") or "")):
+        publisher = str(row.get("publisher") or "")
+        publisher_id = row.get("publisher_id")
+        if not publisher or not publisher_id:
+            ordered.append(row)
+            continue
+        key = (publisher, str(publisher_id))
+        existing_at = index.get(key)
+        if existing_at is None:
+            index[key] = len(ordered)
+            ordered.append(dict(row))
+            continue
+        ordered[existing_at] = merge_collection_rows(ordered[existing_at], row)
+    return ordered

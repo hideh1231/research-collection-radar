@@ -31,7 +31,7 @@ from radar.http import Fetcher
 from radar.ids import stable_id
 from radar.listing_snapshots import SnapshotError, download_snapshot
 from radar.models import SourceResult
-from radar.normalize import merge_collection_rows, to_record
+from radar.normalize import collapse_duplicate_publisher_ids, merge_collection_rows, publisher_id_from_url, to_record
 from radar.slack import credentials, post_message
 from radar.store import (
     index_by_id,
@@ -179,6 +179,8 @@ def _publisher_id_index(rows: list[dict[str, Any]]) -> dict[tuple[str, str], str
 
 
 def _assign_raw_id(raw: Any, publisher_ids: dict[tuple[str, str], str]) -> None:
+    if not raw.publisher_id:
+        raw.publisher_id = publisher_id_from_url(raw.url, raw.publisher)
     if raw.publisher_id:
         key = (raw.publisher, str(raw.publisher_id))
         if key in publisher_ids:
@@ -256,6 +258,7 @@ def run(
     schema = load_schema(root / "schema" / "collection.schema.json")
     loaded_rows = load_jsonl(root / "data" / "collections.jsonl")
     prior_rows, migrated = migrate_rows(loaded_rows)
+    prior_rows = collapse_duplicate_publisher_ids(prior_rows)
     prior = index_by_id(prior_rows)
     prior_ids = set(prior)
     ledger_path = root / "state" / "notification_ledger.jsonl"
