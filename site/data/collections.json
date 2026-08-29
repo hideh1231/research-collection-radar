@@ -279,8 +279,8 @@
       "data integration",
       "methodological rigor",
       "quality criteria",
+      "psychological",
       "psychology",
-      "social",
       "Methods"
     ],
     "collection_type": "research_topic",
@@ -424,9 +424,9 @@
       "mental health",
       "therapy",
       "mechanisms",
-      "stroke",
       "Rehabilitation",
-      "Disability"
+      "stroke",
+      "disability"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-29",
@@ -512,8 +512,8 @@
       "Agriculture",
       "Farming",
       "Future",
-      "challenges",
-      "Technology"
+      "Applications",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -578,7 +578,7 @@
       "Hybrid human-machine therapy models",
       "AI",
       "Mental Health",
-      "psychology"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -604,13 +604,13 @@
     ],
     "topics": [
       "mechanisms",
+      "Applications",
       "cognitive",
+      "challenges",
       "neuromodulation",
       "well-being",
-      "challenges",
       "Interventions",
-      "neuroplasticity",
-      "VR"
+      "neuroplasticity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -640,8 +640,8 @@
       "donanemab",
       "real-world data",
       "policy and access",
-      "treatment",
-      "Policy"
+      "clinical",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -672,7 +672,7 @@
       "AI",
       "neuropsychology",
       "health equity",
-      "digital"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -890,8 +890,8 @@
     ],
     "topics": [
       "Innovation",
-      "innovation",
-      "wellbeing"
+      "wellbeing",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1051,9 +1051,9 @@
       "Multimodal Perception",
       "Adaptive Healthcare Robots",
       "Emotion and Intention Recognition",
-      "Robotics",
-      "behavior",
-      "challenges"
+      "clinical",
+      "data",
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1206,8 +1206,8 @@
       "inclusive pedagogy",
       "cultural adaptation",
       "holistic assessment",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1271,7 +1271,7 @@
       "community systems",
       "vulnerable populations",
       "mechanisms",
-      "social"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1364,7 +1364,7 @@
       "interventions",
       "prediction",
       "Mental Health",
-      "behavior"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1394,8 +1394,8 @@
       "Identity negotiation",
       "Global cultural flows",
       "psychology",
-      "social",
-      "digital"
+      "digital",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1459,8 +1459,8 @@
       "excitatory-inhibitory balance",
       "excitability disorders",
       "Brain",
-      "epilepsy",
-      "focus"
+      "focus",
+      "epilepsy"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1524,7 +1524,7 @@
       "Human",
       "Ecology",
       "sustainability",
-      "Ecosystem Services"
+      "production"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -1589,7 +1589,7 @@
       "Calcium Signaling",
       "mechanisms",
       "Brain",
-      "neuromodulation"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1623,7 +1623,7 @@
       "Student Wellbeing",
       "Ethics & Privacy",
       "AI",
-      "psychology"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1685,8 +1685,8 @@
       "Cross-sectoral parasite control",
       "Antiparasitic innovations",
       "Eco-friendly nematicides",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1774,8 +1774,8 @@
       "evolutionary analysis",
       "media psychology",
       "mechanisms",
-      "cognition",
-      "psychology"
+      "Applications",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1807,9 +1807,9 @@
       "Multimodal Data Analysis",
       "Digital Health Technologies",
       "AI",
-      "machine learning",
-      "Learning",
-      "challenges"
+      "Applications",
+      "clinical",
+      "machine learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1872,7 +1872,7 @@
       "symbiosis",
       "mycorrhiza",
       "production",
-      "Microbiota"
+      "Soil"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -1995,8 +1995,8 @@
       "giftedness",
       "talent",
       "development",
-      "Learning",
-      "digital"
+      "psychological",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2048,11 +2048,11 @@
       "case reports",
       "schizophrenia",
       "psychosis",
+      "clinical",
+      "management",
       "treatment",
       "diagnosis",
-      "management",
-      "Psychiatry",
-      "decision-making"
+      "Psychiatry"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2291,7 +2291,7 @@
       "Digital Twins",
       "Fashion Technology Innovation",
       "Human",
-      "digital"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2355,7 +2355,7 @@
       "efficiency",
       "neuromorphic engineering",
       "AI",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2408,10 +2408,10 @@
       "Microbial resistome",
       "Horizontal gene transfer (HGT)",
       "Mobile genetic elements (MGEs)",
-      "Human",
       "development",
-      "Ecology",
-      "adaptation"
+      "Human",
+      "molecular",
+      "Ecology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2508,8 +2508,8 @@
       "Medicinal plants",
       "resilience",
       "Climate Change",
-      "Biodiversity",
       "Ecology",
+      "Biodiversity",
       "adaptation"
     ],
     "collection_type": "research_topic",
@@ -2565,7 +2565,7 @@
       "Retinal neurodegeneration",
       "mechanisms",
       "Neurodegeneration",
-      "stress"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2596,9 +2596,9 @@
       "Hydrological processes",
       "Carbon sink mechanisms",
       "Carbon neutrality pathways",
+      "management",
       "challenges",
-      "Climate Change",
-      "management"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2631,7 +2631,7 @@
       "School digital transformation",
       "AI",
       "Learning",
-      "Robotics",
+      "management",
       "digital"
     ],
     "collection_type": "research_topic",
@@ -2664,7 +2664,7 @@
       "mental health",
       "suicide",
       "Mental Health",
-      "behavior"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2696,7 +2696,7 @@
       "Insulin Signaling",
       "mechanisms",
       "Brain",
-      "Neurodegenerative diseases"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2750,11 +2750,11 @@
       "Genetic resilience",
       "Abiotic stress tolerance",
       "Molecular breeding",
+      "Applications",
       "resilience",
-      "stress",
+      "molecular",
       "challenges",
-      "Technology",
-      "Security"
+      "stress"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2880,8 +2880,8 @@
       "motor recovery",
       "Control",
       "stroke",
-      "quality of life",
       "Neurodegenerative disorders",
+      "quality of life",
       "Neurodegenerative"
     ],
     "collection_type": "research_topic",
@@ -2938,10 +2938,10 @@
       "neuropsychology",
       "Cognitive Phenotypes",
       "Systems Neuroscience",
+      "clinical",
       "Neuroscience",
-      "Computational",
-      "evolution",
-      "data"
+      "data",
+      "Computational"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -3017,7 +3017,8 @@
       "Brain",
       "Brain Health",
       "quality of life",
-      "Disability"
+      "Disability",
+      "disability"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -3448,9 +3449,9 @@
       "immunity",
       "antimicrobial resistance",
       "one health",
-      "One Health",
       "Interventions",
-      "Antimicrobial resistance"
+      "One Health",
+      "interaction"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -3480,9 +3481,9 @@
       "neuroimaging",
       "healthy aging",
       "mechanisms",
+      "Applications",
       "Brain",
-      "cognitive",
-      "resilience"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -3562,8 +3563,8 @@
     "topics": [
       "Climate Change",
       "Infectious diseases",
-      "infectious diseases",
-      "clinical"
+      "clinical",
+      "infectious diseases"
     ],
     "collection_type": "collection",
     "deadline": "2026-09-01",
@@ -3593,8 +3594,8 @@
       "music learning",
       "music perception",
       "music therapy",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "Neuroscience"
     ],
     "collection_type": "research_topic",
@@ -3898,10 +3899,10 @@
       "mental health",
       "transdiagnostic approach",
       "Mental Health",
-      "psychology",
-      "Interventions",
-      "Psychiatry",
-      "Psychiatric disorders"
+      "Applications",
+      "clinical",
+      "psychological",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-01",
@@ -4053,9 +4054,9 @@
       "mechanisms",
       "Brain",
       "Neuroimaging",
+      "integration",
       "Perception",
-      "neural mechanisms",
-      "Sensory"
+      "neural mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-02",
@@ -4086,7 +4087,7 @@
       "Methods",
       "Traumatic Brain Injury",
       "brain injury",
-      "Disability",
+      "disability",
       "Spinal Cord Injury"
     ],
     "collection_type": "research_topic",
@@ -4199,7 +4200,7 @@
       "Stress responsivity",
       "Neural circuits",
       "Neuropsychiatric disorders",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-02",
@@ -4732,8 +4733,8 @@
       "Organoids",
       "Biomarkers",
       "Transgenerational Epigenetic Inheritance",
-      "Neuroinflammation",
-      "mechanisms"
+      "mechanisms",
+      "Neuroinflammation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-06",
@@ -4860,8 +4861,8 @@
       "Performance psychology",
       "Wellbeing and resilience",
       "mechanisms",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-06",
@@ -4892,8 +4893,8 @@
       "equity",
       "social determinants",
       "Mental Health",
-      "Interventions",
-      "Policy"
+      "psychological",
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-06",
@@ -4946,8 +4947,8 @@
       "neuroplasticity",
       "stress",
       "Mental Health",
-      "Brain",
-      "Human"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-06",
@@ -4979,8 +4980,8 @@
       "co-occurring conditions",
       "heterogeneity",
       "mechanisms",
-      "challenges",
       "treatment",
+      "challenges",
       "autism"
     ],
     "collection_type": "research_topic",
@@ -5200,7 +5201,7 @@
       "biomarkers",
       "mechanisms",
       "development",
-      "stress"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-07",
@@ -5318,7 +5319,7 @@
       "AI-driven diagnostics",
       "Brain",
       "Human",
-      "social"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-08",
@@ -5380,7 +5381,7 @@
       "Human-Machine Interaction",
       "Ethics",
       "Inequality",
-      "psychology",
+      "Applications",
       "Human"
     ],
     "collection_type": "research_topic",
@@ -5515,9 +5516,9 @@
       "Organism-surface interactions",
       "Chemical signaling interfaces",
       "Surface wettability",
-      "Perception",
-      "Ecology",
-      "communication"
+      "molecular",
+      "integration",
+      "Ecology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-08",
@@ -5611,8 +5612,8 @@
       "Ancestry",
       "Health Disparities",
       "treatment",
-      "cancer",
-      "epidemiology"
+      "molecular",
+      "cancer"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-09",
@@ -5811,8 +5812,8 @@
       "personality",
       "behavior",
       "Neuroscience",
-      "cognition",
       "Human",
+      "cognition",
       "heterogeneity"
     ],
     "collection_type": "research_topic",
@@ -5898,7 +5899,7 @@
       "Neuroimmunology",
       "Autonomic Nervous System",
       "Patient Reported Outcome Measures",
-      "communication"
+      "environment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-10",
@@ -6005,9 +6006,9 @@
       "computational modeling",
       "neural circuits",
       "mechanisms",
+      "development",
       "Brain",
-      "Neuroscience",
-      "development"
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-11",
@@ -6061,8 +6062,8 @@
       "Lysophospholipids",
       "Neuroinflammation",
       "Brain",
-      "Multiple Sclerosis",
-      "metabolism"
+      "metabolism",
+      "Multiple Sclerosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-11",
@@ -6210,9 +6211,9 @@
       "lifespan",
       "development",
       "aging",
+      "Applications",
       "Brain",
-      "clinical",
-      "Applications"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-12",
@@ -6245,7 +6246,7 @@
       "magnetoenecephalography",
       "MEG",
       "Brain",
-      "epilepsy"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-12",
@@ -6387,8 +6388,8 @@
       "Emerging technologies",
       "Aging populations",
       "AI",
-      "Aging",
-      "cognitive"
+      "Applications",
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-13",
@@ -6419,7 +6420,7 @@
       "Circuit-based biomarkers",
       "mechanisms",
       "Brain",
-      "Neuroimaging"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-13",
@@ -6538,10 +6539,10 @@
     "topics": [
       "case reports",
       "Mental Health",
+      "clinical",
       "treatment",
       "diagnosis",
-      "Psychiatry",
-      "clinical"
+      "Psychiatry"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-14",
@@ -6645,7 +6646,7 @@
       "cognition",
       "human behavior",
       "Brain",
-      "Neuroscience"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-14",
@@ -6738,8 +6739,8 @@
       "linguistic performance",
       "Neuroscience",
       "Neuroimaging",
-      "psychology",
-      "cognitive"
+      "resilience",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-14",
@@ -6797,9 +6798,9 @@
       "Emotional impact",
       "Cognitive challenges",
       "Social anxiety and avoidance",
+      "psychological",
       "psychology",
-      "cognitive",
-      "social"
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-14",
@@ -6948,8 +6949,8 @@
       "space debris",
       "space exploration",
       "space engineering",
-      "Policy",
-      "community"
+      "Applications",
+      "Policy"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -7150,8 +7151,8 @@
       "Organoids",
       "Tauopathy",
       "Synaptic dysfunction",
-      "Neuroinflammation",
       "mechanisms",
+      "Neuroinflammation",
       "Brain"
     ],
     "collection_type": "research_topic",
@@ -7303,8 +7304,8 @@
       "Biomedical signal processing",
       "Wearable sensors",
       "Neuroscience",
-      "biomarkers",
-      "Methods"
+      "clinical",
+      "biomarkers"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -7446,7 +7447,7 @@
       "Indigenous and Western Healing",
       "Cultural Adaptation of Treatments",
       "Mental Health",
-      "psychology"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -7623,7 +7624,7 @@
       "mechanisms",
       "machine learning",
       "Human",
-      "cognitive"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -7728,8 +7729,8 @@
       "Human Factors and Ergonomics",
       "Organizational Design and Culture",
       "Human",
-      "cognitive",
-      "well-being"
+      "psychological",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-16",
@@ -7911,10 +7912,10 @@
       "neural correlates",
       "cognitive function",
       "development",
-      "cognitive",
-      "social",
+      "psychological",
       "treatment",
-      "psychiatric"
+      "cognitive",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-17",
@@ -8069,8 +8070,8 @@
       "parents and caregivers",
       "digital health interventions",
       "co-production and collaboration",
-      "resilience",
-      "Interventions"
+      "psychological",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-17",
@@ -8127,8 +8128,8 @@
       "Pre-Natal Exposure",
       "Post-Natal Exposure",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -8352,8 +8353,8 @@
       "Event-based Sensing",
       "Hardware acceleration",
       "NeuroAI",
-      "Brain",
-      "Human"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -8383,8 +8384,8 @@
       "coma",
       "brain connectivity",
       "mechanisms",
-      "Neuroscience",
-      "Neural circuits"
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -8414,8 +8415,8 @@
       "Land use change",
       "Biodiversity",
       "mechanisms",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -8475,8 +8476,8 @@
       "development",
       "language",
       "Technology",
-      "gender",
-      "women in"
+      "Sustainable Development",
+      "gender"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-18",
@@ -8505,11 +8506,11 @@
       "Pediatric Neurodevelopmental Disorders",
       "AI",
       "Neuroimaging",
+      "clinical",
+      "management",
       "treatment",
       "Methods",
-      "diagnosis",
-      "management",
-      "autism"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-19",
@@ -8561,8 +8562,8 @@
       "Neurotransmitters",
       "mechanisms",
       "Brain",
-      "behavior",
-      "stress"
+      "stress",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-19",
@@ -8592,8 +8593,8 @@
       "brain development",
       "brain function",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-19",
@@ -8707,9 +8708,9 @@
       "Multivariate Complexity",
       "Data Fusion",
       "Human",
-      "challenges",
       "data",
-      "EEG"
+      "challenges",
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-20",
@@ -8833,8 +8834,8 @@
       "Well-being",
       "Lifespan",
       "Mental Health",
-      "cognitive",
-      "social"
+      "psychological",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-20",
@@ -8870,7 +8871,7 @@
       "Predictive Modeling",
       "Gait Analysis",
       "Computational Modeling",
-      "machine learning"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-20",
@@ -9084,8 +9085,8 @@
       "domestic violence",
       "cross-cultural",
       "socioeconomic",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "development"
     ],
     "collection_type": "research_topic",
@@ -9151,8 +9152,8 @@
       "personalized therapy",
       "mechanisms",
       "Brain",
-      "Central nervous system",
-      "brain tumors"
+      "clinical",
+      "Central nervous system"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-21",
@@ -9315,8 +9316,8 @@
       "AI",
       "workplace health promotion",
       "translational medicine",
-      "digital",
-      "challenges"
+      "management",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-22",
@@ -9390,7 +9391,7 @@
       "SPAD Arrays",
       "Bio-Inspired Vision",
       "Signal Processing",
-      "Computational",
+      "Applications",
       "data"
     ],
     "collection_type": "research_topic",
@@ -9507,7 +9508,7 @@
       "health",
       "Mental Health",
       "Aging",
-      "social"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-23",
@@ -9665,7 +9666,7 @@
       "Biomarkers",
       "mechanisms",
       "biomarkers",
-      "cognition"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-23",
@@ -9691,11 +9692,11 @@
     "topics": [
       "Youth mental health",
       "Mental Health",
-      "social",
       "digital",
+      "social",
       "Interventions",
-      "physical activity",
       "healthcare",
+      "physical activity",
       "Technology"
     ],
     "collection_type": "research_topic",
@@ -9883,9 +9884,9 @@
       "Mental Health Recovery",
       "International and Inclusive Practice",
       "Mental Health Inequalities",
-      "Mental Health",
       "mechanisms",
-      "social"
+      "Mental Health",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-25",
@@ -10022,11 +10023,11 @@
       "EEG",
       "Alzheimer's Disease",
       "Alpha Rhythms",
+      "clinical",
       "reviews",
       "Alzheimer's",
       "clinical practice",
-      "Neurophysiology",
-      "clinical"
+      "Neurophysiology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-25",
@@ -10114,8 +10115,8 @@
       "neural circuit dynamics",
       "neuromodulation",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-25",
@@ -10150,8 +10151,8 @@
       "neurorehabilitation",
       "neurotechnology",
       "neuroinflammation",
-      "Neurodegeneration",
-      "Neuroscience"
+      "Neuroscience",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-25",
@@ -10214,9 +10215,9 @@
       "early detection",
       "prevention strategies",
       "public mental health",
-      "Prevention",
+      "integration",
       "Public health",
-      "integration"
+      "Prevention"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-25",
@@ -10424,7 +10425,7 @@
       "gait",
       "falls",
       "Parkinson's Disease",
-      "challenges"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-26",
@@ -10640,9 +10641,9 @@
       "sensor technology",
       "modeling",
       "Brain",
-      "communication",
       "Technology",
-      "Brain-Computer Interfaces"
+      "communication",
+      "accessibility"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-27",
@@ -10769,7 +10770,7 @@
       "diagnosis",
       "education",
       "Psychiatry",
-      "psychiatric"
+      "interaction"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-28",
@@ -10825,8 +10826,8 @@
       "Neuroimmune Interactions",
       "Precision Medicine",
       "Neuroinflammation",
-      "Brain",
-      "Neurodegeneration"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-28",
@@ -11001,8 +11002,8 @@
       "risk",
       "vulnerability",
       "AI",
-      "Human",
-      "digital"
+      "clinical",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11201,11 +11202,11 @@
       "XR",
       "Game Engines",
       "XR software",
+      "Applications",
       "development",
-      "Extended Reality (XR)",
       "community",
-      "accessibility",
-      "Applications"
+      "Extended Reality (XR)",
+      "accessibility"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11289,8 +11290,8 @@
       "Environmental Education",
       "Sustainability in Education",
       "Learning",
-      "behavior",
-      "digital"
+      "digital",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11447,9 +11448,9 @@
       "Diurnal and nocturnal behaviors",
       "Evolutionary studies",
       "mechanisms",
+      "clinical",
       "Neuroscience",
-      "Human",
-      "neural mechanisms"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11590,7 +11591,7 @@
       "Perceptions of Justice",
       "Cybercrime",
       "Migration",
-      "cognition"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11763,9 +11764,9 @@
       "genocidal events",
       "psychological impact",
       "intergenerational transmission",
-      "Mental Health",
       "mechanisms",
-      "resilience"
+      "Mental Health",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11996,9 +11997,9 @@
       "Healthcare",
       "Medical Education",
       "Non-Pharmaceutical Interventions",
+      "Applications",
       "data",
-      "education",
-      "XR"
+      "healthcare"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12029,8 +12030,8 @@
       "Ndd's",
       "Neurodegenerative Disorders",
       "mechanisms",
-      "Brain",
-      "Human"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12208,7 +12209,7 @@
       "neurodiagnostics",
       "geographic variations",
       "mechanisms",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12434,9 +12435,9 @@
       "water availability",
       "aridity",
       "Human",
-      "social",
       "resilience",
-      "evolution"
+      "management",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12613,7 +12614,7 @@
       "Interpretable AI",
       "Mental Disorders",
       "Neuropsychopharmacology",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12863,9 +12864,9 @@
       "society",
       "culture",
       "evolution",
-      "social",
       "digital",
-      "communication"
+      "social",
+      "environment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12981,9 +12982,9 @@
       "health informatics",
       "personalized medicine",
       "digital technologies",
+      "clinical",
       "digital",
-      "data",
-      "digital health"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13014,9 +13015,9 @@
       "Multimodal Interaction",
       "Well-being Technologies",
       "Robot-Assisted Interventions",
-      "social",
+      "clinical",
       "resilience",
-      "well-being"
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13132,8 +13133,8 @@
       "glucose homeostasis",
       "mechanisms",
       "Brain",
+      "clinical",
       "challenges",
-      "Interventions",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -13164,10 +13165,10 @@
       "Synchronization",
       "Motor Activities",
       "Motor Control",
+      "Applications",
       "Brain",
-      "Neuroscience",
-      "Alzheimer's disease",
-      "Parkinson's disease"
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13661,8 +13662,8 @@
       "TA-CSA",
       "Online Grooming",
       "AI",
-      "Generative AI",
       "Technology",
+      "Generative AI",
       "Children"
     ],
     "collection_type": "research_topic",
@@ -13694,9 +13695,9 @@
       "motor system",
       "mechanisms",
       "Brain",
+      "clinical",
       "Neuroscience",
       "Control",
-      "plasticity",
       "environment"
     ],
     "collection_type": "research_topic",
@@ -13812,9 +13813,9 @@
       "neurorehabilitation",
       "sensorimotor techniques",
       "mechanisms",
-      "Interventions",
-      "neural mechanisms",
-      "Rehabilitation"
+      "Applications",
+      "clinical",
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13875,11 +13876,11 @@
       "BIS",
       "Women",
       "AI",
-      "Neuroimaging",
       "development",
+      "Neuroimaging",
       "Technology",
-      "gender",
-      "women in"
+      "Sustainable Development",
+      "gender"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -14089,7 +14090,7 @@
       "Musical Expression",
       "Health & Wellbeing",
       "Performance Expression",
-      "social"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-01",
@@ -14200,9 +14201,9 @@
       "Neuromodulation",
       "Diagnosis",
       "Treatment",
+      "clinical",
       "Neuroscience",
-      "Neuroimaging",
-      "digital"
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-01",
@@ -14519,8 +14520,8 @@
       "Neural mechanisms of behaviour",
       "Multimodal integration",
       "Predictive processing",
-      "cognition",
       "Human",
+      "cognition",
       "behavior"
     ],
     "collection_type": "research_topic",
@@ -14553,7 +14554,7 @@
       "Mentalization",
       "Child and Adolescent Mental Health",
       "Mental Health",
-      "development"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-05",
@@ -14615,9 +14616,9 @@
       "wearables",
       "AI-driven seizure detection",
       "AI",
-      "challenges",
+      "management",
       "treatment",
-      "diagnosis"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-05",
@@ -14706,8 +14707,8 @@
       "Epigenetics",
       "Resilience",
       "mechanisms",
-      "plasticity",
-      "focus"
+      "focus",
+      "plasticity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-06",
@@ -15065,8 +15066,8 @@
       "Neurodegeneration",
       "Molecular Mechanisms",
       "AQP4",
-      "Neuroinflammation",
       "mechanisms",
+      "Neuroinflammation",
       "Brain"
     ],
     "collection_type": "research_topic",
@@ -15211,8 +15212,8 @@
       "Transparency",
       "Robot",
       "AI",
+      "Applications",
       "Human",
-      "cognitive",
       "Learning"
     ],
     "collection_type": "research_topic",
@@ -15241,9 +15242,9 @@
       "Neurodegeneration",
       "Intervention",
       "Diagnosis",
+      "clinical",
       "biomarkers",
       "Aging",
-      "Neurodegenerative diseases",
       "diagnosis"
     ],
     "collection_type": "research_topic",
@@ -15275,7 +15276,7 @@
       "clinical applications",
       "rehabilitation",
       "physiotherapy",
-      "education"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-09",
@@ -15305,9 +15306,9 @@
       "Neural correlates of attention",
       "mechanisms",
       "Brain",
+      "clinical",
       "Neuroscience",
-      "cognition",
-      "psychology"
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-09",
@@ -15337,8 +15338,8 @@
       "Tau",
       "Alpha-synuclein",
       "Neuroinflammation",
-      "communication",
-      "adaptation"
+      "adaptation",
+      "communication"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-09",
@@ -15456,9 +15457,9 @@
       "mental health",
       "gender disparities in suicide",
       "Mental Health",
+      "psychological",
       "social",
-      "challenges",
-      "Public health"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-09",
@@ -15618,8 +15619,8 @@
       "Consequences",
       "Benefits",
       "Emotional Intelligence",
-      "psychology",
       "development",
+      "psychology",
       "Learning"
     ],
     "collection_type": "research_topic",
@@ -15731,9 +15732,9 @@
       "parkinsons",
       "FTD-pardkinsonism",
       "parkinsonian",
+      "clinical",
       "biomarkers",
-      "cognitive",
-      "Neurodegenerative diseases"
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-10",
@@ -15887,12 +15888,12 @@
     "topics": [
       "Evolutionary and conservation genetics",
       "Gene flow and functional connectivity",
+      "management",
       "Computational",
       "Climate Change",
-      "management",
       "Biodiversity",
-      "genetics",
-      "adaptation"
+      "adaptation",
+      "genetics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-11",
@@ -15955,7 +15956,7 @@
       "immunotherapy",
       "metabolic factors",
       "lifestyle medicine",
-      "Neuroinflammation"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-11",
@@ -16068,8 +16069,8 @@
       "digital biomarkers",
       "machine learning",
       "Schizophrenia",
-      "biomarkers",
-      "cognition"
+      "clinical",
+      "biomarkers"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-12",
@@ -16132,7 +16133,7 @@
       "stroke",
       "aneurysm",
       "vascular malformations",
-      "treatment"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-13",
@@ -16242,8 +16243,8 @@
       "cognitive",
       "ecological validity",
       "Validity",
-      "validity",
-      "psychological"
+      "psychological",
+      "validity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-13",
@@ -16274,7 +16275,7 @@
       "Reproductive physiology",
       "Community-based conservation",
       "Human",
-      "challenges"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-13",
@@ -16397,7 +16398,7 @@
       "PET",
       "CT",
       "machine learning",
-      "Neuroimaging"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-15",
@@ -16608,8 +16609,8 @@
       "healthcare organizations",
       "healthcare workplaces",
       "mechanisms",
-      "psychology",
-      "social"
+      "resilience",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-15",
@@ -16637,7 +16638,8 @@
       "medical imaging",
       "clinical",
       "Applications",
-      "preclinical"
+      "preclinical",
+      "Medical imaging"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-15",
@@ -16670,8 +16672,8 @@
       "Comparative Psychology",
       "History of Psychology",
       "History of Science",
-      "psychology",
       "development",
+      "psychology",
       "behavior"
     ],
     "collection_type": "research_topic",
@@ -17019,8 +17021,8 @@
       "Mitochondrial dysfunction",
       "Translational neuroscience",
       "mechanisms",
-      "Neurodegenerative diseases",
-      "Multi-omics"
+      "molecular",
+      "Neurodegenerative diseases"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-16",
@@ -17115,7 +17117,7 @@
       "Operational Environments",
       "Extreme and Isolated Environments",
       "Decision Support Systems",
-      "Human"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-16",
@@ -17147,8 +17149,8 @@
       "ethics and data privacy",
       "AI",
       "Human",
-      "social",
-      "digital"
+      "digital",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-16",
@@ -17236,9 +17238,9 @@
       "school targeted violence",
       "mental health services",
       "community programs",
-      "Mental Health",
       "mechanisms",
-      "social"
+      "Mental Health",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-16",
@@ -17625,7 +17627,7 @@
       "NGS",
       "phylogenetic analysis",
       "bioinformatics analysis",
-      "epidemiology"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-18",
@@ -17707,11 +17709,11 @@
       "Emotional and Moral Development",
       "Prosocial Behavior",
       "mechanisms",
-      "psychology",
-      "Human",
       "development",
-      "social",
-      "interaction"
+      "Human",
+      "psychological",
+      "psychology",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-19",
@@ -18511,8 +18513,8 @@
       "cognitive biases and automation bias",
       "interface and training design",
       "AI",
-      "cognition",
-      "Human"
+      "Human",
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -18607,7 +18609,7 @@
       "Mental health",
       "Mental Health",
       "behavior",
-      "physical activity"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -18774,10 +18776,10 @@
       "communication",
       "challenges",
       "cognitive-linguistic development",
-      "Brain",
       "development",
-      "cognitive",
-      "Technology"
+      "Brain",
+      "clinical",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-24",
@@ -18870,7 +18872,7 @@
       "Third‑wave Psychotherapies",
       "Mindfulness‑based Interventions",
       "mechanisms",
-      "stress"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-24",
@@ -19084,11 +19086,11 @@
       "Neurological disorders",
       "AI",
       "Diagnostics and treatment",
-      "challenges",
+      "clinical",
+      "management",
       "treatment",
-      "diagnosis",
       "data",
-      "management"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-26",
@@ -19414,8 +19416,8 @@
       "embedded intelligence",
       "stretchable electronics",
       "autonomous soft systems",
-      "Control",
-      "management"
+      "management",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-27",
@@ -19441,10 +19443,10 @@
     ],
     "topics": [
       "control",
-      "Control",
       "clinical",
       "clinical research",
-      "Immune Response"
+      "Immune Response",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-28",
@@ -20019,7 +20021,7 @@
       "Biomarkers and safety profiling",
       "mechanisms",
       "treatment",
-      "Multiple Sclerosis"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -20282,8 +20284,8 @@
       "Foundation models",
       "Adaptability and robustness",
       "AI",
-      "cognitive",
-      "Robotics"
+      "Applications",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -20336,9 +20338,9 @@
       "Host-pathogen interactions",
       "Immunity",
       "Pathogens",
+      "molecular",
       "immunity",
-      "host-pathogen interactions",
-      "molecular"
+      "host-pathogen interactions"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-30",
@@ -20727,9 +20729,9 @@
       "mental health",
       "resilience",
       "community",
-      "Mental Health",
       "mechanisms",
-      "social"
+      "Mental Health",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -20760,7 +20762,7 @@
       "clinical practice",
       "safety",
       "Mental Health",
-      "decision-making",
+      "clinical",
       "Risk"
     ],
     "collection_type": "research_topic",
@@ -20852,8 +20854,8 @@
       "wellbeing",
       "psychology",
       "Human",
-      "resilience",
-      "challenges"
+      "psychological",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -20915,9 +20917,9 @@
       "Perfomance",
       "Psychophysiological",
       "Basketball",
-      "cognitive",
       "resilience",
-      "decision-making"
+      "cognitive",
+      "focus"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -21050,9 +21052,9 @@
       "AI",
       "AI-based models",
       "physiological computing",
+      "clinical",
       "machine learning",
-      "Human",
-      "Learning"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -21082,8 +21084,8 @@
       "drug use",
       "evidence based",
       "drug harms",
-      "social",
-      "Interventions"
+      "clinical",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -21741,7 +21743,7 @@
       "Therapeutic Strategies",
       "mechanisms",
       "Brain",
-      "molecular mechanisms"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -21843,8 +21845,8 @@
     "domains": [],
     "topics": [
       "control",
-      "Control",
-      "Applications"
+      "Applications",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-31",
@@ -22028,7 +22030,7 @@
       "Emotional Adjustment",
       "Grief and Bereavement",
       "Quality of Life",
-      "challenges"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -22533,11 +22535,11 @@
       "Tuberculosis",
       "Ischemic Stroke",
       "mechanisms",
-      "stroke",
+      "clinical",
       "focus",
       "Risk",
-      "tuberculosis",
-      "clinical"
+      "stroke",
+      "tuberculosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-01",
@@ -23234,8 +23236,8 @@
       "Agroforestry",
       "Ecosystem services",
       "mechanisms",
-      "Control",
       "management",
+      "Control",
       "Biodiversity",
       "focus"
     ],
@@ -23324,8 +23326,8 @@
       "GWAS",
       "gene therapy",
       "mechanisms",
-      "challenges",
-      "Interventions"
+      "clinical",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-06",
@@ -23523,9 +23525,9 @@
       "older adults",
       "elderly population",
       "emerging",
-      "Aging",
-      "social",
-      "challenges"
+      "management",
+      "treatment",
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-07",
@@ -23555,9 +23557,9 @@
       "technology-enabled care",
       "evidence-based practices",
       "mental health services",
-      "social",
-      "digital",
-      "challenges"
+      "clinical",
+      "treatment",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-07",
@@ -23699,9 +23701,9 @@
       "Quantitative MRI",
       "Neuromuscular Ultrasound",
       "Imaging Biomarkers",
-      "diagnosis",
       "management",
-      "MRI"
+      "diagnosis",
+      "imaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-07",
@@ -23729,11 +23731,11 @@
       "AI",
       "Neural Signal Processing",
       "Neurotechnology",
+      "Applications",
       "Brain",
       "Neuroscience",
-      "EEG",
-      "neurotechnology",
-      "imaging"
+      "imaging",
+      "EEG"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-08",
@@ -23765,7 +23767,7 @@
       "Trustworthy AI",
       "Robustness and Safety of AI Systems",
       "AI",
-      "Learning"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-08",
@@ -23795,9 +23797,9 @@
       "Brain health",
       "Brain",
       "Neuroscience",
+      "Methods",
       "Aging",
-      "cognitive",
-      "social"
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-08",
@@ -23965,10 +23967,10 @@
       "management",
       "Infectious diseases",
       "digital",
-      "infectious diseases",
       "clinical",
       "Applications",
-      "clinical applications"
+      "clinical applications",
+      "infectious diseases"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-09",
@@ -24024,9 +24026,9 @@
       "neuropsychiatric",
       "neuroinflammation",
       "interventions",
+      "mechanisms",
       "Mental Health",
-      "Neuroinflammation",
-      "mechanisms"
+      "Neuroinflammation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-09",
@@ -24155,11 +24157,11 @@
       "Robotic sensing",
       "Robotic modelling",
       "Proprioception",
-      "Robotics",
       "data",
+      "Robotics",
+      "integration",
       "Modeling",
-      "Physiology",
-      "Soft robotics"
+      "Physiology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-09",
@@ -24210,8 +24212,8 @@
       "Self-Initiated Action",
       "Personal Initiative",
       "mechanisms",
-      "psychology",
-      "behavior"
+      "psychological",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-09",
@@ -24376,8 +24378,8 @@
       "human",
       "non-human",
       "Human",
-      "One Health",
       "evolution",
+      "One Health",
       "environment"
     ],
     "collection_type": "research_topic",
@@ -24896,9 +24898,9 @@
       "plants",
       "physiology",
       "tree of life",
+      "integration",
       "Physiology",
-      "Plants",
-      "integration"
+      "Plants"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-12",
@@ -24950,7 +24952,7 @@
       "social functioning",
       "mechanisms",
       "Brain",
-      "cognitive"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-13",
@@ -25113,9 +25115,9 @@
       "network pharmacology",
       "systems biology",
       "neuroinflammation",
-      "Brain",
       "development",
-      "Interventions"
+      "Brain",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-13",
@@ -25145,8 +25147,8 @@
       "Synaptic plasticity emulation",
       "Edge Artificial Intelligence",
       "AI",
-      "Brain",
-      "Learning"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-13",
@@ -25250,12 +25252,12 @@
     "topics": [
       "AI",
       "stroke care",
+      "Applications",
+      "clinical",
       "machine learning",
       "Learning",
-      "treatment",
-      "deep learning",
-      "diagnosis",
-      "management"
+      "management",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-14",
@@ -25347,11 +25349,11 @@
       "cognition",
       "parkinson's disease",
       "mechanisms",
+      "clinical",
       "Neuroscience",
       "Neuroimaging",
       "cognitive",
-      "social",
-      "Parkinson's disease"
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-14",
@@ -25381,8 +25383,8 @@
       "Biodiversity Conservation",
       "mechanisms",
       "challenges",
-      "Biodiversity",
-      "Ecology"
+      "Ecology",
+      "Biodiversity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-14",
@@ -25413,7 +25415,7 @@
       "Endovascular thrombectomy",
       "data",
       "stroke",
-      "attention"
+      "Modeling"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-14",
@@ -25739,8 +25741,8 @@
       "Public health",
       "infectious diseases",
       "animals",
-      "parasites",
-      "veterinary"
+      "veterinary",
+      "parasites"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-15",
@@ -25828,8 +25830,8 @@
       "Proteins",
       "Aging",
       "mechanisms",
-      "cognitive",
-      "cognitive decline"
+      "molecular",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-15",
@@ -26134,9 +26136,9 @@
       "Chronic Disease",
       "BCI",
       "Brain",
-      "well-being",
+      "clinical",
       "challenges",
-      "healthcare"
+      "well-being"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-16",
@@ -26190,10 +26192,10 @@
       "treatment",
       "ASD",
       "drug therapy",
+      "clinical",
+      "management",
       "social",
-      "challenges",
-      "Interventions",
-      "management"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-16",
@@ -26347,7 +26349,7 @@
       "Motor Control Motor Unit Remodelling",
       "Neuroinflammation",
       "development",
-      "Central nervous system"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-16",
@@ -26436,7 +26438,7 @@
       "evolution",
       "Ecology",
       "reviews",
-      "Review papers"
+      "reviews in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-16",
@@ -26705,7 +26707,7 @@
       "Depression",
       "mechanisms",
       "development",
-      "cognitive"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-17",
@@ -26829,7 +26831,7 @@
       "Human",
       "One Health",
       "Risk",
-      "animals"
+      "livestock"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-17",
@@ -26960,8 +26962,8 @@
       "Epilepsy",
       "Traumatic Brain Injury (TBI)",
       "Epileptogenis",
-      "Neuroinflammation",
       "mechanisms",
+      "Neuroinflammation",
       "Brain",
       "biomarkers"
     ],
@@ -27355,8 +27357,8 @@
       "Compassion and Loving-Kindness",
       "Contemplative Science",
       "Mental Health",
-      "psychology",
-      "Human"
+      "Human",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-20",
@@ -27443,8 +27445,8 @@
     "topics": [
       "neuroendocrine tumours",
       "immunotheraphy",
-      "challenges",
       "treatment",
+      "challenges",
       "therapy",
       "immunotherapy",
       "neuroendocrine",
@@ -27554,8 +27556,8 @@
       "emotion",
       "education",
       "mechanisms",
-      "Neuroimaging",
-      "development"
+      "development",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-20",
@@ -27630,9 +27632,9 @@
       "AI",
       "machine learning",
       "Learning",
-      "Computational",
       "Methods",
-      "Resources"
+      "Computational",
+      "Cybersecurity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-20",
@@ -27661,9 +27663,9 @@
       "Faith-Informed Psychological Treatment",
       "Religious Belonging as Mood Protection",
       "Mental Health",
-      "psychology",
+      "psychological",
       "resilience",
-      "well-being"
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-20",
@@ -28152,10 +28154,10 @@
       "sustainable breeding",
       "development",
       "resilience",
-      "genetics",
+      "molecular",
       "sustainability",
-      "Genomics",
-      "animals"
+      "genetics",
+      "Genomics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-23",
@@ -28317,9 +28319,9 @@
       "ecological validity",
       "diagnostic overshadowing",
       "cultural differences",
-      "challenges",
+      "clinical",
       "Methods",
-      "diagnosis"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-24",
@@ -28603,9 +28605,9 @@
       "Community",
       "Participatory Research Methods",
       "Mental Health",
-      "social",
       "treatment",
       "Methods",
+      "social",
       "Risk",
       "Prevention"
     ],
@@ -28852,7 +28854,7 @@
       "mechanisms",
       "TMS",
       "neuromodulation",
-      "depression"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-27",
@@ -28910,8 +28912,8 @@
       "Seizure Control",
       "Epileptogenesis",
       "mechanisms",
-      "challenges",
-      "depression"
+      "molecular",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-27",
@@ -29342,7 +29344,7 @@
       "neurochemical sensing",
       "implantable neural devices",
       "brain–machine interfaces",
-      "Brain"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-27",
@@ -29486,8 +29488,8 @@
       "Human-Animal-Environment Interface",
       "Environmental Health",
       "Vectoboarn disease",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-28",
@@ -29543,11 +29545,11 @@
       "non communicable diseases",
       "developmental diseases",
       "development",
+      "molecular",
       "stress",
       "healthcare",
       "environment",
-      "neuroendocrine",
-      "molecular"
+      "neuroendocrine"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-28",
@@ -29576,8 +29578,8 @@
       "Economics of Animal Health",
       "Livestock Production Systems",
       "Economics of AMR",
-      "social",
       "management",
+      "social",
       "Agriculture"
     ],
     "collection_type": "research_topic",
@@ -29721,8 +29723,8 @@
       "Gait",
       "mechanisms",
       "Control",
-      "neural mechanisms",
-      "healthcare"
+      "healthcare",
+      "neural mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-29",
@@ -29747,8 +29749,8 @@
     ],
     "topics": [
       "control",
-      "Control",
-      "psychological"
+      "psychological",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-29",
@@ -29921,7 +29923,7 @@
       "Intellectual Disability",
       "Brain",
       "Interventions",
-      "autism"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -29981,9 +29983,9 @@
       "Sensor fusion",
       "resilience",
       "Learning",
-      "Robotics",
       "data",
-      "Perception"
+      "Robotics",
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30013,8 +30015,8 @@
       "evidence",
       "development",
       "appraisal",
-      "digital",
-      "Methods"
+      "Methods",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30105,9 +30107,9 @@
       "Autonomic Cardiomyopathy",
       "Brain-Heart Axis",
       "Metabolic Axis",
-      "Brain",
       "development",
-      "stress"
+      "Brain",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30306,9 +30308,9 @@
       "cognitive neuroscience",
       "neurodegeneration",
       "mechanisms",
+      "development",
       "Neurodegeneration",
-      "psychology",
-      "Aging"
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30475,11 +30477,11 @@
       "Ecological Security",
       "Ecological Disaster",
       "Environmental Resilience",
+      "Applications",
       "Human",
       "resilience",
       "Climate Change",
-      "Conservation",
-      "environmental change"
+      "Conservation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30592,10 +30594,10 @@
       "eukaryotic diversity",
       "microorganisms",
       "tree of life",
+      "molecular",
+      "integration",
       "evolution",
-      "production",
-      "Soil",
-      "integration"
+      "production"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30776,8 +30778,8 @@
       "AI",
       "emotional disorders",
       "Mental Health",
-      "social",
-      "digital"
+      "clinical",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -30806,9 +30808,9 @@
       "motor learning",
       "sensorimotor integration",
       "mechanisms",
+      "Applications",
       "Human",
       "Learning",
-      "behavior",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -31002,8 +31004,8 @@
       "Neurodegeneration",
       "Neuronal mitochondrial dysfunction",
       "Brain",
-      "Aging",
-      "cognitive"
+      "resilience",
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31144,7 +31146,7 @@
       "Novel therapeutics",
       "Chronic pain and stress",
       "Drug development",
-      "stress"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31237,9 +31239,9 @@
       "brain tumors",
       "recurrence",
       "imaging profiles",
-      "Brain",
       "development",
-      "treatment"
+      "Brain",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31295,8 +31297,8 @@
       "evolution",
       "Ecology",
       "reviews",
-      "Review papers",
-      "reviews in"
+      "reviews in",
+      "Review papers"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31410,7 +31412,8 @@
     "topics": [
       "future directions",
       "art",
-      "Disability"
+      "Disability",
+      "disability"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31437,9 +31440,9 @@
     ],
     "topics": [
       "Immunity",
-      "immunity",
       "innate immunity",
-      "pattern recognition"
+      "pattern recognition",
+      "immunity"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-30",
@@ -31637,8 +31640,8 @@
       "Neuroendocrine pathways",
       "Stress mitigation",
       "mechanisms",
-      "behavior",
       "stress",
+      "behavior",
       "evolution"
     ],
     "collection_type": "research_topic",
@@ -31671,8 +31674,8 @@
       "Alzheimer's disease",
       "neuroimaging technique",
       "Brain",
-      "Neurodegeneration",
-      "Neuroimaging"
+      "clinical",
+      "Neurodegeneration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31836,8 +31839,8 @@
       "memory",
       "signaling pathways",
       "mechanisms",
-      "neuromodulation",
-      "Learning"
+      "Learning",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -32097,7 +32100,7 @@
       "Smart Manufacturing",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -32789,8 +32792,8 @@
       "Body dissatisfaction",
       "Disordered eating",
       "Mental Health",
-      "psychology",
-      "resilience"
+      "resilience",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-04",
@@ -32908,7 +32911,7 @@
       "Environmental Toxicology and One Health",
       "Therapeutic Interventions in Toxicity",
       "mechanisms",
-      "biomarkers"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-04",
@@ -32993,8 +32996,8 @@
       "Brain-Computer Interface",
       "spinal cord stimulation",
       "mechanisms",
-      "Brain",
-      "neuromodulation"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-05",
@@ -33478,8 +33481,8 @@
       "Mental disorders",
       "Young people and adolescents",
       "Mental Health",
-      "Learning",
-      "well-being"
+      "psychological",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-07",
@@ -33598,10 +33601,10 @@
       "Genotype–environment association",
       "Local adaptation",
       "Spatial scale / grain size",
-      "digital",
-      "evolution",
       "management",
-      "environment"
+      "digital",
+      "integration",
+      "evolution"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-08",
@@ -33876,9 +33879,9 @@
       "stem cell delivery",
       "nanotechnology",
       "neuromethods",
-      "challenges",
+      "clinical",
       "treatment",
-      "Interventions"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-10",
@@ -33987,9 +33990,9 @@
       "controversies",
       "neurology controversies",
       "neurodegeneration",
-      "Neurology",
       "clinical",
-      "translational"
+      "translational",
+      "Neurology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-10",
@@ -34641,7 +34644,7 @@
       "Adaptive Dynamic Programming",
       "Human",
       "Learning",
-      "challenges"
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-12",
@@ -34752,9 +34755,9 @@
       "Veterinary Surgery",
       "Animal Disease",
       "Comparative Medicine",
-      "Human",
-      "One Health",
-      "reproducibility"
+      "Applications",
+      "clinical",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-12",
@@ -34930,8 +34933,8 @@
       "animal welfare",
       "neurobiology",
       "welfare",
-      "Animal welfare",
-      "environmental enrichment"
+      "environmental enrichment",
+      "Animal welfare"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-13",
@@ -34962,7 +34965,7 @@
       "toxicity",
       "plant-based treatment",
       "botanical therapy",
-      "Veterinary medicine"
+      "veterinary"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-13",
@@ -34994,7 +34997,7 @@
       "Host-pathogen interactions",
       "mechanisms",
       "development",
-      "Control"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-13",
@@ -35371,8 +35374,8 @@
       "Epistemology of psychology",
       "Ontology of the psyche",
       "Paradigm shift",
-      "psychology",
-      "open science"
+      "psychological",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35405,8 +35408,8 @@
       "Pathophysiology",
       "Interventions",
       "Translational Medicine",
-      "cognitive",
-      "management"
+      "management",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35466,9 +35469,9 @@
       "community case studies",
       "psychopharmacology",
       "patient report",
+      "clinical",
       "treatment",
-      "diagnosis",
-      "Psychiatry"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35533,7 +35536,7 @@
       "Physical Agents",
       "Bio-inspired Robotics",
       "AI",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35840,11 +35843,11 @@
       "mitochondria",
       "neuroinflammation",
       "mechanisms",
+      "clinical",
       "metabolism",
-      "regeneration",
-      "trauma",
       "production",
-      "Neurological diseases"
+      "synthesis",
+      "regeneration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35901,9 +35904,9 @@
       "therapeutic",
       "visual storytelling",
       "photo voice",
-      "Mental Health",
       "mechanisms",
-      "social"
+      "Mental Health",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35934,7 +35937,7 @@
       "Community-based Mental Health",
       "Rituals and Storytelling",
       "Indigenous Coping Strategies",
-      "well-being"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -35964,8 +35967,8 @@
       "substance use disorders",
       "mental health disorders",
       "mechanisms",
-      "social",
-      "psychiatric"
+      "clinical",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -36059,8 +36062,8 @@
       "In-Situ Bioelectronic Synthesis",
       "Distributed Nanoscale Actuation",
       "neuromodulation",
-      "Technology",
-      "neurobiology"
+      "integration",
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -36155,7 +36158,7 @@
       "executive functioning",
       "clinical indicators",
       "biomarkers",
-      "Neuroscience"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -36219,9 +36222,9 @@
       "Objective Performance Metrics",
       "User Experience Quantification",
       "development",
-      "cognitive",
-      "digital",
-      "treatment"
+      "psychological",
+      "treatment",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-15",
@@ -36523,8 +36526,8 @@
       "Industry 5.0",
       "AI",
       "Human",
-      "digital",
-      "challenges"
+      "Methods",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-17",
@@ -36669,10 +36672,10 @@
       "AI",
       "Mental disorders",
       "neurological disorders",
+      "clinical",
       "machine learning",
       "Neuroscience",
-      "Neuroimaging",
-      "biomarkers"
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-18",
@@ -36701,10 +36704,10 @@
       "data",
       "FAIR²",
       "open science",
+      "clinical",
       "Neuroscience",
-      "Neuroimaging",
-      "cognition",
-      "Human"
+      "Human",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-18",
@@ -36787,10 +36790,10 @@
       "BCI brain",
       "neurotechnology",
       "computational neuroscience",
-      "Brain",
+      "Applications",
       "development",
-      "Computational",
-      "EEG"
+      "Brain",
+      "Computational"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-18",
@@ -37466,8 +37469,8 @@
       "Innovative Design",
       "Sensing Technologies",
       "Deformable and stretchable structures",
-      "Technology",
-      "Autonomous systems"
+      "Applications",
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -37550,9 +37553,9 @@
       "Mental and physical comorbidity",
       "Integrated care",
       "Mental Health",
+      "psychological",
       "digital",
-      "challenges",
-      "Interventions"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -37695,8 +37698,8 @@
       "Cybercrime",
       "Technology-Facilitated Violence",
       "Mental Health",
-      "resilience",
-      "well-being"
+      "psychological",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -37726,8 +37729,8 @@
       "Resource scarcity",
       "Circular bioeconomy",
       "Agricultural residues",
-      "challenges",
-      "Climate Change"
+      "management",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -37906,7 +37909,7 @@
       "posture",
       "balance",
       "object manipulation",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -37995,9 +37998,9 @@
       "Resilience. Emotional distress",
       "Caring",
       "mechanisms",
+      "resilience",
       "cognitive",
-      "social",
-      "resilience"
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-21",
@@ -38107,7 +38110,7 @@
       "disc herniation",
       "minimally invasive regenerative",
       "medicine multidisciplinary team",
-      "social"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-21",
@@ -38190,10 +38193,10 @@
       "action observation",
       "neurorehabilitation",
       "development",
+      "clinical",
       "Learning",
       "neuroplasticity",
-      "Neurological disorders",
-      "attention"
+      "Neurological disorders"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-21",
@@ -38251,7 +38254,7 @@
       "mechanisms",
       "Brain",
       "Neuroscience",
-      "production"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-21",
@@ -38333,9 +38336,9 @@
       "NMOSD",
       "MOGAD",
       "diagnosis",
+      "clinical",
       "Multiple Sclerosis",
-      "attention",
-      "CNS"
+      "attention"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-22",
@@ -38716,7 +38719,7 @@
       "Resilience",
       "resilience",
       "evolution",
-      "Biodiversity"
+      "Ecology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-25",
@@ -38832,7 +38835,7 @@
       "sustainability",
       "mechanisms",
       "Methods",
-      "genetics"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-25",
@@ -38861,9 +38864,9 @@
       "criminal responsibility",
       "legal competence",
       "validity assessment",
+      "clinical",
       "cognitive",
-      "behavior",
-      "decision-making"
+      "behavior"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-25",
@@ -39057,8 +39060,8 @@
       "socioeconomic",
       "wellbeing",
       "social",
-      "Children",
-      "Public health"
+      "Public health",
+      "Children"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-27",
@@ -39116,8 +39119,8 @@
     "topics": [
       "control",
       "surveillance",
-      "Control",
-      "Mitochondria"
+      "Mitochondria",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-28",
@@ -39200,8 +39203,8 @@
       "Lameness Fascia",
       "Human",
       "treatment",
-      "Pain",
-      "welfare"
+      "integration",
+      "Pain"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-28",
@@ -39327,8 +39330,8 @@
       "lifespan trajectories",
       "translational neuroscience",
       "Brain",
-      "Neuroimaging",
-      "Human"
+      "Human",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-29",
@@ -39388,8 +39391,8 @@
       "PET",
       "motor cortex",
       "AI",
-      "Neuroimaging",
-      "biomarkers"
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-29",
@@ -39475,7 +39478,7 @@
       "well-being",
       "ageism",
       "digital health literacy",
-      "Aging"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-29",
@@ -39506,7 +39509,7 @@
       "tau protein",
       "gene expression",
       "neuroprotective therapy",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-30",
@@ -39591,8 +39594,8 @@
       "multi-omics",
       "genetics",
       "Omics",
-      "Multi-omics",
-      "integration"
+      "integration",
+      "Multi-omics"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-30",
@@ -39653,8 +39656,8 @@
       "Gold nanoparticles",
       "Hybrid imaging modalities",
       "challenges",
-      "evolution",
-      "diagnosis"
+      "diagnosis",
+      "evolution"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-30",
@@ -39797,7 +39800,7 @@
       "Aging",
       "Neurodegeneration",
       "mechanisms",
-      "cognitive"
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-30",
@@ -39911,7 +39914,7 @@
       "Real-time Monitoring",
       "AI",
       "Mental Health",
-      "machine learning"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -39968,7 +39971,7 @@
       "Presence",
       "Cognitive Load",
       "Emotions",
-      "cognitive"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -39998,8 +40001,8 @@
       "Dispersal",
       "Path Analysis",
       "management",
-      "Biodiversity",
-      "Ecology"
+      "Ecology",
+      "Biodiversity"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -40074,8 +40077,8 @@
       "transparency",
       "reporting practices",
       "reproducibility",
-      "Methods",
-      "attention"
+      "psychological",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -40562,9 +40565,9 @@
       "multi-agent systems",
       "embodied intelligence",
       "Multi-agent reinforcement learning",
-      "cognition",
+      "Applications",
       "development",
-      "cognitive"
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -40596,7 +40599,7 @@
       "inference",
       "Society Affiliated RT",
       "mechanisms",
-      "Brain"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -40882,7 +40885,7 @@
       "Immersive Technologies",
       "AI",
       "Human",
-      "Robotics"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -40914,7 +40917,7 @@
       "Accessibility",
       "digital",
       "challenges",
-      "digital health"
+      "healthcare"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -41123,8 +41126,8 @@
       "fish",
       "feeding",
       "Brain",
-      "behavior",
       "Climate Change",
+      "behavior",
       "environment"
     ],
     "collection_type": "research_topic",
@@ -41352,8 +41355,8 @@
       "Learning",
       "Soft robotics",
       "control",
-      "Control",
-      "Applications"
+      "Applications",
+      "Control"
     ],
     "collection_type": "special_issue",
     "deadline": "2026-12-31",
@@ -41761,7 +41764,7 @@
       "curriculum design",
       "accessibility",
       "game-based learning",
-      "Human"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -41823,9 +41826,9 @@
       "Anticancer drugs",
       "Pharmacokinetics",
       "Personnalised medicine",
-      "Brain",
       "development",
-      "treatment"
+      "Brain",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -41951,8 +41954,8 @@
       "Seed amplification assays",
       "Neurodegenerative disease heterogeneity",
       "Brain",
-      "Neurodegenerative diseases",
-      "Modeling"
+      "clinical",
+      "Neurodegenerative diseases"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42227,8 +42230,8 @@
       "evolution",
       "Ecology",
       "reviews",
-      "Review papers",
-      "reviews in"
+      "reviews in",
+      "Review papers"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42258,8 +42261,8 @@
       "evolution",
       "Ecology",
       "reviews",
-      "Phylogenetics",
-      "phylogenomics"
+      "reviews in",
+      "Phylogenetics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42689,7 +42692,7 @@
       "intelligent agents",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42745,10 +42748,10 @@
       "Genitourinary",
       "Robotics",
       "prostatectomy",
+      "clinical",
       "data",
-      "Technology",
-      "surgery",
-      "clinical"
+      "integration",
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42829,8 +42832,8 @@
     "topics": [
       "evolution",
       "Ecology",
-      "women in",
-      "Women"
+      "Women",
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42859,9 +42862,9 @@
       "Community and Ecosystem Dynamics",
       "evolution",
       "Ecology",
-      "women in",
+      "community",
       "Women",
-      "community"
+      "women in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -43105,8 +43108,8 @@
       "Anthropogenic Pollution",
       "Sentinel Species",
       "Mobile Genetic Elements",
-      "epidemiology",
-      "Antimicrobial resistance"
+      "clinical",
+      "environment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-01",
@@ -43136,8 +43139,8 @@
       "non-coding RNAs",
       "Molecular biomarkers",
       "mechanisms",
-      "biomarkers",
-      "development"
+      "development",
+      "biomarkers"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-02",
@@ -43229,9 +43232,9 @@
       "Neuro-Oncology",
       "LLM",
       "AI",
+      "development",
       "Brain",
-      "biomarkers",
-      "Human"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-03",
@@ -43324,11 +43327,11 @@
     ],
     "topics": [
       "Digital Health Technologies",
-      "digital",
+      "clinical",
       "treatment",
-      "diagnosis",
+      "digital",
       "data",
-      "clinical"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-03",
@@ -43670,8 +43673,8 @@
       "brain tumors",
       "neurogenesis",
       "Brain",
-      "Neurodegenerative diseases",
-      "Neurological disorders"
+      "molecular",
+      "Neurodegenerative diseases"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-05",
@@ -43781,9 +43784,9 @@
       "Neural Privacy",
       "AI Governance",
       "Algorithmic Bias",
+      "Applications",
       "Brain",
-      "Neuroscience",
-      "Human"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -43813,9 +43816,9 @@
       "suicide prevention",
       "veteran mental health",
       "development",
+      "clinical",
       "Interventions",
-      "Risk",
-      "Prevention"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -43962,8 +43965,8 @@
       "mental health",
       "digital technology use",
       "Mental Health",
-      "Brain",
-      "cognition"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44039,11 +44042,11 @@
       "Brain-Computer Interfaces",
       "Neurorehabilitation",
       "Brain",
+      "clinical",
       "Neuroimaging",
       "neurorehabilitation",
       "EEG",
-      "decision-making",
-      "BCI"
+      "decision-making"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44072,10 +44075,10 @@
       "plasticity",
       "Neurobiological mechanisms",
       "mechanisms",
+      "development",
       "Brain",
       "Neuroscience",
-      "Human",
-      "development"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44105,9 +44108,9 @@
       "AI",
       "Multimodal Imaging",
       "Clinical Translation",
+      "Applications",
       "Brain",
-      "Human",
-      "challenges"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44170,8 +44173,8 @@
       "mental health",
       "cognition",
       "biology",
-      "Mental Health",
-      "mechanisms"
+      "mechanisms",
+      "Mental Health"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44203,7 +44206,7 @@
       "Biomedical Engineering",
       "Cybernatics",
       "Mental Health",
-      "well-being"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44234,8 +44237,8 @@
       "glioblastoma",
       "mechanisms",
       "Brain",
-      "management",
-      "therapy"
+      "clinical",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-08",
@@ -44265,9 +44268,9 @@
       "Precision Neuroscience",
       "Individual Differences",
       "mechanisms",
+      "development",
       "Brain",
-      "machine learning",
-      "Neuroscience"
+      "machine learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-09",
@@ -44298,9 +44301,9 @@
       "Aging Society",
       "Chronic Disease Management",
       "Health Economics",
+      "management",
       "Aging",
-      "challenges",
-      "management"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-09",
@@ -44332,7 +44335,7 @@
       "Translational neuroscience",
       "Tumor microenvironmen",
       "Brain",
-      "Neurodegeneration"
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-09",
@@ -44543,9 +44546,9 @@
       "Overcoming blame culture",
       "Diagnostic Uncertainty",
       "Veterinary Diagnostic Imaging",
+      "Applications",
       "Brain",
-      "cognition",
-      "Learning"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-10",
@@ -44726,7 +44729,7 @@
       "AI",
       "Mental Health",
       "Human",
-      "social"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-11",
@@ -44871,8 +44874,8 @@
       "functional recovery",
       "patient-centred metrics",
       "Brain",
-      "cognitive",
-      "management"
+      "management",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-11",
@@ -44900,10 +44903,10 @@
       "neurological diseases",
       "dementia",
       "natural product",
-      "Neuroinflammation",
       "mechanisms",
-      "Brain",
-      "development"
+      "Neuroinflammation",
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-11",
@@ -44964,8 +44967,8 @@
       "Pediatric neuropsychiatric syndromes",
       "mechanisms",
       "biomarkers",
-      "stress",
       "treatment",
+      "stress",
       "Therapeutic strategies"
     ],
     "collection_type": "research_topic",
@@ -45018,8 +45021,8 @@
       "safety-critical systems",
       "Human",
       "Learning",
-      "Robotics",
       "data",
+      "Robotics",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -45084,7 +45087,7 @@
       "Multimodal learning analytics",
       "Cognitive performance",
       "Human-AI interaction",
-      "cognition"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-12",
@@ -45528,8 +45531,8 @@
       "triarchic model of psychopathy",
       "antisocial behavior",
       "mechanisms",
-      "Neuroscience",
-      "Neuroimaging"
+      "development",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-15",
@@ -45583,8 +45586,8 @@
       "Sentinel lymph node biopsy",
       "Comparative oncology",
       "Surgical oncology",
-      "challenges",
       "treatment",
+      "challenges",
       "cancer"
     ],
     "collection_type": "research_topic",
@@ -46045,7 +46048,7 @@
       "Paralympic",
       "Inclusive research",
       "management",
-      "Prevention"
+      "assessment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-16",
@@ -46368,11 +46371,11 @@
       "Psychedelic",
       "Neuromodulation",
       "Brain",
-      "neuromodulation",
+      "clinical",
       "treatment",
+      "neuromodulation",
       "neuroplasticity",
-      "Psychiatry",
-      "depression"
+      "Psychiatry"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-16",
@@ -46432,9 +46435,9 @@
       "Stress Recovery",
       "Meaning-Making",
       "Wellbeing Trajectories",
-      "Mental Health",
       "mechanisms",
-      "Human"
+      "Mental Health",
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-16",
@@ -46879,9 +46882,9 @@
       "working memory",
       "attention",
       "biomarkers",
+      "Applications",
       "Brain",
-      "Neuroimaging",
-      "ecological validity"
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-17",
@@ -47228,8 +47231,8 @@
       "forest ecosystem services",
       "ecological threshold responses",
       "mechanisms",
-      "challenges",
       "management",
+      "challenges",
       "Biodiversity"
     ],
     "collection_type": "research_topic",
@@ -47351,8 +47354,8 @@
     "topics": [
       "evolution",
       "Ecology",
-      "women in",
       "Women",
+      "women in",
       "Developmental Biology"
     ],
     "collection_type": "research_topic",
@@ -47442,7 +47445,7 @@
       "Human-AI collaboration",
       "Human",
       "digital",
-      "challenges"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-20",
@@ -47739,9 +47742,9 @@
       "AI",
       "signal processing",
       "Brain",
+      "clinical",
       "machine learning",
-      "Neuroscience",
-      "cognition"
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-22",
@@ -47865,7 +47868,7 @@
       "mechanisms",
       "Brain",
       "treatment",
-      "Sex differences"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-22",
@@ -48162,7 +48165,7 @@
       "Neuro-AI Alignment",
       "AI",
       "Neuroscience",
-      "cognition"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-23",
@@ -48290,7 +48293,7 @@
       "Neurorehabilitation",
       "Sensorimotor integration",
       "Inclusive movement",
-      "Human"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-24",
@@ -48319,9 +48322,9 @@
       "Magnetic resonance imaging",
       "Nervous system neoplasms",
       "Theranostics",
-      "Neuroimaging",
-      "biomarkers",
-      "challenges"
+      "Applications",
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-24",
@@ -48353,9 +48356,9 @@
       "clinical trial matching",
       "pediatric oncology",
       "precision medicine",
-      "challenges",
+      "clinical",
       "treatment",
-      "data"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48385,9 +48388,9 @@
       "Adolescent health",
       "Cannabis use",
       "mental health",
+      "development",
       "Brain",
-      "Human",
-      "development"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48482,8 +48485,8 @@
       "digital biomarkers",
       "precision psychiatry",
       "mechanisms",
-      "Brain",
-      "Neuroscience"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48514,8 +48517,8 @@
       "Preterm Brain Injury",
       "Hypoxic-Ischemic Encephalopathy",
       "Neonatal Neuroimaging",
-      "Brain",
       "development",
+      "Brain",
       "cognitive"
     ],
     "collection_type": "research_topic",
@@ -48546,8 +48549,8 @@
       "neuronal reprogramming",
       "glia interactions",
       "mechanisms",
-      "imaging",
-      "regeneration"
+      "molecular",
+      "imaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48660,8 +48663,8 @@
       "Neuroinflammation",
       "Stroke therapy",
       "Brain",
-      "Interventions",
-      "stroke"
+      "clinical",
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48691,9 +48694,9 @@
       "Disease prevention",
       "Disease management",
       "Psychiatry",
-      "Mental Health",
       "mechanisms",
-      "social"
+      "Mental Health",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48724,8 +48727,8 @@
       "tDCS",
       "DBS",
       "Brain",
-      "Neuroimaging",
-      "imaging"
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48757,7 +48760,7 @@
       "Affective Regulation",
       "Digital Therapeutics",
       "Immersive Therapy",
-      "cognitive"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-25",
@@ -48816,9 +48819,9 @@
       "Work-Related Rumination",
       "right-to-disconnect",
       "mechanisms",
-      "well-being",
+      "psychological",
       "digital",
-      "evolution"
+      "well-being"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-26",
@@ -49285,8 +49288,8 @@
     "topics": [
       "epigenetics",
       "development",
-      "Epigenetics",
-      "Organoids"
+      "Organoids",
+      "Epigenetics"
     ],
     "collection_type": "collection",
     "deadline": "2027-01-29",
@@ -49518,10 +49521,10 @@
       "AI",
       "motor control",
       "Brain",
-      "cognition",
+      "clinical",
       "Human",
-      "Learning",
-      "Control"
+      "cognition",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -49552,8 +49555,8 @@
       "Epileptogenesis",
       "Status Epilepticus",
       "mechanisms",
-      "Control",
-      "epilepsy"
+      "molecular",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -49763,8 +49766,8 @@
       "attachment",
       "caregiver",
       "lifespan",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -49792,10 +49795,10 @@
       "Longitudinal Study",
       "Lifespan",
       "Neurodevelopmental",
+      "clinical",
       "challenges",
       "lifespan",
-      "attention",
-      "adolescence"
+      "attention"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -49828,7 +49831,7 @@
       "DBS",
       "ultrasound",
       "mechanisms",
-      "Brain"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -49859,7 +49862,7 @@
       "Physiological responses",
       "assessment",
       "welfare",
-      "animals"
+      "livestock"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-29",
@@ -50052,9 +50055,9 @@
       "radiochromic film dosimetry",
       "intracranial dose verification",
       "advanced radiotherapy techniques",
+      "Applications",
       "Brain",
-      "treatment",
-      "data"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-31",
@@ -50538,7 +50541,7 @@
       "AI",
       "NATP",
       "Human",
-      "Rehabilitation"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-31",
@@ -50732,8 +50735,8 @@
       "accuracy evaluation",
       "sensor noise robust calibration",
       "calibration error correction",
-      "Computational",
       "Methods",
+      "Computational",
       "Risk",
       "vision"
     ],
@@ -50854,7 +50857,7 @@
       "Parental care evolution",
       "mechanisms",
       "Neuroimaging",
-      "social"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-31",
@@ -51407,8 +51410,8 @@
       "workplace",
       "digital transformation",
       "Mental Health",
-      "well-being",
-      "stress"
+      "psychological",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-01",
@@ -51555,9 +51558,9 @@
       "Connectivity",
       "Acute Neurorehabilitation",
       "Brain",
-      "cognitive",
-      "behavior",
-      "challenges"
+      "clinical",
+      "treatment",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-01",
@@ -51805,9 +51808,9 @@
       "enhanced-CT",
       "MRI",
       "endoscopic surgery",
-      "challenges",
+      "clinical",
       "treatment",
-      "diagnosis"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-02",
@@ -51894,8 +51897,8 @@
       "clinical translation",
       "rehabilitation strategies",
       "mechanisms",
-      "challenges",
-      "Interventions"
+      "clinical",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-05",
@@ -52059,8 +52062,8 @@
       "machine learning",
       "neuro-oncology",
       "Brain",
-      "Computational",
-      "challenges"
+      "treatment",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-06",
@@ -52205,10 +52208,10 @@
       "community-level hazards",
       "global climate impacts",
       "Neurocritical care systems",
-      "Neuroinflammation",
       "mechanisms",
-      "cognitive",
-      "stress"
+      "Neuroinflammation",
+      "psychological",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-06",
@@ -52239,8 +52242,8 @@
       "Intervention",
       "Behavioral mechanism",
       "Individual Cognition",
-      "Technology",
-      "psychological"
+      "psychological",
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-06",
@@ -52388,8 +52391,8 @@
       "shelters",
       "adoption",
       "human/animal bonds",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-07",
@@ -52475,8 +52478,8 @@
       "metabolites",
       "translational studies",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-07",
@@ -52534,7 +52537,7 @@
       "AI",
       "Human",
       "Learning",
-      "Computational"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-08",
@@ -52593,8 +52596,8 @@
       "Stigma",
       "Schizophrenia",
       "Awareness",
-      "social",
       "treatment",
+      "social",
       "Intervention",
       "inclusion",
       "stigma"
@@ -52627,9 +52630,9 @@
       "Data Fusion",
       "Image Segmentation",
       "Machine Learning",
-      "machine learning",
+      "Applications",
       "development",
-      "Learning"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-08",
@@ -52804,8 +52807,8 @@
       "Adaptive Functioning",
       "Mindfulness and Self-regulation",
       "Digital Health Technologies",
-      "psychology",
-      "Human"
+      "Human",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-08",
@@ -52888,8 +52891,8 @@
       "Biocompatibility and stability",
       "Brain",
       "Neuroscience",
-      "imaging",
-      "Neural networks"
+      "integration",
+      "imaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-09",
@@ -52920,8 +52923,8 @@
       "lifespan gene–environment effects",
       "epigenetic mediation DNA methylation",
       "multi-omics integration",
-      "Human",
-      "Aging"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-09",
@@ -52951,9 +52954,9 @@
       "precision neuroscience",
       "AI",
       "mechanisms",
+      "clinical",
       "Neuroscience",
-      "Neuroimaging",
-      "digital"
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-09",
@@ -53268,7 +53271,7 @@
       "gender equity",
       "Mental Health",
       "development",
-      "social"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-12",
@@ -53332,7 +53335,7 @@
       "sympathetic-parasympathetic balance",
       "vagal neuroimmune regulation",
       "maternal-neonatal autonomic adaptation",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-12",
@@ -53458,7 +53461,7 @@
       "neuroplasticity",
       "artificial intelligence and cognition",
       "AI",
-      "cognition",
+      "development",
       "Human"
     ],
     "collection_type": "research_topic",
@@ -54064,7 +54067,7 @@
       "Biodiversity",
       "AI",
       "Human",
-      "social"
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-14",
@@ -54220,8 +54223,8 @@
       "diet composition",
       "food contaminants",
       "animal health",
-      "nutrition",
-      "companion animals"
+      "clinical",
+      "nutrition"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-14",
@@ -54248,11 +54251,11 @@
       "Sex Differences",
       "Schizophrenia",
       "mechanisms",
+      "clinical",
       "treatment",
       "Sex differences",
       "neurobiology",
-      "Psychosis",
-      "clinical"
+      "prognosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-14",
@@ -54313,9 +54316,9 @@
       "Forest Tree Genomics",
       "Epigenetics",
       "mechanisms",
+      "management",
       "challenges",
-      "Climate Change",
-      "evolution"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-15",
@@ -54344,8 +54347,8 @@
       "Adults",
       "Elderly",
       "Neurodevelopmental disorder",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "cognitive"
     ],
     "collection_type": "research_topic",
@@ -54556,7 +54559,7 @@
       "Industry 5.0",
       "Human",
       "cognitive",
-      "Robot"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-16",
@@ -54647,10 +54650,10 @@
       "Neuropsychological assessment",
       "Late-life depression",
       "Cognitive decline",
-      "Mental Health",
       "mechanisms",
-      "Neuroscience",
-      "psychology"
+      "Mental Health",
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-16",
@@ -54680,9 +54683,9 @@
       "Networks",
       "Neurology",
       "Psychiatry",
+      "development",
       "Brain",
-      "machine learning",
-      "Neuroscience"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-16",
@@ -54829,8 +54832,8 @@
       "Chronic Fatigue Syndrome",
       "CFS",
       "cognitive",
-      "Sleep",
       "Pain",
+      "Sleep",
       "Fatigue"
     ],
     "collection_type": "research_topic",
@@ -55627,8 +55630,8 @@
       "Production efficiency",
       "Host–microbiome interactions",
       "resilience",
-      "behavior",
-      "Computational"
+      "Computational",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-20",
@@ -55712,7 +55715,7 @@
       "Neural systems",
       "Brain",
       "mechanisms",
-      "cognition"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-20",
@@ -55776,7 +55779,7 @@
       "fMRI",
       "ECG",
       "eye tracking",
-      "Neuroimaging"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-21",
@@ -55894,8 +55897,8 @@
       "ergonomics",
       "fatigue",
       "Brain",
-      "cognitive",
-      "attention"
+      "clinical",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-21",
@@ -55976,7 +55979,7 @@
       "reptile",
       "Human",
       "Biodiversity",
-      "Animal welfare"
+      "Conservation"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-22",
@@ -56038,8 +56041,8 @@
       "Clinical trials",
       "AI-driven multi-omics modelling",
       "Brain",
-      "machine learning",
-      "Learning"
+      "clinical",
+      "machine learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-22",
@@ -56126,8 +56129,8 @@
       "Stress",
       "Coping strategies",
       "neurobiology",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "Brain",
       "Neuroscience",
       "Human"
@@ -56340,8 +56343,8 @@
       "transdiagnostic psychiatry",
       "reward processing",
       "mechanisms",
-      "Neuroscience",
-      "cognitive"
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-23",
@@ -56459,8 +56462,8 @@
       "Best aquaculture practices",
       "Operational Welfare Indicators",
       "development",
-      "social",
-      "resilience"
+      "resilience",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-26",
@@ -57003,10 +57006,10 @@
       "Human",
       "Decision-Making",
       "healthcare",
-      "decision-making",
       "clinical",
       "Explainability",
-      "robustness"
+      "robustness",
+      "decision-making"
     ],
     "collection_type": "collection",
     "deadline": "2027-02-28",
@@ -57165,7 +57168,7 @@
       "Neuroinflammatory Disorders",
       "Compartmentalized Immunity",
       "Multiple Sclerosis",
-      "Neuroinflammation"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57289,10 +57292,10 @@
       "RNA-based therapies",
       "Pharmacogenomic Biomarkers",
       "Mental Health",
+      "clinical",
       "cognition",
-      "treatment",
-      "Interventions",
-      "Control"
+      "management",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57378,8 +57381,8 @@
       "augmented reality",
       "neuroergonomics",
       "ergonomics",
-      "cognitive",
-      "education"
+      "Applications",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57408,9 +57411,9 @@
       "comorbid mood disorders",
       "post-stroke depression",
       "mechanisms",
+      "clinical",
       "biomarkers",
-      "diagnosis",
-      "depression"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57582,8 +57585,8 @@
       "Autoimmune neuroinflammation",
       "Gastrointestinal tract",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57696,8 +57699,8 @@
       "AI",
       "perception",
       "Neuroscience",
-      "Methods",
-      "data"
+      "psychological",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -57824,8 +57827,8 @@
       "trustworthy AI",
       "human-centered XAI",
       "AI",
-      "treatment",
-      "Methods"
+      "clinical",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -58126,8 +58129,8 @@
       "Neurorehabilitation",
       "Health equity",
       "Mental Health",
-      "development",
-      "cognitive"
+      "Applications",
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -58157,9 +58160,9 @@
       "neuroprotection",
       "dosimetry",
       "clinical translation",
+      "clinical",
       "treatment",
-      "neuroplasticity",
-      "therapy"
+      "neuroplasticity"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -58429,7 +58432,7 @@
       "Vasomotor rehabilitation",
       "Meningeal Lymphatics",
       "Aquaporin-4",
-      "Neuroinflammation"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -58673,8 +58676,8 @@
       "Evolutionary Algorithms",
       "Distributed Robotics",
       "Swarm Intelligence",
-      "Robotics",
       "Computational",
+      "Robotics",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -58808,8 +58811,8 @@
       "molecular mechanisms",
       "plants",
       "mechanisms",
-      "Plants",
-      "molecular"
+      "molecular",
+      "Plants"
     ],
     "collection_type": "collection",
     "deadline": "2027-03-01",
@@ -58970,8 +58973,8 @@
       "development",
       "Immunity",
       "tuberculosis",
-      "immunity",
-      "clinical"
+      "clinical",
+      "immunity"
     ],
     "collection_type": "collection",
     "deadline": "2027-03-01",
@@ -59088,7 +59091,7 @@
       "Multimodal Learning",
       "Social Robots",
       "Embodied Agents",
-      "cognition"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-02",
@@ -59173,7 +59176,7 @@
       "Habitat suitability",
       "Endemic species",
       "Climate refugia",
-      "Climate Change"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-02",
@@ -59582,7 +59585,7 @@
       "Neuroinflammation",
       "biomarkers",
       "treatment",
-      "imaging"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -59669,9 +59672,9 @@
       "speech perception",
       "auditory neuroscience",
       "cortical",
+      "Applications",
       "Brain",
-      "Neuroscience",
-      "Human"
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -59733,8 +59736,8 @@
       "mechanisms",
       "cognitive",
       "social",
-      "autism",
-      "Neurodevelopmental Disorders"
+      "focus",
+      "autism"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -59795,9 +59798,9 @@
       "AI",
       "neurodegeneration",
       "neuropathological markers",
-      "Neurodegeneration",
       "development",
-      "Therapeutic strategies"
+      "Neurodegeneration",
+      "Neurodegenerative"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-07",
@@ -59853,8 +59856,8 @@
       "Stability-plasticity balance",
       "Continual adaptation",
       "machine learning",
-      "cognitive",
-      "Learning"
+      "Learning",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-07",
@@ -59967,7 +59970,7 @@
       "tic disorders",
       "tremor",
       "mechanisms",
-      "Neuroimaging"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-08",
@@ -60001,7 +60004,7 @@
       "decision",
       "trust",
       "Human",
-      "cognitive"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-08",
@@ -60084,9 +60087,9 @@
       "sustainable aquaculture",
       "resilience",
       "Learning",
-      "Robotics",
       "management",
-      "Animal welfare"
+      "Robotics",
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-09",
@@ -60534,7 +60537,7 @@
       "imaging biomarkers",
       "molecular mechanisms",
       "biomarkers",
-      "Neurological disorders"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-12",
@@ -60627,10 +60630,10 @@
       "Immunology",
       "Pediatric Oncology",
       "Neuro Oncology",
-      "Brain",
       "development",
-      "behavior",
-      "Central nervous system"
+      "Brain",
+      "clinical",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-12",
@@ -60857,9 +60860,9 @@
       "mental healthcare access",
       "Mental Health",
       "Brain",
-      "Aging",
+      "psychological",
       "treatment",
-      "diagnosis"
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-13",
@@ -60890,7 +60893,7 @@
       "management",
       "nutrition",
       "mechanisms",
-      "stress"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-13",
@@ -61219,7 +61222,7 @@
       "software engineering",
       "machine learning",
       "Learning",
-      "behavior"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -61282,7 +61285,7 @@
       "AI",
       "mechanisms",
       "cognition",
-      "cognitive"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -61313,7 +61316,7 @@
       "Gut-brain axis",
       "Host–microbiome interactions",
       "mechanisms",
-      "evolution",
+      "molecular",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -61407,8 +61410,8 @@
       "phenomenology",
       "mediation analysis",
       "Brain",
-      "Neuroimaging",
-      "depression"
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -61721,8 +61724,8 @@
       "speech-gesture coordination",
       "cognitive development",
       "mechanisms",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-15",
@@ -61751,9 +61754,9 @@
       "cultural aspects",
       "social interventions",
       "Mental Health",
-      "social",
+      "psychological",
       "resilience",
-      "well-being"
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-15",
@@ -61846,8 +61849,8 @@
       "Neurocognitive mechanisms",
       "Biomarkers. Therapeutic interventions",
       "mechanisms",
-      "Neuroscience",
-      "Neuroimaging"
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-15",
@@ -61874,8 +61877,8 @@
     "topics": [
       "control",
       "mechanisms",
-      "Control",
-      "psychological"
+      "psychological",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-15",
@@ -61922,8 +61925,8 @@
     ],
     "topics": [
       "molecular psychiatry",
-      "Psychiatry",
-      "molecular"
+      "molecular",
+      "Psychiatry"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-15",
@@ -62120,8 +62123,8 @@
       "Person-centered care",
       "Public mental health policy",
       "Mental Health",
-      "psychology",
-      "social"
+      "resilience",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-16",
@@ -62325,8 +62328,8 @@
       "tau PET)",
       "Combination and multi-target strategies",
       "miRNA-based modulation",
-      "Human",
-      "cognitive"
+      "clinical",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-16",
@@ -62412,8 +62415,8 @@
       "genetics",
       "mechanisms",
       "treatment",
-      "neuroplasticity",
-      "Psychiatry"
+      "molecular",
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-16",
@@ -62680,7 +62683,7 @@
       "therapy",
       "personalized medicine",
       "development",
-      "challenges"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-18",
@@ -62810,7 +62813,7 @@
       "neuroinflammation",
       "Spasticity-Plus Syndrome",
       "neurorehabilitation",
-      "Neuroinflammation"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-18",
@@ -63518,10 +63521,10 @@
       "implementation of best practices",
       "system-wide outcomes",
       "social impact",
+      "integration",
       "Interventions",
-      "psychiatric",
       "Rehabilitation",
-      "community"
+      "psychiatric"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-26",
@@ -63615,8 +63618,8 @@
       "Digital Technology",
       "Mental Health",
       "AI",
-      "Aging",
-      "social"
+      "psychological",
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-26",
@@ -64151,7 +64154,7 @@
       "Social Relationship",
       "Equity and Inclusion",
       "Community Participation",
-      "Human"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-31",
@@ -64182,7 +64185,7 @@
       "Neurodegeneration",
       "Neuroscience",
       "challenges",
-      "Neurodegenerative diseases"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-31",
@@ -64426,9 +64429,9 @@
       "central nervous system infections",
       "endemic diseases",
       "neurotropic pathogens",
+      "clinical",
       "challenges",
-      "Climate Change",
-      "Central nervous system"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-31",
@@ -64483,9 +64486,9 @@
       "AI",
       "Digital Biomarkers",
       "Cybersecurity",
+      "Applications",
       "Brain",
-      "biomarkers",
-      "cognitive"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-31",
@@ -64547,8 +64550,8 @@
       "Healthcare Access",
       "AI Diagnostics",
       "Mental Health",
-      "Aging",
-      "challenges"
+      "clinical",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-31",
@@ -65625,9 +65628,9 @@
     "topics": [
       "Innovation",
       "synthesis",
-      "innovation",
       "Applications",
-      "molecular"
+      "molecular",
+      "innovation"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-10",
@@ -65656,9 +65659,9 @@
       "severe mental illness",
       "digital phenotyping",
       "ecological momentary assessment",
-      "social",
-      "behavior",
-      "digital"
+      "clinical",
+      "digital",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-12",
@@ -65933,11 +65936,11 @@
       "Eye movement",
       "dynamic vision",
       "eye tracking",
+      "clinical",
+      "management",
       "challenges",
       "diagnosis",
-      "management",
-      "vision",
-      "mental disorders"
+      "vision"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-15",
@@ -65965,11 +65968,11 @@
       "livestock breeding",
       "multi-omics",
       "sustainable agriculture",
+      "Applications",
       "machine learning",
       "Learning",
-      "Computational",
-      "challenges",
-      "Methods"
+      "Methods",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-15",
@@ -66310,8 +66313,8 @@
       "Human",
       "epigenetics",
       "mechanisms",
-      "Epigenetics",
-      "Applications"
+      "Applications",
+      "Epigenetics"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-22",
@@ -66715,8 +66718,8 @@
       "Educational settings",
       "Lifespan development",
       "mechanisms",
-      "Neuroscience",
-      "psychology"
+      "development",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-26",
@@ -66798,10 +66801,10 @@
       "case report",
       "neuro-ophthalmology",
       "rare cases",
+      "clinical",
       "treatment",
       "healthcare",
       "Neurological disorders",
-      "clinical",
       "Neuro-ophthalmology"
     ],
     "collection_type": "research_topic",
@@ -67023,8 +67026,8 @@
       "Functional preservation",
       "Sustainable healthcare",
       "mechanisms",
-      "Brain",
-      "Human"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67055,7 +67058,7 @@
       "Adulthood",
       "mechanisms",
       "development",
-      "social"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67171,8 +67174,8 @@
       "Neuroinflammation",
       "Disease-modifying strategies",
       "Brain",
-      "Interventions",
-      "brain disorders"
+      "molecular",
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67316,8 +67319,8 @@
       "Transdisciplinary Rehabilitation",
       "Rare Genetic Disorder Psychology",
       "mechanisms",
-      "cognitive",
-      "social",
+      "clinical",
+      "psychological",
       "resilience"
     ],
     "collection_type": "research_topic",
@@ -67398,8 +67401,8 @@
       "EEG",
       "fNIRS",
       "mechanisms",
-      "Brain",
-      "Neuroimaging"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67461,10 +67464,10 @@
       "Brainstem Respiratory control",
       "Opioids Pharmacokinetic",
       "mechanisms",
+      "clinical",
       "management",
-      "depression",
-      "Pain",
-      "Public health"
+      "molecular",
+      "depression"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67590,7 +67593,7 @@
       "Pharmacological intervention",
       "mechanisms",
       "development",
-      "Interventions"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67707,7 +67710,7 @@
       "Gait rehabilitation",
       "Brain",
       "Aging",
-      "behavior"
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-30",
@@ -67738,7 +67741,7 @@
       "goat reproduction",
       "fertility prediction",
       "Control",
-      "Animal Health"
+      "production"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-05-01",
@@ -68358,8 +68361,8 @@
       "balance",
       "immunometabolism",
       "cancer",
-      "Immunometabolism",
-      "immunosuppression"
+      "immunosuppression",
+      "Immunometabolism"
     ],
     "collection_type": "collection",
     "deadline": "2027-05-14",
@@ -69568,8 +69571,8 @@
       "multifunctional soft robotics",
       "Robotics",
       "behavior",
-      "Soft robotics",
-      "integration"
+      "integration",
+      "Soft robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-05-31",
@@ -69752,8 +69755,8 @@
       "spatial transcriptomics",
       "neurogenomics",
       "nervous system adaptation",
-      "Neuroscience",
-      "development"
+      "development",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-06-06",
@@ -69847,8 +69850,8 @@
       "Neurophysiological Effects",
       "Sound Therapy",
       "Human",
-      "cognitive",
-      "well-being"
+      "psychological",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-06-10",
@@ -70506,8 +70509,8 @@
       "Translational Genetics",
       "AI",
       "mechanisms",
-      "Methods",
-      "data"
+      "clinical",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70601,8 +70604,8 @@
       "affective intelligence theory",
       "emotion regulation",
       "neuroscience",
-      "psychology",
-      "Human"
+      "Human",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70689,12 +70692,12 @@
     "topics": [
       "AI",
       "Cancer",
+      "management",
       "treatment",
       "Control",
-      "management",
       "cancer",
-      "Artificial Intelligence (AI)",
-      "Pain"
+      "Pain",
+      "Artificial Intelligence (AI)"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -70969,10 +70972,10 @@
       "AI model",
       "neurological disorders",
       "AI",
-      "Neuroimaging",
       "development",
-      "Computational",
-      "Alzheimer's disease"
+      "Neuroimaging",
+      "treatment",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71034,9 +71037,9 @@
       "Biomarker",
       "Multi-omics",
       "mechanisms",
-      "machine learning",
-      "Neuroscience",
-      "Learning"
+      "Applications",
+      "clinical",
+      "machine learning"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71065,9 +71068,9 @@
       "Power Consumption",
       "Integrated Device Technologies",
       "In vivo Recording",
-      "Human",
+      "Applications",
       "development",
-      "neuromodulation"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71132,7 +71135,7 @@
       "Neurocognitive Disorders",
       "Neuroimaging",
       "cognitive",
-      "Neurodegenerative diseases"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71220,7 +71223,7 @@
       "neurodegenerative diseases",
       "neurologic disorders",
       "physiopathology",
-      "Human"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71316,9 +71319,9 @@
       "traumatic brain injury",
       "cerebral lesions",
       "Brain",
-      "Technology",
-      "Traumatic Brain Injury",
-      "brain injury"
+      "clinical",
+      "monitoring",
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71349,8 +71352,8 @@
       "Retinal disorders",
       "Therapeutic strategies",
       "Vision loss",
-      "Central nervous system",
-      "monitoring"
+      "monitoring",
+      "Central nervous system"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71470,8 +71473,8 @@
       "neural interaction",
       "psychiatric intervention",
       "neuroinflammation",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "Brain"
     ],
     "collection_type": "research_topic",
@@ -71503,8 +71506,8 @@
       "AI Powered Agronomy",
       "Autonomous Agricultural Vehicles",
       "AI",
-      "Robotics",
-      "challenges"
+      "management",
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71535,7 +71538,7 @@
       "Evidence-Based Practices",
       "Psychiatry",
       "Therapy",
-      "psychology"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71597,7 +71600,7 @@
       "Indigenous Knowledge",
       "Global South",
       "Building Resilience",
-      "Human"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71848,8 +71851,8 @@
       "environmental entrainment cues",
       "anthropogenic disruptions",
       "social",
-      "well-being",
-      "Climate Change"
+      "Climate Change",
+      "well-being"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71880,8 +71883,8 @@
       "environmental science",
       "global change",
       "zooarchaeology",
-      "Ecology",
-      "animals"
+      "Applications",
+      "Ecology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71911,8 +71914,8 @@
       "Parkinsonian Disorders",
       "MRI",
       "multisystem atrophy",
-      "Neuroimaging",
-      "treatment"
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -71943,7 +71946,7 @@
       "place-based interventions",
       "mechanisms",
       "Neuroscience",
-      "psychology"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72030,8 +72033,8 @@
       "Explainable AI",
       "Human-AI Interaction",
       "Mental Health",
-      "Human",
-      "digital"
+      "clinical",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72061,10 +72064,10 @@
       "eye",
       "AI",
       "machine learning",
+      "clinical",
       "Learning",
-      "challenges",
-      "treatment",
-      "deep learning"
+      "management",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72517,7 +72520,7 @@
       "Synergies and Trade-offs",
       "Ecosystem Services",
       "Ecological Dynamics",
-      "Human"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72611,8 +72614,8 @@
       "Epigenetic Modifications",
       "Mental Health Conditions",
       "mechanisms",
-      "Neuroscience",
-      "behavior"
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72702,7 +72705,7 @@
       "cell therapy",
       "Brain",
       "Neuroimaging",
-      "Interventions"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72829,7 +72832,7 @@
       "neuropsychiatric",
       "neural circuits",
       "biomarkers",
-      "Neuroscience"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72857,11 +72860,11 @@
       "Genomics",
       "Native Crops",
       "Traditional Agroecosystems",
+      "Methods",
+      "data",
       "challenges",
       "Climate Change",
-      "Methods",
-      "evolution",
-      "data"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -72989,8 +72992,8 @@
       "AI",
       "Prevention",
       "Mental Health",
-      "stress",
-      "challenges"
+      "challenges",
+      "stress"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73017,11 +73020,11 @@
       "Case Reports",
       "Autism",
       "ASD",
+      "clinical",
+      "management",
       "treatment",
       "diagnosis",
-      "education",
-      "management",
-      "Psychiatry"
+      "education"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73168,8 +73171,8 @@
       "Cerebral Venous Disorders",
       "development",
       "diagnosis",
-      "Neurological disorders",
-      "focus"
+      "focus",
+      "Neurological disorders"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73232,8 +73235,8 @@
       "neurodevelopmental disorders",
       "histone modification",
       "iPSCs",
-      "Brain",
       "development",
+      "Brain",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -73321,9 +73324,9 @@
       "AI",
       "Vision",
       "mechanisms",
+      "Applications",
       "development",
-      "cognitive",
-      "Robotics"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73571,9 +73574,9 @@
       "computational modeling",
       "network pharmacology",
       "neuroprotection",
+      "molecular",
       "Computational",
-      "stress",
-      "Interventions"
+      "stress"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73808,8 +73811,8 @@
       "Gerontechnology",
       "AI",
       "Mental Health",
-      "Aging",
-      "development"
+      "development",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73898,7 +73901,7 @@
       "neuroanatomy",
       "Ganglia Network",
       "basal ganglia",
-      "Human"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73995,8 +73998,8 @@
       "Self-awareness Ethics",
       "mechanisms",
       "Neuroscience",
-      "Neuroimaging",
-      "psychology"
+      "Human",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74026,9 +74029,9 @@
       "ASD",
       "neurodevelopment",
       "mechanisms",
+      "clinical",
       "social",
-      "challenges",
-      "diagnosis"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74147,8 +74150,8 @@
       "CNS germ cell tumors",
       "germ cell tumors",
       "Neuroimaging",
-      "evolution",
       "diagnosis",
+      "evolution",
       "Adolescents",
       "Central nervous system"
     ],
@@ -74180,9 +74183,9 @@
       "Healthcare",
       "Personalization",
       "Digital Health",
-      "digital",
-      "challenges",
-      "treatment"
+      "clinical",
+      "treatment",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74213,9 +74216,9 @@
       "digital health",
       "WHO classifications",
       "digital",
+      "data",
       "challenges",
-      "language",
-      "data"
+      "language"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74247,7 +74250,7 @@
       "GRN",
       "MAPT",
       "Brain",
-      "biomarkers"
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74279,8 +74282,8 @@
       "Psychological Processing Streams",
       "Integration vs Segregation",
       "Behavioral Control",
-      "cognitive",
-      "Learning"
+      "Learning",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74345,10 +74348,10 @@
       "brain development",
       "behavioral development",
       "Down's syndrome",
-      "Brain",
-      "Neuroimaging",
       "development",
-      "cognitive"
+      "Brain",
+      "clinical",
+      "Neuroimaging"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74499,7 +74502,7 @@
       "eutrophication",
       "mechanisms",
       "resilience",
-      "stress"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74562,8 +74565,8 @@
       "Evidence-Based Practice",
       "Learning Outcomes",
       "Neuroscience",
-      "cognitive",
-      "Learning"
+      "Learning",
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74694,7 +74697,7 @@
       "Multiple Sclerosis",
       "AI",
       "mechanisms",
-      "Neurodegeneration"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74883,7 +74886,7 @@
       "mental wellbeing",
       "Mental Health",
       "social",
-      "well-being",
+      "challenges",
       "stress"
     ],
     "collection_type": "research_topic",
@@ -74945,8 +74948,8 @@
       "Foundation models for robotics",
       "visual- language-action",
       "AI",
-      "Learning",
-      "challenges"
+      "Applications",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75038,8 +75041,8 @@
       "neuroimaging",
       "clinical manifestation",
       "behavioural comodity",
-      "Veterinary science",
-      "veterinary"
+      "veterinary",
+      "Veterinary science"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75199,8 +75202,8 @@
       "drug repurposing",
       "cognitive dysfunction",
       "mechanisms",
+      "clinical",
       "treatment",
-      "cancer",
       "healthcare"
     ],
     "collection_type": "research_topic",
@@ -75316,8 +75319,8 @@
       "Therapeutic Targets",
       "Mechanistic Studies",
       "Pharmacological Innovations",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "treatment"
     ],
     "collection_type": "research_topic",
@@ -75383,7 +75386,7 @@
       "Neurodegenerative Disorders",
       "Barrier Integrity",
       "Translational Therapeutics",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75415,7 +75418,7 @@
       "mental practice",
       "mental skills",
       "action representation",
-      "lifespan"
+      "Applications"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75445,8 +75448,8 @@
       "Astrocytes",
       "Clinical antidepressant drugs",
       "mechanisms",
-      "depression",
-      "Addiction"
+      "clinical",
+      "depression"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75539,10 +75542,10 @@
       "neuromodulation",
       "neuropsychiatry",
       "Brain",
+      "clinical",
       "Neuroimaging",
       "treatment",
-      "Interventions",
-      "Psychiatric disorders"
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75606,9 +75609,9 @@
       "physiology",
       "mechanisms",
       "Brain",
-      "Microglia",
       "focus",
-      "Astrocytes"
+      "Microglia",
+      "Therapeutic strategies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75665,11 +75668,11 @@
       "Neurosurgery",
       "External Ventricular Drainage",
       "neurosurgical procedure",
-      "challenges",
       "management",
+      "challenges",
+      "monitoring",
       "future directions",
-      "neurosurgery",
-      "monitoring"
+      "neurosurgery"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76013,8 +76016,8 @@
       "neurovascular dysfunction",
       "cerebral ischemia reperfusion injury",
       "mechanisms",
-      "biomarkers",
       "development",
+      "biomarkers",
       "treatment"
     ],
     "collection_type": "research_topic",
@@ -76080,7 +76083,7 @@
       "Artificial intelligence (AI)",
       "AI",
       "Mental Health",
-      "psychology"
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76111,8 +76114,8 @@
       "Alzheimer's",
       "Parkinson's",
       "development",
-      "Neurodegenerative",
-      "community"
+      "community",
+      "Emerging technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76170,7 +76173,7 @@
       "Executive Function",
       "Working Memory",
       "AI",
-      "Neuroscience"
+      "development"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76197,10 +76200,10 @@
       "Neurogenetics",
       "Gene Therapy",
       "Neuromuscular Disorders",
-      "genetics",
+      "clinical",
       "Risk",
+      "genetics",
       "dementia",
-      "Frontotemporal Dementia",
       "Risk factors"
     ],
     "collection_type": "research_topic",
@@ -76264,8 +76267,8 @@
       "AI",
       "development",
       "digital",
-      "Climate Change",
-      "data"
+      "data",
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76576,9 +76579,9 @@
       "Wearable Sensors",
       "Brain",
       "cognitive",
+      "monitoring",
       "EEG",
-      "fNIRS",
-      "Engagement"
+      "fNIRS"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76701,9 +76704,9 @@
       "socioeconomic",
       "inequities",
       "social determinants of health",
+      "development",
       "Brain",
-      "Aging",
-      "development"
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76795,8 +76798,8 @@
       "deep learning",
       "AI",
       "artificial neural networks",
-      "Neural networks",
-      "Applications"
+      "Applications",
+      "Neural networks"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76828,7 +76831,7 @@
       "Trust",
       "Human",
       "digital",
-      "Technology"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76923,8 +76926,8 @@
       "neurodevelopmental disorders",
       "pediatric neurology",
       "childhood epilepsy",
-      "Brain",
-      "biomarkers"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77186,7 +77189,7 @@
       "therapeutic targets",
       "mechanisms",
       "Brain",
-      "evolution"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77218,8 +77221,8 @@
       "Brain science",
       "AI",
       "Neuroscience",
-      "cognition",
-      "psychology"
+      "Human",
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77443,7 +77446,7 @@
       "Explainable AI (XAI)",
       "AI",
       "digital",
-      "communication"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77476,7 +77479,7 @@
       "behavioral science",
       "time-series analysis",
       "digital",
-      "challenges"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77538,10 +77541,10 @@
       "Immune System",
       "Endocrine System",
       "Brain Health",
-      "Neuroinflammation",
       "mechanisms",
-      "Brain",
-      "development"
+      "Neuroinflammation",
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77569,11 +77572,11 @@
       "aquaculture",
       "genome editing",
       "presicion breeding",
+      "Applications",
       "genetics",
       "Genomics",
-      "collaboration",
-      "Applications",
-      "Aquaculture"
+      "Aquaculture",
+      "collaboration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77723,9 +77726,9 @@
       "Ischemic Stroke",
       "Intracranial Aneurysms",
       "Traumatic Brain Injury",
+      "management",
       "treatment",
-      "diagnosis",
-      "Interventions"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77851,10 +77854,10 @@
       "Community Engagement",
       "Conservation Research",
       "data",
-      "education",
       "Ecology",
-      "innovation",
-      "Conservation"
+      "education",
+      "monitoring",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77934,9 +77937,9 @@
       "mental health",
       "Mental Health",
       "Human",
+      "stress",
       "well-being",
-      "behavior",
-      "stress"
+      "behavior"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78085,11 +78088,11 @@
       "Traumatic brain injury",
       "Biomarkers",
       "Neuroprotective interventions",
-      "Neuroinflammation",
       "mechanisms",
-      "Brain",
+      "Neuroinflammation",
       "development",
-      "stress"
+      "Brain",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78169,8 +78172,8 @@
       "Access",
       "Care",
       "Stigma",
-      "stress",
-      "challenges"
+      "challenges",
+      "stress"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78281,8 +78284,8 @@
       "therapeutic resistance",
       "biomarkers",
       "Brain",
-      "Interventions",
-      "metabolism"
+      "molecular",
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78310,10 +78313,10 @@
       "rumination",
       "worry",
       "mental health",
-      "Mental Health",
       "mechanisms",
-      "cognition",
-      "cognitive"
+      "Mental Health",
+      "psychological",
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78373,9 +78376,9 @@
       "global environmental change",
       "microbial ecology",
       "system biology",
-      "metabolism",
+      "molecular",
       "adaptation",
-      "Animal Health"
+      "metabolism"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78459,10 +78462,10 @@
       "Trauma Recovery",
       "Theoretical Frameworks",
       "Emotional Regulation",
-      "Mental Health",
       "mechanisms",
-      "Neuroscience",
-      "psychology"
+      "Mental Health",
+      "Applications",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78655,7 +78658,7 @@
       "Lung-brain axis",
       "mechanisms",
       "Brain",
-      "cognitive"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78782,8 +78785,8 @@
       "HRI",
       "immersive technologies",
       "AI",
-      "Human",
-      "Robotics"
+      "Applications",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78813,11 +78816,11 @@
       "neuroimaging",
       "PET/MRI",
       "multimodal MRI",
-      "Brain",
-      "Neuroscience",
-      "Neuroimaging",
+      "Applications",
       "development",
-      "data"
+      "Brain",
+      "clinical",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78877,11 +78880,11 @@
       "Gender Stereotypes",
       "Equality",
       "development",
-      "social",
       "Learning",
+      "social",
       "education",
       "therapy",
-      "Equity"
+      "wellbeing"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78914,8 +78917,8 @@
       "emotion",
       "prosocial behaviour",
       "mechanisms",
-      "Human",
-      "development"
+      "development",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78980,7 +78983,7 @@
       "therapeutic landscape",
       "Mental Health",
       "Human",
-      "well-being"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79102,10 +79105,10 @@
       "environmental psychology",
       "Mental Health",
       "Human",
+      "psychological",
       "cognitive",
-      "behavior",
       "stress",
-      "EEG"
+      "behavior"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79230,8 +79233,8 @@
       "Empathy-Related Neural Circuits",
       "Affective Processing",
       "mechanisms",
-      "social",
-      "Learning"
+      "Learning",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79360,7 +79363,7 @@
       "Neurotechnology",
       "Clinical Neurology",
       "Brain",
-      "neuromodulation",
+      "clinical",
       "challenges"
     ],
     "collection_type": "research_topic",
@@ -79390,9 +79393,9 @@
       "Alzheimer's diesease",
       "Mild Cognitive impairment",
       "MCI",
+      "clinical",
       "Neuroimaging",
-      "biomarkers",
-      "diagnosis"
+      "biomarkers"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79523,8 +79526,8 @@
       "Glioma",
       "CNS Immunity",
       "mechanisms",
-      "Brain",
-      "development"
+      "development",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79684,8 +79687,8 @@
       "language disorder",
       "Brain",
       "language",
-      "communication",
-      "Rehabilitation"
+      "Rehabilitation",
+      "therapy"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79719,8 +79722,8 @@
       "HRI",
       "Embodied Autonomous Systems",
       "AI",
-      "Brain",
-      "Neuroscience"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79840,9 +79843,9 @@
       "clinical psychoneuroscience",
       "mental disorders",
       "neuroscience",
+      "clinical",
       "Neuroscience",
-      "biomarkers",
-      "Interventions"
+      "biomarkers"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79904,8 +79907,8 @@
       "Novel Surgical Materials Surgical AI",
       "Multidisciplinary Approaches",
       "treatment",
-      "surgery",
-      "technological advancements"
+      "integration",
+      "surgery"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80095,7 +80098,7 @@
       "Somatosensation",
       "Learning",
       "Control",
-      "Sensory"
+      "production"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80310,9 +80313,9 @@
       "Neurodegenerative diseases",
       "Immunity",
       "Neurodegenerative",
-      "immunity",
       "clinical",
-      "molecular"
+      "molecular",
+      "immunity"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80505,8 +80508,8 @@
       "Adaptive Learning Systems",
       "Digital Mental Health Interventions",
       "Mental Health",
-      "Neuroscience",
-      "Human"
+      "Applications",
+      "Neuroscience"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80817,8 +80820,8 @@
       "epilepsy",
       "seizure prevention",
       "Brain",
-      "Interventions",
       "management",
+      "Interventions",
       "stroke"
     ],
     "collection_type": "research_topic",
@@ -80847,10 +80850,10 @@
       "Proteostasis",
       "Cell Signaling",
       "Neurodegenerative Diseases",
+      "molecular",
       "cognitive",
       "Neurodegenerative diseases",
-      "cognitive function",
-      "Neurodegenerative"
+      "translational"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81049,7 +81052,7 @@
       "therapy",
       "response rate",
       "dropout",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81140,9 +81143,9 @@
       "problematic pornography use",
       "compulsive sexual behavior",
       "Mental Health",
+      "clinical",
       "challenges",
-      "awareness",
-      "clinical"
+      "awareness"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81286,8 +81289,8 @@
       "Online Identity",
       "Parasocial Relationships",
       "AI",
-      "psychology",
-      "cognitive"
+      "psychological",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81378,11 +81381,11 @@
       "Multi-Scale Modeling",
       "Neural circuits",
       "Machine learning Biophysical Simulations",
+      "development",
       "Brain",
       "Neuroscience",
-      "development",
-      "Computational",
-      "computational neuroscience"
+      "molecular",
+      "Computational"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81414,7 +81417,7 @@
       "Brain",
       "Learning",
       "behavior",
-      "Memory"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81446,7 +81449,7 @@
       "psychiatric hospitlization",
       "acute hospitalization",
       "Mental Health",
-      "treatment"
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81528,7 +81531,7 @@
       "Computer Vision in Psychiatry",
       "Cognitive Psychology-Integrated AI",
       "AI",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81557,9 +81560,9 @@
       "Paleopathology",
       "Human",
       "resilience",
-      "evolution",
+      "molecular",
       "diagnosis",
-      "vulnerability"
+      "evolution"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81737,8 +81740,8 @@
       "AI",
       "machine learning",
       "clinical neuroscience",
-      "Neuroscience",
-      "Computational"
+      "Applications",
+      "clinical"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81829,8 +81832,8 @@
       "Medical procedure robots",
       "Medical redundant robots",
       "Medical framework robots",
+      "Applications",
       "challenges",
-      "Interventions",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -81961,8 +81964,8 @@
       "Policy Generalization",
       "Robotic Perception",
       "Dynamic Environments",
-      "cognition",
-      "Learning"
+      "Applications",
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82023,9 +82026,9 @@
       "Acoustic biomarkers",
       "Digital health",
       "Digital biomarkers",
+      "clinical",
       "biomarkers",
-      "Methods",
-      "Emerging technologies"
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82214,7 +82217,7 @@
       "Subjective Experience",
       "Philosophy of Mind",
       "AI",
-      "psychology",
+      "development",
       "Human"
     ],
     "collection_type": "research_topic",
@@ -82345,8 +82348,8 @@
       "neuro-immune regulation",
       "mechanisms",
       "Neurological disorders",
-      "childhood",
-      "immunity"
+      "immunity",
+      "childhood"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82413,10 +82416,10 @@
       "Predictive Pathways",
       "Alzheimer's Disease",
       "Neuroinflammation",
+      "clinical",
       "biomarkers",
       "behavior",
-      "Alzheimer's disease",
-      "Intervention"
+      "Alzheimer's disease"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82478,8 +82481,8 @@
       "critical illness",
       "sleep architecture",
       "circadian rhythm",
-      "Interventions",
       "management",
+      "Interventions",
       "environment"
     ],
     "collection_type": "research_topic",
@@ -82638,8 +82641,8 @@
       "Cognition",
       "Cognitive Neuroscience",
       "Women in Science",
-      "cognition",
       "development",
+      "cognition",
       "Technology"
     ],
     "collection_type": "research_topic",
@@ -82759,7 +82762,7 @@
       "anxiety",
       "depression",
       "neurotransmitter transporter",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82826,8 +82829,8 @@
       "3D culture",
       "Organ-on-Chip",
       "mechanisms",
-      "Brain",
-      "biomarkers"
+      "Applications",
+      "Brain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83113,7 +83116,7 @@
       "AI",
       "cognition",
       "cognitive",
-      "language"
+      "focus"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83422,9 +83425,9 @@
       "Psychosis",
       "At-risk Mental State",
       "mechanisms",
-      "challenges",
+      "clinical",
       "treatment",
-      "Interventions"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83451,11 +83454,11 @@
       "Adolescent Mental Health",
       "emotion regulation",
       "cross-cultural methods",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "development",
-      "well-being",
-      "Interventions"
+      "psychological",
+      "well-being"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83548,7 +83551,7 @@
       "public mental health",
       "Mental Health",
       "Human",
-      "social"
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83578,8 +83581,8 @@
       "Novel approaches",
       "Management",
       "Psychological assessment",
+      "psychological",
       "resilience",
-      "treatment",
       "management"
     ],
     "collection_type": "research_topic",
@@ -83720,8 +83723,8 @@
       "Music therapy",
       "Neurodegenerative Diseases",
       "neural mechanisms",
-      "Mental Health",
       "mechanisms",
+      "Mental Health",
       "Neuroscience",
       "Human",
       "cognitive"
@@ -83789,7 +83792,7 @@
       "Impulse Control Interventions",
       "Addiction Treatment Strategies",
       "Cognitive Behavioral Change",
-      "Mental Health"
+      "mechanisms"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83955,8 +83958,8 @@
       "heterogeneity",
       "Neuroimaging",
       "Mental Health",
-      "Alzheimer's disease",
-      "challenges"
+      "clinical",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84076,9 +84079,9 @@
       "schools",
       "teachers",
       "development",
-      "social",
       "Learning",
-      "adolescence"
+      "social",
+      "Equity"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84164,8 +84167,8 @@
       "Misinformation",
       "Digital Media",
       "mechanisms",
-      "psychology",
-      "social"
+      "psychological",
+      "psychology"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84224,11 +84227,11 @@
       "Demyelinating disorders",
       "central nervous system",
       "multiple sclerosis",
+      "clinical",
       "treatment",
-      "Multiple Sclerosis",
       "epidemiology",
-      "Central nervous system",
-      "gender"
+      "Multiple Sclerosis",
+      "Central nervous system"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84314,8 +84317,8 @@
       "neurodegeneration",
       "protein misfolding",
       "functional amyloids",
-      "Neurodegeneration",
-      "Neuroscience"
+      "Neuroscience",
+      "Neurodegeneration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84437,8 +84440,8 @@
       "COVID-19",
       "treatment",
       "Risk",
-      "Presence",
-      "Risk factors"
+      "Risk factors",
+      "Presence"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84630,8 +84633,8 @@
       "Oculomotor Dysfunction",
       "Brain-Vision Interaction",
       "Brain",
-      "cognitive",
-      "challenges"
+      "clinical",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84754,10 +84757,10 @@
       "white matter hyperintensities",
       "neurodegenerative pathologies",
       "mechanisms",
+      "clinical",
       "Neuroimaging",
       "biomarkers",
-      "Aging",
-      "cognitive"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84821,7 +84824,7 @@
       "Neuroscience",
       "cognitive",
       "challenges",
-      "lifespan"
+      "plasticity"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84850,12 +84853,12 @@
     "topics": [
       "Brain-Computer Interfaces",
       "Women In",
+      "Applications",
+      "development",
       "Brain",
       "Neuroscience",
-      "development",
       "challenges",
-      "BCI",
-      "women in"
+      "BCI"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84886,7 +84889,7 @@
       "Behavioral Development and Play",
       "Foraging and Antipredator Behavior",
       "Social Behavior and Communication",
-      "women in"
+      "Women"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -85013,7 +85016,7 @@
       "Translational medicine",
       "Neurological models",
       "Neuroscience",
-      "Technology",
+      "translational",
       "innovation"
     ],
     "collection_type": "research_topic",
@@ -85099,9 +85102,9 @@
       "Companion animals",
       "Exotic animals",
       "One Health",
-      "Antimicrobial resistance",
       "Risk",
       "assessment",
+      "Antimicrobial resistance",
       "companion animals"
     ],
     "collection_type": "research_topic",
