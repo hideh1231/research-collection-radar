@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-08-28T06:16:12Z",
+  "checked_at": "2026-08-29T03:10:16Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "parsed": 0,
-      "pages": 40,
-      "error": "pagination truncated"
+      "parsed": 639,
+      "pages": 65,
+      "error": null
     },
     "nature-comms-psychology": {
       "enabled": true,
@@ -45,28 +45,28 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3313,
+      "parsed": 3316,
       "pages": 139,
       "error": null,
       "deadline_enrichment": {
         "target_count": 400,
         "checked": 400,
-        "listed": 140,
-        "with_deadline": 140,
-        "not_listed": 260,
+        "listed": 312,
+        "with_deadline": 312,
+        "not_listed": 88,
         "failed": 0,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 606,
-        "metadata_updated": 238
+        "remaining": 221,
+        "metadata_updated": 289
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 374,
+      "parsed": 373,
       "pages": 16,
       "error": null
     },
@@ -74,7 +74,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1044,
+      "parsed": 1045,
       "pages": 44,
       "error": null
     },
@@ -82,15 +82,15 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1896,
-      "pages": 79,
+      "parsed": 1900,
+      "pages": 80,
       "error": null
     },
     "frontiers-neuroscience": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2161,
+      "parsed": 2165,
       "pages": 91,
       "error": null
     },
@@ -114,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 533,
+      "parsed": 534,
       "pages": 23,
       "error": null
     },
@@ -170,7 +170,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 313,
+      "parsed": 317,
       "pages": 14,
       "error": null
     },
@@ -202,7 +202,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 907,
+      "parsed": 908,
       "pages": 38,
       "error": null
     },
@@ -389,13 +389,8 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 48,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 8
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -462,12 +457,8 @@
     },
     "tandf-cfp": {
       "enabled": false,
-      "ok": false,
-      "http_status": null,
-      "parsed": 0,
-      "pages": 1,
-      "error": "zero records",
-      "ingest": "listing-html/tandf-cfp.html"
+      "skipped": "disabled",
+      "reason": "Author Services CFP search is JS-rendered. listing-ingest tries headed Chrome. Keep watched journals only."
     },
     "sage-cfp": {
       "enabled": false,
@@ -486,13 +477,8 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/josa-a-features.html",
-      "skipped_closed": 1
+      "skipped": "disabled",
+      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
     },
     "wiley-bjp": {
       "enabled": false,
@@ -535,15 +521,15 @@
     "deadline_enrichment": {
       "target_count": 400,
       "checked": 400,
-      "listed": 140,
-      "with_deadline": 140,
-      "not_listed": 260,
+      "listed": 312,
+      "with_deadline": 312,
+      "not_listed": 88,
       "failed": 0,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
-      "remaining": 606,
-      "metadata_updated": 238
+      "remaining": 221,
+      "metadata_updated": 289
     }
   }
 }
