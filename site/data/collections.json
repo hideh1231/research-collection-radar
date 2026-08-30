@@ -89,8 +89,8 @@
     ],
     "topics": [
       "control",
-      "Control",
-      "attentional control"
+      "attentional control",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-08-28",
@@ -429,7 +429,7 @@
       "mechanisms",
       "Rehabilitation",
       "stroke",
-      "disability"
+      "recovery"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-29",
@@ -516,7 +516,7 @@
       "Farming",
       "Future",
       "Applications",
-      "challenges"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -581,7 +581,7 @@
       "Hybrid human-machine therapy models",
       "AI",
       "Mental Health",
-      "psychology"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -2020,8 +2020,8 @@
       "giftedness",
       "talent",
       "development",
-      "Learning",
-      "digital"
+      "technologies",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2224,8 +2224,8 @@
       "Microbiome",
       "Animal welfare",
       "AI",
-      "data",
-      "behaviour"
+      "technologies",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2353,8 +2353,8 @@
       "Computer-Aided Design (CAD)",
       "Digital Twins",
       "Fashion Technology Innovation",
-      "Human",
-      "management"
+      "technologies",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2734,9 +2734,9 @@
       "Teacher leadership",
       "School digital transformation",
       "AI",
+      "technologies",
       "management",
-      "Learning",
-      "Robotics"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -2982,11 +2982,11 @@
       "motor control",
       "neural interfaces",
       "motor recovery",
+      "technologies",
       "Control",
       "stroke",
       "quality of life",
-      "Neurodegenerative disorders",
-      "Neurodegenerative"
+      "Neurodegenerative disorders"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-31",
@@ -5881,8 +5881,8 @@
       "Pedagogical Frameworks",
       "Virtual Ecosystems and Communities",
       "development",
-      "Learning",
-      "integration"
+      "technologies",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-09",
@@ -6115,7 +6115,7 @@
       "Neuroimmunology",
       "Autonomic Nervous System",
       "Patient Reported Outcome Measures",
-      "environment"
+      "communication"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-10",
@@ -6607,7 +6607,7 @@
       "Aging populations",
       "AI",
       "Applications",
-      "Aging"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-13",
@@ -7156,7 +7156,7 @@
       "space exploration",
       "space engineering",
       "Applications",
-      "Policy"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -7487,10 +7487,10 @@
       "Individual and community profiling",
       "Health crisis preparedness analytics",
       "Equity in AI health support",
+      "technologies",
       "resilience",
       "well-being",
-      "digital",
-      "behavior"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-15",
@@ -8725,8 +8725,8 @@
       "AI",
       "Neuroimaging",
       "clinical",
-      "Methods",
       "treatment",
+      "Methods",
       "management",
       "diagnosis"
     ],
@@ -9507,7 +9507,7 @@
       "Behavioral Change",
       "eHealth",
       "Health Behavior",
-      "behavior"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-21",
@@ -9541,8 +9541,8 @@
       "AI",
       "workplace health promotion",
       "translational medicine",
-      "management",
-      "data"
+      "technologies",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-22",
@@ -10898,9 +10898,9 @@
       "sensor technology",
       "modeling",
       "Brain",
+      "technologies",
       "communication",
-      "Technology",
-      "accessibility"
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-27",
@@ -10964,7 +10964,7 @@
       "teacher well-being",
       "data",
       "Learning",
-      "decision-making"
+      "education"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-28",
@@ -11292,7 +11292,7 @@
       "vulnerability",
       "AI",
       "clinical",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -11585,9 +11585,9 @@
       "VR",
       "Environmental Education",
       "Sustainability in Education",
+      "technologies",
       "Learning",
-      "challenges",
-      "digital"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12191,7 +12191,7 @@
       "Affective processing",
       "AI",
       "mechanisms",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12317,8 +12317,8 @@
       "Medical Education",
       "Non-Pharmaceutical Interventions",
       "Applications",
-      "data",
-      "healthcare"
+      "technologies",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -12497,7 +12497,7 @@
       "Innovative pedagogical practices",
       "Digital maturity",
       "AI",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13195,7 +13195,7 @@
       "evolution",
       "digital",
       "social",
-      "environment"
+      "communication"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13323,8 +13323,8 @@
       "personalized medicine",
       "digital technologies",
       "clinical",
-      "data",
-      "integration"
+      "technologies",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -13356,8 +13356,8 @@
       "Well-being Technologies",
       "Robot-Assisted Interventions",
       "clinical",
-      "resilience",
-      "stress"
+      "technologies",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -14009,9 +14009,9 @@
       "TA-CSA",
       "Online Grooming",
       "AI",
+      "technologies",
       "Generative AI",
-      "Technology",
-      "Children"
+      "Technology"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -15431,8 +15431,8 @@
       "Affective States",
       "Transport Safety",
       "mechanisms",
-      "social",
-      "behavior"
+      "technologies",
+      "social"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-09",
@@ -16134,9 +16134,9 @@
       "behavioral economics",
       "AI",
       "Neuroscience",
+      "technologies",
       "Human",
-      "Aging",
-      "management"
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-10",
@@ -16420,7 +16420,7 @@
       "natural language processing",
       "mechanisms",
       "development",
-      "Computational"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-11",
@@ -17112,8 +17112,8 @@
       "clinical",
       "Applications",
       "preclinical",
-      "Medical imaging",
-      "technologies"
+      "technologies",
+      "Medical imaging"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-15",
@@ -17632,9 +17632,9 @@
       "person-centred participatory design",
       "ethics and data privacy",
       "AI",
+      "technologies",
       "Human",
-      "data",
-      "diagnosis"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-16",
@@ -19187,7 +19187,7 @@
       "media literacy and disinformation",
       "AI",
       "mechanisms",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -19274,9 +19274,9 @@
       "Digital Learning Design",
       "Educational Access",
       "Student Success Frameworks",
+      "technologies",
       "Learning",
-      "digital",
-      "education"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -21490,8 +21490,8 @@
       "hearing loss",
       "environment",
       "physiology",
-      "Physiology",
-      "loss"
+      "loss",
+      "Physiology"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-30",
@@ -22208,8 +22208,8 @@
       "Explainable and trustworthy AI",
       "Privacy-preserving cyber defense",
       "AI",
-      "Human",
-      "resilience"
+      "technologies",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -24596,8 +24596,8 @@
       "clinical",
       "Applications",
       "clinical applications",
-      "infectious diseases",
-      "Digital Medicine"
+      "Digital Medicine",
+      "infectious diseases"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-09",
@@ -26831,9 +26831,9 @@
       "Job Dynamics",
       "Job Insecurity",
       "AI",
+      "technologies",
       "psychology",
-      "challenges",
-      "integration"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-15",
@@ -27755,8 +27755,8 @@
       "Psychiatry",
       "control",
       "Schizophrenia",
-      "Control",
-      "recovery"
+      "recovery",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-18",
@@ -28028,9 +28028,9 @@
       "Urban Microclimate",
       "High-Density Environments",
       "Thermal Resilience",
+      "technologies",
       "Human",
-      "resilience",
-      "stress"
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-19",
@@ -28779,9 +28779,9 @@
       "Sustainable value creation",
       "Cross-domain recombination",
       "Adaptive personalization criteria",
+      "technologies",
       "social",
-      "interaction",
-      "Metaverse"
+      "interaction"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-22",
@@ -29437,8 +29437,8 @@
       "Community",
       "Participatory Research Methods",
       "Mental Health",
-      "Methods",
       "treatment",
+      "Methods",
       "social",
       "Risk",
       "Prevention"
@@ -30750,9 +30750,9 @@
       "Mobility Impairment",
       "Wearable Devices",
       "Independent Living",
+      "technologies",
       "Aging",
-      "Risk",
-      "quality of life"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -31644,7 +31644,7 @@
       "emotional disorders",
       "Mental Health",
       "clinical",
-      "treatment"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -32566,7 +32566,7 @@
       "Robot control",
       "Soft robotic applications",
       "machine learning",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -34947,8 +34947,8 @@
       "nanotechnology",
       "neuromethods",
       "clinical",
-      "treatment",
-      "challenges"
+      "technologies",
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-10",
@@ -35591,9 +35591,9 @@
       "Neuroimaging",
       "biomarkers",
       "Brain",
+      "technologies",
       "neuromodulation",
-      "Interventions",
-      "cognitive"
+      "Interventions"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-12",
@@ -35824,7 +35824,7 @@
       "Comparative Medicine",
       "Applications",
       "clinical",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-12",
@@ -37770,8 +37770,8 @@
       "Palaeoenvironment",
       "Diet",
       "Dentalites",
-      "challenges",
-      "imaging"
+      "technologies",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-17",
@@ -38633,7 +38633,7 @@
       "Sensing Technologies",
       "Deformable and stretchable structures",
       "Applications",
-      "integration"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -38865,8 +38865,8 @@
       "Cybercrime",
       "Technology-Facilitated Violence",
       "Mental Health",
-      "resilience",
-      "well-being"
+      "technologies",
+      "resilience"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -38958,8 +38958,8 @@
       "Tele-Health and mHealth Applications",
       "psychology",
       "reviews",
-      "reviews in",
-      "Health Psychology"
+      "Health Psychology",
+      "reviews in"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-20",
@@ -40305,8 +40305,8 @@
       "control",
       "surveillance",
       "Mitochondria",
-      "Control",
-      "mitochondrial dynamics"
+      "mitochondrial dynamics",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-28",
@@ -40423,7 +40423,7 @@
       "RNAi",
       "CRISPR",
       "mechanisms",
-      "resilience"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-28",
@@ -40670,7 +40670,7 @@
       "well-being",
       "ageism",
       "digital health literacy",
-      "Aging"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-29",
@@ -40847,9 +40847,9 @@
       "Theranostic agents",
       "Gold nanoparticles",
       "Hybrid imaging modalities",
+      "technologies",
       "challenges",
-      "diagnosis",
-      "evolution"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-30",
@@ -42148,9 +42148,9 @@
       "Patient engagement",
       "User-centered design",
       "Accessibility",
+      "technologies",
       "challenges",
-      "digital",
-      "digital health"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -42710,8 +42710,8 @@
       "Memory",
       "cognitive",
       "control",
-      "Control",
-      "cognitive control"
+      "cognitive control",
+      "Control"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-31",
@@ -44599,11 +44599,11 @@
     "topics": [
       "Digital Health Technologies",
       "clinical",
+      "technologies",
       "treatment",
       "data",
       "diagnosis",
-      "digital",
-      "technologies"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-03",
@@ -44798,7 +44798,7 @@
       "Trustworthiness",
       "Neuroscience",
       "Brain",
-      "data"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-05",
@@ -47715,10 +47715,10 @@
       "Neuromodulation",
       "clinical",
       "Brain",
+      "technologies",
       "treatment",
       "neuromodulation",
-      "neuroplasticity",
-      "Psychiatry"
+      "neuroplasticity"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-16",
@@ -49478,7 +49478,7 @@
       "Motivation",
       "reviews",
       "attention",
-      "psychological factors"
+      "school"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-23",
@@ -50205,9 +50205,9 @@
       "Work-Related Rumination",
       "right-to-disconnect",
       "mechanisms",
+      "technologies",
       "evolution",
-      "well-being",
-      "digital"
+      "well-being"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-26",
@@ -52877,8 +52877,8 @@
       "workplace",
       "digital transformation",
       "Mental Health",
-      "stress",
-      "challenges"
+      "technologies",
+      "stress"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-01",
@@ -53567,7 +53567,7 @@
       "neuro-oncology",
       "Brain",
       "molecular",
-      "Methods"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-06",
@@ -54103,9 +54103,9 @@
       "Awareness",
       "treatment",
       "social",
+      "recovery",
       "Intervention",
-      "stigma",
-      "Engagement"
+      "stigma"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-08",
@@ -57187,9 +57187,9 @@
       "Animal welfare",
       "Production efficiency",
       "Host–microbiome interactions",
+      "technologies",
       "resilience",
-      "Computational",
-      "stress"
+      "Computational"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-20",
@@ -57778,8 +57778,8 @@
       "Neurology",
       "Neurosurgery",
       "Brain",
-      "challenges",
-      "psychiatric"
+      "technologies",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-23",
@@ -58933,9 +58933,9 @@
       "Pharmacogenomic Biomarkers",
       "Mental Health",
       "clinical",
+      "technologies",
       "cognition",
-      "molecular",
-      "treatment"
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -58966,8 +58966,8 @@
       "mHealth",
       "lifestyle change",
       "habit formation",
-      "digital",
-      "Interventions"
+      "technologies",
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -59054,7 +59054,7 @@
       "neuroergonomics",
       "ergonomics",
       "Applications",
-      "focus"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -59473,8 +59473,8 @@
       "Intelligent Control",
       "Dexterous Operations",
       "AI",
-      "Learning",
-      "challenges"
+      "technologies",
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -59506,7 +59506,7 @@
       "human-centered XAI",
       "AI",
       "clinical",
-      "Methods"
+      "treatment"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -60641,8 +60641,8 @@
       "Decision-Making",
       "Risk",
       "impulsivity",
-      "decision-making",
-      "risk-taking"
+      "risk-taking",
+      "decision-making"
     ],
     "collection_type": "collection",
     "deadline": "2027-03-01",
@@ -60935,8 +60935,8 @@
       "Closed-loop systems",
       "HCI",
       "Multisensory art",
-      "Sensory",
-      "technologies"
+      "technologies",
+      "Sensory"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-02",
@@ -61284,8 +61284,8 @@
       "Learning Outcomes",
       "Learning Processes",
       "AI",
-      "management",
-      "Learning"
+      "technologies",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -63094,8 +63094,8 @@
       "music learning",
       "AI",
       "mechanisms",
-      "cognition",
-      "data"
+      "technologies",
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -63126,8 +63126,8 @@
       "Gut-brain axis",
       "Host–microbiome interactions",
       "mechanisms",
-      "molecular",
-      "Control"
+      "technologies",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -67937,10 +67937,10 @@
       "dynamic vision",
       "eye tracking",
       "clinical",
+      "technologies",
       "management",
       "challenges",
-      "diagnosis",
-      "vision"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-15",
@@ -68657,7 +68657,7 @@
       "Farming",
       "Precision livestock farming",
       "accessibility",
-      "precision livestock farming"
+      "technologies"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-24",
@@ -68690,7 +68690,7 @@
       "Social Robotics",
       "AI",
       "Mental Health",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-26",
@@ -69780,8 +69780,8 @@
       "sheep reproduction",
       "goat reproduction",
       "fertility prediction",
-      "Control",
-      "production"
+      "technologies",
+      "Control"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-05-01",
@@ -69836,8 +69836,8 @@
       "Competency-Based Curriculum",
       "One Health",
       "One Health and One Welfare",
-      "challenges",
-      "education"
+      "technologies",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-05-01",
@@ -72007,9 +72007,9 @@
       "Science fiction method",
       "Hypothetical scenarios",
       "Future-oriented reasoning",
+      "technologies",
       "Human",
-      "cognition",
-      "psychology"
+      "cognition"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-06-19",
@@ -72835,9 +72835,9 @@
       "Artificial Intelligence (AI)",
       "Intercultural Language",
       "AI",
+      "technologies",
       "Learning",
-      "digital",
-      "language"
+      "digital"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73059,7 +73059,7 @@
       "AI",
       "development",
       "Neuroimaging",
-      "Methods",
+      "technologies",
       "treatment"
     ],
     "collection_type": "research_topic",
@@ -73155,7 +73155,7 @@
       "In vivo Recording",
       "Applications",
       "development",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -73572,8 +73572,8 @@
       "AI Powered Agronomy",
       "Autonomous Agricultural Vehicles",
       "AI",
-      "management",
-      "Robotics"
+      "technologies",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74107,7 +74107,7 @@
       "Human-AI Interaction",
       "Mental Health",
       "clinical",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -74854,11 +74854,11 @@
       "Genomics",
       "Native Crops",
       "Traditional Agroecosystems",
+      "technologies",
       "Methods",
       "data",
       "Climate Change",
-      "challenges",
-      "evolution"
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75753,7 +75753,7 @@
       "AI",
       "Mental Health",
       "development",
-      "Aging"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -75809,8 +75809,8 @@
       "Rehabilitation Robotics",
       "Data-Driven Control Systems",
       "Biomechatronics",
-      "Aging",
-      "data"
+      "technologies",
+      "Aging"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77976,8 +77976,8 @@
       "Alzheimer's",
       "Parkinson's",
       "development",
-      "Emerging technologies",
-      "community"
+      "technologies",
+      "Emerging technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78128,9 +78128,9 @@
       "Digital Earth for sustainability",
       "AI",
       "development",
+      "technologies",
       "data",
-      "Climate Change",
-      "Biodiversity"
+      "Climate Change"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -78320,8 +78320,8 @@
       "user experience design",
       "technology acceptance",
       "AI",
-      "Human",
-      "integration"
+      "technologies",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79282,8 +79282,8 @@
       "digital phenotyping",
       "behavioral science",
       "time-series analysis",
-      "data",
-      "challenges"
+      "technologies",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79660,8 +79660,8 @@
       "data",
       "Ecology",
       "monitoring",
-      "innovation",
-      "education"
+      "education",
+      "innovation"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -79928,8 +79928,8 @@
       "therapeutic resistance",
       "biomarkers",
       "Brain",
-      "molecular",
-      "Interventions"
+      "technologies",
+      "molecular"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80119,7 +80119,7 @@
       "compliance",
       "education",
       "prevention",
-      "Control"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80378,7 +80378,7 @@
       "immersive technologies",
       "AI",
       "Applications",
-      "Human"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81506,9 +81506,9 @@
       "Innovative Imaging",
       "Novel Surgical Materials Surgical AI",
       "Multidisciplinary Approaches",
+      "technologies",
       "treatment",
-      "integration",
-      "surgery"
+      "integration"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -82177,7 +82177,7 @@
       "Nutrition",
       "Physical activity",
       "Sport psychology",
-      "innovation"
+      "education"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83107,11 +83107,11 @@
       "Paleoproteomics",
       "Human-environment interactions",
       "Paleopathology",
+      "technologies",
       "Human",
       "resilience",
       "molecular",
-      "diagnosis",
-      "evolution"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83388,8 +83388,8 @@
       "Medical redundant robots",
       "Medical framework robots",
       "Applications",
-      "challenges",
-      "Control"
+      "technologies",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83583,7 +83583,7 @@
       "Digital biomarkers",
       "clinical",
       "biomarkers",
-      "Methods"
+      "technologies"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -85081,8 +85081,8 @@
       "self-perception",
       "public mental health",
       "Mental Health",
-      "Human",
-      "well-being"
+      "technologies",
+      "Human"
     ],
     "collection_type": "research_topic",
     "deadline": null,
