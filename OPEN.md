@@ -1,6 +1,6 @@
 # Open calls
 
-Generated 2026-08-30. Sorted by deadline.
+Generated 2026-08-31. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
