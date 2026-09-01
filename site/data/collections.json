@@ -1061,8 +1061,8 @@
       "Adaptive Healthcare Robots",
       "Emotion and Intention Recognition",
       "clinical",
-      "data",
-      "Robotics"
+      "Robotics",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -18811,7 +18811,8 @@
       "Psychological Wellbeing",
       "psychological well-being",
       "psychological",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-22",
@@ -19699,7 +19700,8 @@
     ],
     "topics": [
       "Mental Health",
-      "menopause"
+      "menopause",
+      "Menopause"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-26",
@@ -20763,7 +20765,7 @@
       "Adaptability and robustness",
       "AI",
       "Applications",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -22053,7 +22055,8 @@
       "innovation",
       "game-based learning",
       "Learning Outcomes",
-      "Pedagogical innovation"
+      "Pedagogical innovation",
+      "learning outcomes"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-31",
@@ -23505,7 +23508,8 @@
       "Interventions",
       "behaviour",
       "psychological",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-03",
@@ -24385,7 +24389,7 @@
       "Educational contexts",
       "Developmental processes",
       "adaptation",
-      "wellbeing",
+      "Wellbeing",
       "community"
     ],
     "collection_type": "research_topic",
@@ -24725,8 +24729,8 @@
       "Robotic sensing",
       "Robotic modelling",
       "Proprioception",
-      "data",
       "Robotics",
+      "data",
       "integration",
       "Modeling",
       "Physiology"
@@ -26743,7 +26747,8 @@
       "Women",
       "clinical",
       "prognosis",
-      "sex hormones"
+      "sex hormones",
+      "Sex hormones"
     ],
     "collection_type": "special_issue",
     "deadline": "2026-11-15",
@@ -27884,7 +27889,8 @@
     ],
     "topics": [
       "stress",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-19",
@@ -29492,7 +29498,8 @@
       "psychology"
     ],
     "topics": [
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-26",
@@ -29549,7 +29556,8 @@
       "development",
       "data",
       "Data Fusion",
-      "Applications"
+      "Applications",
+      "Data fusion"
     ],
     "collection_type": "collection",
     "deadline": "2026-11-26",
@@ -30789,8 +30797,8 @@
       "Sensor fusion",
       "resilience",
       "Learning",
-      "data",
       "Robotics",
+      "data",
       "integration"
     ],
     "collection_type": "research_topic",
@@ -33014,7 +33022,7 @@
       "Smart Manufacturing",
       "AI",
       "Learning",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -33796,7 +33804,8 @@
       "Motivation",
       "Engagement",
       "digital",
-      "integration"
+      "integration",
+      "engagement"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-04",
@@ -34792,7 +34801,7 @@
       "nutrient cycling",
       "climate fluctuations",
       "resilience",
-      "Ecosystem Resilience",
+      "Ecosystem resilience",
       "Plant Diversity"
     ],
     "collection_type": "research_topic",
@@ -35112,7 +35121,8 @@
     "topics": [
       "therapy",
       "targeted therapy",
-      "Applications"
+      "Applications",
+      "Targeted therapy"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-10",
@@ -35137,7 +35147,8 @@
       "mechanisms",
       "resilience",
       "Ecosystem Resilience",
-      "migration"
+      "migration",
+      "Ecosystem resilience"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-10",
@@ -40188,7 +40199,7 @@
       "wellbeing",
       "social",
       "Public health",
-      "Children"
+      "Wellbeing"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-27",
@@ -41736,7 +41747,8 @@
       "Biodiversity",
       "adaptation",
       "interaction",
-      "Ecosystem Resilience"
+      "Ecosystem Resilience",
+      "Ecosystem resilience"
     ],
     "collection_type": "collection",
     "deadline": "2026-12-31",
@@ -42737,7 +42749,8 @@
     ],
     "topics": [
       "cognition",
-      "Metacognition"
+      "Metacognition",
+      "metacognition"
     ],
     "collection_type": "special_issue",
     "deadline": "2026-12-31",
@@ -43962,7 +43975,7 @@
       "intelligent agents",
       "AI",
       "Learning",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -45154,7 +45167,8 @@
       "culture",
       "social",
       "Sport",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2027-01-08",
@@ -46347,8 +46361,8 @@
       "safety-critical systems",
       "Human",
       "Learning",
-      "data",
       "Robotics",
+      "data",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -46831,7 +46845,7 @@
       "Mental Health",
       "digital",
       "Psychiatry",
-      "wellbeing"
+      "Wellbeing"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-01-15",
@@ -63007,7 +63021,7 @@
       "Academic Motivation",
       "Learning",
       "Motivation",
-      "Engagement",
+      "engagement",
       "academic motivation"
     ],
     "collection_type": "research_topic",
@@ -67334,7 +67348,6 @@
       "retention",
       "adherence",
       "digital",
-      "Engagement",
       "long-term care"
     ],
     "collection_type": "research_topic",
@@ -71180,7 +71193,8 @@
     "topics": [
       "healthcare",
       "Burnout",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2027-05-07",
@@ -71339,7 +71353,8 @@
       "social",
       "empathy",
       "Prosocial behavior",
-      "psychological"
+      "psychological",
+      "engagement"
     ],
     "collection_type": "collection",
     "deadline": "2027-05-11",
@@ -72595,7 +72610,8 @@
       "Intervention",
       "assessment",
       "Applications",
-      "wellbeing"
+      "wellbeing",
+      "Wellbeing"
     ],
     "collection_type": "collection",
     "deadline": "2027-05-27",
@@ -73439,7 +73455,7 @@
       "Human",
       "management",
       "social",
-      "wellbeing"
+      "Wellbeing"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-06-30",
@@ -77537,8 +77553,8 @@
       "Invasive species",
       "management",
       "Biodiversity",
-      "Population",
       "community",
+      "Population",
       "Plants"
     ],
     "collection_type": "research_topic",
@@ -79129,7 +79145,7 @@
       "Parkinson's",
       "development",
       "technologies",
-      "Emerging technologies"
+      "community"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81596,7 +81612,7 @@
       "social",
       "education",
       "therapy",
-      "wellbeing"
+      "Wellbeing"
     ],
     "collection_type": "research_topic",
     "deadline": null,
