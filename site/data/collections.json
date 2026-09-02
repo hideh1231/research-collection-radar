@@ -951,8 +951,8 @@
       "Adaptive Healthcare Robots",
       "Emotion and Intention Recognition",
       "clinical",
-      "Robotics",
-      "data"
+      "data",
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -8420,8 +8420,8 @@
       "Neuroimaging",
       "clinical",
       "treatment",
-      "Methods",
       "management",
+      "Methods",
       "diagnosis"
     ],
     "collection_type": "research_topic",
@@ -17170,8 +17170,8 @@
       "gender gap",
       "women in organizational psychology",
       "female workers",
-      "psychology",
       "data",
+      "psychology",
       "Interventions",
       "Equity"
     ],
@@ -20390,7 +20390,7 @@
       "Adaptability and robustness",
       "AI",
       "Applications",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -22190,7 +22190,7 @@
       "Education and training",
       "Professional practice",
       "Organizational behavior",
-      "psychology"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -24323,8 +24323,8 @@
       "Robotic sensing",
       "Robotic modelling",
       "Proprioception",
-      "Robotics",
       "data",
+      "Robotics",
       "integration",
       "Modeling",
       "Embodied Intelligence"
@@ -30534,8 +30534,8 @@
       "Sensor fusion",
       "resilience",
       "Learning",
-      "Robotics",
       "data",
+      "Robotics",
       "integration"
     ],
     "collection_type": "research_topic",
@@ -32784,7 +32784,7 @@
       "Smart Manufacturing",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -43784,7 +43784,7 @@
       "intelligent agents",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -46170,8 +46170,8 @@
       "safety-critical systems",
       "Human",
       "Learning",
-      "Robotics",
       "data",
+      "Robotics",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -63090,7 +63090,7 @@
       "One Health",
       "Pro-Environmental Behavior",
       "Human",
-      "psychology"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-14",
@@ -68743,7 +68743,8 @@
       "biomarkers",
       "Interventions",
       "older adults",
-      "Immunosenescence"
+      "Immunosenescence",
+      "immunosenescence"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-09",
