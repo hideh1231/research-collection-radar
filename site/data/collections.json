@@ -951,8 +951,8 @@
       "Adaptive Healthcare Robots",
       "Emotion and Intention Recognition",
       "clinical",
-      "data",
-      "Robotics"
+      "Robotics",
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -4819,7 +4819,7 @@
       "mechanisms",
       "treatment",
       "challenges",
-      "depression"
+      "autism"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-06",
@@ -8301,9 +8301,9 @@
       "AI",
       "Neuroimaging",
       "clinical",
+      "Methods",
       "treatment",
       "management",
-      "Methods",
       "diagnosis"
     ],
     "collection_type": "research_topic",
@@ -10630,8 +10630,8 @@
     "topics": [
       "Education",
       "Mental Health",
-      "challenges",
       "diagnosis",
+      "challenges",
       "social",
       "Psychiatry",
       "education",
@@ -19173,7 +19173,7 @@
       "treatment",
       "management",
       "data",
-      "challenges"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-26",
@@ -20267,7 +20267,7 @@
       "Adaptability and robustness",
       "AI",
       "Applications",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -24200,8 +24200,8 @@
       "Robotic sensing",
       "Robotic modelling",
       "Proprioception",
-      "data",
       "Robotics",
+      "data",
       "integration",
       "Modeling",
       "Embodied Intelligence"
@@ -28566,7 +28566,7 @@
       "cultural differences",
       "clinical",
       "Methods",
-      "challenges"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-24",
@@ -28916,8 +28916,8 @@
       "Community",
       "Participatory Research Methods",
       "Mental Health",
-      "treatment",
       "Methods",
+      "treatment",
       "social",
       "Risk",
       "Prevention"
@@ -30413,8 +30413,8 @@
       "Sensor fusion",
       "resilience",
       "Learning",
-      "data",
       "Robotics",
+      "data",
       "integration"
     ],
     "collection_type": "research_topic",
@@ -32663,7 +32663,7 @@
       "Smart Manufacturing",
       "AI",
       "Learning",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -40466,8 +40466,8 @@
       "Gold nanoparticles",
       "Hybrid imaging modalities",
       "technologies",
-      "challenges",
-      "diagnosis"
+      "diagnosis",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-30",
@@ -43663,7 +43663,7 @@
       "intelligent agents",
       "AI",
       "Learning",
-      "data"
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -46049,8 +46049,8 @@
       "safety-critical systems",
       "Human",
       "Learning",
-      "data",
       "Robotics",
+      "data",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -53151,7 +53151,7 @@
       "endoscopic surgery",
       "clinical",
       "treatment",
-      "challenges"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-02",
@@ -53437,7 +53437,7 @@
       "neuro-oncology",
       "Brain",
       "molecular",
-      "treatment"
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-06",
@@ -59471,7 +59471,7 @@
       "human-centered XAI",
       "AI",
       "clinical",
-      "treatment"
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-28",
@@ -61410,7 +61410,7 @@
       "neurocognitive assessment",
       "mechanisms",
       "Human",
-      "challenges"
+      "diagnosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -61536,8 +61536,8 @@
       "clinical",
       "biomarkers",
       "management",
-      "challenges",
-      "diagnosis"
+      "diagnosis",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -69225,8 +69225,8 @@
       "clinical",
       "technologies",
       "management",
-      "challenges",
-      "diagnosis"
+      "diagnosis",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-04-15",
@@ -74654,7 +74654,7 @@
       "development",
       "neuroimaging",
       "technologies",
-      "treatment"
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -77504,8 +77504,8 @@
       "neurodevelopment",
       "mechanisms",
       "clinical",
-      "challenges",
-      "diagnosis"
+      "diagnosis",
+      "challenges"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -84960,7 +84960,7 @@
       "neuroimaging",
       "Neuroscience",
       "Brain",
-      "Perception"
+      "autism"
     ],
     "collection_type": "research_topic",
     "deadline": null,
