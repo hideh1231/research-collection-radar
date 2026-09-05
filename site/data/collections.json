@@ -6527,8 +6527,8 @@
       "development",
       "treatment",
       "social",
-      "psychological",
-      "cognitive"
+      "cognitive",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-17",
@@ -20902,7 +20902,7 @@
       "paranormal belief",
       "well-being",
       "social",
-      "psychological"
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-31",
@@ -59557,7 +59557,7 @@
     "topics": [
       "Neuropsychiatric disorders",
       "neuropsychiatric",
-      "Neuropsychiatric Disorders"
+      "neuropsychiatric disorders"
     ],
     "collection_type": "special_issue",
     "deadline": "2027-02-28",
@@ -73584,7 +73584,7 @@
       "Sound Therapy",
       "Human",
       "well-being",
-      "psychological"
+      "cognitive"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-06-10",
@@ -82236,8 +82236,8 @@
       "Human",
       "stress",
       "behavior",
-      "psychological",
-      "cognitive"
+      "cognitive",
+      "psychological"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -83936,8 +83936,8 @@
       "Neurodegenerative Diseases",
       "molecular",
       "Neurodegenerative diseases",
-      "translational",
-      "cognitive"
+      "cognitive",
+      "translational"
     ],
     "collection_type": "research_topic",
     "deadline": null,
