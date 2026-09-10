@@ -1,19 +1,19 @@
 {
-  "checked_at": "2026-09-07T23:29:49Z",
+  "checked_at": "2026-09-10T23:10:22Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 650,
-      "pages": 65,
+      "parsed": 657,
+      "pages": 66,
       "error": null
     },
     "nature-comms-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 22,
+      "parsed": 23,
       "pages": 3,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 206,
+      "parsed": 208,
       "pages": 21,
       "error": null
     },
@@ -29,7 +29,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 84,
+      "parsed": 85,
       "pages": 9,
       "error": null
     },
@@ -37,7 +37,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 11,
+      "parsed": 12,
       "pages": 7,
       "error": null
     },
@@ -45,28 +45,28 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3341,
+      "parsed": 3348,
       "pages": 140,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 9,
-        "checked": 7,
-        "listed": 4,
-        "with_deadline": 4,
-        "not_listed": 3,
+        "target_count": 77,
+        "checked": 75,
+        "listed": 74,
+        "with_deadline": 74,
+        "not_listed": 1,
         "failed": 2,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
         "remaining": 2,
-        "metadata_updated": 5
+        "metadata_updated": 36
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 374,
+      "parsed": 376,
       "pages": 16,
       "error": null
     },
@@ -74,7 +74,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1047,
+      "parsed": 1050,
       "pages": 44,
       "error": null
     },
@@ -82,7 +82,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1900,
+      "parsed": 1901,
       "pages": 80,
       "error": null
     },
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2172,
+      "parsed": 2177,
       "pages": 91,
       "error": null
     },
@@ -98,8 +98,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1608,
-      "pages": 67,
+      "parsed": 1609,
+      "pages": 68,
       "error": null
     },
     "frontiers-behavioral-neuroscience": {
@@ -114,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 537,
+      "parsed": 540,
       "pages": 23,
       "error": null
     },
@@ -162,7 +162,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 342,
+      "parsed": 344,
       "pages": 15,
       "error": null
     },
@@ -194,7 +194,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 837,
+      "parsed": 838,
       "pages": 35,
       "error": null
     },
@@ -202,7 +202,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 913,
+      "parsed": 914,
       "pages": 39,
       "error": null
     },
@@ -263,7 +263,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 34,
+      "parsed": 35,
       "pages": 1,
       "error": null
     },
@@ -519,17 +519,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 9,
-      "checked": 7,
-      "listed": 4,
-      "with_deadline": 4,
-      "not_listed": 3,
+      "target_count": 77,
+      "checked": 75,
+      "listed": 74,
+      "with_deadline": 74,
+      "not_listed": 1,
       "failed": 2,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
       "remaining": 2,
-      "metadata_updated": 5
+      "metadata_updated": 36
     }
   }
 }
