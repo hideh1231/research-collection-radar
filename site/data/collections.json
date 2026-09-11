@@ -619,8 +619,8 @@
       "Adaptive Healthcare Robots",
       "Emotion and Intention Recognition",
       "clinical",
-      "Robotics",
-      "data"
+      "data",
+      "Robotics"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-08-30",
@@ -5829,8 +5829,8 @@
       "Neuroimaging",
       "clinical",
       "treatment",
-      "Methods",
       "management",
+      "Methods",
       "diagnosis"
     ],
     "collection_type": "research_topic",
@@ -11001,8 +11001,8 @@
       "School digital transformation",
       "AI",
       "technologies",
-      "management",
-      "Learning"
+      "Learning",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-09-30",
@@ -15194,7 +15194,7 @@
       "Computational",
       "Biodiversity",
       "adaptation",
-      "genetics"
+      "Conservation"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-11",
@@ -15522,7 +15522,8 @@
     "topics": [
       "resilience",
       "ruminants",
-      "productivity"
+      "productivity",
+      "Ruminants"
     ],
     "collection_type": "collection",
     "deadline": "2026-10-13",
@@ -17944,7 +17945,7 @@
       "Mental health",
       "Mental Health",
       "behavior",
-      "physical activity"
+      "Risk"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-23",
@@ -19594,7 +19595,7 @@
       "Adaptability and robustness",
       "AI",
       "Applications",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-10-30",
@@ -23448,8 +23449,8 @@
       "Robotic sensing",
       "Robotic modelling",
       "Proprioception",
-      "Robotics",
       "data",
+      "Robotics",
       "integration",
       "Modeling",
       "Embodied Intelligence"
@@ -24591,8 +24592,8 @@
       "machine learning",
       "clinical",
       "treatment",
-      "management",
-      "Learning"
+      "Learning",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-14",
@@ -27091,8 +27092,8 @@
       "Trust and Reputation Management",
       "AI",
       "machine learning",
-      "Methods",
       "Learning",
+      "Methods",
       "Computational",
       "Cybersecurity"
     ],
@@ -29522,7 +29523,7 @@
       "Multimodal Data",
       "AI",
       "machine learning",
-      "Methods"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-11-30",
@@ -29705,8 +29706,8 @@
       "Sensor fusion",
       "resilience",
       "Learning",
-      "Robotics",
       "data",
+      "Robotics",
       "integration"
     ],
     "collection_type": "research_topic",
@@ -32012,7 +32013,7 @@
       "Smart Manufacturing",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-01",
@@ -34768,8 +34769,8 @@
       "Learning-Based Optimization",
       "Adaptive Dynamic Programming",
       "Human",
-      "Methods",
-      "Learning"
+      "Learning",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-12",
@@ -43328,7 +43329,7 @@
       "intelligent agents",
       "AI",
       "Learning",
-      "Robotics"
+      "data"
     ],
     "collection_type": "research_topic",
     "deadline": "2026-12-31",
@@ -45732,8 +45733,8 @@
       "safety-critical systems",
       "Human",
       "Learning",
-      "Robotics",
       "data",
+      "Robotics",
       "Control"
     ],
     "collection_type": "research_topic",
@@ -58148,7 +58149,8 @@
       "federated learning",
       "Applications",
       "Privacy",
-      "Cyber-physical systems"
+      "Cyber-physical systems",
+      "cyber-physical systems"
     ],
     "collection_type": "collection",
     "deadline": "2027-02-27",
@@ -61094,7 +61096,7 @@
       "Learning Processes",
       "AI",
       "technologies",
-      "management"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-06",
@@ -61441,8 +61443,8 @@
       "Stability-plasticity balance",
       "Continual adaptation",
       "machine learning",
-      "Methods",
-      "Learning"
+      "Learning",
+      "Methods"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-03-07",
@@ -61748,8 +61750,8 @@
       "deep learning",
       "sustainable aquaculture",
       "resilience",
-      "management",
       "Learning",
+      "management",
       "Robotics",
       "integration"
     ],
@@ -69829,8 +69831,8 @@
       "sustainable agriculture",
       "Applications",
       "machine learning",
-      "Methods",
       "Learning",
+      "Methods",
       "data"
     ],
     "collection_type": "research_topic",
@@ -70783,7 +70785,8 @@
     "topics": [
       "decision-making",
       "intelligent decision-making",
-      "Cyber-physical systems"
+      "Cyber-physical systems",
+      "cyber-physical systems"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-28",
@@ -75805,8 +75808,8 @@
       "management",
       "Control",
       "cancer",
-      "Pain",
-      "Artificial Intelligence (AI)"
+      "Artificial Intelligence (AI)",
+      "Pain"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -76981,8 +76984,8 @@
       "machine learning",
       "clinical",
       "treatment",
-      "management",
-      "Learning"
+      "Learning",
+      "management"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -80853,7 +80856,7 @@
       "Riemannian Optimization",
       "Geometric Control",
       "Learning-Based Autonomy",
-      "Methods"
+      "Learning"
     ],
     "collection_type": "research_topic",
     "deadline": null,
@@ -81104,8 +81107,8 @@
       "Wearable Sensors",
       "Brain",
       "cognitive",
-      "EEG",
       "monitoring",
+      "EEG",
       "fNIRS"
     ],
     "collection_type": "research_topic",
@@ -82183,8 +82186,8 @@
       "data",
       "Ecology",
       "monitoring",
-      "education",
-      "Conservation"
+      "Conservation",
+      "education"
     ],
     "collection_type": "research_topic",
     "deadline": null,
