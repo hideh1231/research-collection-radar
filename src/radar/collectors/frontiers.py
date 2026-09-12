@@ -626,9 +626,10 @@ def _get_html_with_identity(fetcher: Fetcher, row: dict[str, Any]) -> tuple[int,
 
 
 def _eligible_for_remaining(
-    rows: list[dict[str, Any]], source: dict[str, Any], *, backfill: bool
+    rows: list[dict[str, Any]], source: dict[str, Any], *, backfill: bool,
+    now: datetime | None = None,
 ) -> list[dict[str, Any]]:
-    return _deadline_queue(rows, source, incoming_ids=set(), backfill=backfill)
+    return _deadline_queue(rows, source, incoming_ids=set(), backfill=backfill, now=now)
 
 
 def enrich_deadlines(
@@ -729,7 +730,7 @@ def enrich_deadlines(
         if checkpoint is not None and stats.checked % checkpoint_size == 0:
             checkpoint(stats.as_dict())
 
-    stats.remaining = len(_eligible_for_remaining(rows, source, backfill=backfill))
+    stats.remaining = len(_eligible_for_remaining(rows, source, backfill=backfill, now=now))
     if checkpoint is not None and (stats.checked % checkpoint_size or stats.stop_reason):
         checkpoint(stats.as_dict())
     return stats.as_dict()

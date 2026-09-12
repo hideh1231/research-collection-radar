@@ -35,10 +35,15 @@ def render_open_md(
     domain_labels: Mapping[str, str] | None = None,
     type_labels: Mapping[str, str] | None = None,
 ) -> str:
-    """Render only open rows whose deadline is a concrete date."""
+    """Render open rows whose confirmed deadline has not passed."""
     labels = {**DEFAULT_DOMAIN_LABELS, **(domain_labels or {})}
     collection_labels = {**DEFAULT_COLLECTION_TYPE_LABELS, **(type_labels or {})}
-    dated = [row for row in rows if row.get("status") == "open" and row.get("deadline")]
+    dated = [
+        row for row in rows
+        if row.get("status") == "open"
+        and row.get("deadline")
+        and row["deadline"] >= today.isoformat()
+    ]
     dated.sort(key=lambda row: (_cell(row.get("deadline")), _cell(row.get("title"))))
     lines = [
         "# Open calls",

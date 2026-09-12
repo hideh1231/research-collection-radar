@@ -85,3 +85,44 @@ def test_stage_jsonl_does_not_replace_until_committed() -> None:
         assert json.loads(path.read_text(encoding="utf-8"))["id"] == "old"
         replace_staged(staged, path)
         assert json.loads(path.read_text(encoding="utf-8"))["id"] == "new"
+
+
+def test_to_record_keeps_verified_detail_without_a_listed_deadline() -> None:
+    previous = migrate_record(_legacy_row(None))
+    raw = RawRecord(
+        title="Verified announcement", url=previous["url"], source_url=previous["source_url"],
+        publisher="JMIR Publications", journal="JMIR Human Factors", collection_type="collection",
+        discovered_via="jmir-human-factors",
+        extra={
+            "id": previous["id"], "deadline_status": "not_listed",
+            "deadline_checked_at": "2026-09-12T01:00:00Z",
+        },
+    )
+    kwargs = dict(
+        today=date(2026, 9, 12), domains=["hci"], domain_scores={"hci": 0.95},
+        topics=[], classification_method="source_rule",
+    )
+    for prior in (None, {previous["id"]: previous}):
+        current = to_record(raw, prior=prior, **kwargs)
+        assert current["deadline"] is None
+        assert current["deadline_status"] == "not_listed"
+        assert current["deadline_checked_at"] == "2026-09-12T01:00:00Z"
+    confirmed = {**previous, "deadline": "2027-01-01", "deadline_status": "listed"}
+    current = to_record(raw, prior={confirmed["id"]: confirmed}, **kwargs)
+    assert current["deadline"] == "2027-01-01"
+    assert current["deadline_status"] == "listed"
+
+
+def test_unverified_detail_cannot_claim_not_listed() -> None:
+    previous = migrate_record(_legacy_row(None))
+    raw = RawRecord(
+        title="Unverified announcement", url=previous["url"], source_url=previous["source_url"],
+        publisher="JMIR Publications", journal="JMIR Human Factors", collection_type="collection",
+        discovered_via="jmir-human-factors", extra={"deadline_status": "not_listed"},
+    )
+    current = to_record(
+        raw, today=date(2026, 9, 12), domains=[], domain_scores={}, topics=[],
+        classification_method="keyword",
+    )
+    assert current["deadline_status"] == "not_checked"
+    assert current["deadline_checked_at"] is None

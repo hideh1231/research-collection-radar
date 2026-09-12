@@ -803,3 +803,481 @@ sources:
     disabled_reason: "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
     gha_fetch: true
 
+
+  # Additional publisher calls, preserving the existing source keys above.
+  - key: nature-human-behaviour
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Nature Human Behaviour
+    collection_type: collection
+    url: https://www.nature.com/nathumbehav/collections
+    allowed_hosts: &id001
+    - www.nature.com
+    - nature.com
+    require_open_status: true
+    allow_empty: true
+  - key: nature-mental-health
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Nature Mental Health
+    collection_type: collection
+    url: https://www.nature.com/natmentalhealth/collections
+    allowed_hosts: *id001
+    require_open_status: true
+    allow_empty: true
+  - key: npj-science-of-learning
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Science of Learning
+    collection_type: collection
+    url: https://www.nature.com/npjscilearn/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-mental-health-research
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Mental Health Research
+    collection_type: collection
+    url: https://www.nature.com/npjmentalhealth/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-robotics
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Robotics
+    collection_type: collection
+    url: https://www.nature.com/npjrobot/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-artificial-intelligence
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Artificial Intelligence
+    collection_type: collection
+    allow_empty: true
+    url: https://www.nature.com/npjai/calls-for-papers
+    allowed_hosts: *id001
+    include_keywords: &id002
+    - human
+    - robot
+    - embodied
+    - cognitive
+    - social
+    - affective
+    - interaction
+    - education
+    - psychology
+    - neuro
+  - key: npj-digital-medicine
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Digital Medicine
+    collection_type: collection
+    url: https://www.nature.com/npjdigitalmed/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-digital-surgery
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Digital Surgery
+    collection_type: collection
+    url: https://www.nature.com/npjdigisurg/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-biological-timing-and-sleep
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Biological Timing and Sleep
+    collection_type: collection
+    url: https://www.nature.com/npjbts/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-dementia
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Dementia
+    collection_type: collection
+    url: https://www.nature.com/npjdementia/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-parkinsons-disease
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Parkinson's Disease
+    collection_type: collection
+    url: https://www.nature.com/npjparkd/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-digital-public-health
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Digital Public Health
+    collection_type: collection
+    url: https://www.nature.com/npjdigipubhealth/calls-for-papers
+    allowed_hosts: *id001
+  - key: npj-complexity
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Complexity
+    collection_type: collection
+    allow_empty: true
+    url: https://www.nature.com/npjcomplex/calls-for-papers
+    allowed_hosts: *id001
+    include_keywords: *id002
+  - key: nature-communications-ai-computing
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Communications AI & Computing
+    collection_type: collection
+    allow_empty: true
+    url: https://www.nature.com/commsaicomp/calls-for-papers
+    allowed_hosts: *id001
+    include_keywords: *id002
+  - key: nature-communications-engineering-robotics
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: Communications Engineering
+    collection_type: collection
+    allow_empty: true
+    url: https://www.nature.com/commseng/calls-for-papers
+    allowed_hosts: *id001
+    include_keywords:
+    - robot
+    - autonomous
+    - human-machine
+    - human–machine
+    - haptic
+    - tactile
+    - neuromorphic
+    - embodied
+  - key: npj-sustainable-mobility-transport
+    enabled: true
+    collector: nature
+    publisher: Nature Portfolio
+    journal: npj Sustainable Mobility and Transport
+    collection_type: collection
+    allow_empty: true
+    url: https://www.nature.com/npjsustainmobil/calls-for-papers
+    allowed_hosts: *id001
+    include_keywords:
+    - autonomous
+    - human
+    - mobility
+    - transport
+    - vehicle
+  - key: nature-humanities-social-sciences-communications
+    enabled: true
+    collector: nature_humanities
+    publisher: Nature Portfolio
+    journal: Humanities and Social Sciences Communications
+    collection_type: collection
+    url: https://www.nature.com/palcomms/for-authors/calls-for-papers
+    allowed_hosts: *id001
+    include_sections:
+    - Anthropology
+    - Communication
+    - Cultural Studies
+    - Digital Humanities
+    - Education
+    - Health and Medical Humanities
+    - Media studies
+    - Philosophy
+    - Psychology
+    - Science/Technology & Society
+    - Sociology
+  - key: ieee-ras-transactions-robotics
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Robotics
+    collection_type: special_collection
+    url: https://www.ieee-ras.org/publications/t-ro/special-issues/
+    allowed_hosts: &id003
+    - www.ieee-ras.org
+    - ieee-ras.org
+  - key: ieee-ras-transactions-automation-science-engineering
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Automation Science and Engineering
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/t-ase/
+    allowed_hosts: *id003
+  - key: ieee-ras-transactions-haptics
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Haptics
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/toh/special-issues/
+    allowed_hosts: *id003
+  - key: ieee-ras-transactions-field-robotics
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Field Robotics
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/t-fr/
+    allowed_hosts: *id003
+  - key: ieee-ras-transactions-medical-robotics-bionics
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Medical Robotics and Bionics
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/t-mrb/special-issues/
+    allowed_hosts: *id003
+  - key: ieee-ras-transactions-robot-learning
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Robot Learning
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/t-rl/special-issues/
+    allowed_hosts: *id003
+  - key: ieee-ras-transactions-soft-robotics
+    enabled: false
+    collector: ieee_ras
+    publisher: IEEE
+    journal: IEEE Transactions on Soft Robotics
+    collection_type: special_issue
+    url: https://www.ieee-ras.org/publications/t-sro/special-issues/
+    allowed_hosts: *id003
+  - key: jmir-human-factors
+    enabled: true
+    collector: jmir
+    journal_id: 6
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR Human Factors
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://humanfactors.jmir.org/announcements
+    allowed_hosts:
+    - humanfactors.jmir.org
+  - key: jmir-mental-health
+    enabled: true
+    collector: jmir
+    journal_id: 16
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR Mental Health
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://mental.jmir.org/announcements
+    allowed_hosts:
+    - mental.jmir.org
+  - key: jmir-ai
+    enabled: true
+    collector: jmir
+    journal_id: 41
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR AI
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://ai.jmir.org/announcements
+    allowed_hosts:
+    - ai.jmir.org
+  - key: jmir-serious-games
+    enabled: true
+    collector: jmir
+    journal_id: 15
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR Serious Games
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://games.jmir.org/announcements
+    allowed_hosts:
+    - games.jmir.org
+  - key: jmir-xr-spatial-computing
+    enabled: true
+    collector: jmir
+    journal_id: 46
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR XR and Spatial Computing
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://xr.jmir.org/announcements
+    allowed_hosts:
+    - xr.jmir.org
+  - key: jmir-neurotechnology
+    enabled: true
+    collector: jmir
+    journal_id: 42
+    api_max_pages: 10
+    publisher: JMIR Publications
+    journal: JMIR Neurotechnology
+    collection_type: theme_issue
+    allow_empty: true
+    url: https://neuro.jmir.org/announcements
+    allowed_hosts:
+    - neuro.jmir.org
+  - key: taylor-francis-special-issues
+    enabled: true
+    collector: taylor_francis
+    publisher: Taylor & Francis
+    journal: Taylor & Francis journals
+    collection_type: special_issue
+    url: https://think.taylorandfrancis.com/wp-json/wp/v2/special_issues?per_page=100&_fields=id,link,title,meta,status,special_issues
+    allowed_hosts:
+    - think.taylorandfrancis.com
+    page_size: 100
+    max_pages: 10
+    include_journals:
+    - Advanced Robotics
+    - Aging, Neuropsychology, and Cognition
+    - Behaviour & Information Technology
+    - Clinical Psychologist
+    - Educational Psychology
+    - Ergonomics
+    - European Journal of Psychotraumatology
+    - International Journal of Human–Computer Interaction
+    - Journal of Clinical and Experimental Neuropsychology
+    - Learning, Media and Technology
+    - Military Psychology
+    - Psychology & Sexuality
+    - Qualitative Research in Psychology
+    - The Clinical Neuropsychologist
+    - The Journal of Positive Psychology
+    - The Journal of Psychology
+    - The Journal of Social Psychology
+    - Visual Cognition
+    include_keywords:
+    - psychology
+    - psychological
+    - cognition
+    - cognitive
+    - neuro
+    - neuroscience
+    - brain
+    - human-computer
+    - human–computer
+    - hci
+    - robot
+    - robotics
+    - human-robot
+    - human–robot
+    - hri
+    - embodied
+    - interaction design
+    - user experience
+    - virtual reality
+    - learning
+    - behaviour
+    - behavior
+    include_domains:
+    - psychology
+    - hci
+    - neuroscience
+    - robotics
+    - hri
+    domain_keywords:
+      psychology:
+      - psychology
+      - psychological
+      - cognition
+      - cognitive
+      - emotion
+      - wellbeing
+      - well-being
+      - mental health
+      - behaviour
+      - behavior
+      - developmental
+      - trauma
+      - psychotrauma
+      hci:
+      - human-computer
+      - human–computer
+      - hci
+      - user experience
+      - usability
+      - interaction design
+      - human factors
+      - virtual reality
+      - mixed reality
+      - extended reality
+      neuroscience:
+      - neuroscience
+      - neuro
+      - neural
+      - brain
+      - neurocognitive
+      - neuroimaging
+      - cortical
+      robotics:
+      - robot
+      - robotics
+      - autonomous
+      - manipulation
+      - embodied
+      - assistive
+      hri:
+      - human-robot
+      - human–robot
+      - social robot
+      - social robotics
+      - assistive robot
+      - human-machine
+  - key: cambridge-robotica-call-for-papers
+    enabled: true
+    collector: cambridge
+    publisher: Cambridge University Press
+    journal: Robotica
+    collection_type: special_issue
+    allow_empty: true
+    url: https://www.cambridge.org/core/journals/robotica/announcements/call-for-papers
+    allowed_hosts: &id004
+    - www.cambridge.org
+    - cambridge.org
+    max_pages: 10
+  - key: cambridge-personality-neuroscience-call-for-papers
+    enabled: true
+    collector: cambridge
+    publisher: Cambridge University Press
+    journal: Personality Neuroscience
+    collection_type: special_issue
+    allow_empty: true
+    url: https://www.cambridge.org/core/journals/personality-neuroscience/announcements/call-for-papers
+    allowed_hosts: *id004
+    max_pages: 10
+  - key: cambridge-psychological-medicine-call-for-papers
+    enabled: true
+    collector: cambridge
+    publisher: Cambridge University Press
+    journal: Psychological Medicine
+    collection_type: special_issue
+    allow_empty: true
+    url: https://www.cambridge.org/core/journals/psychological-medicine/announcements/call-for-papers
+    allowed_hosts: *id004
+    max_pages: 10
+  - key: cambridge-cns-spectrums-call-for-papers
+    enabled: true
+    collector: cambridge
+    publisher: Cambridge University Press
+    journal: CNS Spectrums
+    collection_type: special_issue
+    allow_empty: true
+    url: https://www.cambridge.org/core/journals/cns-spectrums/announcements/call-for-papers
+    allowed_hosts: *id004
+    max_pages: 10
+  - key: cambridge-bjpsych-open-call-for-papers
+    enabled: true
+    collector: cambridge
+    publisher: Cambridge University Press
+    journal: BJPsych Open
+    collection_type: special_issue
+    allow_empty: true
+    url: https://www.cambridge.org/core/journals/bjpsych-open/announcements/call-for-papers
+    allowed_hosts: *id004
+    max_pages: 10

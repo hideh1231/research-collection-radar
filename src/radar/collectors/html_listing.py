@@ -400,6 +400,8 @@ def parse_ipsj(html: str, source: dict) -> list[RawRecord]:
         heading_text = heading.get_text(" ", strip=True)
         if "特集" not in heading_text:
             continue
+        if re.fullmatch(r"特集論文募集\s*[（(]一覧[）)]", heading_text):
+            continue
         blob_parts: list[str] = []
         href = source["url"]
         for sibling in heading.next_siblings:
@@ -429,12 +431,21 @@ def parse_jske(html: str, source: dict) -> list[RawRecord]:
     soup = BeautifulSoup(html, "lxml")
     found: dict[str, RawRecord] = {}
     for link in soup.find_all("a", href=True):
-        title = link.get_text(" ", strip=True)
-        if "call for papers" not in title.lower() and "/cfp/" not in str(link["href"]).lower():
+        heading = link.select_one(".post_title")
+        title = (heading or link).get_text(" ", strip=True)
+        # The page mixes journal special issues, conference calls and menu
+        # links. Only the journal invitations belong in this collection index.
+        if not re.search(r"special\s+issue|extended\s+papers?|特集", title, re.I):
             continue
-        parent = link.find_parent(["li", "p", "div", "article"]) or link
         href = _absolute(str(link["href"]), source["url"])
-        record = _make(source, title=title, url=href, deadline=_deadline(parent.get_text(" ", strip=True)))
+        if "/cfp/" not in urlparse(href).path or canonicalize_url(href) == canonicalize_url(source["url"]):
+            continue
+        # Do not read adjacent calls or the announcement's publication date.
+        text = link.get_text(" ", strip=True)
+        text = re.sub(r"(deadline)\s+extended\s+(?:until|to)\s+", r"\1: ", text, flags=re.I)
+        matches = list(DEADLINE_RE.finditer(text))
+        deadline = parse_date(matches[-1].group(1)) if matches else None
+        record = _make(source, title=title, url=href, deadline=deadline, status="unknown" if deadline is None else None)
         if record:
             found[record.url] = record
     return list(found.values())

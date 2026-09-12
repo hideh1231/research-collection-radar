@@ -127,3 +127,179 @@ journal_rules:
     domains: [hci]
   - match: International Journal of Social Robotics
     domains: [robotics, hri]
+  - match: Nature Human Behaviour
+    domains:
+    - psychology
+  - match: Nature Mental Health
+    domains:
+    - psychology
+  - match: npj Science of Learning
+    domains:
+    - psychology
+    - neuroscience
+  - match: npj Mental Health Research
+    domains:
+    - psychology
+    - neuroscience
+  - match: npj Robotics
+    domains:
+    - robotics
+    - hri
+  - match: npj Artificial Intelligence
+    domains:
+    - hci
+    - robotics
+  - match: npj Digital Medicine
+    domains:
+    - hci
+  - match: npj Digital Surgery
+    domains:
+    - hci
+    - robotics
+  - match: npj Biological Timing and Sleep
+    domains:
+    - psychology
+    - neuroscience
+  - match: npj Dementia
+    domains:
+    - psychology
+    - neuroscience
+  - match: npj Parkinson's Disease
+    domains:
+    - neuroscience
+  - match: npj Digital Public Health
+    domains:
+    - hci
+    - psychology
+  - match: npj Complexity
+    domains:
+    - hci
+    - robotics
+  - match: Communications AI & Computing
+    domains:
+    - hci
+    - robotics
+  - match: Communications Engineering
+    domains:
+    - robotics
+    - hri
+  - match: npj Sustainable Mobility and Transport
+    domains:
+    - hci
+    - robotics
+  - match: Humanities and Social Sciences Communications
+    domains:
+    - psychology
+    - hci
+  - match: JMIR Human Factors
+    domains:
+    - hci
+    - psychology
+  - match: JMIR Mental Health
+    domains:
+    - psychology
+  - match: JMIR AI
+    domains:
+    - hci
+    - robotics
+  - match: JMIR Serious Games
+    domains:
+    - hci
+    - psychology
+  - match: JMIR XR and Spatial Computing
+    domains:
+    - hci
+  - match: JMIR Neurotechnology
+    domains:
+    - hci
+    - neuroscience
+  - match: Advanced Robotics
+    domains:
+    - robotics
+    - hri
+  - match: Aging, Neuropsychology, and Cognition
+    domains:
+    - psychology
+    - neuroscience
+  - match: Behaviour & Information Technology
+    domains:
+    - hci
+  - match: Clinical Psychologist
+    domains:
+    - psychology
+  - match: Educational Psychology
+    domains:
+    - psychology
+  - match: Ergonomics
+    domains:
+    - hci
+    - hri
+  - match: European Journal of Psychotraumatology
+    domains:
+    - psychology
+    - neuroscience
+  - match: International Journal of Human–Computer Interaction
+    domains:
+    - hci
+  - match: Journal of Clinical and Experimental Neuropsychology
+    domains:
+    - psychology
+    - neuroscience
+  - match: Learning, Media and Technology
+    domains:
+    - psychology
+    - hci
+  - match: Military Psychology
+    domains:
+    - psychology
+  - match: Psychology & Sexuality
+    domains:
+    - psychology
+  - match: Qualitative Research in Psychology
+    domains:
+    - psychology
+  - match: The Clinical Neuropsychologist
+    domains:
+    - psychology
+    - neuroscience
+  - match: The Journal of Positive Psychology
+    domains:
+    - psychology
+  - match: The Journal of Psychology
+    domains:
+    - psychology
+  - match: The Journal of Social Psychology
+    domains:
+    - psychology
+  - match: Visual Cognition
+    domains:
+    - psychology
+    - neuroscience
+  - match: Robotica
+    domains:
+    - robotics
+    - hri
+  - match: Personality Neuroscience
+    domains:
+    - psychology
+    - neuroscience
+  - match: Psychological Medicine
+    domains:
+    - psychology
+    - neuroscience
+  - match: CNS Spectrums
+    domains:
+    - psychology
+    - neuroscience
+  - match: BJPsych Open
+    domains:
+    - psychology
+    - neuroscience
+  - match: IEEE Transactions on Haptics
+    domains:
+    - hci
+    - robotics
+    - hri
+  - match: IEEE Transactions on
+    domains:
+    - robotics

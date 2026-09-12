@@ -273,7 +273,7 @@ def overlay_catalog_topics(
     matches = match_catalog_labels(haystack, catalog)
     if not matches:
         return False
-    merged = unique_keep_order([*current, *matches])[:PUBLISHER_TOPIC_MAX]
+    merged = normalize_topic_list([*current, *matches])
     if merged == current:
         return False
     row["topics"] = merged
@@ -337,6 +337,8 @@ def select_llm_targets(
     limit: int,
     open_only: bool = True,
 ) -> list[dict[str, Any]]:
+    if limit <= 0:
+        return []
     selected: list[dict[str, Any]] = []
     for row in sorted(rows, key=lambda item: (item.get("first_seen", ""), item.get("id", ""))):
         if open_only and row.get("status") != "open":
@@ -381,9 +383,18 @@ def _validate_topic_list(value: Any) -> list[str]:
     return labels
 
 
+def _unique_json_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise TopicError("duplicate JSON key")
+        result[key] = value
+    return result
+
+
 def parse_batch_response(text: str, expected_ids: list[str]) -> dict[str, list[str]]:
     try:
-        payload = json.loads(text)
+        payload = json.loads(text, object_pairs_hook=_unique_json_keys)
     except json.JSONDecodeError as exc:
         raise TopicError("response is not JSON") from exc
     if isinstance(payload, dict) and "topics" in payload and len(payload) == 1:
@@ -395,7 +406,10 @@ def parse_batch_response(text: str, expected_ids: list[str]) -> dict[str, list[s
         for entry in payload:
             if not isinstance(entry, dict) or "id" not in entry:
                 raise TopicError("batch item missing id")
-            items[str(entry["id"])] = entry.get("topics")
+            record_id = str(entry["id"])
+            if record_id in items:
+                raise TopicError("duplicate batch id")
+            items[record_id] = entry.get("topics")
     else:
         raise TopicError("batch response has unexpected shape")
     if set(items) != set(expected_ids):
@@ -455,11 +469,14 @@ class HttpCompletionsClient:
             raise TopicError(f"server error {response.status_code}")
         if response.status_code >= 400:
             raise TopicError(f"http {response.status_code}")
-        data = response.json()
         try:
-            return str(data["choices"][0]["message"]["content"])
-        except (KeyError, IndexError, TypeError) as exc:
-            raise TopicError("completion missing content") from exc
+            data = response.json()
+            content = data["choices"][0]["message"]["content"]
+        except (ValueError, KeyError, IndexError, TypeError) as exc:
+            raise TopicError("invalid completion response") from exc
+        if not isinstance(content, str) or not content.strip():
+            raise TopicError("completion missing content")
+        return content
 
 
 def apply_llm_topics(

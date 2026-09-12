@@ -30,6 +30,8 @@ The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sourc
 - PLOS calls for papers, via the official WordPress REST API
 - Domestic listings: Journal of Robotics and Mechatronics, VRSJ special issues, IPSJ CFP list, JSKE
 
+Additional configured sources include relevant npj journals, Nature Human Behaviour, Nature Mental Health, Humanities and Social Sciences Communications, six JMIR journals, five Cambridge journals, and the official Taylor & Francis `special_issues` REST API. The API paginates through the publisher's calls and applies journal/title filters. New sources reuse existing publisher identities so calls shared by several journals remain one record. See [`docs/source-inventory.md`](docs/source-inventory.md) for coverage and verification limits.
+
 ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の headed Chrome で APA、ScienceDirect、APS、Science Robotics、T&F Author Services、SAGE、PNAS、PNAS Nexus、JOSA A、監視 Wiley 誌の一覧 1 ページを開き、レンダリング済み HTML を ingest する。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
 
 ```text
@@ -46,6 +48,8 @@ The viewer is the GitHub Pages site at `https://hideh1231.github.io/research-col
 ## Slack
 
 Slack reports new open records once, after the first run. It includes records with a date, `Deadline not listed`, or `Deadline not checked`. A later deadline update does not send a second notification. `OPEN.md` has a narrower purpose: it shows only open records with a confirmed date.
+
+Failed deliveries remain pending and are retried on a later crawl. The notification ledger advances only after successful delivery; the first run still establishes a silent baseline.
 
 Set these GitHub Actions secrets to enable Slack delivery:
 
@@ -79,6 +83,19 @@ python -m radar --build-site
 Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked`; this command does not discover new records or send Slack notifications. A crawl after the extension-deadline parser also rechecks Frontiers records last marked `not_listed` before 2026-08-28. Run `python -m radar --enrich-topics` after crawl if LLM settings are present.
 
 Serve the viewer with `python -m http.server -d site 8000`.
+
+Select sources with repeated `--only` arguments. `--dry-run` still writes local data and generated views; it disables Slack and automatic commits. Use a separate `--root` directory containing the configuration and schema when evaluating a crawl without changing your local index.
+
+```text
+python -m radar --dry-run --only jmir-human-factors --only taylor-francis-special-issues
+python scripts/probe_sources.py --only cambridge-robotica-call-for-papers --output probe-report.json
+```
+
+The probe command checks collectors without changing collection data or sending notifications. It checks enabled sources by default; `--only` can explicitly probe a disabled source. A failed source is reported independently and does not stop the remaining checks.
+
+Crawls also continue after a source fails, preserve previously collected records, and save the results from healthy sources. They return a nonzero exit status for failures in that invocation, so Actions still reports incomplete coverage. Failures from earlier, unselected sources do not fail a targeted crawl or HTML ingestion.
+
+The **Crawl research collections** workflow also accepts a manual `dry_run` input. It runs without Slack secrets or commits and uploads `source_status.json` and `OPEN.md` as a validation report. Its optional `source_keys` input selects space-separated source keys for that validation run.
 
 ## Classification
 

@@ -41,3 +41,15 @@ def test_open_view_has_all_public_columns() -> None:
     text = render_open_md([_row("A")], date(2026, 8, 26))
     assert "| Deadline | Title | Journal | Fields | Type | URL |" in text
     assert "| 2027-01-02 | A | Journal | Psychology | Collection | https://example.org/call |" in text
+
+
+def test_open_view_hides_expired_dates_but_keeps_today() -> None:
+    expired = _row("Expired", deadline="2026-08-25")
+    text = render_open_md(
+        [expired, _row("Due today", deadline="2026-08-26"), _row("Future")],
+        date(2026, 8, 26),
+    )
+    assert "Expired" not in text
+    assert "Due today" in text
+    assert "Future" in text
+    assert expired["status"] == "open"

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from urllib.parse import urljoin
+
 from bs4 import BeautifulSoup
 
 from radar.http import Fetcher
@@ -29,9 +31,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
         link = article.select_one("a.app-card-collection__heading-link[href]")
         if link is None:
             continue
-        href = str(link["href"])
-        if href.startswith("/"):
-            href = f"{source['url'].split('/')[0]}//{source['url'].split('/')[2]}{href}"
+        href = urljoin(source["url"], str(link["href"]))
         if hosts and not allowed_url(href, hosts):
             continue
         title = link.get_text(" ", strip=True)
@@ -51,7 +51,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             collection_type=source.get("collection_type") or "collection",
             discovered_via=source["key"],
             status=normalize_status(status_text),
-            deadline=parse_date(deadline_text) or parse_date(article.get_text(" ", strip=True)),
+            deadline=parse_date(deadline_text),
             summary=summary or None,
             submission_mode="open_call",
         )

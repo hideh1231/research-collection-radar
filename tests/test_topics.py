@@ -5,6 +5,7 @@ import pytest
 
 from radar.ids import content_hash
 from radar.topics import (
+    HttpCompletionsClient,
     TopicError,
     apply_publisher_topics,
     enrich_topics,
@@ -152,6 +153,56 @@ def test_unchanged_input_hash_is_not_requeued() -> None:
     row = _row(1, topics=["aging", "AI", "well-being"], topics_method="llm")
     row["topics_input_hash"] = topics_input_hash(row)
     assert select_llm_targets([row], limit=10) == []
+
+
+@pytest.mark.parametrize("limit", [0, -1])
+def test_nonpositive_limit_does_not_call_llm(limit) -> None:
+    class Client:
+        def complete(self, messages, model):
+            pytest.fail("zero-budget enrichment must not call the provider")
+
+    stats = enrich_topics([_row(1)], client=Client(), model="test", limit=limit)
+    assert stats["target_count"] == 0
+
+
+@pytest.mark.parametrize("text", [
+    '[{"id":"id-1","topics":["AI","aging","sleep"]},{"id":"id-1","topics":["HRI","robots","sleep"]}]',
+    '{"topics":{"id-1":["AI","aging","sleep"],"id-1":["HRI","robots","sleep"]}}',
+])
+def test_duplicate_record_ids_are_rejected(text) -> None:
+    with pytest.raises(TopicError, match="duplicate"):
+        parse_batch_response(text, ["id-1"])
+
+
+@pytest.mark.parametrize("response", [
+    httpx.Response(200, text="<html>Temporarily unavailable</html>"),
+    httpx.Response(200, json={"choices": []}),
+    httpx.Response(200, json={"choices": [{"message": {"content": None}}]}),
+])
+def test_invalid_provider_envelope_keeps_existing_topics(monkeypatch, response) -> None:
+    monkeypatch.setattr(httpx, "post", lambda *args, **kwargs: response)
+    row = _row(1, topics=["keep-me"], topics_method="llm")
+    client = HttpCompletionsClient("https://example.test/v1", "test")
+    stats = enrich_topics([row], client=client, model="test", limit=1)
+    assert stats["failed"] == 1
+    assert stats["retried"] == 1
+    assert row["topics"] == ["keep-me"]
+
+
+def test_invalid_provider_json_can_recover_on_retry(monkeypatch) -> None:
+    responses = iter([
+        httpx.Response(200, text="<html>Temporarily unavailable</html>"),
+        httpx.Response(200, json={"choices": [{"message": {
+            "content": '{"topics":{"id-1":["AI","aging","sleep"]}}',
+        }}]}),
+    ])
+    monkeypatch.setattr(httpx, "post", lambda *args, **kwargs: next(responses))
+    row = _row(1)
+    client = HttpCompletionsClient("https://example.test/v1", "test")
+    stats = enrich_topics([row], client=client, model="test", limit=1)
+    assert stats["retried"] == 1
+    assert stats["updated"] == 1
+    assert row["topics"] == ["AI", "aging", "sleep"]
 
 
 def test_catalog_overlay_adds_aliases_and_skips_noise() -> None:

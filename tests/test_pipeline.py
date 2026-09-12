@@ -342,7 +342,7 @@ def test_include_disabled_fetches_apa_and_skips_sciencedirect(monkeypatch) -> No
     )
 
     with _pipeline_root(repo_root()) as root:
-        assert run(root, dry_run=True, include_disabled=True, open_only=True, only={"apa-cfp", "sciencedirect-cfp"}) == 0
+        assert run(root, dry_run=True, include_disabled=True, open_only=True, only={"apa-cfp", "sciencedirect-cfp"}) == 1
         assert called == ["apa-cfp"]
         assert enrich_calls == []
         status = json.loads((root / "data/source_status.json").read_text(encoding="utf-8"))
