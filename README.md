@@ -4,7 +4,7 @@
 
 [`OPEN.md`](OPEN.md) lists open calls with a confirmed deadline. It sorts entries by deadline and shows the title, journal, research fields, collection type, and source URL.
 
-The GitHub Pages viewer in [`site/`](site/) lists every open call, including those whose deadline is not listed or not yet checked. It searches title, summary, journal, fields, and topics. JSONL remains the source of truth; `site/data/collections.json` is generated from it.
+The GitHub Pages viewer in [`site/`](site/) lists open calls whose confirmed deadline has not passed, including those whose deadline is not listed or not yet checked. It searches title, summary, journal, fields, and topics. JSONL preserves the full history and remains the source of truth; `site/data/collections.json` is generated from it.
 
 Closed calls stay in [`data/collections.jsonl`](data/collections.jsonl).
 

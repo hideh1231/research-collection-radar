@@ -1,3 +1,4 @@
+from copy import deepcopy
 from datetime import date
 import json
 
@@ -11,9 +12,24 @@ def test_viewer_json_contains_only_open_records() -> None:
         {"id": "closed", "title": "Closed", "status": "closed", "journal": "J", "deadline": "2026-01-01", "domains": [], "topics": [], "collection_type": "collection"},
         {"id": "unknown", "title": "Unknown", "status": "unknown", "journal": "J", "deadline": None, "domains": [], "topics": [], "collection_type": "collection"},
     ]
-    payload = render_site_collections(rows)
+    payload = render_site_collections(rows, date(2026, 9, 12))
     assert [row["id"] for row in payload] == ["open"]
     assert all(row["status"] == "open" for row in payload)
+
+
+def test_viewer_excludes_expired_calls_without_changing_history() -> None:
+    rows = [
+        {"id": "expired", "status": "open", "deadline": "2026-09-11"},
+        {"id": "today", "status": "open", "deadline": "2026-09-12"},
+        {"id": "future", "status": "open", "deadline": "2026-09-13"},
+        {"id": "not-listed", "status": "open", "deadline": None, "deadline_status": "not_listed"},
+        {"id": "not-checked", "status": "open", "deadline": None, "deadline_status": "not_checked"},
+        {"id": "closed", "status": "closed", "deadline": "2026-09-13"},
+    ]
+    original = deepcopy(rows)
+    payload = render_site_collections(rows, date(2026, 9, 12))
+    assert [row["id"] for row in payload] == ["today", "future", "not-checked", "not-listed"]
+    assert rows == original
 
 
 def test_migrated_rows_include_viewer_fields() -> None:
@@ -61,7 +77,7 @@ def test_viewer_json_rejects_wide_topic_labels() -> None:
             "collection_type": "collection",
         }
     ]
-    payload = render_site_collections(rows)
+    payload = render_site_collections(rows, date(2026, 9, 12))
     assert payload[0]["topics"] == ["aging", "AI"]
     for row in payload:
         assert len(row["topics"]) <= 8

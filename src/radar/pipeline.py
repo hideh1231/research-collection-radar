@@ -133,7 +133,7 @@ def _write_artifacts_atomic(
         staged.append(
             _stage_text(
                 site_path,
-                json.dumps(render_site_collections(rows), ensure_ascii=False, indent=2) + "\n",
+                json.dumps(render_site_collections(rows, today), ensure_ascii=False, indent=2) + "\n",
             )
         )
         staged.append(_stage_text(status_path, json.dumps(source_status, ensure_ascii=False, indent=2) + "\n"))
