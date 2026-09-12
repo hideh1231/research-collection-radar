@@ -80,8 +80,6 @@ journals:
     publisher: Elsevier
   - name: Journal of Memory and Language
     publisher: Elsevier
-  - name: Cognition and Instruction
-    publisher: Elsevier
   - name: Neural Networks
     publisher: Elsevier
   - name: Neurocomputing
@@ -219,6 +217,8 @@ journals:
     publisher: APA
 
   # Taylor & Francis
+  - name: Cognition and Instruction
+    publisher: Taylor & Francis
   - name: Cognition and Emotion
     publisher: Taylor & Francis
   - name: Visual Cognition

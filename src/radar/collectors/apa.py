@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup, Tag
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import listing_status, parse_date
+from radar.normalize import listing_status, parse_date, utc_now
 
 GENERAL_RE = re.compile(
     r"general call for papers|call-for-papers-general|special issue proposals|"
@@ -99,7 +99,8 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             if GENERAL_RE.search(title) or (link is not None and GENERAL_RE.search(href)):
                 continue
             blob = item.get_text(" ", strip=True)
-            deadline = _deadline(blob)
+            no_deadline = bool(re.search(r"\bno submission deadline\b", blob, re.I))
+            deadline = None if no_deadline else _deadline(blob)
             if re.search(r"guidelines for submitting", blob, re.I) and deadline is None:
                 continue
             url = canonicalize_url(href)
@@ -120,6 +121,11 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
                 submission_mode="open_call",
                 extraction_method="listing",
                 publisher_id=publisher_id,
+                extra=(
+                    {"deadline_status": "not_listed", "deadline_checked_at": utc_now()}
+                    if no_deadline
+                    else {}
+                ),
             )
     return list(found.values())
 

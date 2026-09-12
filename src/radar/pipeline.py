@@ -224,7 +224,7 @@ def _empty_enrichment() -> dict[str, Any]:
 
 
 def _copy_prior_extras(source_status: dict[str, Any], prior_status_doc: dict[str, Any]) -> None:
-    for extra_key in ("frontiers_detail", "topic_enrichment"):
+    for extra_key in ("frontiers_detail", "topic_enrichment", "collection_deadline_checks"):
         if extra_key in prior_status_doc and extra_key not in source_status:
             source_status[extra_key] = prior_status_doc[extra_key]
 
@@ -618,6 +618,38 @@ def build_site(root: Path) -> int:
     return 0
 
 
+def run_deadline_checks(root: Path, *, dry_run: bool = False, limit: int | None = None,
+                        only: set[str] | None = None) -> int:
+    from radar.deadline_checks import check_deadlines
+
+    cfg = load_sources(root)
+    unknown = (only or set()) - {source["key"] for source in cfg["sources"]}
+    if unknown:
+        log(f"unknown source keys: {', '.join(sorted(unknown))}")
+        return 1
+    if limit is not None and limit < 0:
+        log("limit must not be negative")
+        return 1
+    rows, _ = migrate_rows(load_jsonl(root / "data/collections.jsonl"))
+    status_path = root / "data/source_status.json"
+    status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {"sources": {}}
+    fetcher = Fetcher(cfg["user_agent"], cfg.get("timeout_seconds", 40), retries=2, min_interval_seconds=0.3)
+    try:
+        result = check_deadlines(rows, fetcher, limit=100 if limit is None else limit, only=only)
+    finally:
+        fetcher.close()
+    status["collection_deadline_checks"] = result
+    labels = load_domains(root)
+    _write_artifacts_atomic(root, rows, date.today(), status,
+                            load_schema(root / "schema/collection.schema.json"),
+                            domain_labels(labels), collection_type_labels(labels))
+    log(f"collection deadlines: {json.dumps(result, ensure_ascii=False)}")
+    if not dry_run:
+        commit_if_actions(root, f"data: verify collection deadlines ({result['updated']} updated)")
+    # Individual unavailable pages remain pending, as in Frontiers detail checks.
+    return 0
+
+
 def run_topic_enrichment(root: Path, *, dry_run: bool = False, limit: int | None = None) -> int:
     today = date.today()
     domains_cfg = load_domains(root)
@@ -696,6 +728,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--backfill-deadlines", action="store_true")
+    parser.add_argument("--check-deadlines", action="store_true",
+                        help="Verify pending Nature/Springer/JSKE detail pages without discovering or notifying")
     parser.add_argument("--enrich-topics", action="store_true")
     parser.add_argument("--build-site", action="store_true")
     parser.add_argument("--render-listings", action="store_true")
@@ -727,6 +761,9 @@ def main(argv: list[str] | None = None) -> int:
         return build_site(root)
     if args.enrich_topics:
         return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
+    if args.check_deadlines:
+        return run_deadline_checks(root, dry_run=args.dry_run, limit=args.limit,
+                                   only=set(args.only) if args.only else None)
     if args.render_listings:
         from radar.listing_html import render_listing_pages
 

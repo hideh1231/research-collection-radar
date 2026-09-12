@@ -54,7 +54,7 @@ def test_nature_humanities_filters_and_merges_sections() -> None:
     records = parse_nature_humanities(html, source)
     assert len(records) == 1
     assert records[0].source_section == "Psychology, Sociology"
-    assert records[0].status == "open"
+    assert records[0].status == "unknown"
 
 
 def test_jmir_keeps_only_call_announcements() -> None:

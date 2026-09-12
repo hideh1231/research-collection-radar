@@ -13,10 +13,12 @@ from radar.collectors.plos import PlosCollector
 from radar.collectors.royal_society import RoyalSocietyCollector, parse_listing as parse_royal_society
 from radar.collectors.sciencedirect import ScienceDirectCollector, parse_listing as parse_sciencedirect
 from radar.collectors.springer import SpringerCollector
+from radar.collectors.call_document import CallDocumentCollector
 from radar.http import Fetcher
 from radar.models import SourceResult
 
 REGISTRY = {
+    "call_document": CallDocumentCollector(),
     "nature": NatureCollector(),
     "nature_humanities": NatureHumanitiesCollector(),
     "cambridge": CambridgeCollector(),
