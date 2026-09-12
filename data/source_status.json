@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T07:20:18Z",
+  "checked_at": "2026-09-12T08:15:23Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -208,8 +208,14 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
+      "ok": true,
+      "http_status": null,
+      "parsed": 2378,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/sciencedirect-cfp.html",
+      "dropped_unclassified": 2331,
+      "skipped_closed": 9
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -389,8 +395,13 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
+      "ok": true,
+      "http_status": null,
+      "parsed": 48,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/apa-cfp.html",
+      "skipped_closed": 11
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -457,8 +468,12 @@
     },
     "tandf-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "Author Services CFP search is JS-rendered. listing-ingest tries headed Chrome. Keep watched journals only."
+      "ok": false,
+      "http_status": null,
+      "parsed": 0,
+      "pages": 1,
+      "error": "zero records",
+      "ingest": "listing-html/tandf-cfp.html"
     },
     "sage-cfp": {
       "enabled": false,
@@ -477,8 +492,12 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
+      "ok": true,
+      "http_status": null,
+      "parsed": 2,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/josa-a-features.html"
     },
     "wiley-bjp": {
       "enabled": false,
