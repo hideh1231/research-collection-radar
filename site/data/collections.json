@@ -595,6 +595,29 @@
     "status": "open"
   },
   {
+    "id": "vrsj-special-4a4123bf1f",
+    "title": "VR心理学10",
+    "summary": "テーマ 【VR心理学10】 締切 ◆申込締切：2026年8月28日（金） ◆論文締切：2026年9月14日（月） 概要 バーチャルリアリティは，しばしば「脳をだます技術」として紹介されてきました．しかし近年，AI技術が飛躍的に発展したことにより，リアルとフェイク，リアルとバーチャルの境界は急速に曖昧になり，脳をだますことはかつてないほど容易になりました．このような時代において，バーチャルな情報に対して私たちの知覚・認知・心理がどこまで，どのように影響を受けるのか，あるいは影響を受けないのかを明らかにすることは，極めて重要な課題です．これは，人間の認知システムの限界と可塑性，さらにはリアリティの本質を理解することにもつながる問いです． VR心理学に関する特集は，今回で第10回を迎えます．ヘッドマウントディスプレイやアバターなどのバーチャルリアリティ技術を用いた心理学研究や，多感覚統合や身体錯覚といった心理学的知見を応用したバーチャルリアリティ研究は，第1回特集号から25年の歩みを経て大きく発展してきました．バーチャルリアリティの効果を最大化し，同時に潜在的なリスクを理解・評価するためにも，VR技術を用いた心理学研究の重要性は，ますます高まっています． 本特集号では，VRと心理学の融合領域に関連する論文を，基礎から応用まで幅広く募集します．基礎論文，応用論文，コンテンツ論文に加え，VR研究者にとって有益な知見を体系的に整理した総説論文の投稿も歓迎します．第10回となる本特集号への，皆様の積極的なご投稿を心よりお待ちしております． なお，使用言語は，日本語，英語，いずれも可能です． ゲストエディタ 繁桝　博昭（高知工科大学） 北崎　充晃（豊橋技術科学大学） 蒲池　みゆき（工学院大学） 原澤　賢充（NHK放送技術研究所） 小川　将樹（三重大学） 森田　磨里絵（大阪工業大学） 対象論文・キーワード VRの分野と心理学・認知神経科学の分野の双方に関係する幅広い領域の論文を対象とします．VRと心理学の融合領域の発展に貢献するような研究を期待します． 各カテゴリ・基準の定義については，学会の査読基準に準じます． お問い合わせ 日本バーチャルリアリティ学会編集事務局（vrsj-edit[at]je.bunken.co.jp）",
+    "journal": "日本バーチャルリアリティ学会論文誌",
+    "journals": [
+      "日本バーチャルリアリティ学会論文誌"
+    ],
+    "domains": [],
+    "topics": [
+      "AI",
+      "VR"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-09-14",
+    "deadline_status": "listed",
+    "url": "https://vrsj.org/transaction/special_issue",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "VRSJ",
+    "status": "open"
+  },
+  {
     "id": "frontiers-10309be2bf",
     "title": "A Metaverse for the Good: AI and the Metaverse",
     "summary": "The idea of the metaverse is a vast extended reality set of worlds where physical and virtual reality intersect. It might be inhabited at any one time by millions of people, and as in the real world groups of people can interact with one another in real-time. The virtual metaverse will overlap with the physical world in various ways – for example, walking into a particular place in the physical world may transport you to a virtual place, where you are interacting with life-sized virtual humans who may be anywhere in the real world.",
@@ -1351,6 +1374,31 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "nature-humanities-social-sciences-communications-dc7a67f14d",
+    "title": "Toponymy and toponomastics at the intersection between language and historical geography",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [
+      "language"
+    ],
+    "collection_type": "collection",
+    "deadline": "2026-09-15",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/icbeaecjib/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -19555,6 +19603,30 @@
     "status": "open"
   },
   {
+    "id": "sage-adaptive-behavior-neurophenomenology-ce5a9c6ad0",
+    "title": "The Future of Neurophenomenology: Empirical and Methodological Advances in the Study of Lived Experience",
+    "summary": null,
+    "journal": "Adaptive Behavior",
+    "journals": [
+      "Adaptive Behavior"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "lived experience"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-01",
+    "deadline_status": "listed",
+    "url": "https://journals.sagepub.com/pb-assets/cmscontent/adb/SI%20New-1781664003197.docx",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "SAGE",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-d250a52b73",
     "title": "Compassion Fatigue in the Health and Social Sector - Volume II",
     "summary": "This second edition of 'Compassion Fatigue in the Health and Social Sector' welcomes new research contributions to this field following the success of volume one .",
@@ -19813,29 +19885,6 @@
     "image_alt": "Tumor Microenvironment Crosstalk and Therapeutic Implications",
     "first_seen": "2026-08-27",
     "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "vrsj-special-1b97530d2a",
-    "title": "食とVR",
-    "summary": "テーマ 【食とVR】 締切 ◆申込締切：2026年11月2日（月） ◆論文締切：2026年11月16日（月） 概要 食は，人間の生存を支える基盤であると同時に，楽しみ，コミュニケーション，文化，記憶，健康などと深く結びついた極めて豊かな体験です．近年，VR技術の発展により，視覚・聴覚に加えて，嗅覚，味覚，触覚，温冷感，食感提示などを含む多感覚提示技術が進展し，食体験の拡張や再構成，さらには食行動の理解・支援に関する研究が活発になってきました．VRにおける食は，単に食物を仮想的に見せるだけではなく，味覚・嗅覚提示，咀嚼・嚥下・口腔感覚の計測と提示，食事コミュニケーション支援，遠隔共食，食育，ウェルビーイング，行動変容，エンタテインメント，アート表現，アクセシビリティ支援など，多面的な研究課題を含む新しい学際領域です．また，食に関する研究は，工学，認知科学，心理学，デザイン，芸術，医療・福祉，栄養学，サービス学など，多様な分野との接続を持ちます． 本特集号では，「食とVR」をテーマとし，食とVRに関する研究を，基礎から応用まで幅広く募集します．基礎論文，応用論文，コンテンツ論文に加え，本分野の研究動向や技術課題を体系的に整理した総説論文の投稿も歓迎します．会員の皆様の積極的なご投稿をお待ちしています． なお，言語は日本語，英語，いずれも投稿可能です． ゲストエディタ 小池　崇文（法政大学/RealImage Inc.） 松倉　悠（電気通信大学） 橋本　悠希（筑波大学） 新島　有信（NTT） 大野　雅貴（立命館大学） 対象論文・キーワード 食に関連するVR，基礎実験・応用システム・コンテンツのデザインなど幅広く論文を募集します．目安として次の項目を挙げますが，これらに限定するものではありません． ・味覚・嗅覚・食感・温冷感・触覚を含む食の多感覚提示 ・食体験におけるクロスモーダル／マルチモーダル相互作用 ・食品・食器・調理動作のVR表現とインタラクション ・咀嚼，嚥下，口唇，舌，歯，口腔内感覚に関する提示・計測・モデル化 ・拡張食体験，味変化，風味操作，食欲・満足感の制御 ・遠隔共食，ソーシャルイーティング，コミュニケーション支援 ・食育，栄養指導，行動変容，健康増進のためのVR/XR ・高齢者支援，摂食嚥下支援，アクセシビリティ，福祉応用 ・食とウェルビーイング，感性評",
-    "journal": "日本バーチャルリアリティ学会論文誌",
-    "journals": [
-      "日本バーチャルリアリティ学会論文誌"
-    ],
-    "domains": [],
-    "topics": [
-      "VR",
-      "XR"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-02",
-    "deadline_status": "listed",
-    "url": "https://vrsj.org/transaction/special_issue",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "VRSJ",
     "status": "open"
   },
   {
@@ -23845,6 +23894,29 @@
     "image_alt": "eDNA to Ecosystem Decisions: Molecular Biodiversity Monitoring Integrated with Forecast Models",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "vrsj-special-1b97530d2a",
+    "title": "食とVR",
+    "summary": "テーマ 【食とVR】 締切 ◆申込締切：2026年11月2日（月） ◆論文締切：2026年11月16日（月） 概要 食は，人間の生存を支える基盤であると同時に，楽しみ，コミュニケーション，文化，記憶，健康などと深く結びついた極めて豊かな体験です．近年，VR技術の発展により，視覚・聴覚に加えて，嗅覚，味覚，触覚，温冷感，食感提示などを含む多感覚提示技術が進展し，食体験の拡張や再構成，さらには食行動の理解・支援に関する研究が活発になってきました．VRにおける食は，単に食物を仮想的に見せるだけではなく，味覚・嗅覚提示，咀嚼・嚥下・口腔感覚の計測と提示，食事コミュニケーション支援，遠隔共食，食育，ウェルビーイング，行動変容，エンタテインメント，アート表現，アクセシビリティ支援など，多面的な研究課題を含む新しい学際領域です．また，食に関する研究は，工学，認知科学，心理学，デザイン，芸術，医療・福祉，栄養学，サービス学など，多様な分野との接続を持ちます． 本特集号では，「食とVR」をテーマとし，食とVRに関する研究を，基礎から応用まで幅広く募集します．基礎論文，応用論文，コンテンツ論文に加え，本分野の研究動向や技術課題を体系的に整理した総説論文の投稿も歓迎します．会員の皆様の積極的なご投稿をお待ちしています． なお，言語は日本語，英語，いずれも投稿可能です． ゲストエディタ 小池　崇文（法政大学/RealImage Inc.） 松倉　悠（電気通信大学） 橋本　悠希（筑波大学） 新島　有信（NTT） 大野　雅貴（立命館大学） 対象論文・キーワード 食に関連するVR，基礎実験・応用システム・コンテンツのデザインなど幅広く論文を募集します．目安として次の項目を挙げますが，これらに限定するものではありません． ・味覚・嗅覚・食感・温冷感・触覚を含む食の多感覚提示 ・食体験におけるクロスモーダル／マルチモーダル相互作用 ・食品・食器・調理動作のVR表現とインタラクション ・咀嚼，嚥下，口唇，舌，歯，口腔内感覚に関する提示・計測・モデル化 ・拡張食体験，味変化，風味操作，食欲・満足感の制御 ・遠隔共食，ソーシャルイーティング，コミュニケーション支援 ・食育，栄養指導，行動変容，健康増進のためのVR/XR ・高齢者支援，摂食嚥下支援，アクセシビリティ，福祉応用 ・食とウェルビーイング，感性評",
+    "journal": "日本バーチャルリアリティ学会論文誌",
+    "journals": [
+      "日本バーチャルリアリティ学会論文誌"
+    ],
+    "domains": [],
+    "topics": [
+      "VR",
+      "XR"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-16",
+    "deadline_status": "listed",
+    "url": "https://vrsj.org/transaction/special_issue",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "VRSJ",
     "status": "open"
   },
   {
@@ -33042,6 +33114,32 @@
     "status": "open"
   },
   {
+    "id": "nature-humanities-social-sciences-communications-dd45cef544",
+    "title": "Discourse studies: theories and methodologies at the crossroads of language and society",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [
+      "language",
+      "methodologies"
+    ],
+    "collection_type": "collection",
+    "deadline": "2026-12-11",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/gxplbgvcbv/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-78e4a8c99b",
     "title": "Extraterrestrial drilling systems for subsurface exploration",
     "summary": "This Collection highlights the latest drilling systems, engineering solutions, and analytical approaches enabling subsurface exploration beyond Earth.",
@@ -40745,6 +40843,29 @@
     "status": "open"
   },
   {
+    "id": "nature-humanities-social-sciences-communications-79b96e5927",
+    "title": "Interdisciplinarity in theory and practice",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "collection",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/qtqsgncqqp/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "frontiers-0156c1ee8a",
     "title": "Interdisciplinary Approaches to Literacy Acquisition and Disorders: Neuroscience, Psychology, and Education",
     "summary": "Literacy acquisition and related disorders stand at the intersection of neuroscience, psychology, and education, forming a convergent field that investigates how brain systems support the development of literacy skills. Recent research has greatly advanced our understanding of the neural and cognitive substrates underlying reading, highlighting the complex interplay between speech perception, phonological processing, orthographic knowledge, and language comprehension. Yet, significant questions remain regarding how these processes coalesce to foster successful reading development and precisely how disruptions in these systems lead to disorders such as dyslexia. Notably, gaps persist in mapping the developmental trajectories of brain networks for reading, elucidating cross-linguistic differences, and translating mechanistic insights into practical frameworks for intervention and education.",
@@ -43678,6 +43799,31 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "nature-humanities-social-sciences-communications-c6d01a2fbb",
+    "title": "Expertise in integration and implementation for transformative research",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [
+      "integration"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-01-08",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ahbhdghcda/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -71842,6 +71988,30 @@
     "status": "open"
   },
   {
+    "id": "sage-qjep-cultural-relativity-8c6e744365",
+    "title": "The Cultural Relativity Hypothesis: Language, Thought, and Conceptual Diversity",
+    "summary": null,
+    "journal": "Quarterly Journal of Experimental Psychology",
+    "journals": [
+      "Quarterly Journal of Experimental Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "language"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-30",
+    "deadline_status": "listed",
+    "url": "https://journals.sagepub.com/pb-assets/cmscontent/QJP/Damjanovic_SI_2026-1786967343257.pdf",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "SAGE",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-d75f19e6f4",
     "title": "The Future of Democracy: Interdisciplinary Perspectives on Vulnerabilities, Risks and Strategies for Democratic Resilience",
     "summary": "This Research Topic is associated with an international conference, The Future of Democracy: Interdisciplinary Perspectives on Vulnerabilities, Risks and Strategies for Democratic Resilience, that we are organising in Iași, Romania, on June 25-26, 2026. We welcome contributions from presenters and attendees of this event, but also from the wider research community.",
@@ -76672,26 +76842,6 @@
     "status": "open"
   },
   {
-    "id": "jske-cfp-68a9093e05",
-    "title": "2026/01/05 Call for Papers ISASE2026 Call For Papers / Paper submission Deadline Extended until January 15, 2026",
-    "summary": null,
-    "journal": "International Journal of Affective Engineering",
-    "journals": [
-      "International Journal of Affective Engineering"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://jske.org/cfp/isase2025-call-for-papers-paper-submission-deadline-january-8-2025-2",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "JSKE",
-    "status": "open"
-  },
-  {
     "id": "frontiers-psychology-a0b2235b5e",
     "title": "A Reflection on Conceptions and Theories of Emotion across Three Disciplines: Psychology, Political Psychology and Political Science",
     "summary": "The study of emotion spans multiple disciplines, including psychology, political psychology, and political science, each offering unique insights into this complex aspect of human nature. However, the segmentation of research into distinct disciplinary silos often results in a narrow focus, limiting the potential for comprehensive understanding. This fragmentation is particularly evident in the study of emotion, where researchers frequently operate within isolated theoretical frameworks, rarely engaging with alternative perspectives. Recent studies have highlighted the need for interdisciplinary collaboration to bridge these gaps and foster a more holistic understanding of emotion. Despite the existence of various theories and approaches, such as the valence approach, appraisal theories, the theory of affective intelligence, and emotion regulation, there remains a lack of consensus on a unified theory of emotion. This ongoing debate underscores the necessity for a more integrated appro",
@@ -76937,7 +77087,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://fujipress.jp/jrm/rb-cfp",
     "image_url": null,
     "image_alt": null,
@@ -77772,31 +77922,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-22ad1b3770",
-    "title": "Anti-infective drug development: histories, uses and policies",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "development"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/cheaegdcai/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-bbdb41ae9b",
     "title": "Applications of Stable Isotopes in Zooarchaeology and Historical Ecology",
     "summary": "Stable isotope analyses of historical archives (e.g., tissues from specimens held in natural history collections and faunal remains recovered from archaeological and subfossil contexts) enable researchers to reconstruct the diets of animals in the past, from previous decades to several millennia. These analyses can provide important information on the historic relationships between humans and animals, but can also offer a temporal perspective on contemporary environmental and ecological issues. For example, researchers are able to compare animal diets under different environmental conditions or levels of anthropogenic disturbance, and hence assess the impacts on different species and predict future trends.",
@@ -78079,32 +78204,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-ce84d4ec38",
-    "title": "Artificial intelligence: Digital humanities, business, & society",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "AI",
-      "digital"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ieebagffgg/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -78756,7 +78855,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/rmh/call-for-papers-covid-19-rural-mental-health",
     "image_url": null,
     "image_alt": null,
@@ -78783,7 +78882,7 @@
     ],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://link.springer.com/collections/acahbidbih",
     "image_url": null,
     "image_alt": null,
@@ -78805,7 +78904,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/tep/empirical-brief-reports",
     "image_url": null,
     "image_alt": null,
@@ -78827,7 +78926,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/mac/special-forum-of-jarmac",
     "image_url": null,
     "image_alt": null,
@@ -79053,29 +79152,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-5e6f1eaed3",
-    "title": "Challenging medical knowledge translation – convergence and divergence of translation across epistemic and cultural boundaries",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/eddejjibjd/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-b21ee1c702",
     "title": "Chromatin Modifiers in Neurodevelopment and Neurological Disorders",
     "summary": "Neurological disorders are a significant global issue, affecting one in four people at some point in their lives . While their exact causes are largely unknown, recent studies suggest that both genetic and epigenetic factors play a role in their development. Epigenetics involves the interaction between genes and the environment, leading to heritable changes in gene expression. Recent research into neurodevelopmental disorders has pinpointed genes that control chromatin as significant risk factors. These genes regulate the expression of developmental genes in the brain, influencing the development of connections between different types of neurons and networks that drive the differentiation of neurons and their responses to activity.",
@@ -79106,31 +79182,6 @@
     "image_alt": "Chromatin Modifiers in Neurodevelopment and Neurological Disorders",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-c755c92c99",
-    "title": "Climate, energy and environmental policy: from formulation to implementation",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Policy"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/biddgjcfaf/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -79225,32 +79276,6 @@
     "image_alt": "Cognitive and Behavioral Consequences of Cerebellar Lesions and Diseases",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-d816946d9f",
-    "title": "Cognitive biases in decision making",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "cognitive",
-      "decision making"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/hfefhaccab/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -79365,7 +79390,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/tps/call-for-papers-commentaries-translational-impact",
     "image_url": null,
     "image_alt": null,
@@ -79586,7 +79611,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/ebs/consilience",
     "image_url": null,
     "image_alt": null,
@@ -79610,7 +79635,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/neu/contemporary-reviews",
     "image_url": null,
     "image_alt": null,
@@ -79667,7 +79692,7 @@
     ],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://link.springer.com/collections/igieggihej",
     "image_url": null,
     "image_alt": null,
@@ -79707,81 +79732,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-5946541f77",
-    "title": "Critical and cultural perspectives on dementia",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "dementia"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/baggebajbg/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-384b87669f",
-    "title": "Critical modernity studies: interdisciplinary approaches to social pathologies",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "social"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/afagggcjic/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-73fd920184",
-    "title": "Cultural evolution",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "evolution"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/feibciaebg/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "apa-cfp-f3b143ff48",
     "title": "Current rural mental health challenges",
     "summary": null,
@@ -79798,38 +79748,12 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/rmh/call-for-papers-rural-mental-health",
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "APA",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-5b9da1bc2e",
-    "title": "Cybercrime: human and socio-economic perspectives",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "Cybercrime"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/jgaddeidef/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -80108,7 +80032,7 @@
     ],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://link.springer.com/collections/dfahiijeej",
     "image_url": null,
     "image_alt": null,
@@ -80149,90 +80073,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-2908a83424",
-    "title": "Digital design and cognitive decision-making in the context of technological innovation: focus on social equality",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "cognitive",
-      "social",
-      "digital",
-      "focus",
-      "decision-making",
-      "innovation",
-      "Equality"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ebdhibjehc/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-511c6a6066",
-    "title": "Digital diasporas: cross-language and cross-cultural perspectives",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "digital",
-      "language",
-      "cross-cultural"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/bgjebgcjgj/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-7ed8217461",
-    "title": "Digitalisation in the post-pandemic era: sustainability, inequality and politics",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "sustainability",
-      "Inequality"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/efgehbbdjd/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-63e162287c",
     "title": "Digitalizing Health Information Systems in the WHO European Region and Advancing Interoperability with WHO Classifications (ICD-11, ICF, ICHI)",
     "summary": "The digital transformation of Health Information Systems (HIS) is pivotal in achieving resilient, equitable, and data-driven health systems across the globe, especially in the WHO European Region. Countries are making significant investments in digital health infrastructure to enhance the quality, accessibility, and timeliness of health data. A cornerstone of this transformation is improving interoperability—both technical and semantic—to ensure that health data can be exchanged, interpreted, and utilized effectively across various systems, sectors, and borders. Despite growing advancements, significant challenges persist in achieving seamless interoperability, particularly semantic interoperability, which is critical for enabling different health systems to \"speak the same language.”",
@@ -80263,32 +80103,6 @@
     "image_alt": "Digitalizing Health Information Systems in the WHO European Region and Advancing Interoperability with WHO Classifications (ICD-11, ICF, ICHI)",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-dd45cef544",
-    "title": "Discourse studies: theories and methodologies at the crossroads of language and society",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "language",
-      "methodologies"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/gxplbgvcbv/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -81158,31 +80972,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-de556751ad",
-    "title": "European perspectives on migration: media narratives and societal discourses after 2015",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "migration"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/cjecbhffic/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-1efa40d32f",
     "title": "Evidence of Off-Label Drug Use to Reduce Dementia",
     "summary": "Emerging evidence from basic, clinical, and epidemiological studies suggests that drug mechanisms of currently approved drugs can impact the risk and progression of Alzheimer’s disease and related dementias (ADRD). Repurposing existing drugs is a pathway for treatment that has worked for several other conditions (e.g., cancer, irritable bowel syndrome, erectile dysfunction) and this pathway to treatment can often be faster and more cost-effective than developing a new drug and going through the process to market approval. As ADRD grows as a public health problem placing a huge personal and financial cost on individuals, families, and the healthcare system, harnessing effective treatment quickly is key to reducing burden. Given the expense, safety risks, and substantial patient burden to receive treatment associated with lecanemab, the only current treatment available for AD, developing safe strategies for easier treatment is necessary.",
@@ -81275,31 +81064,6 @@
     "image_alt": "Excellence in Headache and Neurogenic Pain: Africa",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-c6d01a2fbb",
-    "title": "Expertise in integration and implementation for transformative research",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "integration"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ahbhdghcda/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -82114,7 +81878,7 @@
     ],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://link.springer.com/collections/jahfggiihc",
     "image_url": null,
     "image_alt": null,
@@ -82218,29 +81982,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-14c0f8e9ab",
-    "title": "Going green? Environmental politics and activism",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ccbbefcfgc/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-c0bb422894",
     "title": "Gut Microbiota's Role in High-Altitude Animal Adaptation, Volume II",
     "summary": "Due to the success of the original Research Topic, we have decided to launch a Volume II of Gut Microbiota's Role in High-Altitude Animal Adaptation .",
@@ -82287,7 +82028,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/rmh/hate-crimes-domestic-terrorism-rural-areas",
     "image_url": null,
     "image_alt": null,
@@ -82451,63 +82192,12 @@
     ],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://link.springer.com/collections/ghdgheiedd",
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Springer Nature",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-b91b6e35ba",
-    "title": "Human-technology interactions",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "Technology"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ebfhcjciae/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-b9a65aaba4",
-    "title": "Humanising epidemiology: non-medical investigations into epi/pandemic phenomena",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "epidemiology"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/fhcefefaab/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -82541,26 +82231,6 @@
     "image_alt": "Hyperscanning as a Tool to Study and Support Individuals in Meaningful Environments",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "jske-cfp-64d790b843",
-    "title": "IJAE: Special Issue of Affective Science and Engineering: Call for Extended Papers of ISASE 2025",
-    "summary": null,
-    "journal": "International Journal of Affective Engineering",
-    "journals": [
-      "International Journal of Affective Engineering"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://jske.org/cfp/ijae-special-issue-of-affective-science-and-engineering-call-for-extended-papers-of-isase-2024-2",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "JSKE",
     "status": "open"
   },
   {
@@ -82655,32 +82325,6 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-38df04e24f",
-    "title": "Inclusive and equitable education and lifelong learning",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Learning",
-      "education"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/gaffjbdida/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -83477,29 +83121,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-79b96e5927",
-    "title": "Interrogating interdisciplinarity",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/qtqsgncqqp/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-284d997b50",
     "title": "Intersectoral action against AMR: bridging global implementation gaps by advancing integrated solutions and strengthening innovation and equity",
     "summary": "Antimicrobial resistance (AMR) is an evolving and pervasive challenge threatening health, agriculture, and environmental sustainability worldwide. Despite decades of scientific advances, recent studies repeatedly underscore the silent yet accelerating nature of the AMR crisis, with projections warning of significant public health and economic losses if decisive action is not taken. Although the World Health Organization’s Global Action Plan and various National Action Plans now frame global and local responses, substantial gaps persist—particularly in coordinating intersectoral activity and translating surveillance data into actionable, multisectoral policies. Current efforts often focus on tracking the scale of the problem, while critical interventions to address identified risks, particularly from animal and environmental sources, remain insufficient or unevenly implemented.",
@@ -83704,7 +83325,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/bul/illuminate-psychological-phenomena",
     "image_url": null,
     "image_alt": null,
@@ -83775,29 +83396,6 @@
     "image_alt": "Machine Learning and Artificial Intelligence in Ecological Synthesis and Discovery",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-1ca80aa71b",
-    "title": "Making and using evidence",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ajechiaggg/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -83894,29 +83492,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-9ad67c0324",
-    "title": "Mediated populism",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/zqlpvvypnn/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "apa-cfp-94ee30e1c3",
     "title": "Medical humanities–Sharing our stories",
     "summary": null,
@@ -83928,34 +83503,12 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/fsh/medical-humanities-sharing-stories",
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "APA",
-    "status": "open"
-  },
-  {
-    "id": "nature-human-behaviour-3f53a8aa65",
-    "title": "Menstruation Matters",
-    "summary": null,
-    "journal": "Nature Human Behaviour",
-    "journals": [
-      "Nature Human Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/dfecidfcac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/NHB-Hero-NOV24-794d972d03b5dce5aef878ba8198d805.jpg",
-    "image_alt": "Menstruation Matters",
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -83989,32 +83542,6 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-dee89096d2",
-    "title": "Mental health promotion through philosophical practice",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "Health promotion"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/acfdigecdf/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -84174,32 +83701,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-86af3d0dc0",
-    "title": "Migration, poverty and inequality",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "migration",
-      "Inequality"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/igaahgagch/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-psychology-13d3efcaf7",
     "title": "Mindfulness in trauma recovery: Applications, insights, and future directions",
     "summary": "Mindfulness has become a focal point in fields such as psychology, neuroscience, and public health, particularly for its application in facilitating recovery from trauma and adverse experiences. Understanding the therapeutic potential of mindfulness is critical within rising trauma-related mental health and illness. Recent research demonstrates that mindfulness can serve as a powerful tool in regulating emotions, enhancing mental health, and fostering coping mechanisms for trauma survivors. However, amidst these promising findings, there's a need for a deeper investigation into the existing gaps in the theoretical underpinnings of mindfulness and its utility for different populations and types of traumas. This Research Topic aims to explore the manifold ways in which mindfulness-based can be harnessed for trauma recovery. Specifically, it seeks to delve into the integration of mindfulness practices within healing processes and evaluate various theoretical approaches that support its ap",
@@ -84228,33 +83729,6 @@
     "image_alt": "Mindfulness in trauma recovery: Applications, insights, and future directions",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-f6baeb62c2",
-    "title": "Mixed research methods in the training of social sciences teachers",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Methods",
-      "social",
-      "Training"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/fcchhiibhc/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -84839,29 +84313,6 @@
     "image_alt": "Navigating the Night: Contemporary Insights into Bat Behavioral and Physiological Ecology",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-f91098cfbe",
-    "title": "Neoliberalism and global poverty alleviation",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ddbfeihfhf/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -86433,29 +85884,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-43f8ff0887",
-    "title": "Play and playfulness",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/aacddiaaeb/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-psychology-ace330ab62",
     "title": "Political Polarization and Culture",
     "summary": "In recent years, the phenomenon of political polarization has become more noticeable across the world. Whether it be issues relating to the pandemic or pandemic response, the integrity of democratic processes, complex immigration matters, economic policy, or culture wars, most countries cannot confidently say they have become more unified and less polarized in the past 10 years or so. Yet, while there seems to be commonalities in how political polarization expresses itself globally, there are also distinctives of how it takes place on different continents and countries influenced by cultural currents and ethnic climates. Therefore, understanding the interaction between political polarization and culture is crucial for effective counter-polarization strategies tailored to specific national contexts.",
@@ -86485,31 +85913,6 @@
     "image_alt": "Political Polarization and Culture",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-7df941a96d",
-    "title": "Popular attitudes toward vaccination in the “post”-COVID-19 period",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "COVID-19"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/achajbdjdg/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -86637,31 +86040,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-c8a4449c9c",
-    "title": "Practice-based research of interdisciplinary higher education",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "education"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/abebicibdh/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -86924,26 +86302,6 @@
     "image_alt": "Problematic Pornography Use (PPU) - Diagnostic challenges and clinical approaches",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "josa-a-features-94a4c0c473",
-    "title": "Propose a Feature Issue",
-    "summary": null,
-    "journal": "Journal of the Optical Society of America A",
-    "journals": [
-      "Journal of the Optical Society of America A"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://opg.optica.org/resources/feature/FeatureProposal.pdf",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-28",
-    "publisher": "Optica",
     "status": "open"
   },
   {
@@ -87210,57 +86568,11 @@
     "topics": [],
     "collection_type": "collection",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://nature.com/collections/edjfhbfahf",
     "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/AdobeStock_195041375_test-884081f67be18c34a16cbd7497387567.jpg",
     "image_alt": "Registered Reports",
     "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-07e73dc347",
-    "title": "Religion and poverty",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/dxkjhtslmk/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-a5b0bf8311",
-    "title": "Religious belief and politics",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/eejjifdffb/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
     "publisher": "Nature Portfolio",
     "status": "open"
   },
@@ -87293,32 +86605,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-060ef5c29a",
-    "title": "Rethinking human-technology relations",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Human",
-      "Technology"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/fabejegiac/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -87730,32 +87016,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-5e065d654e",
-    "title": "STEM education",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "education",
-      "STEM Education"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/gabichegcb/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-72f7c7c7a2",
     "title": "Satellite-Based Assessment of Groundwater Dynamics and Their Biogeographical and Ecohydrological Implications under Global Environmental Change",
     "summary": "Groundwater is a critical component of terrestrial ecosystems, sustaining vegetation productivity, biodiversity, and hydrological resilience amid increasing climatic and anthropogenic pressures. Recent advances in satellite gravimetry (e.g., GRACE and GRACE-FO missions) have revolutionized large-scale groundwater monitoring, revealing substantial depletion in key aquifers worldwide. However, linking subsurface hydrological variations to ecological and evolutionary processes remains a major challenge. Understanding how groundwater storage dynamics influence ecosystem structure, function, and recovery potential is essential for sustainable water–ecosystem management and biodiversity conservation in the Anthropocene.",
@@ -87816,54 +87076,6 @@
     "image_alt": "Scalable Methods and Emerging Technologies to Advance Clinical Implementation of Vocal Biomarkers",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-aba0a34e85",
-    "title": "Scientific advice to governments",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/sssmbvxmws/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-d19d54a321",
-    "title": "Scientific evidence to tackle and eliminate bullying: educational contexts free of violence",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "violence"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/chgggidcgb/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -88155,31 +87367,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-eae0335e22",
-    "title": "Sexuality, gender and society",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "gender"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/ajeciceeeb/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-d00fb94ed8",
     "title": "Shaping Mental Health Care: Policies, Cultural Values, and Community-Based Transformations",
     "summary": "Transformations in global mental health care highlight a critical shift from institutional to community-based, inclusive, and rights-focused approaches. While institutional settings have historically provided essential support, they often perpetuate social exclusion and stigma. An emerging priority within public health is to develop mental health systems that better uphold human rights, cultural relevance, and community participation, especially for marginalized populations. The COVID-19 pandemic and periods of social unrest have further emphasized the urgency of building resilient and equitable frameworks for mental health care.",
@@ -88447,32 +87634,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-3d55d0cc13",
-    "title": "Social studies of academia: power and knowledge in higher education",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "social",
-      "education"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/hbgaejjecf/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-4055123d90",
     "title": "Speech decoding: from neural signals to practical communication",
     "summary": "This Research Topic is a special awarded collection. To be eligible for a potential award supporting your submission, please ensure you submit your abstract here at least two weeks before submitting your manuscript.",
@@ -88691,29 +87852,6 @@
     "image_alt": "Stroke Among Cancer Patients: Exploring Shared Pathways and Prognoses",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-0398489031",
-    "title": "Studies in horror and the Gothic",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/nsfrsncwwy/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -89512,7 +88650,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/hop/call-for-papers-spotlight-section",
     "image_url": null,
     "image_alt": null,
@@ -89611,32 +88749,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-84019e57a3",
-    "title": "The future of work: drivers, opportunities and challenges",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "challenges",
-      "future of work"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/agghgiceaf/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-6f7f101590",
     "title": "The human neuroscience of music therapy in neurological and psychiatric disorders, Volume II",
     "summary": "Music therapy has long been recognized for its therapeutic benefits across a variety of medical conditions, including mental health disorders, developmental disabilities, and physical rehabilitation. In recent years, there has been a growing interest in understanding how music therapy can specifically benefit individuals suffering from neurodegenerative diseases such as Alzheimer's disease, Parkinson's disease, and Amyotrophic Lateral Sclerosis (ALS). Music therapy might engage and activate neural pathways that remain functional in patients, offering cognitive, emotional, and social advantages when other forms of interaction might fail. However, while the anecdotal and preliminary evidence is promising, comprehensive neuroscientific research that elucidates the mechanisms behind these benefits remains sparse.",
@@ -89731,53 +88843,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-0e72353f47",
-    "title": "The past, present and future of European science diplomacy",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/cdefjhheae/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-humanities-social-sciences-communications-7f34a41b86",
-    "title": "The politics of ‘autonomous vehicles’",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology",
-      "robotics"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/afcicffdib/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -89895,31 +88960,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-dc7a67f14d",
-    "title": "Toponymy and toponomastics at the intersection between language and historical geography",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "language"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/icbeaecjib/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-e84fb42124",
     "title": "Towards a Novel Paradigm in Brain-Inspired Computer Vision Volume II",
     "summary": "This Research Topic is the second volume of Research Topic \"Towards a Novel Paradigm in Brain-Inspired Computer Vision\". Please see the first volume here",
@@ -90031,7 +89071,7 @@
     ],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://apa.org/pubs/journals/tps/call-for-papers-translating-psychology-general-topics",
     "image_url": null,
     "image_alt": null,
@@ -90611,31 +89651,6 @@
     "status": "open"
   },
   {
-    "id": "nature-humanities-social-sciences-communications-021b130d27",
-    "title": "What to believe? Perspectives on fake news and misinformation",
-    "summary": null,
-    "journal": "Humanities and Social Sciences Communications",
-    "journals": [
-      "Humanities and Social Sciences Communications"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Misinformation"
-    ],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://nature.com/collections/fjbbifccec/how-to-submit",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-938524fb7c",
     "title": "Wildlife Conservation",
     "summary": "Wildlife and the global efforts to protect and support it are increasingly challenged by climate change, human activities like resource extraction and the trade of wild animals and their products. Recognizing wild animals as individuals with intrinsic value, rather than merely parts of a collective entity, is now more urgent than ever. Conservation ethics compel us to acknowledge each animal's intrinsic worth and their crucial roles within ecosystems.",
@@ -91021,26 +90036,6 @@
     "status": "open"
   },
   {
-    "id": "jske-cfp-57a77a4d66",
-    "title": "of ICBAKE2025: Call for Extended Papers of ICBAKE2025",
-    "summary": null,
-    "journal": "International Journal of Affective Engineering",
-    "journals": [
-      "International Journal of Affective Engineering"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://jske.org/cfp/special-issue-of-icbake2025-call-for-extended-papers-of-icbake2025",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "JSKE",
-    "status": "open"
-  },
-  {
     "id": "vrsj-special-a6fb326cf4",
     "title": "クロスモーダル／マルチモーダル4",
     "summary": "テーマ 【クロスモーダル／マルチモーダル4】 締切 ◆申込締切：2027年5月上旬 ◆論文締切：2027年5月中旬",
@@ -91052,27 +90047,7 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://vrsj.org/transaction/special_issue",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "VRSJ",
-    "status": "open"
-  },
-  {
-    "id": "vrsj-special-d69057ae97",
-    "title": "クロスモーダル／マルチモーダル４",
-    "summary": "今後の特集予定 3 【クロスモーダル／マルチモーダル４】 申込締切 2027年5月上旬 論文締切 2027年5月中旬",
-    "journal": "日本バーチャルリアリティ学会論文誌",
-    "journals": [
-      "日本バーチャルリアリティ学会論文誌"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://vrsj.org/transaction/special_issue",
     "image_url": null,
     "image_alt": null,
@@ -91092,52 +90067,12 @@
     "topics": [],
     "collection_type": "special_issue",
     "deadline": null,
-    "deadline_status": "not_checked",
+    "deadline_status": "not_listed",
     "url": "https://vrsj.org/transaction/special_issue",
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "VRSJ",
-    "status": "open"
-  },
-  {
-    "id": "jske-cfp-f57ac76541",
-    "title": "一覧を見る",
-    "summary": null,
-    "journal": "International Journal of Affective Engineering",
-    "journals": [
-      "International Journal of Affective Engineering"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://jske.org/cfp",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "JSKE",
-    "status": "open"
-  },
-  {
-    "id": "ipsj-cfp-c4b8186909",
-    "title": "特集論文募集（一覧）",
-    "summary": null,
-    "journal": "情報処理学会論文誌",
-    "journals": [
-      "情報処理学会論文誌"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": null,
-    "deadline_status": "not_checked",
-    "url": "https://ipsj.or.jp/journal/cfp/cfp_list.html",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "IPSJ",
     "status": "open"
   }
 ]

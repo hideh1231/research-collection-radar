@@ -675,6 +675,28 @@ sources:
       - sagepub.com
     disabled_reason: "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
     gha_fetch: true
+  - key: sage-qjep-cultural-relativity
+    enabled: true
+    collector: call_document
+    publisher: SAGE
+    journal: Quarterly Journal of Experimental Psychology
+    collection_type: special_issue
+    title: "The Cultural Relativity Hypothesis: Language, Thought, and Conceptual Diversity"
+    url: https://journals.sagepub.com/pb-assets/cmscontent/QJP/Damjanovic_SI_2026-1786967343257.pdf
+    document_format: pdf
+    deadline_pattern: 'manuscript should be submitted by (?P<date>\d{1,2}(?:st|nd|rd|th)?\s+[A-Za-z]+\s+\d{4})'
+    allowed_hosts: [journals.sagepub.com]
+  - key: sage-adaptive-behavior-neurophenomenology
+    enabled: true
+    collector: call_document
+    publisher: SAGE
+    journal: Adaptive Behavior
+    collection_type: special_issue
+    title: "The Future of Neurophenomenology: Empirical and Methodological Advances in the Study of Lived Experience"
+    url: https://journals.sagepub.com/pb-assets/cmscontent/adb/SI%20New-1781664003197.docx
+    document_format: docx
+    deadline_pattern: 'Submission deadline\s+(?P<date>\d{1,2}\s+[A-Za-z]+\s+\d{4})'
+    allowed_hosts: [journals.sagepub.com]
   - key: pnas-cfp
     enabled: false
     collector: html_listing
@@ -1134,6 +1156,7 @@ sources:
     page_size: 100
     max_pages: 10
     include_journals:
+    - Cognition and Instruction
     - Advanced Robotics
     - Aging, Neuropsychology, and Cognition
     - Behaviour & Information Technology

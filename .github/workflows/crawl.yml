@@ -13,6 +13,10 @@ on:
         description: "Space-separated source keys for validation; blank checks all enabled sources"
         type: string
         default: ""
+      check_deadlines_only:
+        description: "Check pending collection detail pages only"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -42,13 +46,13 @@ jobs:
       - name: Install
         run: python -m pip install -e .
       - name: Crawl
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.check_deadlines_only }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
         run: python -m radar
       - name: Validate crawl without delivery
-        if: ${{ inputs.dry_run }}
+        if: ${{ inputs.dry_run && !inputs.check_deadlines_only }}
         env:
           RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
         run: |
@@ -57,6 +61,17 @@ jobs:
           for source in "${sources[@]}"; do
             args+=(--only "$source")
           done
+          python -m radar "${args[@]}"
+      - name: Verify collection deadlines
+        if: ${{ !inputs.dry_run || inputs.check_deadlines_only }}
+        env:
+          RADAR_DRY_RUN: ${{ inputs.dry_run }}
+          RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
+        run: |
+          args=(--check-deadlines)
+          if [[ "$RADAR_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          read -r -a sources <<< "$RADAR_SOURCE_KEYS"
+          for source in "${sources[@]}"; do args+=(--only "$source"); done
           python -m radar "${args[@]}"
       - name: Save validation report
         if: ${{ always() && inputs.dry_run }}

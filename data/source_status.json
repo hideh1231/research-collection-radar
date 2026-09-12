@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T08:34:01Z",
+  "checked_at": "2026-09-12T09:26:42Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -400,8 +400,7 @@
       "parsed": 48,
       "pages": 1,
       "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 11
+      "ingest": ".checks\\apa-current.html"
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -436,7 +435,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 5,
+      "parsed": 4,
       "pages": 1,
       "error": null
     },
@@ -479,6 +478,22 @@
       "enabled": false,
       "skipped": "disabled",
       "reason": "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
+    },
+    "sage-qjep-cultural-relativity": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "sage-adaptive-behavior-neurophenomenology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
     },
     "pnas-cfp": {
       "enabled": false,
@@ -810,5 +825,17 @@
       "remaining": 405,
       "metadata_updated": 240
     }
+  },
+  "collection_deadline_checks": {
+    "checked_at": "2026-09-12T09:26:10.411493+00:00",
+    "attempted": 2,
+    "checked": 2,
+    "updated": 2,
+    "listed": 2,
+    "not_listed": 0,
+    "closed": 2,
+    "unknown": 0,
+    "errors": {},
+    "remaining": 0
   }
 }

@@ -47,7 +47,9 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
                         collection_type=source.get("collection_type") or "collection",
                         discovered_via=source["key"],
                         source_section=section,
-                        status="open",
+                        # The catalogue also contains closed and editorial collections.
+                        # Only the detail-page check can establish submission status.
+                        status="unknown",
                         submission_mode="open_call",
                     )
             sibling = sibling.find_next_sibling()

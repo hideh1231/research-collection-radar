@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup, Tag
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import listing_status, parse_date
+from radar.normalize import listing_status, parse_date, utc_now
 
 DEADLINE_RE = re.compile(
     r"(?:manuscript |paper |submission |論文)?(?:deadline|締切|必着)"
@@ -22,7 +22,7 @@ ISO_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 CLOSED_RE = re.compile(r"\bclosed\b|受付終了|募集は終了|論文募集は終了", re.I)
 SKIP_TITLE_RE = re.compile(
     r"regular papers?|開発報告|always welcome|call for papers$|filter call|"
-    r"login|sign in|cookie|privacy",
+    r"login|sign in|cookie|privacy|propose a feature issue",
     re.I,
 )
 
@@ -371,6 +371,8 @@ def parse_fujipress(html: str, source: dict) -> list[RawRecord]:
             summary=blob[:1000],
         )
         if record:
+            if record.deadline is None and re.search(r"Submission Deadline:\s*Always welcome|常時受付中", blob, re.I):
+                record.extra.update(deadline_status="not_listed", deadline_checked_at=utc_now())
             found[record.title.lower()] = record
     return list(found.values())
 
@@ -383,12 +385,16 @@ def parse_vrsj(html: str, source: dict) -> list[RawRecord]:
         match = re.search(r"【([^】]+)】", heading_text)
         if not match:
             continue
-        title = match.group(1)
+        title = match.group(1).translate(str.maketrans("０１２３４５６７８９", "0123456789"))
         parent = heading.find_parent(["table", "section", "div", "article"]) or heading.parent
         blob = parent.get_text(" ", strip=True) if parent else heading_text
-        deadline = _deadline(blob)
+        # Registration and publication dates are not manuscript deadlines.
+        paper = re.search(r"論文締切\s*[:：]?\s*([^\s◆]+)", blob)
+        deadline = _deadline(paper.group(1)) if paper else None
         record = _make(source, title=title, url=source["url"] + "#" + title, deadline=deadline, summary=blob[:1000])
         if record:
+            if paper and deadline is None:
+                record.extra.update(deadline_status="not_listed", deadline_checked_at=utc_now())
             found[title] = record
     return list(found.values())
 

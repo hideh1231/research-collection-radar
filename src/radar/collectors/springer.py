@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
-from radar.normalize import normalize_status, parse_date
+from radar.normalize import normalize_status, parse_date, utc_now
 
 
 def _definition(article, label: str) -> str | None:
@@ -54,6 +54,8 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
             deadline=parse_date(deadline_text),
             summary=summary or None,
             submission_mode="open_call",
+            extra=({"deadline_status": "not_listed", "deadline_checked_at": utc_now()}
+                   if (deadline_text or "").casefold() == "ongoing" else {}),
         )
     return list(found.values())
 

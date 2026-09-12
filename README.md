@@ -8,6 +8,8 @@ The GitHub Pages viewer in [`site/`](site/) lists open calls whose confirmed dea
 
 Closed calls stay in [`data/collections.jsonl`](data/collections.jsonl).
 
+Deadline checks distinguish a verified date, a checked page without an exact date, and an unchecked page. Nature, Springer, and JSKE details can be checked with `python -m radar --check-deadlines`; the daily workflow runs this after crawling. Failed checks remain pending. See the [publisher coverage audit](docs/deadline-coverage-2026-09-12.md) for APA, ScienceDirect, SAGE, and remaining access limits.
+
 ## Scope
 
 The index tracks public calls for special issues, research collections, theme issues, research topics, and related journal opportunities. It focuses on psychology, HCI, neuroscience, robotics, and HRI. A record can have more than one field.
@@ -31,6 +33,8 @@ The index covers psychology, HCI, neuroscience, robotics, and HRI. Enabled sourc
 - Domestic listings: Journal of Robotics and Mechatronics, VRSJ special issues, IPSJ CFP list, JSKE
 
 Additional configured sources include relevant npj journals, Nature Human Behaviour, Nature Mental Health, Humanities and Social Sciences Communications, six JMIR journals, five Cambridge journals, and the official Taylor & Francis `special_issues` REST API. The API paginates through the publisher's calls and applies journal/title filters. New sources reuse existing publisher identities so calls shared by several journals remain one record. See [`docs/source-inventory.md`](docs/source-inventory.md) for coverage and verification limits.
+
+Two SAGE calls (Quarterly Journal of Experimental Psychology and Adaptive Behavior) are checked daily through their official PDF/DOCX announcements. This checks known calls; discovery of new SAGE announcement URLs still depends on the restricted publisher listings.
 
 ScienceDirect と APA は日次 crawl では disabled のまま。Royal Society の `royalsociety.org` テーマページは日次 crawl が取る。週次の [`listing-ingest.yml`](.github/workflows/listing-ingest.yml) が ubuntu-latest 上の headed Chrome で APA、ScienceDirect、APS、Science Robotics、SAGE、PNAS、PNAS Nexus、JOSA A、監視 Wiley 誌の一覧 1 ページを開き、レンダリング済み HTML を ingest する。T&F は日次の公式 API で取得する。Author Services の HTML 取込は手動指定用に残している。stealth や CAPTCHA 突破はしない。壁なら status だけ残す。スナップショット URL を `workflow_dispatch` に渡す経路も残っている。
 

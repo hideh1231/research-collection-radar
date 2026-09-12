@@ -12,6 +12,7 @@ dependencies = [
   "jsonschema>=4.23",
   "lxml>=5.3",
   "python-dateutil>=2.9",
+  "pypdf>=6.0,<7",
   "pyyaml>=6.0",
 ]
 
