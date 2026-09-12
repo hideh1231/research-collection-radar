@@ -480,20 +480,24 @@
       "reason": "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
     },
     "sage-qjep-cultural-relativity": {
-      "enabled": true,
+      "enabled": false,
       "ok": true,
       "http_status": 200,
       "parsed": 1,
       "pages": 1,
-      "error": null
+      "error": null,
+      "github_actions_http_status": 403,
+      "github_actions_run": "https://github.com/hideh1231/research-collection-radar/actions/runs/34686033625"
     },
     "sage-adaptive-behavior-neurophenomenology": {
-      "enabled": true,
+      "enabled": false,
       "ok": true,
       "http_status": 200,
       "parsed": 1,
       "pages": 1,
-      "error": null
+      "error": null,
+      "github_actions_http_status": 403,
+      "github_actions_run": "https://github.com/hideh1231/research-collection-radar/actions/runs/34686033625"
     },
     "pnas-cfp": {
       "enabled": false,
@@ -836,6 +840,9 @@
     "closed": 2,
     "unknown": 0,
     "errors": {},
-    "remaining": 0
+    "remaining": 0,
+    "source_keys": [
+      "jske-cfp"
+    ]
   }
 }

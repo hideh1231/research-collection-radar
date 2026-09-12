@@ -84,7 +84,9 @@ Cognition and InstructionはElsevierではなくTaylor & Francisです。
 
 設定対象6誌の個別ページを確認しました。従来の保存データは0件でした。
 総合一覧と通常のHTTP取得はアクセス制限が残っています。
-今回見つかった募集中の2件は、公式PDF/DOCXを定期取得する処理を追加しました。
+今回見つかった募集中の2件は、公式PDF/DOCXを読み直す処理を追加しました。
+手元の取得は成功しましたが、GitHub Actionsでは両資料とも403でした。
+日次Crawlでは無効化し、確認済みデータを保持します。手元で`--include-disabled --only <source-key>`を指定すると再確認できます。
 
 | 対象誌 | 確認した公式ページ・資料 | 結果 |
 | --- | --- | --- |
@@ -96,7 +98,7 @@ Cognition and InstructionはElsevierではなくTaylor & Francisです。
 | Personality and Social Psychology Bulletin | [誌面](https://journals.sagepub.com/home/psp) | 今回確認したページに特集公募なし。既刊のresearch collectionは公募ではない |
 
 新規公募をSAGE全6誌から自動発見する仕組みの網羅性は未検証です。
-追加した2件の資料の締切は毎日読み直しますが、新しい資料URLを自動発見する機能ではありません。
+追加した2件の締切の自動再確認もGitHub Actionsではできません。資料を読める手元の環境で再確認する必要があります。
 
 ## 締切チェックの変更と影響
 
@@ -119,6 +121,7 @@ Cognition and InstructionはElsevierではなくTaylor & Francisです。
 ### confirmed risks
 
 - Natureの1ページは404。Royal Societyの3件は詳細ページが403であり、締切は未確認のままです。
+- SAGEのPDF/DOCXはGitHub Actionsから403。[実行34686033625](https://github.com/hideh1231/research-collection-radar/actions/runs/34686033625)で再現したため、既知の失敗元として日次取得から除外しました。
 - 公開ページが変わると取得・抽出が失敗する可能性があります。エラーをsource_status.jsonに残し、未確認を確認済みに変えません。
 - 受付状態が確認できないページはunknownです。受付終了と確認できたclosedとは区別します。
 - 一部の掲載中募集には日単位の締切がありません。VRSJの「中旬」などから日を推定しません。
@@ -131,7 +134,7 @@ Cognition and InstructionはElsevierではなくTaylor & Francisです。
 ### 実行と結果
 
 - `python -m pytest`、`node --test tests/js/test_viewer.mjs`：回帰テスト成功。GitHub上でも同じ検証を実行します。
-- `python -m radar --dry-run --only sage-qjep-cultural-relativity --only sage-adaptive-behavior-neurophenomenology --only vrsj-special --only fujipress-jrm --only jske-cfp`：5取得元が成功。
+- `python -m radar --dry-run --only sage-qjep-cultural-relativity --only sage-adaptive-behavior-neurophenomenology --only vrsj-special --only fujipress-jrm --only jske-cfp`：手元で5取得元が成功。GitHub Actionsでは国内3取得元が成功し、SAGEの2取得元が403。設定変更後のSAGE再取得には`--include-disabled`も指定します。
 - `python -m radar --check-deadlines --dry-run`：実ページの照合結果を保存。個別の404/403は上記のとおり残存。
 - `python -m radar --dry-run --ingest-html apa-cfp=<公式一覧の保存HTML>`：APA48件を解析し、締切なしの記載を反映。
 - `python -m radar --build-site`：生成物を検証。掲載中に締切経過済みのレコードがないことを確認。

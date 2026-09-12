@@ -676,7 +676,9 @@ sources:
     disabled_reason: "SAGE hub is behind Cloudflare. listing-ingest tries headed Chrome. Keep watched journals only."
     gha_fetch: true
   - key: sage-qjep-cultural-relativity
-    enabled: true
+    enabled: false
+    gha_fetch: true
+    disabled_reason: "Official document is accessible locally but returns HTTP 403 from GitHub Actions. Refresh locally with --include-disabled and --only; keep confirmed data until then."
     collector: call_document
     publisher: SAGE
     journal: Quarterly Journal of Experimental Psychology
@@ -687,7 +689,9 @@ sources:
     deadline_pattern: 'manuscript should be submitted by (?P<date>\d{1,2}(?:st|nd|rd|th)?\s+[A-Za-z]+\s+\d{4})'
     allowed_hosts: [journals.sagepub.com]
   - key: sage-adaptive-behavior-neurophenomenology
-    enabled: true
+    enabled: false
+    gha_fetch: true
+    disabled_reason: "Official document is accessible locally but returns HTTP 403 from GitHub Actions. Refresh locally with --include-disabled and --only; keep confirmed data until then."
     collector: call_document
     publisher: SAGE
     journal: Adaptive Behavior
