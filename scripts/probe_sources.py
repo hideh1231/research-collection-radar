@@ -43,6 +43,8 @@ def main(argv: list[str] | None = None) -> int:
             source = {"max_pages": cfg.get("max_pages", 40), **source}
             if args.max_pages is not None:
                 source["max_pages"] = args.max_pages
+                if source.get("collector") == "jmir":
+                    source["api_max_pages"] = args.max_pages
             started = monotonic()
             try:
                 result = run_source(fetcher, source)

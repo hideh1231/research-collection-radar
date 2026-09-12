@@ -56,3 +56,47 @@ def test_unknown_probe_source_fails_before_requests(probe, monkeypatch):
     with pytest.raises(SystemExit) as exc:
         probe.main(["--only", "typo"])
     assert exc.value.code == 2
+
+
+@pytest.mark.parametrize(("args", "expected_pages", "exit_code"), [
+    ([], 2, 0),
+    (["--max-pages", "1"], 1, 1),
+    (["--max-pages", "2"], 2, 0),
+])
+def test_probe_page_override_applies_to_jmir_api(
+    probe, monkeypatch, capsys, args, expected_pages, exit_code,
+):
+    source = {
+        "key": "jmir-test", "collector": "jmir", "enabled": True,
+        "url": "https://humanfactors.jmir.org/announcements",
+        "allowed_hosts": ["humanfactors.jmir.org"], "journal_id": 6,
+        "api_max_pages": 10, "allow_empty": True,
+    }
+    monkeypatch.setattr(probe, "load_sources", lambda _: {"user_agent": "test", "sources": [source]})
+    requests = []
+
+    class Response:
+        status_code = 200
+
+        def json(self):
+            return {
+                "data": [{"announcement_id": len(requests), "journal_id": 6, "title": "Journal news"}],
+                "pagination": {"lastPage": 2},
+            }
+
+    class Fetcher:
+        def __init__(self, *args, **kwargs):
+            pass
+
+        def get(self, url, *, headers):
+            requests.append(url)
+            return Response()
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(probe, "Fetcher", Fetcher)
+    assert probe.main(args) == exit_code
+    assert len(requests) == expected_pages
+    assert ("pagination truncated" in capsys.readouterr().out) == bool(exit_code)
+    assert source["api_max_pages"] == 10

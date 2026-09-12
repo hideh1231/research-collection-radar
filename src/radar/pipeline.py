@@ -133,7 +133,7 @@ def _write_artifacts_atomic(
         staged.append(
             _stage_text(
                 site_path,
-                json.dumps(render_site_collections(rows), ensure_ascii=False, indent=2) + "\n",
+                json.dumps(render_site_collections(rows, today), ensure_ascii=False, indent=2) + "\n",
             )
         )
         staged.append(_stage_text(status_path, json.dumps(source_status, ensure_ascii=False, indent=2) + "\n"))
@@ -564,7 +564,7 @@ def run(
     first_run = len(ledger) == 0
     token, channel = credentials()
     if dry_run:
-        log(f"dry-run: {len(unsent)} new open records")
+        log(f"dry-run: {len(unsent)} pending open notifications ({len(open_new)} new open records)")
     elif first_run and alerts_cfg.get("skip_slack_when_ledger_empty", True):
         log("first run: write ledger, skip Slack")
         ledger.extend(ledger_entries(unsent))

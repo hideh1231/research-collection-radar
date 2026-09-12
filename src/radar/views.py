@@ -96,25 +96,36 @@ VIEWER_FIELDS = (
 )
 
 
-def open_records(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return [row for row in rows if row.get("status") == "open"]
+def open_records(
+    rows: list[dict[str, Any]], today: date | None = None
+) -> list[dict[str, Any]]:
+    cutoff = (today or date.today()).isoformat()
+    return [
+        row for row in rows
+        if row.get("status") == "open"
+        and (not row.get("deadline") or row["deadline"] >= cutoff)
+    ]
 
 
 def viewer_record(row: dict[str, Any]) -> dict[str, Any]:
     return {key: row.get(key) for key in VIEWER_FIELDS}
 
 
-def render_site_collections(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Return open records only, sorted for a stable public JSON file."""
-    selected = [viewer_record(row) for row in open_records(rows)]
+def render_site_collections(
+    rows: list[dict[str, Any]], today: date | None = None
+) -> list[dict[str, Any]]:
+    """Return open calls without a passed deadline, including undated calls."""
+    selected = [viewer_record(row) for row in open_records(rows, today)]
     selected.sort(key=lambda row: (str(row.get("deadline") or "9999-99-99"), str(row.get("title") or ""), str(row.get("id") or "")))
     return selected
 
 
-def write_site_collections(path: Path, rows: list[dict[str, Any]]) -> None:
+def write_site_collections(
+    path: Path, rows: list[dict[str, Any]], today: date | None = None
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
-        json.dumps(render_site_collections(rows), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(render_site_collections(rows, today), ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
