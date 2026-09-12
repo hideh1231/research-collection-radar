@@ -1,3 +1,5 @@
+import json
+
 from radar.config import repo_root
 from radar.listing_html import inspect_listing_html, ingest_args_from_status
 from radar.pipeline import main
@@ -47,7 +49,7 @@ def test_cli_ingest_rendered_passes_ok_files(monkeypatch, tmp_path) -> None:
     html = tmp_path / "apa-cfp.html"
     html.write_text("<div class='bodyleft'></div>", encoding="utf-8")
     (tmp_path / "status.json").write_text(
-        '{"pages": {"apa-cfp": {"ok": true, "path": "%s"}}}' % html,
+        json.dumps({"pages": {"apa-cfp": {"ok": True, "path": str(html)}}}),
         encoding="utf-8",
     )
     captured: dict = {}

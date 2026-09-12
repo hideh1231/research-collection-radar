@@ -6,7 +6,8 @@ export function uniqueSorted(values) {
 }
 
 export function parseListParam(params, key) {
-  const values = params.getAll(key).flatMap((value) => value.split(",")).map((value) => value.trim()).filter(Boolean);
+  const freeText = key === "journal" || key === "topic";
+  const values = params.getAll(key).flatMap((value) => freeText ? [value] : value.split(",")).map((value) => value.trim()).filter(Boolean);
   return uniqueSorted(values);
 }
 

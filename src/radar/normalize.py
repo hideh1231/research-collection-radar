@@ -132,7 +132,11 @@ def migrate_record(row: dict[str, Any]) -> dict[str, Any]:
     migrated["publisher_keywords"] = keywords
     method = migrated.get("topics_method")
     if keywords:
-        migrated["topics"] = normalize_topic_list(keywords, aliases)
+        # Catalog labels are persisted enrichment. Rebuilding only from the
+        # publisher keywords would erase and re-add them on every subsequent run.
+        migrated["topics"] = normalize_topic_list(
+            [*keywords, *(migrated.get("topics") or [])], aliases,
+        )
         method = "publisher"
     else:
         migrated["topics"] = normalize_topic_list(migrated.get("topics") or [], aliases)
@@ -169,7 +173,11 @@ def parse_date(value: str | None) -> date | None:
     if not text:
         return None
     try:
-        return date_parser.parse(text, fuzzy=True, default=datetime(2099, 1, 1)).date()
+        # A listed deadline must supply its own year, month, and day. Using
+        # different defaults detects missing components without inventing them.
+        parsed = date_parser.parse(text, fuzzy=True, default=datetime(2099, 1, 1)).date()
+        alternate = date_parser.parse(text, fuzzy=True, default=datetime(2098, 2, 2)).date()
+        return parsed if parsed == alternate else None
     except (ValueError, OverflowError, TypeError):
         return None
 
@@ -177,11 +185,11 @@ def parse_date(value: str | None) -> date | None:
 def normalize_status(value: str | None) -> str:
     if not value:
         return "unknown"
-    text = value.strip().lower()
-    if "open" in text or "accepting" in text or "ready to submit" in text:
-        return "open"
-    if "closed" in text or "completed" in text:
+    text = re.sub(r"\s+", " ", value.strip().lower())
+    if re.search(r"\b(?:closed|completed|(?:not(?: currently)?|no longer) (?:accepting|open))\b", text):
         return "closed"
+    if re.search(r"\bopen\b(?![-\s]+access\b)|\b(?:accepting|ready to submit)\b", text):
+        return "open"
     return "unknown"
 
 
@@ -210,6 +218,9 @@ def to_record(
     else:
         deadline = incoming_deadline
     status = normalize_status(raw.status)
+    if status == "unknown" and previous and previous.get("status") in {"open", "closed"}:
+        status = previous["status"]
+    incoming_checked_at = _as_utc_timestamp(raw.extra.get("deadline_checked_at"))
     if deadline:
         if previous and previous.get("deadline") == deadline:
             deadline_status = deadline_state(deadline, previous.get("deadline_status"))
@@ -217,6 +228,9 @@ def to_record(
         else:
             deadline_status = "listed"
             deadline_checked_at = utc_now()
+    elif raw.extra.get("deadline_status") == "not_listed" and incoming_checked_at:
+        deadline_status = "not_listed"
+        deadline_checked_at = incoming_checked_at
     elif previous:
         deadline_status = deadline_state(None, previous.get("deadline_status"))
         deadline_checked_at = previous.get("deadline_checked_at")
@@ -338,9 +352,18 @@ def merge_collection_rows(current: dict[str, Any], incoming: dict[str, Any]) -> 
     merged["domain_scores"] = {**(current.get("domain_scores") or {}), **(incoming.get("domain_scores") or {})}
     merged["discovered_via"] = current.get("discovered_via") or incoming.get("discovered_via")
     merged["first_seen"] = min(filter(None, [current.get("first_seen"), incoming.get("first_seen")]))
+    if incoming.get("status") in {None, "unknown"} and current.get("status") in {"open", "closed"}:
+        merged["status"] = current["status"]
     if current.get("deadline") and not incoming.get("deadline"):
         merged["deadline"] = current["deadline"]
         merged["deadline_status"] = current.get("deadline_status", "listed")
+        merged["deadline_checked_at"] = current.get("deadline_checked_at")
+    elif (
+        not incoming.get("deadline")
+        and incoming.get("deadline_status") in {None, "not_checked"}
+        and current.get("deadline_status") == "not_listed"
+    ):
+        merged["deadline_status"] = "not_listed"
         merged["deadline_checked_at"] = current.get("deadline_checked_at")
     if merged.get("publisher") == "PLOS" or merged.get("discovered_via") == "plos-collections":
         journal, journals = canonical_plos_journals(

@@ -154,6 +154,22 @@ test("deadline date range keeps dated rows and optional undated statuses", () =>
   assert.deepEqual(withUndated.map((item) => item.id).sort(), ["b", "c"]);
 });
 
+test("shared filters preserve commas in journal and topic names", () => {
+  const journal = "Attention, Perception, & Psychophysics";
+  const second = "Journal of Experimental Psychology: Learning, Memory, and Cognition";
+  const state = {
+    ...emptyState(),
+    journals: [journal, second],
+    topics: ["Vision, perception and attention"],
+  };
+  const restored = parseState(serializeState(state));
+  assert.deepEqual(restored.journals, [journal, second]);
+  assert.deepEqual(restored.topics, state.topics);
+  const rows = [row("comma", { journal, topics: state.topics }), row("other")];
+  assert.deepEqual(filterRecords(rows, restored).map((item) => item.id), ["comma"]);
+  assert.deepEqual(parseState("?domain=hci,psychology&deadline=listed,not_checked").domains, ["hci", "psychology"]);
+});
+
 test("loads 48 more records at a time", () => {
   const many = Array.from({ length: 100 }, (_, index) => row(String(index)));
   const first = paginate(many, PAGE_SIZE);

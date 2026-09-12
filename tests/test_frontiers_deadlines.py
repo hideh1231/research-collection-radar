@@ -85,11 +85,12 @@ def test_page_identity_rejects_anchor_only_related_page() -> None:
 
 
 def test_selection_prioritizes_new_then_state_and_budget() -> None:
-    old = (datetime.now(UTC) - timedelta(days=8)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime(2026, 8, 29, tzinfo=UTC)
+    old = (now - timedelta(days=8)).strftime("%Y-%m-%dT%H:%M:%SZ")
     rows = [_row(1, "listed", old), _row(2, "not_listed", old), _row(3), _row(4, "listed", old)]
     for row in rows:
         row["metadata_checked_at"] = old
-    selected = select_deadline_targets(rows, SOURCE, incoming_ids={"frontiers-psychology-4"})
+    selected = select_deadline_targets(rows, SOURCE, incoming_ids={"frontiers-psychology-4"}, now=now)
     assert [row["id"] for row in selected] == [
         "frontiers-psychology-4",
         "frontiers-psychology-2",
@@ -111,7 +112,10 @@ def test_enrichment_updates_state_and_keeps_known_deadline(monkeypatch) -> None:
     rows = [_row(1), _row(2, "listed")]
     html = '<link rel="canonical" href="https://frontiersin.org/research-topics/1/topic-1"><p>Manuscript Submission Deadline 21 April 2027</p>'
     no_date = '<link rel="canonical" href="https://frontiersin.org/research-topics/2/topic-2"><p>Submission open</p>'
-    stats = enrich_deadlines(_FakeFetcher([(200, html), (200, no_date)]), rows, SOURCE, backfill=False)
+    stats = enrich_deadlines(
+        _FakeFetcher([(200, html), (200, no_date)]), rows, SOURCE, backfill=False,
+        now=datetime(2026, 8, 26, tzinfo=UTC),
+    )
     assert stats["checked"] == 2
     assert rows[0]["deadline"] == "2027-04-21"
     assert rows[0]["deadline_status"] == "listed"
@@ -129,6 +133,7 @@ def test_remaining_counts_past_daily_limit(monkeypatch) -> None:
         rows,
         _enrichment_source(1),
         backfill=False,
+        now=datetime(2026, 8, 26, tzinfo=UTC),
     )
     assert stats["checked"] == 1
     assert stats["remaining"] == 2

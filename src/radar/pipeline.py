@@ -41,6 +41,7 @@ from radar.store import (
     replace_staged,
     stage_jsonl,
     validate_record,
+    write_jsonl_atomic,
 )
 from radar.topics import (
     HttpCompletionsClient,
@@ -58,18 +59,29 @@ def log(message: str) -> None:
 def commit_if_actions(root: Path, summary: str) -> None:
     if os.environ.get("GITHUB_ACTIONS") != "true":
         return
-    subprocess.run(["git", "add", "data", "state", "OPEN.md", "site"], cwd=root, check=False)
-    status = subprocess.run(["git", "status", "--porcelain"], cwd=root, check=True, capture_output=True, text=True)
-    if not status.stdout.strip():
+    artifacts = [
+        relative for relative in (
+            "data/collections.jsonl", "data/source_status.json",
+            "state/notification_ledger.jsonl", "OPEN.md", "site/data/collections.json",
+        )
+        if (root / relative).is_file()
+    ]
+    if not artifacts:
         return
+    subprocess.run(["git", "add", "--", *artifacts], cwd=root, check=True)
+    status = subprocess.run(["git", "diff", "--cached", "--quiet", "--", *artifacts], cwd=root, check=False)
+    if status.returncode == 0:
+        return
+    if status.returncode != 1:
+        status.check_returncode()
     subprocess.run(["git", "config", "user.name", "github-actions[bot]"], cwd=root, check=True)
     subprocess.run(
         ["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"],
         cwd=root,
         check=True,
     )
-    subprocess.run(["git", "commit", "-m", summary], cwd=root, check=True)
-    subprocess.run(["git", "push"], cwd=root, check=False)
+    subprocess.run(["git", "commit", "--only", "-m", summary, "--", *artifacts], cwd=root, check=True)
+    subprocess.run(["git", "push"], cwd=root, check=True)
 
 
 def _stage_text(path: Path, text: str) -> Path:
@@ -251,6 +263,11 @@ def run(
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
+    configured_keys = {source["key"] for source in sources_cfg.get("sources", [])}
+    unknown_keys = (set(only or ()) | set(ingest_html or {})) - configured_keys
+    if unknown_keys:
+        log(f"unknown source key(s): {', '.join(sorted(unknown_keys))}")
+        return 1
     domains_cfg = load_domains(root)
     domain_display_labels = domain_labels(domains_cfg)
     type_display_labels = collection_type_labels(domains_cfg)
@@ -404,7 +421,15 @@ def run(
                         entry["reason"] = source["disabled_reason"]
                     source_status["sources"][source["key"]] = entry
                     continue
-                result = run_source(fetcher, source)
+                try:
+                    result = run_source(fetcher, source)
+                except Exception as exc:
+                    # A failed publisher must not discard the results already
+                    # collected or prevent the remaining sources from running.
+                    result = SourceResult(
+                        key=source["key"], ok=False, records=[],
+                        error=f"{type(exc).__name__}: {exc}",
+                    )
                 fetched_keys.add(source["key"])
                 entry = _source_status_entry(result, source)
                 source_status["sources"][source["key"]] = entry
@@ -526,9 +551,16 @@ def run(
             return 1
         return 0
 
-    fresh = new_records(incoming, prior_ids)
+    fresh = new_records(current_rows, prior_ids)
     open_new = [row for row in fresh if row.get("status") == "open"]
-    unsent = [row for row in open_new if new_alert_key(row["id"]) not in known_keys]
+    # Persisted records remain eligible after a failed send or missing credentials.
+    # Use merged rows so cross-listed opportunities produce one notification.
+    unsent = [
+        row for row in current_rows
+        if row.get("status") == "open"
+        and (not row.get("deadline") or row["deadline"] >= today.isoformat())
+        and new_alert_key(row["id"]) not in known_keys
+    ]
     first_run = len(ledger) == 0
     token, channel = credentials()
     if dry_run:
@@ -536,18 +568,16 @@ def run(
     elif first_run and alerts_cfg.get("skip_slack_when_ledger_empty", True):
         log("first run: write ledger, skip Slack")
         ledger.extend(ledger_entries(unsent))
-        from radar.store import write_jsonl
-
-        write_jsonl(ledger_path, ledger, key="alert_key")
+        write_jsonl_atomic(ledger_path, ledger, key="alert_key")
     elif unsent and token and channel:
         text = digest_text(unsent, int(alerts_cfg.get("max_items_in_digest", 30)))
         slack_ok = post_message(text, token, channel)
         log(f"slack send success={slack_ok}")
         if slack_ok:
             ledger.extend(ledger_entries(unsent))
-            from radar.store import write_jsonl
-
-            write_jsonl(ledger_path, ledger, key="alert_key")
+            write_jsonl_atomic(ledger_path, ledger, key="alert_key")
+        else:
+            failures += 1
     elif unsent and not (token and channel):
         log("slack skipped: credentials missing")
     else:
@@ -556,12 +586,8 @@ def run(
     summary = f"data: update {len(incoming)} records ({len(open_new)} new open)"
     if not dry_run:
         commit_if_actions(root, summary)
-    nature = source_status["sources"].get("nature-psychology", {})
-    if nature.get("enabled") and not nature.get("ok", True) and not offline:
-        log(
-            f"nature-psychology failed: error={nature.get('error')} "
-            f"pages={nature.get('pages')} parsed={nature.get('parsed')}"
-        )
+    if failures:
+        log(f"run completed with {failures} failure(s); successful results were saved")
         return 1
     return 0
 
@@ -727,9 +753,6 @@ def main(argv: list[str] | None = None) -> int:
         for key, entry in rendered.get("pages", {}).items():
             if entry.get("ok") and entry.get("path"):
                 ingest[key] = Path(entry["path"])
-        if not ingest:
-            log("no rendered listings to ingest")
-            return 0
     if args.ingest_html:
         ingest = ingest or {}
         for item in args.ingest_html:
@@ -746,6 +769,9 @@ def main(argv: list[str] | None = None) -> int:
                 ingest[key] = dest
             else:
                 ingest[key] = Path(raw_path)
+    if args.ingest_rendered and not ingest:
+        log("no rendered listings to ingest")
+        return 0
     return run(
         root,
         dry_run=args.dry_run,

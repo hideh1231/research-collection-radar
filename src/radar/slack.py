@@ -14,13 +14,16 @@ def credentials() -> tuple[str | None, str | None]:
 
 
 def post_message(text: str, token: str, channel: str) -> bool:
-    response = httpx.post(
-        "https://slack.com/api/chat.postMessage",
-        headers={"Authorization": f"Bearer {token}"},
-        json={"channel": channel, "text": text},
-        timeout=20,
-    )
-    if response.status_code >= 400:
+    try:
+        response = httpx.post(
+            "https://slack.com/api/chat.postMessage",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"channel": channel, "text": text},
+            timeout=20,
+        )
+        if response.status_code >= 400:
+            return False
+        payload = response.json()
+    except (httpx.HTTPError, ValueError):
         return False
-    payload = response.json()
-    return bool(payload.get("ok"))
+    return isinstance(payload, dict) and payload.get("ok") is True

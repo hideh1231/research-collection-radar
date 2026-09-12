@@ -10,7 +10,7 @@ from radar.http import Fetcher
 from radar.ids import allowed_url, canonicalize_url
 from radar.models import RawRecord, SourceResult
 from radar.normalize import normalize_status, parse_date, publisher_id_from_url
-from urllib.parse import urljoin
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 COLLECTION_HREF = re.compile(r"/collections/[a-z0-9]+", re.I)
 STATUS_RE = re.compile(r"Submission status:\s*(Open|Closed)", re.I)
@@ -33,6 +33,7 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
     soup = BeautifulSoup(html, "lxml")
     hosts = source.get("allowed_hosts", ["www.nature.com"])
     found: dict[str, RawRecord] = {}
+    include_keywords = [str(item).casefold() for item in source.get("include_keywords", [])]
     cards = soup.select("article.c-card") or soup.find_all("article")
     for article in cards:
         link = article.find("a", href=COLLECTION_HREF)
@@ -46,10 +47,14 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
         title = link.get_text(" ", strip=True)
         if not title or len(title) < 8:
             continue
+        if include_keywords and not any(keyword in title.casefold() for keyword in include_keywords):
+            continue
         block = article.get_text(" ", strip=True)
         status_el = article.find(attrs={"data-test": "status"})
         date_el = article.find(attrs={"data-test": "end-date"})
-        status = normalize_status(status_el.get_text(" ", strip=True) if status_el else block)
+        status_text = status_el.get_text(" ", strip=True) if status_el else block
+        status_match = STATUS_RE.search(status_text)
+        status = normalize_status(status_match.group(1) if status_match else status_text)
         deadline_text = date_el.get_text(" ", strip=True) if date_el else None
         summary_el = article.find(attrs={"data-test": "description"}) or article.select_one(".c-card__summary")
         summary = summary_el.get_text(" ", strip=True)[:1000] if summary_el else None
@@ -90,20 +95,28 @@ def finalize_records(records: list[RawRecord], source: dict) -> list[RawRecord]:
 
 def next_page_url(html: str, current: str) -> str | None:
     soup = BeautifulSoup(html, "lxml")
+    links = []
     nxt = soup.find(attrs={"data-test": "page-next"})
     if nxt:
         link = nxt.find("a", href=True) if nxt.name != "a" else nxt
         if link and link.get("href"):
-            href = str(link["href"]).replace("&#x3D;", "=")
-            if href.startswith("/"):
-                href = "https://www.nature.com" + href
-            return href
+            links.append(link)
     link = soup.find("a", rel="next")
     if link and link.get("href"):
-        href = str(link["href"])
-        if href.startswith("/"):
-            href = "https://www.nature.com" + href
-        return href
+        links.append(link)
+    original = urlparse(current)
+    for link in links:
+        candidate = urlparse(urljoin(current, str(link["href"])))
+        if not allowed_url(candidate.geturl(), [original.hostname or ""]):
+            continue
+        if candidate.path.rstrip("/") != original.path.rstrip("/"):
+            continue
+        # Pagination links sometimes omit the subject selection. Keep the
+        # listing's scope while allowing the page number to change.
+        filters = [(key, value) for key, value in parse_qsl(original.query) if key != "page"]
+        query = [(key, value) for key, value in parse_qsl(candidate.query) if key not in dict(filters)]
+        query.extend(filters)
+        return urlunparse(candidate._replace(query=urlencode(query), fragment=""))
     return None
 
 
@@ -134,8 +147,11 @@ class NatureCollector:
             batch = parse_listing(html, source)
             records.extend(batch)
             nxt = next_page_url(html, url)
-            if nxt == url:
-                break
+            if nxt and canonicalize_url(nxt) in {canonicalize_url(page) for page in seen_pages}:
+                return SourceResult(
+                    key=source["key"], ok=False, records=[], http_status=last_status,
+                    error="pagination cycle", page_count=pages,
+                )
             url = nxt
             if url:
                 time.sleep(0.4)
@@ -150,7 +166,7 @@ class NatureCollector:
                 parsed_count=len(unique),
                 page_count=pages,
             )
-        if not unique:
+        if not unique and not source.get("allow_empty"):
             return SourceResult(
                 key=source["key"],
                 ok=False,
