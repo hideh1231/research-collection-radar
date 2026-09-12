@@ -61,7 +61,6 @@ jobs:
           only+=(
             --only aps-cfp
             --only science-robotics-cfp
-            --only tandf-cfp
             --only sage-cfp
             --only pnas-cfp
             --only pnas-nexus-cfp

@@ -33,6 +33,22 @@ def test_sciencedirect_block_page_is_a_wall() -> None:
     assert probe.ok is False
 
 
+def test_tandf_loading_shell_is_not_a_listing() -> None:
+    html = (
+        '<h2>Search for current calls for papers</h2>'
+        '<label>Manuscript deadline (expiring soon)</label>'
+        '<div class="jtf__cfptool_filters--buttons-results"><strong>0</strong> result(s)</div>'
+        '<div class="jtf__cfptool_posts" aria-busy="true"></div>'
+    )
+    assert inspect_listing_html("tandf-cfp", html).ok is False
+
+
+def test_tandf_readiness_requires_parseable_cards() -> None:
+    html = (repo_root() / "tests/fixtures/tandf_cfp.html").read_text(encoding="utf-8")
+    assert inspect_listing_html("tandf-cfp", html).ok is True
+    assert inspect_listing_html("tandf-cfp", "<p>3 results: call for papers deadline</p>").ok is False
+
+
 def test_ingest_args_skip_failed_pages() -> None:
     args = ingest_args_from_status(
         {
