@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T09:26:42Z",
+  "checked_at": "2026-09-12T09:38:11Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -400,7 +400,8 @@
       "parsed": 48,
       "pages": 1,
       "error": null,
-      "ingest": ".checks\\apa-current.html"
+      "ingest": "listing-html/apa-cfp.html",
+      "skipped_closed": 11
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -513,7 +514,7 @@
       "enabled": false,
       "ok": true,
       "http_status": null,
-      "parsed": 2,
+      "parsed": 1,
       "pages": 1,
       "error": null,
       "ingest": "listing-html/josa-a-features.html"
