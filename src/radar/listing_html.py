@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from radar.collectors.html_listing import parse_tandf
+
 LISTING_PAGES = {
     "apa-cfp": {
         "url": "https://www.apa.org/pubs/journals/resources/calls-for-papers",
@@ -132,7 +134,15 @@ def inspect_listing_html(key: str, html: str) -> ListingProbe:
             return ListingProbe(True, "science robotics special issues")
         return ListingProbe(False, "science robotics listing markers missing")
     if key == "tandf-cfp":
-        if "result" in lowered and ("deadline" in lowered or "call for papers" in lowered) and "0 result" not in lowered:
+        # The loading shell contains deadline labels and "<strong>0</strong> result(s)".
+        # Only accept cards that the downstream importer can actually parse.
+        if parse_tandf(text, {
+            "key": key,
+            "url": LISTING_PAGES[key]["url"],
+            "publisher": "Taylor & Francis",
+            "allowed_hosts": ["authorservices.taylorandfrancis.com", "think.taylorandfrancis.com",
+                              "www.tandfonline.com", "tandfonline.com"],
+        }):
             return ListingProbe(True, "tandf call cards")
         if "search for current calls for papers" in lowered:
             return ListingProbe(False, "tandf search form without results")
