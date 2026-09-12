@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-10T23:10:22Z",
+  "checked_at": "2026-09-12T07:20:18Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 657,
+      "parsed": 654,
       "pages": 66,
       "error": null
     },
@@ -45,21 +45,21 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3348,
+      "parsed": 3351,
       "pages": 140,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 77,
-        "checked": 75,
-        "listed": 74,
-        "with_deadline": 74,
+        "target_count": 400,
+        "checked": 398,
+        "listed": 370,
+        "with_deadline": 370,
         "not_listed": 1,
         "failed": 2,
         "rate_limited": 0,
-        "parse_errors": 0,
+        "parse_errors": 27,
         "forbidden": 0,
-        "remaining": 2,
-        "metadata_updated": 36
+        "remaining": 405,
+        "metadata_updated": 240
       }
     },
     "frontiers-robotics-ai": {
@@ -82,7 +82,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1901,
+      "parsed": 1899,
       "pages": 80,
       "error": null
     },
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2177,
+      "parsed": 2179,
       "pages": 91,
       "error": null
     },
@@ -98,7 +98,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1609,
+      "parsed": 1611,
       "pages": 68,
       "error": null
     },
@@ -194,7 +194,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 838,
+      "parsed": 839,
       "pages": 35,
       "error": null
     },
@@ -433,7 +433,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 19,
+      "parsed": 18,
       "pages": 1,
       "error": null
     },
@@ -441,7 +441,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 5,
+      "parsed": 3,
       "pages": 1,
       "error": null
     },
@@ -514,22 +514,282 @@
       "enabled": false,
       "skipped": "disabled",
       "reason": "Wiley CFP pages are per-journal and often a bot wall. listing-ingest tries headed Chrome."
+    },
+    "nature-human-behaviour": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 3,
+      "error": null
+    },
+    "nature-mental-health": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 4,
+      "pages": 2,
+      "error": null
+    },
+    "npj-science-of-learning": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 1,
+      "error": null
+    },
+    "npj-mental-health-research": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 8,
+      "pages": 1,
+      "error": null
+    },
+    "npj-robotics": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "npj-artificial-intelligence": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 0,
+      "pages": 1,
+      "error": null
+    },
+    "npj-digital-medicine": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 11,
+      "pages": 2,
+      "error": null
+    },
+    "npj-digital-surgery": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 7,
+      "pages": 1,
+      "error": null
+    },
+    "npj-biological-timing-and-sleep": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 2,
+      "pages": 1,
+      "error": null
+    },
+    "npj-dementia": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 1,
+      "error": null
+    },
+    "npj-parkinsons-disease": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 8,
+      "pages": 1,
+      "error": null
+    },
+    "npj-digital-public-health": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 6,
+      "pages": 1,
+      "error": null
+    },
+    "npj-complexity": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "nature-communications-ai-computing": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 2,
+      "error": null
+    },
+    "nature-communications-engineering-robotics": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 5,
+      "pages": 3,
+      "error": null
+    },
+    "npj-sustainable-mobility-transport": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 4,
+      "pages": 1,
+      "error": null
+    },
+    "nature-humanities-social-sciences-communications": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 44,
+      "pages": 1,
+      "error": null
+    },
+    "ieee-ras-transactions-robotics": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-automation-science-engineering": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-haptics": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-field-robotics": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-medical-robotics-bionics": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-robot-learning": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "ieee-ras-transactions-soft-robotics": {
+      "enabled": false,
+      "skipped": "disabled"
+    },
+    "jmir-human-factors": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 4,
+      "pages": 2,
+      "error": null
+    },
+    "jmir-mental-health": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 6,
+      "pages": 6,
+      "error": null
+    },
+    "jmir-ai": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 0,
+      "pages": 1,
+      "error": null
+    },
+    "jmir-serious-games": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 2,
+      "pages": 2,
+      "error": null
+    },
+    "jmir-xr-spatial-computing": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "jmir-neurotechnology": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 4,
+      "pages": 1,
+      "error": null
+    },
+    "taylor-francis-special-issues": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 80,
+      "pages": 6,
+      "error": null
+    },
+    "cambridge-robotica-call-for-papers": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 9,
+      "pages": 2,
+      "error": null
+    },
+    "cambridge-personality-neuroscience-call-for-papers": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "cambridge-psychological-medicine-call-for-papers": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 2,
+      "pages": 1,
+      "error": null
+    },
+    "cambridge-cns-spectrums-call-for-papers": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 1,
+      "pages": 1,
+      "error": null
+    },
+    "cambridge-bjpsych-open-call-for-papers": {
+      "enabled": true,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 1,
+      "error": null
     }
   },
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 77,
-      "checked": 75,
-      "listed": 74,
-      "with_deadline": 74,
+      "target_count": 400,
+      "checked": 398,
+      "listed": 370,
+      "with_deadline": 370,
       "not_listed": 1,
       "failed": 2,
       "rate_limited": 0,
-      "parse_errors": 0,
+      "parse_errors": 27,
       "forbidden": 0,
-      "remaining": 2,
-      "metadata_updated": 36
+      "remaining": 405,
+      "metadata_updated": 240
     }
   }
 }
