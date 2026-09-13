@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-12T23:03:24Z",
+  "checked_at": "2026-09-13T23:10:12Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 654,
+      "parsed": 653,
       "pages": 66,
       "error": null
     },
@@ -43,23 +43,23 @@
     },
     "frontiers-psychology": {
       "enabled": true,
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "parsed": 0,
+      "parsed": 3351,
       "pages": 140,
-      "error": "incomplete listing: parsed 3345 of 3351",
+      "error": null,
       "deadline_enrichment": {
-        "target_count": 400,
-        "checked": 398,
-        "listed": 385,
-        "with_deadline": 385,
+        "target_count": 341,
+        "checked": 339,
+        "listed": 333,
+        "with_deadline": 333,
         "not_listed": 0,
         "failed": 2,
         "rate_limited": 0,
-        "parse_errors": 13,
+        "parse_errors": 6,
         "forbidden": 0,
-        "remaining": 7,
-        "metadata_updated": 241
+        "remaining": 2,
+        "metadata_updated": 195
       }
     },
     "frontiers-robotics-ai": {
@@ -789,17 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 400,
-      "checked": 398,
-      "listed": 385,
-      "with_deadline": 385,
+      "target_count": 341,
+      "checked": 339,
+      "listed": 333,
+      "with_deadline": 333,
       "not_listed": 0,
       "failed": 2,
       "rate_limited": 0,
-      "parse_errors": 13,
+      "parse_errors": 6,
       "forbidden": 0,
-      "remaining": 7,
-      "metadata_updated": 241
+      "remaining": 2,
+      "metadata_updated": 195
     }
   }
 }
