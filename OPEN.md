@@ -1,18 +1,9 @@
 # Open calls
 
-Generated 2026-09-14. Sorted by deadline.
+Generated 2026-09-15. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-14 | Case Reports in Psychiatry: Clinical Presentations at the Intersection of Physical and Mental Health | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/75056/case-reports-in-psychiatry-clinical-presentations-at-the-intersection-of-physical-and-mental-health |
-| 2026-09-14 | Employee Resilience: Volume III | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/78767/employee-resilience-volume-iii |
-| 2026-09-14 | Exploring the impact of music interventions on brain function, behavior, and health: Volume III | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/78778/exploring-the-impact-of-music-interventions-on-brain-function-behavior-and-health-volume-iii |
-| 2026-09-14 | Institutional and Ecosystem Approaches to Human-AI Partnership in Higher Education | Frontiers in Education | Psychology | Research Topic | https://frontiersin.org/research-topics/78444/institutional-and-ecosystem-approaches-to-human-ai-partnership-in-higher-education |
-| 2026-09-14 | Metabolism, Obesity, and Brain Health Across the Lifespan | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/76689/metabolism-obesity-and-brain-health-across-the-lifespan |
-| 2026-09-14 | Neurocognitive Shifts in Language Processing Across the Lifespan | Frontiers in Psychology | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/75316/neurocognitive-shifts-in-language-processing-across-the-lifespan |
-| 2026-09-14 | The Interplay Between Physical Exercise, Brain Activity, and Psychological Outcomes | Frontiers in Psychology | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/77666/the-interplay-between-physical-exercise-brain-activity-and-psychological-outcomes |
-| 2026-09-14 | The Psychology of Hearing Health: Exploring the Psychological Impact of Auditory Perception Difficulties on Communication | Frontiers in Cognition | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/68604/the-psychology-of-hearing-health-exploring-the-psychological-impact-of-auditory-perception-difficulties-on-communication |
-| 2026-09-14 | The moderating role of sex and gender on brain function and behavior | Frontiers in Behavioral Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/71058/the-moderating-role-of-sex-and-gender-on-brain-function-and-behavior |
 | 2026-09-15 | A Metaverse for the Good: AI and the Metaverse | Frontiers in Virtual Reality | HCI | Research Topic | https://frontiersin.org/research-topics/75575/a-metaverse-for-the-good-ai-and-the-metaverse |
 | 2026-09-15 | Adultcentrism and Bleak Pedagogy: Rediscovering adults through the lens of childhood | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/76657/adultcentrism-and-bleak-pedagogy-rediscovering-adults-through-the-lens-of-childhood |
 | 2026-09-15 | Advances and Perspectives in Space Technologies | Frontiers in Space Technologies | Robotics | Research Topic | https://frontiersin.org/research-topics/76431/advances-and-perspectives-in-space-technologies |
