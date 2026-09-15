@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-13T23:10:12Z",
+  "checked_at": "2026-09-14T23:52:19Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -45,21 +45,21 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3351,
+      "parsed": 3350,
       "pages": 140,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 341,
-        "checked": 339,
-        "listed": 333,
-        "with_deadline": 333,
+        "target_count": 8,
+        "checked": 6,
+        "listed": 6,
+        "with_deadline": 6,
         "not_listed": 0,
         "failed": 2,
         "rate_limited": 0,
-        "parse_errors": 6,
+        "parse_errors": 0,
         "forbidden": 0,
         "remaining": 2,
-        "metadata_updated": 195
+        "metadata_updated": 4
       }
     },
     "frontiers-robotics-ai": {
@@ -162,7 +162,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 344,
+      "parsed": 345,
       "pages": 15,
       "error": null
     },
@@ -202,7 +202,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 914,
+      "parsed": 915,
       "pages": 39,
       "error": null
     },
@@ -561,7 +561,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 5,
+      "parsed": 6,
       "pages": 1,
       "error": null
     },
@@ -789,31 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 341,
-      "checked": 339,
-      "listed": 333,
-      "with_deadline": 333,
+      "target_count": 8,
+      "checked": 6,
+      "listed": 6,
+      "with_deadline": 6,
       "not_listed": 0,
       "failed": 2,
       "rate_limited": 0,
-      "parse_errors": 6,
+      "parse_errors": 0,
       "forbidden": 0,
       "remaining": 2,
-      "metadata_updated": 195
+      "metadata_updated": 4
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-13T23:40:49.413463+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
