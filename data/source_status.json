@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-16T23:39:16Z",
+  "checked_at": "2026-09-17T23:33:33Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 653,
-      "pages": 66,
+      "parsed": 650,
+      "pages": 65,
       "error": null
     },
     "nature-comms-psychology": {
@@ -45,21 +45,21 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3354,
+      "parsed": 3355,
       "pages": 140,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 8,
-        "checked": 6,
-        "listed": 6,
-        "with_deadline": 6,
+        "target_count": 85,
+        "checked": 82,
+        "listed": 82,
+        "with_deadline": 82,
         "not_listed": 0,
-        "failed": 2,
+        "failed": 3,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 2,
-        "metadata_updated": 4
+        "remaining": 3,
+        "metadata_updated": 35
       }
     },
     "frontiers-robotics-ai": {
@@ -74,7 +74,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1050,
+      "parsed": 1051,
       "pages": 44,
       "error": null
     },
@@ -82,7 +82,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1903,
+      "parsed": 1904,
       "pages": 80,
       "error": null
     },
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2180,
+      "parsed": 2182,
       "pages": 91,
       "error": null
     },
@@ -98,7 +98,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1612,
+      "parsed": 1614,
       "pages": 68,
       "error": null
     },
@@ -114,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 542,
+      "parsed": 544,
       "pages": 23,
       "error": null
     },
@@ -130,7 +130,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 325,
+      "parsed": 326,
       "pages": 14,
       "error": null
     },
@@ -194,8 +194,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 840,
-      "pages": 35,
+      "parsed": 841,
+      "pages": 36,
       "error": null
     },
     "frontiers-veterinary-science": {
@@ -439,11 +439,11 @@
     },
     "jske-cfp": {
       "enabled": true,
-      "ok": true,
-      "http_status": 200,
-      "parsed": 3,
-      "pages": 1,
-      "error": null
+      "ok": false,
+      "http_status": null,
+      "parsed": 0,
+      "pages": 0,
+      "error": "FetchError: GET failed after retries: https://www.jske.org/: timed out"
     },
     "aps-cfp": {
       "enabled": false,
@@ -601,7 +601,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 5,
+      "parsed": 4,
       "pages": 1,
       "error": null
     },
@@ -741,7 +741,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 84,
+      "parsed": 86,
       "pages": 6,
       "error": null
     },
@@ -789,31 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 8,
-      "checked": 6,
-      "listed": 6,
-      "with_deadline": 6,
+      "target_count": 85,
+      "checked": 82,
+      "listed": 82,
+      "with_deadline": 82,
       "not_listed": 0,
-      "failed": 2,
+      "failed": 3,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
-      "remaining": 2,
-      "metadata_updated": 4
+      "remaining": 3,
+      "metadata_updated": 35
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-16T23:57:31.868013+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
