@@ -6411,31 +6411,6 @@
     "status": "open"
   },
   {
-    "id": "apa-cfp-9625bf261a",
-    "title": "Conflict adaptation across single-task and multi-tasking paradigms",
-    "summary": null,
-    "journal": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
-    "journals": [
-      "Journal of Experimental Psychology: Learning, Memory, and Cognition"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "adaptation",
-      "conflict"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-10-01",
-    "deadline_status": "listed",
-    "url": "https://apa.org/pubs/journals/xlm/conflict-adaptation",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "APA",
-    "status": "open"
-  },
-  {
     "id": "frontiers-psychology-4fa8422853",
     "title": "Developing Musical Expression, Communication, and Wellbeing",
     "summary": "Through music people express themselves, their ideas, thoughts and feelings. Music holds affordances for meaning making and communication that can be beneficial for health and wellbeing. Through various socially engaged practices, people use musicking to communicate with each other. Music can be used to enhance wellbeing in various contexts, including health care settings and as a tool for social impact. Musical expression and communication have the potential to enhance people's sense of wellbeing; however, this does not happen automatically and can be particularly challenging for those studying or working within the music profession. Therefore, it is vital to explore the variety of processes involved in developing musical expression and communication that enhance wellbeing for all involved. These processes include (but are not limited to) psychological, educational, and artistic domains.",
@@ -49029,6 +49004,26 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-e5fcb0bf16",
+    "title": "Accelerating analgesic discovery in spinal cord injuries and disorders",
+    "summary": null,
+    "journal": "Experimental Neurology",
+    "journals": [
+      "Experimental Neurology"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/332831/accelerating-analgesic-discovery-in-spinal-cord-injuries-and-disorders",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-22",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-de6eafbf51",
     "title": "Advances in Radiotherapy Dosimetry for Neuro-Oncology: From Film-Based Techniques to Emerging High-Precision Applications",
     "summary": "Accurate radiation dose delivery is fundamental to safe and effective radiotherapy, particularly in neuro-oncology, where treatments often involve small targets, steep dose gradients, and close proximity to highly radiosensitive critical structures. Even minor uncertainties in dose measurement can have significant clinical consequences, underscoring the importance of robust, high-precision dosimetry for brain tumours and intracranial metastases. The field of radiotherapy dosimetry continues to evolve rapidly, driven by the increasing complexity of treatment techniques and the growing demand for accurate verification of delivered dose. Film-based dosimetry, including established and next-generation radiochromic film technologies, has long played a central role in high-resolution dose verification. At the same time, advances in detector design, calibration methodologies, scanner protocols, and data analysis approaches are reshaping best practices across clinical dosimetry. While newer ge",
@@ -49478,6 +49473,28 @@
     "image_alt": "Coevolution of Social Communication Systems and Social Complexity",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-45bb1c5a62",
+    "title": "Converging Approaches for Post-traumatic Epilepsy",
+    "summary": null,
+    "journal": "Experimental Neurology",
+    "journals": [
+      "Experimental Neurology"
+    ],
+    "domains": [],
+    "topics": [
+      "epilepsy"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327765/converging-approaches-for-post-traumatic-epilepsy",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-28",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -74749,6 +74766,34 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-a8cbb5d833",
+    "title": "Mechanisms of Cognitive Resilience Across the Lifespan: Neurocognitive, Psychosocial, and Biological Pathways",
+    "summary": null,
+    "journal": "Acta Psychologica",
+    "journals": [
+      "Acta Psychologica"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "mechanisms",
+      "cognitive",
+      "resilience",
+      "lifespan"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/337393/mechanisms-of-cognitive-resilience-across-the-lifespan-neurocognitive-psychosocial-and-biological-pathways",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-22",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-d6aa780089",
     "title": "Movement, Motivation, and Mental Health: Psychological Pathways to Well-Being Across the Lifespan in Vulnerable Populations",
     "summary": "Movement, sport, and physical activity are increasingly recognised not only for their physical benefits but also as important contexts for promoting psychological well-being across the lifespan. Their impact on mental health is shaped by a range of psychological mechanisms, including motivation, self-regulation, resilience, self-compassion, self-efficacy, identity, and social belonging, which influence both engagement in movement and its psychological outcomes. These processes are particularly relevant for populations facing significant developmental or contextual challenges, such as children and adolescents experiencing social disadvantage, older adults adapting to age-related cognitive and functional changes, and competitive athletes coping with performance demands and identity pressures. Although these groups differ in their life circumstances, they share common psychological pathways through which movement-based experiences can foster resilience, strengthen social connectedness, an",
@@ -77039,6 +77084,31 @@
     "image_alt": null,
     "first_seen": "2026-09-22",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-9625bf261a",
+    "title": "Conflict adaptation across single-task and multi-tasking paradigms",
+    "summary": null,
+    "journal": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+    "journals": [
+      "Journal of Experimental Psychology: Learning, Memory, and Cognition"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "adaptation",
+      "conflict"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-10-01",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/xlm/conflict-adaptation",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "APA",
     "status": "open"
   },
   {
