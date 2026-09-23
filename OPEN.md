@@ -1,15 +1,9 @@
 # Open calls
 
-Generated 2026-09-22. Sorted by deadline.
+Generated 2026-09-23. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-22 | Advances in Public Health: Bridging Technology and Equity through Digital Health Innovation | Frontiers in Medicine | Psychology | Research Topic | https://frontiersin.org/research-topics/75947/advances-in-public-health-bridging-technology-and-equity-through-digital-health-innovation |
-| 2026-09-22 | Bioremediation of per- and polyfluoroalkyl substances | Scientific Reports |  | Collection | https://nature.com/collections/fjjhbfdjfc |
-| 2026-09-22 | Challenges in visualizing macromolecules | Scientific Reports |  | Collection | https://nature.com/collections/adegcggjbc |
-| 2026-09-22 | Computational Neuromorphic Imaging | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/74694/computational-neuromorphic-imaging |
-| 2026-09-22 | Managing agricultural residue | Scientific Reports |  | Collection | https://nature.com/collections/aeagajffbj |
-| 2026-09-22 | Wearable sensors for enhanced cognitive engagement in STEM education | Frontiers in Neuroscience | Psychology, HCI, Neuroscience | Research Topic | https://frontiersin.org/research-topics/79056/wearable-sensors-for-enhanced-cognitive-engagement-in-stem-education |
 | 2026-09-23 | Cardiovascular health in pregnancy and postpartum | Scientific Reports |  | Collection | https://nature.com/collections/chefbjejef |
 | 2026-09-23 | Digital Mental Health Interventions for Aged Adults With Psychiatric Conditions | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/77861/digital-mental-health-interventions-for-aged-adults-with-psychiatric-conditions |
 | 2026-09-23 | From synapses to symptoms: understanding cognitive and behavioral changes in neurodegenerative diseases | Frontiers in Behavioral Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/77011/from-synapses-to-symptoms-understanding-cognitive-and-behavioral-changes-in-neurodegenerative-diseases |
