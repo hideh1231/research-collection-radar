@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-22T00:41:01Z",
+  "checked_at": "2026-09-22T23:36:16Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 645,
+      "parsed": 642,
       "pages": 65,
       "error": null
     },
@@ -45,21 +45,21 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3359,
-      "pages": 140,
+      "parsed": 3363,
+      "pages": 141,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 400,
-        "checked": 398,
-        "listed": 381,
-        "with_deadline": 381,
-        "not_listed": 0,
-        "failed": 2,
+        "target_count": 365,
+        "checked": 361,
+        "listed": 351,
+        "with_deadline": 351,
+        "not_listed": 2,
+        "failed": 4,
         "rate_limited": 0,
-        "parse_errors": 17,
+        "parse_errors": 8,
         "forbidden": 0,
-        "remaining": 351,
-        "metadata_updated": 252
+        "remaining": 4,
+        "metadata_updated": 219
       }
     },
     "frontiers-robotics-ai": {
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2184,
+      "parsed": 2183,
       "pages": 91,
       "error": null
     },
@@ -106,7 +106,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 479,
+      "parsed": 480,
       "pages": 20,
       "error": null
     },
@@ -114,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 546,
+      "parsed": 548,
       "pages": 23,
       "error": null
     },
@@ -202,20 +202,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 916,
+      "parsed": 917,
       "pages": 39,
       "error": null
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2783,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/sciencedirect-cfp.html",
-      "dropped_unclassified": 2727,
-      "skipped_closed": 9
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -395,13 +389,8 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 48,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 15
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -752,7 +741,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 87,
+      "parsed": 86,
       "pages": 6,
       "error": null
     },
@@ -800,31 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 400,
-      "checked": 398,
-      "listed": 381,
-      "with_deadline": 381,
-      "not_listed": 0,
-      "failed": 2,
+      "target_count": 365,
+      "checked": 361,
+      "listed": 351,
+      "with_deadline": 351,
+      "not_listed": 2,
+      "failed": 4,
       "rate_limited": 0,
-      "parse_errors": 17,
+      "parse_errors": 8,
       "forbidden": 0,
-      "remaining": 351,
-      "metadata_updated": 252
+      "remaining": 4,
+      "metadata_updated": 219
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-22T00:37:27.981068+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
