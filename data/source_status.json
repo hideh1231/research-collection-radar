@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-22T23:36:16Z",
+  "checked_at": "2026-09-23T23:41:42Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 642,
+      "parsed": 649,
       "pages": 65,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 208,
+      "parsed": 209,
       "pages": 21,
       "error": null
     },
@@ -45,28 +45,28 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3363,
+      "parsed": 3364,
       "pages": 141,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 365,
-        "checked": 361,
-        "listed": 351,
-        "with_deadline": 351,
-        "not_listed": 2,
+        "target_count": 15,
+        "checked": 11,
+        "listed": 11,
+        "with_deadline": 11,
+        "not_listed": 0,
         "failed": 4,
         "rate_limited": 0,
-        "parse_errors": 8,
+        "parse_errors": 0,
         "forbidden": 0,
         "remaining": 4,
-        "metadata_updated": 219
+        "metadata_updated": 8
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 378,
+      "parsed": 379,
       "pages": 16,
       "error": null
     },
@@ -74,7 +74,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1053,
+      "parsed": 1054,
       "pages": 44,
       "error": null
     },
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2183,
+      "parsed": 2181,
       "pages": 91,
       "error": null
     },
@@ -98,7 +98,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1618,
+      "parsed": 1617,
       "pages": 68,
       "error": null
     },
@@ -162,7 +162,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 344,
+      "parsed": 346,
       "pages": 15,
       "error": null
     },
@@ -170,7 +170,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 314,
+      "parsed": 313,
       "pages": 14,
       "error": null
     },
@@ -202,7 +202,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 917,
+      "parsed": 916,
       "pages": 39,
       "error": null
     },
@@ -351,7 +351,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 25,
+      "parsed": 26,
       "pages": 1,
       "error": null
     },
@@ -439,11 +439,11 @@
     },
     "jske-cfp": {
       "enabled": true,
-      "ok": true,
-      "http_status": 200,
-      "parsed": 3,
-      "pages": 1,
-      "error": null
+      "ok": false,
+      "http_status": null,
+      "parsed": 0,
+      "pages": 0,
+      "error": "FetchError: GET failed after retries: https://www.jske.org/: timed out"
     },
     "aps-cfp": {
       "enabled": false,
@@ -789,31 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 365,
-      "checked": 361,
-      "listed": 351,
-      "with_deadline": 351,
-      "not_listed": 2,
+      "target_count": 15,
+      "checked": 11,
+      "listed": 11,
+      "with_deadline": 11,
+      "not_listed": 0,
       "failed": 4,
       "rate_limited": 0,
-      "parse_errors": 8,
+      "parse_errors": 0,
       "forbidden": 0,
       "remaining": 4,
-      "metadata_updated": 219
+      "metadata_updated": 8
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-23T00:00:55.506119+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
