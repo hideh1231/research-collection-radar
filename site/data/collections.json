@@ -26738,7 +26738,9 @@
     "domains": [
       "psychology"
     ],
-    "topics": [],
+    "topics": [
+      "emotion"
+    ],
     "collection_type": "special_issue",
     "deadline": "2026-11-30",
     "deadline_status": "listed",
