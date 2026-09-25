@@ -1,14 +1,9 @@
 # Open calls
 
-Generated 2026-09-24. Sorted by deadline.
+Generated 2026-09-25. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-24 | Mechanisms of Auditory Development, Maintenance, Damage, and Protection – Volume II | Frontiers in Molecular Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/77879/mechanisms-of-auditory-development-maintenance-damage-and-protection---volume-ii |
-| 2026-09-24 | Microbial quorum sensing | Scientific Reports |  | Collection | https://nature.com/collections/acgbaibadj |
-| 2026-09-24 | Neuroinflammation Biomarkers After Brain Injury: Translating Molecular Signals into Personalized Rehabilitation | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/74308/neuroinflammation-biomarkers-after-brain-injury-translating-molecular-signals-into-personalized-rehabilitation |
-| 2026-09-24 | Pharmacogenomics | Scientific Reports |  | Collection | https://nature.com/collections/jjbhdfhcbi |
-| 2026-09-24 | Towards zero emissions aviation and maritime transport | Scientific Reports |  | Collection | https://nature.com/collections/gdgfeaehfe |
 | 2026-09-25 | AI in neuromodulation: recent advances | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/79016/ai-in-neuromodulation-recent-advances |
 | 2026-09-25 | Advancing the Recovery College Model: Emerging Evidence, Innovations, and Global Directions | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/78824/advancing-the-recovery-college-model-emerging-evidence-innovations-and-global-directions |
 | 2026-09-25 | Aging, Estrogen, Nutrition, and Neuroinflammation in Women’s Cognitive Decline and Neurodegeneration | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration |
@@ -915,6 +910,7 @@ Generated 2026-09-24. Sorted by deadline.
 | 2026-11-30 | Healthcare Text Analytics: Unlocking the Evidence from Free Text, Volume VI | Frontiers in Digital Health | HCI, Psychology | Research Topic | https://frontiersin.org/research-topics/79680/healthcare-text-analytics-unlocking-the-evidence-from-free-text-volume-vi |
 | 2026-11-30 | Human Factors in Digital Health Innovation for Underserved Communities | Frontiers in Digital Health | HCI, Psychology | Research Topic | https://frontiersin.org/research-topics/79684/human-factors-in-digital-health-innovation-for-underserved-communities |
 | 2026-11-30 | Humanoid Robots and Embodied Artificial Intelligence | Chinese Journal of Mechanical Engineering | Robotics | Special Issue | https://sciencedirect.com/special-issue/333846/humanoid-robots-and-embodied-artificial-intelligence |
+| 2026-11-30 | IJAE: Special Issue of Kansei Engineering and Emotion Research: Call for Extended Papers of KEER 2026 | International Journal of Affective Engineering | Psychology | Special Issue | https://jske.org/cfp/ijae-special-issue-of-kansei-engineering-and-emotion-research-call-for-extended-papers-of-keer-2026 |
 | 2026-11-30 | Immersive Sickness Prevention: Understanding, Predicting, and Mitigating Cybersickness in Extended Reality | Virtual Reality | HCI | Collection | https://link.springer.com/collections/bhajhjihgb |
 | 2026-11-30 | Immersive Technologies and Artificial Intelligence in the Treatment of Emotional Disorders | Frontiers in Computer Science | HCI, Psychology | Research Topic | https://frontiersin.org/research-topics/75709/immersive-technologies-and-artificial-intelligence-in-the-treatment-of-emotional-disorders |
 | 2026-11-30 | Individual variability in postural control and sensorimotor integration: mechanisms, adaptation, and applications | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/80700/individual-variability-in-postural-control-and-sensorimotor-integration-mechanisms-adaptation-and-applications |

@@ -1,131 +1,5 @@
 [
   {
-    "id": "frontiers-8e1b756431",
-    "title": "Mechanisms of Auditory Development, Maintenance, Damage, and Protection – Volume II",
-    "summary": "Building on the great success of the Research Topic \"Mechanisms of Auditory Development, Maintenance, Damage, and Protection\" the launch of this second volume aims at updating the readers on recent developments in the field of auditory development, maintenance, damage, and protection.",
-    "journal": "Frontiers in Molecular Neuroscience",
-    "journals": [
-      "Frontiers in Molecular Neuroscience",
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "auditory development",
-      "auditory plasticity",
-      "auditory damage",
-      "hearing protection",
-      "gene therapy",
-      "mechanisms",
-      "development",
-      "maintenance"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-09-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/77879/mechanisms-of-auditory-development-maintenance-damage-and-protection---volume-ii",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/77879",
-    "image_alt": "Mechanisms of Auditory Development, Maintenance, Damage, and Protection – Volume II",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-e8f99913ff",
-    "title": "Microbial quorum sensing",
-    "summary": "This collection invites submissions showcasing recent advances and deeper understanding in the field of microbial quorum sensing.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2026-09-24",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/acgbaibadj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/MQSE_1200x675-d7000d84519ac7677b64f0d714cff0cc.jpg",
-    "image_alt": "Microbial quorum sensing",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-57b192d62a",
-    "title": "Neuroinflammation Biomarkers After Brain Injury: Translating Molecular Signals into Personalized Rehabilitation",
-    "summary": "Neuroinflammation is a key secondary response following brain injury, shaping tissue damage, repair, and long-term functional outcomes through microglia- and astroglia-mediated neurodegeneration, neuroplasticity, and repair mechanisms. However, clinical translation to support objective diagnosis, improve clinicopathological correlation, and refine prognosis remains limited because (i) biomarker studies vary widely in sampling time, assays, and outcomes, and (ii) links between inflammatory signatures, neuroplasticity, and rehabilitation response are often indirect. This Research Topic will focus on brain injury as a high-impact condition in which rehabilitation is central and where inflammation-informed stratification could improve care.",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "neuroinflammation",
-      "neurodegeneration",
-      "neuroprotection",
-      "neuroplasticity",
-      "brain injury",
-      "biomarker",
-      "glia",
-      "neurorehabilitation"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-09-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/74308/neuroinflammation-biomarkers-after-brain-injury-translating-molecular-signals-into-personalized-rehabilitation",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/74308",
-    "image_alt": "Neuroinflammation Biomarkers After Brain Injury: Translating Molecular Signals into Personalized Rehabilitation",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-715c9e842c",
-    "title": "Pharmacogenomics",
-    "summary": "This Collection welcomes original research articles that study drug-host interactions and pathways affected, as well as the side-effects, dosing, and efficacy of pharmaceutical interventions in the context of genomics.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "Interventions",
-      "Genomics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-24",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jjbhdfhcbi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/_41598___Pharmacogenomics__Collection__Online-59f9c96f6344b334bab4ea9c433214ab.jpg",
-    "image_alt": "Pharmacogenomics",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-b726f40dbf",
-    "title": "Towards zero emissions aviation and maritime transport",
-    "summary": "This Scientific Reports Collection welcomes original research contributing towards cleaner aviation and maritime transport.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": "2026-09-24",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/gdgfeaehfe",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2160837153_CFP_eFlyer.jpg-298aef3f37e02b1cbd5d69542f08f23c.jpg",
-    "image_alt": "Towards zero emissions aviation and maritime transport",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-2b2b4403aa",
     "title": "AI in neuromodulation: recent advances",
     "summary": "Neuromodulation offers promising interventions for a variety of neurological and psychiatric disorders and helps us understand how the brain works. With the advent of artificial intelligence (AI), the landscape of neuromodulation is experiencing a paradigm shift. AI's capability to analyze vast datasets, discern patterns, and make predictive analyses offers remarkable potential in optimizing neuromodulatory therapies, personalizing treatment protocols, and understanding the complex neural mechanisms underlying brain function and dysfunction.",
@@ -26851,6 +26725,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "jske-cfp-88d4fc52bb",
+    "title": "IJAE: Special Issue of Kansei Engineering and Emotion Research: Call for Extended Papers of KEER 2026",
+    "summary": null,
+    "journal": "International Journal of Affective Engineering",
+    "journals": [
+      "International Journal of Affective Engineering"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-30",
+    "deadline_status": "listed",
+    "url": "https://jske.org/cfp/ijae-special-issue-of-kansei-engineering-and-emotion-research-call-for-extended-papers-of-keer-2026",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-24",
+    "publisher": "JSKE",
     "status": "open"
   },
   {
