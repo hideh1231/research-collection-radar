@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-23T23:41:42Z",
+  "checked_at": "2026-09-24T23:53:13Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 649,
+      "parsed": 650,
       "pages": 65,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 209,
+      "parsed": 210,
       "pages": 21,
       "error": null
     },
@@ -45,28 +45,28 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3364,
+      "parsed": 3367,
       "pages": 141,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 15,
-        "checked": 11,
-        "listed": 11,
-        "with_deadline": 11,
+        "target_count": 94,
+        "checked": 90,
+        "listed": 90,
+        "with_deadline": 90,
         "not_listed": 0,
         "failed": 4,
         "rate_limited": 0,
         "parse_errors": 0,
         "forbidden": 0,
         "remaining": 4,
-        "metadata_updated": 8
+        "metadata_updated": 38
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 379,
+      "parsed": 380,
       "pages": 16,
       "error": null
     },
@@ -98,7 +98,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1617,
+      "parsed": 1618,
       "pages": 68,
       "error": null
     },
@@ -114,7 +114,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 548,
+      "parsed": 549,
       "pages": 23,
       "error": null
     },
@@ -154,7 +154,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 148,
+      "parsed": 149,
       "pages": 7,
       "error": null
     },
@@ -162,7 +162,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 346,
+      "parsed": 348,
       "pages": 15,
       "error": null
     },
@@ -439,11 +439,11 @@
     },
     "jske-cfp": {
       "enabled": true,
-      "ok": false,
-      "http_status": null,
-      "parsed": 0,
-      "pages": 0,
-      "error": "FetchError: GET failed after retries: https://www.jske.org/: timed out"
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 1,
+      "error": null
     },
     "aps-cfp": {
       "enabled": false,
@@ -742,7 +742,7 @@
       "ok": true,
       "http_status": 200,
       "parsed": 86,
-      "pages": 6,
+      "pages": 7,
       "error": null
     },
     "cambridge-robotica-call-for-papers": {
@@ -789,17 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 15,
-      "checked": 11,
-      "listed": 11,
-      "with_deadline": 11,
+      "target_count": 94,
+      "checked": 90,
+      "listed": 90,
+      "with_deadline": 90,
       "not_listed": 0,
       "failed": 4,
       "rate_limited": 0,
       "parse_errors": 0,
       "forbidden": 0,
       "remaining": 4,
-      "metadata_updated": 8
+      "metadata_updated": 38
     }
   }
 }
