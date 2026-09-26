@@ -1,25 +1,9 @@
 # Open calls
 
-Generated 2026-09-25. Sorted by deadline.
+Generated 2026-09-26. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-25 | AI in neuromodulation: recent advances | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/79016/ai-in-neuromodulation-recent-advances |
-| 2026-09-25 | Advancing the Recovery College Model: Emerging Evidence, Innovations, and Global Directions | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/78824/advancing-the-recovery-college-model-emerging-evidence-innovations-and-global-directions |
-| 2026-09-25 | Aging, Estrogen, Nutrition, and Neuroinflammation in Women’s Cognitive Decline and Neurodegeneration | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration |
-| 2026-09-25 | Aquaporins and the glymphatic-neuroimmune axis in brain health and disease | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/75428/aquaporins-and-the-glymphatic-neuroimmune-axis-in-brain-health-and-disease |
-| 2026-09-25 | Biodegradation of plastics | Scientific Reports |  | Collection | https://nature.com/collections/eijefeafhg |
-| 2026-09-25 | Climate Change Anxiety Volume II | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/78978/climate-change-anxiety-volume-ii |
-| 2026-09-25 | From Alpha Rhythms to Clinical Tools: EEG's Journey in Alzheimer's Research | Frontiers in Aging Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/75389/from-alpha-rhythms-to-clinical-tools-eegs-journey-in-alzheimers-research |
-| 2026-09-25 | High-Dimensional Representations in Brain and Machine: Vector Symbolic Architectures for Neural Computation | Frontiers in Cognition | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/74388/high-dimensional-representations-in-brain-and-machine-vector-symbolic-architectures-for-neural-computation |
-| 2026-09-25 | Mangrove ecology and restoration | Scientific Reports |  | Collection | https://nature.com/collections/bhffjefgfb |
-| 2026-09-25 | Multisystem Consequences of Psychological and Physical Trauma: From PTSD to Neurobiological Mechanisms and Neurorehabilitation | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/78608/multisystem-consequences-of-psychological-and-physical-trauma-from-ptsd-to-neurobiological-mechanisms-and-neurorehabilitation |
-| 2026-09-25 | Rethinking neurodegeneration through multidomain neurorehabilitation and neurotechnologies | Frontiers in Behavioral Neuroscience | Neuroscience, Psychology, HRI, Robotics | Research Topic | https://frontiersin.org/research-topics/74225/rethinking-neurodegeneration-through-multidomain-neurorehabilitation-and-neurotechnologies |
-| 2026-09-25 | Reviews in Psychiatry 2026: Psychopharmacology | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/75761/reviews-in-psychiatry-2026-psychopharmacology |
-| 2026-09-25 | Suicide Prevention in a Globalized World: A Multidisciplinary Framework for Action | Frontiers in Public Health | Psychology | Research Topic | https://frontiersin.org/research-topics/75037/suicide-prevention-in-a-globalized-world-a-multidisciplinary-framework-for-action |
-| 2026-09-25 | Sustainable Space Robotics: Toward Self-Sustaining Off-Earth Systems | Frontiers in Robotics and AI | Robotics | Research Topic | https://frontiersin.org/research-topics/75746/sustainable-space-robotics-toward-self-sustaining-off-earth-systems |
-| 2026-09-25 | Technological advances in fisheries | Scientific Reports |  | Collection | https://nature.com/collections/ehfbgafbdd |
-| 2026-09-25 | Unraveling Neurodegeneration and Neuroinflammation: Translational Advances with MRI and PET Technologies | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/69273/unraveling-neurodegeneration-and-neuroinflammation-translational-advances-with-mri-and-pet-technologies |
 | 2026-09-26 | AI-based neurotechnologies | Scientific Reports | Neuroscience, Psychology | Collection | https://nature.com/collections/jcbhafgdgi |
 | 2026-09-26 | Consciousness Dilemma: Advancing Methods and Paradigms for Unveiling Consciousness and Its Altered States - Volume II | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/79149/consciousness-dilemma-advancing-methods-and-paradigms-for-unveiling-consciousness-and-its-altered-states---volume-ii |
 | 2026-09-26 | Exercise and Physiotherapy Strategies for Movement, Postural Control, and Balance in Parkinson’s Disease | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/74963/exercise-and-physiotherapy-strategies-for-movement-postural-control-and-balance-in-parkinsons-disease |
