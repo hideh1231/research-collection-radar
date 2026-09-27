@@ -1,94 +1,5 @@
 [
   {
-    "id": "nature-psychology-1081a1e205",
-    "title": "AI-based neurotechnologies",
-    "summary": "This Collection comprises original research articles focusing on brain-computer interfaces and imaging, machine learning, brain mapping, EEG analysis, non-invasive brain stimulation techniques, cognitive computing, neural data science, and computational modelling.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "AI",
-      "Brain",
-      "machine learning",
-      "cognitive",
-      "Learning",
-      "Computational",
-      "data",
-      "EEG"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/jcbhafgdgi",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Hero_image-628af8b4f8a239565da73c0f089a456d.jpg",
-    "image_alt": "AI-based neurotechnologies",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-74fc29e4d0",
-    "title": "Exercise and Physiotherapy Strategies for Movement, Postural Control, and Balance in Parkinson’s Disease",
-    "summary": "Parkinson’s disease (PD) is a progressive neurodegenerative disorder marked by motor symptoms including bradykinesia, rigidity, tremor, and postural instability, all of which severely impact gait, mobility, and balance, leading to an increased risk of falls and a reduced quality of life. As one of the most prevalent and fastest-growing neurological conditions worldwide, PD imposes substantial challenges not only on individuals but also on healthcare systems and caregivers across different regions and socioeconomic contexts. Although pharmacological interventions have traditionally been central to symptom management, exercise and physiotherapy have become vital components of comprehensive care. Recent advancements in therapeutic exercise modalities and physiotherapeutic strategies demonstrate potential benefits in improving movement quality, postural control, and balance in individuals with PD. Yet, the diversity of approaches and inconsistent clinical results highlight a pressing need ",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "exercise",
-      "physiotherapy. movement",
-      "balance",
-      "postural control",
-      "gait",
-      "falls",
-      "Parkinson's Disease",
-      "clinical"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-09-26",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/74963/exercise-and-physiotherapy-strategies-for-movement-postural-control-and-balance-in-parkinsons-disease",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/74963",
-    "image_alt": "Exercise and Physiotherapy Strategies for Movement, Postural Control, and Balance in Parkinson’s Disease",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-81ead165ea",
-    "title": "Sexual orientation and gender identity in vulnerable populations",
-    "summary": "This Collection welcomes original research articles on sexual orientation and gender identity in vulnerable populations.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "gender",
-      "Identity",
-      "vulnerable populations"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-09-26",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hciahfihjd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Sexual_orientation_gender-f7e6aca2b1c2b6fb16c6653b27eb79f4.jpg",
-    "image_alt": "Sexual orientation and gender identity in vulnerable populations",
-    "first_seen": "2026-08-26",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-00f44bfa9f",
     "title": "30 Years of Hypocretin/Orexin Research: Sleep–Wake Regulation, Reward, and Motivation",
     "summary": "The orexin/hypocretin system, first identified in 1998, is now recognized as a central regulator of energy balance, sleep–wake states, and arousal stability. Orexin-producing neurons in the lateral hypothalamus integrate circadian, metabolic, and environmental signals to promote wakefulness and stabilize sleep–wake transitions. Beyond arousal regulation, orexin signaling plays a key role in hedonic and motivational processes, as these neurons densely innervate limbic and reward-related brain regions. Disruption of this system has been implicated in sleep disorders, including narcolepsy type 1, insomnia, and hypersomnia, as well as substance use disorders. Emerging evidence further links orexin dysfunction to neurodevelopmental, neurodegenerative, and psychiatric conditions.",
@@ -16179,6 +16090,29 @@
     "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-2236628630-web-9864b8453e26492797cf05032f476eef.jpg",
     "image_alt": "Lightweight machine learning models and edge computing applications",
     "first_seen": "2026-08-27",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-humanities-social-sciences-communications-1ca80aa71b",
+    "title": "Making and using evidence",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "collection",
+    "deadline": "2026-10-31",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ajechiaggg/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
     "publisher": "Nature Portfolio",
     "status": "open"
   },
@@ -84905,28 +84839,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "APA",
-    "status": "open"
-  },
-  {
-    "id": "nature-human-behaviour-3f53a8aa65",
-    "title": "Menstruation Matters",
-    "summary": null,
-    "journal": "Nature Human Behaviour",
-    "journals": [
-      "Nature Human Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://nature.com/collections/dfecidfcac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/NHB-Hero-NOV24-794d972d03b5dce5aef878ba8198d805.jpg",
-    "image_alt": "Menstruation Matters",
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {

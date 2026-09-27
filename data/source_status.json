@@ -801,5 +801,19 @@
       "remaining": 17,
       "metadata_updated": 234
     }
+  },
+  "collection_deadline_checks": {
+    "checked_at": "2026-09-27T00:02:44.687313+00:00",
+    "attempted": 20,
+    "checked": 19,
+    "updated": 2,
+    "listed": 1,
+    "not_listed": 18,
+    "closed": 0,
+    "unknown": 17,
+    "errors": {
+      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
+    },
+    "remaining": 1
   }
 }

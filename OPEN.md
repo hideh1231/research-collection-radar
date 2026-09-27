@@ -1,12 +1,9 @@
 # Open calls
 
-Generated 2026-09-26. Sorted by deadline.
+Generated 2026-09-27. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-26 | AI-based neurotechnologies | Scientific Reports | Neuroscience, Psychology | Collection | https://nature.com/collections/jcbhafgdgi |
-| 2026-09-26 | Exercise and Physiotherapy Strategies for Movement, Postural Control, and Balance in Parkinson’s Disease | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/74963/exercise-and-physiotherapy-strategies-for-movement-postural-control-and-balance-in-parkinsons-disease |
-| 2026-09-26 | Sexual orientation and gender identity in vulnerable populations | Scientific Reports | Psychology | Collection | https://nature.com/collections/hciahfihjd |
 | 2026-09-27 | 30 Years of Hypocretin/Orexin Research: Sleep–Wake Regulation, Reward, and Motivation | Frontiers in Neuroscience | Psychology, Neuroscience | Research Topic | https://frontiersin.org/research-topics/78791/30-years-of-hypocretinorexin-research-sleep-wake-regulation-reward-and-motivation |
 | 2026-09-27 | Advanced neuroimaging techniques in stroke management | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/78148/advanced-neuroimaging-techniques-in-stroke-management |
 | 2026-09-27 | Assistive technology as a catalyst for development, employment, entrepreneurship, and inclusive growth in Africa | Disability and Rehabilitation: Assistive Technology |  | Special Issue | https://think.taylorandfrancis.com/special_issues/assistive-technology-as-a-catalyst-for-development-employment-entrepreneurship-and-inclusive-growth-in-africa |
@@ -544,6 +541,7 @@ Generated 2026-09-26. Sorted by deadline.
 | 2026-10-31 | Intraspecific Trait Variation and Phenotypic Plasticity Across Environmental Gradients | Frontiers in Ecology and Evolution | Psychology | Research Topic | https://frontiersin.org/research-topics/79055/intraspecific-trait-variation-and-phenotypic-plasticity-across-environmental-gradients |
 | 2026-10-31 | Investigating Molecular Mechanisms and Therapeutic Strategies in Tuberculous Meningitis | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/75841/investigating-molecular-mechanisms-and-therapeutic-strategies-in-tuberculous-meningitis |
 | 2026-10-31 | Lightweight machine learning models and edge computing applications | Nature Communications |  | Collection | https://nature.com/collections/cacgejbbjb |
+| 2026-10-31 | Making and using evidence | Humanities and Social Sciences Communications | HCI, Psychology | Collection | https://nature.com/collections/ajechiaggg/how-to-submit |
 | 2026-10-31 | Mapping Network Disruption in FTD: From Advanced Connectomics to Translational Biomarkers | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/73701/mapping-network-disruption-in-ftd-from-advanced-connectomics-to-translational-biomarkers |
 | 2026-10-31 | Marine viruses | Scientific Reports |  | Collection | https://nature.com/collections/dhbddafgei |
 | 2026-10-31 | Multiscale Engineering and Optimization of Mechanical Metamaterials for Structural Applications | Nature Communications |  | Collection | https://nature.com/collections/fddgdhhebd |
