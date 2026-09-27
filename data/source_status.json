@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-25T23:57:06Z",
+  "checked_at": "2026-09-26T23:37:52Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 649,
+      "parsed": 647,
       "pages": 65,
       "error": null
     },
@@ -49,17 +49,17 @@
       "pages": 141,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 25,
-        "checked": 21,
-        "listed": 21,
-        "with_deadline": 21,
+        "target_count": 397,
+        "checked": 393,
+        "listed": 360,
+        "with_deadline": 360,
         "not_listed": 0,
         "failed": 4,
         "rate_limited": 0,
-        "parse_errors": 0,
+        "parse_errors": 33,
         "forbidden": 0,
-        "remaining": 4,
-        "metadata_updated": 13
+        "remaining": 17,
+        "metadata_updated": 234
       }
     },
     "frontiers-robotics-ai": {
@@ -789,31 +789,17 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 25,
-      "checked": 21,
-      "listed": 21,
-      "with_deadline": 21,
+      "target_count": 397,
+      "checked": 393,
+      "listed": 360,
+      "with_deadline": 360,
       "not_listed": 0,
       "failed": 4,
       "rate_limited": 0,
-      "parse_errors": 0,
+      "parse_errors": 33,
       "forbidden": 0,
-      "remaining": 4,
-      "metadata_updated": 13
+      "remaining": 17,
+      "metadata_updated": 234
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-26T00:15:59.298305+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
