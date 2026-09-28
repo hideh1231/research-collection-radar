@@ -1,14 +1,9 @@
 # Open calls
 
-Generated 2026-09-27. Sorted by deadline.
+Generated 2026-09-28. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-09-27 | 30 Years of Hypocretin/Orexin Research: Sleep–Wake Regulation, Reward, and Motivation | Frontiers in Neuroscience | Psychology, Neuroscience | Research Topic | https://frontiersin.org/research-topics/78791/30-years-of-hypocretinorexin-research-sleep-wake-regulation-reward-and-motivation |
-| 2026-09-27 | Advanced neuroimaging techniques in stroke management | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/78148/advanced-neuroimaging-techniques-in-stroke-management |
-| 2026-09-27 | Hard- and software concepts for unconventional computing applications | Scientific Reports |  | Collection | https://nature.com/collections/abfehhihdf |
-| 2026-09-27 | Integrative Physiology of Stress, Anxiety and Fear Memory: Intersections with Exercise, Metabolic Health, and Aging | Frontiers in Physiology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/76863/integrative-physiology-of-stress-anxiety-and-fear-memory-intersections-with-exercise-metabolic-health-and-aging |
-| 2026-09-27 | Sensor technology for BCIs | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/79113/sensor-technology-for-bcis |
 | 2026-09-28 | Academic Stress and Mental Health in Higher Education: Integrative Approaches from Neurobiology to Institutional Contexts | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/73161/academic-stress-and-mental-health-in-higher-education-integrative-approaches-from-neurobiology-to-institutional-contexts |
 | 2026-09-28 | Applied Artificial Intelligence in Education: Generative Tools, Learning Analytics, Assessment, and Governance | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/79277/applied-artificial-intelligence-in-education-generative-tools-learning-analytics-assessment-and-governance |
 | 2026-09-28 | Gut-Brain Axis in Health and Disease: Dietary Modulation, Metabolic Disorders, Neuroinflammation, and Tumors | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/77976/gut-brain-axis-in-health-and-disease-dietary-modulation-metabolic-disorders-neuroinflammation-and-tumors |
