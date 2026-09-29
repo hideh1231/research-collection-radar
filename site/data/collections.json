@@ -3579,34 +3579,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-8b0023c204",
-    "title": "Selected papers from the 34th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN 2026)",
-    "summary": null,
-    "journal": "Neurocomputing",
-    "journals": [
-      "Neurocomputing"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Learning",
-      "Computational",
-      "machine learning",
-      "Neural networks",
-      "artificial neural networks"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-09-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/334012/selected-papers-from-the-34th-european-symposium-on-artificial-neural-networks-computational-intelligence-and-machine-learning-esann-2026",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-28",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-a7517707b9",
     "title": "Sex differences in addiction and stress-related disorders - Integrating preclinical, translational, and clinical studies",
     "summary": "The pronounced and clinically significant sex and gender differences in addiction and stress-related disorders represent one of the most critical themes in neuropsychiatry. The exploration of sex differences in these disorders is a rapidly evolving field that underscores the need to understand the distinct biological and psychological responses exhibited by males and females. Research indicates that genetic, environmental, and neurobiological factors significantly shape these differences, yet the precise mechanisms remain underexplored. While numerous studies have illuminated various aspects of these conditions, there is a critical need for comprehensive approaches that integrate findings across different research methodologies and biological scales.",
@@ -7953,6 +7925,34 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-8b0023c204",
+    "title": "Selected papers from the 34th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN 2026)",
+    "summary": null,
+    "journal": "Neurocomputing",
+    "journals": [
+      "Neurocomputing"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Learning",
+      "Computational",
+      "machine learning",
+      "Neural networks",
+      "artificial neural networks"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-13",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334012/selected-papers-from-the-34th-european-symposium-on-artificial-neural-networks-computational-intelligence-and-machine-learning-esann-2026",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-28",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-8b7e2c209d",
     "title": "Towards Reflexive and Context-Sensitive Research in Personality and Social Psychology",
     "summary": "Personality and social psychology is a dynamic field dedicated to understanding how individual differences and social environments shape human experience and behaviour. At its core, the field explains how traits, motivations, emotions, and regulatory processes relate to attitudes, culture, relationships, and group dynamics to influence cognitive, affective, and behavioural outcomes. Recent advances in measurement, cross-cultural research, genetics, neuroscience, and computational methods have extended classical debates on personality development, attitude change, prejudice, and relationships. However, key challenges remain: ensuring robust and context-sensitive constructs, addressing sampling and generalisability biases (particularly beyond WEIRD populations), and integrating theory with methodological innovation. These challenges also require explicit reflection on researcher’s positionality and bias, and greater sensitivity to the needs, perspectives, and rights of research end-users",
@@ -9312,6 +9312,34 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-91e96c3959",
+    "title": "Translational approach to understanding cross-cultural differences in socio-cognitive development",
+    "summary": null,
+    "journal": "Translational Issues in Psychological Science ®",
+    "journals": [
+      "Translational Issues in Psychological Science ®"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "development",
+      "cognitive",
+      "Cognitive development",
+      "cross-cultural",
+      "translational"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-10-15",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/tps/cross-cultural-socio-cognitive-development",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "APA",
     "status": "open"
   },
   {
@@ -39104,30 +39132,6 @@
     "image_alt": "NeuroAI and Embodied Intelligence",
     "first_seen": "2026-08-26",
     "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "sciencedirect-cfp-496a48d0e0",
-    "title": "Neuroimaging in Africa: Progress, Priorities, and Possibilities",
-    "summary": null,
-    "journal": "NeuroImage",
-    "journals": [
-      "NeuroImage"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Neuroimaging"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-12-31",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/333040/neuroimaging-in-africa-progress-priorities-and-possibilities",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -78620,6 +78624,30 @@
     "image_alt": null,
     "first_seen": "2026-09-12",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-496a48d0e0",
+    "title": "Neuroimaging in Africa: Progress, Priorities, and Possibilities",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Neuroimaging"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-07-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333040/neuroimaging-in-africa-progress-priorities-and-possibilities",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
