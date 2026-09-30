@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-29T01:29:02Z",
+  "checked_at": "2026-09-30T00:26:56Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 651,
+      "parsed": 649,
       "pages": 66,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 211,
+      "parsed": 212,
       "pages": 22,
       "error": null
     },
@@ -45,21 +45,21 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3376,
+      "parsed": 3384,
       "pages": 141,
       "error": null,
       "deadline_enrichment": {
         "target_count": 400,
-        "checked": 396,
-        "listed": 374,
-        "with_deadline": 374,
-        "not_listed": 2,
-        "failed": 4,
+        "checked": 393,
+        "listed": 371,
+        "with_deadline": 371,
+        "not_listed": 0,
+        "failed": 7,
         "rate_limited": 0,
-        "parse_errors": 20,
+        "parse_errors": 22,
         "forbidden": 0,
-        "remaining": 391,
-        "metadata_updated": 247
+        "remaining": 377,
+        "metadata_updated": 233
       }
     },
     "frontiers-robotics-ai": {
@@ -82,7 +82,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1911,
+      "parsed": 1917,
       "pages": 80,
       "error": null
     },
@@ -90,7 +90,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2190,
+      "parsed": 2191,
       "pages": 92,
       "error": null
     },
@@ -98,7 +98,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1621,
+      "parsed": 1623,
       "pages": 68,
       "error": null
     },
@@ -162,7 +162,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 348,
+      "parsed": 349,
       "pages": 15,
       "error": null
     },
@@ -186,7 +186,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 32,
+      "parsed": 33,
       "pages": 2,
       "error": null
     },
@@ -194,7 +194,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 844,
+      "parsed": 847,
       "pages": 36,
       "error": null
     },
@@ -202,20 +202,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 916,
+      "parsed": 918,
       "pages": 39,
       "error": null
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2820,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/sciencedirect-cfp.html",
-      "dropped_unclassified": 2764,
-      "skipped_closed": 8
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -395,13 +389,8 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 48,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 14
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -498,12 +487,8 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 1,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/josa-a-features.html"
+      "skipped": "disabled",
+      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
     },
     "wiley-bjp": {
       "enabled": false,
@@ -756,7 +741,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 85,
+      "parsed": 84,
       "pages": 7,
       "error": null
     },
@@ -805,30 +790,16 @@
     "publisher": "Frontiers",
     "deadline_enrichment": {
       "target_count": 400,
-      "checked": 396,
-      "listed": 374,
-      "with_deadline": 374,
-      "not_listed": 2,
-      "failed": 4,
+      "checked": 393,
+      "listed": 371,
+      "with_deadline": 371,
+      "not_listed": 0,
+      "failed": 7,
       "rate_limited": 0,
-      "parse_errors": 20,
+      "parse_errors": 22,
       "forbidden": 0,
-      "remaining": 391,
-      "metadata_updated": 247
+      "remaining": 377,
+      "metadata_updated": 233
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-09-29T01:27:47.039025+00:00",
-    "attempted": 1,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
