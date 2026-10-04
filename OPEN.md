@@ -1,10 +1,9 @@
 # Open calls
 
-Generated 2026-10-03. Sorted by deadline.
+Generated 2026-10-04. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-03 | Reviews in Evolutionary Systems Biology | Frontiers in Systems Biology | Psychology | Research Topic | https://frontiersin.org/research-topics/75516/reviews-in-evolutionary-systems-biology |
 | 2026-10-04 | Advances in Neuromorphic Systems and Hardware: Circuits, Architectures, and Brain-Inspired Computation | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/77146/advances-in-neuromorphic-systems-and-hardware-circuits-architectures-and-brain-inspired-computation |
 | 2026-10-04 | Navigating Emotions at Work: Behavioral Consequences of Positivity and Negativity - Vol 2 | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/79494/navigating-emotions-at-work-behavioral-consequences-of-positivity-and-negativity---vol-2 |
 | 2026-10-04 | Synergistic Adaptation of Wetland Communities under Multiple Stressors | Frontiers in Ecology and Evolution | Psychology | Research Topic | https://frontiersin.org/research-topics/78313/synergistic-adaptation-of-wetland-communities-under-multiple-stressors |

@@ -1,37 +1,5 @@
 [
   {
-    "id": "frontiers-c5f960e26b",
-    "title": "Reviews in Evolutionary Systems Biology",
-    "summary": "The field of Evolutionary Systems Biology stands at the intersection of evolutionary theory and systems-based analyses, offering powerful new perspectives for understanding the dynamic complexity of biological systems. By integrating high-dimensional data, computational models, and evolutionary frameworks, researchers have begun to reveal how interactions at the molecular, cellular, individual, and ecological levels shape patterns of adaptation and biodiversity. Despite remarkable advances, key challenges persist in drawing equivalencies between micro- and macro-evolutionary processes, unraveling the genetic basis of complex traits, and predicting organismal and ecosystem responses to rapid environmental change. A growing body of studies now employs systems biology not only to map genetic networks and evolutionary pathways but also to tackle critical issues such as climate change impacts, robustness and epistasis, and the mathematical properties of phylogenetic trees.",
-    "journal": "Frontiers in Systems Biology",
-    "journals": [
-      "Frontiers in Systems Biology",
-      "Frontiers in Ecology and Evolution"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Evolutionary systems biology",
-      "phylogenomics",
-      "network robustness",
-      "epistasis",
-      "pleiotropy",
-      "comparative phylogenetics",
-      "climate change adaptation",
-      "machine learning in genomics"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-03",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/75516/reviews-in-evolutionary-systems-biology",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/75516",
-    "image_alt": "Reviews in Evolutionary Systems Biology",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-6cfbf589a3",
     "title": "Advances in Neuromorphic Systems and Hardware: Circuits, Architectures, and Brain-Inspired Computation",
     "summary": "Recent advances in materials, devices, and system architectures are driving a new generation of computing beyond traditional CMOS, with neuromorphic engineering emerging as a pivotal field. The growing demand for energy-efficient, scalable, and application-tailored neural computation - in AI, biomedical signal processing, autonomous systems, and edge computing - motivates research into hardware that implements biologically inspired and event-driven information processing principles. Neuromorphic systems, devices, and architectures are enabling more robust, efficient, and brain-like computation, highlighting the need for interdisciplinary study and innovative engineering approaches.",
@@ -84529,28 +84497,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "APA",
-    "status": "open"
-  },
-  {
-    "id": "nature-human-behaviour-3f53a8aa65",
-    "title": "Menstruation Matters",
-    "summary": null,
-    "journal": "Nature Human Behaviour",
-    "journals": [
-      "Nature Human Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://nature.com/collections/dfecidfcac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/NHB-Hero-NOV24-794d972d03b5dce5aef878ba8198d805.jpg",
-    "image_alt": "Menstruation Matters",
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
