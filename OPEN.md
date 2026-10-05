@@ -1,11 +1,9 @@
 # Open calls
 
-Generated 2026-10-04. Sorted by deadline.
+Generated 2026-10-05. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-04 | Advances in Neuromorphic Systems and Hardware: Circuits, Architectures, and Brain-Inspired Computation | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/77146/advances-in-neuromorphic-systems-and-hardware-circuits-architectures-and-brain-inspired-computation |
-| 2026-10-04 | Synergistic Adaptation of Wetland Communities under Multiple Stressors | Frontiers in Ecology and Evolution | Psychology | Research Topic | https://frontiersin.org/research-topics/78313/synergistic-adaptation-of-wetland-communities-under-multiple-stressors |
 | 2026-10-05 | AI-Driven Operations in Communication Networks | Frontiers in Computer Science | HCI | Research Topic | https://frontiersin.org/research-topics/76813/ai-driven-operations-in-communication-networks |
 | 2026-10-05 | Aging and Work - Volume 2 | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/74731/aging-and-work---volume-2 |
 | 2026-10-05 | Child and adolescent psychotraumatology: New developments in assessment, resilience, and recovery following traumatic stress | Traumatology |  | Special Issue | https://apa.org/pubs/journals/trm/child-adolescent-psychotraumatology |
