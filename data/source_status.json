@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T23:46:29Z",
+  "checked_at": "2026-10-04T23:57:21Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -50,16 +50,16 @@
       "error": null,
       "deadline_enrichment": {
         "target_count": 400,
-        "checked": 389,
-        "listed": 349,
-        "with_deadline": 349,
+        "checked": 320,
+        "listed": 292,
+        "with_deadline": 292,
         "not_listed": 0,
-        "failed": 7,
+        "failed": 9,
         "rate_limited": 0,
-        "parse_errors": 40,
+        "parse_errors": 28,
         "forbidden": 0,
-        "remaining": 108,
-        "metadata_updated": 231,
+        "remaining": 183,
+        "metadata_updated": 192,
         "stop_reason": "consecutive_failures"
       }
     },
@@ -791,31 +791,17 @@
     "publisher": "Frontiers",
     "deadline_enrichment": {
       "target_count": 400,
-      "checked": 389,
-      "listed": 349,
-      "with_deadline": 349,
+      "checked": 320,
+      "listed": 292,
+      "with_deadline": 292,
       "not_listed": 0,
-      "failed": 7,
+      "failed": 9,
       "rate_limited": 0,
-      "parse_errors": 40,
+      "parse_errors": 28,
       "forbidden": 0,
-      "remaining": 108,
-      "metadata_updated": 231,
+      "remaining": 183,
+      "metadata_updated": 192,
       "stop_reason": "consecutive_failures"
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-04T00:12:19.402950+00:00",
-    "attempted": 19,
-    "checked": 18,
-    "updated": 1,
-    "listed": 0,
-    "not_listed": 18,
-    "closed": 0,
-    "unknown": 17,
-    "errors": {
-      "nature-humanities-social-sciences-communications-a56354dba9": "http 404"
-    },
-    "remaining": 1
   }
 }
