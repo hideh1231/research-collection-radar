@@ -12932,31 +12932,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-be74efc59f",
-    "title": "Automated behavioral monitoring and testing systems in animal research: Potentials and Pitfalls",
-    "summary": null,
-    "journal": "Behavioural Brain Research",
-    "journals": [
-      "Behavioural Brain Research"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "monitoring"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-01",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/335570/automated-behavioral-monitoring-and-testing-systems-in-animal-research-potentials-and-pitfalls",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-1db5e63e12",
     "title": "Bacteriophage-Driven Evolution and Genome Dynamics in Environmental and Animal-Associated Microbiomes",
     "summary": "Bacteriophage research occupies a key position in the interconnected fields of microbial ecology, evolutionary biology, and genetics. Bacteriophages -viruses infecting bacteria, are now recognized not only as abundant predators in microbial food webs but also as powerful agents of genetic change. Recent studies have demonstrated that phages directly influence the genetic composition, adaptive capacity, and ecological roles of bacterial communities both in natural ecosystems and within animal hosts. High-throughput sequencing, comparative genomics, and metagenomic analyses have exposed the intricate and reciprocal impacts of phage infection, gene transfer, and co-evolution on bacterial diversity and function. Despite these advances, critical gaps persist: we still lack a comprehensive understanding of the mechanisms by which phages modulate bacterial genomes and shape community resilience, how these dynamics manifest differently in environmental settings versus host-associated microbiom",
@@ -64530,6 +64505,31 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-be74efc59f",
+    "title": "Automated behavioral monitoring and testing systems in animal research: Potentials and Pitfalls",
+    "summary": null,
+    "journal": "Behavioural Brain Research",
+    "journals": [
+      "Behavioural Brain Research"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "monitoring"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-03-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335570/automated-behavioral-monitoring-and-testing-systems-in-animal-research-potentials-and-pitfalls",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-fcbcf8392d",
     "title": "Big Cats in a Changing World: Ecology, Conservation, and Coexistence",
     "summary": "Big Cats are among the most charismatic, and most endangered, mammal groups on Earth. As top predators and keystone species, they act as natural coordinators of the ecological connections within their ecosystems. Their obligate carnivory and large body size make coexistence with people difficult, and human activity has reduced their numbers for centuries, a decline that has greatly accelerated during the Anthropocene. Their unique position means that their decline rarely happens in ecological isolation. The irony is sharp: we are the single greatest cause of their decline, yet we prize them culturally, economically, and politically. That regard has fueled a level of public and scientific interest in Big Cat conservation that few other endangered mammals enjoy. Alongside it sits a genuine scientific question: how does Big Cat biology itself shift under intense, often harmful, human pressure?",
@@ -78731,6 +78731,30 @@
     "status": "open"
   },
   {
+    "id": "apa-cfp-a5dece3d40",
+    "title": "Facilitating emotion change: What are therapists doing?",
+    "summary": null,
+    "journal": "Journal of Psychotherapy Integration",
+    "journals": [
+      "Journal of Psychotherapy Integration"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-07-15",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/int/facilitating-emotion-change",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-06",
+    "publisher": "APA",
+    "status": "open"
+  },
+  {
     "id": "apa-cfp-447e9dc0ce",
     "title": "Popular media, ethnic/racial stereotypes, identity, and intergroup relations",
     "summary": null,
@@ -79262,6 +79286,31 @@
     "image_alt": null,
     "first_seen": "2026-09-22",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-56bee83b4b",
+    "title": "Suicide and self-harm",
+    "summary": null,
+    "journal": "Psychology of Violence",
+    "journals": [
+      "Psychology of Violence"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "suicide",
+      "self-harm"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-09-30",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/vio/suicide-self-harm",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-06",
+    "publisher": "APA",
     "status": "open"
   },
   {
