@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T01:00:04Z",
+  "checked_at": "2026-10-08T07:47:32Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -45,81 +45,80 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3399,
+      "parsed": 3397,
       "pages": 142,
       "error": null,
       "deadline_enrichment": {
-        "target_count": 601,
-        "attempted": 601,
+        "checked_at": "2026-10-08T08:07:58Z",
+        "target_count": 9,
+        "attempted": 9,
         "unavailable": 9,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:11Z"
+            "checked_at": "2026-10-08T08:07:59Z"
           },
           "frontiers-25cdcb330a": {
             "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:13Z"
+            "checked_at": "2026-10-08T08:08:00Z"
           },
           "frontiers-26749dbc9f": {
             "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:14Z"
+            "checked_at": "2026-10-08T08:08:01Z"
           },
           "frontiers-3da580dc8f": {
             "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:15Z"
+            "checked_at": "2026-10-08T08:08:02Z"
           },
           "frontiers-7844762ae0": {
             "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:17Z"
+            "checked_at": "2026-10-08T08:08:03Z"
           },
           "frontiers-98eb7c82b6": {
             "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:15:18Z"
+            "checked_at": "2026-10-08T08:08:04Z"
           },
           "frontiers-ed8601a844": {
             "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:27:27Z"
+            "checked_at": "2026-10-08T08:08:05Z"
           },
           "frontiers-f1ead1ca94": {
             "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:28:12Z"
+            "checked_at": "2026-10-08T08:08:06Z"
           },
           "frontiers-f903b1c68e": {
             "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-08T07:31:32Z"
+            "checked_at": "2026-10-08T08:08:07Z"
           }
         },
-        "checked": 592,
-        "listed": 488,
-        "with_deadline": 488,
-        "not_listed": 74,
+        "checked": 0,
+        "listed": 0,
+        "with_deadline": 0,
+        "not_listed": 0,
         "failed": 9,
         "rate_limited": 0,
-        "parse_errors": 30,
+        "parse_errors": 0,
         "forbidden": 0,
         "remaining": 9,
-        "metadata_updated": 340,
-        "checked_at": "2026-10-08T07:15:11Z",
-        "completed_at": "2026-10-08T07:43:36Z"
+        "metadata_updated": 0
       }
     },
     "frontiers-robotics-ai": {
@@ -849,98 +848,76 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "target_count": 601,
-      "attempted": 601,
+      "checked_at": "2026-10-08T08:07:58Z",
+      "target_count": 9,
+      "attempted": 9,
       "unavailable": 9,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:11Z"
+          "checked_at": "2026-10-08T08:07:59Z"
         },
         "frontiers-25cdcb330a": {
           "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:13Z"
+          "checked_at": "2026-10-08T08:08:00Z"
         },
         "frontiers-26749dbc9f": {
           "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:14Z"
+          "checked_at": "2026-10-08T08:08:01Z"
         },
         "frontiers-3da580dc8f": {
           "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:15Z"
+          "checked_at": "2026-10-08T08:08:02Z"
         },
         "frontiers-7844762ae0": {
           "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:17Z"
+          "checked_at": "2026-10-08T08:08:03Z"
         },
         "frontiers-98eb7c82b6": {
           "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:15:18Z"
+          "checked_at": "2026-10-08T08:08:04Z"
         },
         "frontiers-ed8601a844": {
           "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:27:27Z"
+          "checked_at": "2026-10-08T08:08:05Z"
         },
         "frontiers-f1ead1ca94": {
           "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:28:12Z"
+          "checked_at": "2026-10-08T08:08:06Z"
         },
         "frontiers-f903b1c68e": {
           "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-08T07:31:32Z"
+          "checked_at": "2026-10-08T08:08:07Z"
         }
       },
-      "checked": 592,
-      "listed": 488,
-      "with_deadline": 488,
-      "not_listed": 74,
+      "checked": 0,
+      "listed": 0,
+      "with_deadline": 0,
+      "not_listed": 0,
       "failed": 9,
       "rate_limited": 0,
-      "parse_errors": 30,
+      "parse_errors": 0,
       "forbidden": 0,
       "remaining": 9,
-      "metadata_updated": 340,
-      "checked_at": "2026-10-08T07:15:11Z",
-      "completed_at": "2026-10-08T07:43:36Z"
-    }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-08T07:30:00.684410+00:00",
-    "attempted": 1,
-    "checked": 1,
-    "updated": 1,
-    "listed": 0,
-    "not_listed": 1,
-    "closed": 0,
-    "unknown": 1,
-    "errors": {},
-    "source_keys": [
-      "nature-humanities-social-sciences-communications"
-    ],
-    "remaining": 0,
-    "evidence": {
-      "method": "browser_snapshot",
-      "url": "https://www.nature.com/collections/cedideagbe",
-      "sha256": "1bf97fd347b39a014f02213d40a6290e30f91511409bf45707d77a1fb8a94946",
-      "github_actions_run": "https://github.com/hideh1231/research-collection-radar/actions/runs/37743690230"
+      "metadata_updated": 0
     }
   }
 }
