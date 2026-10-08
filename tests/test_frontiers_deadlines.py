@@ -518,3 +518,52 @@ def test_checkpoint_occurs_once_at_exact_25_boundary() -> None:
     assert stats["checked"] == 25
     assert stats["remaining"] == 0
     assert len(checkpoints) == 1
+
+
+@pytest.mark.parametrize("status", [404, 410])
+def test_missing_topics_do_not_stop_following_checks_or_erase_known_dates(status):
+    from copy import deepcopy
+    rows = [_row(i, "listed", "2026-08-01T00:00:00Z") for i in range(1, 7)]
+    for item in rows:
+        item["metadata_checked_at"] = "2026-08-01T00:00:00Z"
+    original = deepcopy(rows[:5])
+    html = '<link rel="canonical" href="https://frontiersin.org/research-topics/6/topic-6">' \
+           '<p>Manuscript Submission Deadline 21 April 2027</p>'
+    checkpoints = []
+    stats = enrich_deadlines(_FakeFetcher([(status, "")] * 5 + [(200, html)]), rows,
+                             _enrichment_source(6), now=datetime(2026, 10, 8, tzinfo=UTC),
+                             checkpoint=checkpoints.append)
+    assert stats["attempted"] == 6 and stats["checked"] == 1
+    assert stats["unavailable"] == 5 and stats["remaining"] == 5
+    assert "stop_reason" not in stats
+    assert rows[:5] == original
+    assert stats["errors"][rows[0]["id"]]["http_status"] == status
+    assert checkpoints[-1]["errors"] == stats["errors"]
+
+
+def test_failed_topic_retries_follow_untouched_work_and_clear_on_success():
+    rows = [_row(1), _row(2)]
+    error = {rows[0]["id"]: {"url": rows[0]["url"], "http_status": 404,
+                             "error": "http 404", "checked_at": "2026-10-07T00:00:00Z"}}
+    html = '<link rel="canonical" href="https://frontiersin.org/research-topics/2/topic-2">'
+    stats = enrich_deadlines(_FakeFetcher([(200, html)]), rows, _enrichment_source(1), prior_errors=error)
+    assert rows[1]["deadline_status"] == "not_listed"
+    assert rows[0]["deadline_status"] == "not_checked"
+    assert stats["errors"] == error
+    html = '<link rel="canonical" href="https://frontiersin.org/research-topics/1/topic-1">'
+    stats = enrich_deadlines(_FakeFetcher([(200, html)]), rows, _enrichment_source(1), prior_errors=stats["errors"])
+    assert stats["errors"] == {} and stats["remaining"] == 0
+
+
+def test_transport_errors_are_recorded_and_preserve_records():
+    from copy import deepcopy
+    item = _row(1)
+    before = deepcopy(item)
+    class BrokenFetcher:
+        def get_html(self, *args, **kwargs):
+            raise TimeoutError("connection timed out")
+    checkpoints = []
+    stats = enrich_deadlines(BrokenFetcher(), [item], SOURCE, checkpoint=checkpoints.append)
+    assert item == before and stats["remaining"] == 1
+    assert stats["errors"][item["id"]]["error"] == "TimeoutError: connection timed out"
+    assert checkpoints[-1]["errors"] == stats["errors"]

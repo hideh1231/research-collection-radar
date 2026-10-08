@@ -431,6 +431,10 @@ def page_matches_record(html: str, record: dict[str, Any] | RawRecord) -> bool:
 @dataclass(slots=True)
 class DeadlineEnrichment:
     target_count: int = 0
+    checked_at: str = field(default_factory=utc_now)
+    attempted: int = 0
+    unavailable: int = 0
+    errors: dict[str, dict[str, Any]] = field(default_factory=dict)
     checked: int = 0
     listed: int = 0
     not_listed: int = 0
@@ -444,7 +448,11 @@ class DeadlineEnrichment:
 
     def as_dict(self) -> dict[str, Any]:
         value = {
+            "checked_at": self.checked_at,
             "target_count": self.target_count,
+            "attempted": self.attempted,
+            "unavailable": self.unavailable,
+            "errors": {key: dict(value) for key, value in self.errors.items()},
             "checked": self.checked,
             "listed": self.listed,
             "with_deadline": self.listed,
@@ -642,6 +650,7 @@ def enrich_deadlines(
     now: datetime | None = None,
     checkpoint: Callable[[dict[str, Any]], None] | None = None,
     stop_event: Event | None = None,
+    prior_errors: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     settings = _settings(source)
     if hasattr(fetcher, "min_interval_seconds"):
@@ -649,27 +658,55 @@ def enrich_deadlines(
             float(getattr(fetcher, "min_interval_seconds", 0)),
             float(settings["min_interval_seconds"]),
         )
-    targets = select_deadline_targets(
-        rows, source, incoming_ids=incoming_ids, now=now, backfill=backfill
-    )
-    stats = DeadlineEnrichment(target_count=len(targets))
+    # Retry unsuccessful URLs after untouched work so a daily budget cannot
+    # repeatedly select the same missing pages and starve the rest of the queue.
+    errors = {key: dict(value) for key, value in (prior_errors or {}).items()}
+    ordered = _deadline_queue(rows, source, incoming_ids=incoming_ids, now=now, backfill=backfill)
+    ordered.sort(key=lambda row: errors.get(row["id"], {}).get("checked_at", ""))
+    targets = ordered if backfill else ordered[:int(settings["daily_limit"])]
+    stats = DeadlineEnrichment(target_count=len(targets), errors=errors)
     consecutive_429 = 0
     consecutive_failures = 0
     checkpoint_size = max(1, int(settings["checkpoint_size"]))
+
+    def save_checkpoint() -> None:
+        stats.remaining = len(_eligible_for_remaining(rows, source, backfill=backfill, now=now))
+        if checkpoint is not None:
+            checkpoint(stats.as_dict())
 
     for row in targets:
         if stop_event is not None and stop_event.is_set():
             stats.stop_reason = "signal"
             break
+        stats.attempted += 1
+        def record_error(message: str, http_status: int | None = None) -> None:
+            stats.errors[row["id"]] = {
+                "url": row["url"], "error": message,
+                "http_status": http_status, "checked_at": utc_now(),
+            }
+
         try:
             status, html = _get_html_with_identity(fetcher, row)
-        except Exception:
+        except Exception as exc:
+            record_error(f"{type(exc).__name__}: {exc}")
             stats.failed += 1
             consecutive_failures += 1
             consecutive_429 = 0
             if consecutive_failures >= 5:
                 stats.stop_reason = "consecutive_failures"
                 break
+            continue
+        if status >= 400:
+            record_error(f"http {status}", status)
+        if status in {404, 410}:
+            # Missing individual pages are not a publisher-wide outage. Preserve
+            # every confirmed field and continue checking other topics.
+            stats.failed += 1
+            stats.unavailable += 1
+            consecutive_failures = 0
+            consecutive_429 = 0
+            if checkpoint is not None and stats.attempted % checkpoint_size == 0:
+                save_checkpoint()
             continue
         if status == 403:
             stats.failed += 1
@@ -694,6 +731,7 @@ def enrich_deadlines(
                 break
             continue
         if not page_matches_record(html, row):
+            record_error("detail identity does not match collection", status)
             stats.failed += 1
             stats.parse_errors += 1
             consecutive_failures += 1
@@ -703,6 +741,7 @@ def enrich_deadlines(
                 break
             continue
 
+        stats.errors.pop(row["id"], None)
         consecutive_429 = 0
         consecutive_failures = 0
         detail = parse_detail(html)
@@ -728,11 +767,11 @@ def enrich_deadlines(
             stats.metadata_updated += 1
         stats.checked += 1
         if checkpoint is not None and stats.checked % checkpoint_size == 0:
-            checkpoint(stats.as_dict())
+            save_checkpoint()
 
     stats.remaining = len(_eligible_for_remaining(rows, source, backfill=backfill, now=now))
-    if checkpoint is not None and (stats.checked % checkpoint_size or stats.stop_reason):
-        checkpoint(stats.as_dict())
+    if checkpoint is not None and (stats.checked % checkpoint_size or stats.failed or stats.stop_reason):
+        save_checkpoint()
     return stats.as_dict()
 
 

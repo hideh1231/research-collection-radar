@@ -77,8 +77,24 @@ def parse_listing(html: str, source: dict) -> list[RawRecord]:
                 if title.lower() in paragraph.lower() or len(titles) == 1:
                     summary = paragraph[:1000]
                     break
-            if summary is None and summaries:
-                summary = summaries[min(index, len(summaries) - 1)][:1000]
+            if not heading_cfp:
+                # Each bold heading owns the paragraphs up to the next heading.
+                # Positional matching also counted the introductory paragraph,
+                # assigning the previous call's description to the next title.
+                title_node = next((tag for tag in block_soup.find_all("strong")
+                                   if tag.get_text(" ", strip=True) == title), None)
+                if title_node is not None:
+                    owner = title_node.find_parent("p") or title_node
+                    paragraphs = []
+                    for paragraph in owner.find_next_siblings():
+                        if paragraph.find("strong") or paragraph.name in {"h1", "h2", "h3"}:
+                            break
+                        text = paragraph.get_text(" ", strip=True)
+                        if paragraph.name == "p" and len(text) > 40:
+                            paragraphs.append(text)
+                    summary = " ".join(paragraphs)[:1000] or None
+            elif summary is None and summaries:
+                summary = summaries[0][:1000]
             publisher_id = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:80]
             found[key] = RawRecord(
                 title=title,

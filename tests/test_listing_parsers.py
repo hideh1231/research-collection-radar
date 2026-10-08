@@ -100,6 +100,13 @@ def test_royal_society_theme_page_splits_cfp_heading_block() -> None:
     urls = {row.url for row in records}
     assert urls == {"https://royalsocietypublishing.org/rsos/pages/special-collections"}
     assert len({row.publisher_id for row in records}) == 2
+    by_title = {row.title: row for row in records}
+    quest = by_title["The quest for integrated information"]
+    policy = by_title["AI and its relationship to public policy"]
+    assert "integrated information management" in quest.summary
+    assert "intersection with policymaking" in policy.summary
+    assert "two special collections" not in quest.summary
+    assert "integrated information management" not in policy.summary
 
 
 def test_royal_society_proposal_call_uses_heading_title() -> None:

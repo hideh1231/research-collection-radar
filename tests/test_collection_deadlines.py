@@ -168,3 +168,76 @@ def test_deadline_cli_writes_valid_artifacts_and_never_notifies(tmp_path, monkey
     before = (tmp_path / "data/collections.jsonl").read_bytes()
     assert main(["--root", str(tmp_path), "--check-deadlines", "--limit", "-1"]) == 1
     assert (tmp_path / "data/collections.jsonl").read_bytes() == before
+
+
+@pytest.mark.parametrize("code", [404, 410])
+def test_nature_removed_submission_subpage_falls_back_to_same_collection(code):
+    item = row()
+    calls = []
+    def get(url):
+        calls.append(url)
+        if url.endswith("/how-to-submit"):
+            return SimpleNamespace(text="Not found", url=url, status_code=code)
+        return SimpleNamespace(text=page(""), url=url, status_code=200)
+    stats = check_deadlines([item], SimpleNamespace(get=get))
+    assert calls == ["https://www.nature.com/collections/abcdefghij/how-to-submit",
+                     "https://www.nature.com/collections/abcdefghij"]
+    assert stats["checked"] == 1 and stats["remaining"] == 0
+    assert item["status"] == "unknown" and item["deadline_status"] == "not_listed"
+
+
+def test_nature_fallback_rejects_other_collection_and_challenge_page():
+    for html, final_url in [(page(), "https://www.nature.com/collections/otherid"),
+                            ("<title>Client Challenge</title>", "https://www.nature.com/collections/abcdefghij")]:
+        item = row()
+        before = deepcopy(item)
+        def get(url):
+            if url.endswith("/how-to-submit"):
+                return SimpleNamespace(text="", url=url, status_code=404)
+            return SimpleNamespace(text=html, url=final_url, status_code=200)
+        stats = check_deadlines([item], SimpleNamespace(get=get))
+        assert item == before and stats["remaining"] == 1
+
+
+def test_frontiers_check_cli_preserves_other_status_and_never_sends(tmp_path, monkeypatch):
+    import json
+    from radar.config import repo_root
+    from radar.models import RawRecord
+    from radar.normalize import to_record
+    from radar.pipeline import main
+    from radar.store import load_jsonl, write_jsonl
+    from support import copy_radar_config
+
+    copy_radar_config(repo_root(), tmp_path)
+    raw = RawRecord(title="Cognitive biases", url="https://frontiersin.org/research-topics/123/test",
+                    source_url="https://frontiersin.org/journals/psychology/research-topics",
+                    publisher="Frontiers", journal="Frontiers in Psychology", collection_type="research_topic",
+                    status="open", discovered_via="frontiers-psychology")
+    original = to_record(raw, today=date(2026, 1, 1), domains=[], domain_scores={}, topics=[], classification_method="keyword")
+    write_jsonl(tmp_path / "data/collections.jsonl", [original])
+    old_status = {"checked_at": "2026-10-08T00:00:00Z", "sources": {"unrelated": {"ok": True}}}
+    (tmp_path / "data/source_status.json").write_text(json.dumps(old_status))
+    code = [404]
+    class Fetcher:
+        def __init__(self, *args, **kwargs): pass
+        def get_html(self, url, **kwargs):
+            return code[0], '<link rel="canonical" href="https://frontiersin.org/research-topics/123/test">'
+        def close(self): pass
+    def forbidden(*args, **kwargs): raise AssertionError("detail checks must not notify or commit in dry-run")
+    monkeypatch.setattr("radar.pipeline.Fetcher", Fetcher)
+    monkeypatch.setattr("radar.pipeline.post_message", forbidden)
+    monkeypatch.setattr("radar.pipeline.commit_if_actions", forbidden)
+    args = ["--root", str(tmp_path), "--check-frontiers", "--dry-run", "--limit", "10000"]
+    assert main(args) == 1
+    saved = json.loads((tmp_path / "data/source_status.json").read_text())
+    assert saved["sources"]["unrelated"] == {"ok": True}
+    assert original["id"] in saved["frontiers_detail"]["deadline_enrichment"]["errors"]
+    assert load_jsonl(tmp_path / "data/collections.jsonl")[0] == original
+    code[0] = 200
+    assert main(args) == 0
+    saved = json.loads((tmp_path / "data/source_status.json").read_text())
+    assert saved["frontiers_detail"]["deadline_enrichment"]["errors"] == {}
+    assert saved["frontiers_detail"]["deadline_enrichment"]["remaining"] == 0
+    before = (tmp_path / "data/collections.jsonl").read_bytes()
+    assert main(["--root", str(tmp_path), "--check-frontiers", "--limit", "-1"]) == 1
+    assert (tmp_path / "data/collections.jsonl").read_bytes() == before

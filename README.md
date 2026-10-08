@@ -8,7 +8,7 @@ The GitHub Pages viewer in [`site/`](site/) lists open calls whose confirmed dea
 
 Closed calls stay in [`data/collections.jsonl`](data/collections.jsonl).
 
-Deadline checks distinguish a verified date, a checked page without an exact date, and an unchecked page. Nature, Springer, and JSKE details can be checked with `python -m radar --check-deadlines`; the daily workflow runs this after crawling. Failed checks remain pending. See the [publisher coverage audit](docs/deadline-coverage-2026-09-12.md) for APA, ScienceDirect, SAGE, and remaining access limits.
+Deadline checks distinguish a verified date, a checked page without an exact date, and an unchecked page. Nature, Springer, and JSKE details can be checked with `python -m radar --check-deadlines`; the daily workflow runs this after crawling. Failed checks remain pending. If a Nature `/how-to-submit` link is gone, the checker verifies the same collection page; a page without a submission panel is recorded as status unknown rather than assumed open. See the [publisher coverage audit](docs/deadline-coverage-2026-09-12.md) for APA, ScienceDirect, SAGE, and remaining access limits.
 
 ## Scope
 
@@ -84,7 +84,9 @@ python -m radar
 python -m radar --build-site
 ```
 
-Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked`; this command does not discover new records or send Slack notifications. A crawl after the extension-deadline parser also rechecks Frontiers records last marked `not_listed` before 2026-08-28. Run `python -m radar --enrich-topics` after crawl if LLM settings are present.
+Use `--offline` to skip network sources. Use `--dry-run` to skip Slack delivery and the GitHub Actions commit. Run `python -m radar --backfill-deadlines` once to check every open Frontiers record whose deadline state is `not_checked`; this command does not discover new records or send Slack notifications. Use `python -m radar --check-frontiers --limit 10000 --dry-run` to check all currently due Frontiers details without discovery or notifications. Missing pages (404/410) are recorded per URL and do not stop other checks. Previous failures are retried after untouched work. Confirmed dates and unchecked states are preserved when a page is unavailable. This command returns nonzero if checks remain incomplete; `--dry-run` still writes local artifacts. The crawl workflow exposes the same operation with `check_frontiers_only`.
+
+A crawl after the extension-deadline parser also rechecks Frontiers records last marked `not_listed` before 2026-08-28. Run `python -m radar --enrich-topics` after crawl if LLM settings are present.
 
 Serve the viewer with `python -m http.server -d site 8000`.
 
