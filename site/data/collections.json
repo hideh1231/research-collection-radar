@@ -1,219 +1,5 @@
 [
   {
-    "id": "frontiers-579488fdd6",
-    "title": "Alpha-Synuclein dynamics in Cellular and Molecular Mechanisms of Brain-aging",
-    "summary": "Alpha-Synuclein is a presynaptic neuronal protein essential for vesicle trafficking and neurotransmitter release. While widely recognized for its pathological aggregation in disorders such as Parkinson’s disease and Dementia with Lewy Bodies, its dynamics during the natural course of brain aging remain complex. Aging is characterized by a gradual loss of proteostatic control, synaptic efficacy, and altered cellular signaling. In this context, alpha-synuclein undergoes significant changes in expression, post-translational modification, and clearance even in the absence of overt disease. Understanding the nuanced shift from physiological function to pathological dysfunction is critical. As the global population ages, distinguishing between benign age-related changes in alpha-synuclein dynamics and those driving neurodegeneration is essential for developing early interventions and maintaining cognitive health.",
-    "journal": "Frontiers in Aging Neuroscience",
-    "journals": [
-      "Frontiers in Aging Neuroscience"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "alpha-synuclein",
-      "brain aging",
-      "proteostasis",
-      "synaptic plasticity",
-      "neurodegeneration",
-      "mechanisms",
-      "Brain",
-      "cognitive"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/78480/alpha-synuclein-dynamics-in-cellular-and-molecular-mechanisms-of-brain-aging",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/78480",
-    "image_alt": "Alpha-Synuclein dynamics in Cellular and Molecular Mechanisms of Brain-aging",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-023b95023a",
-    "title": "Antibiotic Resistance in Livestock: Genomic Insights, Evolution of Use, and Integrated Mitigation Strategies",
-    "summary": "Antimicrobial resistance (AMR) in livestock production has emerged as a critical global challenge, with profound implications for animal health, food safety, and human well-being. The extensive and often prolonged use of antibiotics in animal husbandry for therapy, prophylaxis, or growth promotion, has fostered environments where antibiotic-resistant bacteria (ARB) and antibiotic-resistant genes (ARGs) can evolve, persist, and disseminate. Through mobile genetic elements (MGEs) these resistance determinants transcend farm boundaries, spreading across animal, human, and environment systems, thus positioning AMR as one of the most urgent “One Health” concerns of our time.",
-    "journal": "Frontiers in Microbiology",
-    "journals": [
-      "Frontiers in Microbiology",
-      "Frontiers in Veterinary Science"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "livestock",
-      "AMR",
-      "ARB",
-      "ARGs",
-      "Animal husbandry",
-      "One Health",
-      "WGS",
-      "Metagenomics"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/73986/antibiotic-resistance-in-livestock-genomic-insights-evolution-of-use-and-integrated-mitigation-strategies",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/73986",
-    "image_alt": "Antibiotic Resistance in Livestock: Genomic Insights, Evolution of Use, and Integrated Mitigation Strategies",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-274fa4e029",
-    "title": "Current Improvements in Temporal Bone Imaging Technology",
-    "summary": "Conditions affecting the vestibular and audiological systems impact on a person's auditory and balance functions. They can lead to symptoms such as vertigo, hearing loss, and tinnitus, thereby severely diminishing a patient's quality of life. Early and accurate diagnosis is crucial for effective management and treatment. Traditionally, clinicians have relied on audiometry and clinical assessments for diagnosis, which often fall short in specificity and sensitivity. However, temporal bone imaging has undergone significant advancements in recent years, driven by technological innovations and the demand for more precise diagnostic tools in neuro-otology and radiology. The complex anatomy of the temporal bone poses unique challenges in achieving clear and accurate imaging, making improvements in imaging technology highly valuable for healthcare professionals. Photon counting computed tomography (CT) represents a breakthrough that offers enhanced image resolution and reduced noise, providin",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "AI",
-      "Imaging Technology",
-      "Vestibular Disorders",
-      "Audiological Disorders",
-      "MRI",
-      "CT Scans",
-      "Functional Imaging",
-      "Non-invasive Techniques"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/68877/current-improvements-in-temporal-bone-imaging-technology",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/68877",
-    "image_alt": "Current Improvements in Temporal Bone Imaging Technology",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-027e249ee4",
-    "title": "Electrified wastewater management",
-    "summary": "This Collection highlights research advancing electrode and catalyst design, integrating biological and electrochemical processes, and developing scalable reactors. Studies addressing challenges of energy efficiency, durability in real wastewater conditions, and techno-economic feasibility are particularly welcome.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "challenges",
-      "management",
-      "Energy Efficiency"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/giefbgihec",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-1536912967_CFP-fd7fdf1081d4002e39968b409419277c.jpg",
-    "image_alt": "Electrified wastewater management",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-284d997b50",
-    "title": "Intersectoral action against AMR: bridging global implementation gaps by advancing integrated solutions and strengthening innovation and equity",
-    "summary": "Antimicrobial resistance (AMR) is an evolving and pervasive challenge threatening health, agriculture, and environmental sustainability worldwide. Despite decades of scientific advances, recent studies repeatedly underscore the silent yet accelerating nature of the AMR crisis, with projections warning of significant public health and economic losses if decisive action is not taken. Although the World Health Organization’s Global Action Plan and various National Action Plans now frame global and local responses, substantial gaps persist—particularly in coordinating intersectoral activity and translating surveillance data into actionable, multisectoral policies. Current efforts often focus on tracking the scale of the problem, while critical interventions to address identified risks, particularly from animal and environmental sources, remain insufficient or unevenly implemented.",
-    "journal": "Frontiers in Veterinary Science",
-    "journals": [
-      "Frontiers in Veterinary Science"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "One Health",
-      "animal health",
-      "health equity",
-      "Antimicrobial resistance",
-      "AMR surveillance",
-      "Intersectoral collaboration",
-      "Policy integration",
-      "Antimicrobial stewardship"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/75706/intersectoral-action-against-amr-bridging-global-implementation-gaps-by-advancing-integrated-solutions-and-strengthening-innovation-and-equity",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/75706",
-    "image_alt": "Intersectoral action against AMR: bridging global implementation gaps by advancing integrated solutions and strengthening innovation and equity",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-269c5fe111",
-    "title": "Next-generation digital health solutions in ophthalmology: Telemedicine, AI, and mHealth advances",
-    "summary": "Ophthalmology continues to lead the development of digital health technologies, with rapid innovation in imaging, artificial intelligence, and mobile platforms enabling new approaches to vision care. Alongside growing global demand and workforce constraints, there is increasing interest in next generation solutions that move beyond established teleophthalmology models toward more adaptive, automated, and data driven systems.",
-    "journal": "Frontiers in Ophthalmology",
-    "journals": [
-      "Frontiers in Ophthalmology",
-      "Frontiers in Digital Health"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Tele-ophthalmology",
-      "Digital ophthalmology",
-      "AI",
-      "Mobile health",
-      "mHealth",
-      "Remote screening",
-      "Implementation and real-world deployment",
-      "development"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/78150/next-generation-digital-health-solutions-in-ophthalmology-telemedicine-ai-and-mhealth-advances",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/78150",
-    "image_alt": "Next-generation digital health solutions in ophthalmology: Telemedicine, AI, and mHealth advances",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-3467d9fe4a",
-    "title": "Programmed Cell Death and Targeted Therapy in Tumors of the Nervous System",
-    "summary": "Programmed cell death (PCD) is a natural process of cell self-destruction that occurs as a normal part of an organism's growth and development or in response to stress, damage or infection. There are different forms of PCD, including apoptosis, necrosis, autophagy, pyroptosis, and ferroptosis, each with unique cellular mechanisms and outcomes. Over the years, it has been discovered that dysregulation of PCD can lead to the development and progression of various types of tumors, including those affecting the nervous system. The failure of PCD in damaged or mutated cells can allow their proliferation, which can eventually lead to tumor formation. However, the use of targeted therapies that exploit the regulation of PCD in cancer cells has shown promising results in the management of tumors of the nervous system. It has been demonstrated that the use of cell death-inducing agents can selectively promote the death of tumor cells while minimizing harm to the surrounding normal cells. As suc",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology",
-      "Frontiers in Oncology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "apoptosis",
-      "neuro-oncology",
-      "targeted therapy",
-      "ferroptosis",
-      "biomarkers",
-      "mechanisms",
-      "development",
-      "management"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-10-07",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/72478/programmed-cell-death-and-targeted-therapy-in-tumors-of-the-nervous-system",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "nature-psychology-6bd5a900a7",
     "title": "Biosynthesis and enzyme engineering",
     "summary": "This Collection aims to highlight research efforts focused on expanding the substrate scope and reaction repertoire of enzymes, developing cell-free biosynthesis systems, advancing multiplexed pathway engineering, and leveraging AI-driven protein design. It also welcomes studies exploring the integration of metabolic flux analysis with real-time biosensors and feedback control to enable more robust and self-optimizing synthetic pathways.",
@@ -2535,7 +2321,7 @@
   },
   {
     "id": "frontiers-psychology-5243eecae5",
-    "title": "Adultcentrism and Bleak Pedagogy: Rediscovering adults through the lens of childhood",
+    "title": "Adultcentrism and Bleak Pedagogy: Rediscovering Adults Through the Lens of Childhood",
     "summary": "In recent years, the dialogue around Adultcentrism and its methodological derivation Bleak Pedagogy, formerly known as Black Pedagogy, has gained significant attention. These concepts offer pivotal frameworks for examining and enhancing children’s well-being and the quality of adult-child interactions, shedding light on educational relationships from a critical perspective. Adultcentrism (AD) is identified as a paradigm of thought where adults perceive children’s worlds and capacities from a biased adult-centric viewpoint, often evaluating youth abilities in relation to adult norms and expectations. This can lead to a misalignment between actual child needs and the intentions of well-meaning adults, influenced by societal pressures and personal biases.",
     "journal": "Frontiers in Psychology",
     "journals": [
@@ -46695,7 +46481,8 @@
     "journals": [
       "Frontiers in Cell and Developmental Biology",
       "Frontiers in Immunology",
-      "Frontiers in Neurology"
+      "Frontiers in Neurology",
+      "Frontiers in Aging Neuroscience"
     ],
     "domains": [
       "neuroscience"
@@ -61267,7 +61054,8 @@
     "journal": "Frontiers in Neuroscience",
     "journals": [
       "Frontiers in Neuroscience",
-      "Frontiers in Neuroimaging"
+      "Frontiers in Neuroimaging",
+      "Frontiers in Neurology"
     ],
     "domains": [
       "neuroscience"
@@ -71093,7 +70881,7 @@
     "deadline": "2027-04-24",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86565/collaborative-approaches-to-recovery-and-participation-in-mental-health-occupational-therapy-lived-experiences-and-rehabilitation-perspectives",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86565/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86565",
     "image_alt": "Collaborative Approaches to Recovery and Participation in Mental Health: Occupational Therapy, Lived Experiences and Rehabilitation Perspectives",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -71155,7 +70943,7 @@
     "deadline": "2027-04-24",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86177/governance-and-architectures-of-decentralized-systems",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86177/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86177",
     "image_alt": "Governance and Architectures of Decentralized Systems",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -71315,6 +71103,69 @@
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-10-07",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-f0f284fb7c",
+    "title": "Advances in Swine Disease Surveillance, Macroepidemiology, and Applied Animal Population Health Management.",
+    "summary": "The increasing availability of large-scale diagnostic, production, and health data has transformed the understanding of disease dynamics in swine populations. Advances in laboratory diagnostics, surveillance systems, and data analytics now enable researchers to evaluate pathogen emergence, transmission patterns, population-level risk factors, and long-term disease trends at regional, national, and international scales. Swine pathogens such as Porcine Reproductive and Respiratory Syndrome Virus (PRRSV), Influenza A virus, African Swine Fever Virus (ASFV), Porcine Epidemic Diarrhea Virus (PEDV), Senecavirus A, Rotaviruses, Porcine Circovirus (PCV2 and PCV3), Mycoplasma hyopneumoniae, Escherichia coli, Streptococcus suis, Glaesserella parasuis, Actinobacillus pleuropneumoniae, Lawsonia intracellularis, and Brachyspira species continue to affect animal health, welfare, productivity, and the sustainability of swine production systems worldwide. Integrating epidemiological methods with diagn",
+    "journal": "Frontiers in Veterinary Science",
+    "journals": [
+      "Frontiers in Veterinary Science"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Swine epidemiology",
+      "Disease surveillance",
+      "Macroepidemiology",
+      "Population animal health",
+      "zoonotic diseases",
+      "respiratory and enteric diseases",
+      "Diagnostic data",
+      "ecology of diseases"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-04-25",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87087/advances-in-swine-disease-surveillance-macroepidemiology-and-applied-animal-population-health-management",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-08",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-56a28598a3",
+    "title": "Edge Intelligence and Multi-Agent Learning for Connected, Autonomous and Aerial Networks",
+    "summary": "Connected networks now carry a growing share of intelligent decision-making. Smart cities, industrial IoT and connected vehicles generate data continuously and need answers within milliseconds, often with limited energy, bandwidth and unreliable links. Aerial networks add a further layer. They comprise airborne platforms operating within Earth’s atmosphere, such as unmanned aerial vehicles (UAVs), drones, balloons and high-altitude platform stations (HAPS). These platforms can act as mobile sensors, relays and edge nodes, extending coverage where terrestrial infrastructure is missing, damaged or overloaded. They also face tight onboard energy, changing topology and intermittent connectivity.",
+    "journal": "Frontiers in Computer Science",
+    "journals": [
+      "Frontiers in Computer Science"
+    ],
+    "domains": [
+      "hci",
+      "robotics"
+    ],
+    "topics": [
+      "Edge intelligence",
+      "multi-agent deep reinforcement learning",
+      "task offloading",
+      "federated learning",
+      "Social Internet of Things",
+      "UAV networks",
+      "Internet of Vehicles",
+      "trust management"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-04-25",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87053/edge-intelligence-and-multi-agent-learning-for-connected-autonomous-and-aerial-networks",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/87053/thumb_400.jpg",
+    "image_alt": "Edge Intelligence and Multi-Agent Learning for Connected, Autonomous and Aerial Networks",
+    "first_seen": "2026-10-08",
     "publisher": "Frontiers",
     "status": "open"
   },
@@ -74009,6 +73860,37 @@
     "status": "open"
   },
   {
+    "id": "taylor-francis-special-issues-1a4ede7d1f",
+    "title": "Navigating Emotional Politics: Religious Communities, Migration Experiences and the Boundaries of National Belonging",
+    "summary": "I. Framework While emotion has received growing attention across migration and religious studies, there remains scope for further investigation into how migrant religious communities experience and negotiate belonging through the interplay of religion, emotion, and migration, and how these processes shape their relationships to national belonging and its boundaries. This Special Issue addresses this intersection by examining the emotional politics surrounding religious communities in contexts of migration. Its central premise is that emotions do not merely accompany migration and religious identification; they actively participate in producing, maintaining, contesting, and spatializing the boundaries of national belonging. Approaching emotion in this way shifts attention from what migrants feel to what emotions do: how they generate attachments and solidarities, invest places and communities with meaning, sustain collective memories, and shape experiences of inclusion, exclusion, recognition, and estrangement. This perspective also foregrounds the spatial dimensions of emotional politics. Global migration transforms not only cultural and religious practices but also the emotional landscapes through which individuals and communities understand their place within societies. Within these emotional landscapes, the Special Issue therefore pays particular attention to emotional geographies: the ways in which spaces, places, mobility, and displacement become emotionally invested and acquire social and political meaning. Sacred spaces, neighbourhoods, homelands, places of settlement, and transnational networks may become sites through which religious communities in contexts of migration sustain memories and attachments, negotiate inclusion and exclusion, and position themselves in relation to national communities and their symbolic boundaries. Building on existing scholarship in National Identities on emotional diasporas and ethnoreligious identities, this Special Issue bri",
+    "journal": "National Identities",
+    "journals": [
+      "National Identities"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "social",
+      "attention",
+      "emotion",
+      "Emotions",
+      "migration",
+      "belonging",
+      "inclusion",
+      "Migrants"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-15",
+    "deadline_status": "listed",
+    "url": "https://think.taylorandfrancis.com/special_issues/navigating-emotional-politics-religious-communities-migration-experiences-and-the-boundaries-of-national-belonging",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-08",
+    "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
     "id": "frontiers-d3e8ba4df8",
     "title": "Rapid Responses to Steroid Hormones: Exploring an Expanding Universe",
     "summary": "For decades, steroid hormone biology has been largely interpreted through the lens of genomic signaling mediated by nuclear receptors. While this paradigm has profoundly advanced our understanding of endocrine physiology, it does not fully explain the remarkable diversity, timing, and complexity of many steroid hormone actions. Increasing evidence indicates that rapid, non-genomic signaling pathways, initiated by steroid receptors operating outside the nucleus, contribute substantially to these responses and represent an additional layer of endocrine regulation that is still far from being completely understood.",
@@ -74131,7 +74013,7 @@
     "deadline": "2027-05-16",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86463/women-in-neuroergonomics-sex-based-differences-and-the-working-brain",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86463/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86463",
     "image_alt": "Women in Neuroergonomics: Sex-Based Differences and the Working Brain",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -77066,7 +76948,7 @@
   {
     "id": "taylor-francis-special-issues-ccc24c0e49",
     "title": "Trauma and Dissociation in South and Southeast Asia: Culture, Context, and Clinical Practice",
-    "summary": "Call for Submissions Trauma and Dissociation in South and Southeast Asia: Culture, Context, and Clinical Practice A Special Issue of Journal of Trauma & Dissociation Special Issue Guest Editors: Adithy, Ph.D., Hvovi Bhagwagar, Ph.D., Gayitri Bhatt, M.D., M.Sc., & Sukanya Ray, M.Phil. Email for Guest Editors: jtdseasiaeds@gmail.com Submission Deadline: June 15, 2027 Trauma and dissociation are increasingly recognised as critical areas of clinical practice and research across the world, yet much of the existing literature has emerged from Euro-American contexts. In South and Southeast Asia, experiences of trauma and dissociation are influenced by cultures, religions, family systems, migration patterns, colonial and postcolonial realities, social inequalities and rapidly changing mental health systems. Dissociative experiences may be understood through multiple frameworks, including psychological, somatic, relational, spiritual, and cultural expressions of distress, creating both challenges and opportunities for assessment, diagnosis, treatment, and research. This special issue seeks to bring to the foreground research and clinical knowledge from South and Southeast Asia, inviting work that deepens the understanding of how trauma and dissociation are experienced, conceptualised, assessed, and treated within specific local and regional contexts. Potential topics and questions of interest include (but are not limited to): How are trauma, dissociation, and dissociative disorders understood, recognized, or misrecognized within the cultures and clinical systems of South and Southeast Asia? How do stigma, shame, family secrecy, gender norms, religious frameworks, and help-seeking pathways influence the recognition, disclosure, treatment access, and outcomes of trauma-related dissociation? What challenges arise in assessing PTSD, C-PTSD, dissociative symptoms, and dissociative disorders in contexts where validated tools, specialist training, or diagnostic recognition may be l",
+    "summary": "Call for Submissions Trauma and Dissociation in South and Southeast Asia: Culture, Context, and Clinical Practice A Special Issue of Journal of Trauma & Dissociation Special Issue Guest Editors: Adithy, Ph.D., Gayitri Bhatt, M.D., M.Sc., & Sukanya Ray, M.Phil. Email for Guest Editors: jtdseasiaeds@gmail.com We would like to acknowledge the valuable contributions of Hvovi Bhagwagar, Ph.D, in developing this Call for Submissions. Submission Deadline: June 15, 2027 Trauma and dissociation are increasingly recognised as critical areas of clinical practice and research across the world, yet much of the existing literature has emerged from Euro-American contexts. In South and Southeast Asia, experiences of trauma and dissociation are influenced by cultures, religions, family systems, migration patterns, colonial and postcolonial realities, social inequalities and rapidly changing mental health systems. Dissociative experiences may be understood through multiple frameworks, including psychological, somatic, relational, spiritual, and cultural expressions of distress, creating both challenges and opportunities for assessment, diagnosis, treatment, and research. This special issue seeks to bring to the foreground research and clinical knowledge from South and Southeast Asia, inviting work that deepens the understanding of how trauma and dissociation are experienced, conceptualised, assessed, and treated within specific local and regional contexts. Potential topics and questions of interest include (but are not limited to): How are trauma, dissociation, and dissociative disorders understood, recognized, or misrecognized within the cultures and clinical systems of South and Southeast Asia? How do stigma, shame, family secrecy, gender norms, religious frameworks, and help-seeking pathways influence the recognition, disclosure, treatment access, and outcomes of trauma-related dissociation? What challenges arise in assessing PTSD, C-PTSD, dissociative symptoms, and dissociative d",
     "journal": "Journal of Trauma & Dissociation",
     "journals": [
       "Journal of Trauma & Dissociation"
@@ -78738,6 +78620,55 @@
     "status": "open"
   },
   {
+    "id": "nature-psychology-639c695116",
+    "title": "Cryogenic and high-temperature thermal systems",
+    "summary": "This Collection brings together original research that explore extreme-condition heat transfer, thermal materials, cooling and insulation technologies, and system-level thermal design.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "technologies"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-07-07",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ejfcjecdif",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages_CFP-45436e54c69480f4ef3a093fca6cc3bf.jpg",
+    "image_alt": "Cryogenic and high-temperature thermal systems",
+    "first_seen": "2026-10-08",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-c0fc86fded",
+    "title": "School-based healthcare",
+    "summary": "This Collection invites research on school-based and school-linked healthcare, including both prevention and primary care focused on physical or mental health.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Mental Health",
+      "healthcare",
+      "Prevention",
+      "school"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-07-07",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ijcejgjbed",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/School-based_healthcare_hero_image_website-f8ed5892ef5d78e0d4c600123fd9dc50.jpg",
+    "image_alt": "School-based healthcare",
+    "first_seen": "2026-10-08",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "frontiers-cc0ead3062",
     "title": "Psychological Mechanisms of Workplace Change: Trust, Fairness, and Well-Being Under AI-Enabled HR and Organizational Redesign",
     "summary": "Trust, fairness, psychological safety, perceived organizational support, and identification are the mechanisms through which employees experience change at work. Yet most of what we know about them comes from studies framed around organizational triggers, such as AI-enabled HR systems, sustainability-driven redesign, and restructuring, rather than around the mechanisms themselves. That framing has produced rich description of what firms are changing, but comparatively little theory-driven, mechanism-level evidence of how these psychological states form, interact, and translate into well-being and performance, or of why an apparently useful change can just as easily produce strain or resistance. Because these mechanisms operate across almost any organizational context, findings about them are often scattered across separate literatures on hiring, appraisal, redesign, and change management, each treated as its own topic rather than as instances of the same underlying psychology.",
@@ -79146,8 +79077,8 @@
     "deadline": "2027-08-15",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/85405/advancing-organizational-psychology-through-non-weird-perspectives-on-leadership-measurement-and-workplace-behaviour",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/85405",
+    "image_alt": "Advancing Organizational Psychology Through Non-WEIRD Perspectives on Leadership, Measurement, and Workplace Behaviour",
     "first_seen": "2026-09-01",
     "publisher": "Frontiers",
     "status": "open"
@@ -79383,7 +79314,7 @@
     "deadline": "2027-09-10",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87040/from-circuits-to-behavior-insights-from-neuroboston-fall-symposium-2026",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87040/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87040",
     "image_alt": "From Circuits to Behavior: Insights from NeuroBoston Fall Symposium 2026",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -80142,36 +80073,6 @@
     "url": "https://frontiersin.org/research-topics/64295/advanced-technologies-in-wireless-neural-interfaces-from-animal-models-to-human-applications",
     "image_url": "https://www.frontiersin.org/image/researchtopic/64295",
     "image_alt": "Advanced Technologies in Wireless Neural Interfaces: From Animal Models to Human Applications",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-e2b29591cd",
-    "title": "Advancements in Stress Evaluation and Welfare in Equids",
-    "summary": "Any condition that disrupts an animal's homeostasis triggers a stress response, which can vary in duration and intensity depending on the stressor. While stress is a natural and protective physiological reaction, prolonged exposure to stress can negatively impact health and welfare, potentially leading to life-threatening conditions. Early identification of stress responses in equids is essential to prevent the onset of stress-related diseases. Chronic stress can predispose horses, donkeys, and mules to abnormal behaviors such as stereotypies, as well as gastrointestinal issues like gastric ulcers, diarrhea, and weight loss.",
-    "journal": "Frontiers in Veterinary Science",
-    "journals": [
-      "Frontiers in Veterinary Science"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Stress",
-      "welfare",
-      "horse",
-      "donkey",
-      "mule",
-      "equine",
-      "loss"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/71826/advancements-in-stress-evaluation-and-welfare-in-equids",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/71826",
-    "image_alt": "Advancements in Stress Evaluation and Welfare in Equids",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
@@ -85659,39 +85560,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-31ae8faa6c",
-    "title": "Mind-Body Networks: A Network Physiology Paradigm for Structural, Functional, and Metabolic Processes in Central-Autonomic Regulation in Health and Disease",
-    "summary": "Network Physiology is an emerging interdisciplinary field dedicated to uncovering the complexity of physiological interactions across diverse organ systems and hierarchical networks to understand integrative functions in health and disease. All manuscripts submitted to this Research Topic should be in the context of Network Physiology and explicitly consider, utilize, or inform perspectives and methodologies from Network Physiology. Emphasis should be placed on elucidating network-based mechanisms central to understanding physiological interactions within and between the central and autonomic nervous systems.",
-    "journal": "Frontiers in Network Physiology",
-    "journals": [
-      "Frontiers in Network Physiology",
-      "Frontiers in Endocrinology",
-      "Frontiers in Neuroscience"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Network Physiology",
-      "Central-autonomic network",
-      "Physiological interactions",
-      "Brain imaging",
-      "Functional connectivity",
-      "Health and disease",
-      "Mind-body networks",
-      "mechanisms"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/70247/mind-body-networks-structural-functional-and-metabolic-processes-in-central-autonomic-regulation-in-health-and-disease",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/70247",
-    "image_alt": "Mind-Body Networks: A Network Physiology Paradigm for Structural, Functional, and Metabolic Processes in Central-Autonomic Regulation in Health and Disease",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-psychology-13d3efcaf7",
     "title": "Mindfulness in trauma recovery: Applications, insights, and future directions",
     "summary": "Mindfulness has become a focal point in fields such as psychology, neuroscience, and public health, particularly for its application in facilitating recovery from trauma and adverse experiences. Understanding the therapeutic potential of mindfulness is critical within rising trauma-related mental health and illness. Recent research demonstrates that mindfulness can serve as a powerful tool in regulating emotions, enhancing mental health, and fostering coping mechanisms for trauma survivors. However, amidst these promising findings, there's a need for a deeper investigation into the existing gaps in the theoretical underpinnings of mindfulness and its utility for different populations and types of traumas. This Research Topic aims to explore the manifold ways in which mindfulness-based can be harnessed for trauma recovery. Specifically, it seeks to delve into the integration of mindfulness practices within healing processes and evaluate various theoretical approaches that support its ap",
@@ -90187,7 +90055,8 @@
     "journals": [
       "Frontiers in Neuroscience",
       "Frontiers in Pain Research",
-      "Frontiers in Physiology"
+      "Frontiers in Physiology",
+      "Frontiers in Neurology"
     ],
     "domains": [
       "neuroscience"
