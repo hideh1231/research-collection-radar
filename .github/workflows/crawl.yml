@@ -101,7 +101,8 @@ jobs:
                   out.write("### Saved collection health\n\n")
                   out.write(f"Listing snapshot: {state.get('checked_at', 'unknown')}\n\n")
                   out.write(f"Frontiers details: {detail.get('checked', 0)} checked, "
-                            f"{detail.get('failed', 0)} failed, {detail.get('remaining', 0)} pending "
+                            f"{detail.get('failed', 0)} failed, {detail.get('remaining', 0)} pending, "
+                            f"{detail.get('parse_errors', 0)} date parse warnings "
                             f"(snapshot: {detail.get('checked_at', 'unknown')}).\n\n")
                   out.write(f"Other collection details: {checks.get('checked', 0)} checked, "
                             f"{len(checks.get('errors', {}))} failed, {checks.get('remaining', 0)} pending "

@@ -519,10 +519,11 @@ def run(
         finally:
             detail_fetcher.close()
         source_entry["deadline_enrichment"] = enrichment
-        if enrichment.get("failed"):
+        if enrichment.get("failed") or enrichment.get("parse_errors"):
             log("::warning title=Frontiers detail checks incomplete::"
                 f"{enrichment['failed']} detail pages failed; "
-                f"{enrichment['remaining']} checks remain pending. "
+                f"{enrichment['remaining']} checks remain pending; "
+                f"{enrichment.get('parse_errors', 0)} date parse warnings. "
                 "See data/source_status.json for per-URL errors.")
         source_status["sources"].setdefault(frontiers["key"], {"enabled": bool(frontiers.get("enabled"))})
         source_status["sources"][frontiers["key"]]["deadline_enrichment"] = enrichment
