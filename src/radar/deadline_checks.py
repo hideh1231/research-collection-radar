@@ -37,7 +37,15 @@ def parse_detail(html: str, row: dict, final_url: str) -> dict:
     """Reject redirects/unrelated pages before accepting dates or their absence."""
     expected = urlsplit(detail_url(row) or "")
     actual = urlsplit(final_url)
-    if actual.hostname != expected.hostname or actual.path.rstrip("/") != expected.path.rstrip("/"):
+    expected_path = expected.path.rstrip("/")
+    actual_path = actual.path.rstrip("/")
+    same_collection = (
+        expected.hostname == "www.nature.com"
+        and COLLECTION_PATH.fullmatch(expected_path)
+        and COLLECTION_PATH.fullmatch(actual_path)
+        and expected_path.removesuffix("/how-to-submit") == actual_path.removesuffix("/how-to-submit")
+    )
+    if actual.hostname != expected.hostname or (actual_path != expected_path and not same_collection):
         raise ValueError("detail redirected to another page")
     soup = BeautifulSoup(html, "lxml")
     main = soup.find("main") or soup.select_one("article.article_page") or soup
@@ -114,7 +122,14 @@ def check_deadlines(rows: list[dict], fetcher, *, limit: int = 100, only: set[st
     for row in targets[:max(0, limit)]:
         stats["attempted"] += 1
         try:
-            response = fetcher.get(detail_url(row))
+            url = detail_url(row)
+            response = fetcher.get(url)
+            # Some catalogue links keep a removed submission subpage while the
+            # collection itself remains available. Check only that same collection.
+            if (response.status_code in {404, 410} and urlsplit(url).hostname == "www.nature.com"
+                    and urlsplit(url).path.rstrip("/").endswith("/how-to-submit")):
+                parts = urlsplit(url)
+                response = fetcher.get(urlunsplit(parts._replace(path=parts.path.rstrip("/").removesuffix("/how-to-submit"))))
             if response.status_code != 200:
                 raise ValueError(f"http {response.status_code}")
             observation = parse_detail(response.text, row, str(response.url))

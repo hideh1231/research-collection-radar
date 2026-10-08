@@ -29,7 +29,9 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # A partial crawl saves healthy data before returning failure. Build that
+    # trusted main revision too, with schema validation in --build-site.
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.head_branch == 'main' && contains(fromJSON('["success", "failure"]'), github.event.workflow_run.conclusion))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2

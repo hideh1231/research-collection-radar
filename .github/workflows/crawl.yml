@@ -17,6 +17,10 @@ on:
         description: "Check pending collection detail pages only"
         type: boolean
         default: false
+      check_frontiers_only:
+        description: "Check all due Frontiers details only; preserve unavailable pages as pending"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -46,13 +50,13 @@ jobs:
       - name: Install
         run: python -m pip install -e .
       - name: Crawl
-        if: ${{ !inputs.dry_run && !inputs.check_deadlines_only }}
+        if: ${{ !inputs.dry_run && !inputs.check_deadlines_only && !inputs.check_frontiers_only }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
         run: python -m radar
       - name: Validate crawl without delivery
-        if: ${{ inputs.dry_run && !inputs.check_deadlines_only }}
+        if: ${{ inputs.dry_run && !inputs.check_deadlines_only && !inputs.check_frontiers_only }}
         env:
           RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
         run: |
@@ -63,7 +67,7 @@ jobs:
           done
           python -m radar "${args[@]}"
       - name: Verify collection deadlines
-        if: ${{ !inputs.dry_run || inputs.check_deadlines_only }}
+        if: ${{ !inputs.check_frontiers_only && (!inputs.dry_run || inputs.check_deadlines_only) }}
         env:
           RADAR_DRY_RUN: ${{ inputs.dry_run }}
           RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
@@ -73,8 +77,16 @@ jobs:
           read -r -a sources <<< "$RADAR_SOURCE_KEYS"
           for source in "${sources[@]}"; do args+=(--only "$source"); done
           python -m radar "${args[@]}"
+      - name: Verify Frontiers details
+        if: ${{ inputs.check_frontiers_only }}
+        env:
+          RADAR_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=(--check-frontiers --limit 10000)
+          if [[ "$RADAR_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          python -m radar "${args[@]}"
       - name: Save validation report
-        if: ${{ always() && inputs.dry_run }}
+        if: ${{ always() && (inputs.dry_run || inputs.check_frontiers_only) }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: crawl-validation

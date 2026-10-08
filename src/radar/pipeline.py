@@ -514,6 +514,7 @@ def run(
                     backfill=backfill_deadlines,
                     checkpoint=checkpoint,
                     stop_event=stop_event,
+                    prior_errors=(prior_status_doc.get("frontiers_detail", {}).get("deadline_enrichment", {}).get("errors") or {}),
                 )
         finally:
             detail_fetcher.close()
@@ -616,6 +617,49 @@ def build_site(root: Path) -> int:
         log(str(exc))
         return 1
     return 0
+
+
+def run_frontiers_checks(root: Path, *, dry_run: bool = False, limit: int | None = None) -> int:
+    """Check due Frontiers details without rediscovery or Slack delivery."""
+    if limit is not None and limit < 0:
+        log("limit must not be negative")
+        return 1
+    cfg = load_sources(root)
+    source = _frontiers_enrichment_source(cfg)
+    if source is None:
+        log("no Frontiers source configured")
+        return 1
+    source = {**source, "deadline_enrichment": {**(source.get("deadline_enrichment") or {})}}
+    if limit is not None:
+        source["deadline_enrichment"]["daily_limit"] = limit
+    rows, _ = migrate_rows(load_jsonl(root / "data/collections.jsonl"))
+    status_path = root / "data/source_status.json"
+    status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {"sources": {}}
+    previous = status.get("frontiers_detail", {}).get("deadline_enrichment", {})
+    labels = load_domains(root)
+    schema = load_schema(root / "schema/collection.schema.json")
+
+    def checkpoint(stats: dict[str, Any]) -> None:
+        status["frontiers_detail"] = {"publisher": "Frontiers", "deadline_enrichment": stats}
+        status.setdefault("sources", {}).setdefault(source["key"], {})["deadline_enrichment"] = stats
+        _write_artifacts_atomic(root, rows, date.today(), status, schema,
+                                domain_labels(labels), collection_type_labels(labels))
+        log(f"Frontiers details: attempted={stats['attempted']} checked={stats['checked']} "
+            f"failed={stats['failed']} remaining={stats['remaining']}")
+
+    fetcher = Fetcher(cfg.get("user_agent", "research-collection-radar/0.1"), cfg.get("timeout_seconds", 40),
+                      min_interval_seconds=float(source["deadline_enrichment"].get("min_interval_seconds", 1)))
+    stop_event = Event()
+    try:
+        with _stop_events(stop_event):
+            result = enrich_deadlines(fetcher, rows, source, prior_errors=previous.get("errors"),
+                                      checkpoint=checkpoint, stop_event=stop_event)
+    finally:
+        fetcher.close()
+    checkpoint(result)
+    if not dry_run:
+        commit_if_actions(root, f"data: verify Frontiers details ({result['checked']} checked)")
+    return 1 if result.get("failed") or result.get("stop_reason") or result.get("remaining") else 0
 
 
 def run_deadline_checks(root: Path, *, dry_run: bool = False, limit: int | None = None,
@@ -728,6 +772,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--backfill-deadlines", action="store_true")
+    parser.add_argument("--check-frontiers", action="store_true",
+                        help="Check due Frontiers details without discovering or notifying")
     parser.add_argument("--check-deadlines", action="store_true",
                         help="Verify pending Nature/Springer/JSKE detail pages without discovering or notifying")
     parser.add_argument("--enrich-topics", action="store_true")
@@ -761,6 +807,8 @@ def main(argv: list[str] | None = None) -> int:
         return build_site(root)
     if args.enrich_topics:
         return run_topic_enrichment(root, dry_run=args.dry_run, limit=args.limit)
+    if args.check_frontiers:
+        return run_frontiers_checks(root, dry_run=args.dry_run, limit=args.limit)
     if args.check_deadlines:
         return run_deadline_checks(root, dry_run=args.dry_run, limit=args.limit,
                                    only=set(args.only) if args.only else None)
