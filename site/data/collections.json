@@ -79528,6 +79528,32 @@
     "status": "open"
   },
   {
+    "id": "nature-humanities-social-sciences-communications-5e065d654e",
+    "title": "STEM education",
+    "summary": null,
+    "journal": "Humanities and Social Sciences Communications",
+    "journals": [
+      "Humanities and Social Sciences Communications"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [
+      "education",
+      "STEM Education"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-11-10",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/gabichegcb/how-to-submit",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "sciencedirect-cfp-685d06e065",
     "title": "Brain and Language – Expression of Interest for “Special Issue” proposals",
     "summary": null,
@@ -85422,28 +85448,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "APA",
-    "status": "open"
-  },
-  {
-    "id": "nature-human-behaviour-3f53a8aa65",
-    "title": "Menstruation Matters",
-    "summary": null,
-    "journal": "Nature Human Behaviour",
-    "journals": [
-      "Nature Human Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "collection",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://nature.com/collections/dfecidfcac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/NHB-Hero-NOV24-794d972d03b5dce5aef878ba8198d805.jpg",
-    "image_alt": "Menstruation Matters",
-    "first_seen": "2026-09-12",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
