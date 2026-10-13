@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-13T02:34:34Z",
+  "checked_at": "2026-10-13T03:08:06Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -273,8 +273,14 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
+      "ok": true,
+      "http_status": null,
+      "parsed": 2697,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/sciencedirect-cfp.html",
+      "dropped_unclassified": 2643,
+      "skipped_closed": 8
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -454,8 +460,13 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
+      "ok": true,
+      "http_status": null,
+      "parsed": 49,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/apa-cfp.html",
+      "skipped_closed": 18
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -552,8 +563,12 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
+      "ok": true,
+      "http_status": null,
+      "parsed": 1,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/josa-a-features.html"
     },
     "wiley-bjp": {
       "enabled": false,
