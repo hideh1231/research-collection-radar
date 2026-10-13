@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-12T00:31:58Z",
+  "checked_at": "2026-10-13T02:34:34Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 650,
-      "pages": 65,
+      "parsed": 651,
+      "pages": 66,
       "error": null
     },
     "nature-comms-psychology": {
@@ -49,10 +49,10 @@
       "pages": 142,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-12T00:53:15Z",
-        "target_count": 326,
-        "attempted": 326,
-        "unavailable": 10,
+        "checked_at": "2026-10-13T02:54:16Z",
+        "target_count": 400,
+        "attempted": 400,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -115,16 +115,16 @@
             "checked_at": "2026-10-12T01:00:47Z"
           }
         },
-        "checked": 316,
-        "listed": 285,
-        "with_deadline": 285,
+        "checked": 400,
+        "listed": 363,
+        "with_deadline": 363,
         "not_listed": 0,
-        "failed": 10,
+        "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 31,
+        "parse_errors": 37,
         "forbidden": 0,
-        "remaining": 10,
-        "metadata_updated": 188
+        "remaining": 11,
+        "metadata_updated": 243
       }
     },
     "frontiers-robotics-ai": {
@@ -155,7 +155,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2196,
+      "parsed": 2200,
       "pages": 92,
       "error": null
     },
@@ -163,7 +163,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1631,
+      "parsed": 1632,
       "pages": 68,
       "error": null
     },
@@ -227,7 +227,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 354,
+      "parsed": 355,
       "pages": 15,
       "error": null
     },
@@ -267,7 +267,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 924,
+      "parsed": 925,
       "pages": 39,
       "error": null
     },
@@ -504,11 +504,11 @@
     },
     "jske-cfp": {
       "enabled": true,
-      "ok": false,
-      "http_status": null,
-      "parsed": 0,
-      "pages": 0,
-      "error": "FetchError: GET failed after retries: https://www.jske.org/: timed out"
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 1,
+      "error": null
     },
     "aps-cfp": {
       "enabled": false,
@@ -650,7 +650,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 7,
+      "parsed": 8,
       "pages": 1,
       "error": null
     },
@@ -806,7 +806,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 86,
+      "parsed": 88,
       "pages": 6,
       "error": null
     },
@@ -854,10 +854,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-12T00:53:15Z",
-      "target_count": 326,
-      "attempted": 326,
-      "unavailable": 10,
+      "checked_at": "2026-10-13T02:54:16Z",
+      "target_count": 400,
+      "attempted": 400,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -920,16 +920,16 @@
           "checked_at": "2026-10-12T01:00:47Z"
         }
       },
-      "checked": 316,
-      "listed": 285,
-      "with_deadline": 285,
+      "checked": 400,
+      "listed": 363,
+      "with_deadline": 363,
       "not_listed": 0,
-      "failed": 10,
+      "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 31,
+      "parse_errors": 37,
       "forbidden": 0,
-      "remaining": 10,
-      "metadata_updated": 188
+      "remaining": 11,
+      "metadata_updated": 243
     }
   }
 }
