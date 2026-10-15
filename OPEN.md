@@ -1,16 +1,9 @@
 # Open calls
 
-Generated 2026-10-14. Sorted by deadline.
+Generated 2026-10-15. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-14 | Case Reports in Psychiatry: Clinical Presentations at the Intersection of Physical and Mental Health | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/75056/case-reports-in-psychiatry-clinical-presentations-at-the-intersection-of-physical-and-mental-health |
-| 2026-10-14 | Emerging Technologies in Neuro-Oncology: AI, Intraoperative Imaging, Augmented Reality, and Robotics | Frontiers in Oncology | Neuroscience, Robotics | Research Topic | https://frontiersin.org/research-topics/77392/emerging-technologies-in-neuro-oncology-ai-intraoperative-imaging-augmented-reality-and-robotics |
-| 2026-10-14 | Social Justice and Affirmative Approaches to Neurodiversity | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/78773/social-justice-and-affirmative-approaches-to-neurodiversity |
-| 2026-10-14 | Social Presence and Embodied Interaction: Human Connection and Collaboration in Virtual Reality | Frontiers in Virtual Reality | HCI | Research Topic | https://frontiersin.org/research-topics/76495/social-presence-and-embodied-interaction-human-connection-and-collaboration-in-virtual-reality |
-| 2026-10-14 | The Interplay Between Physical Exercise, Brain Activity, and Psychological Outcomes | Frontiers in Psychology | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/77666/the-interplay-between-physical-exercise-brain-activity-and-psychological-outcomes |
-| 2026-10-14 | The Psychology of Hearing Health: Exploring the Psychological Impact of Auditory Perception Difficulties on Communication | Frontiers in Cognition | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/68604/the-psychology-of-hearing-health-exploring-the-psychological-impact-of-auditory-perception-difficulties-on-communication |
-| 2026-10-14 | The moderating role of sex and gender on brain function and behavior | Frontiers in Behavioral Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/71058/the-moderating-role-of-sex-and-gender-on-brain-function-and-behavior |
 | 2026-10-15 | AI-Enhanced Neuroimaging: Transforming Neurodegenerative Disease Management | Frontiers in Neurology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/75642/ai-enhanced-neuroimaging-transforming-neurodegenerative-disease-management |
 | 2026-10-15 | Adultcentrism and Bleak Pedagogy: Rediscovering Adults Through the Lens of Childhood | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/76657/adultcentrism-and-bleak-pedagogy-rediscovering-adults-through-the-lens-of-childhood |
 | 2026-10-15 | Advances in Contemplative Science - Volume II | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/74978/advances-in-contemplative-science---volume-ii |
