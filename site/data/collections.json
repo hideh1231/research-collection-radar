@@ -1820,31 +1820,6 @@
     "status": "open"
   },
   {
-    "id": "nature-psychology-1785849880",
-    "title": "Shape memory alloys",
-    "summary": "This Collection welcomes original research on shape memory alloys, with a focus on their synthesis, structural and functional characterisation, and emerging applications.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "Memory",
-      "focus",
-      "synthesis",
-      "Applications"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-17",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/dcgdaadbac",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/1200x675_GettyImages-1444063047-404b303adb4be672c33e70067fe76a31.jpg",
-    "image_alt": "Shape memory alloys",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-f3a09c2583",
     "title": "The Role of Veterinary Science in Conservation Medicine: From Wildlife Health to Policy Integration",
     "summary": "Conservation Medicine is an emerging and increasingly relevant discipline within veterinary science, situated at the intersection of veterinary science, ecology, and public policy. Despite ongoing global efforts to address biodiversity loss driven by habitat destruction, climate change, emerging diseases, and human-wildlife conflict, traditional conservation approaches often prioritize population-level interventions while overlooking individual animal health, animal welfare, veterinary diagnostics, epidemiology, and cross-species disease dynamics. Recent studies demonstrate that veterinary input is critical in identifying and managing novel infectious threats, conducting health surveillance, interpreting pathology and clinical findings, monitoring health as a barometer of ecosystem change, and ensuring humane management practices. However, the systematic role of veterinary professionals in shaping conservation strategies and informing policy is not yet fully realized, and their involve",
@@ -4765,31 +4740,6 @@
     "status": "open"
   },
   {
-    "id": "nature-ncomms-023fef2846",
-    "title": "Diagnosis and Care of Sepsis",
-    "summary": "With this cross-journal Collection, the editors at Communications Medicine, Nature Communications, and Scientific Reports invite manuscripts that highlight diagnostic techniques and treatment modalities for confronting sepsis.",
-    "journal": "Nature Communications",
-    "journals": [
-      "Nature Communications",
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "diagnosis",
-      "treatment",
-      "Sepsis"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-27",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fecjcifefd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-460716535-web-5c9e008279f68e83970f7f48df32b8f8.jpg",
-    "image_alt": "Diagnosis and Care of Sepsis",
-    "first_seen": "2026-08-27",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-5cc415dba4",
     "title": "Generative models of neural activity: Using AI to simulate, interpret, and predict brain dynamics",
     "summary": "The advent of high-density recording technologies, such as Neuropixels and large-scale calcium imaging, has provided an unprecedented look into the simultaneous activity of thousands of neurons. However, the sheer dimensionality and non-linear nature of this data pose significant challenges for interpretation. Traditional analytical methods often focus on discriminative tasks, mapping neural activity to external stimuli or behavior. In contrast, generative models, including Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Diffusion Models, offer a powerful alternative by learning the underlying statistical distribution of neural firing patterns. These AI-driven frameworks allow researchers to move beyond description, enabling the synthesis of realistic neural activity and the discovery of latent manifolds that govern brain states. By treating neural activity as a generative process, we can better understand the intrinsic logic of biological computation.",
@@ -5138,34 +5088,6 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-938f5069e5",
-    "title": "Insect Behaviour",
-    "summary": "This collection welcomes submissions that deal with advances in all aspects of insect behaviour, from molecular mechanisms to ecological interactions.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "mechanisms",
-      "behaviour",
-      "molecular mechanisms",
-      "molecular",
-      "Advances"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-10-28",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/bdaigbcafg",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Insect_Behaviour_1200x675-0f23ab76276f459a3c969232b3680fcc.jpg",
-    "image_alt": "Insect Behaviour",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -13050,30 +12972,6 @@
     "image_alt": "Be Positive About the Negative: The Value of Null Results in Neuropharmacology",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "springer-bmc-digital-health-3b3ae85b8c",
-    "title": "Digital solutions in assisted living",
-    "summary": "Assisted living provides housing solutions to support independent living for older adults or people with disabilities. These facilities provide support in a number of ways, including housekeeping, social act...",
-    "journal": "BMC Digital Health",
-    "journals": [
-      "BMC Digital Health"
-    ],
-    "domains": [],
-    "topics": [
-      "older adults",
-      "social",
-      "digital"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-09",
-    "deadline_status": "listed",
-    "url": "https://bmcdigitalhealth.biomedcentral.com/collections/bibibdhfga",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Springer Nature",
     "status": "open"
   },
   {
@@ -36076,6 +35974,38 @@
     "status": "open"
   },
   {
+    "id": "frontiers-99eca6cde4",
+    "title": "Synaptic Plasticity Across the Lifespan: Mechanisms, Adaptation, and Vulnerability, Volume II",
+    "summary": "Synaptic plasticity is a fundamental property of the brain that underlies learning, memory, and adaptive responses to environmental stimuli. During development, plasticity shapes neural circuits, enabling functional specialization and cognitive maturation. In adulthood, it supports experience-dependent changes, while during aging, synaptic adaptability often declines, contributing to cognitive impairments. However, plasticity can also become maladaptive, leading to neurodevelopmental disorders, neurodegeneration, or psychiatric conditions.",
+    "journal": "Frontiers in Cellular Neuroscience",
+    "journals": [
+      "Frontiers in Cellular Neuroscience",
+      "Frontiers in Aging Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "synaptic plasticity",
+      "neural circuit remodeling",
+      "neurogenesis",
+      "glia-neuron interactions",
+      "neurodevelopment",
+      "aging brain",
+      "neurodegeneration",
+      "neurodevelopmental disorders"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/81656/synaptic-plasticity-across-the-lifespan-mechanisms-adaptation-and-vulnerability-volume-ii",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "nature-ncomms-ed41529360",
     "title": "Synthetic Catalysts for Biomedicine and Biotechnology",
     "summary": "In this cross-journal Collection between Nature Communications, Nature Chemical Biology, Communications Chemistry, Communications Materials, Communications Sustainability and Scientific Reports, we aim to bring together the latest advances in synthetic catalysts for biomedicine and biotechnology, covering design and production, mechanistic studies, and application demonstrations.",
@@ -37312,38 +37242,6 @@
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-09-12",
-    "publisher": "Taylor & Francis",
-    "status": "open"
-  },
-  {
-    "id": "taylor-francis-special-issues-f46928ff36",
-    "title": "Innovative Methods and Applications for Investigating Road User Behaviour, Traffic Safety, and Dynamics",
-    "summary": "Road user behaviour plays a fundamental role in understanding traffic dynamics, road safety, and the interactions amongst human-driven, connected, and automated vehicles. With the rapid development of advanced sensing, naturalistic driving data, connected vehicle technologies, and artificial intelligence, there is growing interest in developing new behavioural models and data-driven methods to better understand, predict, and incorporate human driving behaviour into transport analysis and control. Over the past decade, high-quality open-access datasets have made it possible to understand and model different aspects of driver behaviour, which remained unexplored. Some newer datasets, such as highD, INTERACTION, ZenTraffic, CitySim, and autonomous vehicle sensor data like Waymo and KITTI, allow analysing and understanding traffic patterns, behaviours, and potential hazards from the perspective of the automated vehicle itself and also allow access to labelled microscopic traffic data from different types of sources. Meanwhile, with such massive data, statistical and data-driven modelling methods have also advanced, with growing need to uncover behavioural aspects through models. Scope This special issue seeks to deepen our understanding of driver behaviour, traffic safety, and dynamic s using a variety of high-fidelity traffic datasets and addressing emerging issues for this evolving field. Topics include (but are not limited to) the following: Innovative approaches for microscopic driver behaviour modelling and prediction; New insights into behavioural heterogeneity and uncertainty in mixed traffic of traditional, connected, and automated vehicles; Physics-informed and interpretable models linking road user behaviour with traffic flow dynamics; Multi-source data integration/fusion for microscopic traffic safety analysis; Advanced approaches for crash risk analysis and risky driving behaviour recognition; New traffic conflict measure-empowered safety evaluation; Vulnera",
-    "journal": "Transportmetrica B: Transport Dynamics",
-    "journals": [
-      "Transportmetrica B: Transport Dynamics"
-    ],
-    "domains": [
-      "psychology",
-      "robotics"
-    ],
-    "topics": [
-      "AI",
-      "development",
-      "Human",
-      "Applications",
-      "technologies",
-      "data",
-      "Methods",
-      "integration"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2027-01-04",
-    "deadline_status": "listed",
-    "url": "https://think.taylorandfrancis.com/special_issues/innovative-methods-and-applications-for-investigating-road-user-behaviour-traffic-safety-and-dynamics",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-10-11",
     "publisher": "Taylor & Francis",
     "status": "open"
   },
@@ -39400,6 +39298,31 @@
     "status": "open"
   },
   {
+    "id": "nature-psychology-4c3bf57857",
+    "title": "Cerebrospinal fluid and hemodynamics in the human brain",
+    "summary": "This Collection welcomes studies of the dynamics of cerebrospinal fluid and cerebral circulation in health and disease.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Brain",
+      "Human"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-01-13",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/gcchbaeeif",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/cerebrospinal_hero_image-f717f0fa02c249a049b76a67462f464c.jpg",
+    "image_alt": "Cerebrospinal fluid and hemodynamics in the human brain",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "frontiers-30fd3b2ad5",
     "title": "Decoding Gene–Environment Interaction in Psychiatric Disorders: From Cross-Disorder Genetic Architecture to Precision Psychiatry",
     "summary": "Psychiatric disorders are highly heritable yet profoundly shaped by environmental exposures, with increasing evidence suggesting that shared genetic architectures underlie multiple diagnostic categories. Large-scale genome-wide association studies (GWAS), biobank resources, and advances in statistical genetics have revealed extensive pleiotropy and genetic correlations across disorders such as schizophrenia, bipolar disorder, major depressive disorder, substance use disorders, and suicidality. Meanwhile, environmental risk factors—including early-life adversity, substance exposure, stress, and social determinants—modulate genetic susceptibility through complex gene–environment (G×E) interactions. Recent developments in multi-ancestry genomics, polygenic risk modeling, multi-omics integration, and longitudinal cohort designs now provide unprecedented opportunities to dissect how genetic liability and environmental contexts jointly shape psychiatric phenotypes, disease trajectories, and ",
@@ -41364,6 +41287,31 @@
     "image_alt": null,
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-1785849880",
+    "title": "Shape memory alloys",
+    "summary": "This Collection welcomes original research on shape memory alloys, with a focus on their synthesis, structural and functional characterisation, and emerging applications.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "Memory",
+      "focus",
+      "synthesis",
+      "Applications"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-01-17",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/dcgdaadbac",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/1200x675_GettyImages-1444063047-404b303adb4be672c33e70067fe76a31.jpg",
+    "image_alt": "Shape memory alloys",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -43554,6 +43502,31 @@
     "status": "open"
   },
   {
+    "id": "nature-ncomms-023fef2846",
+    "title": "Diagnosis and Care of Sepsis",
+    "summary": "With this cross-journal Collection, the editors at Communications Medicine, Nature Communications, and Scientific Reports invite manuscripts that highlight diagnostic techniques and treatment modalities for confronting sepsis.",
+    "journal": "Nature Communications",
+    "journals": [
+      "Nature Communications",
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "diagnosis",
+      "treatment",
+      "Sepsis"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-01-27",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/fecjcifefd",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages-460716535-web-5c9e008279f68e83970f7f48df32b8f8.jpg",
+    "image_alt": "Diagnosis and Care of Sepsis",
+    "first_seen": "2026-08-27",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-36b1fbb770",
     "title": "Genome editing",
     "summary": "This Collection welcomes innovative research on genome editing tool development.",
@@ -43833,6 +43806,34 @@
     "url": "https://nature.com/collections/abiiicbhdi",
     "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/HeroImage_ImmEvasion_WebsiteCPMT-45afa2a18c3dc9f538037c9c706aa5a5.jpg",
     "image_alt": "Immune evasion",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-938f5069e5",
+    "title": "Insect Behaviour",
+    "summary": "This collection welcomes submissions that deal with advances in all aspects of insect behaviour, from molecular mechanisms to ecological interactions.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "mechanisms",
+      "behaviour",
+      "molecular mechanisms",
+      "molecular",
+      "Advances"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-01-28",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/bdaigbcafg",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Insect_Behaviour_1200x675-0f23ab76276f459a3c969232b3680fcc.jpg",
+    "image_alt": "Insect Behaviour",
     "first_seen": "2026-08-29",
     "publisher": "Nature Portfolio",
     "status": "open"
@@ -48651,6 +48652,30 @@
     "status": "open"
   },
   {
+    "id": "springer-bmc-digital-health-3b3ae85b8c",
+    "title": "Digital solutions in assisted living",
+    "summary": "Assisted living provides housing solutions to support independent living for older adults or people with disabilities. These facilities provide support in a number of ways, including housekeeping, social act...",
+    "journal": "BMC Digital Health",
+    "journals": [
+      "BMC Digital Health"
+    ],
+    "domains": [],
+    "topics": [
+      "older adults",
+      "social",
+      "digital"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-02-09",
+    "deadline_status": "listed",
+    "url": "https://bmcdigitalhealth.biomedcentral.com/collections/bibibdhfga",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Springer Nature",
+    "status": "open"
+  },
+  {
     "id": "frontiers-067f8e61bd",
     "title": "Gene–Environment Interplay in the Development of Behavioral and Psychiatric Disorders Across the Lifespan",
     "summary": "Behavioral and psychiatric disorders arise from dynamic interactions between genetic predisposition and environmental influences across development and aging. Increasing evidence highlights critical windows of vulnerability and plasticity during which environmental exposures—such as early-life stress, social context, nutrition, and age-related physiological changes—shape genetic risk. Advances in human genetics, longitudinal cohort studies, and multi-omics approaches, alongside mechanistic investigations in model organisms (e.g., rodents, zebrafish, and invertebrates), have provided new insights into conserved developmental pathways regulating behavior and psychiatric traits.",
@@ -49426,10 +49451,12 @@
     "summary": "Social media has become deeply embedded in daily life. Despite its pervasive presence, the psychological implications for performance remain empirically underexplored. This includes psychological states and behaviors associated with performance, alongside broader aspects of well-being in applied settings.",
     "journal": "Frontiers in Psychology",
     "journals": [
-      "Frontiers in Psychology"
+      "Frontiers in Psychology",
+      "Frontiers in Computer Science"
     ],
     "domains": [
-      "psychology"
+      "psychology",
+      "hci"
     ],
     "topics": [
       "Social Media",
@@ -54918,6 +54945,41 @@
     "image_alt": "Rural populations and marginalisation",
     "first_seen": "2026-08-26",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-db55f0e431",
+    "title": "Selenium in Soil-Plant-Animal Systems and its Essential Role for Human Health, Volume II",
+    "summary": "Note: We welcome in-scope submissions arising from oral and/or poster presentations from 25th International Conference on Environmental Indicators . However, submissions are also warmly welcomed from non-attendees.",
+    "journal": "Frontiers in Environmental Science",
+    "journals": [
+      "Frontiers in Environmental Science",
+      "Frontiers in Nutrition",
+      "Frontiers in Plant Science",
+      "Frontiers in Soil Science",
+      "Frontiers in Veterinary Science"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Selenium",
+      "Absorption",
+      "Metabolism",
+      "Chemical Transformation",
+      "Plant Nutrition",
+      "Soil System",
+      "Human and Animal Health",
+      "Safety"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/82453/selenium-in-soil-plant-animal-systems-and-its-essential-role-for-human-health-volume-ii",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
     "status": "open"
   },
   {
@@ -65232,7 +65294,8 @@
     "summary": "Foundation models, including large language models (LLMs), vision-language models (VLMs), and vision-language-action (VLA) models, are rapidly entering the field of robotics and physical AI. By unifying perception, language understanding, planning, and action within single, scalable architectures, these systems present a significant opportunity for robotic agents to operate across diverse real-world tasks. Yet, unlike disembodied applications in natural language processing or image generation, deploying foundation models in physical systems places them under constraints that have no counterpart in digital environments: strict latency requirements, physical irreversibility of actions, sensor noise, mechanical variability, and the ever-present risk of harm to people or infrastructure. Meeting these constraints requires not only algorithmic innovation but robust systems engineering, a dimension that remains underexplored relative to the rapid pace of model development.",
     "journal": "Frontiers in Neurorobotics",
     "journals": [
-      "Frontiers in Neurorobotics"
+      "Frontiers in Neurorobotics",
+      "Frontiers in Robotics and AI"
     ],
     "domains": [
       "hri",
@@ -67497,8 +67560,8 @@
     "deadline": "2027-04-16",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/84804/neuroergonomics-of-human-ai-and-human-machine-robot-teaming",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/84804",
+    "image_alt": "Neuroergonomics of Human-AI and Human-Machine-Robot Teaming",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
@@ -69668,7 +69731,9 @@
     "summary": "This is the third volume of the Research Topic Law and Neuroscience: Justice as a Challenge for Neurorights, Neurolaw, and Neurovictimology series:",
     "journal": "Frontiers in Psychology",
     "journals": [
-      "Frontiers in Psychology"
+      "Frontiers in Psychology",
+      "Frontiers in Human Neuroscience",
+      "Frontiers in Neuroscience"
     ],
     "domains": [
       "neuroscience",
@@ -69687,7 +69752,7 @@
     "deadline": "2027-04-23",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/82598/law-and-neuroscience-justice-as-a-challenge-for-neurorights-neurolaw-forensic-psychology-and-neurovictimology---volume-iii",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/82598/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/82598",
     "image_alt": "Law and Neuroscience: Justice as a Challenge for Neurorights, Neurolaw, Forensic Psychology, and Neurovictimology - Volume III",
     "first_seen": "2026-10-06",
     "publisher": "Frontiers",
@@ -69950,7 +70015,7 @@
     "deadline": "2027-04-24",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86565/collaborative-approaches-to-recovery-and-participation-in-mental-health-occupational-therapy-lived-experiences-and-rehabilitation-perspectives",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/86565",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/86565/thumb_400.jpg",
     "image_alt": "Collaborative Approaches to Recovery and Participation in Mental Health: Occupational Therapy, Lived Experiences and Rehabilitation Perspectives",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -69993,7 +70058,8 @@
     "summary": "As networked systems scale beyond the reach of centralized control, decentralized network architectures, protocols, and coordination mechanisms have become critical to sustaining performance, resilience, and trust. Decentralization has therefore emerged as a unifying paradigm in modern computing, enabling systems that distribute data, computation, decision-making, and control across multiple actors and infrastructures rather than relying on centralized authorities. It reflects not only a technological shift but also a transformation in how digital systems are designed, coordinated, governed, and sustained.",
     "journal": "Frontiers in Computer Science",
     "journals": [
-      "Frontiers in Computer Science"
+      "Frontiers in Computer Science",
+      "Frontiers in Blockchain"
     ],
     "domains": [
       "hci"
@@ -70012,7 +70078,7 @@
     "deadline": "2027-04-24",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86177/governance-and-architectures-of-decentralized-systems",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/86177",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/86177/thumb_400.jpg",
     "image_alt": "Governance and Architectures of Decentralized Systems",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -71297,6 +71363,37 @@
     "status": "open"
   },
   {
+    "id": "frontiers-a0ce45a41f",
+    "title": "Consciousness in Transition: Operational Definitions and Diagnostic Frontiers in Severe Brain Injury",
+    "summary": "Consciousness in severe acquired brain injury sits at a tense interface between what we can measure and what we believe we’re measuring. At the bedside, EEG, MRI, PET, and related tools chart residual function, prognosis, and change; in theory, shifting operational definitions—from neuroscience to AI and information theory—propose what “consciousness” is and how it should register in data. Yet these conceptual and instrumental worlds often talk past each other, producing fragmented interpretations and uncertain judgments in real clinical moments. This collection explores that gap: how definitions shape readings, how readings reshape definitions, and how renewed dialogue across disciplines can clarify what our instruments truly reveal about awareness at the edge of recovery.",
+    "journal": "Frontiers in Neurology",
+    "journals": [
+      "Frontiers in Neurology"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "electrophysiological assessment",
+      "radiological assessment",
+      "severe acquired brain injury",
+      "conciousness",
+      "AI",
+      "clinical",
+      "Brain",
+      "Neuroscience"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-04-30",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87362/neurophysiological-and-diagnostic-studies-in-minimally-conscious-patients-instrumental-approaches-in-severe-acquired-brain-injury-and-coma",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-13",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "frontiers-de24a4922f",
     "title": "Dam Removal and Ecosystem Restoration Volume II: Ecological, Socio-Economic, and Economic Dimensions Across Scales",
     "summary": "This Research Topic is the second volume in a series of dam removal collections. The first volume can be found here .",
@@ -71966,37 +72063,6 @@
     "image_url": "https://www.frontiersin.org/image/researchtopic/76786",
     "image_alt": "NeuroDesign in Human–Robot Interaction, Volume 2: Translational Brain–Body–Robot Loops for Adaptive, Trustworthy, and Embodied HRI",
     "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-a0ce45a41f",
-    "title": "Neurophysiological and Diagnostic Studies in Minimally Conscious Patients: Instrumental Approaches in Severe Acquired Brain Injury and Coma",
-    "summary": "Consciousness in severe acquired brain injury sits at a tense interface between what we can measure and what we believe we’re measuring. At the bedside, EEG, MRI, PET, and related tools chart residual function, prognosis, and change; in theory, shifting operational definitions—from neuroscience to AI and information theory—propose what “consciousness” is and how it should register in data. Yet these conceptual and instrumental worlds often talk past each other, producing fragmented interpretations and uncertain judgments in real clinical moments. This collection explores that gap: how definitions shape readings, how readings reshape definitions, and how renewed dialogue across disciplines can clarify what our instruments truly reveal about awareness at the edge of recovery.",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "electrophysiological assessment",
-      "radiological assessment",
-      "severe acquired brain injury",
-      "conciousness",
-      "AI",
-      "clinical",
-      "Brain",
-      "Neuroscience"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2027-04-30",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/87362/neurophysiological-and-diagnostic-studies-in-minimally-conscious-patients-instrumental-approaches-in-severe-acquired-brain-injury-and-coma",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-10-13",
     "publisher": "Frontiers",
     "status": "open"
   },
@@ -72763,7 +72829,7 @@
     "deadline": "2027-05-01",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87301/the-emerging-neuroscience-of-sleep-volume-ii",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87301/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87301",
     "image_alt": "The emerging neuroscience of sleep Volume II",
     "first_seen": "2026-10-14",
     "publisher": "Frontiers",
@@ -72797,6 +72863,162 @@
     "image_url": "https://www.frontiersin.org/image/researchtopic/82272",
     "image_alt": "Antimicrobial Therapy in Zoological Collections",
     "first_seen": "2026-08-27",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-28115aff5e",
+    "title": "Bridging Research and Practice in Contemporary Psychotherapy",
+    "summary": "Contemporary psychotherapy increasingly includes integrative, process-oriented, and idiographic approaches designed to address the complexity and heterogeneity of clinical practice alongside established protocol-based treatments. However, a persistent gap remains between conceptual innovation, empirical validation, and implementation in routine care. Conceptual developments and compelling clinical illustrations may precede systematic examination of their mechanisms, outcomes, effectiveness, and applicability across real-world settings. At the same time, mental health services generate rich clinical experience and routine data that remain underused as sources of scientific knowledge. Bridging these domains requires approaches that connect evidence-based practice with practice-based evidence and involve clinicians, researchers, trainees, patients, and services in reciprocal processes of knowledge generation.",
+    "journal": "Frontiers in Psychology",
+    "journals": [
+      "Frontiers in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Psychotherapy",
+      "Psychological Treatment",
+      "Practice-Based Research",
+      "Practice Research Networks",
+      "Clinical Validation",
+      "Implementation Science",
+      "Public Mental Health",
+      "Reflective Practice"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-05-02",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/86524/bridging-research-and-practice-in-contemporary-psychotherapy",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-a314979fde",
+    "title": "Coevolutionary Resilience of Host-Associated and Environmental Microbiomes Under Environmental Stress",
+    "summary": "Microbiome ecology and evolution examines how microbial communities respond to environmental change and influence the organisms and ecosystems with which they interact. Stressors such as pollution, climate change, and habitat alteration can affect microbiome composition and function, but it remains unclear when these changes reflect short-term community turnover and when they result from adaptation or reciprocal coadaptation. Experimental and comparative research has shown that microbial communities can change through processes including selection, dispersal, and shifts in host–microbe interactions. However, the conditions under which these processes support microbiome stability, recovery, or longer-term resilience and their consequences for hosts and ecosystem functioning remain insufficiently understood. A stronger focus on the underlying biological and evolutionary processes is needed to identify general principles across different microbiomes and stress contexts.",
+    "journal": "Frontiers in Ecology and Evolution",
+    "journals": [
+      "Frontiers in Ecology and Evolution"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Coevolution",
+      "Microbiome",
+      "Environmental Stress",
+      "Eco-Evolutionary Dynamics",
+      "Host-Microbe Interactions",
+      "resilience",
+      "focus",
+      "evolution"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-05-02",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/83435/coevolutionary-resilience-of-host-associated-and-environmental-microbiomes-under-environmental-stress",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/83435/thumb_400.jpg",
+    "image_alt": "Coevolutionary Resilience of Host-Associated and Environmental Microbiomes Under Environmental Stress",
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-69b9fb65bf",
+    "title": "Computational approaches to neurodegenerative diseases – Volume II",
+    "summary": "Neurodegenerative diseases remain among the hardest problems in neuroscience. They are multifactorial, they progress over decades, and the pathology that drives them is underway before symptoms appear. Computational neuroscience offers powerful ways to address these challenges. Mathematical modelling, machine learning, and large-scale simulations can bring together data from molecules, cells, brain networks, and clinical studies to track disease progression and test potential treatments.",
+    "journal": "Frontiers in Computational Neuroscience",
+    "journals": [
+      "Frontiers in Computational Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Biomarker identification",
+      "Disease progression modeling",
+      "Alzheimer's",
+      "Parkinson's",
+      "Brain network analysis",
+      "Brain",
+      "Computational",
+      "Neuroscience"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-05-02",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87507/computational-approaches-to-neurodegenerative-diseases---volume-ii",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-5f1291c4ff",
+    "title": "Impacts of substance use/exposure and behavioral addictions on the early brain: Volume II",
+    "summary": "Building on the foundation established in Volume I, this second edition expands our focus on the vulnerability of the developing brain to modern exposure risks and reward-seeking behaviors. The developing brain undergoes critical structural, functional, and neurochemical reorganization from prenatal life through emerging adulthood, leaving young neural networks uniquely susceptible to external disruptions.",
+    "journal": "Frontiers in Human Neuroscience",
+    "journals": [
+      "Frontiers in Human Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "neurodevelopment",
+      "adolescent brain development",
+      "substance use disorders",
+      "behavioral addiction",
+      "problematic smartphone use",
+      "internet gaming disorder",
+      "reward sensitivity",
+      "inhibitory control"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-05-02",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87487/impacts-of-substance-useexposure-and-behavioral-addictions-on-the-early-brain-volume-ii",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-14",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-fb35015a87",
+    "title": "Trust, Perception, and Cognitive Processes in Human-AI Interaction",
+    "summary": "Artificial intelligence is now deeply embedded in everyday life, from conversational agents and recommendation systems to autonomous vehicles and collaborative robots. With the rapid proliferation of generative AI and increasingly autonomous decision-making systems, understanding the psychological mechanisms that shape how people perceive, trust, and interact with AI has become a pressing interdisciplinary challenge. Yet existing research remains fragmented across application domains (e.g., chatbots, robots, recommender systems), theoretical traditions (e.g., cognitive, social, and computational approaches), and methodological scales (ranging from controlled laboratory experiments to real-world deployment studies). This fragmentation makes it difficult to identify generalizable principles that govern human-AI interaction and to translate psychological insights into actionable design guidance.",
+    "journal": "Frontiers in Psychology",
+    "journals": [
+      "Frontiers in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Human-AI Interaction",
+      "Trust in AI",
+      "Explainable AI (XAI)",
+      "HRI",
+      "Cognitive Processes",
+      "Decision-Making",
+      "Automation Trust",
+      "Transparency"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-05-02",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/86678/trust-perception-and-cognitive-processes-in-human-ai-interaction",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/86678/thumb_400.jpg",
+    "image_alt": "Trust, Perception, and Cognitive Processes in Human-AI Interaction",
+    "first_seen": "2026-10-14",
     "publisher": "Frontiers",
     "status": "open"
   },
@@ -74024,7 +74246,7 @@
     "deadline": "2027-05-16",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86463/women-in-neuroergonomics-sex-based-differences-and-the-working-brain",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/86463",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/86463/thumb_400.jpg",
     "image_alt": "Women in Neuroergonomics: Sex-Based Differences and the Working Brain",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -74291,7 +74513,7 @@
     "deadline": "2027-05-18",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86854/cultural-influences-on-mental-health",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86854/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86854",
     "image_alt": "Cultural Influences on Mental Health",
     "first_seen": "2026-10-14",
     "publisher": "Frontiers",
@@ -78862,6 +79084,38 @@
     "status": "open"
   },
   {
+    "id": "taylor-francis-special-issues-f46928ff36",
+    "title": "Innovative Methods and Applications for Investigating Road User Behaviour, Traffic Safety, and Dynamics",
+    "summary": "Road user behaviour plays a fundamental role in understanding traffic dynamics, road safety, and the interactions amongst human-driven, connected, and automated vehicles. With the rapid development of advanced sensing, naturalistic driving data, connected vehicle technologies, and artificial intelligence, there is growing interest in developing new behavioural models and data-driven methods to better understand, predict, and incorporate human driving behaviour into transport analysis and control. Over the past decade, high-quality open-access datasets have made it possible to understand and model different aspects of driver behaviour, which remained unexplored. Some newer datasets, such as highD, INTERACTION, ZenTraffic, CitySim, and autonomous vehicle sensor data like Waymo and KITTI, allow analysing and understanding traffic patterns, behaviours, and potential hazards from the perspective of the automated vehicle itself and also allow access to labelled microscopic traffic data from different types of sources. Meanwhile, with such massive data, statistical and data-driven modelling methods have also advanced, with growing need to uncover behavioural aspects through models. Scope This special issue seeks to deepen our understanding of driver behaviour, traffic safety, and dynamic s using a variety of high-fidelity traffic datasets and addressing emerging issues for this evolving field. Topics include (but are not limited to) the following: Innovative approaches for microscopic driver behaviour modelling and prediction; New insights into behavioural heterogeneity and uncertainty in mixed traffic of traditional, connected, and automated vehicles; Physics-informed and interpretable models linking road user behaviour with traffic flow dynamics; Multi-source data integration/fusion for microscopic traffic safety analysis; Advanced approaches for crash risk analysis and risky driving behaviour recognition; New traffic conflict measure-empowered safety evaluation; Vulnera",
+    "journal": "Transportmetrica B: Transport Dynamics",
+    "journals": [
+      "Transportmetrica B: Transport Dynamics"
+    ],
+    "domains": [
+      "psychology",
+      "robotics"
+    ],
+    "topics": [
+      "AI",
+      "development",
+      "Human",
+      "Applications",
+      "technologies",
+      "data",
+      "Methods",
+      "integration"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-07-01",
+    "deadline_status": "listed",
+    "url": "https://think.taylorandfrancis.com/special_issues/innovative-methods-and-applications-for-investigating-road-user-behaviour-traffic-safety-and-dynamics",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-11",
+    "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-fab132aee3",
     "title": "Fertility preservation",
     "summary": "This Collection brings togetehr research on fertility preservation including oncofertility, gamete and ovarian tissue cryopreservation, reproductive ageing, gonadotoxicity, vitrification, personalised fertility care, ethical considerations",
@@ -79110,6 +79364,60 @@
     "url": "https://nature.com/collections/cfhdifbccf",
     "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/1200x675_GettyImages-1358476152-a3f92eff219debd69fe5864a5b802de3.jpg",
     "image_alt": "Photonic time crystals and time varying media",
+    "first_seen": "2026-10-14",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-52160616d2",
+    "title": "Creatine in exercise and health",
+    "summary": "We welcome research spanning molecular mechanisms, clinical applications, sports nutrition, exercise physiology, and metabolic and overall health.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "mechanisms",
+      "clinical",
+      "Applications",
+      "molecular",
+      "molecular mechanisms",
+      "nutrition",
+      "Exercise",
+      "Physiology"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-07-14",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/jbbcdjchjb",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/HeroImageWebsiteCPMT-820386fc8a8f92f699b71d100efe2b10.jpg",
+    "image_alt": "Creatine in exercise and health",
+    "first_seen": "2026-10-14",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-74b2242659",
+    "title": "Quantum light–matter interactions",
+    "summary": "This Collection covers cavity quantum electrodynamics, strong and weak coupling regimes, nonlinear optical processes, and entanglement-driven phenomena. Submissions advancing quantum communication, sensing, and photonic device applications are welcome.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "Applications",
+      "communication"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-07-14",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/acbgdehfbj",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/GettyImages_CFP-abccbe2cb1929148704e593d023c1b86.jpg",
+    "image_alt": "Quantum light–matter interactions",
     "first_seen": "2026-10-14",
     "publisher": "Nature Portfolio",
     "status": "open"
@@ -79754,7 +80062,7 @@
     "deadline": "2027-09-10",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87040/from-circuits-to-behavior-insights-from-neuroboston-fall-symposium-2026",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/87040",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/87040/thumb_400.jpg",
     "image_alt": "From Circuits to Behavior: Insights from NeuroBoston Fall Symposium 2026",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
@@ -80410,38 +80718,6 @@
     "url": "https://frontiersin.org/research-topics/74245/acute-vertigo-and-imbalance",
     "image_url": "https://www.frontiersin.org/image/researchtopic/74245",
     "image_alt": "Acute Vertigo and Imbalance",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-6d51697854",
-    "title": "Adaptive robotics: A computational intelligence perspective",
-    "summary": "Adaptive robotics marks a fundamental shift in artificial intelligence and intelligent control, positioning robots not just as programmed agents but as autonomous systems capable of learning and evolving within dynamic and uncertain environments. This evolution is pivotal not only for control robustness but also for enabling autonomous agents to exhibit real-time learning and adaptive reasoning. This new generation of robots leverages the integration of artificial intelligence, machine learning, metaheuristic algorithms, and fuzzy logic, enabling continuous interaction among perception, decision-making, and action.",
-    "journal": "Frontiers in Neurorobotics",
-    "journals": [
-      "Frontiers in Neurorobotics"
-    ],
-    "domains": [
-      "hri",
-      "robotics"
-    ],
-    "topics": [
-      "Robotics",
-      "AI",
-      "Metaheuristic algorithms",
-      "data-driven",
-      "machine learning",
-      "artificial neural networks",
-      "fuzzy logic",
-      "Learning"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/73393/adaptive-robotics-a-computational-intelligence-perspective",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/73393",
-    "image_alt": "Adaptive robotics: A computational intelligence perspective",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
@@ -85490,38 +85766,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-1eccafd1ca",
-    "title": "Interactions between the nervous, immune, and endocrine systems in brain health",
-    "summary": "Brain health is the result of intricate communication between the nervous, immune, and endocrine systems. Traditionally, these systems were studied in isolation; however, recent advances highlight their dynamic crosstalk and their collective influence on brain function. Neuroinflammation, hormonal signaling, and immune responses are now recognized as critical factors in neurological development, homeostasis, and disease. Disruptions in these inter-system interactions are implicated in a myriad of conditions, such as neurodegenerative diseases, psychiatric disorders, and metabolic syndromes. As our understanding deepens, there is a growing appreciation for integrative approaches that examine these systems together, offering novel insights into mechanisms underlying brain health and disease.",
-    "journal": "Frontiers in Human Neuroscience",
-    "journals": [
-      "Frontiers in Human Neuroscience"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Nervous System",
-      "Immune System",
-      "Endocrine System",
-      "Brain Health",
-      "mechanisms",
-      "Brain",
-      "development",
-      "Advances"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/73292/interactions-between-the-nervous-immune-and-endocrine-systems-in-brain-health",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-e073114fb3",
     "title": "International Meeting on Genome Editing in Aquaculture (EDIGEN 2025), Chile",
     "summary": "The First International Meeting on Genome Editing in Aquaculture (EDIGEN 2025) will be held in Puerto Varas, Chile, on November 19–20, 2025. The event aims to foster discussion and knowledge exchange on the latest advances in functional genomics, precision genetics, gene editing, and other novel genomic techniques (NGTs) applied to aquaculture species. It also seeks to strengthen collaboration between scientific research, industrial applications, and regulatory developments in this rapidly evolving field.",
@@ -87629,39 +87873,6 @@
     "url": "https://frontiersin.org/research-topics/69647/pufa-lipid-mediators-in-inflammation-and-associated-chronic-ocular-and-neurological-diseases",
     "image_url": "https://www.frontiersin.org/image/researchtopic/69647",
     "image_alt": "PUFA Lipid Mediators in Inflammation and Associated Chronic Ocular and Neurological Diseases",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-28df33a4cd",
-    "title": "Personalized neurophysiological interventions in education and mental health: Bridging research and human–robot interaction",
-    "summary": "This Research Topic addresses a critical gap between neuroscientific research and its practical implementation in education and mental healthcare. Although neurophysiological tools such as EEG, eye-tracking, and cardio-respiratory monitoring have matured in research contexts, their translation into real-world adaptive systems remains underdeveloped. Integrating these technologies with socially intelligent robotics and human–robot interaction aims to bridge laboratory-based neuroscience insights with real-world applications in therapy, rehabilitation, and adaptive learning. A translational framework connects theoretical advances in affective computing and physiological sensing with ethical and effective implementation strategies. For example, for students with attention difficulties, these systems can use EEG patterns to detect focus loss in real time and provide adaptive support, such as adjusting task difficulty or delivering personalized feedback, which may improve attention and acad",
-    "journal": "Frontiers in Neurorobotics",
-    "journals": [
-      "Frontiers in Neurorobotics"
-    ],
-    "domains": [
-      "hri",
-      "psychology",
-      "robotics"
-    ],
-    "topics": [
-      "Neuroadaptive Technologies",
-      "HRI",
-      "Physiological Computing",
-      "Adaptive Learning Systems",
-      "Digital Mental Health Interventions",
-      "Human",
-      "Advances",
-      "Mental Health"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/72606/personalized-neurophysiological-interventions-in-education-and-mental-health-bridging-research-and-human-robot-interaction",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/72606",
-    "image_alt": "Personalized neurophysiological interventions in education and mental health: Bridging research and human–robot interaction",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"

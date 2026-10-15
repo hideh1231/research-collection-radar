@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-14T00:17:32Z",
+  "checked_at": "2026-10-14T23:54:53Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 647,
+      "parsed": 653,
       "pages": 66,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 204,
+      "parsed": 205,
       "pages": 21,
       "error": null
     },
@@ -45,93 +45,93 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3403,
+      "parsed": 3406,
       "pages": 142,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-14T00:37:21Z",
-        "target_count": 17,
-        "attempted": 17,
+        "checked_at": "2026-10-15T00:12:47Z",
+        "target_count": 28,
+        "attempted": 28,
         "unavailable": 10,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:32Z"
+            "checked_at": "2026-10-15T00:13:14Z"
           },
           "frontiers-25cdcb330a": {
             "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:33Z"
+            "checked_at": "2026-10-15T00:13:15Z"
           },
           "frontiers-26749dbc9f": {
             "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:34Z"
+            "checked_at": "2026-10-15T00:13:16Z"
           },
           "frontiers-3da580dc8f": {
             "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:35Z"
+            "checked_at": "2026-10-15T00:13:17Z"
           },
           "frontiers-7844762ae0": {
             "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:36Z"
+            "checked_at": "2026-10-15T00:13:17Z"
           },
           "frontiers-98eb7c82b6": {
             "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:37Z"
+            "checked_at": "2026-10-15T00:13:18Z"
           },
           "frontiers-ed8601a844": {
             "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:38Z"
+            "checked_at": "2026-10-15T00:13:23Z"
           },
           "frontiers-f1ead1ca94": {
             "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:39Z"
+            "checked_at": "2026-10-15T00:13:24Z"
           },
           "frontiers-f903b1c68e": {
             "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:40Z"
+            "checked_at": "2026-10-15T00:13:25Z"
           },
           "frontiers-5cc415dba4": {
             "url": "https://frontiersin.org/research-topics/80266/generative-models-of-neural-activity-using-ai-to-simulate-interpret-and-predict-brain-dynamics",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-14T00:37:31Z"
+            "checked_at": "2026-10-15T00:13:13Z"
           }
         },
-        "checked": 7,
-        "listed": 7,
-        "with_deadline": 7,
+        "checked": 18,
+        "listed": 17,
+        "with_deadline": 17,
         "not_listed": 0,
         "failed": 10,
         "rate_limited": 0,
-        "parse_errors": 0,
+        "parse_errors": 1,
         "forbidden": 0,
         "remaining": 10,
-        "metadata_updated": 3
+        "metadata_updated": 8
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 385,
+      "parsed": 386,
       "pages": 17,
       "error": null
     },
@@ -139,7 +139,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1067,
+      "parsed": 1068,
       "pages": 45,
       "error": null
     },
@@ -155,7 +155,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2200,
+      "parsed": 2202,
       "pages": 92,
       "error": null
     },
@@ -179,7 +179,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 553,
+      "parsed": 554,
       "pages": 24,
       "error": null
     },
@@ -195,7 +195,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 325,
+      "parsed": 326,
       "pages": 14,
       "error": null
     },
@@ -227,7 +227,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 355,
+      "parsed": 356,
       "pages": 15,
       "error": null
     },
@@ -259,7 +259,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 852,
+      "parsed": 853,
       "pages": 36,
       "error": null
     },
@@ -267,7 +267,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 925,
+      "parsed": 926,
       "pages": 39,
       "error": null
     },
@@ -610,7 +610,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3,
+      "parsed": 2,
       "pages": 1,
       "error": null
     },
@@ -854,94 +854,82 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-14T00:37:21Z",
-      "target_count": 17,
-      "attempted": 17,
+      "checked_at": "2026-10-15T00:12:47Z",
+      "target_count": 28,
+      "attempted": 28,
       "unavailable": 10,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:32Z"
+          "checked_at": "2026-10-15T00:13:14Z"
         },
         "frontiers-25cdcb330a": {
           "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:33Z"
+          "checked_at": "2026-10-15T00:13:15Z"
         },
         "frontiers-26749dbc9f": {
           "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:34Z"
+          "checked_at": "2026-10-15T00:13:16Z"
         },
         "frontiers-3da580dc8f": {
           "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:35Z"
+          "checked_at": "2026-10-15T00:13:17Z"
         },
         "frontiers-7844762ae0": {
           "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:36Z"
+          "checked_at": "2026-10-15T00:13:17Z"
         },
         "frontiers-98eb7c82b6": {
           "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:37Z"
+          "checked_at": "2026-10-15T00:13:18Z"
         },
         "frontiers-ed8601a844": {
           "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:38Z"
+          "checked_at": "2026-10-15T00:13:23Z"
         },
         "frontiers-f1ead1ca94": {
           "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:39Z"
+          "checked_at": "2026-10-15T00:13:24Z"
         },
         "frontiers-f903b1c68e": {
           "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:40Z"
+          "checked_at": "2026-10-15T00:13:25Z"
         },
         "frontiers-5cc415dba4": {
           "url": "https://frontiersin.org/research-topics/80266/generative-models-of-neural-activity-using-ai-to-simulate-interpret-and-predict-brain-dynamics",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-14T00:37:31Z"
+          "checked_at": "2026-10-15T00:13:13Z"
         }
       },
-      "checked": 7,
-      "listed": 7,
-      "with_deadline": 7,
+      "checked": 18,
+      "listed": 17,
+      "with_deadline": 17,
       "not_listed": 0,
       "failed": 10,
       "rate_limited": 0,
-      "parse_errors": 0,
+      "parse_errors": 1,
       "forbidden": 0,
       "remaining": 10,
-      "metadata_updated": 3
+      "metadata_updated": 8
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-14T00:38:26.257188+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
