@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-18T23:11:37Z",
+  "checked_at": "2026-10-20T00:19:28Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 652,
+      "parsed": 654,
       "pages": 66,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 206,
+      "parsed": 207,
       "pages": 21,
       "error": null
     },
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3409,
+      "parsed": 3411,
       "pages": 143,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-18T23:27:19Z",
-        "target_count": 395,
-        "attempted": 395,
-        "unavailable": 12,
+        "checked_at": "2026-10-20T01:10:58Z",
+        "target_count": 333,
+        "attempted": 6,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -125,25 +125,56 @@
             "error": "http 404",
             "http_status": 404,
             "checked_at": "2026-10-18T23:30:21Z"
+          },
+          "frontiers-55c0f300a1": {
+            "url": "https://frontiersin.org/research-topics/87229/long-term-limnology-in-latin-america-sustained-records-ecosystem-dynamics-and-the-future-of-tropical-and-temperate-lake-and-river-monitoring",
+            "error": "http 502",
+            "http_status": 502,
+            "checked_at": "2026-10-20T01:12:59Z"
+          },
+          "frontiers-59ad229963": {
+            "url": "https://frontiersin.org/research-topics/85034/trauma-risk-recovery-and-rehabilitation-in-forensic-and-justice-settings",
+            "error": "http 504",
+            "http_status": 504,
+            "checked_at": "2026-10-20T01:14:05Z"
+          },
+          "frontiers-6eb477e397": {
+            "url": "https://frontiersin.org/research-topics/78650/advancing-recovery-and-rehabilitation-after-traumatic-brain-injury-from-mechanisms-to-outcomes",
+            "error": "http 502",
+            "http_status": 502,
+            "checked_at": "2026-10-20T01:15:17Z"
+          },
+          "frontiers-9274cfe443": {
+            "url": "https://frontiersin.org/research-topics/86790/integrated-ecological-monitoring-of-tropical-freshwater-and-coastal-ecosystems-under-anthropogenic-and-climate-pressures",
+            "error": "FetchError: GET failed after retries: https://frontiersin.org/research-topics/86790/integrated-ecological-monitoring-of-tropical-freshwater-and-coastal-ecosystems-under-anthropogenic-and-climate-pressures: The read operation timed out",
+            "http_status": null,
+            "checked_at": "2026-10-20T01:16:33Z"
+          },
+          "frontiers-99898dd270": {
+            "url": "https://frontiersin.org/research-topics/87622/individual-differences-in-leadership-effectiveness-under-changing-work-conditions-revisiting-personality-emotional-intelligence-and-leader-wellbeing",
+            "error": "http 504",
+            "http_status": 504,
+            "checked_at": "2026-10-20T01:18:28Z"
           }
         },
-        "checked": 383,
-        "listed": 330,
-        "with_deadline": 330,
+        "checked": 1,
+        "listed": 1,
+        "with_deadline": 1,
         "not_listed": 0,
-        "failed": 12,
+        "failed": 5,
         "rate_limited": 0,
-        "parse_errors": 53,
+        "parse_errors": 0,
         "forbidden": 0,
-        "remaining": 12,
-        "metadata_updated": 228
+        "remaining": 332,
+        "metadata_updated": 1,
+        "stop_reason": "consecutive_failures"
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 388,
+      "parsed": 387,
       "pages": 17,
       "error": null
     },
@@ -167,7 +198,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2202,
+      "parsed": 2203,
       "pages": 92,
       "error": null
     },
@@ -175,7 +206,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1634,
+      "parsed": 1635,
       "pages": 69,
       "error": null
     },
@@ -271,7 +302,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 854,
+      "parsed": 857,
       "pages": 36,
       "error": null
     },
@@ -510,7 +541,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 18,
+      "parsed": 19,
       "pages": 1,
       "error": null
     },
@@ -866,10 +897,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-18T23:27:19Z",
-      "target_count": 395,
-      "attempted": 395,
-      "unavailable": 12,
+      "checked_at": "2026-10-20T01:10:58Z",
+      "target_count": 333,
+      "attempted": 6,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -942,30 +973,49 @@
           "error": "http 404",
           "http_status": 404,
           "checked_at": "2026-10-18T23:30:21Z"
+        },
+        "frontiers-55c0f300a1": {
+          "url": "https://frontiersin.org/research-topics/87229/long-term-limnology-in-latin-america-sustained-records-ecosystem-dynamics-and-the-future-of-tropical-and-temperate-lake-and-river-monitoring",
+          "error": "http 502",
+          "http_status": 502,
+          "checked_at": "2026-10-20T01:12:59Z"
+        },
+        "frontiers-59ad229963": {
+          "url": "https://frontiersin.org/research-topics/85034/trauma-risk-recovery-and-rehabilitation-in-forensic-and-justice-settings",
+          "error": "http 504",
+          "http_status": 504,
+          "checked_at": "2026-10-20T01:14:05Z"
+        },
+        "frontiers-6eb477e397": {
+          "url": "https://frontiersin.org/research-topics/78650/advancing-recovery-and-rehabilitation-after-traumatic-brain-injury-from-mechanisms-to-outcomes",
+          "error": "http 502",
+          "http_status": 502,
+          "checked_at": "2026-10-20T01:15:17Z"
+        },
+        "frontiers-9274cfe443": {
+          "url": "https://frontiersin.org/research-topics/86790/integrated-ecological-monitoring-of-tropical-freshwater-and-coastal-ecosystems-under-anthropogenic-and-climate-pressures",
+          "error": "FetchError: GET failed after retries: https://frontiersin.org/research-topics/86790/integrated-ecological-monitoring-of-tropical-freshwater-and-coastal-ecosystems-under-anthropogenic-and-climate-pressures: The read operation timed out",
+          "http_status": null,
+          "checked_at": "2026-10-20T01:16:33Z"
+        },
+        "frontiers-99898dd270": {
+          "url": "https://frontiersin.org/research-topics/87622/individual-differences-in-leadership-effectiveness-under-changing-work-conditions-revisiting-personality-emotional-intelligence-and-leader-wellbeing",
+          "error": "http 504",
+          "http_status": 504,
+          "checked_at": "2026-10-20T01:18:28Z"
         }
       },
-      "checked": 383,
-      "listed": 330,
-      "with_deadline": 330,
+      "checked": 1,
+      "listed": 1,
+      "with_deadline": 1,
       "not_listed": 0,
-      "failed": 12,
+      "failed": 5,
       "rate_limited": 0,
-      "parse_errors": 53,
+      "parse_errors": 0,
       "forbidden": 0,
-      "remaining": 12,
-      "metadata_updated": 228
+      "remaining": 332,
+      "metadata_updated": 1,
+      "stop_reason": "consecutive_failures"
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-18T23:36:02.674323+00:00",
-    "attempted": 17,
-    "checked": 17,
-    "updated": 1,
-    "listed": 0,
-    "not_listed": 17,
-    "closed": 0,
-    "unknown": 16,
-    "errors": {},
-    "remaining": 0
   }
 }
