@@ -1,19 +1,9 @@
 # Open calls
 
-Generated 2026-10-20. Sorted by deadline.
+Generated 2026-10-21. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-20 | Beyond neurons: Computational models of glial–neuronal interactions in brain function | Frontiers in Computational Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/78288/beyond-neurons-computational-models-of-glial-neuronal-interactions-in-brain-function |
-| 2026-10-20 | CRISPR-technology in veterinary medicine | Scientific Reports |  | Collection | https://nature.com/collections/jeidijhbfb |
-| 2026-10-20 | Cross-level computational integration: Linking molecular, cellular, and systems dynamics in unified brain models | Frontiers in Computational Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/78428/cross-level-computational-integration-linking-molecular-cellular-and-systems-dynamics-in-unified-brain-models |
-| 2026-10-20 | Embodied Approaches to Intervention and Research Design in Clinical Psychology: Integrating Body, Context, and Measurement | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/77252/embodied-approaches-to-intervention-and-research-design-in-clinical-psychology-integrating-body-context-and-measurement |
-| 2026-10-20 | Holographic systems | Scientific Reports |  | Collection | https://nature.com/collections/djfdfijhgh |
-| 2026-10-20 | Machine Learning and AI-Driven Biomechanics in Orthopedic Surgery | Frontiers in Surgery | HCI, Psychology | Research Topic | https://frontiersin.org/research-topics/76925/machine-learning-and-ai-driven-biomechanics-in-orthopedic-surgery |
-| 2026-10-20 | Neurocognitive perspectives on language comprehension | Communications Psychology | Neuroscience, Psychology | Collection | https://nature.com/collections/fdgceidggh |
-| 2026-10-20 | Optical interrogation of the nervous system: recent advances in optical techniques and their applications, Volume II | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/79972/optical-interrogation-of-the-nervous-system-recent-advances-in-optical-techniques-and-their-applications-volume-ii |
-| 2026-10-20 | Quaternary geochronology | Scientific Reports |  | Collection | https://nature.com/collections/gcgbdaifgg |
-| 2026-10-20 | Tracing Loneliness in Aging: Understanding the Interplay and Exploring Innovative Interventions, vol II | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/78955/tracing-loneliness-in-aging-understanding-the-interplay-and-exploring-innovative-interventions-vol-ii |
 | 2026-10-21 | 4D Printing of Smart Materials | Scientific Reports |  | Collection | https://nature.com/collections/cjfgfbcfdj |
 | 2026-10-21 | Carbon allotropes across dimensions: from 0D to 3D | Scientific Reports | Psychology | Collection | https://nature.com/collections/cifcifagbh |
 | 2026-10-21 | Clinical metabolomics | Scientific Reports | Psychology | Collection | https://nature.com/collections/bfbcccggij |
