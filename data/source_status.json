@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-20T00:19:28Z",
+  "checked_at": "2026-10-20T23:52:13Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 654,
+      "parsed": 655,
       "pages": 66,
       "error": null
     },
@@ -45,13 +45,13 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3411,
+      "parsed": 3413,
       "pages": 143,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-20T01:10:58Z",
-        "target_count": 333,
-        "attempted": 6,
+        "checked_at": "2026-10-21T00:10:04Z",
+        "target_count": 400,
+        "attempted": 400,
         "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
@@ -157,24 +157,23 @@
             "checked_at": "2026-10-20T01:18:28Z"
           }
         },
-        "checked": 1,
-        "listed": 1,
-        "with_deadline": 1,
+        "checked": 400,
+        "listed": 361,
+        "with_deadline": 361,
         "not_listed": 0,
-        "failed": 5,
+        "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 0,
+        "parse_errors": 39,
         "forbidden": 0,
-        "remaining": 332,
-        "metadata_updated": 1,
-        "stop_reason": "consecutive_failures"
+        "remaining": 340,
+        "metadata_updated": 239
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 387,
+      "parsed": 389,
       "pages": 17,
       "error": null
     },
@@ -182,7 +181,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1070,
+      "parsed": 1071,
       "pages": 45,
       "error": null
     },
@@ -190,7 +189,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1924,
+      "parsed": 1926,
       "pages": 81,
       "error": null
     },
@@ -198,7 +197,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2203,
+      "parsed": 2204,
       "pages": 92,
       "error": null
     },
@@ -238,7 +237,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 326,
+      "parsed": 325,
       "pages": 14,
       "error": null
     },
@@ -302,7 +301,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 857,
+      "parsed": 858,
       "pages": 36,
       "error": null
     },
@@ -310,7 +309,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 928,
+      "parsed": 930,
       "pages": 39,
       "error": null
     },
@@ -653,7 +652,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2,
+      "parsed": 3,
       "pages": 1,
       "error": null
     },
@@ -849,7 +848,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 86,
+      "parsed": 88,
       "pages": 6,
       "error": null
     },
@@ -897,9 +896,9 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-20T01:10:58Z",
-      "target_count": 333,
-      "attempted": 6,
+      "checked_at": "2026-10-21T00:10:04Z",
+      "target_count": 400,
+      "attempted": 400,
       "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
@@ -1005,29 +1004,16 @@
           "checked_at": "2026-10-20T01:18:28Z"
         }
       },
-      "checked": 1,
-      "listed": 1,
-      "with_deadline": 1,
+      "checked": 400,
+      "listed": 361,
+      "with_deadline": 361,
       "not_listed": 0,
-      "failed": 5,
+      "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 0,
+      "parse_errors": 39,
       "forbidden": 0,
-      "remaining": 332,
-      "metadata_updated": 1,
-      "stop_reason": "consecutive_failures"
+      "remaining": 340,
+      "metadata_updated": 239
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-20T01:19:07.846754+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
