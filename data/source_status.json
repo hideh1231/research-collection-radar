@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-22T00:00:21Z",
+  "checked_at": "2026-10-22T23:59:15Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 654,
+      "parsed": 651,
       "pages": 66,
       "error": null
     },
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3418,
+      "parsed": 3420,
       "pages": 143,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-22T00:17:09Z",
-        "target_count": 373,
-        "attempted": 373,
-        "unavailable": 13,
+        "checked_at": "2026-10-23T00:17:00Z",
+        "target_count": 400,
+        "attempted": 400,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -133,16 +133,16 @@
             "checked_at": "2026-10-22T00:20:35Z"
           }
         },
-        "checked": 360,
-        "listed": 322,
-        "with_deadline": 322,
-        "not_listed": 1,
-        "failed": 13,
+        "checked": 400,
+        "listed": 363,
+        "with_deadline": 363,
+        "not_listed": 0,
+        "failed": 0,
         "rate_limited": 0,
         "parse_errors": 37,
         "forbidden": 0,
-        "remaining": 13,
-        "metadata_updated": 208
+        "remaining": 19,
+        "metadata_updated": 239
       }
     },
     "frontiers-robotics-ai": {
@@ -157,7 +157,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1071,
+      "parsed": 1072,
       "pages": 45,
       "error": null
     },
@@ -173,7 +173,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2204,
+      "parsed": 2205,
       "pages": 92,
       "error": null
     },
@@ -181,7 +181,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1635,
+      "parsed": 1637,
       "pages": 69,
       "error": null
     },
@@ -197,7 +197,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 555,
+      "parsed": 556,
       "pages": 24,
       "error": null
     },
@@ -245,7 +245,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 356,
+      "parsed": 357,
       "pages": 15,
       "error": null
     },
@@ -277,7 +277,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 859,
+      "parsed": 860,
       "pages": 36,
       "error": null
     },
@@ -298,7 +298,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 31,
+      "parsed": 32,
       "pages": 1,
       "error": null
     },
@@ -314,7 +314,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 32,
+      "parsed": 33,
       "pages": 1,
       "error": null
     },
@@ -354,7 +354,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 34,
+      "parsed": 35,
       "pages": 1,
       "error": null
     },
@@ -514,11 +514,11 @@
     },
     "ipsj-cfp": {
       "enabled": true,
-      "ok": true,
-      "http_status": 200,
-      "parsed": 19,
-      "pages": 1,
-      "error": null
+      "ok": false,
+      "http_status": null,
+      "parsed": 0,
+      "pages": 0,
+      "error": "FetchError: GET failed after retries: https://www.ipsj.or.jp/journal/cfp/cfp_list.html: [Errno 104] Connection reset by peer"
     },
     "jske-cfp": {
       "enabled": true,
@@ -636,7 +636,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 8,
+      "parsed": 7,
       "pages": 1,
       "error": null
     },
@@ -700,7 +700,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 6,
+      "parsed": 5,
       "pages": 1,
       "error": null
     },
@@ -824,7 +824,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 88,
+      "parsed": 87,
       "pages": 6,
       "error": null
     },
@@ -872,10 +872,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-22T00:17:09Z",
-      "target_count": 373,
-      "attempted": 373,
-      "unavailable": 13,
+      "checked_at": "2026-10-23T00:17:00Z",
+      "target_count": 400,
+      "attempted": 400,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -956,28 +956,16 @@
           "checked_at": "2026-10-22T00:20:35Z"
         }
       },
-      "checked": 360,
-      "listed": 322,
-      "with_deadline": 322,
-      "not_listed": 1,
-      "failed": 13,
+      "checked": 400,
+      "listed": 363,
+      "with_deadline": 363,
+      "not_listed": 0,
+      "failed": 0,
       "rate_limited": 0,
       "parse_errors": 37,
       "forbidden": 0,
-      "remaining": 13,
-      "metadata_updated": 208
+      "remaining": 19,
+      "metadata_updated": 239
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-22T00:26:19.776777+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
