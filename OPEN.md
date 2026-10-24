@@ -1,18 +1,9 @@
 # Open calls
 
-Generated 2026-10-23. Sorted by deadline.
+Generated 2026-10-24. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-23 | Applications for Affective and Physiological Computing: Changing How We Understand Ourselves and Interact With the World Around Us | Frontiers in Computer Science | Neuroscience, Psychology, HCI | Research Topic | https://frontiersin.org/research-topics/73561/applications-for-affective-and-physiological-computing-changing-how-we-understand-ourselves-and-interact-with-the-world-around-us |
-| 2026-10-23 | Autism in adolescence and adulthood | Scientific Reports |  | Collection | https://nature.com/collections/ibhcdahaie |
-| 2026-10-23 | Educators in the Digital Age: The Role of Technology, Pedagogy, and Social Factors in Online Learning | Frontiers in Computer Science | HCI | Research Topic | https://frontiersin.org/research-topics/77561/educators-in-the-digital-age-the-role-of-technology-pedagogy-and-social-factors-in-online-learning |
-| 2026-10-23 | Generative AI in the Metaverse: New Frontiers in Virtual Design and Interaction | Frontiers in Computer Science | HCI | Research Topic | https://frontiersin.org/research-topics/74777/generative-ai-in-the-metaverse-new-frontiers-in-virtual-design-and-interaction |
-| 2026-10-23 | Quantum technologies for healthcare | Scientific Reports |  | Collection | https://nature.com/collections/bebgeadadf |
-| 2026-10-23 | Rethinking Communication, Identity, and Society in an Information-Driven Age | Frontiers in Computer Science | HCI | Research Topic | https://frontiersin.org/research-topics/77974/rethinking-communication-identity-and-society-in-an-information-driven-age |
-| 2026-10-23 | Robotic and autonomous materials | Scientific Reports | Robotics | Collection | https://nature.com/collections/gegfffhcjj |
-| 2026-10-23 | The Rise of the New Knowledge Engineers: Learning and Psychological Literacy in the Age of AI​​​​​​​ | Frontiers in Psychology | Psychology | Research Topic | https://frontiersin.org/research-topics/77462/the-rise-of-the-new-knowledge-engineers-learning-and-psychological-literacy-in-the-age-of-ai |
-| 2026-10-23 | The Role of Responsive Pedagogy in Digital Education Transformation | Frontiers in Computer Science | HCI, Psychology | Research Topic | https://frontiersin.org/research-topics/75820/the-role-of-responsive-pedagogy-in-digital-education-transformation |
 | 2026-10-24 | Advances in Understanding the Pathogenetic Mechanisms of Neurodevelopmental Disorders and Neurodegenerative Disease - The Environment as a Putative Risk Factor, Volume II | Frontiers in Neurology | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/74097/advances-in-understanding-the-pathogenetic-mechanisms-of-neurodevelopmental-disorders-and-neurodegenerative-disease---the-environment-as-a-putative-risk-factor-volume-ii |
 | 2026-10-24 | Brain-computer interface challenges and solutions for communication and cognitive-linguistic development or assessment | Frontiers in Human Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/79959/brain-computer-interface-challenges-and-solutions-for-communication-and-cognitive-linguistic-development-or-assessment |
 | 2026-10-24 | Coastal Ecosystem Processes, Functions, Services and Protection | Frontiers in Ecology and Evolution | Psychology | Research Topic | https://frontiersin.org/research-topics/77021/coastal-ecosystem-processes-functions-services-and-protection |
