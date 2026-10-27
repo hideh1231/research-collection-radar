@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-25T23:16:26Z",
+  "checked_at": "2026-10-27T00:25:16Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 649,
+      "parsed": 650,
       "pages": 65,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 206,
+      "parsed": 207,
       "pages": 21,
       "error": null
     },
@@ -45,117 +45,117 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3421,
+      "parsed": 3423,
       "pages": 143,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-25T23:35:05Z",
-        "target_count": 383,
-        "attempted": 383,
+        "checked_at": "2026-10-27T00:43:11Z",
+        "target_count": 34,
+        "attempted": 34,
         "unavailable": 14,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:21Z"
+            "checked_at": "2026-10-27T00:43:41Z"
           },
           "frontiers-25cdcb330a": {
             "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:23Z"
+            "checked_at": "2026-10-27T00:43:46Z"
           },
           "frontiers-26749dbc9f": {
             "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:30Z"
+            "checked_at": "2026-10-27T00:43:47Z"
           },
           "frontiers-3da580dc8f": {
             "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:31Z"
+            "checked_at": "2026-10-27T00:43:49Z"
           },
           "frontiers-7844762ae0": {
             "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:32Z"
+            "checked_at": "2026-10-27T00:43:49Z"
           },
           "frontiers-98eb7c82b6": {
             "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:33Z"
+            "checked_at": "2026-10-27T00:43:50Z"
           },
           "frontiers-ed8601a844": {
             "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:34Z"
+            "checked_at": "2026-10-27T00:43:51Z"
           },
           "frontiers-f1ead1ca94": {
             "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:35Z"
+            "checked_at": "2026-10-27T00:43:52Z"
           },
           "frontiers-f903b1c68e": {
             "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:37Z"
+            "checked_at": "2026-10-27T00:43:54Z"
           },
           "frontiers-5cc415dba4": {
             "url": "https://frontiersin.org/research-topics/80266/generative-models-of-neural-activity-using-ai-to-simulate-interpret-and-predict-brain-dynamics",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:20Z"
+            "checked_at": "2026-10-27T00:43:40Z"
           },
           "frontiers-fad16ffe44": {
             "url": "https://frontiersin.org/research-topics/80005/multiscale-neural-mechanisms-mediating-multisensory-integration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:36Z"
+            "checked_at": "2026-10-27T00:43:53Z"
           },
           "frontiers-0189682481": {
             "url": "https://frontiersin.org/research-topics/72354/impacts-of-substance-useexposure-on-early-brain-volume-ii",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:19Z"
+            "checked_at": "2026-10-27T00:43:39Z"
           },
           "frontiers-8c62ea1355": {
             "url": "https://frontiersin.org/research-topics/77907/energy-efficient-neural-computation",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:46:18Z"
+            "checked_at": "2026-10-27T00:43:38Z"
           },
           "frontiers-3350a335d7": {
             "url": "https://frontiersin.org/research-topics/78488/advances-in-cell-rejuvenation-and-cell-reprogramming-for-cellular-regeneration",
             "error": "http 404",
             "http_status": 404,
-            "checked_at": "2026-10-25T23:45:54Z"
+            "checked_at": "2026-10-27T00:43:37Z"
           }
         },
-        "checked": 369,
-        "listed": 316,
-        "with_deadline": 316,
+        "checked": 20,
+        "listed": 19,
+        "with_deadline": 19,
         "not_listed": 0,
         "failed": 14,
         "rate_limited": 0,
-        "parse_errors": 53,
+        "parse_errors": 1,
         "forbidden": 0,
-        "remaining": 22,
-        "metadata_updated": 218
+        "remaining": 14,
+        "metadata_updated": 11
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 389,
+      "parsed": 388,
       "pages": 17,
       "error": null
     },
@@ -171,7 +171,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1929,
+      "parsed": 1931,
       "pages": 81,
       "error": null
     },
@@ -187,7 +187,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1638,
+      "parsed": 1639,
       "pages": 69,
       "error": null
     },
@@ -243,7 +243,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 150,
+      "parsed": 151,
       "pages": 7,
       "error": null
     },
@@ -283,15 +283,15 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 861,
-      "pages": 36,
+      "parsed": 865,
+      "pages": 37,
       "error": null
     },
     "frontiers-veterinary-science": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 930,
+      "parsed": 931,
       "pages": 39,
       "error": null
     },
@@ -520,11 +520,11 @@
     },
     "ipsj-cfp": {
       "enabled": true,
-      "ok": false,
-      "http_status": 503,
-      "parsed": 0,
+      "ok": true,
+      "http_status": 200,
+      "parsed": 19,
       "pages": 1,
-      "error": "http 503"
+      "error": null
     },
     "jske-cfp": {
       "enabled": true,
@@ -830,8 +830,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 88,
-      "pages": 6,
+      "parsed": 89,
+      "pages": 7,
       "error": null
     },
     "cambridge-robotica-call-for-papers": {
@@ -878,106 +878,106 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-25T23:35:05Z",
-      "target_count": 383,
-      "attempted": 383,
+      "checked_at": "2026-10-27T00:43:11Z",
+      "target_count": 34,
+      "attempted": 34,
       "unavailable": 14,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:21Z"
+          "checked_at": "2026-10-27T00:43:41Z"
         },
         "frontiers-25cdcb330a": {
           "url": "https://frontiersin.org/research-topics/73981/mental-health-and-suicide-prevention-in-sensory-impairment-populations-volume-ii",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:23Z"
+          "checked_at": "2026-10-27T00:43:46Z"
         },
         "frontiers-26749dbc9f": {
           "url": "https://frontiersin.org/research-topics/79710/towards-inclusive-education-with-interactive-ai-and-social-robotics",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:30Z"
+          "checked_at": "2026-10-27T00:43:47Z"
         },
         "frontiers-3da580dc8f": {
           "url": "https://frontiersin.org/research-topics/72145/bio-inspired-robots-at-the-air-water-interface",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:31Z"
+          "checked_at": "2026-10-27T00:43:49Z"
         },
         "frontiers-7844762ae0": {
           "url": "https://frontiersin.org/research-topics/82861/epigenetic-immune-regulations-in-neurological-disorders",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:32Z"
+          "checked_at": "2026-10-27T00:43:49Z"
         },
         "frontiers-98eb7c82b6": {
           "url": "https://frontiersin.org/research-topics/77534/lipid-metabolism-and-transport-in-neuronal-and-glial-cell-function-and-dysfunction",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:33Z"
+          "checked_at": "2026-10-27T00:43:50Z"
         },
         "frontiers-ed8601a844": {
           "url": "https://frontiersin.org/research-topics/80992/new-insights-into-mitochondria-induced-neuroimmune-disorderfrom-mechanisms-to-phenotypes",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:34Z"
+          "checked_at": "2026-10-27T00:43:51Z"
         },
         "frontiers-f1ead1ca94": {
           "url": "https://frontiersin.org/research-topics/76957/aging-estrogen-nutrition-and-neuroinflammation-in-womens-cognitive-decline-and-neurodegeneration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:35Z"
+          "checked_at": "2026-10-27T00:43:52Z"
         },
         "frontiers-f903b1c68e": {
           "url": "https://frontiersin.org/research-topics/85460/human-performance-in-the-age-of-ai-neurocognitive-mechanisms-of-learning-decision-making-and-adaptive-human-ai-collaboration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:37Z"
+          "checked_at": "2026-10-27T00:43:54Z"
         },
         "frontiers-5cc415dba4": {
           "url": "https://frontiersin.org/research-topics/80266/generative-models-of-neural-activity-using-ai-to-simulate-interpret-and-predict-brain-dynamics",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:20Z"
+          "checked_at": "2026-10-27T00:43:40Z"
         },
         "frontiers-fad16ffe44": {
           "url": "https://frontiersin.org/research-topics/80005/multiscale-neural-mechanisms-mediating-multisensory-integration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:36Z"
+          "checked_at": "2026-10-27T00:43:53Z"
         },
         "frontiers-0189682481": {
           "url": "https://frontiersin.org/research-topics/72354/impacts-of-substance-useexposure-on-early-brain-volume-ii",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:19Z"
+          "checked_at": "2026-10-27T00:43:39Z"
         },
         "frontiers-8c62ea1355": {
           "url": "https://frontiersin.org/research-topics/77907/energy-efficient-neural-computation",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:46:18Z"
+          "checked_at": "2026-10-27T00:43:38Z"
         },
         "frontiers-3350a335d7": {
           "url": "https://frontiersin.org/research-topics/78488/advances-in-cell-rejuvenation-and-cell-reprogramming-for-cellular-regeneration",
           "error": "http 404",
           "http_status": 404,
-          "checked_at": "2026-10-25T23:45:54Z"
+          "checked_at": "2026-10-27T00:43:37Z"
         }
       },
-      "checked": 369,
-      "listed": 316,
-      "with_deadline": 316,
+      "checked": 20,
+      "listed": 19,
+      "with_deadline": 19,
       "not_listed": 0,
       "failed": 14,
       "rate_limited": 0,
-      "parse_errors": 53,
+      "parse_errors": 1,
       "forbidden": 0,
-      "remaining": 22,
-      "metadata_updated": 218
+      "remaining": 14,
+      "metadata_updated": 11
     }
   }
 }
