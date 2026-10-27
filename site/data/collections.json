@@ -4935,30 +4935,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-e957846e91",
-    "title": "Special Issue on Design, Motion Planning, and Control of Morphology-Rich Bio-Inspired Systems",
-    "summary": null,
-    "journal": "Biomimetic Intelligence and Robotics",
-    "journals": [
-      "Biomimetic Intelligence and Robotics"
-    ],
-    "domains": [
-      "robotics"
-    ],
-    "topics": [
-      "control"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-10-31",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/331531/special-issue-on-design-motion-planning-and-control-of-morphology-rich-bio-inspired-systems",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "nature-ncomms-47b13bdbcb",
     "title": "Sustainable agricultural practices",
     "summary": "In this cross-journal collection we focus on current research to optimize resource use and enhance ecosystem services.",
@@ -5568,6 +5544,26 @@
     "image_alt": null,
     "first_seen": "2026-09-12",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "josa-a-features-b7c5bce771",
+    "title": "Feature Issues (1985 - 2027 ) Showing 106 issues",
+    "summary": null,
+    "journal": "Journal of the Optical Society of America A",
+    "journals": [
+      "Journal of the Optical Society of America A"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-01",
+    "deadline_status": "listed",
+    "url": "https://opg.optica.org/content/feature/announcement/item/josaa-17icfop",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "Optica",
     "status": "open"
   },
   {
@@ -6862,6 +6858,30 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-3316aedd19",
+    "title": "International Meeting “Steroids and the Nervous System 2026” — Young Researchers",
+    "summary": null,
+    "journal": "Neuroscience",
+    "journals": [
+      "Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "nervous system"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-06",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/334576/international-meeting-steroids-and-the-nervous-system-2026-young-researchers",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -11071,6 +11091,32 @@
     "image_alt": "Lipid Nanoparticles: A Historical Journey to Neurological Therapeutics",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-b38ea7e7fe",
+    "title": "Metaphor and Epistemic Injustice in Mental Illness: how metaphorical language shapes epistemic practices in mental health contexts",
+    "summary": null,
+    "journal": "New Ideas in Psychology",
+    "journals": [
+      "New Ideas in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Mental Health",
+      "language",
+      "mental illness"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-11-15",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331038/metaphor-and-epistemic-injustice-in-mental-illness-how-metaphorical-language-shapes-epistemic-practices-in-mental-health-contexts",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -43910,6 +43956,30 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-e957846e91",
+    "title": "Special Issue on Design, Motion Planning, and Control of Morphology-Rich Bio-Inspired Systems",
+    "summary": null,
+    "journal": "Biomimetic Intelligence and Robotics",
+    "journals": [
+      "Biomimetic Intelligence and Robotics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [
+      "control"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331531/special-issue-on-design-motion-planning-and-control-of-morphology-rich-bio-inspired-systems",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-f8ac9d0f99",
     "title": "Stress in the work of educators – Intercultural perspectives",
     "summary": "The well-being of educators has become a central concern in educational systems worldwide. Yet, while burnout, anxiety, and emotional exhaustion are increasingly acknowledged, the ways in which these phenomena are experienced, interpreted, and managed are shaped by contexts, norms, and subjectivities. This Research Topic invites contributions that move beyond surface-level comparisons of stress prevalence across nations. We seek scholarship that interrogates the very categories we use such as ‘stress’, ‘resilience’, ‘well-being’ and ‘support’ and asks how these concepts acquire meaning in different educational environments.",
@@ -70494,6 +70564,28 @@
     "status": "open"
   },
   {
+    "id": "apa-cfp-13426271b0",
+    "title": "Getting involved: Our lives with mediated characters",
+    "summary": null,
+    "journal": "Psychology of Popular Media",
+    "journals": [
+      "Psychology of Popular Media"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-01",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/ppm/getting-involved",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-27",
+    "publisher": "APA",
+    "status": "open"
+  },
+  {
     "id": "frontiers-95e8c2ab6f",
     "title": "Methods in Brain-Computer Interfaces 2026, Volume II",
     "summary": "This Research Topic is part of the Methods in Human Neuroscience series.",
@@ -83699,6 +83791,26 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-edaa2ec086",
+    "title": "Debate pieces",
+    "summary": null,
+    "journal": "Traumatology",
+    "journals": [
+      "Traumatology"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": null,
+    "deadline_status": "not_listed",
+    "url": "https://apa.org/pubs/journals/trm/debate-pieces",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-27",
+    "publisher": "APA",
     "status": "open"
   },
   {
