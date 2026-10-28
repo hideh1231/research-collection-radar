@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-27T00:52:42Z",
+  "checked_at": "2026-10-28T00:31:45Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 650,
+      "parsed": 649,
       "pages": 65,
       "error": null
     },
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3423,
+      "parsed": 3426,
       "pages": 143,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-27T00:43:11Z",
-        "target_count": 34,
-        "attempted": 34,
-        "unavailable": 14,
+        "checked_at": "2026-10-28T00:47:45Z",
+        "target_count": 400,
+        "attempted": 400,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -139,16 +139,16 @@
             "checked_at": "2026-10-27T00:43:37Z"
           }
         },
-        "checked": 20,
-        "listed": 19,
-        "with_deadline": 19,
-        "not_listed": 0,
-        "failed": 14,
+        "checked": 400,
+        "listed": 361,
+        "with_deadline": 361,
+        "not_listed": 1,
+        "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 1,
+        "parse_errors": 38,
         "forbidden": 0,
-        "remaining": 14,
-        "metadata_updated": 11
+        "remaining": 22,
+        "metadata_updated": 241
       }
     },
     "frontiers-robotics-ai": {
@@ -179,7 +179,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2206,
+      "parsed": 2207,
       "pages": 92,
       "error": null
     },
@@ -187,7 +187,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1639,
+      "parsed": 1642,
       "pages": 69,
       "error": null
     },
@@ -203,7 +203,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 556,
+      "parsed": 558,
       "pages": 24,
       "error": null
     },
@@ -219,7 +219,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 325,
+      "parsed": 324,
       "pages": 14,
       "error": null
     },
@@ -297,14 +297,8 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 2822,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/sciencedirect-cfp.html",
-      "dropped_unclassified": 2772,
-      "skipped_closed": 7
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -484,13 +478,8 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 49,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/apa-cfp.html",
-      "skipped_closed": 18
+      "skipped": "disabled",
+      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -587,12 +576,8 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "ok": true,
-      "http_status": null,
-      "parsed": 1,
-      "pages": 1,
-      "error": null,
-      "ingest": "listing-html/josa-a-features.html"
+      "skipped": "disabled",
+      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
     },
     "wiley-bjp": {
       "enabled": false,
@@ -713,7 +698,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 9,
+      "parsed": 7,
       "pages": 1,
       "error": null
     },
@@ -893,10 +878,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-27T00:43:11Z",
-      "target_count": 34,
-      "attempted": 34,
-      "unavailable": 14,
+      "checked_at": "2026-10-28T00:47:45Z",
+      "target_count": 400,
+      "attempted": 400,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -983,28 +968,16 @@
           "checked_at": "2026-10-27T00:43:37Z"
         }
       },
-      "checked": 20,
-      "listed": 19,
-      "with_deadline": 19,
-      "not_listed": 0,
-      "failed": 14,
+      "checked": 400,
+      "listed": 361,
+      "with_deadline": 361,
+      "not_listed": 1,
+      "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 1,
+      "parse_errors": 38,
       "forbidden": 0,
-      "remaining": 14,
-      "metadata_updated": 11
+      "remaining": 22,
+      "metadata_updated": 241
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-10-27T00:44:28.616906+00:00",
-    "attempted": 18,
-    "checked": 18,
-    "updated": 1,
-    "listed": 0,
-    "not_listed": 18,
-    "closed": 0,
-    "unknown": 17,
-    "errors": {},
-    "remaining": 0
   }
 }
