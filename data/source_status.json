@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-29T00:55:12Z",
+  "checked_at": "2026-10-30T00:58:51Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 651,
+      "parsed": 653,
       "pages": 66,
       "error": null
     },
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 206,
+      "parsed": 208,
       "pages": 21,
       "error": null
     },
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3435,
+      "parsed": 3441,
       "pages": 144,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-10-29T01:13:55Z",
+        "checked_at": "2026-10-30T01:15:46Z",
         "target_count": 400,
         "attempted": 400,
-        "unavailable": 14,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -145,23 +145,23 @@
             "checked_at": "2026-10-29T01:20:11Z"
           }
         },
-        "checked": 386,
-        "listed": 349,
-        "with_deadline": 349,
+        "checked": 400,
+        "listed": 355,
+        "with_deadline": 355,
         "not_listed": 0,
-        "failed": 14,
+        "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 37,
+        "parse_errors": 45,
         "forbidden": 0,
-        "remaining": 16,
-        "metadata_updated": 222
+        "remaining": 33,
+        "metadata_updated": 239
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 388,
+      "parsed": 389,
       "pages": 17,
       "error": null
     },
@@ -177,7 +177,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1934,
+      "parsed": 1938,
       "pages": 81,
       "error": null
     },
@@ -185,7 +185,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2209,
+      "parsed": 2211,
       "pages": 93,
       "error": null
     },
@@ -193,7 +193,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1644,
+      "parsed": 1646,
       "pages": 69,
       "error": null
     },
@@ -201,7 +201,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 482,
+      "parsed": 485,
       "pages": 21,
       "error": null
     },
@@ -209,7 +209,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 558,
+      "parsed": 559,
       "pages": 24,
       "error": null
     },
@@ -241,7 +241,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 227,
+      "parsed": 228,
       "pages": 10,
       "error": null
     },
@@ -289,7 +289,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 866,
+      "parsed": 868,
       "pages": 37,
       "error": null
     },
@@ -297,7 +297,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 931,
+      "parsed": 932,
       "pages": 39,
       "error": null
     },
@@ -494,11 +494,11 @@
     },
     "royal-society-themes": {
       "enabled": true,
-      "ok": false,
-      "http_status": 403,
-      "parsed": 0,
-      "pages": 1,
-      "error": "http 403"
+      "ok": true,
+      "http_status": 200,
+      "parsed": 3,
+      "pages": 2,
+      "error": null
     },
     "plos-collections": {
       "enabled": true,
@@ -884,10 +884,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-10-29T01:13:55Z",
+      "checked_at": "2026-10-30T01:15:46Z",
       "target_count": 400,
       "attempted": 400,
-      "unavailable": 14,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -980,16 +980,16 @@
           "checked_at": "2026-10-29T01:20:11Z"
         }
       },
-      "checked": 386,
-      "listed": 349,
-      "with_deadline": 349,
+      "checked": 400,
+      "listed": 355,
+      "with_deadline": 355,
       "not_listed": 0,
-      "failed": 14,
+      "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 37,
+      "parse_errors": 45,
       "forbidden": 0,
-      "remaining": 16,
-      "metadata_updated": 222
+      "remaining": 33,
+      "metadata_updated": 239
     }
   }
 }
