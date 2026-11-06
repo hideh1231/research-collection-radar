@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T01:27:41Z",
+  "checked_at": "2026-11-06T01:31:52Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3446,
+      "parsed": 3449,
       "pages": 144,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-05T01:41:49Z",
+        "checked_at": "2026-11-06T01:46:12Z",
         "target_count": 400,
         "attempted": 400,
-        "unavailable": 9,
+        "unavailable": 1,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -161,18 +161,24 @@
             "error": "http 404",
             "http_status": 404,
             "checked_at": "2026-11-05T01:50:46Z"
+          },
+          "frontiers-e0a6750f25": {
+            "url": "https://frontiersin.org/research-topics/81373/lasting-impact-of-psychiatric-rehabilitation-on-system-wide-outcomes",
+            "error": "http 404",
+            "http_status": 404,
+            "checked_at": "2026-11-06T01:51:13Z"
           }
         },
-        "checked": 391,
-        "listed": 350,
-        "with_deadline": 350,
-        "not_listed": 0,
-        "failed": 9,
+        "checked": 399,
+        "listed": 352,
+        "with_deadline": 352,
+        "not_listed": 1,
+        "failed": 1,
         "rate_limited": 0,
-        "parse_errors": 41,
+        "parse_errors": 46,
         "forbidden": 0,
-        "remaining": 18,
-        "metadata_updated": 222
+        "remaining": 22,
+        "metadata_updated": 240
       }
     },
     "frontiers-robotics-ai": {
@@ -203,7 +209,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2215,
+      "parsed": 2216,
       "pages": 93,
       "error": null
     },
@@ -211,7 +217,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1648,
+      "parsed": 1647,
       "pages": 69,
       "error": null
     },
@@ -299,7 +305,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 35,
+      "parsed": 36,
       "pages": 2,
       "error": null
     },
@@ -307,7 +313,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 869,
+      "parsed": 868,
       "pages": 37,
       "error": null
     },
@@ -902,10 +908,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-05T01:41:49Z",
+      "checked_at": "2026-11-06T01:46:12Z",
       "target_count": 400,
       "attempted": 400,
-      "unavailable": 9,
+      "unavailable": 1,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -1014,18 +1020,24 @@
           "error": "http 404",
           "http_status": 404,
           "checked_at": "2026-11-05T01:50:46Z"
+        },
+        "frontiers-e0a6750f25": {
+          "url": "https://frontiersin.org/research-topics/81373/lasting-impact-of-psychiatric-rehabilitation-on-system-wide-outcomes",
+          "error": "http 404",
+          "http_status": 404,
+          "checked_at": "2026-11-06T01:51:13Z"
         }
       },
-      "checked": 391,
-      "listed": 350,
-      "with_deadline": 350,
-      "not_listed": 0,
-      "failed": 9,
+      "checked": 399,
+      "listed": 352,
+      "with_deadline": 352,
+      "not_listed": 1,
+      "failed": 1,
       "rate_limited": 0,
-      "parse_errors": 41,
+      "parse_errors": 46,
       "forbidden": 0,
-      "remaining": 18,
-      "metadata_updated": 222
+      "remaining": 22,
+      "metadata_updated": 240
     }
   }
 }
