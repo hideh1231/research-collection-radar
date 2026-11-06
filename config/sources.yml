@@ -310,90 +310,81 @@ sources:
     publisher: Springer Nature
     journal: BMC Psychology
     collection_type: collection
-    url: "https://bmcpsychology.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/40359/collections"
     allowed_hosts:
-      - bmcpsychology.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-psychiatry
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Psychiatry
     collection_type: collection
-    url: "https://bmcpsychiatry.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12888/collections"
     allowed_hosts:
-      - bmcpsychiatry.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-jner
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: Journal of NeuroEngineering and Rehabilitation
     collection_type: collection
-    url: "https://jneuroengrehab.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12984/collections"
     allowed_hosts:
-      - jneuroengrehab.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-neuroscience
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Neuroscience
     collection_type: collection
-    url: "https://bmcneurosci.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12868/collections"
     allowed_hosts:
-      - bmcneurosci.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-neurology
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Neurology
     collection_type: collection
-    url: "https://bmcneurol.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12883/collections"
     allowed_hosts:
-      - bmcneurol.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-zoology
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Zoology
     collection_type: collection
-    url: "https://bmczool.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/40850/collections"
     allowed_hosts:
-      - bmczool.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-ecology-evolution
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Ecology and Evolution
     collection_type: collection
-    url: "https://bmcecolevol.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12862/collections"
     allowed_hosts:
-      - bmcecolevol.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-digital-health
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Digital Health
     collection_type: collection
-    url: "https://bmcdigitalhealth.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/44247/collections"
     allowed_hosts:
-      - bmcdigitalhealth.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-bmc-medinform
     enabled: true
     collector: springer
     publisher: Springer Nature
     journal: BMC Medical Informatics and Decision Making
     collection_type: collection
-    url: "https://bmcmedinformdecismak.biomedcentral.com/articles/collections"
+    url: "https://link.springer.com/journal/12911/collections"
     allowed_hosts:
-      - bmcmedinformdecismak.biomedcentral.com
-      - www.biomedcentral.com
+      - link.springer.com
   - key: springer-psychological-research
     enabled: true
     collector: springer

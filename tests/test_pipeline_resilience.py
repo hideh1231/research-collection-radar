@@ -78,7 +78,10 @@ def test_source_failure_keeps_old_data_and_finishes_healthy_source(isolated_root
         return SourceResult(key="healthy", ok=True, records=[_raw("healthy")], parsed_count=1)
 
     monkeypatch.setattr("radar.pipeline.run_source", collect)
+    output = isolated_root / "github-output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
     assert run(isolated_root, dry_run=True) == 1
+    assert output.read_text(encoding="utf-8") == "crawl_results_saved=true\n"
     assert called == ["failed", "healthy"]
     rows = {row["id"]: row for row in load_jsonl(isolated_root / "data/collections.jsonl")}
     assert set(rows) == {"collection-failed", "collection-healthy"}
@@ -88,6 +91,22 @@ def test_source_failure_keeps_old_data_and_finishes_healthy_source(isolated_root
     assert status["sources"]["healthy"]["ok"] is True
     assert (isolated_root / "OPEN.md").exists()
     assert (isolated_root / "site/data/collections.json").exists()
+
+
+def test_failed_publication_does_not_unlock_deadline_checks(isolated_root, monkeypatch):
+    output = isolated_root / "github-output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
+    monkeypatch.setattr("radar.pipeline.run_source", lambda _f, source: SourceResult(
+        key=source["key"], ok=True, records=[_raw(source["key"])], parsed_count=1,
+    ))
+
+    def fail_publication(*_args):
+        raise RuntimeError("git push failed")
+
+    monkeypatch.setattr("radar.pipeline.commit_if_actions", fail_publication)
+    with pytest.raises(RuntimeError, match="git push failed"):
+        run(isolated_root)
+    assert not output.exists()
 
 
 @pytest.mark.parametrize("ingest", [False, True])
@@ -209,3 +228,19 @@ def test_unknown_source_keys_fail_before_fetching_or_writing(isolated_root, monk
     assert "unknown source key(s): typo" in capsys.readouterr().err
     assert not (isolated_root / "data").exists()
     assert not (isolated_root / "OPEN.md").exists()
+
+
+def test_springer_refresh_preserves_id_when_a_bmc_url_moves(isolated_root, monkeypatch):
+    canonical_url = "https://link.springer.com/collections/abc"
+    legacy = _record("healthy", publisher="Springer Nature", url="https://bmcpsychology.biomedcentral.com/collections/abc")
+    write_jsonl(isolated_root / "data/collections.jsonl", [legacy])
+    raw = _raw("healthy", publisher="Springer Nature", url=canonical_url)
+    monkeypatch.setattr("radar.pipeline.run_source", lambda _f, _s: SourceResult(
+        key="healthy", ok=True, records=[raw], parsed_count=1,
+    ))
+
+    assert run(isolated_root, dry_run=True, only={"healthy"}) == 0
+    rows = load_jsonl(isolated_root / "data/collections.jsonl")
+    assert [(row["id"], row["url"], row["publisher_id"]) for row in rows] == [
+        (legacy["id"], canonical_url, "abc"),
+    ]

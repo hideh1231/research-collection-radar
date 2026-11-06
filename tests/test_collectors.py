@@ -124,8 +124,8 @@ def test_springer_fixture_uses_collection_cards() -> None:
             "springer-bmc-psychology",
             publisher="Springer Nature",
             journal="BMC Psychology",
-            url="https://bmcpsychology.biomedcentral.com/articles/collections",
-            allowed_hosts=["bmcpsychology.biomedcentral.com", "www.biomedcentral.com"],
+            url="https://link.springer.com/journal/40359/collections",
+            allowed_hosts=["link.springer.com"],
         ),
     )
     titles = {row.title for row in records}
@@ -133,5 +133,6 @@ def test_springer_fixture_uses_collection_cards() -> None:
     assert "An already closed methods collection" in titles
     assert all("Sign in" not in row.title for row in records)
     open_row = next(row for row in records if row.status == "open")
+    assert open_row.url == "https://link.springer.com/collections/jejegcbbaj"
     assert open_row.deadline and open_row.deadline.isoformat() == "2027-05-25"
     assert open_row.summary and "positive psychology" in open_row.summary

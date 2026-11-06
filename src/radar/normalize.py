@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import UTC, datetime, date
 import re
 from typing import Any
+from urllib.parse import urlsplit, urlunsplit
 
 from dateutil import parser as date_parser
 
@@ -66,6 +67,12 @@ def publisher_id_from_url(url: str, publisher: str | None = None) -> str | None:
         match = NATURE_COLLECTION_RE.search(text)
         if match:
             return match.group(1)
+    if publisher == "Springer Nature":
+        parts = urlsplit(text)
+        if parts.hostname == "link.springer.com":
+            match = re.fullmatch(r"/collections/([a-z0-9]+)/?", parts.path)
+            if match:
+                return match.group(1)
     match = PLOS_CFP_RE.search(text)
     if match:
         return match.group(1)
@@ -104,6 +111,10 @@ def _as_utc_timestamp(value: Any) -> str | None:
 def migrate_record(row: dict[str, Any]) -> dict[str, Any]:
     """Add deadline and viewer fields to a legacy row without changing timestamps."""
     migrated = dict(row)
+    if migrated.get("publisher") == "Springer Nature":
+        parts = urlsplit(migrated.get("url") or "")
+        if (parts.hostname or "").endswith(".biomedcentral.com") and re.fullmatch(r"/collections/[a-z0-9]+/?", parts.path):
+            migrated["url"] = urlunsplit(parts._replace(netloc="link.springer.com"))
     migrated["deadline_status"] = deadline_state(
         migrated.get("deadline"), migrated.get("deadline_status")
     )

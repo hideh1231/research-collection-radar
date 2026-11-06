@@ -1,11 +1,17 @@
 from __future__ import annotations
 
+from contextlib import ExitStack
 from dataclasses import dataclass
 import json
+import os
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
+
+import httpx
 
 from radar.collectors.html_listing import parse_tandf
+from radar.http import Fetcher
 
 LISTING_PAGES = {
     "apa-cfp": {
@@ -215,6 +221,71 @@ def _launch_browser(playwright: Any, *, headless: bool) -> Any:
         except Exception as exc:
             errors.append(f"{channel or 'chromium'}: {exc}")
     raise RuntimeError("could not launch Chrome or Chromium: " + "; ".join(errors))
+
+
+
+class PublisherPageFetcher:
+    """Use standard Chrome for publisher pages that require browser JavaScript."""
+
+    def __init__(self, fetcher: Fetcher) -> None:
+        self._fetcher = fetcher
+        self._resources = ExitStack()
+        self._page: Any = None
+
+    def close(self) -> None:
+        self._resources.close()
+
+    def get_html(self, url: str) -> tuple[int, str]:
+        response = self.get(url)
+        return response.status_code, response.text
+
+    def get(self, url: str) -> httpx.Response:
+        response = self._fetcher.get(url)
+        if (
+            urlsplit(str(response.url)).hostname in {"www.nature.com", "nature.com", "link.springer.com"}
+            and "<title>client challenge</title>" in response.text.lower()
+        ):
+            return self._browser_get(str(response.url))
+        return response
+
+    def _browser_get(self, url: str) -> httpx.Response:
+        from playwright.sync_api import TimeoutError, sync_playwright
+
+        if self._page is None:
+            with ExitStack() as startup:
+                playwright = startup.enter_context(sync_playwright())
+                chrome_path = os.environ.get("RADAR_CHROME_PATH")
+                if chrome_path:
+                    browser = playwright.chromium.launch(executable_path=chrome_path, headless=True)
+                else:
+                    browser = _launch_browser(playwright, headless=True)
+                startup.callback(browser.close)
+                self._page = browser.new_page()
+                self._resources.enter_context(startup.pop_all())
+
+        navigation_status = {}
+
+        def track_navigation(response):
+            if response.request.is_navigation_request():
+                navigation_status[response.url] = response.status
+
+        page = self._page
+        page.on("response", track_navigation)
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+            page.wait_for_function(
+                'document.title && document.title !== "Client Challenge" && document.readyState !== "loading"',
+                timeout=15_000,
+            )
+            html = page.content()
+            final_url = page.url
+            if final_url not in navigation_status:
+                raise RuntimeError(f"no Chrome navigation response for {final_url}")
+            return httpx.Response(navigation_status[final_url], text=html, request=httpx.Request("GET", final_url))
+        except TimeoutError as exc:
+            raise RuntimeError(f"publisher page did not load in Chrome: {url}") from exc
+        finally:
+            page.remove_listener("response", track_navigation)
 
 
 def _render_one_url(page: Any, key: str, url: str, spec: dict[str, Any], timeout_ms: int) -> tuple[str, ListingProbe]:
