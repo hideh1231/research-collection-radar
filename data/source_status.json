@@ -1039,5 +1039,17 @@
       "remaining": 19,
       "metadata_updated": 3
     }
+  },
+  "collection_deadline_checks": {
+    "checked_at": "2026-11-06T04:41:32.243931+00:00",
+    "attempted": 19,
+    "checked": 19,
+    "updated": 2,
+    "listed": 1,
+    "not_listed": 18,
+    "closed": 0,
+    "unknown": 18,
+    "errors": {},
+    "remaining": 0
   }
 }
