@@ -260,6 +260,7 @@ def run(
     ingest_html: dict[str, Path] | None = None,
     open_only: bool = False,
     include_disabled: bool = False,
+    browser_listings: bool = False,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -355,6 +356,9 @@ def run(
         sources_cfg.get("user_agent", "research-collection-radar/0.1"),
         sources_cfg.get("timeout_seconds", 40),
     )
+    from radar.listing_html import PublisherListingFetcher
+
+    listing_fetcher = PublisherListingFetcher(fetcher) if browser_listings else None
     try:
         if backfill_deadlines:
             for source in sources_cfg.get("sources", []):
@@ -422,7 +426,10 @@ def run(
                     source_status["sources"][source["key"]] = entry
                     continue
                 try:
-                    result = run_source(fetcher, source)
+                    source_fetcher = fetcher
+                    if listing_fetcher and source["collector"] in {"nature", "springer", "nature_humanities"}:
+                        source_fetcher = listing_fetcher
+                    result = run_source(source_fetcher, source)
                 except Exception as exc:
                     # A failed publisher must not discard the results already
                     # collected or prevent the remaining sources from running.
@@ -442,7 +449,11 @@ def run(
                     continue
                 absorb(source, result, entry)
     finally:
-        fetcher.close()
+        try:
+            if listing_fetcher:
+                listing_fetcher.close()
+        finally:
+            fetcher.close()
 
     merged = {row["id"]: dict(row) for row in prior_rows}
     for row in incoming:
@@ -593,6 +604,9 @@ def run(
     summary = f"data: update {len(incoming)} records ({len(open_new)} new open)"
     if not dry_run:
         commit_if_actions(root, summary)
+    if output_path := os.environ.get("GITHUB_OUTPUT"):
+        with Path(output_path).open("a", encoding="utf-8") as output:
+            output.write("crawl_results_saved=true\n")
     if failures:
         log(f"run completed with {failures} failure(s); successful results were saved")
         return 1
@@ -787,6 +801,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--render-listings", action="store_true")
     parser.add_argument("--ingest-rendered", type=Path, default=None)
     parser.add_argument("--out-dir", type=Path, default=None)
+    parser.add_argument("--browser-listings", action="store_true",
+                        help="Open Nature and Springer listings in Chrome when HTTP returns a client challenge")
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only", action="append", default=None)
@@ -872,6 +888,7 @@ def main(argv: list[str] | None = None) -> int:
         ingest_html=ingest,
         open_only=args.open_only,
         include_disabled=args.include_disabled,
+        browser_listings=args.browser_listings,
     )
 
 

@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+from contextlib import ExitStack
 from dataclasses import dataclass
 import json
 from pathlib import Path
 from typing import Any
 
 from radar.collectors.html_listing import parse_tandf
+from radar.http import Fetcher
 
 LISTING_PAGES = {
     "apa-cfp": {
@@ -215,6 +217,49 @@ def _launch_browser(playwright: Any, *, headless: bool) -> Any:
         except Exception as exc:
             errors.append(f"{channel or 'chromium'}: {exc}")
     raise RuntimeError("could not launch Chrome or Chromium: " + "; ".join(errors))
+
+
+
+class PublisherListingFetcher:
+    """Use a standard browser when a publisher serves a challenge to the HTTP client."""
+
+    def __init__(self, fetcher: Fetcher) -> None:
+        self._fetcher = fetcher
+        self._resources = ExitStack()
+        self._page: Any = None
+
+    def close(self) -> None:
+        self._resources.close()
+
+    def get_html(self, url: str) -> tuple[int, str]:
+        status, html = self._fetcher.get_html(url)
+        if "<title>client challenge</title>" not in html.lower():
+            return status, html
+
+        if self._page is None:
+            from playwright.sync_api import sync_playwright
+
+            with ExitStack() as startup:
+                playwright = startup.enter_context(sync_playwright())
+                browser = _launch_browser(playwright, headless=True)
+                startup.callback(browser.close)
+                self._page = browser.new_page()
+                self._resources.enter_context(startup.pop_all())
+
+        response = self._page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+        from playwright.sync_api import TimeoutError
+
+        try:
+            self._page.wait_for_function(
+                'document.title && document.title !== "Client Challenge" && document.readyState !== "loading"',
+                timeout=15_000,
+            )
+        except TimeoutError as exc:
+            raise RuntimeError(f"publisher Client Challenge persisted in Chrome: {url}") from exc
+        # A redirect initiated by the challenge can make the original response
+        # stale. The rendered page is then a new HTTP document.
+        browser_status = response.status if response and response.url == self._page.url else 200
+        return browser_status, self._page.content()
 
 
 def _render_one_url(page: Any, key: str, url: str, spec: dict[str, Any], timeout_ms: int) -> tuple[str, ListingProbe]:
