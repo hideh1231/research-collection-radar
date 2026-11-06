@@ -401,7 +401,7 @@ sources:
     publisher: Springer Nature
     journal: Attention, Perception, & Psychophysics
     collection_type: collection
-    url: "https://link.springer.com/journal/13414/collections"
+    url: "https://example.invalid/collections"
     allowed_hosts:
       - link.springer.com
       - springer.com
