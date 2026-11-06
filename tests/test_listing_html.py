@@ -1,7 +1,11 @@
 import json
+from unittest.mock import Mock
+
+import httpx
+import pytest
 
 from radar.config import repo_root
-from radar.listing_html import inspect_listing_html, ingest_args_from_status
+from radar.listing_html import PublisherPageFetcher, inspect_listing_html, ingest_args_from_status
 from radar.pipeline import main
 
 
@@ -73,3 +77,24 @@ def test_cli_ingest_rendered_passes_ok_files(monkeypatch, tmp_path) -> None:
     assert main(["--open-only", "--ingest-rendered", str(tmp_path)]) == 0
     assert captured["open_only"] is True
     assert captured["ingest_html"]["apa-cfp"] == html
+
+
+@pytest.mark.parametrize(("url", "body", "uses_chrome"), [
+    ("https://www.nature.com/collections/abc", "<title>Client Challenge</title>", True),
+    ("https://link.springer.com/journal/40359/collections", "<title>Client Challenge</title>", True),
+    ("https://www.nature.com/collections/abc", "<title>A collection</title>", False),
+    ("https://www.jske.org/cfp/example", "<title>Client Challenge</title>", False),
+])
+def test_publisher_chrome_runs_only_for_a_challenge_on_the_expected_hosts(monkeypatch, url, body, uses_chrome):
+    response = httpx.Response(200, text=body, request=httpx.Request("GET", url))
+    rendered = httpx.Response(200, text="<article>Collection</article>",
+                              request=httpx.Request("GET", "https://www.nature.com/collections/abc"))
+    fetcher = PublisherPageFetcher(Mock(get=Mock(return_value=response)))
+    browser_get = Mock(return_value=rendered)
+    monkeypatch.setattr(fetcher, "_browser_get", browser_get)
+
+    assert fetcher.get(url) is (rendered if uses_chrome else response)
+    if uses_chrome:
+        browser_get.assert_called_once_with(url)
+    else:
+        browser_get.assert_not_called()

@@ -30,6 +30,7 @@ from radar.journals import journal_is_watched
 from radar.http import Fetcher
 from radar.ids import stable_id
 from radar.listing_snapshots import SnapshotError, download_snapshot
+from radar.listing_html import PublisherPageFetcher
 from radar.models import SourceResult
 from radar.normalize import collapse_duplicate_publisher_ids, merge_collection_rows, publisher_id_from_url, to_record
 from radar.slack import credentials, post_message
@@ -260,7 +261,7 @@ def run(
     ingest_html: dict[str, Path] | None = None,
     open_only: bool = False,
     include_disabled: bool = False,
-    browser_listings: bool = False,
+    publisher_browser: bool = False,
 ) -> int:
     today = date.today()
     sources_cfg = load_sources(root)
@@ -356,9 +357,7 @@ def run(
         sources_cfg.get("user_agent", "research-collection-radar/0.1"),
         sources_cfg.get("timeout_seconds", 40),
     )
-    from radar.listing_html import PublisherListingFetcher
-
-    listing_fetcher = PublisherListingFetcher(fetcher) if browser_listings else None
+    listing_fetcher = PublisherPageFetcher(fetcher) if publisher_browser else None
     try:
         if backfill_deadlines:
             for source in sources_cfg.get("sources", []):
@@ -683,7 +682,7 @@ def run_frontiers_checks(root: Path, *, dry_run: bool = False, limit: int | None
 
 
 def run_deadline_checks(root: Path, *, dry_run: bool = False, limit: int | None = None,
-                        only: set[str] | None = None) -> int:
+                        only: set[str] | None = None, publisher_browser: bool = False) -> int:
     from radar.deadline_checks import check_deadlines
 
     cfg = load_sources(root)
@@ -698,10 +697,15 @@ def run_deadline_checks(root: Path, *, dry_run: bool = False, limit: int | None 
     status_path = root / "data/source_status.json"
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {"sources": {}}
     fetcher = Fetcher(cfg["user_agent"], cfg.get("timeout_seconds", 40), retries=2, min_interval_seconds=0.3)
+    browser_fetcher = PublisherPageFetcher(fetcher) if publisher_browser else None
     try:
-        result = check_deadlines(rows, fetcher, limit=100 if limit is None else limit, only=only)
+        result = check_deadlines(rows, browser_fetcher or fetcher, limit=100 if limit is None else limit, only=only)
     finally:
-        fetcher.close()
+        try:
+            if browser_fetcher:
+                browser_fetcher.close()
+        finally:
+            fetcher.close()
     status["collection_deadline_checks"] = result
     labels = load_domains(root)
     _write_artifacts_atomic(root, rows, date.today(), status,
@@ -801,8 +805,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--render-listings", action="store_true")
     parser.add_argument("--ingest-rendered", type=Path, default=None)
     parser.add_argument("--out-dir", type=Path, default=None)
-    parser.add_argument("--browser-listings", action="store_true",
-                        help="Open Nature and Springer listings in Chrome when HTTP returns a client challenge")
+    parser.add_argument("--publisher-browser", action="store_true",
+                        help="Open Nature and Springer pages in Chrome when HTTP returns a client challenge")
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--only", action="append", default=None)
@@ -833,7 +837,8 @@ def main(argv: list[str] | None = None) -> int:
         return run_frontiers_checks(root, dry_run=args.dry_run, limit=args.limit)
     if args.check_deadlines:
         return run_deadline_checks(root, dry_run=args.dry_run, limit=args.limit,
-                                   only=set(args.only) if args.only else None)
+                                   only=set(args.only) if args.only else None,
+                                   publisher_browser=args.publisher_browser)
     if args.render_listings:
         from radar.listing_html import render_listing_pages
 
@@ -888,7 +893,7 @@ def main(argv: list[str] | None = None) -> int:
         ingest_html=ingest,
         open_only=args.open_only,
         include_disabled=args.include_disabled,
-        browser_listings=args.browser_listings,
+        publisher_browser=args.publisher_browser,
     )
 
 

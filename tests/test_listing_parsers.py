@@ -6,7 +6,7 @@ from radar.collectors.royal_society import parse_listing as parse_royal_society
 from radar.collectors.sciencedirect import parse_listing as parse_sciencedirect
 from radar.config import repo_root
 from radar.journals import journal_is_watched
-from radar.normalize import publisher_id_from_url
+from radar.normalize import listing_status, publisher_id_from_url
 from radar.pipeline import run
 from support import copy_radar_config, workspace_tempdir
 
@@ -43,7 +43,9 @@ def _rs_source(url: str) -> dict:
     }
 
 
-def test_apa_listing_uses_journal_modules_and_manuscript_deadline() -> None:
+def test_apa_listing_uses_journal_modules_and_manuscript_deadline(monkeypatch) -> None:
+    monkeypatch.setattr("radar.collectors.apa.listing_status",
+                        lambda deadline: listing_status(deadline, today=date(2026, 8, 1)))
     html = (repo_root() / "tests/fixtures/apa_calls.html").read_text(encoding="utf-8")
     records = parse_apa(html, _apa_source())
     by_title = {row.title: row for row in records}

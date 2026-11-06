@@ -50,21 +50,24 @@ jobs:
       - name: Install
         run: python -m pip install -e ".[listing]"
       - uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4 # v2.2.0
-        if: ${{ !inputs.check_deadlines_only && !inputs.check_frontiers_only }}
+        id: chrome
+        if: ${{ !inputs.check_frontiers_only }}
       - name: Crawl
         id: crawl
         if: ${{ !inputs.dry_run && !inputs.check_deadlines_only && !inputs.check_frontiers_only }}
         env:
+          RADAR_CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
-        run: python -m radar --browser-listings
+        run: python -m radar --publisher-browser
       - name: Validate crawl without delivery
         id: validate
         if: ${{ inputs.dry_run && !inputs.check_deadlines_only && !inputs.check_frontiers_only }}
         env:
+          RADAR_CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
           RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
         run: |
-          args=(--dry-run --browser-listings)
+          args=(--dry-run --publisher-browser)
           read -r -a sources <<< "$RADAR_SOURCE_KEYS"
           for source in "${sources[@]}"; do
             args+=(--only "$source")
@@ -77,10 +80,11 @@ jobs:
                steps.crawl.outputs.crawl_results_saved == 'true' ||
                steps.validate.outputs.crawl_results_saved == 'true') }}
         env:
+          RADAR_CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
           RADAR_DRY_RUN: ${{ inputs.dry_run }}
           RADAR_SOURCE_KEYS: ${{ inputs.source_keys }}
         run: |
-          args=(--check-deadlines)
+          args=(--check-deadlines --publisher-browser)
           if [[ "$RADAR_DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           read -r -a sources <<< "$RADAR_SOURCE_KEYS"
           for source in "${sources[@]}"; do args+=(--only "$source"); done
