@@ -1039,5 +1039,36 @@
       "remaining": 22,
       "metadata_updated": 240
     }
+  },
+  "collection_deadline_checks": {
+    "checked_at": "2026-11-06T03:50:25.443342+00:00",
+    "attempted": 18,
+    "checked": 0,
+    "updated": 0,
+    "listed": 0,
+    "not_listed": 0,
+    "closed": 0,
+    "unknown": 0,
+    "errors": {
+      "nature-humanities-social-sciences-communications-a56354dba9": "detail title does not match collection",
+      "nature-human-behaviour-3f53a8aa65": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-021b130d27": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-0398489031": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-14c0f8e9ab": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-22ad1b3770": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-2908a83424": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-43f8ff0887": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-73fd920184": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-84019e57a3": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-9ad67c0324": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-a5b0bf8311": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-b9a65aaba4": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-c755c92c99": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-ce84d4ec38": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-d19d54a321": "detail title does not match collection",
+      "nature-humanities-social-sciences-communications-f91098cfbe": "detail title does not match collection",
+      "nature-ncomms-77ab7ad93e": "detail title does not match collection"
+    },
+    "remaining": 18
   }
 }
