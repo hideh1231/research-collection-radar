@@ -1,18 +1,9 @@
 # Open calls
 
-Generated 2026-11-07. Sorted by deadline.
+Generated 2026-11-08. Sorted by deadline.
 
 | Deadline | Title | Journal | Fields | Type | URL |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-07 | Agricultural greenhouse gas emissions and mitigation | Scientific Reports |  | Collection | https://nature.com/collections/dffidjggaf |
-| 2026-11-07 | CNS demyelinating diseases: from biology to translational medicine | Frontiers in Immunology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/80484/cns-demyelinating-diseases-from-biology-to-translational-medicine |
-| 2026-11-07 | Ethics and Privacy in AI-Driven Neuroinformatics | Frontiers in Neuroinformatics | Neuroscience | Research Topic | https://frontiersin.org/research-topics/73909/ethics-and-privacy-in-ai-driven-neuroinformatics |
-| 2026-11-07 | Global Perspectives on Substance Use Disorder in Older Adult Populations | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/79810/global-perspectives-on-substance-use-disorder-in-older-adult-populations |
-| 2026-11-07 | Integrating approaches: NAMs, 3Rs and traditional methods in neuroscience | Frontiers in Behavioral Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/75214/integrating-approaches-nams-3rs-and-traditional-methods-in-neuroscience |
-| 2026-11-07 | Intrinsic neural dynamics and information processing in decision-making circuits | Frontiers in Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/80294/intrinsic-neural-dynamics-and-information-processing-in-decision-making-circuits |
-| 2026-11-07 | Nanostructure patterning | Scientific Reports |  | Collection | https://nature.com/collections/fgbdaeaeeg |
-| 2026-11-07 | The Role of Artificial Intelligence in Mental Health Care: Critical and Careful Considerations | Frontiers in Human Dynamics | Psychology | Research Topic | https://frontiersin.org/research-topics/80226/the-role-of-artificial-intelligence-in-mental-health-care-critical-and-careful-considerations |
-| 2026-11-07 | Utility of non-invasive imaging techniques in diagnosis and management of neuromuscular disorders​​​​​​​ | Frontiers in Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/78489/utility-of-non-invasive-imaging-techniques-in-diagnosis-and-management-of-neuromuscular-disorders |
 | 2026-11-08 | AI-Driven Offensive and Defensive Security for Web and IoT Systems | Frontiers in Communications and Networks | HCI | Research Topic | https://frontiersin.org/research-topics/78914/ai-driven-offensive-and-defensive-security-for-web-and-iot-systems |
 | 2026-11-08 | Advances in Predictive Coding: Evidence, Mechanisms and Challenges | Frontiers in Psychology | Psychology, Neuroscience | Research Topic | https://frontiersin.org/research-topics/77099/advances-in-predictive-coding-evidence-mechanisms-and-challenges |
 | 2026-11-08 | Airborne Microbial Pathogens in Poultry: Transmission Pathways, Pathogenic Mechanisms, and Advanced Detection Strategies | Frontiers in Microbiology | Psychology | Research Topic | https://frontiersin.org/research-topics/77152/airborne-microbial-pathogens-in-poultry-transmission-pathways-pathogenic-mechanisms-and-advanced-detection-strategies |
@@ -1603,6 +1594,7 @@ Generated 2026-11-07. Sorted by deadline.
 | 2027-02-28 | Depression and Mood Disorders in Neurological Comorbidities: Pathophysiology, Risk Prediction, and Intervention | Frontiers in Psychiatry | Psychology | Research Topic | https://frontiersin.org/research-topics/84459/depression-and-mood-disorders-in-neurological-comorbidities-pathophysiology-risk-prediction-and-intervention |
 | 2027-02-28 | Digital Heritage Futures: Volume II | Frontiers in Computer Science | HCI | Research Topic | https://frontiersin.org/research-topics/80876/digital-heritage-futures-volume-ii |
 | 2027-02-28 | Ecosystem Functioning, Biodiversity Dynamics, and Resilience of Tropical Mangrove and Estuarine Ecosystems Under Environmental Change | Frontiers in Ecology and Evolution | Psychology | Research Topic | https://frontiersin.org/research-topics/83407/ecosystem-functioning-biodiversity-dynamics-and-resilience-of-tropical-mangrove-and-estuarine-ecosystems-under-environmental-change |
+| 2027-02-28 | Epitranscriptomic Regulation in the Nervous System | Frontiers in Molecular Neuroscience | Neuroscience | Research Topic | https://frontiersin.org/research-topics/74833/epitranscriptomic-regulation-in-the-nervous-system |
 | 2027-02-28 | Extracellular Vesicles as Mediators and Biomarkers in Aging and Neurodegenerative Disorders: From Molecular Cargo to Clinical Translation | Frontiers in Aging Neuroscience | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/76320/extracellular-vesicles-as-mediators-and-biomarkers-in-aging-and-neurodegenerative-disorders-from-molecular-cargo-to-clinical-translation |
 | 2027-02-28 | Festschrift: Patrick Corrigan’s enduring impact on the field of stigma | Stigma and Health |  | Special Issue | https://apa.org/pubs/journals/sah/patrick-corrigan-stigma |
 | 2027-02-28 | Flapping Wing Robots | npj Robotics | HRI, Robotics | Collection | https://nature.com/collections/djjidcbbbg |
