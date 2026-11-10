@@ -57914,6 +57914,31 @@
     "status": "open"
   },
   {
+    "id": "apa-cfp-22503edb50",
+    "title": "Introducing Registered Reports at Psychological Methods",
+    "summary": null,
+    "journal": "Psychological Methods ®",
+    "journals": [
+      "Psychological Methods ®"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Methods",
+      "psychological"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-01",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/met/introducing-registered-reports",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-10",
+    "publisher": "APA",
+    "status": "open"
+  },
+  {
     "id": "frontiers-f242e52199",
     "title": "New Frontiers in Reproductive Neuroendocrinology: Neural Circuits and Neuroendocrine Mechanisms",
     "summary": "Reproductive neuroendocrinology has undergone remarkable advances over the past two decades, driven by the discovery of kisspeptin neurons, as well as significant progress in molecular genetics, imaging technologies, and neural circuit analysis. The discovery has transformed our understanding of how the brain regulates puberty, fertility, reproductive cyclicity, pregnancy, and reproductive aging. More recently, attention has expanded beyond classical neuroendocrine pathways to include interactions with glial cells, immune signaling, metabolic cues, stress pathways, and peripheral organs, highlighting reproduction as a highly integrated physiological system.",
@@ -77972,6 +77997,33 @@
     "image_alt": null,
     "first_seen": "2026-10-11",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-f5170568dc",
+    "title": "Special issue on “Reducing Addiction-Related Harms to Improve Health and Promote Recovery among Populations with Substance Use or Other Addictive Behaviors”",
+    "summary": null,
+    "journal": "Experimental and Clinical Psychopharmacology ®",
+    "journals": [
+      "Experimental and Clinical Psychopharmacology ®"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Addiction",
+      "recovery",
+      "Substance use",
+      "Addictive Behaviors"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-07-01",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/pha/reducing-addiction-related-harms",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-10",
+    "publisher": "APA",
     "status": "open"
   },
   {
