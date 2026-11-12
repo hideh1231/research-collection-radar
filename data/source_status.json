@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-11T01:14:11Z",
+  "checked_at": "2026-11-12T02:16:20Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 635,
+      "parsed": 638,
       "pages": 64,
       "error": null
     },
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3452,
+      "parsed": 3454,
       "pages": 144,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-11T01:33:58Z",
-        "target_count": 36,
-        "attempted": 36,
-        "unavailable": 23,
+        "checked_at": "2026-11-12T02:36:03Z",
+        "target_count": 400,
+        "attempted": 400,
+        "unavailable": 0,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -193,16 +193,16 @@
             "checked_at": "2026-11-11T01:34:19Z"
           }
         },
-        "checked": 13,
-        "listed": 13,
-        "with_deadline": 13,
+        "checked": 400,
+        "listed": 340,
+        "with_deadline": 340,
         "not_listed": 0,
-        "failed": 23,
+        "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 0,
+        "parse_errors": 60,
         "forbidden": 0,
-        "remaining": 23,
-        "metadata_updated": 7
+        "remaining": 413,
+        "metadata_updated": 239
       }
     },
     "frontiers-robotics-ai": {
@@ -225,7 +225,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1947,
+      "parsed": 1948,
       "pages": 82,
       "error": null
     },
@@ -233,7 +233,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2221,
+      "parsed": 2222,
       "pages": 93,
       "error": null
     },
@@ -241,8 +241,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1653,
-      "pages": 69,
+      "parsed": 1657,
+      "pages": 70,
       "error": null
     },
     "frontiers-behavioral-neuroscience": {
@@ -257,7 +257,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 561,
+      "parsed": 562,
       "pages": 24,
       "error": null
     },
@@ -345,7 +345,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 940,
+      "parsed": 941,
       "pages": 40,
       "error": null
     },
@@ -550,11 +550,11 @@
     },
     "plos-collections": {
       "enabled": true,
-      "ok": true,
-      "http_status": 200,
-      "parsed": 41,
-      "pages": 3,
-      "error": null
+      "ok": false,
+      "http_status": 403,
+      "parsed": 0,
+      "pages": 1,
+      "error": "http 403"
     },
     "fujipress-jrm": {
       "enabled": true,
@@ -720,7 +720,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 11,
+      "parsed": 12,
       "pages": 2,
       "error": null
     },
@@ -932,10 +932,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-11T01:33:58Z",
-      "target_count": 36,
-      "attempted": 36,
-      "unavailable": 23,
+      "checked_at": "2026-11-12T02:36:03Z",
+      "target_count": 400,
+      "attempted": 400,
+      "unavailable": 0,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -1076,28 +1076,16 @@
           "checked_at": "2026-11-11T01:34:19Z"
         }
       },
-      "checked": 13,
-      "listed": 13,
-      "with_deadline": 13,
+      "checked": 400,
+      "listed": 340,
+      "with_deadline": 340,
       "not_listed": 0,
-      "failed": 23,
+      "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 0,
+      "parse_errors": 60,
       "forbidden": 0,
-      "remaining": 23,
-      "metadata_updated": 7
+      "remaining": 413,
+      "metadata_updated": 239
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-11-11T01:35:19.320373+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
