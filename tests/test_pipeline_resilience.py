@@ -64,7 +64,7 @@ def isolated_root(monkeypatch):
     ValueError("unexpected publisher markup"),
     None,
 ])
-def test_source_failure_keeps_old_data_and_finishes_healthy_source(isolated_root, monkeypatch, error):
+def test_single_source_failure_is_degraded_and_keeps_old_data(isolated_root, monkeypatch, error):
     original = _record("failed")
     write_jsonl(isolated_root / "data/collections.jsonl", [original])
     called = []
@@ -80,7 +80,7 @@ def test_source_failure_keeps_old_data_and_finishes_healthy_source(isolated_root
     monkeypatch.setattr("radar.pipeline.run_source", collect)
     output = isolated_root / "github-output"
     monkeypatch.setenv("GITHUB_OUTPUT", str(output))
-    assert run(isolated_root, dry_run=True) == 1
+    assert run(isolated_root, dry_run=True) == 0
     assert output.read_text(encoding="utf-8") == "crawl_results_saved=true\n"
     assert called == ["failed", "healthy"]
     rows = {row["id"]: row for row in load_jsonl(isolated_root / "data/collections.jsonl")}
@@ -89,8 +89,32 @@ def test_source_failure_keeps_old_data_and_finishes_healthy_source(isolated_root
     status = json.loads((isolated_root / "data/source_status.json").read_text(encoding="utf-8"))
     assert status["sources"]["failed"]["ok"] is False
     assert status["sources"]["healthy"]["ok"] is True
+    assert status["degraded"] is True
+    assert [item["key"] for item in status["failed_sources"]] == ["failed"]
     assert (isolated_root / "OPEN.md").exists()
     assert (isolated_root / "site/data/collections.json").exists()
+
+
+def test_multiple_source_failures_still_fail_the_run(isolated_root, monkeypatch):
+    monkeypatch.setattr("radar.pipeline.run_source", lambda _f, source: SourceResult(
+        key=source["key"], ok=False, records=[], error="http 403", http_status=403,
+    ))
+    assert run(isolated_root, dry_run=True) == 1
+    status = json.loads((isolated_root / "data/source_status.json").read_text(encoding="utf-8"))
+    assert status["degraded"] is False
+    assert [item["key"] for item in status["failed_sources"]] == ["failed", "healthy"]
+    assert status["failed_sources"][0]["http_status"] == 403
+    assert status["failed_sources"][0]["error"] == "http 403"
+
+
+def test_lone_source_failure_fails_the_run_when_nothing_was_collected(isolated_root, monkeypatch):
+    monkeypatch.setattr("radar.pipeline.run_source", lambda _f, source: SourceResult(
+        key=source["key"], ok=False, records=[], error="http 403", http_status=403,
+    ))
+    assert run(isolated_root, dry_run=True, only={"failed"}) == 1
+    status = json.loads((isolated_root / "data/source_status.json").read_text(encoding="utf-8"))
+    assert status["degraded"] is False
+    assert [item["key"] for item in status["failed_sources"]] == ["failed"]
 
 
 def test_failed_publication_does_not_unlock_deadline_checks(isolated_root, monkeypatch):

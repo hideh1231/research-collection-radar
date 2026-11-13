@@ -240,6 +240,14 @@ def _skip_fetch_reason(source: dict[str, Any], *, include_disabled: bool) -> str
     return None
 
 
+def _source_failure_entry(result: Any) -> dict[str, Any]:
+    return {
+        "key": result.key,
+        "http_status": result.http_status,
+        "error": result.error,
+    }
+
+
 def _source_status_entry(result: Any, source: dict[str, Any] | None = None) -> dict[str, Any]:
     return {
         "enabled": bool(source.get("enabled")) if source is not None else True,
@@ -301,6 +309,8 @@ def run(
     incoming: list[dict[str, Any]] = []
     incoming_frontiers_ids: set[str] = set()
     failures = 0
+    failed_sources: list[dict[str, Any]] = []
+    sources_ok = 0
     fetched_keys: set[str] = set()
     stop_event = Event()
     frontiers = _frontiers_enrichment_source(sources_cfg)
@@ -383,12 +393,15 @@ def run(
                 try:
                     records = parse_listing_html(source, html)
                 except KeyError:
+                    parser_error = f"no listing parser for {source.get('collector')}"
                     source_status["sources"][source["key"]] = {
                         "enabled": bool(source.get("enabled")),
                         "ok": False,
-                        "error": f"no listing parser for {source.get('collector')}",
+                        "error": parser_error,
                     }
-                    failures += 1
+                    failed_sources.append(
+                        {"key": source["key"], "http_status": None, "error": parser_error}
+                    )
                     continue
                 result = SourceResult(
                     key=source["key"],
@@ -403,8 +416,9 @@ def run(
                 source_status["sources"][source["key"]] = entry
                 log(f"{source['key']}: ingest ok={result.ok} parsed={result.parsed_count} file={path}")
                 if not result.ok:
-                    failures += 1
+                    failed_sources.append(_source_failure_entry(result))
                     continue
+                sources_ok += 1
                 absorb(source, result, entry)
         elif offline:
             log("offline: skip network collectors")
@@ -444,8 +458,9 @@ def run(
                     f"parsed={result.parsed_count} pages={result.page_count}"
                 )
                 if not result.ok:
-                    failures += 1
+                    failed_sources.append(_source_failure_entry(result))
                     continue
+                sources_ok += 1
                 absorb(source, result, entry)
     finally:
         try:
@@ -453,6 +468,11 @@ def run(
                 listing_fetcher.close()
         finally:
             fetcher.close()
+
+    # A single failed source degrades the run instead of failing it; the
+    # failure stays visible here and in each source's own status entry.
+    source_status["failed_sources"] = failed_sources
+    source_status["degraded"] = len(failed_sources) == 1 and sources_ok > 0
 
     merged = {row["id"]: dict(row) for row in prior_rows}
     for row in incoming:
@@ -609,6 +629,21 @@ def run(
     if failures:
         log(f"run completed with {failures} failure(s); successful results were saved")
         return 1
+    if failed_sources:
+        failed_keys = ", ".join(item["key"] for item in failed_sources)
+        if len(failed_sources) > 1 or sources_ok == 0:
+            log(
+                f"run failed: {len(failed_sources)} source(s) failed ({failed_keys}); "
+                "successful results were saved"
+            )
+            return 1
+        only_failure = failed_sources[0]
+        log(
+            "::warning title=Degraded crawl::"
+            f"source {only_failure['key']} failed ({only_failure.get('error')}); "
+            f"results from {sources_ok} source(s) were saved. See data/source_status.json."
+        )
+        log(f"run completed degraded: 1 source failed ({failed_keys}); successful results were saved")
     return 0
 
 

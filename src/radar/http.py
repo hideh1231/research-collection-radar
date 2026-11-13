@@ -67,7 +67,7 @@ class Fetcher:
 
     @staticmethod
     def retry_delay(attempt: int) -> float:
-        return 1.5 * (attempt + 1)
+        return 1.5 * (2**attempt)
 
     def get(
         self,
@@ -75,6 +75,7 @@ class Fetcher:
         *,
         validator: Callable[[str], bool] | None = None,
         headers: dict[str, str] | None = None,
+        retry_forbidden: bool = False,
     ) -> httpx.Response:
         last_error: Exception | None = None
         for attempt in range(self.retries):
@@ -83,6 +84,15 @@ class Fetcher:
                 self._last_request_started = time.monotonic()
                 response = self._client.get(url, headers=headers)
                 if response.status_code == 403:
+                    # Some JSON APIs (e.g. the PLOS WP REST API) refuse
+                    # crawler IPs with intermittent 403s that clear within
+                    # seconds. Callers that opt in retry those with the
+                    # rate-limit backoff; everyone else keeps the immediate
+                    # return so per-URL 403 accounting (deadline checks,
+                    # Frontiers enrichment) stays cheap.
+                    if retry_forbidden and attempt + 1 < self.retries:
+                        time.sleep(self.retry_after(response, attempt))
+                        continue
                     return response
                 if response.status_code == 429 and attempt + 1 < self.retries:
                     time.sleep(self.retry_after(response, attempt))
@@ -115,7 +125,7 @@ class Fetcher:
         return response.status_code, response.text
 
     def get_json(self, url: str) -> tuple[int, Any, dict[str, str]]:
-        response = self.get(url, headers={"Accept": "application/json"})
+        response = self.get(url, headers={"Accept": "application/json"}, retry_forbidden=True)
         headers = {key.lower(): value for key, value in response.headers.items()}
         if response.status_code >= 400:
             return response.status_code, None, headers
