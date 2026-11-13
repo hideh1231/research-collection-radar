@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-11-12T02:16:20Z",
+  "checked_at": "2026-11-13T01:49:38Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 638,
-      "pages": 64,
+      "parsed": 360,
+      "pages": 37,
       "error": null
     },
     "nature-comms-psychology": {
@@ -45,11 +45,11 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3454,
+      "parsed": 3455,
       "pages": 144,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-12T02:36:03Z",
+        "checked_at": "2026-11-13T02:05:56Z",
         "target_count": 400,
         "attempted": 400,
         "unavailable": 0,
@@ -194,22 +194,22 @@
           }
         },
         "checked": 400,
-        "listed": 340,
-        "with_deadline": 340,
+        "listed": 342,
+        "with_deadline": 342,
         "not_listed": 0,
         "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 60,
+        "parse_errors": 58,
         "forbidden": 0,
-        "remaining": 413,
-        "metadata_updated": 239
+        "remaining": 414,
+        "metadata_updated": 254
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 392,
+      "parsed": 393,
       "pages": 17,
       "error": null
     },
@@ -217,7 +217,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1086,
+      "parsed": 1087,
       "pages": 46,
       "error": null
     },
@@ -233,7 +233,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2222,
+      "parsed": 2224,
       "pages": 93,
       "error": null
     },
@@ -257,7 +257,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 562,
+      "parsed": 563,
       "pages": 24,
       "error": null
     },
@@ -337,7 +337,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 869,
+      "parsed": 870,
       "pages": 37,
       "error": null
     },
@@ -584,7 +584,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3,
+      "parsed": 2,
       "pages": 1,
       "error": null
     },
@@ -932,7 +932,7 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-12T02:36:03Z",
+      "checked_at": "2026-11-13T02:05:56Z",
       "target_count": 400,
       "attempted": 400,
       "unavailable": 0,
@@ -1077,27 +1077,15 @@
         }
       },
       "checked": 400,
-      "listed": 340,
-      "with_deadline": 340,
+      "listed": 342,
+      "with_deadline": 342,
       "not_listed": 0,
       "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 60,
+      "parse_errors": 58,
       "forbidden": 0,
-      "remaining": 413,
-      "metadata_updated": 239
+      "remaining": 414,
+      "metadata_updated": 254
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-11-12T02:45:42.337746+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
