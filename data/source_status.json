@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-11-13T01:49:38Z",
+  "checked_at": "2026-11-14T01:26:49Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 360,
-      "pages": 37,
+      "parsed": 637,
+      "pages": 64,
       "error": null
     },
     "nature-comms-psychology": {
@@ -21,7 +21,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 198,
+      "parsed": 199,
       "pages": 20,
       "error": null
     },
@@ -45,11 +45,11 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3455,
-      "pages": 144,
+      "parsed": 3457,
+      "pages": 145,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-13T02:05:56Z",
+        "checked_at": "2026-11-14T01:46:14Z",
         "target_count": 400,
         "attempted": 400,
         "unavailable": 0,
@@ -194,15 +194,15 @@
           }
         },
         "checked": 400,
-        "listed": 342,
-        "with_deadline": 342,
+        "listed": 362,
+        "with_deadline": 362,
         "not_listed": 0,
         "failed": 0,
         "rate_limited": 0,
-        "parse_errors": 58,
+        "parse_errors": 38,
         "forbidden": 0,
-        "remaining": 414,
-        "metadata_updated": 254
+        "remaining": 355,
+        "metadata_updated": 222
       }
     },
     "frontiers-robotics-ai": {
@@ -241,7 +241,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1657,
+      "parsed": 1658,
       "pages": 70,
       "error": null
     },
@@ -297,7 +297,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 151,
+      "parsed": 152,
       "pages": 7,
       "error": null
     },
@@ -305,8 +305,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 359,
-      "pages": 15,
+      "parsed": 361,
+      "pages": 16,
       "error": null
     },
     "frontiers-digital-health": {
@@ -345,7 +345,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 941,
+      "parsed": 939,
       "pages": 40,
       "error": null
     },
@@ -929,10 +929,18 @@
       "error": null
     }
   },
+  "failed_sources": [
+    {
+      "key": "plos-collections",
+      "http_status": 403,
+      "error": "http 403"
+    }
+  ],
+  "degraded": true,
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-13T02:05:56Z",
+      "checked_at": "2026-11-14T01:46:14Z",
       "target_count": 400,
       "attempted": 400,
       "unavailable": 0,
@@ -1077,27 +1085,15 @@
         }
       },
       "checked": 400,
-      "listed": 342,
-      "with_deadline": 342,
+      "listed": 362,
+      "with_deadline": 362,
       "not_listed": 0,
       "failed": 0,
       "rate_limited": 0,
-      "parse_errors": 58,
+      "parse_errors": 38,
       "forbidden": 0,
-      "remaining": 414,
-      "metadata_updated": 254
+      "remaining": 355,
+      "metadata_updated": 222
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-11-13T02:15:01.533448+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
