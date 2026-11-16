@@ -224,6 +224,12 @@ def _launch_browser(playwright: Any, *, headless: bool) -> Any:
 
 
 
+def _looks_like_listing(html: str) -> bool:
+    """A Nature calls-for-papers listing always carries card markup and
+    links into /collections/; interstitial variants carry neither."""
+    return "c-card" in html and "/collections/" in html
+
+
 class PublisherPageFetcher:
     """Use standard Chrome for publisher pages that require browser JavaScript."""
 
@@ -241,11 +247,24 @@ class PublisherPageFetcher:
 
     def get(self, url: str) -> httpx.Response:
         response = self._fetcher.get(url)
+        final = urlsplit(str(response.url))
         if (
-            urlsplit(str(response.url)).hostname in {"www.nature.com", "nature.com", "link.springer.com"}
+            final.hostname in {"www.nature.com", "nature.com", "link.springer.com"}
             and "<title>client challenge</title>" in response.text.lower()
         ):
             return self._browser_get(str(response.url))
+        if (
+            final.hostname in {"www.nature.com", "nature.com"}
+            and "calls-for-papers" in final.path
+            and not _looks_like_listing(response.text)
+        ):
+            # Nature also serves cookie/interstitial variants of the listing
+            # pages that contain no collection cards at all (and no next-page
+            # link), which the collectors record as a healthy-looking HTTP 200
+            # with zero records. Render those in Chrome like the known
+            # client-challenge wall. Detail pages are unaffected: their paths
+            # never contain "calls-for-papers".
+            return self._browser_get(url)
         return response
 
     def _browser_get(self, url: str) -> httpx.Response:

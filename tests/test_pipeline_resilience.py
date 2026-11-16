@@ -107,6 +107,50 @@ def test_multiple_source_failures_still_fail_the_run(isolated_root, monkeypatch)
     assert status["failed_sources"][0]["error"] == "http 403"
 
 
+def test_tolerated_failure_is_recorded_but_does_not_count(isolated_root, monkeypatch):
+    sources = [
+        {"key": "tolerated", "collector": "html_listing", "enabled": True, "tolerate_failure": True},
+        {"key": "healthy", "collector": "html_listing", "enabled": True},
+    ]
+    monkeypatch.setattr("radar.pipeline.load_sources", lambda _root: {"sources": sources})
+
+    def collect(_fetcher, source):
+        if source["key"] == "tolerated":
+            return SourceResult(key="tolerated", ok=False, records=[], error="http 403", http_status=403)
+        return SourceResult(key="healthy", ok=True, records=[_raw("healthy")], parsed_count=1)
+
+    monkeypatch.setattr("radar.pipeline.run_source", collect)
+    assert run(isolated_root, dry_run=True) == 0
+    status = json.loads((isolated_root / "data/source_status.json").read_text(encoding="utf-8"))
+    assert status["sources"]["tolerated"]["ok"] is False
+    assert status["sources"]["healthy"]["ok"] is True
+    assert status["failed_sources"] == []
+    assert [item["key"] for item in status["tolerated_failures"]] == ["tolerated"]
+    assert status["tolerated_failures"][0]["error"] == "http 403"
+    assert status["degraded"] is False
+
+
+def test_tolerated_plus_one_real_failure_is_degraded_not_failed(isolated_root, monkeypatch):
+    sources = [
+        {"key": "tolerated", "collector": "html_listing", "enabled": True, "tolerate_failure": True},
+        {"key": "broken", "collector": "html_listing", "enabled": True},
+        {"key": "healthy", "collector": "html_listing", "enabled": True},
+    ]
+    monkeypatch.setattr("radar.pipeline.load_sources", lambda _root: {"sources": sources})
+
+    def collect(_fetcher, source):
+        if source["key"] == "healthy":
+            return SourceResult(key="healthy", ok=True, records=[_raw("healthy")], parsed_count=1)
+        return SourceResult(key=source["key"], ok=False, records=[], error="http 403", http_status=403)
+
+    monkeypatch.setattr("radar.pipeline.run_source", collect)
+    assert run(isolated_root, dry_run=True) == 0
+    status = json.loads((isolated_root / "data/source_status.json").read_text(encoding="utf-8"))
+    assert [item["key"] for item in status["failed_sources"]] == ["broken"]
+    assert [item["key"] for item in status["tolerated_failures"]] == ["tolerated"]
+    assert status["degraded"] is True
+
+
 def test_lone_source_failure_fails_the_run_when_nothing_was_collected(isolated_root, monkeypatch):
     monkeypatch.setattr("radar.pipeline.run_source", lambda _f, source: SourceResult(
         key=source["key"], ok=False, records=[], error="http 403", http_status=403,

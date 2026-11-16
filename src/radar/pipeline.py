@@ -310,6 +310,7 @@ def run(
     incoming_frontiers_ids: set[str] = set()
     failures = 0
     failed_sources: list[dict[str, Any]] = []
+    tolerated_failures: list[dict[str, Any]] = []
     sources_ok = 0
     fetched_keys: set[str] = set()
     stop_event = Event()
@@ -458,7 +459,16 @@ def run(
                     f"parsed={result.parsed_count} pages={result.page_count}"
                 )
                 if not result.ok:
-                    failed_sources.append(_source_failure_entry(result))
+                    if source.get("tolerate_failure"):
+                        # A source with a known, persistent access problem
+                        # (e.g. a WAF block) keeps its failure visible in the
+                        # status file but must not consume the run's failure
+                        # budget: any second, unrelated failure would
+                        # otherwise fail the whole run every day.
+                        tolerated_failures.append(_source_failure_entry(result))
+                        log(f"{source['key']}: failure tolerated by source config; recorded, not counted")
+                    else:
+                        failed_sources.append(_source_failure_entry(result))
                     continue
                 sources_ok += 1
                 absorb(source, result, entry)
@@ -472,6 +482,7 @@ def run(
     # A single failed source degrades the run instead of failing it; the
     # failure stays visible here and in each source's own status entry.
     source_status["failed_sources"] = failed_sources
+    source_status["tolerated_failures"] = tolerated_failures
     source_status["degraded"] = len(failed_sources) == 1 and sources_ok > 0
 
     merged = {row["id"]: dict(row) for row in prior_rows}
@@ -629,6 +640,13 @@ def run(
     if failures:
         log(f"run completed with {failures} failure(s); successful results were saved")
         return 1
+    if tolerated_failures:
+        tolerated_keys = ", ".join(item["key"] for item in tolerated_failures)
+        log(
+            "::warning title=Tolerated source failure::"
+            f"{len(tolerated_failures)} source(s) failed but are configured tolerate_failure "
+            f"({tolerated_keys}); their previous data was kept. See data/source_status.json."
+        )
     if failed_sources:
         failed_keys = ", ".join(item["key"] for item in failed_sources)
         if len(failed_sources) > 1 or sources_ok == 0:

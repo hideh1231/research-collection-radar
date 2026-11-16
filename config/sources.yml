@@ -554,6 +554,14 @@ sources:
       - royalsocietypublishing.org
   - key: plos-collections
     enabled: true
+    # collections.plos.org is hard-blocked by Cloudflare for datacenter
+    # egress IPs (persistent 403 on every path since 2026-11, reproduced
+    # from multiple networks; the 403 retry in Fetcher.get_json cannot
+    # clear a WAF block). Keep collecting attempts and keep the failure
+    # visible in source_status.json, but do not let this known block
+    # consume the run's failure budget. Remove this flag once the API is
+    # reachable again; PLOS data stays stale while it is set.
+    tolerate_failure: true
     collector: plos
     publisher: PLOS
     journal: PLOS

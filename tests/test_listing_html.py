@@ -98,3 +98,36 @@ def test_publisher_chrome_runs_only_for_a_challenge_on_the_expected_hosts(monkey
         browser_get.assert_called_once_with(url)
     else:
         browser_get.assert_not_called()
+
+
+@pytest.mark.parametrize(("url", "body", "uses_chrome"), [
+    # An interstitial/cookie variant of a listing page: no cards, no
+    # collection links, and not the known "client challenge" title.
+    ("https://www.nature.com/commsbio/calls-for-papers",
+     "<html><head><title>Communications Biology</title></head><body>cookies not supported</body></html>", True),
+    ("https://www.nature.com/commsbio/calls-for-papers?page=2",
+     "<html><body>Please wait</body></html>", True),
+    # A healthy listing page keeps the plain response.
+    ("https://www.nature.com/commsbio/calls-for-papers",
+     "<article class='c-card'><a href='/collections/abc123'>A collection</a></article>", False),
+    # Detail pages legitimately have no listing cards: never re-rendered
+    # by this rule.
+    ("https://www.nature.com/collections/abc123",
+     "<html><body>cookies not supported</body></html>", False),
+    # Other hosts are out of scope for the listing rule.
+    ("https://www.jske.org/calls-for-papers",
+     "<html><body>Please wait</body></html>", False),
+])
+def test_publisher_chrome_runs_for_cardless_nature_listing_pages(monkeypatch, url, body, uses_chrome):
+    response = httpx.Response(200, text=body, request=httpx.Request("GET", url))
+    rendered = httpx.Response(200, text="<article class='c-card'>Collection</article>",
+                              request=httpx.Request("GET", url))
+    fetcher = PublisherPageFetcher(Mock(get=Mock(return_value=response)))
+    browser_get = Mock(return_value=rendered)
+    monkeypatch.setattr(fetcher, "_browser_get", browser_get)
+
+    assert fetcher.get(url) is (rendered if uses_chrome else response)
+    if uses_chrome:
+        browser_get.assert_called_once_with(url)
+    else:
+        browser_get.assert_not_called()
