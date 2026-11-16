@@ -8068,31 +8068,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-6bf224ebd8",
-    "title": "Responsible AI in Neuroimaging",
-    "summary": null,
-    "journal": "NeuroImage",
-    "journals": [
-      "NeuroImage"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "AI",
-      "Neuroimaging"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/324789/responsible-ai-in-neuroimaging",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-fc38558000",
     "title": "Reviews in Evolutionary Developmental Biology",
     "summary": "Frontiers in Ecology and Evolution is delighted to launch Reviews in Evolutionary Developmental Biology, an article collection dedicated to publishing high-quality scholarly review papers. This initiative is set to become a platform for synthesizing and critically assessing key topics across the broad spectrum of Evolutionary Developmental Biology.",
@@ -35939,6 +35914,31 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-6bf224ebd8",
+    "title": "Responsible AI in Neuroimaging",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "AI",
+      "Neuroimaging"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/324789/responsible-ai-in-neuroimaging",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "taylor-francis-special-issues-f62d3397fc",
     "title": "Robot and Human Interactive Communication",
     "summary": "Guest Editors (Continued) Martin Cooney, Halmstad University, Sweden Mitsuhiko Kimoto, Meiji University, Japan Yuya Okadome, Tokyo University of Science, Japan Takahisa Uchida, The University of Osaka, Japan Ningshi Yao, George Mason University, USA Minsu Jang, ETRI, South Korea Yasunori Takemura, Nishinippon Institute of Technology, Japan Heqiu Song. RWTH Aachen University, Germany Tharindu Weerakoon, University of Peradeniya, Sri Lanka Suleman Mazhar, Harbin Engineering University, China Please review the full guest editors' list here. https://think.taylorandfrancis.com/advancedrobotics-robot-human-communication-guest-editors/ The main purpose of this special issue is to publish state-of-the-art innovative results, the latest developments, and future perspectives on robot and human interactive communication. Based on this idea, the special issue is open to all thematic areas related to human-robot interaction. It will also carry revised and substantially extended versions of papers presented at the main conference and workshops of the 35th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2026). The special issue covers a wide range of topics related to human-robot interactive communication, involving theories, methodologies, technologies, empirical and experimental studies. Papers related to the study of robotic technology, psychology, cognitive science, artificial intelligence, human factors, interaction-based robot design, and other topics related to human-robot interaction are welcome to be submitted. The topics of the special issue include, but are not limited to: Research, design and development, and use of robots that interact collaboratively Robots that support human collaboration Innovative robot designs for HRI research User-centered design of social robots Novel interfaces and interaction modalities Long-term experience and longitudinal HRI studies Evaluation methods and new methodologies for HRI research Degrees of auto",
@@ -46742,30 +46742,6 @@
     "image_alt": "Proteolysis in Plants",
     "first_seen": "2026-08-27",
     "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "sciencedirect-cfp-eb41d23100",
-    "title": "Psychedelic Renaissance: methodological challenges in psychedelic research",
-    "summary": null,
-    "journal": "Journal of Neuroscience Methods",
-    "journals": [
-      "Journal of Neuroscience Methods"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "challenges"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2027-03-01",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/335544/psychedelic-renaissance-methodological-challenges-in-psychedelic-research",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -58998,6 +58974,31 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-e5b4ef30f6",
+    "title": "Honouring Robin Morris—higher order function in neuropsychology",
+    "summary": null,
+    "journal": "Psychology & Neuroscience",
+    "journals": [
+      "Psychology & Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "Neuropsychology"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-15",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/pne/robin-morris-neuropsychology-functions",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-16",
+    "publisher": "APA",
     "status": "open"
   },
   {
@@ -74223,28 +74224,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-76d8911edf",
-    "title": "Acoustic mimicry in vertebrates",
-    "summary": null,
-    "journal": "Animal Behaviour",
-    "journals": [
-      "Animal Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": "2027-06-01",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/338731/acoustic-mimicry-in-vertebrates",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-11-06",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-2e45fb7a88",
     "title": "Applied Artificial Intelligence in Education: Generative Tools, Learning Analytics, Assessment, and Governance - Volume II",
     "summary": "This Research Topic is the second volume of Research Topic \"Applied Artificial Intelligence in Education: Generative Tools, Learning Analytics, Assessment, and Governance.\" Please, see the first volume here .",
@@ -80455,6 +80434,30 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-eb41d23100",
+    "title": "Psychedelic Renaissance: methodological challenges in psychedelic research",
+    "summary": null,
+    "journal": "Journal of Neuroscience Methods",
+    "journals": [
+      "Journal of Neuroscience Methods"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "challenges"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-09-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/335544/psychedelic-renaissance-methodological-challenges-in-psychedelic-research",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "sciencedirect-cfp-15f8ab3cb1",
     "title": "Serotonin at 90: From Enteramine to Modern Serotonergic Neuroscience",
     "summary": null,
@@ -80703,6 +80706,28 @@
     "image_alt": "Reefs in a changing world: Perspectives from deep time",
     "first_seen": "2026-10-22",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-76d8911edf",
+    "title": "Acoustic mimicry in vertebrates",
+    "summary": null,
+    "journal": "Animal Behaviour",
+    "journals": [
+      "Animal Behaviour"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-11-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/338731/acoustic-mimicry-in-vertebrates",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-06",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
