@@ -33932,6 +33932,26 @@
     "status": "open"
   },
   {
+    "id": "springer-virtual-reality-576e89cce4",
+    "title": "AI Agents and Multi-Agent Systems in VR/AR/MR",
+    "summary": "Artificial intelligence is increasingly being embedded into in VR/AR/MR systems not only as a background computational method, but as an active component of immersive experiences. AI agents and multi-agent s...",
+    "journal": "Virtual Reality",
+    "journals": [
+      "Virtual Reality"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "collection",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://link.springer.com/collections/bieeejgcab",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-17",
+    "publisher": "Springer Nature",
+    "status": "open"
+  },
+  {
     "id": "sciencedirect-cfp-e5fcb0bf16",
     "title": "Accelerating analgesic discovery in spinal cord injuries and disorders",
     "summary": null,

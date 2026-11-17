@@ -1149,6 +1149,7 @@ Generated 2026-11-17. Sorted by deadline.
 | 2027-01-30 | Plankton biodiversity | Scientific Reports |  | Collection | https://nature.com/collections/bjdjdffged |
 | 2027-01-30 | Plant organelles-signalling and metabolism | Scientific Reports |  | Collection | https://nature.com/collections/biifcdbhbc |
 | 2027-01-30 | Time perception in typical and atypical populations | Scientific Reports | Psychology | Collection | https://nature.com/collections/echchehahe |
+| 2027-01-31 | AI Agents and Multi-Agent Systems in VR/AR/MR | Virtual Reality |  | Collection | https://link.springer.com/collections/bieeejgcab |
 | 2027-01-31 | Accelerating analgesic discovery in spinal cord injuries and disorders | Experimental Neurology |  | Special Issue | https://sciencedirect.com/special-issue/332831/accelerating-analgesic-discovery-in-spinal-cord-injuries-and-disorders |
 | 2027-01-31 | Advances in Early Detection, Pathophysiology, and Management of Mild Cognitive Impairment. Volume II | Frontiers in Medicine | Neuroscience, Psychology | Research Topic | https://frontiersin.org/research-topics/80186/advances-in-early-detection-pathophysiology-and-management-of-mild-cognitive-impairment-volume-ii |
 | 2027-01-31 | Advances in Radiotherapy Dosimetry for Neuro-Oncology: From Film-Based Techniques to Emerging High-Precision Applications | Frontiers in Oncology | Neuroscience | Research Topic | https://frontiersin.org/research-topics/73373/advances-in-radiotherapy-dosimetry-for-neuro-oncology-from-film-based-techniques-to-emerging-high-precision-applications |
