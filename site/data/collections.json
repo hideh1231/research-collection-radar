@@ -8196,28 +8196,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-43df53defe",
-    "title": "Value of Rarities - President's Symposium 2025",
-    "summary": null,
-    "journal": "Animal Behaviour",
-    "journals": [
-      "Animal Behaviour"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/330726/value-of-rarities-presidents-symposium-2025",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-28",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-82cd356ca2",
     "title": "Youth Mental Health in the Digital Lifestyle Era: From School to Clinic",
     "summary": "Youth mental health is shaped by a tight weave of digital environments (apps, social media, gaming, telehealth), lifestyle factors (sleep/circadian rhythm, physical activity, nutrition), and care contexts (school, family, primary care, and specialty clinics). Evidence is accumulating that combining digital technology with lifestyle interventions or healthcare can improve outcomes and access, especially for underserved populations. Also, there is growing evidence that unsupervised access to the digital medium can cause harm and distress in adolescents. These mixed views show the need for continued exploration in this field.",
@@ -33940,7 +33918,12 @@
       "Virtual Reality"
     ],
     "domains": [],
-    "topics": [],
+    "topics": [
+      "AI",
+      "Computational",
+      "VR",
+      "Multi-agent systems"
+    ],
     "collection_type": "collection",
     "deadline": "2027-01-31",
     "deadline_status": "listed",
@@ -45737,6 +45720,28 @@
     "image_alt": "Thriving While Work Is Rewritten: Innovation and Sustainable Work in the Adjacent Possible",
     "first_seen": "2026-08-26",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-43df53defe",
+    "title": "Value of Rarities - President's Symposium 2025",
+    "summary": null,
+    "journal": "Animal Behaviour",
+    "journals": [
+      "Animal Behaviour"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/330726/value-of-rarities-presidents-symposium-2025",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-28",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -73769,6 +73774,30 @@
     "image_alt": null,
     "first_seen": "2026-09-12",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-fd81396dcb",
+    "title": "The Brain in Flux: States, Networks and Reconfiguration",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Brain"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/339081/the-brain-in-flux-states-networks-and-reconfiguration",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-17",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {

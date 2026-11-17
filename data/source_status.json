@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-17T03:52:27Z",
+  "checked_at": "2026-11-17T04:13:44Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
@@ -351,8 +351,14 @@
     },
     "sciencedirect-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns 403 and robots.txt is itself a wall page. Do not GET this listing from Actions. Ingest a rendered browse page with the listing-ingest workflow or --ingest-html. Do not crawl special-issue detail pages. Keep cards whose journal is on the watched-journal allowlist."
+      "ok": true,
+      "http_status": null,
+      "parsed": 2821,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/sciencedirect-cfp.html",
+      "dropped_unclassified": 2771,
+      "skipped_closed": 10
     },
     "springer-bmc-psychology": {
       "enabled": true,
@@ -532,8 +538,13 @@
     },
     "apa-cfp": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "GitHub Actions GET returns Incapsula. The listing-ingest workflow tries this one listing page weekly; if the wall remains, it records status and skips. A rendered snapshot can be ingested with --ingest-html."
+      "ok": true,
+      "http_status": null,
+      "parsed": 54,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/apa-cfp.html",
+      "skipped_closed": 18
     },
     "royal-society-rsos": {
       "enabled": false,
@@ -630,8 +641,13 @@
     },
     "josa-a-features": {
       "enabled": false,
-      "skipped": "disabled",
-      "reason": "Optica feature listing is often a bot wall from datacenter IPs. listing-ingest tries headed Chrome."
+      "ok": true,
+      "http_status": null,
+      "parsed": 1,
+      "pages": 1,
+      "error": null,
+      "ingest": "listing-html/josa-a-features.html",
+      "skipped_closed": 1
     },
     "wiley-bjp": {
       "enabled": false,
@@ -929,15 +945,6 @@
       "error": null
     }
   },
-  "failed_sources": [],
-  "tolerated_failures": [
-    {
-      "key": "plos-collections",
-      "http_status": 403,
-      "error": "http 403"
-    }
-  ],
-  "degraded": false,
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
@@ -1108,5 +1115,8 @@
     "unknown": 1,
     "errors": {},
     "remaining": 0
-  }
+  },
+  "failed_sources": [],
+  "tolerated_failures": [],
+  "degraded": false
 }
