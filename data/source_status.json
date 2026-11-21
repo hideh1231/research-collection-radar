@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-11-20T02:18:37Z",
+  "checked_at": "2026-11-21T02:12:34Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 638,
-      "pages": 65,
+      "parsed": 633,
+      "pages": 64,
       "error": null
     },
     "nature-comms-psychology": {
@@ -45,14 +45,14 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3463,
+      "parsed": 3465,
       "pages": 145,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-20T02:37:52Z",
+        "checked_at": "2026-11-21T02:33:49Z",
         "target_count": 400,
         "attempted": 400,
-        "unavailable": 0,
+        "unavailable": 1,
         "errors": {
           "frontiers-psychology-a866dee1b1": {
             "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -191,18 +191,24 @@
             "error": "http 404",
             "http_status": 404,
             "checked_at": "2026-11-18T03:12:44Z"
+          },
+          "frontiers-e5ff4f1191": {
+            "url": "https://frontiersin.org/research-topics/70667/exploring-neuroprotective-mechanisms-from-molecular-pathways-to-translational-strategies",
+            "error": "http 404",
+            "http_status": 404,
+            "checked_at": "2026-11-21T02:38:29Z"
           }
         },
-        "checked": 400,
-        "listed": 340,
-        "with_deadline": 340,
+        "checked": 399,
+        "listed": 361,
+        "with_deadline": 361,
         "not_listed": 0,
-        "failed": 0,
+        "failed": 1,
         "rate_limited": 0,
-        "parse_errors": 60,
+        "parse_errors": 38,
         "forbidden": 0,
-        "remaining": 29,
-        "metadata_updated": 251
+        "remaining": 37,
+        "metadata_updated": 219
       }
     },
     "frontiers-robotics-ai": {
@@ -217,7 +223,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1087,
+      "parsed": 1088,
       "pages": 46,
       "error": null
     },
@@ -225,7 +231,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1954,
+      "parsed": 1955,
       "pages": 82,
       "error": null
     },
@@ -233,7 +239,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2227,
+      "parsed": 2230,
       "pages": 93,
       "error": null
     },
@@ -313,7 +319,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 321,
+      "parsed": 322,
       "pages": 14,
       "error": null
     },
@@ -337,8 +343,8 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 840,
-      "pages": 35,
+      "parsed": 844,
+      "pages": 36,
       "error": null
     },
     "frontiers-veterinary-science": {
@@ -422,7 +428,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 34,
+      "parsed": 35,
       "pages": 1,
       "error": null
     },
@@ -941,10 +947,10 @@
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-20T02:37:52Z",
+      "checked_at": "2026-11-21T02:33:49Z",
       "target_count": 400,
       "attempted": 400,
-      "unavailable": 0,
+      "unavailable": 1,
       "errors": {
         "frontiers-psychology-a866dee1b1": {
           "url": "https://frontiersin.org/research-topics/77027/ai-and-the-future-of-well-being-navigating-the-promise-and-perils-of-positive-psychology",
@@ -1083,30 +1089,24 @@
           "error": "http 404",
           "http_status": 404,
           "checked_at": "2026-11-18T03:12:44Z"
+        },
+        "frontiers-e5ff4f1191": {
+          "url": "https://frontiersin.org/research-topics/70667/exploring-neuroprotective-mechanisms-from-molecular-pathways-to-translational-strategies",
+          "error": "http 404",
+          "http_status": 404,
+          "checked_at": "2026-11-21T02:38:29Z"
         }
       },
-      "checked": 400,
-      "listed": 340,
-      "with_deadline": 340,
+      "checked": 399,
+      "listed": 361,
+      "with_deadline": 361,
       "not_listed": 0,
-      "failed": 0,
+      "failed": 1,
       "rate_limited": 0,
-      "parse_errors": 60,
+      "parse_errors": 38,
       "forbidden": 0,
-      "remaining": 29,
-      "metadata_updated": 251
+      "remaining": 37,
+      "metadata_updated": 219
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-11-20T02:48:48.648988+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
