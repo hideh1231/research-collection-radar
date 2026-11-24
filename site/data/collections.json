@@ -3280,28 +3280,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-212b0392a2",
-    "title": "Elsevier Scholars and SBN Awardees of 2026",
-    "summary": null,
-    "journal": "Hormones and Behavior",
-    "journals": [
-      "Hormones and Behavior"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/336709/elsevier-scholars-and-sbn-awardees-of-2026",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-28",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-ec793b5fd4",
     "title": "Ensuring Safety and Reliability in Intelligent Autonomous Systems Through Verification and Certification",
     "summary": "Artificial Intelligence (AI) is reshaping the field of autonomous systems by enabling intelligent agents that can perceive, reason, and act in dynamic and uncertain environments. These systems are central to domains such as healthcare, robotics, transportation, and smart infrastructure, where they interact with and control complex physical processes through integrated cyber-physical architectures. Supported by cloud-based technologies, autonomous systems can scale effectively, coordinate actions across distributed environments, and process massive volumes of data in real time. However, as adoption accelerates, new challenges arise in ensuring that such systems behave in ways that are safe, reliable, and aligned with human and societal intentions. The unpredictability of data-driven models, the opacity of deep learning systems, and the increasing interconnectedness of AI-driven applications demand new strategies to build confidence and trust in their operation.",
@@ -4342,35 +4320,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-9ab3443f42",
-    "title": "Mental Health and Well-being in an Era of Geopolitical Instability: Protective Factors and Determinants of Psychological Resilience",
-    "summary": null,
-    "journal": "Acta Psychologica",
-    "journals": [
-      "Acta Psychologica"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Mental Health",
-      "resilience",
-      "well-being",
-      "Psychological resilience",
-      "psychological",
-      "Mental Health and Well-Being"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/331717/mental-health-and-well-being-in-an-era-of-geopolitical-instability-protective-factors-and-determinants-of-psychological-resilience",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-fb7450fc07",
     "title": "Minds and Machines: Rethinking Mental Health in the Age of Artificial Intelligence",
     "summary": "As artificial intelligence (AI) becomes ever more omnipresent, key questions arise: How can AI help with mental health prediction, prevention, treatment, and care? How might ethical and social issues associated with AI in mental health unfold? And perhaps more importantly, with evidence-based insights, how can we guide the development and application of AI in mental health more effectively, to better facilitate positive synergy between minds and machines? As technology advances, from AI-powered psychiatric diagnostics and AI-enabled mental health interventions to AI companions, AI has rapidly moved from experimental clinical tools to everyday infrastructures that shape how mental health is assessed, interpreted, and managed.",
@@ -5243,33 +5192,6 @@
     "image_alt": "Signalling Pathways of Innate Immunity",
     "first_seen": "2026-08-27",
     "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "sciencedirect-cfp-3abfb1ba3c",
-    "title": "Special Issue on Embodied Medical Robotics: From Mechanical Intelligence to Multimodal Cognitive Autonomy",
-    "summary": null,
-    "journal": "Biomimetic Intelligence and Robotics",
-    "journals": [
-      "Biomimetic Intelligence and Robotics"
-    ],
-    "domains": [
-      "psychology",
-      "robotics"
-    ],
-    "topics": [
-      "Robotics",
-      "Medical Robotics",
-      "cognitive"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/333300/special-issue-on-embodied-medical-robotics-from-mechanical-intelligence-to-multimodal-cognitive-autonomy",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -22781,6 +22703,33 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-829f90b35b",
+    "title": "Resilience in the Biological–Psychological–Social Cascade: Mechanisms, Biological Indicators, and Modifiable Processes",
+    "summary": null,
+    "journal": "Biological Psychology",
+    "journals": [
+      "Biological Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "resilience",
+      "mechanisms",
+      "social",
+      "psychological"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/329875/resilience-in-the-biological-psychological-social-cascade-mechanisms-biological-indicators-and-modifiable-processes",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-c5f960e26b",
     "title": "Reviews in Evolutionary Systems Biology",
     "summary": "The field of Evolutionary Systems Biology stands at the intersection of evolutionary theory and systems-based analyses, offering powerful new perspectives for understanding the dynamic complexity of biological systems. By integrating high-dimensional data, computational models, and evolutionary frameworks, researchers have begun to reveal how interactions at the molecular, cellular, individual, and ecological levels shape patterns of adaptation and biodiversity. Despite remarkable advances, key challenges persist in drawing equivalencies between micro- and macro-evolutionary processes, unraveling the genetic basis of complex traits, and predicting organismal and ecosystem responses to rapid environmental change. A growing body of studies now employs systems biology not only to map genetic networks and evolutionary pathways but also to tackle critical issues such as climate change impacts, robustness and epistasis, and the mathematical properties of phylogenetic trees.",
@@ -32152,6 +32101,30 @@
     "status": "open"
   },
   {
+    "id": "apa-cfp-d842bf3075",
+    "title": "Health informatics and artificial intelligence in integrated healthcare",
+    "summary": null,
+    "journal": "Families, Systems, & Health ®",
+    "journals": [
+      "Families, Systems, & Health ®"
+    ],
+    "domains": [],
+    "topics": [
+      "AI",
+      "healthcare",
+      "health informatics"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-29",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/fsh/health-informatics-ai-integrated-healthcare",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "APA",
+    "status": "open"
+  },
+  {
     "id": "nature-ncomms-99eb2523cc",
     "title": "Medical Ultrasound: Emerging Techniques and Applications",
     "summary": "This cross-journal Collection showcases the broad and exciting field of emerging techniques and applications in medical ultrasound.",
@@ -34319,6 +34292,35 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-9ab3443f42",
+    "title": "Mental Health and Well-being in an Era of Geopolitical Instability: Protective Factors and Determinants of Psychological Resilience",
+    "summary": null,
+    "journal": "Acta Psychologica",
+    "journals": [
+      "Acta Psychologica"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Mental Health",
+      "resilience",
+      "well-being",
+      "Psychological resilience",
+      "psychological",
+      "Mental Health and Well-Being"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-01-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331717/mental-health-and-well-being-in-an-era-of-geopolitical-instability-protective-factors-and-determinants-of-psychological-resilience",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-psychology-022ced2609",
     "title": "Mentalization Across Developmental Contexts: Applications in Childhood, Adolescence, and Family Systems",
     "summary": "Adolescent mental health care is a changing field at the intersection of clinical innovation and developmental science. Increasing attention has been given to mentalization – the capacity to understand oneself and others in terms of intentional mental states – as a key mechanism underpinning psychological and psychosocial development and therapeutic change. Mentalization-based treatment (MBT) was originally developed for adults, for people with BPD in particular, but has increasingly been adapted for children, adolescents, and families. These adaptations reflect the need for developmentally sensitive, relational, and contextually grounded interventions that account for the complexity of caregiving environments, attachment relationships, and broader social contexts. However, important questions remain regarding how mentalization develops across childhood and adolescence, how it is best supported in clinical practice, how it presents across different clinical populations, how it can repr",
@@ -34764,30 +34766,6 @@
     "image_alt": "Sensing Technologies for Crop Health and Growth",
     "first_seen": "2026-08-27",
     "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
-    "id": "sciencedirect-cfp-e957846e91",
-    "title": "Special Issue on Design, Motion Planning, and Control of Morphology-Rich Bio-Inspired Systems",
-    "summary": null,
-    "journal": "Biomimetic Intelligence and Robotics",
-    "journals": [
-      "Biomimetic Intelligence and Robotics"
-    ],
-    "domains": [
-      "robotics"
-    ],
-    "topics": [
-      "control"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2027-01-31",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/331531/special-issue-on-design-motion-planning-and-control-of-morphology-rich-bio-inspired-systems",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -36101,6 +36079,31 @@
     "image_alt": "Membrane technologies for wastewater treatment",
     "first_seen": "2026-08-29",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-7a54930b8e",
+    "title": "Pattern separation and pattern completion: development of novel behavioral paradigms to assess neural contributions",
+    "summary": null,
+    "journal": "Neuropsychologia",
+    "journals": [
+      "Neuropsychologia"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "development"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-02",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331474/pattern-separation-and-pattern-completion-development-of-novel-behavioral-paradigms-to-assess-neural-contributions",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -43020,6 +43023,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-044c1d3c9d",
+    "title": "Autism and Hearing",
+    "summary": null,
+    "journal": "Hearing Research",
+    "journals": [
+      "Hearing Research"
+    ],
+    "domains": [],
+    "topics": [
+      "autism"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/327493/autism-and-hearing",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-fe01290b19",
     "title": "Bie-modernist Cultural Computing and Modernity",
     "summary": "The field of human-computer interaction is witnessing a paradigm shift, as computational technologies—spanning digital, multimedia, and artificial intelligence—become integral to cultural heritage preservation, the creation of cultural products, and the advancement of both the sciences and the humanities. While these technologies have demonstrated remarkable success in technical and cultural applications, their deeper philosophical implications and potential for addressing emergent questions in the humanities and social sciences are only now gaining traction. Bie-Modernist Cultural Computing (BCC), grounded in the Bie-modernism theory developed by Dr. Wang Jianjiang, has recently gained international recognition as a method for computationally analyzing cultural quality and meaning via proportion analysis of modern, pre-modern, and postmodern influences. The growing body of research—including over 20 papers and the establishment of dedicated research centers—signals a new avenue for sy",
@@ -44967,6 +44992,57 @@
     "image_alt": "Sleep Quality and Architecture, Cognition, and Hormone Signaling in Endocrine Disorders",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-e957846e91",
+    "title": "Special Issue on Design, Motion Planning, and Control of Morphology-Rich Bio-Inspired Systems",
+    "summary": null,
+    "journal": "Biomimetic Intelligence and Robotics",
+    "journals": [
+      "Biomimetic Intelligence and Robotics"
+    ],
+    "domains": [
+      "robotics"
+    ],
+    "topics": [
+      "control"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/331531/special-issue-on-design-motion-planning-and-control-of-morphology-rich-bio-inspired-systems",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-3abfb1ba3c",
+    "title": "Special Issue on Embodied Medical Robotics: From Mechanical Intelligence to Multimodal Cognitive Autonomy",
+    "summary": null,
+    "journal": "Biomimetic Intelligence and Robotics",
+    "journals": [
+      "Biomimetic Intelligence and Robotics"
+    ],
+    "domains": [
+      "psychology",
+      "robotics"
+    ],
+    "topics": [
+      "Robotics",
+      "Medical Robotics",
+      "cognitive"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-02-28",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/333300/special-issue-on-embodied-medical-robotics-from-mechanical-intelligence-to-multimodal-cognitive-autonomy",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -54360,34 +54436,6 @@
     "status": "open"
   },
   {
-    "id": "sciencedirect-cfp-220deb54b6",
-    "title": "Beyond the Sensory Domain: Exploring Interoception and Higher-Order Cognitive Processes in Aphantasia",
-    "summary": null,
-    "journal": "Behavioural Brain Research",
-    "journals": [
-      "Behavioural Brain Research"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "cognitive",
-      "Sensory",
-      "Interoception",
-      "cognitive processes"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2027-03-31",
-    "deadline_status": "listed",
-    "url": "https://sciencedirect.com/special-issue/337832/beyond-the-sensory-domain-exploring-interoception-and-higher-order-cognitive-processes-in-aphantasia",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-10-13",
-    "publisher": "Elsevier",
-    "status": "open"
-  },
-  {
     "id": "frontiers-fcbcf8392d",
     "title": "Big Cats in a Changing World: Ecology, Conservation, and Coexistence",
     "summary": "Big Cats are among the most charismatic, and most endangered, mammal groups on Earth. As top predators and keystone species, they act as natural coordinators of the ecological connections within their ecosystems. Their obligate carnivory and large body size make coexistence with people difficult, and human activity has reduced their numbers for centuries, a decline that has greatly accelerated during the Anthropocene. Their unique position means that their decline rarely happens in ecological isolation. The irony is sharp: we are the single greatest cause of their decline, yet we prize them culturally, economically, and politically. That regard has fueled a level of public and scientific interest in Big Cat conservation that few other endangered mammals enjoy. Alongside it sits a genuine scientific question: how does Big Cat biology itself shift under intense, often harmful, human pressure?",
@@ -55067,6 +55115,34 @@
     "image_alt": "Motivational aspects of balancing eating and physical exercise in health and disease",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-5fb3d224ed",
+    "title": "Neuroimaging of Pharmacological Effects on the Brain: Mechanisms, Biomarkers, and Methodological Advances",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "mechanisms",
+      "Brain",
+      "Advances",
+      "biomarkers",
+      "Neuroimaging"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-03-31",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/339302/neuroimaging-of-pharmacological-effects-on-the-brain-mechanisms-biomarkers-and-methodological-advances",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -55774,6 +55850,34 @@
     "image_alt": "Anthropogenic environmental change",
     "first_seen": "2026-08-29",
     "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-220deb54b6",
+    "title": "Beyond the Sensory Domain: Exploring Interoception and Higher-Order Cognitive Processes in Aphantasia",
+    "summary": null,
+    "journal": "Behavioural Brain Research",
+    "journals": [
+      "Behavioural Brain Research"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "cognitive",
+      "Sensory",
+      "Interoception",
+      "cognitive processes"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-04-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/337832/beyond-the-sensory-domain-exploring-interoception-and-higher-order-cognitive-processes-in-aphantasia",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-10-13",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -64091,6 +64195,26 @@
     "image_alt": null,
     "first_seen": "2026-09-12",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "sciencedirect-cfp-7fce44a6c1",
+    "title": "The Constructive Mind: Commemorating Eleanor Maguire",
+    "summary": null,
+    "journal": "Neuropsychologia",
+    "journals": [
+      "Neuropsychologia"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-05-01",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/326685/the-constructive-mind-commemorating-eleanor-maguire",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-28",
+    "publisher": "Elsevier",
     "status": "open"
   },
   {
@@ -76623,6 +76747,33 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-3e45b1a100",
+    "title": "Integrative Neuroimaging: MRI Perspectives on Brain Organization Across Structure, Space, and Scale",
+    "summary": null,
+    "journal": "NeuroImage",
+    "journals": [
+      "NeuroImage"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Brain",
+      "Neuroimaging",
+      "MRI",
+      "space"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-06-18",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/339284/integrative-neuroimaging-mri-perspectives-on-brain-organization-across-structure-space-and-scale",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-fb8ab0d327",
     "title": "Microglial state dynamics in neuroinflammation: Mechanisms, transitions, and therapeutic frontiers",
     "summary": "Microglia, the resident immune sentinels of the central nervous system (CNS), have emerged as central regulators of immune–neural interactions and homeostatic maintenance. Once believed to inhabit an immune-privileged environment, the CNS is now recognized as an immune-integrated system whose resilience depends on tightly regulated microglial functions. In their homeostatic state, microglia contribute to synaptic pruning, phagocytosis of debris, and trophic support. However, chronic or dysregulated activation transforms these cells into drivers of neuroinflammation and neural injury. Recent discoveries have underscored the remarkable heterogeneity of microglial phenotypes, spanning homeostatic, activated, and disease-associated states (DAM). This dynamic spectrum is orchestrated by complex transcriptional, epigenetic, and metabolic programs. While single-cell and spatial omics have begun revealing state-specific signatures, the molecular checkpoints that govern transitions among these ",
@@ -77931,6 +78082,28 @@
     "status": "open"
   },
   {
+    "id": "sciencedirect-cfp-212b0392a2",
+    "title": "Elsevier Scholars and SBN Awardees of 2026",
+    "summary": null,
+    "journal": "Hormones and Behavior",
+    "journals": [
+      "Hormones and Behavior"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [],
+    "collection_type": "special_issue",
+    "deadline": "2027-06-30",
+    "deadline_status": "listed",
+    "url": "https://sciencedirect.com/special-issue/336709/elsevier-scholars-and-sbn-awardees-of-2026",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-28",
+    "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
     "id": "frontiers-5c6ad6f03d",
     "title": "Emerging Therapeutics for Brain Disorders: From Molecular Targets to Translational Interventions",
     "summary": "Introduction",
@@ -78022,6 +78195,33 @@
     "image_alt": null,
     "first_seen": "2026-10-20",
     "publisher": "Taylor & Francis",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-9335933ca1",
+    "title": "Innovation, Treatment, and Workforce Development in Correctional Psychology",
+    "summary": null,
+    "journal": "Psychological Services",
+    "journals": [
+      "Psychological Services"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "development",
+      "treatment",
+      "psychology",
+      "innovation"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-06-30",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/ser/correctional-psychology-innovation-treatment",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "APA",
     "status": "open"
   },
   {
@@ -81520,6 +81720,30 @@
     "image_alt": "Cognition, learning and memory in the invertebrate brain",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "apa-cfp-e3d810b41a",
+    "title": "6th North American Correctional and Criminal Justice Psychology Conference",
+    "summary": null,
+    "journal": "Psychological Services",
+    "journals": [
+      "Psychological Services"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "psychology"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2027-08-31",
+    "deadline_status": "listed",
+    "url": "https://apa.org/pubs/journals/ser/correctional-psychology-conference",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-24",
+    "publisher": "APA",
     "status": "open"
   },
   {
