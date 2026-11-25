@@ -1,279 +1,5 @@
 [
   {
-    "id": "frontiers-0fb14ef5ea",
-    "title": "Beyond the \"Gold Standard\": Improvements and Advancements in Autism Diagnosis",
-    "summary": "Autism spectrum disorder (ASD) continues to be one of the most intricate and diverse neurodevelopmental disorders, exhibiting considerable diversity among individuals and settings. Despite the use of \"gold-standard\" diagnostic tools like the ADOS-2, current diagnostic methods face several challenges; such as false negatives, issues with ecological validity and difficulties in diagnosis in individuals with comorbid conditions. Alongside this, additional factors such as masking and camouflaging confound the clinical picture, sometimes obscuring symptoms until later in life. However, diagnostic methods specifically tailored for adults remain more limited compared to the established tools available for children. To improve the accuracy and timeliness of diagnoses, it is crucial to address these diagnostic limitations.",
-    "journal": "Frontiers in Psychiatry",
-    "journals": [
-      "Frontiers in Psychiatry"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "autism spectrum disorder",
-      "diagnostic tools",
-      "ecological validity",
-      "diagnostic overshadowing",
-      "cultural differences",
-      "clinical",
-      "challenges",
-      "Methods"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/74206/beyond-the-gold-standard-improvements-and-advancements-in-autism-diagnosis",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/74206",
-    "image_alt": "Beyond the \"Gold Standard\": Improvements and Advancements in Autism Diagnosis",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-psychology-9d2cb4980e",
-    "title": "Cerebellar function, cognitive effects of sensory noise stimulation, sensory function and motor function in ADHD and autism: differences and similarities",
-    "summary": "Cerebellar function and its impact on neurodevelopmental disorders are areas of intense research interest, particularly concerning ADHD and autism. Both conditions affect at least 6% of children and 3-4% of adults globally, typically presenting with altered cerebellum volume and activation. These traits are significant as they often correlate with sensorimotor and working memory difficulties that individuals with ADHD and autism experience. However, the precise role of the cerebellum and how it links to cognitive and sensorimotor challenges in these conditions remains insufficiently understood.",
-    "journal": "Frontiers in Cognition",
-    "journals": [
-      "Frontiers in Cognition",
-      "Frontiers in Neuroscience",
-      "Frontiers in Psychology"
-    ],
-    "domains": [
-      "psychology",
-      "neuroscience"
-    ],
-    "topics": [
-      "cerebellar function",
-      "ADHD",
-      "autism",
-      "sensory noise stimulation",
-      "prisma glass adaptation",
-      "finger tapping",
-      "corneal blink reflex",
-      "working memory"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/71723/cerebellar-function-cognitive-effects-of-sensory-noise-stimulation-sensory-function-and-motor-function-in-adhd-and-autism-differences-and-similarities",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/71723",
-    "image_alt": "Cerebellar function, cognitive effects of sensory noise stimulation, sensory function and motor function in ADHD and autism: differences and similarities",
-    "first_seen": "2026-08-26",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-8f3584825a",
-    "title": "Demyelinating Neuropathies: Pathophysiology, Diagnosis, and Treatment",
-    "summary": "Demyelinating neuropathies represent a challenging area within neurology, encompassing a spectrum of acquired disorders and inherited forms that impact the peripheral nervous system. Recent years have seen significant progress in characterizing the diversity of acquired neuropathies beyond classic entities like Guillain–Barré syndrome, immune-mediated demyelinating neuropathies, and chronic inflammatory demyelinating polyradiculoneuropathy, including the identification of novel antibody-mediated forms, nodopathies, and paranodopathies. While advances in neurophysiological techniques, neuroimaging, and molecular profiling have enabled greater diagnostic accuracy, delayed recognition and inconsistent management outcomes remain persistent challenges. Inherited demyelinating neuropathies, including the heterogeneous group of Charcot–Marie–Tooth diseases (CMT), can involve diverse cellular processes that overlap with those implicated in acquired forms, including Schwann cell dysfunction, ax",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "demyelinating neuropathies",
-      "CIDP",
-      "nodopathies",
-      "Guillain–Barré",
-      "myelin repair",
-      "remyelination",
-      "regeneration",
-      "Charcot–Marie–Tooth disease"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/77678/demyelinating-neuropathies-pathophysiology-diagnosis-and-treatment",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/77678",
-    "image_alt": "Demyelinating Neuropathies: Pathophysiology, Diagnosis, and Treatment",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-psychology-202300f9e5",
-    "title": "Education Not Cancelled: Pathways from Absence to Post-Secondary Education - Volume II",
-    "summary": "This Research Topic is the second volume of Research Topic \"Education Not Cancelled: Pathways from absence to post-secondary education\". Please, see the first volume here .",
-    "journal": "Frontiers in Psychology",
-    "journals": [
-      "Frontiers in Psychology",
-      "Frontiers in Education"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "K-16 Education",
-      "Pathways",
-      "Absenteeism",
-      "Attendance",
-      "Transfer",
-      "Socio-Emotional Learning",
-      "Education Outcomes",
-      "Graduation"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/79970/education-not-cancelled-pathways-from-absence-to-post-secondary-education---volume-ii",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-26",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-8fcde91097",
-    "title": "Epilepsy in Veterinary Science - Volume III",
-    "summary": "Due to the remarkable success of the Research Topic ' Epilepsy in Veterinary Science ' and the rapidly evolving subject area, we are pleased to launch Volume III for this topic.",
-    "journal": "Frontiers in Veterinary Science",
-    "journals": [
-      "Frontiers in Veterinary Science"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "epilepsy",
-      "dogs",
-      "neuroimaging",
-      "clinical manifestation",
-      "behavioural comodity",
-      "veterinary",
-      "Veterinary science"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/77972/epilepsy-in-veterinary-science---volume-iii",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "springer-jner-75010f248d",
-    "title": "International Conference on Rehabilitation Robotics (ICORR) 2027",
-    "summary": "The focus of this Collection is recent, cutting-edge research of significant interest to the rehabilitation robotics community. Inclusion in this Collection is conditional on your paper being accepted by JNE...",
-    "journal": "Journal of NeuroEngineering and Rehabilitation",
-    "journals": [
-      "Journal of NeuroEngineering and Rehabilitation"
-    ],
-    "domains": [
-      "neuroscience",
-      "robotics"
-    ],
-    "topics": [
-      "Robotics",
-      "focus",
-      "Rehabilitation",
-      "community",
-      "inclusion",
-      "Rehabilitation Robotics"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://link.springer.com/collections/ebhejbcfee",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-01",
-    "publisher": "Springer Nature",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-ce9d0b8c28",
-    "title": "Neurodegeneration and the disrupted brain: Cognitive and behavioral outcomes and mechanisms",
-    "summary": "Neurodegenerative diseases increasingly reveal themselves not only through classical motor or memory symptoms but also through profound disruptions in perception, cognition, and goal-directed behavior. Distortions in attention, visual processing, interoception, executive control, and a diminished sense of agency frequently emerge across Alzheimer's Disease (AD), Parkinson’s Disease (PD), Frontotemporal Dementia (FTD), and Lewy Body Dementia (LBD).",
-    "journal": "Frontiers in Behavioral Neuroscience",
-    "journals": [
-      "Frontiers in Behavioral Neuroscience"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "psychoses",
-      "schizophrenia",
-      "cognition",
-      "behavior",
-      "maladaptive behavior",
-      "visual processing",
-      "mechanisms",
-      "Brain"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/75492/neurodegeneration-and-the-disrupted-brain-cognitive-and-behavioral-outcomes-and-mechanisms",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/75492",
-    "image_alt": "Neurodegeneration and the disrupted brain: Cognitive and behavioral outcomes and mechanisms",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-84fc5be586",
-    "title": "Sepsis-Associated Encephalopathy as a Target for Neurological Biomarker Discovery",
-    "summary": "Sepsis-associated encephalopathy (SAE) is a pervasive complication of systemic infection, marked by acute disturbances in brain function without direct central nervous system infection. Despite its frequency and significant association with higher mortality, prolonged intensive care stays, and persistent neurocognitive impairment, the diagnosis of SAE remains challenging. Current clinical approaches rely largely on non-specific bedside neurological assessments, routine EEG, and standard neuroimaging, none of which offer definitive diagnostic power. As research efforts intensify, there is growing recognition of SAE’s heterogeneous pathogenesis, involving immune, metabolic, and microcirculatory mechanisms; yet, a lack of reliable, validated biomarkers continues to hinder progress in understanding, diagnosing, and treating this syndrome.",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Sepsis-associated encephalopathy",
-      "neurobiomarkers",
-      "blood and CSF biomarkers",
-      "neuroinflammation",
-      "blood–brain barrier dysfunction",
-      "quantitative EEG",
-      "event-related potentials",
-      "advanced MRI"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/76807/sepsis-associated-encephalopathy-as-a-target-for-neurological-biomarker-discovery",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/76807",
-    "image_alt": "Sepsis-Associated Encephalopathy as a Target for Neurological Biomarker Discovery",
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-26c2df71fe",
-    "title": "Sugar and health",
-    "summary": "This Collection welcomes research on sugar intake and health problems, including research on obesity, type 2 diabetes, and cardiovascular diseases.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "obesity",
-      "diabetes"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-11-24",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/iaeaigbiic",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/HeroImage_WebsiteCPMT_SugarAndHealth-231016570ee1638aac053f634c987cd0.jpg",
-    "image_alt": "Sugar and health",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
-    "status": "open"
-  },
-  {
     "id": "frontiers-d6364f564d",
     "title": "Advancing the Recovery College Model: Emerging Evidence, Innovations, and Global Directions",
     "summary": "This Research Topic builds on the previous Topic completed in 2025 ( linked here ) by extending the growing international evidence base on Recovery Colleges, whose expansion now spans 28 countries across five continents. RCs are transformative, co-produced educational environments that integrate experiential, clinical, and theoretical knowledge within non-hierarchical, anti-stigma learning spaces. The previous editorial highlighted Recovery Colleges’ global diversity and showcased emerging research on mechanisms of action, outcomes, and implementation challenges. This follow‑up topic advances that foundation by examining how Recovery Colleges respond to shifting mental health landscapes, tackling health inequalities, digital innovation, and changing social and policy contexts.",
@@ -1245,28 +971,6 @@
     "status": "open"
   },
   {
-    "id": "ipsj-cfp-709ab173ad",
-    "title": "論文誌「AIによって変わる社会基盤を支えるコンピュータセキュリティ技術」特集 論文募集",
-    "summary": null,
-    "journal": "情報処理学会論文誌",
-    "journals": [
-      "情報処理学会論文誌"
-    ],
-    "domains": [],
-    "topics": [
-      "AI"
-    ],
-    "collection_type": "special_issue",
-    "deadline": "2026-11-27",
-    "deadline_status": "listed",
-    "url": "https://ipsj.or.jp/journal/cfp/cfp_list.html",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "IPSJ",
-    "status": "open"
-  },
-  {
     "id": "nature-psychology-17b6bf5aa0",
     "title": "AI in clinical decision-making",
     "summary": "This collection welcomes studies demonstrating robustness and explainability, incorporating human oversight, and showing measurable effects on clinical and system-level outcomes across diverse healthcare settings.",
@@ -1674,7 +1378,7 @@
     "deadline": "2026-11-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/64757/emotions-communication-and-cognition-in-cats",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/64757/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/64757",
     "image_alt": "Emotions, Communication, and Cognition in Cats",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -2903,7 +2607,7 @@
     "deadline": "2026-11-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/76310/cat-parasites-integrative-approaches-to-disease-diagnostic-innovation-and-therapy",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/76310/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/76310",
     "image_alt": "Cat Parasites: Integrative Approaches to Disease, Diagnostic Innovation, and Therapy",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -3147,7 +2851,7 @@
     "deadline": "2026-11-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/76247/digital-game-design-behavioural-intention-and-sustainability-education-gamified-and-immersive-approaches-for-motivating-pro-environmental-action",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/76247/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/76247",
     "image_alt": "Digital Game Design, Behavioural Intention, and Sustainability Education: Gamified and Immersive Approaches for Motivating Pro-Environmental Action",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -4118,32 +3822,6 @@
     "status": "open"
   },
   {
-    "id": "jmir-serious-games-34e2ad7b31",
-    "title": "International Conference on Serious Games and Applications for Health, SeGAH 2026",
-    "summary": "JMIR Serious Games Invites Submissions from the International Conference on Serious Games and Applications for Health, SeGAH 2026",
-    "journal": "JMIR Serious Games",
-    "journals": [
-      "JMIR Serious Games"
-    ],
-    "domains": [
-      "hci",
-      "psychology"
-    ],
-    "topics": [
-      "Applications",
-      "Serious Games"
-    ],
-    "collection_type": "theme_issue",
-    "deadline": "2026-11-30",
-    "deadline_status": "listed",
-    "url": "https://games.jmir.org/announcements/679",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-09-12",
-    "publisher": "JMIR Publications",
-    "status": "open"
-  },
-  {
     "id": "frontiers-39bbf6b418",
     "title": "Intraspecific Trait Variation and Phenotypic Plasticity Across Environmental Gradients",
     "summary": "While the investigation of species-level traits has revealed broad effects of environmental disturbances on communities and ecosystems, it is vital to recognize that species traits are dynamic across space and time, varying among populations, individuals, and genotypes. Intraspecific Trait Variation (ITV) refers to the range of trait values and syndromes exhibited by individuals within a species, reflecting their capacity to respond to environmental changes and adapt to varying conditions.",
@@ -4598,7 +4276,7 @@
     "deadline": "2026-11-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/81016/neuropsychiatric-systemic-lupus-erythematosus-npsle-biomarkers",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/81016/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/81016",
     "image_alt": "Neuropsychiatric Systemic Lupus Erythematosus (NPSLE) biomarkers",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -4783,8 +4461,8 @@
     "deadline": "2026-11-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/79313/occupational-health-in-healthcare",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/79313",
+    "image_alt": "Occupational Health in Healthcare",
     "first_seen": "2026-10-07",
     "publisher": "Frontiers",
     "status": "open"
@@ -5822,7 +5500,7 @@
     "deadline": "2026-12-01",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/74692/dopamine-and-norepinephrine-modulation-of-hippocampal-memory-integrating-molecular-mechanisms-and-circuit-dynamics",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/74692/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/74692",
     "image_alt": "Dopamine and Norepinephrine Modulation of Hippocampal Memory: Integrating Molecular Mechanisms and Circuit Dynamics",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -6342,30 +6020,6 @@
     "image_alt": "The Application and Improvement of Industrial Robot and Neural Network",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-1922f17578",
-    "title": "Transgender healthcare",
-    "summary": "This Collection welcomes original research that aims to advance our understanding, improve care delivery, and promote health equity for transgender people across diverse healthcare settings.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "healthcare",
-      "Equity",
-      "health equity"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-01",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/ciicheegfd",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Website_transgender_healthcare-4cbc2e7a797b10dbf8709a8af5973195.jpg",
-    "image_alt": "Transgender healthcare",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -7366,6 +7020,28 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "ipsj-cfp-709ab173ad",
+    "title": "論文誌「AIによって変わる社会基盤を支えるコンピュータセキュリティ技術」特集 論文募集",
+    "summary": null,
+    "journal": "情報処理学会論文誌",
+    "journals": [
+      "情報処理学会論文誌"
+    ],
+    "domains": [],
+    "topics": [
+      "AI"
+    ],
+    "collection_type": "special_issue",
+    "deadline": "2026-12-04",
+    "deadline_status": "listed",
+    "url": "https://ipsj.or.jp/journal/cfp/cfp_list.html",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-08-27",
+    "publisher": "IPSJ",
     "status": "open"
   },
   {
@@ -9343,7 +9019,7 @@
     "deadline": "2026-12-09",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/80025/intelligent-space-robots-advances-in-autonomy-control-and-operations-for-on-orbit-assembly-and-servicing",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/80025/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/80025",
     "image_alt": "Intelligent Space Robots: Advances in Autonomy, Control, and Operations for On-Orbit Assembly and Servicing",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -9955,31 +9631,6 @@
     "image_alt": "Tracing the Genetic Odyssey of Psychiatric Disorders: From Twin Studies to Genomic Insights",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-5da5142e82",
-    "title": "Whale‑driven nutrient transport in marine ecosystems",
-    "summary": "This Collection invites research on the mechanisms, magnitudes, and ecological consequences of nutrient transfer mediated by whales, including their roles in the biological pump, diel vertical migration interactions, cross‑ecosystem subsidies, carbon cycling, and ecosystem resilience.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "mechanisms",
-      "resilience",
-      "Ecosystem Resilience",
-      "migration"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-10",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/hcabdihieh",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/COL-16660_hero_image_1200x675-200e7cecdeb57bee8781e0a01fe142ac.jpg",
-    "image_alt": "Whale‑driven nutrient transport in marine ecosystems",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -12539,6 +12190,32 @@
     "status": "open"
   },
   {
+    "id": "jmir-serious-games-34e2ad7b31",
+    "title": "International Conference on Serious Games and Applications for Health, SeGAH 2026",
+    "summary": "JMIR Serious Games Invites Submissions from the International Conference on Serious Games and Applications for Health, SeGAH 2026",
+    "journal": "JMIR Serious Games",
+    "journals": [
+      "JMIR Serious Games"
+    ],
+    "domains": [
+      "hci",
+      "psychology"
+    ],
+    "topics": [
+      "Applications",
+      "Serious Games"
+    ],
+    "collection_type": "theme_issue",
+    "deadline": "2026-12-15",
+    "deadline_status": "listed",
+    "url": "https://games.jmir.org/announcements/679",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-09-12",
+    "publisher": "JMIR Publications",
+    "status": "open"
+  },
+  {
     "id": "frontiers-a835864d3f",
     "title": "Investigating the neural dynamics of social interactions through hyperscanning technology",
     "summary": "Social interaction is a fundamental aspect of human behavior, with functional imaging technology providing new insights into its complexities. Hyperscanning is a cutting-edge technique that enables the simultaneous monitoring of brain activity in multiple individuals, enhancing understanding of intra and inter-brain processes that underlie social interactions. This technology opens doors to studying complex neural correlates of social behaviors and the intricate dynamics of human connection. Current research has illuminated neural mechanisms that underpin social coordination, empathy, and group dynamics, offering insights into typical and atypical social functioning.",
@@ -14815,30 +14492,6 @@
     "image_alt": "Advancing human neuroscience through open and reusable datasets",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "nature-psychology-e27ffa8038",
-    "title": "Automated biodiversity monitoring",
-    "summary": "This Collection invites submissions on the latest research in automated biodiversity monitoring, including multidisciplinary and integrative studies.",
-    "journal": "Scientific Reports",
-    "journals": [
-      "Scientific Reports"
-    ],
-    "domains": [],
-    "topics": [
-      "Biodiversity",
-      "Biodiversity Monitoring",
-      "monitoring"
-    ],
-    "collection_type": "collection",
-    "deadline": "2026-12-18",
-    "deadline_status": "listed",
-    "url": "https://nature.com/collections/fgcaibhggj",
-    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Hero_image_1200x675-a2a5f6361b4711be0129640dbd77dfbd.jpg",
-    "image_alt": "Automated biodiversity monitoring",
-    "first_seen": "2026-08-29",
-    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -17882,6 +17535,38 @@
     "status": "open"
   },
   {
+    "id": "frontiers-5085e7a6c0",
+    "title": "Advancing privacy and security in multimodal AI: Foundations, threats, and trustworthy solutions",
+    "summary": "Multimodal AI, which encompasses the integration of text, images, audio, video, sensor data, and immersive media such as AR/VR and 3D content, is rapidly transforming analytics, automation, and user experiences across numerous sectors. This progress brings with it significant privacy and security challenges that span the full multimodal data lifecycle—from collection, fusion, and storage to analysis and sharing. Recent years have seen a surge in powerful multimodal foundation models and generative systems, alongside increased threats such as deepfakes, adversarial attacks, data leakage, model poisoning, and misuses specific to distributed or edge-data environments. While research has yielded advances in privacy-enhancing technologies (including differential privacy, federated learning, and encryption), and emerging AI security frameworks, critical gaps remain regarding the trustworthy deployment, verifiable robustness, and real-world enforcement of these methods. Ongoing debates also c",
+    "journal": "Frontiers in Imaging",
+    "journals": [
+      "Frontiers in Imaging",
+      "Frontiers in Neuroscience"
+    ],
+    "domains": [
+      "neuroscience"
+    ],
+    "topics": [
+      "Privacy",
+      "security",
+      "multimodal data",
+      "generative AI",
+      "foundation models",
+      "adversarial attacks",
+      "AI",
+      "Advances"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2026-12-24",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/80434/advancing-privacy-and-security-in-multimodal-ai-foundations-threats-and-trustworthy-solutions",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/80434/thumb_400.jpg",
+    "image_alt": "Advancing privacy and security in multimodal AI: Foundations, threats, and trustworthy solutions",
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "frontiers-ce049c10f1",
     "title": "Cellular senescence, inflammation and immune regulation in healthy and pathological aging",
     "summary": "Aging research increasingly highlights the interrelationship between chronic inflammation and cellular senescence—a persistent cellular phenotype with wide-ranging effects on tissue and immune system function. The concept of “inflammaging” describes the age-related increase in unresolved, low-grade inflammation. It is now recognized as a central feature that contributes to immunosenescence, impaired tissue repair, and increased susceptibility to age-related diseases, including cardiovascular, neurodegenerative, and metabolic disorders.",
@@ -19976,7 +19661,7 @@
     "deadline": "2026-12-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/64103/behavioral-economics-in-the-natural-world",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/64103/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/64103",
     "image_alt": "Behavioral Economics in the Natural World",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -36005,8 +35690,8 @@
     "journal": "Communications Biology",
     "journals": [
       "Communications Biology",
-      "Scientific Reports",
-      "Nature Communications"
+      "Nature Communications",
+      "Scientific Reports"
     ],
     "domains": [],
     "topics": [
@@ -39272,7 +38957,8 @@
       "clinical",
       "treatment",
       "neurobiology",
-      "prognosis"
+      "prognosis",
+      "Psychosis"
     ],
     "collection_type": "research_topic",
     "deadline": "2027-02-14",
@@ -40057,6 +39743,31 @@
     "status": "open"
   },
   {
+    "id": "nature-psychology-bff771e24d",
+    "title": "Soil erosion dynamics and management strategies",
+    "summary": "This Collection invites research that advances understanding of soil erosion processes and evaluates innovative, evidence‑based strategies for mitigating this global environmental challenge.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "management",
+      "Soil",
+      "Advances",
+      "evidence"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-02-16",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/behbfdchah",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Soil-erosion-HERO-1200-9bbb15e24b0dd095bba3c21777cb5ed8.jpg",
+    "image_alt": "Soil erosion dynamics and management strategies",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "frontiers-69deb37c77",
     "title": "The Next Era of Remote Patient Monitoring: Wearables, Digital Biomarkers, Artificial Intelligence, and Personalized Chronic Disease Care",
     "summary": "Chronic diseases remain the dominant driver of healthcare utilization, disability, and cost, yet care delivery continues to rely heavily on episodic encounters, delayed symptom reporting, and reactive treatment adjustment. Remote patient monitoring is rapidly evolving from simple physiologic data capture into a broader infrastructure for continuous, personalized, and proactive care. This Research Topic aims to examine how wearables, connected sensors, digital biomarkers, artificial intelligence, and closed-loop therapeutic models can transform chronic disease management across clinical settings.",
@@ -40279,6 +39990,30 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Springer Nature",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-95c8830231",
+    "title": "Metabolomics for precision nutrition",
+    "summary": "﻿This Collection presents research that explores the potential of metabolomics in precision nutrition including the development of new techniques.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "development",
+      "nutrition",
+      "metabolomics"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-02-18",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/gaagbbjbjc",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Precision-nutrition-1200-bcf45b13d0f1a0e94222aa255ccae27a.jpg",
+    "image_alt": "Metabolomics for precision nutrition",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -43495,7 +43230,7 @@
     "deadline": "2027-02-28",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/83686/cybersickness-and-wellbeing-in-immersive-xr-and-ar",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/83686/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/83686",
     "image_alt": "Cybersickness and Wellbeing in Immersive XR and AR",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -46049,6 +45784,30 @@
     "status": "open"
   },
   {
+    "id": "nature-psychology-1922f17578",
+    "title": "Transgender healthcare",
+    "summary": "This Collection welcomes original research that aims to advance our understanding, improve care delivery, and promote health equity for transgender people across diverse healthcare settings.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "healthcare",
+      "Equity",
+      "health equity"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-03-01",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ciicheegfd",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Website_transgender_healthcare-4cbc2e7a797b10dbf8709a8af5973195.jpg",
+    "image_alt": "Transgender healthcare",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "nature-ncomms-c6c7a0a7b1",
     "title": "Tuberculosis vaccines",
     "summary": "This collection will bring together cutting-edge research, reviews, and perspectives on the development of next-generation tuberculosis vaccines. Topics may include novel antigen discovery, vaccine platforms, immune correlates of protection, mucosal immunity, host-directed and therapeutic vaccination strategies, clinical development, and implementation considerations. — show all",
@@ -48079,6 +47838,32 @@
     "url": "https://nature.com/collections/haaigehehc",
     "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Pre_and_postpartum_care_HERO_1200-6f85555dccb51fedb5e39b320aea3833.jpg",
     "image_alt": "Pre and postpartum care for women with existing medical conditions",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-5da5142e82",
+    "title": "Whale‑driven nutrient transport in marine ecosystems",
+    "summary": "This Collection invites research on the mechanisms, magnitudes, and ecological consequences of nutrient transfer mediated by whales, including their roles in the biological pump, diel vertical migration interactions, cross‑ecosystem subsidies, carbon cycling, and ecosystem resilience.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "mechanisms",
+      "resilience",
+      "Ecosystem Resilience",
+      "migration",
+      "carbon cycling"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-03-10",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/hcabdihieh",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/COL-16660_hero_image_1200x675-200e7cecdeb57bee8781e0a01fe142ac.jpg",
+    "image_alt": "Whale‑driven nutrient transport in marine ecosystems",
     "first_seen": "2026-08-29",
     "publisher": "Nature Portfolio",
     "status": "open"
@@ -50296,7 +50081,7 @@
     "deadline": "2027-03-17",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/71918/from-genetic-risk-to-targeted-treatment-in-neurodegenerative-disorders",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/71918/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/71918",
     "image_alt": "From Genetic Risk to Targeted Treatment in Neurodegenerative Disorders",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -50496,6 +50281,30 @@
     "image_alt": "Advances in Adaptive Learning and Evolutionary Methods for Ground Robots",
     "first_seen": "2026-09-22",
     "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "nature-psychology-e27ffa8038",
+    "title": "Automated biodiversity monitoring",
+    "summary": "This Collection invites submissions on the latest research in automated biodiversity monitoring, including multidisciplinary and integrative studies.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [
+      "Biodiversity",
+      "Biodiversity Monitoring",
+      "monitoring"
+    ],
+    "collection_type": "collection",
+    "deadline": "2027-03-18",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/fgcaibhggj",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/Hero_image_1200x675-a2a5f6361b4711be0129640dbd77dfbd.jpg",
+    "image_alt": "Automated biodiversity monitoring",
+    "first_seen": "2026-08-29",
+    "publisher": "Nature Portfolio",
     "status": "open"
   },
   {
@@ -51649,7 +51458,7 @@
     "deadline": "2027-03-20",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/85191/next-generation-mechatronics-for-advanced-robotic-systems",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/85191/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/85191",
     "image_alt": "Next-Generation Mechatronics for Advanced Robotic Systems",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -54860,7 +54669,7 @@
     "deadline": "2027-03-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/73223/excellence-in-headache-and-neurogenic-pain-africa",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/73223/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/73223",
     "image_alt": "Excellence in Headache and Neurogenic Pain: Africa",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -54923,7 +54732,7 @@
     "deadline": "2027-03-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/73322/improving-software-engineering-research-meta-scientific-approaches",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/73322/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/73322",
     "image_alt": "Improving Software Engineering Research: Meta-Scientific Approaches",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -55524,7 +55333,7 @@
     "deadline": "2027-03-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/74675/stratification-and-predictive-biomarkers-in-autism-and-other-neurodevelopmental-disorders-advancing-eeg-and-eye-tracking-approaches-to-optimize-intervention-strategies",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/74675/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/74675",
     "image_alt": "Stratification and Predictive Biomarkers in Autism and Other Neurodevelopmental Disorders: Advancing EEG and Eye-Tracking Approaches to Optimize Intervention Strategies",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -61156,10 +60965,13 @@
     "summary": "Extended reality (XR) is evolving from isolated experiences into persistent, social virtual spaces where people meet, work, learn, and play. As these environments grow more immersive and populated, ensuring that they are safe and secure for everyone becomes a central challenge. Social XR introduces risks with no clear analogue in earlier media: real-time embodied harassment, uneven access and representation, and the pervasive capture of behavioural and spatial data that can identify users and infer sensitive traits. Building safe and secure virtual spaces therefore requires bringing together diverse perspectives from interaction design and content moderation to security, privacy, ethics, and law, ensuring ethical foresight keep pace with the rapid technological development.",
     "journal": "Frontiers in Computer Science",
     "journals": [
-      "Frontiers in Computer Science"
+      "Frontiers in Computer Science",
+      "Frontiers in Robotics and AI",
+      "Frontiers in Virtual Reality"
     ],
     "domains": [
-      "hci"
+      "hci",
+      "robotics"
     ],
     "topics": [
       "XR",
@@ -62354,7 +62166,8 @@
       "data",
       "Computational",
       "drug repurposing",
-      "drugs"
+      "drugs",
+      "Multimodal Data"
     ],
     "collection_type": "collection",
     "deadline": "2027-04-30",
@@ -66639,7 +66452,7 @@
     "deadline": "2027-05-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88007/igem-20262027-systems-biology-synthetic-approaches-in-achieving-sustainable-action",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88007",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88007/thumb_400.jpg",
     "image_alt": "iGEM 2026/2027: Systems Biology & Synthetic Approaches in Achieving Sustainable Action",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -67021,7 +66834,7 @@
     "deadline": "2027-05-14",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86742/cyberbullying-online-addiction-and-adolescent-resilience",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86742/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86742",
     "image_alt": "Cyberbullying, Online Addiction, and Adolescent Resilience",
     "first_seen": "2026-10-27",
     "publisher": "Frontiers",
@@ -67084,7 +66897,7 @@
     "deadline": "2027-05-14",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86105/interdisciplinary-care-for-traumatic-brain-injury-blast-exposure-and-comorbid-conditions-in-service-members-and-first-responders",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86105/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86105",
     "image_alt": "Interdisciplinary Care for Traumatic Brain Injury, Blast Exposure, and Comorbid Conditions in Service Members and First Responders",
     "first_seen": "2026-10-27",
     "publisher": "Frontiers",
@@ -67272,7 +67085,7 @@
     "deadline": "2027-05-15",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/85532/advancing-car-engineered-cell-therapies-pharmacological-mechanisms-of-efficacy-persistence-and-safety",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/85532",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/85532/thumb_400.jpg",
     "image_alt": "Advancing CAR-Engineered Cell Therapies: Pharmacological Mechanisms of Efficacy, Persistence, and Safety",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -68962,7 +68775,7 @@
     "deadline": "2027-05-18",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/83617/advancement-in-sim-to-real-modeling-and-ai-driven-control-for-medical-softcontinuum-robotics",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/83617/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/83617",
     "image_alt": "Advancement in Sim-to-Real, Modeling, and AI-Driven Control for Medical Soft/Continuum Robotics",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -69983,11 +69796,14 @@
     "journal": "Frontiers in Neuroinformatics",
     "journals": [
       "Frontiers in Neuroinformatics",
-      "Frontiers in Human Neuroscience"
+      "Frontiers in Human Neuroscience",
+      "Frontiers in Neuroergonomics"
     ],
     "domains": [
       "neuroscience",
-      "psychology"
+      "psychology",
+      "hci",
+      "hri"
     ],
     "topics": [
       "Neuroinformatics",
@@ -70003,8 +69819,8 @@
     "deadline": "2027-05-21",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86808/learning-from-the-individual-neuroinformatics-for-adaptive-and-personalised-support-technologies",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86808",
+    "image_alt": "Learning from the Individual: Neuroinformatics for Adaptive and Personalised Support Technologies",
     "first_seen": "2026-11-03",
     "publisher": "Frontiers",
     "status": "open"
@@ -70118,8 +69934,8 @@
     "deadline": "2027-05-22",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87474/from-neuroinflammation-to-neurodegeneration-mechanisms-biomarkers-and-therapeutic-perspectives",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87474",
+    "image_alt": "From Neuroinflammation to Neurodegeneration: Mechanisms, Biomarkers and Therapeutic Perspectives",
     "first_seen": "2026-11-04",
     "publisher": "Frontiers",
     "status": "open"
@@ -71821,7 +71637,7 @@
     "deadline": "2027-05-28",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87374/human-autonomy-teaming-in-aviation-safety-training-integration-and-management",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87374/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87374",
     "image_alt": "Human-Autonomy Teaming in Aviation: Safety, Training, Integration, and Management",
     "first_seen": "2026-11-10",
     "publisher": "Frontiers",
@@ -71971,38 +71787,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-f808f79250",
-    "title": "Beyond heartbeat counting: Toward reliable and multimodal measures of cardiac interoception",
-    "summary": "Interoception, the perception and processing of internal bodily signals, is increasingly recognized as a fundamental component of human cognition, emotion, and behavior. Cardiac interoception has received particular attention because of its potential role in emotional experience, self-awareness, decision-making, and the integration of physiological and cognitive processes. However, its assessment remains challenging, as different measures may capture distinct components of interoceptive processing rather than a single underlying ability. Traditional heartbeat counting tasks have raised concerns regarding their construct validity and susceptibility to confounding factors, highlighting the need for more rigorous and theoretically grounded approaches. Advances in psychophysiology and neuroscience offer opportunities to combine behavioral assessments with physiological recordings and neural indices, including heartbeat-evoked potentials (HEPs), to achieve a more comprehensive understanding",
-    "journal": "Frontiers in Human Neuroscience",
-    "journals": [
-      "Frontiers in Human Neuroscience"
-    ],
-    "domains": [
-      "neuroscience",
-      "psychology"
-    ],
-    "topics": [
-      "Cardiac interoception",
-      "Heartbeat perception",
-      "Heartbeat-evoked potentials (HEPs)",
-      "Interoceptive accuracy",
-      "Psychophysiology",
-      "Measurement validity",
-      "Signal detection",
-      "Brain–body interactions"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2027-05-29",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/87910/beyond-heartbeat-counting-toward-reliable-and-multimodal-measures-of-cardiac-interoception",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-11-11",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-46a71cffa2",
     "title": "Decoding Dementia and Neurodegenerative Diseases through Proteomics, Metabolomics, and Lipidomics",
     "summary": "Neurodegenerative diseases, including various forms of dementia, represent a significant and growing public health challenge worldwide. Characterized by the progressive loss of neuronal function, these diseases often lead to cognitive decline, disability, and increased mortality. While advancements in genetics and clinical research have provided insights, many of the molecular mechanisms remain elusive, particularly in sporadic and non-familial cases. Recent advancements in high-throughput omics technologies—proteomics, metabolomics, and lipidomics—present unprecedented opportunities to uncover the intricate biological pathways involved, identify early-stage biomarkers, and develop targeted therapeutic strategies. Despite these advances, there are still considerable gaps in our understanding that need to be addressed to improve the diagnosis and treatment of these complex conditions.",
@@ -72059,7 +71843,7 @@
     "deadline": "2027-05-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88655/environmental-stressors-multi-hazards-and-mental-health-compound-exposures-vulnerability-and-resilience",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88655",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88655/thumb_400.jpg",
     "image_alt": "Environmental Stressors, Multi-Hazards and Mental Health: Compound Exposures, Vulnerability and Resilience",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -72090,7 +71874,7 @@
     "deadline": "2027-05-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88193/from-visual-perception-to-reliable-action-geometry-grounded-and-generative-intelligence-for-robotics",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88193/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88193",
     "image_alt": "From Visual Perception to Reliable Action: Geometry-Grounded and Generative Intelligence for Robotics",
     "first_seen": "2026-11-10",
     "publisher": "Frontiers",
@@ -72207,7 +71991,7 @@
     "deadline": "2027-05-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86501/telecommunication-and-online-fraud-psychological-processes-prevention-and-governance",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/86501",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/86501/thumb_400.jpg",
     "image_alt": "Telecommunication and Online Fraud: Psychological Processes, Prevention, and Governance",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -72242,7 +72026,7 @@
     "deadline": "2027-05-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88117/the-economics-of-animal-constructions-costs-scaling-and-evolutionary-constraints-of-extended-phenotypes",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88117",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88117/thumb_400.jpg",
     "image_alt": "The Economics of Animal Constructions: Costs, Scaling, and Evolutionary Constraints of Extended Phenotypes",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -72273,7 +72057,7 @@
     "deadline": "2027-05-29",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88754/thermal-adaptation-phenotypic-plasticity-and-biotic-interactions-in-a-warming-world",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88754",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88754/thumb_400.jpg",
     "image_alt": "Thermal Adaptation, Phenotypic Plasticity, and Biotic Interactions in a Warming World",
     "first_seen": "2026-11-18",
     "publisher": "Frontiers",
@@ -73448,7 +73232,7 @@
     "deadline": "2027-05-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/75564/the-involvement-of-the-peripheral-nervous-system-in-parkinsons-disease-mechanistic-and-diagnostic-implications",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/75564/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/75564",
     "image_alt": "The Involvement of the Peripheral Nervous System in Parkinson's Disease: Mechanistic and Diagnostic Implications",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -73507,7 +73291,7 @@
     "deadline": "2027-05-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86182/transforming-phage-therapy-one-health-strategies-against-antimicrobial-resistance",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86182/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86182",
     "image_alt": "Transforming Phage Therapy: One Health Strategies Against Antimicrobial Resistance",
     "first_seen": "2026-11-03",
     "publisher": "Frontiers",
@@ -74091,7 +73875,7 @@
     "deadline": "2027-06-04",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87706/advancements-in-deep-learning-based-visual-and-robotics-applications-and-systems-for-quality-control-in-industry-50",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87706/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87706",
     "image_alt": "Advancements in deep learning based visual and robotics applications and systems for quality control in Industry 5.0",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -74142,7 +73926,7 @@
     "deadline": "2027-06-04",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87418/brain-waste-clearance-in-health-and-neurodegeneration-from-comparative-models-to-human-disease",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87418/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87418",
     "image_alt": "Brain Waste Clearance in Health and Neurodegeneration: From Comparative Models to Human Disease",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -74205,7 +73989,7 @@
     "deadline": "2027-06-04",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88995/demonstrating-the-value-of-one-health-evidence-across-human-animal-and-ecosystem-health",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88995/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88995",
     "image_alt": "Demonstrating the value of One Health: evidence across human, animal, and ecosystem health",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -74237,7 +74021,7 @@
     "deadline": "2027-06-04",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86887/early-childhood-mental-health-in-the-era-of-polycrisis-developmental-vulnerabilities-adaptive-capacities-and-system-level-prevention",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86887/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86887",
     "image_alt": "Early Childhood Mental Health in the Era of Polycrisis: Developmental Vulnerabilities, Adaptive Capacities, and System-Level Prevention",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -74268,7 +74052,7 @@
     "deadline": "2027-06-04",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86876/ethical-and-sustainable-ai-in-software-engineering",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86876/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86876",
     "image_alt": "Ethical and Sustainable AI in Software Engineering",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -74490,7 +74274,7 @@
     "deadline": "2027-06-05",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88865/exploring-neuroprotective-mechanisms-from-molecular-pathways-to-translational-strategies",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88865",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88865/thumb_400.jpg",
     "image_alt": "Exploring Neuroprotective Mechanisms: From Molecular Pathways to Translational Strategies",
     "first_seen": "2026-11-18",
     "publisher": "Frontiers",
@@ -74717,37 +74501,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-a6344c74b1",
-    "title": "WABA 2026: Biosecurity in Animal Husbandry",
-    "summary": "Animal husbandry is central to food production and rural livelihoods, but livestock systems can also enable the introduction and spread of infectious disease. Despite growing recognition of biosecurity as a key component of animal health, implementation varies across species, production systems, and regions. Questions remain about which measures are most effective in different contexts, how they can be sustained in day-to-day practice, and how to balance disease prevention with animal welfare, farm viability, and trade. Research supports the value of layered, risk-based approaches—including hygiene, movement controls, surveillance, and farmer engagement—yet gaps remain in measuring real-world effectiveness and understanding the behavioral, economic, and structural factors that shape uptake. This Research Topic, opening in connection with the WABA conference in Ghent in November 2026, will bring together research addressing these challenges.",
-    "journal": "Frontiers in Veterinary Science",
-    "journals": [
-      "Frontiers in Veterinary Science"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "biosecurity",
-      "animal husbandry",
-      "livestock",
-      "infectious disease control",
-      "biosecurity assessment",
-      "animal movement",
-      "hygiene and disinfection",
-      "farmer behavior"
-    ],
-    "collection_type": "research_topic",
-    "deadline": "2027-06-05",
-    "deadline_status": "listed",
-    "url": "https://frontiersin.org/research-topics/89049/waba-2026-biosecurity-in-animal-husbandry",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-11-18",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-023b65c615",
     "title": "Weather, Seasonality and Immune–Chronobiological Mechanisms in the Course of Psychiatric Disorders: From Pathophysiology to Clinical Practice",
     "summary": "Patients and clinicians have long observed that psychiatric symptoms change with the weather and the seasons. Seasonal peaks in depressive and manic episodes, psychotic relapse, hospital admissions and suicidal behavior are well described, and short-term changes in temperature, humidity, sunshine and atmospheric pressure have been linked to symptom severity and outpatient visits. The mechanisms behind these patterns remain unclear. The immunoseasonal hypothesis proposes that seasonal shifts in immune activity, including the balance between Th1 and Th2 responses and changes in pro-inflammatory cytokines, contribute to exacerbations. Other candidate pathways include disrupted circadian and sleep-wake rhythms, changes in photoperiod, melatonin and vitamin D, and altered neuroendocrine stress responses. Air pollution may add to this inflammatory load. Yet few studies have linked environmental variation, biological markers and clinical outcomes in the same patients.",
@@ -74772,7 +74525,7 @@
     "deadline": "2027-06-05",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88598/weather-seasonality-and-immune-chronobiological-mechanisms-in-the-course-of-psychiatric-disorders-from-pathophysiology-to-clinical-practice",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88598",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88598/thumb_400.jpg",
     "image_alt": "Weather, Seasonality and Immune–Chronobiological Mechanisms in the Course of Psychiatric Disorders: From Pathophysiology to Clinical Practice",
     "first_seen": "2026-11-18",
     "publisher": "Frontiers",
@@ -76075,7 +75828,7 @@
     "deadline": "2027-06-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88444/clinical-outcomes-ethics-and-patient-experience-of-adaptive-deep-brain-stimulation-in-treatment-refractory-psychiatric-disorders",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88444/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88444",
     "image_alt": "Clinical Outcomes, Ethics and Patient Experience of Adaptive Deep Brain Stimulation in Treatment-Refractory Psychiatric Disorders",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -76107,7 +75860,7 @@
     "deadline": "2027-06-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88854/decoding-environmental-influences-on-autism-risk-a-multidisciplinary-approach-volume-ii",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88854/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88854",
     "image_alt": "Decoding environmental influences on autism risk: A multidisciplinary approach, Volume II",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -76139,7 +75892,7 @@
     "deadline": "2027-06-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88611/dexterous-and-contact-rich-manipulation-in-industrial-manufacturing",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88611/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88611",
     "image_alt": "Dexterous and Contact-Rich Manipulation in Industrial Manufacturing",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -76203,7 +75956,7 @@
     "deadline": "2027-06-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88389/intelligent-clinical-decision-support-for-personalized-risk-stratification",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/88389/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/88389",
     "image_alt": "Intelligent Clinical Decision Support for Personalized Risk Stratification",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -76296,7 +76049,7 @@
     "deadline": "2027-06-11",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86721/psychedelic-assisted-therapy-in-community-and-outpatient-settings-real-world-outcomes-delivery-and-practice-level-lessons",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86721/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86721",
     "image_alt": "Psychedelic-Assisted Therapy in Community and Outpatient Settings: Real-World Outcomes, Delivery, and Practice-Level Lessons",
     "first_seen": "2026-11-24",
     "publisher": "Frontiers",
@@ -76397,6 +76150,259 @@
     "status": "open"
   },
   {
+    "id": "frontiers-c9e9e9e1c7",
+    "title": "Beyond drug exposure: Environmental modulation of brain reward, vulnerability, and resilience to addiction",
+    "summary": "The development and progression of substance use disorders reflect complex interactions between drug-induced neurobiological adaptations and environmental influences. Evidence from preclinical and clinical studies suggests that chronic stress, social adversity, and isolation can increase addiction-related vulnerability, whereas environmental enrichment, rewarding social interactions, physical activity, and access to alternative reinforcers may attenuate drug seeking or support recovery. These environmental influences may modulate the function and plasticity of interconnected neural circuits involved in reward, motivation, stress regulation, and behavioral control throughout the course of addiction. Yet protective effects are not uniform across substances, individuals, developmental periods, or environmental conditions. The mechanisms by which adverse and supportive environmental experiences differentially affect reward-related neural circuits remain to be fully understood. Translating ",
+    "journal": "Frontiers in Behavioral Neuroscience",
+    "journals": [
+      "Frontiers in Behavioral Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "Addiction vulnerability",
+      "Brain reward",
+      "Environmental enrichment",
+      "Epigenetic mechanisms",
+      "Neuroimmune mechanisms",
+      "Neuroplasticity",
+      "Resilience",
+      "Sex differences"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/89020/beyond-drug-exposure-environmental-modulation-of-brain-reward-vulnerability-and-resilience-to-addiction",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-96a5b2319a",
+    "title": "Collateral vessels in acute ischemic stroke - pathophysiology, imaging assessment and relevance for clinical outcome",
+    "summary": "Collateral vessels are the brain's natural backup circulation. In acute ischemic stroke, the strength and speed of collateral supply help determine how much tissue remains salvageable, how quickly the infarct grows, and how well a patient responds to reperfusion therapy. Yet the mechanisms that govern collateral recruitment, the best ways to measure it, and its use in everyday decisions are still debated.",
+    "journal": "Frontiers in Neurology",
+    "journals": [
+      "Frontiers in Neurology"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "ischemic stroke",
+      "pathophysiology",
+      "collateral vessels",
+      "acute ischemic stroke",
+      "mechanisms",
+      "Brain",
+      "clinical",
+      "assessment"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/88210/collateral-vessels-in-acute-ischemic-stroke---pathophysiology-imaging-assessment-and-relevance-for-clinical-outcome",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-4a5c64a19e",
+    "title": "Extracellular vesicle biomarkers in multiple sclerosis and related neuroimmune disorders: from discovery to clinical translation",
+    "summary": "Extracellular vesicles (EVs) provide a valuable opportunity to capture disease-related molecular changes across the peripheral immune system and central nervous system. EVs are membrane-bound particles released by most cell types that carry proteins, lipids, nucleic acids, glycans, and other bioactive molecules reflecting the characteristics of their cells of origin. As they can be detected in accessible biofluids such as blood and cerebrospinal fluid (CSF), EVs are increasingly being investigated as minimally invasive biomarkers in neurological disease.",
+    "journal": "Frontiers in Immunology",
+    "journals": [
+      "Frontiers in Immunology",
+      "Frontiers in Neurology"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "Extracellular vesicles",
+      "multiple sclerosis",
+      "neuroimmunology",
+      "biomarkers",
+      "cerebrospinal fluid",
+      "NMOSD",
+      "MOGAD",
+      "blood–brain barrier"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/86637/extracellular-vesicle-biomarkers-in-multiple-sclerosis-and-related-neuroimmune-disorders-from-discovery-to-clinical-translation",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-3e6281a74f",
+    "title": "Heterogeneity and Diversity in Suicide Prevention",
+    "summary": "Suicide prevention is a global public health priority, yet suicide mortality, suicidal behavior, help-seeking, clinical decisions, and intervention outcomes vary substantially across individuals, populations, and geographical regions. These differences reflect interactions among developmental stage, neurocognitive characteristics, psychiatric and physical conditions, sexual orientation and gender identity, socioeconomic circumstances, cultural contexts, and healthcare systems. Disparities also exist across countries, ethnic and Indigenous populations, and marginalized communities. Population-average estimates can obscure meaningful variation and limit the applicability of risk assessment tools and preventive interventions across settings. Evidence remains unevenly distributed globally, particularly in resource-limited settings. Some populations show unexpectedly favorable outcomes despite substantial adversity; investigating these positive deviations may reveal protective mechanisms. A",
+    "journal": "Frontiers in Public Health",
+    "journals": [
+      "Frontiers in Public Health",
+      "Frontiers in Psychiatry"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "suicide prevention",
+      "heterogeneity",
+      "risk assessment",
+      "child and adolescent suicide",
+      "sociocultural diversity",
+      "indigenous populations",
+      "positive deviance",
+      "machine learning"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/89341/heterogeneity-and-diversity-in-suicide-prevention",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/89341/thumb_400.jpg",
+    "image_alt": "Heterogeneity and Diversity in Suicide Prevention",
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-a7b6c31fd7",
+    "title": "Insight and Opportunities: Understanding Family Member and Caregiver Involvement Across the Continuum of Care for Early Psychosis",
+    "summary": "Family members are critical supports to individuals in the stages of psychosis including individuals at clinical high risk for psychosis (CHRp) and those who have experienced their first episode of psychosis (FEP). Family members and caregivers often initiate help seeking on the pathway to care such as early intervention programs (EIPs), and their involvement in EIPs have demonstrated impact for their loved ones in the early stage of psychosis, as well for themselves. Yet, family members/caregivers across the world often face challenges accessing EIPs and roughly only 50% of family members/caregivers attended family education and support appointments offered. In addition, racial/ethnic disparities exist such that racial and ethnic minoritized family members/caregivers often disengage from EIPs at higher rate than the majority counterpart.",
+    "journal": "Frontiers in Psychiatry",
+    "journals": [
+      "Frontiers in Psychiatry"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "family members",
+      "caregives",
+      "psychosis",
+      "early intervention",
+      "engagement",
+      "clinical",
+      "challenges",
+      "Risk"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/85477/insight-and-opportunities-understanding-family-member-and-caregiver-involvement-across-the-continuum-of-care-for-early-psychosis",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/85477/thumb_400.jpg",
+    "image_alt": "Insight and Opportunities: Understanding Family Member and Caregiver Involvement Across the Continuum of Care for Early Psychosis",
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-7a4b06a33a",
+    "title": "Modeling Psychological Dynamics, Personal Meaning, and Cognitive Change: Network Psychometrics, Computational, and Constructivist Perspectives",
+    "summary": "Psychological science is undergoing a fundamental paradigm shift toward idiographic, person-specific modeling. While psychological phenomena have traditionally been studied through nomothetic, cross-sectional aggregations, recent methodological breakthroughs have made it possible to capture, formalize, and simulate the temporal dynamics of cognitive, affective, and meaning systems within the individual.",
+    "journal": "Frontiers in Psychology",
+    "journals": [
+      "Frontiers in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "network psychometrics",
+      "idiographic modeling",
+      "personal construct psychology",
+      "dynamical systems",
+      "intensive longitudinal data",
+      "cognitive",
+      "psychological",
+      "change"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/88751/modeling-psychological-dynamics-personal-meaning-and-cognitive-change-network-psychometrics-computational-and-constructivist-perspectives",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-08e39eaad9",
+    "title": "Network Psychometrics in Educational Psychology: Modeling Motivation, Emotion, and Engagement as Interacting Systems",
+    "summary": "Educational psychology has long relied on latent variable models to represent constructs such as motivation, academic emotions, and engagement. Network psychometrics offers an alternative view in which these constructs emerge from direct interactions among their components rather than from a common underlying cause. Methods such as Gaussian graphical models, exploratory graph analysis, and dynamic network modeling now make it possible to examine which cognitions, emotions, and behaviors occupy central or bridging positions in the system of student functioning. Although these methods have become established in research on psychopathology and personality, their use in educational settings remains scattered across journals and construct traditions. A dedicated collection that consolidates this emerging line of work is therefore timely.",
+    "journal": "Frontiers in Psychology",
+    "journals": [
+      "Frontiers in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "network psychometrics",
+      "educational psychology",
+      "student motivation",
+      "achievement emotions",
+      "student engagement",
+      "exploratory graph analysis",
+      "Methods",
+      "psychology"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/88403/network-psychometrics-in-educational-psychology-modeling-motivation-emotion-and-engagement-as-interacting-systems",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-d7640e905b",
+    "title": "Student Assessment Literacy and Feedback Use: Cognitive, Motivational and Self-Regulatory Mechanisms of Formative Assessment",
+    "summary": "Background:",
+    "journal": "Frontiers in Psychology",
+    "journals": [
+      "Frontiers in Psychology"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "Student assessment literacy",
+      "Feedback literacy",
+      "Formative assessment",
+      "Self-regulated learning",
+      "Achievement motivation",
+      "Self-assessment",
+      "Assessment beliefs",
+      "mechanisms"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-12",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/88834/student-assessment-literacy-and-feedback-use-cognitive-motivational-and-self-regulatory-mechanisms-of-formative-assessment",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "frontiers-ab9f7009be",
     "title": "Explainable AI for Multimodal Biomarker Integration in Neurodegenerative Diseases: Bridging Neuroimaging and Biofluid Profiling",
     "summary": "Neurodegenerative diseases vary widely, both clinically and biologically. This group includes Alzheimer’s disease, Parkinson’s disease, atypical parkinsonian syndromes, frontotemporal dementia, and amyotrophic lateral sclerosis. Pathology often begins years before symptoms appear, and the clinical features of these diseases often overlap. Structural, functional and molecular neuroimaging have advanced, as have ultrasensitive assays for cerebrospinal fluid and blood biomarkers, including amyloid-β, phosphorylated tau, neurofilament light chain, GFAP and α-synuclein seed amplification. Together, these tools provide complementary views of disease processes. Artificial intelligence can combine these large, varied data streams. However, many models cannot show how they reach their outputs, which limits clinical trust, regulatory acceptance and biological insight.",
@@ -76425,6 +76431,69 @@
     "image_url": "https://www.frontiersin.org/image/researchtopic/86370",
     "image_alt": "Explainable AI for Multimodal Biomarker Integration in Neurodegenerative Diseases: Bridging Neuroimaging and Biofluid Profiling",
     "first_seen": "2026-09-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-0975a63d9e",
+    "title": "Neurophysiological and Neuroimaging Markers of Depression and Addictive Behaviors in Youth",
+    "summary": "Depression and addictive behaviors, including substance use, gaming disorder, and problematic internet use, often emerge together during adolescence and young adulthood. They also share vulnerabilities in reward processing, emotion regulation, and cognitive control. Yet most neurobiological studies examine each condition separately, and few focus on youth. This Research Topic aims to bring together evidence on neurophysiological and neuroimaging markers that characterize, differentiate, and predict depression and addictive behaviors in young people. We seek to clarify which neural signatures are shared across conditions, which are specific, and how they relate to developmental stage, symptom course, and clinical outcomes.",
+    "journal": "Frontiers in Psychiatry",
+    "journals": [
+      "Frontiers in Psychiatry"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "adolescent depression",
+      "addictive behaviors",
+      "EEG",
+      "event-related potentials",
+      "neuroimaging",
+      "biomarkers",
+      "reward processing",
+      "transdiagnostic"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-13",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/89398/neurophysiological-and-neuroimaging-markers-of-depression-and-addictive-behaviors-in-youth",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/89398/thumb_400.jpg",
+    "image_alt": "Neurophysiological and Neuroimaging Markers of Depression and Addictive Behaviors in Youth",
+    "first_seen": "2026-11-25",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-d30db7ee2d",
+    "title": "River-Reservoir System Ecological Process——Volume II",
+    "summary": "River-reservoir systems are among the most closely coupled components of the global water cycle and among the most intensively managed social–ecological systems on Earth. The first collection of this Research Topic synthesized their structure, function and responses to natural and anthropogenic drivers. It showed that hydro-thermal regulation, biogeochemical cycling and biological responses form one causal chain across the river–reservoir continuum.",
+    "journal": "Frontiers in Ecology and Evolution",
+    "journals": [
+      "Frontiers in Ecology and Evolution"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "River",
+      "Reservoir",
+      "Climate change",
+      "Extreme climatic events",
+      "Ecological resilience",
+      "Biodiversity",
+      "Ecosystem services",
+      "Carbon cycling"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-13",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/89382/river-reservoir-system-ecological-process--volume-ii",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-25",
     "publisher": "Frontiers",
     "status": "open"
   },
@@ -76615,7 +76684,7 @@
     "deadline": "2027-06-15",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87605/the-social-determinants-of-emotional-well-being-understanding-affect-across-populations",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87605/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87605",
     "image_alt": "The Social Determinants of Emotional Well-Being: Understanding Affect Across Populations",
     "first_seen": "2026-10-27",
     "publisher": "Frontiers",
@@ -77907,6 +77976,38 @@
     "status": "open"
   },
   {
+    "id": "frontiers-f808f79250",
+    "title": "Beyond heartbeat counting: Toward reliable and multimodal measures of cardiac interoception",
+    "summary": "Interoception, the perception and processing of internal bodily signals, is increasingly recognized as a fundamental component of human cognition, emotion, and behavior. Cardiac interoception has received particular attention because of its potential role in emotional experience, self-awareness, decision-making, and the integration of physiological and cognitive processes. However, its assessment remains challenging, as different measures may capture distinct components of interoceptive processing rather than a single underlying ability. Traditional heartbeat counting tasks have raised concerns regarding their construct validity and susceptibility to confounding factors, highlighting the need for more rigorous and theoretically grounded approaches. Advances in psychophysiology and neuroscience offer opportunities to combine behavioral assessments with physiological recordings and neural indices, including heartbeat-evoked potentials (HEPs), to achieve a more comprehensive understanding",
+    "journal": "Frontiers in Human Neuroscience",
+    "journals": [
+      "Frontiers in Human Neuroscience"
+    ],
+    "domains": [
+      "neuroscience",
+      "psychology"
+    ],
+    "topics": [
+      "Cardiac interoception",
+      "Heartbeat perception",
+      "Heartbeat-evoked potentials (HEPs)",
+      "Interoceptive accuracy",
+      "Psychophysiology",
+      "Measurement validity",
+      "Signal detection",
+      "Brain–body interactions"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-06-30",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/87910/beyond-heartbeat-counting-toward-reliable-and-multimodal-measures-of-cardiac-interoception",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-11",
+    "publisher": "Frontiers",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-3620302074",
     "title": "Biochar applications in soil and environment",
     "summary": "This collection welcomes articles on biochar’s role in soil improvement, carbon sequestration, and environmental remediation. Studies on agricultural applications, pollutant removal, and climate mitigation strategies are encouraged, highlighting biochar as a sustainable tool for resilient ecosystems.",
@@ -78043,7 +78144,7 @@
     "deadline": "2027-06-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/86311/computational-and-affective-dynamics-in-depression-multimodal-signals-psychological-mechanisms-and-ecological-monitoring",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/86311/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/86311",
     "image_alt": "Computational and Affective Dynamics in Depression: Multimodal Signals, Psychological Mechanisms, and Ecological Monitoring",
     "first_seen": "2026-11-17",
     "publisher": "Frontiers",
@@ -78251,7 +78352,7 @@
     "deadline": "2027-06-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/88701/learning-from-errors-in-computing-and-robotics-education",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/88701",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/88701/thumb_400.jpg",
     "image_alt": "Learning from Errors in Computing and Robotics Education",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -78408,7 +78509,7 @@
     "deadline": "2027-06-30",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/85691/multi-omics-approaches-to-understand-the-evolution-and-adaptation-of-high-risk-bacterial-lineages",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/85691/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/85691",
     "image_alt": "Multi-omics Approaches to Understand the Evolution and Adaptation of High-Risk Bacterial Lineages",
     "first_seen": "2026-11-03",
     "publisher": "Frontiers",
@@ -80802,7 +80903,7 @@
     "deadline": "2027-07-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87802/psychological-mechanisms-underlying-active-and-technology-enhanced-learning-in-stem-education",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/87802/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/87802",
     "image_alt": "Psychological Mechanisms Underlying Active and Technology-Enhanced Learning in STEM Education",
     "first_seen": "2026-10-27",
     "publisher": "Frontiers",
@@ -80992,6 +81093,37 @@
     "image_alt": null,
     "first_seen": "2026-08-27",
     "publisher": "Elsevier",
+    "status": "open"
+  },
+  {
+    "id": "frontiers-a6344c74b1",
+    "title": "WABA 2026: Biosecurity in Animal Husbandry",
+    "summary": "Animal husbandry is central to food production and rural livelihoods, but livestock systems can also enable the introduction and spread of infectious disease. Despite growing recognition of biosecurity as a key component of animal health, implementation varies across species, production systems, and regions. Questions remain about which measures are most effective in different contexts, how they can be sustained in day-to-day practice, and how to balance disease prevention with animal welfare, farm viability, and trade. Research supports the value of layered, risk-based approaches—including hygiene, movement controls, surveillance, and farmer engagement—yet gaps remain in measuring real-world effectiveness and understanding the behavioral, economic, and structural factors that shape uptake. This Research Topic, opening in connection with the WABA conference in Ghent in November 2026, will bring together research addressing these challenges.",
+    "journal": "Frontiers in Veterinary Science",
+    "journals": [
+      "Frontiers in Veterinary Science"
+    ],
+    "domains": [
+      "psychology"
+    ],
+    "topics": [
+      "biosecurity",
+      "animal husbandry",
+      "livestock",
+      "infectious disease control",
+      "biosecurity assessment",
+      "animal movement",
+      "hygiene and disinfection",
+      "farmer behavior"
+    ],
+    "collection_type": "research_topic",
+    "deadline": "2027-08-01",
+    "deadline_status": "listed",
+    "url": "https://frontiersin.org/research-topics/89049/waba-2026-biosecurity-in-animal-husbandry",
+    "image_url": null,
+    "image_alt": null,
+    "first_seen": "2026-11-18",
+    "publisher": "Frontiers",
     "status": "open"
   },
   {
@@ -81640,6 +81772,26 @@
     "status": "open"
   },
   {
+    "id": "nature-psychology-e65ba3c47e",
+    "title": "Ecosystem nutrient cycling and biogeochemical coupling",
+    "summary": "This Scientific Reports Collection welcomes submissions focused on ecosystem nutrient cycling and biogeochemical coupling. Topics include, but are not limited to, ecosystem biogeochemistry, ecological stoichiometry, and nutrient limitation across various ecosystems.",
+    "journal": "Scientific Reports",
+    "journals": [
+      "Scientific Reports"
+    ],
+    "domains": [],
+    "topics": [],
+    "collection_type": "collection",
+    "deadline": "2027-08-24",
+    "deadline_status": "listed",
+    "url": "https://nature.com/collections/ehcjfbfecd",
+    "image_url": "https://media.springernature.com/lw630/nature-cms/uploads/collections/webpage-ff328022c0e52143e1ee0e5796f22e0a.png",
+    "image_alt": "Ecosystem nutrient cycling and biogeochemical coupling",
+    "first_seen": "2026-11-25",
+    "publisher": "Nature Portfolio",
+    "status": "open"
+  },
+  {
     "id": "nature-psychology-d96e6d392b",
     "title": "The changing geopolitics of global energy",
     "summary": "With this Collection, the editors invite manuscripts that highlight how energy transitions and geopolitical dynamics are shaping one another through changing power relations, energy security, technological competition, governance, and trade across scales.",
@@ -81805,7 +81957,7 @@
     "deadline": "2027-08-31",
     "deadline_status": "listed",
     "url": "https://frontiersin.org/research-topics/87798/immunity-beyond-earth-how-spaceflight-and-microgravity-rewire-the-immune-system",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/87798",
+    "image_url": "https://www.frontiersin.org/files/special%20topics/87798/thumb_400.jpg",
     "image_alt": "Immunity beyond Earth: how spaceflight and microgravity rewire the immune system",
     "first_seen": "2026-11-11",
     "publisher": "Frontiers",
@@ -83455,37 +83607,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-74bee63ff8",
-    "title": "Advances in Noninvasive Intracranial Pressure Monitoring Techniques",
-    "summary": "Intracranial pressure (ICP) monitoring is a critical aspect of managing patients with conditions such as traumatic brain injury, cerebral lesions, and intracranial hypertension. The gold standard for ICP monitoring involves invasive techniques, which are often unavailable in resource-limited settings. Noninvasive techniques, such as measuring the optic nerve sheath diameter (ONSD) with ultrasound or using transcranial Doppler techniques, have been extensively evaluated. However, concerns about bias, variations in ONSD thresholds, and inconsistencies in the literature have limited their routine use in clinical practice. Furthermore, no current noninvasive technology can fully replace invasive ICP monitoring, highlighting a significant gap in the field.",
-    "journal": "Frontiers in Neurology",
-    "journals": [
-      "Frontiers in Neurology"
-    ],
-    "domains": [
-      "neuroscience"
-    ],
-    "topics": [
-      "Noninvasive Intracranial Pressure",
-      "ICP",
-      "traumatic brain injury",
-      "cerebral lesions",
-      "clinical",
-      "Brain",
-      "Advances",
-      "Technology"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/70028/advances-in-noninvasive-intracranial-pressure-monitoring-techniques",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-93deaeae4e",
     "title": "Advances in Understanding and Combat of Swine Viral Infections",
     "summary": "Swine viruses remain a major threat to animal health, food security, and global trade, with substantial economic impacts on pork-producing regions. This article collection spotlights mechanistic and translational advances in the pathogenesis, transmission, and control of key porcine viruses. Particular emphasis is placed on respiratory and systemic pathogens of high consequence—including swine influenza A virus (swIAV), porcine reproductive and respiratory syndrome virus (PRRSV), and African swine fever virus (ASFV)—that drive complex disease ecologies in farm settings. By integrating molecular virology, host–pathogen interactions, and population-level dynamics, the collection aligns with the section’s mission to elucidate infectious agents’ biology and inform evidence-based interventions that curb disease burden across production systems. These converging lines of inquiry are essential to mitigate outbreaks, safeguard animal welfare, and enhance agricultural sustainability.",
@@ -83543,7 +83664,7 @@
     "deadline": null,
     "deadline_status": "not_listed",
     "url": "https://frontiersin.org/research-topics/75501/advances-in-vascular-anomalies-of-head-and-neck-region-from-bench-to-bedside-volume-ii",
-    "image_url": "https://www.frontiersin.org/files/special%20topics/75501/thumb_400.jpg",
+    "image_url": "https://www.frontiersin.org/image/researchtopic/75501",
     "image_alt": "Advances in Vascular Anomalies of Head and Neck Region: From Bench to Bedside Volume II",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
@@ -84435,37 +84556,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-a0bb83a838",
-    "title": "Case Reports in Autism: 2026",
-    "summary": "Frontiers in Psychiatry is proud to present our Case Reports series. Our case reports aim to highlight unique cases of patients that present with an unexpected/unusual diagnosis, treatment outcome, or clinical course. Case reports provide insight into the differential diagnosis, decision-making, and clinical management of unusual cases and are a valuable education tool.",
-    "journal": "Frontiers in Psychiatry",
-    "journals": [
-      "Frontiers in Psychiatry"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Case Reports",
-      "Autism",
-      "ASD",
-      "clinical",
-      "management",
-      "treatment",
-      "diagnosis",
-      "education"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/75361/case-reports-in-autism-2026",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-44f56d4789",
     "title": "Case Reports in Clinical Nutrition",
     "summary": "In clinical nutrition, as in other areas of veterinary medicine, the patient approach encompasses not only animal-related factors but also a comprehensive evaluation of human, environmental, and dietary elements. The positive impact of proper nutrition on health and disease is well-established across all species. Given that feeding practices are often influenced by cultural beliefs and trends, a key aspect of clinical nutrition is the involvement of the pet owner, who determines the animal's diet based on these factors. This underscores the importance of veterinarians possessing extensive knowledge in nutrition to better inform owners and ultimately enhance animal health.",
@@ -85114,38 +85204,6 @@
     "image_url": null,
     "image_alt": null,
     "first_seen": "2026-08-26",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
-    "id": "frontiers-ee1bd092fb",
-    "title": "Decoding environmental influences on autism risk: A multidisciplinary approach",
-    "summary": "Autism spectrum disorder (ASD) represents a multifaceted neurodevelopmental condition characterized by persistent challenges in social interaction and communication, combined with restrictive and repetitive behaviors. Despite its high heritability, the isolated examination of genetic factors falls short in fully accounting for the spectrum of ASD clinical presentations or the observed rise in diagnosis rates. The latest estimates from the CDC suggest 1 in 31 children in the United States is affected by ASD, highlighting the urgency of broadening the scope of research to include environmental determinants. Recent investigations have shown compelling associations between early-life exposure to environmental factors—such as air pollutants, endocrine disruptors, and birth complications—and altered autism risk. Despite these findings, the specific mechanisms and causal pathways interlinking genetics and environmental factors remain elusive.",
-    "journal": "Frontiers in Toxicology",
-    "journals": [
-      "Frontiers in Toxicology",
-      "Frontiers in Psychiatry"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "autism",
-      "toxicology",
-      "ASD",
-      "neurodevelopment",
-      "mechanisms",
-      "clinical",
-      "challenges",
-      "social"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/74058/decoding-environmental-influences-on-autism-risk-a-multidisciplinary-approach",
-    "image_url": "https://www.frontiersin.org/image/researchtopic/74058",
-    "image_alt": "Decoding environmental influences on autism risk: A multidisciplinary approach",
-    "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
   },
@@ -89226,38 +89284,6 @@
     "status": "open"
   },
   {
-    "id": "frontiers-bac213ba02",
-    "title": "Self and Mental Disorders: Cognitive Mechanisms and Compassionate Interventions",
-    "summary": "Research indicates that self-processing—the way individuals process information related to themselves—plays a pivotal role in the development and maintenance of mental disorders. Maladaptive self-processing is central to conditions such as depression, anxiety, schizophrenia, personality disorders, and psychosis. Individuals with mental disorders often exhibit distorted self-representations and negative self-schemas, which contribute to cognitive biases, rumination, and emotional dysregulation. These disruptions in self-processing may further hinder emotional regulation and exacerbate symptoms, creating a vicious cycle that impairs recovery.",
-    "journal": "Frontiers in Psychiatry",
-    "journals": [
-      "Frontiers in Psychiatry",
-      "Frontiers in Public Health"
-    ],
-    "domains": [
-      "psychology"
-    ],
-    "topics": [
-      "Self-processing",
-      "self-compassion",
-      "mental disorders",
-      "self-identity",
-      "public mental health",
-      "mechanisms",
-      "development",
-      "cognitive"
-    ],
-    "collection_type": "research_topic",
-    "deadline": null,
-    "deadline_status": "not_listed",
-    "url": "https://frontiersin.org/research-topics/71758/self-and-mental-disorders-cognitive-mechanisms-and-compassionate-interventions",
-    "image_url": null,
-    "image_alt": null,
-    "first_seen": "2026-08-27",
-    "publisher": "Frontiers",
-    "status": "open"
-  },
-  {
     "id": "frontiers-f14dc0a6f9",
     "title": "Sensing the World: Evolution and Ecology of Sensory Signalling in Animal Behavior",
     "summary": "Frontiers in Ecology and Evolution is honoured to partner with Behaviour 2025 as an official sponsor. This Research Topic is the second of two collections curated for the 38th International Ethological Congress (Behaviour 2025), that invites contributions that reflect the multidisciplinary and global nature of behavioural science, spotlighting work from the Indian subcontinent and comparative studies from around the world.",
@@ -89540,8 +89566,8 @@
     "deadline": null,
     "deadline_status": "not_listed",
     "url": "https://frontiersin.org/research-topics/74209/status-of-grassland-and-wetland-ecosystems-in-north-americas-prairie-pothole-region-implications-for-people-migratory-birds-and-conservation",
-    "image_url": null,
-    "image_alt": null,
+    "image_url": "https://www.frontiersin.org/image/researchtopic/74209",
+    "image_alt": "Status of Grassland and Wetland Ecosystems in North America's Prairie Pothole Region: Implications for People, Migratory Birds, and Conservation",
     "first_seen": "2026-08-27",
     "publisher": "Frontiers",
     "status": "open"
