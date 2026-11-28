@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-27T03:38:30Z",
+  "checked_at": "2026-11-28T03:18:47Z",
   "sources": {
     "nature-psychology": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 635,
+      "parsed": 630,
       "pages": 65,
       "error": null
     },
@@ -45,11 +45,11 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 3476,
-      "pages": 145,
+      "parsed": 3483,
+      "pages": 146,
       "error": null,
       "deadline_enrichment": {
-        "checked_at": "2026-11-27T04:04:22Z",
+        "checked_at": "2026-11-28T03:37:23Z",
         "target_count": 400,
         "attempted": 400,
         "unavailable": 1,
@@ -209,25 +209,31 @@
             "error": "http 404",
             "http_status": 404,
             "checked_at": "2026-11-27T04:06:09Z"
+          },
+          "frontiers-d501e25e30": {
+            "url": "https://frontiersin.org/research-topics/80479/ai-enabled-image-restoration-and-reconstruction-methods-for-neuroscience-imaging",
+            "error": "http 404",
+            "http_status": 404,
+            "checked_at": "2026-11-28T03:39:22Z"
           }
         },
         "checked": 399,
-        "listed": 343,
-        "with_deadline": 343,
+        "listed": 362,
+        "with_deadline": 362,
         "not_listed": 0,
         "failed": 1,
         "rate_limited": 0,
-        "parse_errors": 56,
+        "parse_errors": 37,
         "forbidden": 0,
-        "remaining": 52,
-        "metadata_updated": 245
+        "remaining": 73,
+        "metadata_updated": 214
       }
     },
     "frontiers-robotics-ai": {
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 400,
+      "parsed": 401,
       "pages": 17,
       "error": null
     },
@@ -235,7 +241,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1091,
+      "parsed": 1094,
       "pages": 46,
       "error": null
     },
@@ -251,7 +257,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 2233,
+      "parsed": 2238,
       "pages": 94,
       "error": null
     },
@@ -259,7 +265,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 1675,
+      "parsed": 1677,
       "pages": 70,
       "error": null
     },
@@ -283,7 +289,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 55,
+      "parsed": 56,
       "pages": 3,
       "error": null
     },
@@ -323,7 +329,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 364,
+      "parsed": 363,
       "pages": 16,
       "error": null
     },
@@ -339,7 +345,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 63,
+      "parsed": 64,
       "pages": 3,
       "error": null
     },
@@ -355,7 +361,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 851,
+      "parsed": 852,
       "pages": 36,
       "error": null
     },
@@ -363,7 +369,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 946,
+      "parsed": 948,
       "pages": 40,
       "error": null
     },
@@ -454,11 +460,11 @@
     },
     "springer-app": {
       "enabled": true,
-      "ok": true,
+      "ok": false,
       "http_status": 200,
-      "parsed": 1,
+      "parsed": 0,
       "pages": 1,
-      "error": null
+      "error": "zero records"
     },
     "springer-memory-cognition": {
       "enabled": true,
@@ -746,7 +752,7 @@
       "enabled": true,
       "ok": true,
       "http_status": 200,
-      "parsed": 6,
+      "parsed": 5,
       "pages": 1,
       "error": null
     },
@@ -947,7 +953,13 @@
       "error": null
     }
   },
-  "failed_sources": [],
+  "failed_sources": [
+    {
+      "key": "springer-app",
+      "http_status": 200,
+      "error": "zero records"
+    }
+  ],
   "tolerated_failures": [
     {
       "key": "plos-collections",
@@ -955,11 +967,11 @@
       "error": "http 403"
     }
   ],
-  "degraded": false,
+  "degraded": true,
   "frontiers_detail": {
     "publisher": "Frontiers",
     "deadline_enrichment": {
-      "checked_at": "2026-11-27T04:04:22Z",
+      "checked_at": "2026-11-28T03:37:23Z",
       "target_count": 400,
       "attempted": 400,
       "unavailable": 1,
@@ -1119,30 +1131,24 @@
           "error": "http 404",
           "http_status": 404,
           "checked_at": "2026-11-27T04:06:09Z"
+        },
+        "frontiers-d501e25e30": {
+          "url": "https://frontiersin.org/research-topics/80479/ai-enabled-image-restoration-and-reconstruction-methods-for-neuroscience-imaging",
+          "error": "http 404",
+          "http_status": 404,
+          "checked_at": "2026-11-28T03:39:22Z"
         }
       },
       "checked": 399,
-      "listed": 343,
-      "with_deadline": 343,
+      "listed": 362,
+      "with_deadline": 362,
       "not_listed": 0,
       "failed": 1,
       "rate_limited": 0,
-      "parse_errors": 56,
+      "parse_errors": 37,
       "forbidden": 0,
-      "remaining": 52,
-      "metadata_updated": 245
+      "remaining": 73,
+      "metadata_updated": 214
     }
-  },
-  "collection_deadline_checks": {
-    "checked_at": "2026-11-27T04:17:12.197497+00:00",
-    "attempted": 0,
-    "checked": 0,
-    "updated": 0,
-    "listed": 0,
-    "not_listed": 0,
-    "closed": 0,
-    "unknown": 0,
-    "errors": {},
-    "remaining": 0
   }
 }
